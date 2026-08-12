@@ -9,6 +9,7 @@
 | 概念卡 | 一句话 | 权威出处 |
 |---|---|---|
 | [[痛点链]] | 任务→需求→亮点→证据，串不上就删 | `knowledge/ad-copy.md` |
+| [[B2B广告手法]] | 痛点先行/证据上屏/指标翻译/需求实测对照 | 调研（KLA/Hamamatsu 等公开页） |
 | [[文案层]] | 主slogan/分段大字/数据字卡/落版，口播稿≠文案 | `knowledge/ad-copy.md` |
 | Seedance 分镜模板库 | 时间轴公式+产品展示/动效/延长/编辑模板+氛围词库+案例模式精选 | `knowledge/seedance-template-library.md` |
 | TVC/电商广告模板 | 品牌TVC 5镜骨架+黄金3秒带货4镜+11种痛点玩法速查 | `knowledge/tvc-ad-templates.md` |
