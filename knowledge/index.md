@@ -10,6 +10,7 @@
 |---|---|---|
 | [[痛点链]] | 任务→需求→亮点→证据，串不上就删 | `knowledge/ad-copy.md` |
 | [[文案层]] | 主slogan/分段大字/数据字卡/落版，口播稿≠文案 | `knowledge/ad-copy.md` |
+| Seedance 分镜模板库 | 时间轴公式+产品展示/动效/延长/编辑模板+氛围词库 | `knowledge/seedance-template-library.md` |
 | 开头钩子库 / CTA 公式 | 按受众选钩子；情感句+行动指令+利益承诺 | `knowledge/hooks/` |
 
 ### 视觉与运镜
