@@ -46,3 +46,10 @@
 ## 输出物
 
 分镜表（`templates/storyboard.md` 格式）；视觉风格方案（引用 VI 模板并给出本项目的具体化）。
+
+## 必读手册
+
+- `knowledge/camera-language.md` — 镜头语言百科：运镜/景别/角度/转场的情绪效果与选型（"什么时候用什么"）
+- `knowledge/tvc-ad-templates.md` — TVC/带货广告分镜骨架（产品片直接套，套用必须加变速——见动感三来源）
+- `playbooks/storyboard-grid.md` — 宫格分镜 previz
+- `playbooks/consistency.md` — 一致性工具箱

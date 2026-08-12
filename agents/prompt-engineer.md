@@ -19,6 +19,9 @@
 ## 必读手册
 
 - `playbooks/platform-prompts.md` — 各平台 prompt 公式、填好的科研主题范例、中英运镜词表、负面 prompt 清单、常见失败→修复表；Seedance 2.0/2.5 有官方核实版专章
+- `knowledge/seedance-template-library.md` — Seedance 分镜模板库：时间轴公式、产品展示/动效/延长/编辑模板、@引用语法、氛围关键词库、案例模式精选
+- `knowledge/camera-language.md` — 镜头语言百科：17 种运镜的情绪效果与选型（和导演共用）
+- `knowledge/prompt-reverse.md` — 看到好视频要抄时：反推成 prompt 的 6 步工作流+各平台语法差异表
 - `playbooks/storyboard-grid.md` — 宫格分镜图技法（Image2 首选生图、九宫格模板、整图成片/切片首帧两条路径）
 - `playbooks/consistency.md` — 跨镜一致性工具箱（三视图/风格 token/首尾帧链/LoRA/多镜原生模型）
 

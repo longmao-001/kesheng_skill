@@ -20,6 +20,7 @@
 - `knowledge/hooks/opening-hooks.md` — 六大类开头钩子库，按受众选：专家→数据冲击/悬念；领导→身份代入/申报专用；公众→反常识/故事切入；学生→悬念+故事组合
 - `knowledge/hooks/cta-examples.md` — CTA 黄金公式：情感收尾句 + 具体行动指令 + 利益承诺；金句收尾库
 - `knowledge/ad-copy.md` — **产品广告文案法则（B2B 产品片必读）**：痛点链公式、大字文案层规范、语气红线、CTA 公式。口播稿之外，产品片还必须交付"文案层"（主 slogan/分段大字/数据字卡/落版）
+- `knowledge/tvc-ad-templates.md` — TVC/带货广告的分镜叙事骨架（与导演共用；黄金 3 秒/五模块拼装/痛点打法速查）
 - `knowledge/templates/C-multi-audience-guide.md` — EXP/GOV/PUB/STD/IND 五种受众模式的术语处理、数据密度、类比用量、语气、时长、结尾策略
 - `knowledge/templates/A01-total-intro.md` — 申报/立项片 6 镜头脚本模板（战略切入→痛点使命→核心架构→优势对比→愿景→CTA）
 

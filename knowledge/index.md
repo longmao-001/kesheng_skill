@@ -10,13 +10,16 @@
 |---|---|---|
 | [[痛点链]] | 任务→需求→亮点→证据，串不上就删 | `knowledge/ad-copy.md` |
 | [[文案层]] | 主slogan/分段大字/数据字卡/落版，口播稿≠文案 | `knowledge/ad-copy.md` |
-| Seedance 分镜模板库 | 时间轴公式+产品展示/动效/延长/编辑模板+氛围词库 | `knowledge/seedance-template-library.md` |
+| Seedance 分镜模板库 | 时间轴公式+产品展示/动效/延长/编辑模板+氛围词库+案例模式精选 | `knowledge/seedance-template-library.md` |
+| TVC/电商广告模板 | 品牌TVC 5镜骨架+黄金3秒带货4镜+11种痛点玩法速查 | `knowledge/tvc-ad-templates.md` |
 | 开头钩子库 / CTA 公式 | 按受众选钩子；情感句+行动指令+利益承诺 | `knowledge/hooks/` |
 
 ### 视觉与运镜
 | 概念卡 | 一句话 | 权威出处 |
 |---|---|---|
 | [[动感三来源]] | 运镜变速/复合 + 画面内部运动 + 剪辑节奏；匀速单运镜=PPT式视频 | `agents/director.md`、`playbooks/platform-prompts.md` |
+| 镜头语言百科 | 运镜/景别/角度/转场什么时候用、传达什么情绪 | `knowledge/camera-language.md` |
+| 视频反推方法论 | 好视频拆成 prompt：运动四维度+六维诊断+平台语法差异 | `knowledge/prompt-reverse.md` |
 | 宫格分镜 | 一次出全片分镜图，整图成片或切片首帧 | `playbooks/storyboard-grid.md` |
 
 ### 一致性（跨镜不翻车）

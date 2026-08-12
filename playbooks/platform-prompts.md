@@ -130,3 +130,10 @@ LibTV 和即梦 Pro 的核心后端。**选模型先看版本差异**：
 | 首尾帧差异太大，过渡崩坏 | 保持同场景同构图，只改一个元素 |
 | 手部/多人互动穿帮 | 简化成单主体；或用参考图/表演迁移 |
 | 跨镜风格漂移 | 按 `playbooks/consistency.md` 上锚定组合 |
+
+## 外部资源（2026-08-12 调研，已消化进 knowledge/）
+
+- [liangdabiao/make-prompt-seedance2](https://github.com/liangdabiao/make-prompt-seedance2) — Seedance 结构化 prompt 体系；ads-prompt/ 的 TVC/电商/带货模板已改编入 `knowledge/tvc-ad-templates.md`
+- [YouMind-OpenLab/awesome-seedance-2-prompts](https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts) — 2000+ 条 Seedance 2.0 案例库（配 YouMind 画廊）；广告/产品/cinematic 模式提炼见 `knowledge/seedance-template-library.md` 第九节
+- [luozhilzh/video-prompt-reverse](https://github.com/luozhilzh/video-prompt-reverse) — 视频反推提示词方法论（运动设计一等维度、六维诊断、平台语法差异），已改编入 `knowledge/prompt-reverse.md`
+- [beshuaxian/higgsfield-seedance2-jineng](https://github.com/beshuaxian/higgsfield-seedance2-jineng) — 15 个行业 skill（2秒钩子框架/摄像机百科/电商广告），镜头语言部分已改编入 `knowledge/camera-language.md`
