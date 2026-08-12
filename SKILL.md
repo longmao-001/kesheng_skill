@@ -57,7 +57,7 @@ M5 制作与交付 → 给用户手把手操作方案（playbooks/production-wor
 - **会议与质量**：`protocols/meeting.md`、`protocols/quality-gate.md`
 - **制作实操**：`playbooks/production-workflow.md`（端到端流程）、`playbooks/platform-prompts.md`（各平台 prompt 公式+范例+运镜词表，含 Seedance 2.0/2.5 官方核实版专章）、`playbooks/storyboard-grid.md`（宫格分镜图技法：Image2 生图、九宫格模板、两条成片路径）、`playbooks/consistency.md`（跨镜一致性工具箱）
 - **科学知识图谱**：`kb/`（Obsidian 式知识库，用 Obsidian 打开 `kb/` 文件夹即可见图谱；入口 `kb/index.md`，按领域分文件夹：生物学/医学/化学/物理学/光学…；M2 先查库，项目收尾按 `kb/隐私红线.md` 萃取入库——**项目专有信息绝不入库**）
-- **工艺知识库**：`knowledge/hooks/`（开头钩子、CTA 库）、`knowledge/ad-copy.md`（产品广告文案法则：痛点链公式/大字文案层/语气红线）、`knowledge/templates/`（A01 申报片脚本模板、C 类分受众适配指南）、`knowledge/vi_styles/`（VI 视觉规范模板）
+- **工艺知识库**：`knowledge/`（Obsidian 兼容创作工艺图谱，入口 `knowledge/index.md`：痛点链/文案层/动感三来源/首帧锚定/全能参考三用法/素材分级/图表层等概念卡 + hooks 钩子库 + ad-copy 广告文案法则 + 脚本模板 + VI 规范）
 - **输出模板**：`templates/`（brief / proposal / storyboard / decision-log / breakdown）
 
 ## 执行模式
