@@ -19,6 +19,7 @@
 | 概念卡 | 一句话 | 权威出处 |
 |---|---|---|
 | [[动感三来源]] | 运镜变速/复合 + 画面内部运动 + 剪辑节奏；匀速单运镜=PPT式视频 | `agents/director.md`、`playbooks/platform-prompts.md` |
+| [[产品开场语法]] | 先近景细节（光带划过展示材质）→后整体揭示，卡第一句文案 | 甲方实战经验 |
 | 镜头语言百科 | 运镜/景别/角度/转场什么时候用、传达什么情绪 | `knowledge/camera-language.md` |
 | 视频反推方法论 | 好视频拆成 prompt：运动四维度+六维诊断+平台语法差异 | `knowledge/prompt-reverse.md` |
 | 宫格分镜 | 一次出全片分镜图，整图成片或切片首帧 | `playbooks/storyboard-grid.md` |
