@@ -1,0 +1,81 @@
+# audience-kg 包 Schema
+# 角色：观众代言人（Audience Advocate）
+# 定位：一次看懂率与受众适配守门
+# 范围：科生（Kesheng）科研 AI 视频制作团队的【观众代言人】领域知识
+
+pack: audience-kg
+role: 观众代言人
+schema_version: "1.0"
+
+# 包说明
+description: |
+  本包沉淀「观众代言人」在科研视频制作中的领域知识。观众代言人是团队里"替目标观众坐在会议桌
+  旁的人"，只关心一件事：目标受众第一遍看，能不能看懂、愿不愿看完。本包把受众模式、受众参数、
+  痛点链、证据类型与优先级、留存监控规则、错位模式六类实体及其关系形式化，供 M1 受众证据模型、
+  M3/M4 门控与逐段审查时被检索引用。
+
+build_source: |
+  全部实体与关系来自团队沉淀的一手资料，信息来源文件见各实体 sources 字段。
+  本领域无外部 API 可富集，内容来自团队沉淀；新知识由项目收尾萃取循环补充
+  （`playbooks/production-workflow.md` 第 10 步知识萃取入库 + `knowledge/入库规则.md` 五步流程）。
+
+update_rule: |
+  1. 实体/关系必须取自真实文件内容，禁止凭空发明；新增前先 read 来源原文。
+  2. 每完成一个项目（如 PHO-SC-4），在对应实体 props 补"项目验证"行；产生新工艺心得时按
+     知识萃取循环（三分法分拣→成文→织网→更新索引）补充实体或关系。
+  3. 包更新仍以权威正文为准（playbooks/agents/protocols），本包只存要点+出处链接，防改飘。
+  4. 术语口径以 `knowledge/templates/C-multi-audience-guide.md` 的适配总表为准。
+
+# 复合主键约定
+# id = `Type:名称`；Type 为下列实体类型英名，名称为中文实体名，全包唯一。
+# 例：AudienceMode:专家评审版、RetentionRule:术语塌方检查
+id_convention: "id = `<Type>:<中文名称>`，Type 用英名，名称用中文，全包唯一。"
+
+# 实体类型表
+entity_types:
+  - type: AudienceMode
+    description: 受众模式。同一份技术内容按目标受众切分的完全不同的讲法（EXP/GOV/PUB/STD/IND）。
+    id_example: AudienceMode:公众科普版
+    notes: 身份/场景/接触渠道在 C-multi-audience-guide.md 适配总表中定义。
+
+  - type: AudienceParam
+    description: 受众参数。同一模式下的术语处理/数据密度/类比用量/语气/时长/结尾策略等取值。
+    id_example: AudienceParam:术语处理
+    notes: 按模式取值；审查时逐项对照适配总表。
+
+  - type: ValueChain
+    description: 痛点链。受众任务→需求→亮点→证据，验证"受众需要"；串不上就删。
+    id_example: ValueChain:痛点链结构
+    notes: B2B 受众只为"能解决我什么问题"停留。
+
+  - type: EvidenceType
+    description: 证据类型与优先级。真实测试曲线/实测光斑/真实装机场景（真实素材）优先于概念CG。
+    id_example: EvidenceType:真实测试曲线
+    notes: 真实素材优先，AI 只做延伸不做替代。
+
+  - type: RetentionRule
+    description: 留存监控规则。第5秒钩子兑现/中段尿点/结尾记忆点/术语塌方检查/一次看懂率。
+    id_example: RetentionRule:术语塌方检查
+    notes: 观众代言人的核心判定标准。
+
+  - type: MisalignmentPattern
+    description: 错位模式。受众与讲法错位的典型错误（学生版用申报腔/专家版用网络梗等）。
+    id_example: MisalignmentPattern:学生版申报腔
+    notes: "必攻击点"清单，会议中须附可执行改法。
+
+# 关系类型表
+relation_types:
+  - type: param-for-mode
+    description: 受众参数按某模式取值（AudienceParam → AudienceMode）。
+
+  - type: chain-validates-brightspot
+    description: 痛点链验证某个亮点的证据成立（ValueChain → EvidenceType），验证"受众需要"。
+
+  - type: evidence-prioritizes
+    description: 某证据类型优先级高于另一证据类型（EvidenceType → EvidenceType），真实素材优先于华丽CG。
+
+  - type: pattern-warns-mode
+    description: 某错位模式警告针对某模式的错误讲法（MisalignmentPattern → AudienceMode）。
+
+  - type: rule-for-retention
+    description: 某留存监控规则应用于某受众模式（RetentionRule → AudienceMode）。

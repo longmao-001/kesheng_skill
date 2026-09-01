@@ -1,0 +1,543 @@
+{
+ "schema_version": "1.0",
+ "pack": "sop-seed",
+ "role": "制片人",
+ "entities": [
+  {
+   "id": "KspStep:KSP-01立项定档",
+   "type": "KspStep",
+   "name": "KSP-01 立项定档",
+   "props": {
+    "动作": "三问理解需求→定档拍板卡(S/M/L)",
+    "用户角色": "拍板1次",
+    "门控": "定档完成",
+    "产出": "STATE.md+定档确认卡",
+    "规范": "docs/USER_SOP.md §KSP-01"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "templates/user-gate.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-02需求简报",
+   "type": "KspStep",
+   "name": "KSP-02 需求简报+预注册",
+   "props": {
+    "动作": "brief.md调研→4约束清单→预注册标准3-5条→组合拍板卡(受众/平台/时长/风格/画风/素材)",
+    "用户角色": "答题+拍板",
+    "门控": "简报卡定稿+素材清单齐",
+    "产出": "brief.md确认版",
+    "规范": "docs/USER_SOP.md §KSP-02"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "templates/brief.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-03科学理解",
+   "type": "KspStep",
+   "name": "KSP-03 科学理解",
+   "props": {
+    "动作": "7步理解法≥L2+受众/导演并行+事实处置→调研报告全文交用户阅读讨论(先读后谈)→讨论记录m2-纪要→两点讲明",
+    "用户角色": "先阅读讨论调研报告, 讨论完毕前不出现任何后续选项",
+    "门控": "L2达标+待确认有去向+报告已读讨论完毕+两点讲明",
+    "产出": "理解报告全文+两点讲清+讨论记录",
+    "规范": "docs/USER_SOP.md §KSP-03"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-04创意概念",
+   "type": "KspStep",
+   "name": "KSP-04 创意概念先行",
+   "props": {
+    "动作": "Ideation概念生成(导演/编剧/摄影各1-2个概念: 大创意+基调+为什么成立)→Evaluation评分(预注册/传播力/科学/可执行+红队挑战)→Presentation概念拍板#9→Refine只深化所选概念→九宫格(04.5)",
+    "用户角色": "概念拍板(选一/融合)",
+    "门控": "概念拍板通过+深化方案获批",
+    "产出": "概念卡×3-4+评分表/深化方案m3-proposal.md",
+    "规范": "docs/USER_SOP.md §KSP-04"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "protocols/meeting.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-05分镜执行",
+   "type": "KspStep",
+   "name": "KSP-05 分镜/声音/prompt/剪辑",
+   "props": {
+    "动作": "口播稿→用户拍板→(分镜‖声音)→摄影方案→prompt分段‖剪辑→VI/科学复核→红队前置闸(分镜尊重九宫格风格基线)",
+    "用户角色": "供图供素材(有问题才拍板)",
+    "门控": "前置闸pass+M4出口清单全勾",
+    "产出": "分镜表+逐镜prompt表",
+    "规范": "docs/USER_SOP.md §KSP-05"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-06制作交付",
+   "type": "KspStep",
+   "name": "KSP-06 制作交付+出口闸",
+   "props": {
+    "动作": "陪跑出片→导演定剪→红队出口闸评分",
+    "用户角色": "验收",
+    "门控": "出口闸PASS+导演定剪+用户签收",
+    "产出": "成片+全部工艺文件",
+    "规范": "docs/USER_SOP.md §KSP-06"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "playbooks/production-workflow.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-07萃取归档",
+   "type": "KspStep",
+   "name": "KSP-07 知识萃取归档",
+   "props": {
+    "动作": "通用知识→域片段→重建图谱→交付包归档",
+    "用户角色": "知会",
+    "门控": "图谱重建+交付包归档",
+    "产出": "交付包(delivery/)",
+    "规范": "docs/USER_SOP.md §KSP-07"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "orchestration/ORCHESTRATION.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-C变更控制",
+   "type": "KspStep",
+   "name": "KSP-C 变更控制",
+   "props": {
+    "动作": "变更决策卡(改什么/影响/重做范围/成本)→用户拍板→回退最早受影响关卡重走",
+    "用户角色": "随时",
+    "门控": "变更决策卡获批+版本记录",
+    "产出": "变更记录(版本v1/v2)",
+    "规范": "docs/USER_SOP.md §KSP-C"
+   },
+   "sources": [
+    "docs/USER_SOP.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-04.5九宫格预览",
+   "type": "KspStep",
+   "name": "KSP-04.5 九宫格风格预览",
+   "props": {
+    "动作": "宫格技法出全片风格预览→美术批复→用户拍板→风格基线固化(写入分镜表表头)",
+    "用户角色": "风格预览拍板",
+    "门控": "宫格获确认+基线固化",
+    "产出": "九宫格预览图+风格基线",
+    "规范": "docs/USER_SOP.md §KSP-04.5"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "KspStep:KSP-03.5主题共识",
+   "type": "KspStep",
+   "name": "KSP-03.5 主题共识+内容重点对齐",
+   "props": {
+    "动作": "一句话主体共识(用户确认/纠偏)→内容重点清单3-8条逐条讨论→重点圈选(多选)→重点协议落brief(权重×证据×镜头预算)",
+    "用户角色": "讨论+重点圈选(多选), 侧重点加强",
+    "门控": "主体共识+重点协议获确认",
+    "产出": "主体共识卡+内容重点协议",
+    "规范": "docs/USER_SOP.md §KSP-03.5"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "templates/brief.md"
+   ]
+  },
+  {
+   "id": "Rule:AI原生交付原则",
+   "type": "Rule",
+   "name": "AI原生交付原则",
+   "props": {
+    "用户定位": "只冲着AI视频生成来; 主玩法=自己在多个平台(画布/节点: LibTV/即梦/可灵/Seedance)操作生成, 默认无专业后期能力",
+    "铁则": "核心交付物=多平台上手素材包: 每镜【平台对照prompt(Seedance2.5/即梦/可灵/LibTV各一份)+参考图包+口播+抽卡建议+画布操作步骤】, 用户拿着任选平台开玩",
+    "后期边界": "剪映10分钟一键是可选加分项; 专业后期(剪辑/调色LUT/曲线动画重绘/LUFS混音/排版压字)=可选增强, 绝不是交付前提",
+    "交付两档": "A档多平台上手包(默认) / 附送剪映傻瓜执行单(可选) / B档专业交接单(用户主动要求才给)"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "playbooks/production-workflow.md",
+    "agents/editor.md"
+   ]
+  },
+  {
+   "id": "Rule:Prompt严格统一格式",
+   "type": "Rule",
+   "name": "Prompt严格统一格式",
+   "props": {
+    "范围": "交付给用户的所有prompt文件, 模板=templates/prompt-sheet.md",
+    "字段序": "标题/参考/风格/时间轴/口播/声音/负面/参数",
+    "口播分离": "口播单独成字段, 绝不整合进画面prompt正文(画面prompt给画面模型, 口播给配音/字幕, 两路分离)",
+    "文件命名": "每平台一个 prompts-<固定词表平台>.md + README.md",
+    "一致性": "风格token全片逐字一致(九宫格基线); 口播文本与口播稿一致",
+    "强制校验": "交付前必须 python scripts/check_prompt_sheet.py <runs/<项目>> 通过(R1-R11), FAIL不得交付"
+   },
+   "sources": [
+    "templates/prompt-sheet.md",
+    "scripts/check_prompt_sheet.py"
+   ]
+  },
+  {
+   "id": "Rule:调研图料三件套",
+   "type": "Rule",
+   "name": "调研图料三件套",
+   "props": {
+    "三件": "①科学道理(原理/公式/示意→理解报告+图谱) ②网图(公开示意图/结构/场景→入库refs/标来源版权, 无授权仅参考不入镜) ③素材图(客户全量收集→分级: 直接入镜/参考图/内容参考)",
+    "图库": "runs/<slug>/refs/ + assets-inventory.md(每张: 来源/版权/用途等级)",
+    "使用纪律": "分镜/参考包/九宫格/首帧必须先由图库挑(逐镜问: 图库有没有能用的); 有素材镜头不靠AI凭空生成",
+    "红线": "无授权网图绝不入镜(只作构图/结构/演示参考); 客户敏感页不入库"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "playbooks/production-workflow.md"
+   ]
+  },
+  {
+   "id": "Rule:零意外素材自包含",
+   "type": "Rule",
+   "name": "零意外素材自包含",
+   "props": {
+    "铁则": "交付件自包含: 所有画面素材要么①已下载入包(含来源/授权) ②附文生图/图生视频生成prompt ③取自已收集客户素材",
+    "禁止": "交付后用户再拍照/找物/补素材=流程事故(严禁)",
+    "逐镜自问": "出包时: 这镜所有素材用户手里都有了吗"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "orchestration/ORCHESTRATION.md"
+   ]
+  },
+  {
+   "id": "Rule:五层检查体系",
+   "type": "Rule",
+   "name": "五层检查体系(co-scientist风格)",
+   "props": {
+    "L1": "素材完整性 check_asset_pack.py(@引用全登记/无待补提示)",
+    "L2": "prompt格式 check_prompt_sheet.py(R1-R11)",
+    "L3": "事实审计(科学顾问终核: 数据出处+待确认有去向)",
+    "L4": "红队出口闸(评分单+三态)",
+    "L5": "用户签收(上手包+工艺文件)",
+    "原则": "每层独立检查、不互相复用结论——全部通过才交付"
+   },
+   "sources": [
+    "docs/USER_SOP.md",
+    "orchestration/ORCHESTRATION.md"
+   ]
+  },
+  {
+   "id": "Rule:概念先行",
+   "type": "Rule",
+   "name": "概念先行(agency流程)",
+   "props": {
+    "流程": "Insight(洞察,=重点协议)→Ideation(概念生成: SIT/SCAMPER/TRIZ/Bisociation等)→Evaluation(戛纳式评分+红队挑战)→Presentation(客户选概念)→Refine(只深化选中概念)",
+    "纠正": "禁止'多角色盲出完整方案再评审'——方案互相打架且执行细节前置; 概念层面先竞标, 选中才深化",
+    "参考": "creative-director-skill (smixs): 20+ ideation methodologies, Cannes-calibrated scoring, brief→deck"
+   },
+   "sources": [
+    "https://www.freemcplab.com/i18n/zh-CN/play/creative-director-skill/",
+    "https://github.com/timkoda/koda-stack"
+   ]
+  },
+  {
+   "id": "Rule:图文对位",
+   "type": "Rule",
+   "name": "图文对位(重点检查项)",
+   "props": {
+    "铁则": "每镜: 口播内容 ↔ 画面描述 ↔ 参考图/首帧 三者必须对位——口播讲的对象/动作/状态必须在参考图中体现或可靠衍生",
+    "反例": "口播讲'光带扫过控制器→灯室', 参考图只有控制器; 口播讲'风冷散热', 画面是封装外观",
+    "检查": "check_prompt_sheet R12(机器粗检: 口播↔画面共现词, 提示不阻断) + L2检察官人工硬查(逐镜对位, 违者打回分镜师/prompt工程师)",
+    "打回": "图文脱节=打回(再好看的画面对不上旁白没用)"
+   },
+   "sources": [
+    "templates/storyboard.md",
+    "agents/inspector.md"
+   ]
+  },
+  {
+   "id": "Rule:口播首句产品名",
+   "type": "Rule",
+   "name": "口播首句=产品全名",
+   "props": {
+    "铁则": "口播第一句话必须是产品全名(如'PHO-SC-4 激光驱动等离子体宽谱光源：…'), 不得用意象句/文案腔开场",
+    "来源": "用户原话: '等一下 我的口播第一句话应该是产品名啊'"
+   },
+   "sources": [
+    "runs/_lessons/FAILURE-LIBRARY.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Rule:图文顺序对位",
+   "type": "Rule",
+   "name": "图文顺序对位",
+   "props": {
+    "铁则": "口播首句必须在首镜(镜1)出现; 口播节拍顺序与分镜顺序一一对应, 不得第1句跑到第8镜",
+    "来源": "用户原话: '你看分镜合理吗？第一句话是第八镜才说？'"
+   },
+   "sources": [
+    "runs/_lessons/FAILURE-LIBRARY.md"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "Rule:零门槛措辞",
+   "type": "Rule",
+   "name": "零门槛措辞",
+   "props": {
+    "铁则": "交付文档/对话禁用专业术语吓用户: '人工层/图表层/首帧/后期/LUT/压字' 一律替换为零门槛表述('模板/样张直接拖进剪映/一键/照着点')",
+    "来源": "用户原话: '人工层是什么？我说我有能力做人工层？'"
+   },
+   "sources": [
+    "runs/_lessons/FAILURE-LIBRARY.md"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "KspStep:KSP-01立项定档",
+   "target": "UserGate:定档",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-02需求简报",
+   "target": "UserGate:受众模式",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-02需求简报",
+   "target": "UserGate:投放平台",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-02需求简报",
+   "target": "UserGate:风格方向",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-02需求简报",
+   "target": "UserGate:画风",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-02需求简报",
+   "target": "UserGate:素材缺口",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-03科学理解",
+   "target": "UserGate:事实争议",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-04创意概念",
+   "target": "UserGate:创意概念拍板",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-04创意概念",
+   "target": "UserGate:品味取舍",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-05分镜执行",
+   "target": "ProcessRule:质量门控",
+   "type": "ksp-gates",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-06制作交付",
+   "target": "UserGate:出口闸CONDITIONAL",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-06制作交付",
+   "target": "UserGate:出口闸BLOCK",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-06制作交付",
+   "target": "UserGate:时长预算超限",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-07萃取归档",
+   "target": "RoleWorkflow:科学顾问",
+   "type": "ksp-executed-by",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-C变更控制",
+   "target": "KspStep:KSP-04创意概念",
+   "type": "ksp-rollback-to",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-04.5九宫格预览",
+   "target": "UserGate:九宫格风格预览",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-05分镜执行",
+   "target": "UserGate:口播稿拍板",
+   "type": "ksp-has-gate",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-05分镜执行",
+   "target": "KspStep:KSP-04.5九宫格预览",
+   "type": "ksp-respects",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-04创意概念",
+   "target": "KspStep:KSP-03.5主题共识",
+   "type": "ksp-after-gate",
+   "props": {}
+  },
+  {
+   "source": "Rule:AI原生交付原则",
+   "target": "KspStep:KSP-06制作交付",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "Rule:AI原生交付原则",
+   "target": "RoleWorkflow:剪辑师",
+   "type": "rule-empowers",
+   "props": {}
+  },
+  {
+   "source": "Rule:Prompt严格统一格式",
+   "target": "KspStep:KSP-05分镜执行",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "Rule:Prompt严格统一格式",
+   "target": "Rule:AI原生交付原则",
+   "type": "rule-serves",
+   "props": {}
+  },
+  {
+   "source": "Rule:调研图料三件套",
+   "target": "KspStep:KSP-03科学理解",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "Rule:调研图料三件套",
+   "target": "ProcessRule:素材库建库（PDF-PPT抠图）",
+   "type": "rule-serves",
+   "props": {}
+  },
+  {
+   "source": "Rule:调研图料三件套",
+   "target": "ProcessRule:参考包组装",
+   "type": "rule-serves",
+   "props": {}
+  },
+  {
+   "source": "Rule:零意外素材自包含",
+   "target": "Rule:五层检查体系",
+   "type": "rule-enforced-by",
+   "props": {}
+  },
+  {
+   "source": "Rule:五层检查体系",
+   "target": "KspStep:KSP-06制作交付",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "Rule:五层检查体系",
+   "target": "KspStep:KSP-05分镜执行",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "Rule:概念先行",
+   "target": "KspStep:KSP-04创意概念",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "KspStep:KSP-03.5主题共识",
+   "target": "KspStep:KSP-04创意概念",
+   "type": "ksp-feeds",
+   "props": {}
+  },
+  {
+   "source": "Rule:图文对位",
+   "target": "Rule:五层检查体系",
+   "type": "check-in-L2",
+   "props": {}
+  },
+  {
+   "source": "Rule:图文对位",
+   "target": "ProcessRule:参考包组装",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "Rule:图文对位",
+   "target": "KspStep:KSP-05分镜执行",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "Rule:口播首句产品名",
+   "target": "KspStep:KSP-05分镜执行",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "Rule:图文顺序对位",
+   "target": "Rule:图文对位",
+   "type": "rule-reinforces",
+   "props": {}
+  },
+  {
+   "source": "Rule:零门槛措辞",
+   "target": "Rule:AI原生交付原则",
+   "type": "rule-serves",
+   "props": {}
+  }
+ ]
+}

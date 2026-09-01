@@ -1,0 +1,511 @@
+{
+  "fonts": [
+    {
+      "name": "思源黑体 (Source Han Sans/Noto Sans CJK)",
+      "family": "中文无衬线",
+      "style": "现代/人文无衬线，字形端正、笔画简洁，黑体里最百搭的『正片中性字』",
+      "weights": ["ExtraLight", "Light", "Normal", "Regular", "Medium", "Bold", "Heavy"],
+      "usage": "标题/正文/字幕/落版/多语言（中文首选基座字）",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "Adobe+Google 合作，覆盖简繁日韩；剪辑软件/PPT 原生可用；科研片与申报片首选，正文字重 Regular、标题 Medium/Bold、强调 Heavy。与 Roboto/Inter 同门搭配，中西文混排天然协调。",
+      "sources": ["https://github.com/adobe-fonts/source-han-sans", "https://cloud.baidu.com/article/3680807#1", "F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md"]
+    },
+    {
+      "name": "思源宋体 (Source Han Serif/Noto Serif CJK)",
+      "family": "中文衬线",
+      "style": "人文衬线，书卷气、权威、精致，端庄大字标题质感",
+      "weights": ["ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "Heavy"],
+      "usage": "标题（论文感/厚重感）/正文",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "与思源黑体同家族，可做『宋体标题+黑体正文』的申报片/论文风；正文密集段用 Regular，大标题用 Bold/Heavy 更镇得住。科研严谨题材比黑体多一分学术调性。",
+      "sources": ["https://github.com/adobe-fonts/source-han-serif", "https://www.100font.com/thread-98.htm"]
+    },
+    {
+      "name": "阿里巴巴普惠体 (Alibaba PuHuiTi)",
+      "family": "中文无衬线",
+      "style": "现代人文无衬线，中文大字库+覆盖拉丁，字面适中、视觉平衡",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Bold", "Heavy"],
+      "usage": "标题/正文/字幕/落版/英文排版（中英同宽泛用）",
+      "license": "免费商用（阿里巴巴官方，免费授权全场景）",
+      "notes": "官方声明全社会免费商用含电商/影视/视频；字重齐全、数字表现佳；商业产品片/广告片的稳妥底字，特别适合需要『品牌+数字混排』的分段大字与数据卡。",
+      "sources": ["https://baike.baidu.com/item/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%99%AE%E6%83%A0%E4%BD%93/23448659", "http://www.cecc.org.cn/news/202105/555703.html", "https://www.hellofont.cn/article/228983"]
+    },
+    {
+      "name": "MiSans",
+      "family": "中文无衬线",
+      "style": "几何人文无衬线，笔画干净、现代，字面偏宽、亲和",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Semibold", "Bold", "Heavy"],
+      "usage": "标题/正文/字幕/落版",
+      "license": "免费商用（小米，全社会免费商用）",
+      "notes": "小米 HyperOS 官方配套字体，官方称全社会可免费商用；字重齐全、数字设计精细，适合科技/数码/智能硬件产品片与 UI 化数据卡。",
+      "sources": ["https://hyperos.mi.com/font/zh/download/", "https://zh.wikipedia.org/zh-sg/MiSans#1", "https://article.pchome.net/content-2147806.html"]
+    },
+    {
+      "name": "HarmonyOS Sans",
+      "family": "中文无衬线",
+      "style": "现代无衬线，人文+几何平衡，字面清爽、科技感",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Bold", "Black"],
+      "usage": "标题/正文/字幕/落版/多语言",
+      "license": "免费商用（华为官方，免费商用）",
+      "notes": "华为鸿蒙伴生字体，支持 105 种语言；中英数字一体设计，适合需要国际化排版的科研/产业片；粗细梯度完整，可做标题特别版。",
+      "sources": ["https://zh.m.wikipedia.org/zh-hant/HarmonyOS_Sans", "https://tech.ifeng.com/c/87PgyrVdzwn"]
+    },
+    {
+      "name": "得意黑 (Smiley Sans)",
+      "family": "中文无衬线（斜体）",
+      "style": "窄长+大弧线+斜置，动感、现代、有力，海报/片头气质",
+      "weights": ["Regular", "Bold"],
+      "usage": "标题/片头大字/slogan（不用于正文）",
+      "license": "免费商用（开源，作者声明可商用）",
+      "notes": "窄斜设计在『主打字』上有强冲击力，适合片头标题/广告 slogan 大字；因字形窄斜且偏装饰，正文与数据卡慎用；已在央视世界杯转播等场景使用。",
+      "sources": ["https://www.appinn.com/smiley-sans/", "https://www.uisdc.com/smiley-sans", "https://zh.wikipedia.org/wiki/%E5%BE%97%E6%84%8F%E9%BB%91"]
+    },
+    {
+      "name": "霞鹜文楷 (LXGW WenKai)",
+      "family": "中文书法/楷体",
+      "style": "楷书骨架+现代笔触，温润、人文、手写感，清晰可读",
+      "weights": ["Regular", "Bold"],
+      "usage": "字幕/正文/科普旁白/人文气息标题",
+      "license": "免费商用（开源 SIL OFL，衍生自 Klee One）",
+      "notes": "开源楷体里可读性最好的一档，适合科普片、人文向叙事、旁白字幕笔画清晰却不生硬；字重相对单薄，大标题表现力弱于黑体。",
+      "sources": ["https://github.com/lxgw/LxgwWenkaiGB#1", "https://github.com/lxgw/LxgwWenkaiGB"]
+    },
+    {
+      "name": "汇文明朝体 (Huiwen Mincho)",
+      "family": "中文衬线/明朝体",
+      "style": "复古明朝体，横细竖粗、老出版风，典雅、文艺",
+      "weights": ["Regular", "Bold"],
+      "usage": "标题（论文/历史/文化向）/片头书名感大字",
+      "license": "免费商用（开源，npm/官方库）",
+      "notes": "openfont 开源库 @fontpkg/huiwen-mincho-gbk 发行，GBK 覆盖；适合人文社科、历史向科普与『出版物级』片头标题；正文可读性比现代宋体略弱。",
+      "sources": ["https://github.com/chuanshan/huiwen-mincho", "https://cdn.jsdelivr.net/npm/@fontpkg/huiwen-mincho-gbk@1.0.0/README.md", "https://zitiku.org/font/1395"]
+    },
+    {
+      "name": "朱雀仿宋 (Zhuque Fangsong)",
+      "family": "中文衬线/仿宋",
+      "style": "仿宋体，细劲挺拔、官方文件调性，辨识度高",
+      "weights": ["Regular", "Bold"],
+      "usage": "标题/正文（政策文件/数据说明段）",
+      "license": "免费商用（开源 OFL）",
+      "notes": "开源免费商用仿宋字体，笔画纤细有官方/公文气质，适合申报书体、政策解读、数据图注；正文小字号时清晰，适合正式版本。",
+      "sources": ["https://www.xiusheji.com/freebies/8033.html", "https://bbs.deepin.org/zh/post/282587"]
+    },
+    {
+      "name": "站酷高端黑",
+      "family": "中文无衬线",
+      "style": "粗壮现代黑体，笔画厚重、有力，海报感",
+      "weights": ["Bold", "Heavy"],
+      "usage": "标题/片头大字/落版主标题",
+      "license": "免费商用（站酷官方出品）",
+      "notes": "站酷 ZCOOL 官方免费商用系列，粗壮有力适合作『主打字』；字重偏重，正文/数据卡慎用，适合科技感厚标题。",
+      "sources": ["https://www.fonts.net.cn/author-6153532014-1.html", "https://www.hellofont.cn/article/free-fonts-for-commercial-use"]
+    },
+    {
+      "name": "站酷庆科黄油体",
+      "family": "中文无衬线/圆体",
+      "style": "圆润、轻快、可爱，笔画柔和，卡通亲和",
+      "weights": ["Regular", "Bold"],
+      "usage": "标题/科普/儿童与生活化选题图文",
+      "license": "免费商用（站酷官方出品）",
+      "notes": "字型创新、线条圆润，适合科普片、开放日素材、生活化表达；与『轻松科普风』配色（阳光橙/天空蓝/草地绿）天然搭配。",
+      "sources": ["https://www.uied.cn/?s=%E7%AB%99%E9%85%B7&type=post#1", "https://www.fonts.net.cn/author-6153532014-1.html"]
+    },
+    {
+      "name": "站酷快乐体",
+      "family": "中文无衬线/圆体",
+      "style": "随性、活泼、年轻，笔画稀疏有力，海报感",
+      "weights": ["Regular"],
+      "usage": "标题/科普字卡/片头趣味大字",
+      "license": "免费商用（站酷官方出品）",
+      "notes": "站酷免费商用系列，随性活泼适合新媒体/科普短片的轻松标题；字形偏中性，不适合严肃申报片，作点缀用。",
+      "sources": ["https://www.fonts.net.cn/author-6153532014-1.html", "https://www.hellofont.cn/article/free-fonts-for-commercial-use"]
+    },
+    {
+      "name": "站酷文艺黑",
+      "family": "中文无衬线",
+      "style": "文艺感黑体，笔画克制冷峻，高级感",
+      "weights": ["Regular", "Bold"],
+      "usage": "标题/落版/品牌气质字",
+      "license": "免费商用（站酷官方出品）",
+      "notes": "站酷免费商用系列，净爽有文艺气息，适合作品牌片/文化向片子的克制标题；正文密度一般，作强调字。",
+      "sources": ["https://www.fonts.net.cn/author-6153532014-1.html"]
+    },
+    {
+      "name": "优设标题黑",
+      "family": "中文无衬线",
+      "style": "方正有力标题黑，字面紧凑、冲击力强",
+      "weights": ["Bold"],
+      "usage": "标题/片头大字/数据卡加粗强调",
+      "license": "免费商用（优设 UISDC 出品，免费商用）",
+      "notes": "专为标题打造、字重高、冲击力强，适合片头主标题与广告分段大字；正文不适用，作强调/落版字专业对路。",
+      "sources": ["https://www.hellofont.cn/font-detail?fontid=7088", "https://www.zijia.com.cn/6922.html"]
+    },
+    {
+      "name": "优设字客黑",
+      "family": "中文无衬线",
+      "style": "现代黑体，字面舒展、阅读舒适",
+      "weights": ["Regular", "Medium", "Bold"],
+      "usage": "正文/标题/数据卡",
+      "license": "免费商用（优设 UISDC 出品，免费商用）",
+      "notes": "与优设标题黑同厂，正文向更舒服、字重梯度全；适合大段说明文字与数据卡正文，搭配标题黑做『标题+正文』。",
+      "sources": ["https://www.uied.cn/?s=%E7%AB%99%E9%85%B7&type=post#1", "https://www.zijia.com.cn/6922.html"]
+    },
+    {
+      "name": "更纱黑体 (Sarasa Gothic)",
+      "family": "中文无衬线/等宽",
+      "style": "基于 Iosevka+思源黑体合并，等宽+比例双模式，等宽渲染精细",
+      "weights": ["Light", "Regular", "Medium", "Bold"],
+      "usage": "数据卡/图表/代码/多语言",
+      "license": "免费商用（开源 OFL）",
+      "notes": "100% 缩放渲染优秀，中英数字等宽对齐——数据卡/图表/代码/参数表首选之一；中西文同风格，混排不跳。",
+      "sources": ["https://github.com/be5invis/Sarasa-Gothic#1", "https://www.100font.com/thread-133.htm"]
+    },
+    {
+      "name": "思源柔黑 (源柔ゴシック)",
+      "family": "中文无衬线/圆体",
+      "style": "圆润柔和黑体，亲切、无攻击性，阅读友好",
+      "weights": ["Regular", "Bold"],
+      "usage": "字幕/正文/科普与人文化表达",
+      "license": "免费商用（开源，衍生自思源黑体）",
+      "notes": "基于思源黑体圆角化，柔和无攻击性，适合科普字幕/健康医疗题材；笔画偏细，大标题表现力不如原版黑体。",
+      "sources": ["https://51font.17font.com/detail/ce8e61e1370d4724b551338be8b45d9d", "https://font.nuanque.com/fanti/1446.html"]
+    },
+    {
+      "name": "沐瑶软笔手写体",
+      "family": "中文书法/手写",
+      "style": "软笔手写，柔美、灵动，生活感/温度感",
+      "weights": ["Regular"],
+      "usage": "字幕/片尾落款/生活化旁白",
+      "license": "免费商用（开源/免费商用授权）",
+      "notes": "软笔手写气质，适合科普/生活化字幕与片尾致谢；手写体识别度略低，正文字号须放足够大。",
+      "sources": ["https://www.hellofont.cn/font-detail?fontid=6313", "https://www.zijia.com.cn/6928.html?font_id=1000879"]
+    },
+    {
+      "name": "文泉驿正黑 (WenQuanYi Zen Hei)",
+      "family": "中文无衬线",
+      "style": "开源开源黑体，字形端正、稳定",
+      "weights": ["Regular", "Bold"],
+      "usage": "正文/字幕/系统级兜底",
+      "license": "免费商用（GPL/Apache 双授权）",
+      "notes": "Linux/开源生态经典中文字体，作为无版权风险的系统级兜底；字形相对保守，主要在兜底场景与老设备。",
+      "sources": ["https://wiki.ubuntu.com.cn/index.php?title=%E5%85%8D%E8%B4%B9%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93&oldid=123655", "https://wiki.ubuntu.com.cn/index.php?diff=next&oldid=140547"]
+    },
+    {
+      "name": "文泉驿微米黑 (WenQuanYi Micro Hei)",
+      "family": "中文无衬线",
+      "style": "现代无衬线，微米级优化、屏幕显示佳",
+      "weights": ["Regular", "Bold"],
+      "usage": "正文/字幕/界面与数据",
+      "license": "免费商用（GPL/Apache 双授权）",
+      "notes": "文泉驿系列屏幕优化版，低分辨率/投影清晰；作为工程/开源环境的稳健中文字体，局部标注与图表可用。",
+      "sources": ["https://wiki.ubuntu.com.cn/index.php?title=%E5%85%8D%E8%B4%B9%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93&oldid=123655"]
+    },
+    {
+      "name": "锐字真言体",
+      "family": "中文无衬线",
+      "style": "现代潮牌黑体，字形凝练、年轻主张感",
+      "weights": ["Regular", "Bold", "Heavy"],
+      "usage": "标题/片头大字",
+      "license": "商用需采购（官方下载为『演示版』，仅供演示；完整商用授权须向上海锐线创意设计采购）",
+      "notes": "注意：网上常标『免费商用』实为演示版限演示使用；商业成片/正式投放前必须采购授权或替换为思源/普惠体等真免商字。锐字潮牌字库持有版权。",
+      "sources": ["https://app.likefont.com/font/5412386", "http://www.reeji.com/font/ruizizhenyantimianfeishangyong.html", "https://www.100font.com/thread-86.htm"]
+    },
+    {
+      "name": "Inter",
+      "family": "英文无衬线",
+      "style": "人文无衬线，UI/屏幕高度优化，字腔大、可读性极强",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Semibold", "Bold", "Black"],
+      "usage": "英文排版/标题/正文/数据卡/多语言",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "现代 UI 事实标准；字重梯度极全，数字清晰；与思源黑体同人文血统，中英混排极协调，是科研片英文头牌。",
+      "sources": ["https://github.com/rsms/inter", "https://fonts.google.com/specimen/Inter"]
+    },
+    {
+      "name": "Roboto",
+      "family": "英文无衬线",
+      "style": "几何人文无衬线，中性、经典、Android 体系",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Bold", "Black"],
+      "usage": "英文排版/标题/正文/数据卡",
+      "license": "免费商用（开源 Apache 2.0）",
+      "notes": "Google/Android 默认系统字体，与思源黑体同体系（Noto），中西文黄金搭档；剪辑/PPT 原生可用，是团队 VI 指定的英文字。",
+      "sources": ["https://github.com/googlefonts/roboto", "F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md"]
+    },
+    {
+      "name": "Space Grotesk",
+      "family": "英文无衬线",
+      "style": "几何+怪诞，科技冷感、辨识度高的现代标题字",
+      "weights": ["Light", "Regular", "Medium", "Bold"],
+      "usage": "标题/片头大字/科技感英文排版",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "由 Space Mono 派生，字形带一丝怪诞的科技感，适合科研/科技片英文主标题与产品片 slogan；正文密度高时慎用。",
+      "sources": ["https://github.com/floriankarsten/space-grotesk#1", "https://fonts.google.com/specimen/Space+Grotesk"]
+    },
+    {
+      "name": "Playfair Display",
+      "family": "英文衬线",
+      "style": "高对比 Didone 风格衬线，优雅、古典、戏剧张力",
+      "weights": ["Regular", "Medium", "Bold", "Black"],
+      "usage": "标题/片头英文大字/高端感落版",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "高端/典雅英文衬线，适合高端设备、奢侈品级产品片与大片感片头；只做英文标题，不与中文衬线混用压低可读性。",
+      "sources": ["https://github.com/clauseggers/Playfair-Display", "https://fonts.google.com/specimen/Playfair+Display"]
+    },
+    {
+      "name": "Montserrat",
+      "family": "英文无衬线",
+      "style": "几何无衬线，字面宽、现代大气，海报友好",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Semibold", "Bold", "Black"],
+      "usage": "标题/片头大字/品牌与落版",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "几何风格大气有力，适合作品片主标题/Logo 字；与中文『标题黑』同方向，做中英双标题时风格统一。",
+      "sources": ["https://github.com/JulietaUla/Montserrat", "https://fonts.google.com/specimen/Montserrat"]
+    },
+    {
+      "name": "IBM Plex Sans",
+      "family": "英文无衬线",
+      "style": "人文无衬线，IBM 企业风，engineering/专业、可信",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Semibold", "Bold"],
+      "usage": "标题/正文/数据卡/多语言",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "IBM 开源企业字库，engineering 气质，适合工程/工业/半导体题材的产品片与参数表；多语言覆盖广。",
+      "sources": ["https://github.com/IBM/plex", "https://fonts.google.com/specimen/IBM+Plex+Sans"]
+    },
+    {
+      "name": "Noto Sans",
+      "family": "英文无衬线",
+      "style": "人文无衬线，多语言覆盖最广的开源字",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Bold", "Black"],
+      "usage": "英文排版/正文/多语言/兜底",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "Google 开源多语言字，与思源/Noto CJK 同门；多语种混排（中/英/日/俄/阿）安全兜底，国际科研合作片首选英文主体。",
+      "sources": ["https://github.com/notofonts/noto-fonts", "https://fonts.google.com/noto"]
+    },
+    {
+      "name": "Open Sans",
+      "family": "英文无衬线",
+      "style": "人本无衬线，中性友好、可读性佳",
+      "weights": ["Light", "Regular", "Semibold", "Bold", "ExtraBold"],
+      "usage": "正文/字幕/英文排版",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "经典通用英文正文字，中性耐看；适合长时间阅读的字幕/旁白和正文，不做大标题（冲击力弱）。",
+      "sources": ["https://github.com/googlefonts/opensans", "https://fonts.google.com/specimen/Open+Sans"]
+    },
+    {
+      "name": "Source Sans 3",
+      "family": "英文无衬线",
+      "style": "人文无衬线，Adobe 开源，字形严谨、工程感",
+      "weights": ["Light", "Regular", "Semibold", "Bold", "Black"],
+      "usage": "标题/正文/数据卡",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "Adobe 官方开源人文无衬线，与思源黑体同属 Adobe 血统，中英混排协调；参数表/图表文字专业对路。",
+      "sources": ["https://github.com/adobe-fonts/source-sans", "https://fonts.google.com/specimen/Source+Sans+3"]
+    },
+    {
+      "name": "Barlow",
+      "family": "英文无衬线",
+      "style": "几何工业无衬线，紧凑、数字清晰，DIN 气质替代",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Semibold", "Bold", "Black"],
+      "usage": "数据卡数字/标题/数字强调",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "字母宽度智能可调，偏 DIN 的工业/科技气质且完全免商——最理想的『DIN 数字风格』免费替代；数字排版清晰。",
+      "sources": ["https://www.uisdc.com/barlow#1", "https://fonts.google.com/specimen/Barlow"]
+    },
+    {
+      "name": "JetBrains Mono",
+      "family": "等宽/数字专用",
+      "style": "等宽 mono，高可读性、专业代码/数据气质",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Bold", "ExtraBold"],
+      "usage": "数据卡数字/图表/代码/参数表",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "JetBrains 开源等宽，数字与代码对齐极佳；数据卡/参数表/坐标标注首选，对齐专业不跳。",
+      "sources": ["https://fonts.google.com/specimen/JetBrains+Mono", "https://github.com/JetBrains/JetBrainsMono"]
+    },
+    {
+      "name": "Space Mono",
+      "family": "等宽/数字专用",
+      "style": "复古科技等宽 mono，个性鲜明",
+      "weights": ["Regular", "Bold"],
+      "usage": "数据卡/片头科技感标注",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "为 Space Grotesk 提供基因的复古等宽，科技感强；数据/坐标/时间码等对齐场景可用，正文字量多不推荐。",
+      "sources": ["https://github.com/floriankarsten/space-grotesk#1", "https://fonts.google.com/specimen/Space+Mono"]
+    },
+    {
+      "name": "Roboto Mono",
+      "family": "等宽/数字专用",
+      "style": "简洁等宽 mono，与 Roboto 体系搭配",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Bold"],
+      "usage": "数据卡数字/图表/正文小字",
+      "license": "免费商用（开源 Apache 2.0）",
+      "notes": "Android 体系等宽，与 Roboto 同宗，中西文混排主字卡时数字用 Mono 对齐最稳；团队 VI 数据标注默认字。",
+      "sources": ["https://github.com/googlefonts/roboto", "F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md"]
+    },
+    {
+      "name": "Chivo Mono",
+      "family": "等宽/数字专用",
+      "style": "现代等宽 mono，清爽、人本",
+      "weights": ["Light", "Regular", "Medium", "Bold"],
+      "usage": "数据卡/图表/多语言",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "Omnibus-Type 出品开源等宽，可读性佳；作为数据卡数字的补充选项。",
+      "sources": ["https://fonts.google.com/specimen/Chivo+Mono"]
+    },
+    {
+      "name": "Nunito",
+      "family": "英文无衬线/圆体",
+      "style": "圆润几何无衬线，亲切、友好",
+      "weights": ["Light", "Regular", "Semibold", "Bold", "Black"],
+      "usage": "标题/正文/科普英文",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "圆润友好，与科普导向的『圆润中文字』搭配，适合开放日/科普片英文辅助文案。",
+      "sources": ["https://fonts.google.com/specimen/Nunito", "F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md"]
+    },
+    {
+      "name": "Quicksand",
+      "family": "英文无衬线/圆体",
+      "style": "几何圆体，轻盈、有趣、现代",
+      "weights": ["Light", "Regular", "Medium", "Bold"],
+      "usage": "标题/科普/轻量卡通英文",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "极轻几何圆体，适合科普/趣味表达；字重偏细，仅作装饰英文标题，不做长正文。",
+      "sources": ["https://fonts.google.com/specimen/Quicksand", "F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md"]
+    },
+    {
+      "name": "Poppins",
+      "family": "英文无衬线",
+      "style": "几何无衬线，字腔圆润现代，标题友好",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Semibold", "Bold", "Black"],
+      "usage": "标题/片头英文/品牌字",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "几何感强、现代；适合医疗洁净/现代科技题材的英文标题，与中文圆润/现代标题搭配。",
+      "sources": ["https://github.com/itfoundry/poppins", "F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md"]
+    },
+    {
+      "name": "Anek Latin (备用多语种)",
+      "family": "英文无衬线",
+      "style": "多语言现代无衬线，覆盖广，字重梯度全",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Semibold", "Bold"],
+      "usage": "字幕/多语言正文",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "Ek Type 出品的 Anek 系列拉丁字，覆盖天城文/拉丁等大量语种，作国际/多语种合作片兜底英文字，主字缺 glyph 时回退，避免字幕/落版无法渲染。",
+      "sources": ["https://fonts.google.com/specimen/Anek+Latin"]
+    },
+    {
+      "name": "Manrope",
+      "family": "英文无衬线",
+      "style": "几何无衬线，现代、干净，字重梯度细密",
+      "weights": ["ExtraLight", "Light", "Regular", "Medium", "Semibold", "Bold", "ExtraBold"],
+      "usage": "标题/正文/数据卡/英文排版",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "现代几何无衬线，字面干净、可读性佳，适合科技/医疗整洁题材的标题与数据卡；字重梯度细密可微调层级。",
+      "sources": ["https://fonts.google.com/specimen/Manrope", "https://github.com/sharanda/manrope"]
+    },
+    {
+      "name": "Public Sans",
+      "family": "英文无衬线",
+      "style": "人文无衬线，美政府主导，公开、中性、普惠",
+      "weights": ["Thin", "Light", "Regular", "Medium", "Semibold", "Bold", "Black"],
+      "usage": "标题/正文/数据卡/多语言",
+      "license": "免费商用（开源 SIL OFL 1.1）",
+      "notes": "美国设计系统 U.S. Web Design System 主字，开放普惠；中性耐看、数字通透，适合官方/申报/数据密集场景的英文与数据卡。",
+      "sources": ["https://github.com/uswds/public-sans/blob/65dbf921b70660aac29fac58758fe966e6a57301/LICENSE.md#1", "https://fonts.google.com/specimen/Public+Sans"]
+    }
+  ],
+  "fontRules": [
+    {
+      "name": "商用授权红线",
+      "rules": [
+        "任何字体使用前必须查证该字体的官方授权页/许可协议，确认『免费商用』或『开源可商用』后才可进片；查不到明确授权页的一律不得使用。",
+        "非免费商用字体（如锐字真言体『演示版』、需授权的商业字体）在商业成片、正式投放前必须采购正式授权，或直接替换为思源黑体/阿里巴巴普惠体等真免商字。",
+        "字幕与落版优先使用思源系（思源黑体/思源宋体）、阿里巴巴普惠体、MiSans、HarmonyOS Sans 等经官方声明可商用的字体，杜绝授权风险。",
+        "开源字体（SIL OFL / Apache-2.0）可商用，但 OFL 字体不得单独打包出售、不得在字体文件中加入版权标识；商用前核对协议附加条款（部分要求保留版权声明）。",
+        "一个项目内建立『字体白名单』：所有字体名、来源、授权凭证记录在项目黑板，出口闸前由美术指导逐项核对授权状态。"
+      ],
+      "relates": ["思源黑体", "阿里巴巴普惠体", "锐字真言体", "art-director-美术方案.md", "editor-剪辑预计划.md"],
+      "sources": ["https://www.hellofont.cn/article/free-fonts-for-commercial-use", "http://www.reeji.com/font/ruizizhenyantimianfeishangyong.html", "F:/AI/kesheng/agents/art-director.md"]
+    },
+    {
+      "name": "中西文搭配规则",
+      "rules": [
+        "默认中文用思源黑体/思源宋体，英文与数字用同人文血统的 Inter / Roboto / Noto Sans / Source Sans 3，保证中英视觉体积一致、不跳档。",
+        "方正有衬线/标题中文搭配几何西文（如思源宋体 + Playfair Display、标题黑 + Montserrat）做高端或片头标题。",
+        "避免把高对比装饰西文（Playfair / Space Grotesk）与高对比装饰中文混排进同一长句正文，压低可读性。",
+        "中西文混排时统一基线对齐与行高：西文行高可略小于中文，但段落行距按中文主体设置，防止英文悬浮/下沉。",
+        "中英双标题场景保持『标题字同风格』：中文标题黑 ↔ 英文 Montserrat/Barlow，中文宋体 ↔ 英文 Playfair Display。"
+      ],
+      "relates": ["思源黑体", "Inter", "Roboto", "Playfair Display", "Montserrat", "Noto Sans"],
+      "sources": ["F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md", "F:/AI/kesheng/knowledge/ad-copy.md"]
+    },
+    {
+      "name": "字重层级规则",
+      "rules": [
+        "一屏用 3 级字重即可：标题（Bold/Heavy）→ 副标题/强调（Medium）→ 正文/字幕（Regular）；避免超过 3 级造成视觉噪音。",
+        "申报答辩版标题用 Heavy/Bold 更显『这很厉害』；公众科普版用 Medium 即可，避免太重吓跑路人；商业品牌版按品牌手册。",
+        "同一页面/同一镜头内中文标题字号 ≥36，副标题 24–32，正文 16–20（VI 模板规范）；数字/数据可单独放大一级强调。",
+        "深色底（深夜蓝）用中粗以上字重（Medium 起步）保证发光可读；浅色底可降至 Regular。",
+        "字重选择服务节奏：片头/落版大字用最重字重撑门面，正文/数据卡回归 Regular 保清晰。"
+      ],
+      "relates": ["思源黑体", "阿里巴巴普惠体", "Inter", "Roboto", "editor-剪辑预计划.md"],
+      "sources": ["F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md", "F:/AI/kesheng/knowledge/ad-copy.md"]
+    },
+    {
+      "name": "数据卡数字字体规范",
+      "rules": [
+        "数据卡/参数表/曲线坐标的数值必须用等宽字体或对齐数字（tabular figures）：JetBrains Mono / Roboto Mono / Space Mono / Chivo Mono，保证多位数对齐。",
+        "『DIN 数字风格』优先用 Barlow 等免商替代；版权受限于 DIN 原版时不使用，替换为免商等宽/数字风字体。",
+        "所有有效数字、单位、条件、出处角标必须随数值一个字一个意：如『>75 mW/(mm²·sr·nm) @500nm｜数据来源：产品手册』（文案层规范），字体只负责呈现，不得改动数值。",
+        "数据卡文字零 AI 生成——图表层全部后期制作，字体为承载数据的『信任状』，用等宽对齐强化严谨；数值一个都不能改（红线）。",
+        "中文主体 + 数字 Mixed 时，数值用等宽 / tabular 对齐，中文用正文字重，避免数字参差。"
+      ],
+      "relates": ["JetBrains Mono", "Roboto Mono", "Space Mono", "Chivo Mono", "Barlow", "数据字卡", "editor-剪辑预计划.md"],
+      "sources": ["F:/AI/kesheng/knowledge/图表层.md", "F:/AI/kesheng/knowledge/ad-copy.md", "https://fonts.google.com/specimen/Barlow"]
+    },
+    {
+      "name": "字幕字体规范",
+      "rules": [
+        "字幕优先使用思源黑体 / 阿里巴巴普惠体等笔画清晰、可读性强的商免黑体；不得用装饰性/手写体做正文字幕。",
+        "字幕样式符合美术指导 VI 规范：亮底深字 / 暗底白字微发光，品牌色只做点缀；颜色与背景不得打架（美术指导必攻击点）。",
+        "字幕必须手动校对专业术语——术语错字是科研片重灾区（剪辑师红线）；自动识别后逐条人工核对，不许带病出片。",
+        "字幕字号不小于正文级别（≥16–20 等效），浅色/深色场景调整字重与发光，保证长句可读；行数 ≤2 行为佳。",
+        "口播字幕与画面内容脱节属事故：字幕文字与当前镜头内容、数据卡数值一致，逐句对齐。"
+      ],
+      "relates": ["思源黑体", "阿里巴巴普惠体", "MiSans", "editor.md", "editor-剪辑预计划.md", "art-director-美术方案.md"],
+      "sources": ["F:/AI/kesheng/agents/editor.md", "F:/AI/kesheng/knowledge/ad-copy.md", "F:/AI/kesheng/agents/art-director.md"]
+    },
+    {
+      "name": "片头落版字体规范",
+      "rules": [
+        "片头/落版主标题用最重字重撑门面：思源黑体 Heavy / 阿里巴巴普惠体 Bold / 优设标题黑 / 得意黑 / Montserrat Black，营造『这很厉害』。",
+        "落版 = 品牌 + 产品全名 + CTA（索取/联系），字体用商免黑体，深底白字微发光提升可辨识度。",
+        "片头标题字号 ≥36，落版标题更可放大；中文标题与英文标题风格对齐（中文标题黑 ↔ 英文 Montserrat/Barlow）。",
+        "片头/落版字不得与背景、logo、动效抢层级：标题在最上层，Logo 与名称保持居中结构（VI 片头模板），字与图形间距克制。",
+        "档位/版本（申报答辩版/科普版/商业版）决定字重：答辩用重、科普用中、商业按品牌手册。"
+      ],
+      "relates": ["优设标题黑", "得意黑", "思源黑体", "阿里巴巴普惠体", "Montserrat", "落版"],
+      "sources": ["F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md", "F:/AI/kesheng/knowledge/ad-copy.md"]
+    },
+    {
+      "name": "标题/正文与场景分级匹配",
+      "rules": [
+        "片头片尾/主旨标题：重字重、装饰性字体可上（优设标题黑 / 得意黑 / Montserrat / Playfair Display），重在冲击力。",
+        "说明性正文：回归清晰正规体（思源黑体 Regular / 阿里巴巴普惠体 / Inter / IBM Plex Sans），重在可读性。",
+        "科普/轻松题材：圆润字（站酷庆科黄油体 / 站酷快乐体 / Nunito / Quicksand）搭配暖色，亲和友好；科技/报告题材：方正字（思源/普惠/Barlow），严谨。",
+        "文化/人文/社科研讨：宋体或仿宋（思源宋体 / 汇文明朝体 / 朱雀仿宋）带书卷气，严肃正式。",
+        "每一镜只聚焦一种气质：标题装饰字、正文清晰字，不混用导致整体气质漂移。"
+      ],
+      "relates": ["站酷庆科黄油体", "站酷快乐体", "Nunito", "Quicksand", "思源宋体", "朱雀仿宋", "汇文明朝体"],
+      "sources": ["F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md", "F:/AI/kesheng/agents/art-director.md"]
+    },
+    {
+      "name": "平台可用性与字库兜底",
+      "rules": [
+        "剪映/CapCut/PPT 原生可用字体先行（思源系、普惠体、Roboto、Inter、Noto、Roboto Mono）；需单独安装的字用『字体白名单』统一打包装备。",
+        "新增字体需验证在当前剪辑工作台可正确渲染（含字重/等宽/多语言 glyph 覆盖）；缺 glyph 时回退到思源/Noto。",
+        "一个项目只用一个中文主体 + 一个英文主体，出片前做缺失字符检查，杜绝乱码/方块字。",
+        "团队 VI 默认中文=思源黑体，英文=Roboto/Inter，数据标注=Roboto Mono/DIN（等宽）；在此基础上按题材增补，保证全片风格不漂移。"
+      ],
+      "relates": ["思源黑体", "Roboto", "Inter", "Roboto Mono", "Noto Sans", "art-director-美术方案.md"],
+      "sources": ["F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md", "F:/AI/kesheng/agents/art-director.md"]
+    }
+  ]
+}

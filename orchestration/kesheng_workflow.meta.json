@@ -1,0 +1,17 @@
+{
+  "name": "kesheng-workflow",
+  "description": "科生 · 科研视频制作全自动多agent fan-out(真实剧组建制): M2并行调研→M3盲提案×4+交叉质询+红队→导演整合→口播稿→分镜表‖声音方案→摄影方案→prompt分段并行‖剪辑预计划→红队前置闸→出口评审闸",
+  "whenToUse": "用户明确要求「全自动跑完」或档位=L 的复杂项目。默认关卡式(制片人逐关派活+用户确认)不用本脚本。",
+  "phases": [
+    { "title": "A. M2 并行调研", "detail": "科学顾问/观众代言人/导演 3 路并行" },
+    { "title": "B. M3 盲提案", "detail": "编剧/分镜师/摄影指导/导演 4 份独立提案" },
+    { "title": "C. M3 交叉质询", "detail": "4 路质询 + 红队致命反对(withCouncil=true)" },
+    { "title": "D. M3 导演整合", "detail": "导演视角独立 agent 产出 m3-proposal.md" },
+    { "title": "E. M4 口播稿", "detail": "编剧产出全片口播稿 v2" },
+    { "title": "F. M4 分镜表", "detail": "分镜师分镜表(返回分段JSON) ‖ 声音设计师声音方案" },
+    { "title": "G. M4 摄影方案", "detail": "摄影指导运镜/光影/拍法路线" },
+    { "title": "H. M4 prompt 转写", "detail": "按段并行 fan-out ‖ 剪辑师剪辑预计划" },
+    { "title": "I. M4 红队前置闸", "detail": "硬性违规 pass/fail" },
+    { "title": "J. M5 出口评审闸", "detail": "独立 Reviewer 打分 PASS/CONDITIONAL/BLOCK" }
+  ]
+}

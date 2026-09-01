@@ -1,0 +1,69 @@
+# ============================================================================
+# schema.yaml — 科生「编剧」领域知识图谱 Pack Schema
+# pack: screenwriter-kg
+# ============================================================================
+
+pack: screenwriter-kg
+role: 编剧
+
+pack_meta:
+  角色: 编剧
+  定位: "叙事与口播稿（钩子→意义建立→核心内容→情感收尾→CTA；产品广告文案层与受众适配）"
+  构建来源: |
+    knowledge/hooks/opening-hooks.md
+    knowledge/hooks/cta-examples.md
+    knowledge/ad-copy.md
+    knowledge/B2B广告手法.md
+    knowledge/痛点链.md
+    knowledge/文案层.md
+    knowledge/tvc-ad-templates.md
+    knowledge/templates/A01-total-intro.md
+    knowledge/templates/C-multi-audience-guide.md
+    agents/screenwriter.md
+    （knowledge/index.md 仅取「叙事与文案」相关行作参考）
+  更新规则: |
+    新知识由项目收尾萃取循环补充：工艺心得入本知识图谱（新建概念卡或更新卡片"项目验证"行），
+    与 knowledge/index.md 的「叙事与文案」区保持一致；权威正文始终在原文件。
+  富集说明: |
+    本领域无外部API可富集，内容来自团队沉淀，新知识由项目收尾萃取循环补充。
+
+primary_key: "id = `Type:名称`（Type 为实体类型的英文名，名称用中文）"
+
+entity_types:
+  - type: HookType
+    说明: 开头钩子类型（数据冲击/悬念提问/反常识/身份代入/故事切入/申报专用，含适用受众与写法）
+    示例id: "HookType:数据冲击型"
+  - type: NarrativeStructure
+    说明: 叙事结构（开头钩子→意义建立→核心内容→情感收尾→CTA；申报片6镜头结构；痛点链/工业广告叙事型）
+    示例id: "NarrativeStructure:申报片六镜头结构"
+  - type: CtaFormula
+    说明: CTA 公式（情感句+行动指令+利益承诺；金句收尾库）
+    示例id: "CtaFormula:CTA黄金公式"
+  - type: ScriptTemplate
+    说明: 脚本模板（A01 申报片模板、C 多受众指南、品牌TVC/电商带货/带货玩法模板）
+    示例id: "ScriptTemplate:A01申报片模板"
+  - type: AudienceMode
+    说明: 受众模式（EXP/GOV/PUB/STD/IND 的叙事要求）
+    示例id: "AudienceMode:EXP"
+  - type: WritingRule
+    说明: 写作纪律（单主钩子/术语首次解释/数据带出处/40字5秒/节奏密度等）
+    示例id: "WritingRule:单主钩子纪律"
+  - type: AdCopyLaw
+    说明: 广告文案法则（痛点链公式/大字文案层规范/语气红线/CTA公式/B2B手法）
+    示例id: "AdCopyLaw:痛点链公式"
+
+relation_types:
+  - type: hook-for-audience
+    说明: 钩子类型 → 受众模式，某钩子最适合某类受众（如专家→数据冲击/悬念；领导→身份代入/申报专用）
+  - type: structure-in-template
+    说明: 叙事结构 → 脚本模板，该结构内嵌于某模板
+  - type: template-for-audience
+    说明: 脚本模板 → 受众模式，模板面向某受众
+  - type: rule-applies-to
+    说明: 写作纪律 → (结构/模板/受众/钩子)，纪律约束的对象
+  - type: law-drives-structure
+    说明: 广告文案法则 → 叙事结构，法则驱动某种结构
+  - type: hook-leads-to-structure
+    说明: 钩子类型 → 叙事结构，钩子作为结构开头
+  - type: structure-contains-part
+    说明: 叙事结构 → (结构/CtaFormula)，结构包含某收尾部分

@@ -1,0 +1,682 @@
+{
+ "schema_version": "1.0",
+ "pack": "creative-kg",
+ "role": "导演/创意",
+ "entities": [
+  {
+   "id": "IdeationMethod:SIT结构模板",
+   "type": "IdeationMethod",
+   "name": "SIT结构模板",
+   "props": {
+    "分类": "A结构模板",
+    "说明": "用既定结构模板(替代/去除/统一/倍增等)改造成熟物, 替代自由联想"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:SCAMPER",
+   "type": "IdeationMethod",
+   "name": "SCAMPER",
+   "props": {
+    "分类": "A结构模板",
+    "说明": "替代Substitute/组合Combine/调整Adapt/放大Magnify/挪作他用Put/删除Eliminate/重排Reverse 逐项推演"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:TRIZ广告十原则",
+   "type": "IdeationMethod",
+   "name": "TRIZ广告十原则",
+   "props": {
+    "分类": "A结构模板",
+    "说明": "发明问题解决理论的广告化十原则, 从矛盾中找创意解法"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:形态分析法",
+   "type": "IdeationMethod",
+   "name": "形态分析法",
+   "props": {
+    "分类": "A结构模板",
+    "说明": "把对象拆成维度×取值矩阵, 交叉组合出新概念"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:双关联Bisociation",
+   "type": "IdeationMethod",
+   "name": "双关联Bisociation",
+   "props": {
+    "分类": "B联想碰撞",
+    "说明": "两个不相干领域碰撞出新意义(如'洗衣机×动物园')"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:随机闯入/随机词",
+   "type": "IdeationMethod",
+   "name": "随机闯入/随机词",
+   "props": {
+    "分类": "B联想碰撞",
+    "说明": "随机词/随机概念强制进入, 打破思维定势"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:强制连接",
+   "type": "IdeationMethod",
+   "name": "强制连接",
+   "props": {
+    "分类": "B联想碰撞",
+    "说明": "把两件毫无关系的事物按规则连接"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:综摄法Synectics",
+   "type": "IdeationMethod",
+   "name": "综摄法Synectics",
+   "props": {
+    "分类": "B联想碰撞",
+    "说明": "类比/明喻/个人代入/幻想 四类比驱动创新"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:反向头脑风暴",
+   "type": "IdeationMethod",
+   "name": "反向头脑风暴",
+   "props": {
+    "分类": "C反转颠覆",
+    "说明": "先列出'怎么把这事做砸', 再反向得到妙招"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:最烂想法",
+   "type": "IdeationMethod",
+   "name": "最烂想法",
+   "props": {
+    "分类": "C反转颠覆",
+    "说明": "先产出最糟糕的10个想法, 常有意外可用的"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:挑衅PO",
+   "type": "IdeationMethod",
+   "name": "挑衅PO",
+   "props": {
+    "分类": "C反转颠覆",
+    "说明": "用'PO'挑衅句('角度必须消失')开启颠覆"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:奥博李克策略",
+   "type": "IdeationMethod",
+   "name": "奥博李克策略",
+   "props": {
+    "分类": "D重组扰动",
+    "说明": "随机'扰乱卡'指令打破推理链(如'拔掉最重要的钉子')"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:六顶思考帽",
+   "type": "IdeationMethod",
+   "name": "六顶思考帽",
+   "props": {
+    "分类": "D重组扰动",
+    "说明": "白事实/红情感/黑批判/黄乐观/绿创造/蓝流程 分角色思考"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:迪士尼创意策略",
+   "type": "IdeationMethod",
+   "name": "迪士尼创意策略",
+   "props": {
+    "分类": "D重组扰动",
+    "说明": "梦想家→现实家→批评家 三角色轮流推进"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:疯狂8连",
+   "type": "IdeationMethod",
+   "name": "疯狂8连",
+   "props": {
+    "分类": "E量产",
+    "说明": "8分钟8个草图, 先量后质"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:脑写6-3-5",
+   "type": "IdeationMethod",
+   "name": "脑写6-3-5",
+   "props": {
+    "分类": "E量产",
+    "说明": "6人×3想法×5轮 纸上接力, 无噪音量产"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:星爆提问Starbursting",
+   "type": "IdeationMethod",
+   "name": "星爆提问Starbursting",
+   "props": {
+    "分类": "E量产",
+    "说明": "围绕想法的5W1H层层提问, 暴露盲点"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:第一性原理",
+   "type": "IdeationMethod",
+   "name": "第一性原理",
+   "props": {
+    "分类": "F加成",
+    "说明": "回到最基本物理/事实做推理, 不套用类比与惯例"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:横向思维工具箱",
+   "type": "IdeationMethod",
+   "name": "横向思维工具箱",
+   "props": {
+    "分类": "F加成",
+    "说明": "de Bono横向思维系列(逃逸概念/插入随机/操作词)"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "IdeationMethod:设计冲刺草图",
+   "type": "IdeationMethod",
+   "name": "设计冲刺草图",
+   "props": {
+    "分类": "F加成",
+    "说明": "三遍变体草图+热身后画故事板, 快筛概念"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "InsightRule:四点洞察",
+   "type": "InsightRule",
+   "name": "Pollard四点洞察",
+   "props": {
+    "链条": "Problem难题→Insight洞察→Advantage优势→Strategy策略",
+    "格式": "[受众]想要[X], 但[Y]在阻碍, 因为[Z]",
+    "质检": "听完是否'对, 就是这个, 但我从没这么说'——刷新世界观才算洞察",
+    "铁律": "洞察先于创意: 没有洞察不做创意"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/SKILL.md",
+    "libs/creative-director-skill/creative-director/references/scoring-calibration.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "EvalRule:评分标定",
+   "type": "EvalRule",
+   "name": "创意评分标定(戛纳校准)",
+   "props": {
+    "六维权重": "原创性0.25/策略契合0.20/情绪反应0.20/可行性0.15/延展性0.10/简洁0.10",
+    "三轴门控": "轴1简报合规(硬门)→轴2创意强度(六维加权)→轴3延展性/创意层级",
+    "防膨胀": "禁用'还不错'式灌分; 多视角面板(策略/创意/执行/客户)打分",
+    "打回": "评分<7.0或平台期→案例浸泡(重读8-12个传奇案例)再回洞察阶段"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/SKILL.md",
+    "libs/creative-director-skill/creative-director/references/scoring-calibration.md"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "CreativeRule:简洁即暴力",
+   "type": "CreativeRule",
+   "name": "简洁即暴力",
+   "props": {
+    "原则": "最好的创意一句话能讲清(Simplicity as Violence)",
+    "只讲一个": "大创意只回答一个洞察; 说不清=不够好"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/SKILL.md",
+    "libs/creative-director-skill/creative-director/references/scoring-calibration.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "CreativeRule:重组合法",
+   "type": "CreativeRule",
+   "name": "重组合法(跨界拼装)",
+   "props": {
+    "规则": "允许: A案例的洞察+B案例的机制+C案例的情绪 重组; 必须注明拼了哪些卡(溯源), 这是戛纳精选的常规做法而非抄袭"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/SKILL.md",
+    "libs/creative-director-skill/creative-director/references/scoring-calibration.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "CreativeRule:结构方法代替自由联想",
+   "type": "CreativeRule",
+   "name": "结构方法代替自由联想",
+   "props": {
+    "规则": "创意生成必须用结构化方法论(SIT/SCAMPER/TRIZ/双关联…20法), 禁止'灵光一现'式自由联想",
+    "方法目录": "kg_query --domain 叙事 IdeationMethod / libs/creative-director-skill/references/methods-catalog.md"
+   },
+   "sources": [
+    "libs/creative-director-skill/creative-director/references/methods-catalog.md"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "PipelineMapping:koda十步",
+   "type": "PipelineMapping",
+   "name": "Koda十步管线映射科生",
+   "props": {
+    "映射": "brief=KSP-02简报(制片人)→concept=KSP-04概念(导演)→script=口播稿(编剧)→storyboard=分镜表(分镜师)→art-direction=美术方案(美术指导)→trends=受众与市场(观众代言人)→generate=逐镜prompt(prompt工程师)→assemble=AI原生后期(剪辑师)→publish=交付签收(KSP-06)→repurpose=多平台复用(图文切片/重剪)",
+    "参考": "libs/koda-stack/skills/ 10 个 skill 同名对应"
+   },
+   "sources": [
+    "libs/koda-stack/README.md"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "InsightRule:四点洞察",
+   "target": "Rule:概念先行",
+   "type": "insight-feeds",
+   "props": {}
+  },
+  {
+   "source": "EvalRule:评分标定",
+   "target": "Rule:概念先行",
+   "type": "eval-for",
+   "props": {}
+  },
+  {
+   "source": "CreativeRule:简洁即暴力",
+   "target": "Rule:概念先行",
+   "type": "principle-of",
+   "props": {}
+  },
+  {
+   "source": "CreativeRule:重组合法",
+   "target": "Rule:概念先行",
+   "type": "principle-of",
+   "props": {}
+  },
+  {
+   "source": "CreativeRule:结构方法代替自由联想",
+   "target": "Rule:概念先行",
+   "type": "principle-of",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:SIT结构模板",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:SIT结构模板",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:SCAMPER",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:SCAMPER",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:TRIZ广告十原则",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:TRIZ广告十原则",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:形态分析法",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:形态分析法",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:双关联Bisociation",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:双关联Bisociation",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:随机闯入/随机词",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:随机闯入/随机词",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:强制连接",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:强制连接",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:综摄法Synectics",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:综摄法Synectics",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:反向头脑风暴",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:反向头脑风暴",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:最烂想法",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:最烂想法",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:挑衅PO",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:挑衅PO",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:奥博李克策略",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:奥博李克策略",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:六顶思考帽",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:六顶思考帽",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:迪士尼创意策略",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:迪士尼创意策略",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:疯狂8连",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:疯狂8连",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:脑写6-3-5",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:脑写6-3-5",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:星爆提问Starbursting",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:星爆提问Starbursting",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:第一性原理",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:第一性原理",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:横向思维工具箱",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:横向思维工具箱",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:设计冲刺草图",
+   "target": "Rule:概念先行",
+   "type": "method-for",
+   "props": {}
+  },
+  {
+   "source": "IdeationMethod:设计冲刺草图",
+   "target": "InsightRule:四点洞察",
+   "type": "method-requires",
+   "props": {}
+  },
+  {
+   "source": "PipelineMapping:koda十步",
+   "target": "KspStep:KSP-04创意概念",
+   "type": "pipeline-refs",
+   "props": {}
+  }
+ ]
+}

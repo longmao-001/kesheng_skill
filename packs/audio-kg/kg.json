@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "pack": "audio-kg",
+  "role": "声音设计师",
+  "entities": [
+    {"id": "BgmDirection:史诗宏大", "type": "BgmDirection", "name": "史诗宏大", "props": {"适用": "申报/成果/政府场景", "曲风": "弦乐+打击+鼓点渐进", "情绪曲线": "起承转合, 结尾上扬"}, "sources": ["agents/sound-designer.md", "playbooks/production-workflow.md"]},
+    {"id": "BgmDirection:轻快好奇", "type": "BgmDirection", "name": "轻快好奇", "props": {"适用": "科普/学生/大众", "曲风": "轻电子/木管/律动感", "节奏": "前段快勾起兴趣"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "BgmDirection:节奏驱动", "type": "BgmDirection", "name": "节奏驱动", "props": {"适用": "产品片/B2B宣传", "曲风": "电子鼓点/四四拍", "使用": "配合卡点剪辑与音效驱动"}, "sources": ["agents/sound-designer.md", "knowledge/动感三来源.md"]},
+    {"id": "BgmRule:情绪曲线设计", "type": "BgmRule", "name": "BGM情绪曲线", "props": {"要点": "哪段起/哪段落/哪段无音乐只留环境声", "依据": "导演阐述+受众模式的情绪走向"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "SoundFx:环境声", "type": "SoundFx", "name": "环境声", "props": {"作用": "建立真实空间感(实验室/仪器/室外)", "纪律": "与画面场景一致"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "SoundFx:拟音", "type": "SoundFx", "name": "拟音", "props": {"作用": "动作/触碰/设备的现实声音", "注意": "不要夸大真实度(伪科学音色禁区)"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "SoundFx:转场音", "type": "SoundFx", "name": "转场音", "props": {"作用": "视觉转场的声音同步(whoosh/叮/渐隐)", "配合": "与剪辑师转场设计对位"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "SoundFx:界面提示音", "type": "SoundFx", "name": "界面提示音", "props": {"作用": "数据卡/结构图出现时的轻提示", "注意": "音量克制, 不覆盖旁白"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "VoiceRule:术语发音检查", "type": "VoiceRule", "name": "术语发音检查", "props": {"重要性": "科研片重灾区", "做法": "定语速/重音/特殊读音; 易读错术语建议编剧换词"}, "sources": ["agents/sound-designer.md", "protocols/quality-gate.md"]},
+    {"id": "VoiceRule:口播对齐镜头", "type": "VoiceRule", "name": "口播对齐镜头", "props": {"做法": "TTS/克隆音色录制后逐句对齐镜头", "兜底": "与台词不同步时回分镜重切段落(不在剪辑硬拉)"}, "sources": ["agents/sound-designer.md", "playbooks/production-workflow.md"]},
+    {"id": "VoiceRule:音色选择", "type": "VoiceRule", "name": "音色选择", "props": {"方向": "按受众模式: 专家=沉稳清晰/科普=年轻有活力/领导=厚重可信"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "MixRule:响度平整", "type": "MixRule", "name": "响度平整", "props": {"标准": "对白-24 LUFS 级习惯", "红线": "BGM副歌不得压过旁白", "分层": "音乐/音效/人声三轨分层"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "MixRule:外放检查", "type": "MixRule", "name": "外放检查", "props": {"场景": "会议现场扬声器/手机外放", "做法": "成片三遍听: 闭眼听/看画面听/外放听"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "SoundRule:音效不夸大", "type": "SoundRule", "name": "音效不夸大", "props": {"红线": "基因编辑配魔幻变形音效=伪科学音色", "原则": "声音服务信息传达与信任感, 夸张音效仅限品牌片头等"}, "sources": ["agents/sound-designer.md"]},
+    {"id": "SoundRule:音效驱动剪辑", "type": "SoundRule", "name": "音效驱动剪辑", "props": {"触发": "成品动感不足时", "优先生": "速度斜坡+音效驱动, 先于重抽镜头"}, "sources": ["agents/sound-designer.md", "knowledge/动感三来源.md"]},
+    {"id": "SoundRule:版权合规", "type": "SoundRule", "name": "版权合规", "props": {"红线": "不推未经授权的成品歌/音效/克隆音色", "方向": "商用可授权音乐库/自作曲/AI音乐生成"}, "sources": ["agents/sound-designer.md"]}
+  ],
+  "relations": [
+    {"source": "BgmDirection:史诗宏大", "target": "BgmRule:情绪曲线设计", "type": "bgm-uses", "props": {}},
+    {"source": "BgmDirection:轻快好奇", "target": "BgmRule:情绪曲线设计", "type": "bgm-uses", "props": {}},
+    {"source": "BgmDirection:节奏驱动", "target": "BgmRule:情绪曲线设计", "type": "bgm-uses", "props": {}},
+    {"source": "BgmDirection:节奏驱动", "target": "SoundRule:音效驱动剪辑", "type": "drives", "props": {}},
+    {"source": "SoundFx:环境声", "target": "MixRule:响度平整", "type": "layered-in", "props": {}},
+    {"source": "SoundFx:拟音", "target": "SoundRule:音效不夸大", "type": "governed-by", "props": {}},
+    {"source": "SoundFx:转场音", "target": "SoundFx:界面提示音", "type": "paired-with", "props": {}},
+    {"source": "VoiceRule:术语发音检查", "target": "VoiceRule:口播对齐镜头", "type": "pairs-with", "props": {}},
+    {"source": "VoiceRule:口播对齐镜头", "target": "MixRule:响度平整", "type": "mixed-with", "props": {}},
+    {"source": "VoiceRule:音色选择", "target": "MixRule:响度平整", "type": "input-to", "props": {}},
+    {"source": "MixRule:外放检查", "target": "MixRule:响度平整", "type": "verifies", "props": {}},
+    {"source": "SoundRule:音效驱动剪辑", "target": "BgmDirection:节奏驱动", "type": "supports", "props": {}},
+    {"source": "SoundRule:版权合规", "target": "BgmDirection:史诗宏大", "type": "applies-to", "props": {}},
+    {"source": "SoundRule:版权合规", "target": "BgmDirection:轻快好奇", "type": "applies-to", "props": {}},
+    {"source": "SoundRule:版权合规", "target": "BgmDirection:节奏驱动", "type": "applies-to", "props": {}},
+    {"source": "SoundRule:音效不夸大", "target": "MixRule:外放检查", "type": "enforced-by", "props": {}}
+  ]
+}

@@ -1,0 +1,2639 @@
+{
+ "schema_version": "1.0",
+ "pack": "scientist-kg",
+ "role": "科学顾问",
+ "entities": [
+  {
+   "id": "ScientificConcept:合成生物学",
+   "type": "ScientificConcept",
+   "name": "合成生物学",
+   "props": {
+    "定位": "用工程学方法设计建造新的生物系统",
+    "类比": "像编程写代码，代码是DNA，运行者是活细胞",
+    "领域": "生物学"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:基因编辑",
+   "type": "ScientificConcept",
+   "name": "基因编辑",
+   "props": {
+    "定义": "用分子剪刀对DNA进行精准剪切、修改或替换",
+    "类比": "文字处理的查找-替换，操作对象是生命源代码",
+    "家族": "CRISPR-Cas9/碱基编辑/引物编辑/脱靶效应/敲除敲入",
+    "边界": "伦理：生殖系编辑在多数国家被禁止",
+    "误区": "编辑不等于随机突变，需靶向+脱靶控制"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:DNA组装",
+   "type": "ScientificConcept",
+   "name": "DNA组装",
+   "props": {
+    "定义": "多个DNA片段按预定顺序连接成更大DNA分子",
+    "类比": "搭积木/写代码拼模块",
+    "关键点": "从几周提速到自动化批量拼",
+    "误区": "不是PCR，PCR是复制"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:基因组重编码",
+   "type": "ScientificConcept",
+   "name": "基因组重编码",
+   "props": {
+    "定义": "系统性密码子替换或基因序列重设计",
+    "类比": "重写一整章书而非改错别字",
+    "能力": "抗病毒、扩展密码子表、整合非天然氨基酸",
+    "vs基因编辑": "改一个点 vs 系统性改造整个基因组"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:代谢通路重构",
+   "type": "ScientificConcept",
+   "name": "代谢通路重构",
+   "props": {
+    "定义": "改造胞内酶表达与调控，重设计代谢物合成路线",
+    "类比": "工厂改造/换菜谱",
+    "难点": "中间产物毒、酶不表达、产物降解",
+    "需迭代": "几十轮优化（启动子/拷贝数/辅因子）"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:细胞工厂",
+   "type": "ScientificConcept",
+   "name": "细胞工厂",
+   "props": {
+    "定义": "工程化改造的微生物细胞高效生产目标化合物",
+    "类比": "自动化厂房，酶是工人，通路是流水线",
+    "限制": "毒性、膜通透性、能量供应",
+    "成本": "不比化工便宜，需看复杂度"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:高通量筛选",
+   "type": "ScientificConcept",
+   "name": "高通量筛选",
+   "props": {
+    "定义": "自动化快速测试大量变体以找最优者",
+    "类比": "选秀海选/同时试一万把钥匙",
+    "误区": "不是随机乱试，需智能设计文库",
+    "局限": "只保证当前测过的里面最好，不保证全局最优"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:CRISPR-Cas9",
+   "type": "ScientificConcept",
+   "name": "CRISPR-Cas9",
+   "props": {
+    "定义": "Cas9核酸酶+gRNA实现靶向DNA切割",
+    "类比": "gRNA是GPS导航，Cas9是剪刀",
+    "局限": "有脱靶/需PAM/大片段插入效率低",
+    "对比": "CRISPR做敲除/KI低；植物比动物难"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:碱基编辑",
+   "type": "ScientificConcept",
+   "name": "碱基编辑",
+   "props": {
+    "定义": "单碱基直接转换(C→T/A→G)不产生DSB",
+    "类比": "橡皮擦单字修改/只换一个瘪轮胎",
+    "局限": "只支持4类转换，不能插入/删除",
+    "优点": "更精细更安全，少意外突变"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:引物编辑",
+   "type": "ScientificConcept",
+   "name": "引物编辑",
+   "props": {
+    "定义": "逆转录酶+pegRNA的搜索-替换式基因编辑",
+    "类比": "瑞士军刀/文本编辑器全部功能",
+    "能力": "所有12种碱基转换±小indel",
+    "局限": "大片段(>100bp)效率仍低"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:脱靶效应",
+   "type": "ScientificConcept",
+   "name": "脱靶效应",
+   "props": {
+    "定义": "在非目标位置产生意外的DNA修饰",
+    "类比": "射偏了/药物副作用",
+    "降低": "高保真Cas9变体可降90%以上",
+    "误区": "大多数脱靶不一定有害，所有技术都有"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:基因敲除与敲入",
+   "type": "ScientificConcept",
+   "name": "基因敲除与敲入",
+   "props": {
+    "定义": "KO破坏/移除基因功能；KI在特定位点插入新基因",
+    "类比": "KO拔插头/拆门；KI换零件/换智能锁",
+    "效率": "KO一般30-80%，KI一般1-20%（行业痛点）",
+    "误区": "敲入不见得不重要，修复突变需精确插入"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:植物代谢",
+   "type": "ScientificConcept",
+   "name": "植物代谢",
+   "props": {
+    "定位": "植物体内的化学反应网络/化工厂",
+    "类比": "生产防御产物、吸引传粉者",
+    "领域": "生物学"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:初生次生代谢",
+   "type": "ScientificConcept",
+   "name": "初生次生代谢",
+   "props": {
+    "区分": "初生=维持生命基本活动；次生=适应环境/防御/交流",
+    "类比": "基础设施（水电网）vs 装修风格",
+    "记忆": "次生代谢=植物特色菜，每家餐馆招牌菜不同",
+    "科生常碰": "次生代谢几乎每次都是重点"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:黄酮类化合物",
+   "type": "ScientificConcept",
+   "name": "黄酮类化合物",
+   "props": {
+    "定义": "以2-苯基色酮为骨架的一类多酚化合物",
+    "类比": "植物防晒霜+防弹衣/化妆品",
+    "子类": "黄酮醇/黄酮/儿茶素/花青素/异黄酮",
+    "注意": "高剂量有毒/生物利用度低/植物需平衡"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:萜类化合物",
+   "type": "ScientificConcept",
+   "name": "萜类化合物",
+   "props": {
+    "定义": "由异戊二烯(C5)单元聚合而成，最大类天然有机化合物",
+    "类比": "乐高积木：2/4/6/8块拼单/二/三/四萜",
+    "代表": "薄荷醇/青蒿素/紫杉醇/人参皂苷/β-胡萝卜素",
+    "误区": "精油只是萜类一小部分；几乎所有植物都合成"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:代谢通路",
+   "type": "ScientificConcept",
+   "name": "代谢通路",
+   "props": {
+    "定义": "一系列连续酶促反应将起始底物转化为终产物",
+    "类比": "工厂流水线/地铁线路",
+    "特征": "级联反应、调控点、通路交叉",
+    "误区": "不是直线而是网络"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:酶",
+   "type": "ScientificConcept",
+   "name": "酶",
+   "props": {
+    "定义": "催化生化反应的蛋白质，降低反应活化能",
+    "类比": "专用扳手/流水线工人",
+    "特性": "底物特异性、催化效率可达非酶反应10^17倍",
+    "科生常遇": "CHS/CHI/FNS/TPS/CPR等"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:转录因子",
+   "type": "ScientificConcept",
+   "name": "转录因子",
+   "props": {
+    "定义": "结合DNA特定序列以调控基因表达的蛋白质",
+    "类比": "调音台推子/项目经理",
+    "关键意义": "改造TF常比逐个改酶更高效（一个TF控多基因）",
+    "误区": "TF是调控蛋白，本身也由基因编码"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "ScientificConcept",
+   "name": "激光驱动等离子体宽谱光源",
+   "props": {
+    "别名": "LDLS/激光维持等离子体光源",
+    "机制": "高功率激光聚焦进充高压氙气石英灯泡，点火后等离子体完全靠吸收激光维持",
+    "输出": "约170nm-2500nm连续宽谱",
+    "关键创新": "电极只点火零损耗，发光点由激光焦斑钉住",
+    "三层意义": "个人替代多灯组合/领域定信噪比上限/社会影响仪器产业"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:光放电等离子体",
+   "type": "ScientificConcept",
+   "name": "光放电等离子体",
+   "props": {
+    "特点": "等离子体与电极分离，完全靠吸收激光能量维持",
+    "对比": "非电弧放电",
+    "温度": "焦点处1万-2万K",
+    "命名": "正确说法是无电极烧蚀而非无电极灯"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:étendue",
+   "type": "ScientificConcept",
+   "name": "étendue(光扩展)",
+   "props": {
+    "核心": "光扩展/光展角：小发光点更容易耦合进小孔径光学系统",
+    "意义": "发光点小使狭缝/光纤也能高效进光",
+    "好处": "高辐射亮度+高稳定性",
+    "常见错误": "LED总功率不如小发光点高亮度关键"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:连续谱辐射",
+   "type": "ScientificConcept",
+   "name": "连续谱辐射",
+   "props": {
+    "定义": "以类黑体连续辐射为主的宽谱输出",
+    "微观机制": "电子-离子复合辐射+轫致辐射",
+    "注意": "微观拆分未找到逐字公开来源，对外只说连续谱为主谱线次要",
+    "非激光": "输出是非相干宽谱，激光封闭在灯室内"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:套刻误差测量",
+   "type": "ScientificConcept",
+   "name": "套刻误差测量",
+   "props": {
+    "方法": "IBO/DBO",
+    "关键": "不同膜层最优波长不同，靶标形变下需多波长才准确稳健",
+    "趋势": "多通道DBO、向红外延伸",
+    "需求": "宽谱覆盖+各波段平坦+光谱形状长期稳定"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:光谱椭偏",
+   "type": "ScientificConcept",
+   "name": "光谱椭偏",
+   "props": {
+    "用途": "靠多波长数据反演膜厚与光学常数",
+    "需求": "全谱段每波段都要有足够强度",
+    "耦合": "小发光点才能耦合进<50µm测试pad",
+    "结论": "高辐射亮度+小发光点"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:OCD关键尺寸",
+   "type": "ScientificConcept",
+   "name": "OCD关键尺寸",
+   "props": {
+    "原理": "实测光谱与模型库匹配反演形貌",
+    "公式": "测得光谱=光源谱形×样品响应",
+    "风险": "光源谱形漂移会污染匹配、破坏机台间匹配",
+    "结论": "光谱形状稳定是关键"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:半导体量测光源需求链",
+   "type": "ScientificConcept",
+   "name": "半导体量测光源需求链",
+   "props": {
+    "核心": "检测任务→物理约束→对光源的要求",
+    "翻译层": "光源参数→传导链→设备指标",
+    "链条": "亮度→SNR/速度；小发光点→分辨率；宽谱→替代多灯；稳定→recipe可移植；长寿命→uptime",
+    "定位": "量测设备性能上限一半由光源决定"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "Analogy:DNA组装-搭积木",
+   "type": "Analogy",
+   "name": "搭积木",
+   "props": {
+    "目标概念": "DNA组装",
+    "描述": "每块片段是积木，按图纸拼成完整模型",
+    "受众": "全受众",
+    "误导风险": "可能低估大规模拼接(>50kb)与重复序列难度"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "Analogy:基因组重编码-重写书籍",
+   "type": "Analogy",
+   "name": "重写书籍",
+   "props": {
+    "目标概念": "基因组重编码",
+    "描述": "把所有的'的'换成'之'，整本意思不变但完全重写",
+    "受众": "全受众",
+    "误导风险": "勿与单点基因编辑混淆"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "Analogy:代谢通路重构-工厂改造",
+   "type": "Analogy",
+   "name": "工厂改造",
+   "props": {
+    "目标概念": "代谢通路重构",
+    "描述": "拆掉废料管线，加装高纯度产品线",
+    "受众": "全受众",
+    "误导风险": "绝非一转基因就能产，要几十轮迭代"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "Analogy:细胞工厂-面包发酵",
+   "type": "Analogy",
+   "name": "面包发酵",
+   "props": {
+    "目标概念": "细胞工厂",
+    "描述": "酵母吃面粉吐CO₂让面包发胀，现代版只是精确控制造什么",
+    "受众": "全受众",
+    "误导风险": "细胞工厂不是什么都造，受物理化学约束"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "Analogy:高通量筛选-选秀海选",
+   "type": "Analogy",
+   "name": "选秀海选",
+   "props": {
+    "目标概念": "高通量筛选",
+    "描述": "1万选手同时上台，机器评委自动打分晋级前10",
+    "受众": "公众/学生",
+    "误导风险": "不是随机乱试，需智能设计文库"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "Analogy:CRISPR-GPS导航剪刀",
+   "type": "Analogy",
+   "name": "GPS导航的剪刀",
+   "props": {
+    "目标概念": "CRISPR-Cas9",
+    "描述": "gRNA告诉剪刀去哪剪（导航），Cas9执行剪切",
+    "受众": "全受众",
+    "误导风险": "易忽略PAM限制与脱靶"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "Analogy:碱基编辑-单字修改",
+   "type": "Analogy",
+   "name": "单字修改",
+   "props": {
+    "目标概念": "碱基编辑",
+    "描述": "只改一个拼写错误，而非删掉整个词再重打",
+    "受众": "全受众",
+    "误导风险": "目前不能插入/删除，只支持4类转换"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "Analogy:引物编辑-瑞士军刀",
+   "type": "Analogy",
+   "name": "瑞士军刀",
+   "props": {
+    "目标概念": "引物编辑",
+    "描述": "CRISPR是大砍刀、碱基编辑是圆珠笔、引物编辑是整套工具箱",
+    "受众": "全受众",
+    "误导风险": "大片段(>100bp)编辑效率仍很低，未取代CRISPR"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "Analogy:脱靶效应-药物副作用",
+   "type": "Analogy",
+   "name": "药物副作用",
+   "props": {
+    "目标概念": "脱靶效应",
+    "描述": "药治好病但也带来其他问题，不是药不好是不足够精准",
+    "受众": "全受众",
+    "误导风险": "大多数脱靶不一定有害，且所有编辑技术都有"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "Analogy:基因敲除-拔插头",
+   "type": "Analogy",
+   "name": "拔插头",
+   "props": {
+    "目标概念": "基因敲除与敲入",
+    "描述": "KO=把电器插头拔了（不工作了）",
+    "受众": "全受众",
+    "误导风险": "注：文稿原第二处'敲除'笔误应指敲入，需校对"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "Analogy:基因敲入-换零件",
+   "type": "Analogy",
+   "name": "换零件",
+   "props": {
+    "目标概念": "基因敲除与敲入",
+    "描述": "KI=把旧零件换成新的（有了新功能）",
+    "受众": "全受众",
+    "误导风险": "KI效率低（1-20%）是行业痛点"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "Analogy:黄酮类-防晒霜防弹衣",
+   "type": "Analogy",
+   "name": "植物的防晒霜+防弹衣",
+   "props": {
+    "目标概念": "黄酮类化合物",
+    "描述": "帮植物挡紫外线、抗虫抗菌；人吃了这些防护装备也受益",
+    "受众": "公众/学生",
+    "误导风险": "不全是好的，高剂量有毒，生物利用度低"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "Analogy:萜类-乐高积木",
+   "type": "Analogy",
+   "name": "乐高积木",
+   "props": {
+    "目标概念": "萜类化合物",
+    "描述": "异戊二烯C5是基础积木，2/4/6/8块拼单/二/三/四萜",
+    "受众": "全受众",
+    "误导风险": "勿误以为萜类=精油或只在芳香植物中"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "Analogy:代谢通路-工厂流水线",
+   "type": "Analogy",
+   "name": "工厂流水线",
+   "props": {
+    "目标概念": "代谢通路",
+    "描述": "原料进厂→工序1→工序2→成品出厂，每道工序=一个酶",
+    "受众": "全受众",
+    "误导风险": "通路不是直线是网络，改一个基因不能控整条通路"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "Analogy:酶-专用工具",
+   "type": "Analogy",
+   "name": "专用工具",
+   "props": {
+    "目标概念": "酶",
+    "描述": "每种酶是一把专用扳手，只能拧特定大小的螺丝",
+    "受众": "全受众",
+    "误导风险": "酶越多越好是错的，需平衡避免抢底物"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "Analogy:转录因子-调音台推子",
+   "type": "Analogy",
+   "name": "调音台推子",
+   "props": {
+    "目标概念": "转录因子",
+    "描述": "TF不发出声音，但控制每个音轨（基因）的音量",
+    "受众": "全受众",
+    "误导风险": "TF调控复杂（多靶基因/组织特异），效果难预测"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "Analogy:LDLS-指尖微型恒星",
+   "type": "Analogy",
+   "name": "指尖上的微型恒星",
+   "props": {
+    "目标概念": "激光驱动等离子体宽谱光源",
+    "描述": "放大镜聚光点把气体烧成一万多度的光",
+    "受众": "PUB/STD/GOV",
+    "误导风险": "发光点是约0.1mm的微小椭圆，不是大光球；激光不可见"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "Analogy:LDLS电极-点火器vs燃料",
+   "type": "Analogy",
+   "name": "点火器 vs 燃料",
+   "props": {
+    "目标概念": "光放电等离子体",
+    "描述": "打火机点一下，持续燃烧靠的是燃气（激光）而非打火机",
+    "受众": "PUB/STD",
+    "误导风险": "易误认为等离子体靠电流维持，实际100%来自激光吸收"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "Analogy:光源亮度-工人到岗",
+   "type": "Analogy",
+   "name": "光子就是工人",
+   "props": {
+    "目标概念": "半导体量测光源需求链",
+    "描述": "每秒到的工人越多，活干得越快（光子通量→速度）",
+    "受众": "GOV/IND",
+    "误导风险": "参数越大越好是误区，要匹配光学系统étendue"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "Analogy:谱形漂移-尺子刻度变",
+   "type": "Analogy",
+   "name": "尺子刻度天天变",
+   "props": {
+    "目标概念": "半导体量测光源需求链",
+    "描述": "尺子刻度天天变，昨天量的今天对不上（谱形漂移毁recipe）",
+    "受众": "PUB/STD",
+    "误导风险": "只讲定性，漂移量与套刻/CD误差的定量尚未公开"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "VisualizationIdea:LDLS-针尖白点爆亮",
+   "type": "VisualizationIdea",
+   "name": "针尖白点爆亮钩子",
+   "props": {
+    "目标概念": "激光驱动等离子体宽谱光源",
+    "画面": "纯黑中针尖白点爆亮、微粒溅射后收敛成稳定椭圆微恒星",
+    "景别": "特写固定机位",
+    "备注": "钩子镜头，AI质感甜区"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "VisualizationIdea:LDLS-腔体环绕恒星",
+   "type": "VisualizationIdea",
+   "name": "腔体里的恒星",
+   "props": {
+    "目标概念": "激光驱动等离子体宽谱光源",
+    "画面": "探入灯泡腔体环绕发光点，白亮核心+内敛光晕",
+    "运镜": "环绕运镜",
+    "备注": "写实可执行"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "VisualizationIdea:LDLS-色散光谱带",
+   "type": "VisualizationIdea",
+   "name": "色散光谱带",
+   "props": {
+    "目标概念": "激光驱动等离子体宽谱光源",
+    "画面": "白光穿过悬浮光栅展开为横贯画面连续光谱带，FPV沿带从紫黑飞到暗红",
+    "数据": "字卡压波段数值",
+    "备注": "写实可执行"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "VisualizationIdea:LDLS-稳定性波形线",
+   "type": "VisualizationIdea",
+   "name": "稳定性波形线",
+   "props": {
+    "目标概念": "激光驱动等离子体宽谱光源",
+    "画面": "固定机位光点恒定不动，画面下缘一条近平直细波形线缓缓延伸",
+    "背景": "光影流转暗示时间",
+    "备注": "提示发光点是约0.1mm微小椭圆而非大光球，激光用暗红细线表示"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "VisualizationIdea:光源需求-左右对照卡",
+   "type": "VisualizationIdea",
+   "name": "需求→实测左右对照卡",
+   "props": {
+    "目标概念": "半导体量测光源需求链",
+    "画面": "左侧检测需求逐行点亮，右侧产品参数落下配对",
+    "特性": "数据图表卡",
+    "备注": "写实可执行"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "VisualizationIdea:光谱覆盖条-应用分区",
+   "type": "VisualizationIdea",
+   "name": "光谱覆盖条+应用分区标签",
+   "props": {
+    "目标概念": "半导体量测光源需求链",
+    "画面": "光谱覆盖条+应用分区标签（DUV=缺陷检测/可见=套刻膜厚/NIR=OCD）",
+    "特性": "白底简笔示意图",
+    "备注": "参考Coherent公开图解风格"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "DataPoint:Gibson组装-10片段低错误率",
+   "type": "DataPoint",
+   "name": "Gibson组装错误率",
+   "props": {
+    "数值": "2009年Gibson可一次性组装10+片段，错误率<1/10000",
+    "出处": "合成生物学速查卡/经典论文",
+    "对比基准": "与早期几周拼一段对比",
+    "意义": "现代合成生物学基础工具"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "DataPoint:基因组重编码-321密码子",
+   "type": "DataPoint",
+   "name": "321密码子替换",
+   "props": {
+    "数值": "2013年Isaacs团队首次全基因组重编码，大肠杆菌321个密码子替换",
+    "样本量": "大肠杆菌基因组",
+    "出处": "合成生物学速查卡",
+    "意义": "人工基因组铺路"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "DataPoint:青蒿素产量-25gL",
+   "type": "DataPoint",
+   "name": "青蒿素微生物合成产量",
+   "props": {
+    "数值": "2013年Keasling团队，青蒿素前体微生物合成从0提升到25g/L",
+    "出处": "合成生物学/植物代谢速查卡",
+    "对比基准": "植物提取与微生物全合成",
+    "意义": "代谢工程商业化标杆"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md",
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "DataPoint:生物制造规模-2030数千亿美元",
+   "type": "DataPoint",
+   "name": "生物制造市场规模",
+   "props": {
+    "数值": "全球生物制造市场规模预计2030年达数千亿美元",
+    "出处": "合成生物学速查卡",
+    "样本量": "市场行业估算",
+    "补充": "胰岛素/抗体药物/氨基酸多已由细胞工厂生产"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "DataPoint:微流控高通量-每秒一万变体",
+   "type": "DataPoint",
+   "name": "微流控高通量通量",
+   "props": {
+    "数值": "微流控技术每秒测试>10000个变体；DNA合成+AI设计可缩搜索空间1000倍",
+    "出处": "合成生物学速查卡",
+    "对比基准": "传统逐测试",
+    "意义": "高通量不等于随机乱试"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "DataPoint:CRISPR成本-5000到100美元",
+   "type": "DataPoint",
+   "name": "CRISPR成本下降",
+   "props": {
+    "数值": "2012年发明，成本从$5000降到<$100，全球数千实验室使用",
+    "出处": "基因编辑速查卡",
+    "对比基准": "发明前与普及后",
+    "意义": "基因编辑民主化开始"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "DataPoint:碱基编辑CT效率-60%",
+   "type": "DataPoint",
+   "name": "碱基编辑效率",
+   "props": {
+    "数值": "2016年David Liu实验室，C→T转换效率可达60%（vs CRISPR HDR通常<10%）",
+    "出处": "基因编辑速查卡",
+    "对比基准": "CRISPR HDR",
+    "意义": "不产生双链断裂更少意外突变"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "DataPoint:敲入效率-1到20%",
+   "type": "DataPoint",
+   "name": "基因敲除/敲入效率",
+   "props": {
+    "数值": "KO效率通常30-80%；KI效率通常1-20%",
+    "出处": "基因编辑速查卡",
+    "对比基准": "KO vs KI",
+    "意义": "KI效率低是行业痛点"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "DataPoint:高保真Cas9降低脱靶-90%",
+   "type": "DataPoint",
+   "name": "高保真Cas9降低脱靶",
+   "props": {
+    "数值": "eSpCas9/HF1等可将脱靶降低90%以上；检测用GUIDE-seq/CIRCLE-seq",
+    "出处": "基因编辑速查卡",
+    "对比基准": "普通Cas9",
+    "意义": "只能降低不能根除"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "DataPoint:黄酮类超9000种",
+   "type": "DataPoint",
+   "name": "黄酮类化合物数量",
+   "props": {
+    "数值": "已鉴定黄酮类化合物超过9000种（公开综述数据）",
+    "出处": "植物代谢速查卡",
+    "样本量": "公开综述",
+    "意义": "植物中分布最广的多酚家族之一"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "DataPoint:萜类占天然产物-60%",
+   "type": "DataPoint",
+   "name": "萜类占比",
+   "props": {
+    "数值": "萜类占所有天然产物的约60%",
+    "出处": "植物代谢速查卡",
+    "对比基准": "其他天然产物",
+    "意义": "自然界最大化合物家族"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "DataPoint:黄金大米二号-20倍",
+   "type": "DataPoint",
+   "name": "黄金大米二号提升",
+   "props": {
+    "数值": "黄金大米2号β-胡萝卜素含量较初代提升20倍以上",
+    "出处": "植物代谢速查卡",
+    "对比基准": "初代黄金大米",
+    "意义": "代谢工程改良作物营养教科书级案例"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "DataPoint:紫杉醇-1kg需3000棵树",
+   "type": "DataPoint",
+   "name": "紫杉醇提取成本",
+   "props": {
+    "数值": "紫杉醇从红豆杉树皮提取，1kg需要砍3000棵树",
+    "出处": "植物代谢速查卡",
+    "对比基准": "微生物全合成vs树皮提取",
+    "意义": "推动酵母合成攻关"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "DataPoint:LDLS温度-1到2万K",
+   "type": "DataPoint",
+   "name": "LDLS等离子体温度",
+   "props": {
+    "数值": "等离子体温度约10000-20000K",
+    "出处": "Energetiq技术论文",
+    "对比基准": "短弧氙灯仅5-7千K",
+    "意义": "高亮度连续谱来源"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "DataPoint:LDLS发光点-0.1毫米",
+   "type": "DataPoint",
+   "name": "LDLS发光点尺寸",
+   "props": {
+    "数值": "发光点约0.1mm量级（FWHM约100µm）",
+    "出处": "Energetiq/Hamamatsu特性页",
+    "对比基准": "黄豆大小点",
+    "意义": "小发光点高亮度利于耦合进小étendue系统"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "DataPoint:LDLS寿命-1万小时",
+   "type": "DataPoint",
+   "name": "LDLS寿命",
+   "props": {
+    "数值": "寿命约10000小时（500nm处输出降50%计），输出衰减约1-2%/1000h",
+    "出处": "Hamamatsu特性页/Energetiq FAQ",
+    "对比基准": "短弧氙灯500-1500h",
+    "意义": "长寿命低衰减减运维成本"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "DataPoint:LDLS 200nm亮度-氙灯10倍氘灯100倍",
+   "type": "DataPoint",
+   "name": "LDLS 200nm辐射亮度",
+   "props": {
+    "数值": "200nm处辐射亮度约为氙灯10倍、氘灯100倍",
+    "出处": "Energetiq",
+    "对比基准": "氙灯/氘灯",
+    "意义": "深紫外段高亮度"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "DataPoint:DBO多波长-400到1100nm",
+   "type": "DataPoint",
+   "name": "DBO多波长范围",
+   "props": {
+    "数值": "可见→红外DBO演示400-1100nm",
+    "出处": "van Schaijk等 JM3 2022 (DOI:10.1117/1.JMM.21.1.014001)",
+    "对比基准": "传统单波长DBO",
+    "意义": "多通道DBO向红外延伸是趋势"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "DataPoint:DUV-266nm缺陷检测",
+   "type": "DataPoint",
+   "name": "DUV 266nm",
+   "props": {
+    "数值": "266nm DUV已用于最苛刻检测任务",
+    "出处": "Coherent公开博客",
+    "对比基准": "可见光",
+    "意义": "波长越短看越小的缺陷，光子通量决定检测速度"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "UnderstandingLevel:L1表面",
+   "type": "UnderstandingLevel",
+   "name": "L1 表面",
+   "props": {
+    "判定": "能复述摘要",
+    "能力": "只够写新闻稿",
+    "层级": "最低"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "UnderstandingLevel:L2机制",
+   "type": "UnderstandingLevel",
+   "name": "L2 机制",
+   "props": {
+    "判定": "能讲清因果链",
+    "能力": "够写科普文案",
+    "门槛": "最低创作门槛",
+    "要求": "低于L2不得进入创作阶段"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "UnderstandingLevel:L3因果",
+   "type": "UnderstandingLevel",
+   "name": "L3 因果",
+   "props": {
+    "判定": "能说为什么用这个方法而不是别的",
+    "能力": "够写深度方案",
+    "目标": "争取达到L3"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "UnderstandingLevel:L4洞察",
+   "type": "UnderstandingLevel",
+   "name": "L4 洞察",
+   "props": {
+    "判定": "能指出局限和未来方向",
+    "能力": "够做专业顾问",
+    "层级": "最高"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:启动子宿主表达量",
+   "type": "KnowledgeGap",
+   "name": "启动子宿主表达量",
+   "props": {
+    "缺口": "哪种启动子在何种宿主表达量最高依赖实验数据",
+    "风险": "LLM知识可能有偏",
+    "处理": "需查文献确认"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:DNA合成成本变化",
+   "type": "KnowledgeGap",
+   "name": "DNA合成技术成本",
+   "props": {
+    "缺口": "最新DNA合成技术与成本变化极快",
+    "时间": "2025-2026进展日新月异",
+    "处理": "对外用最新文献量级"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:体内递送方法",
+   "type": "KnowledgeGap",
+   "name": "体内递送瓶颈",
+   "props": {
+    "缺口": "基因编辑工具怎么送到人体内正确细胞仍是最大瓶颈",
+    "风险": "工具好用但递送难",
+    "处理": "列为待确认，不编造方案"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:物种最优递送",
+   "type": "KnowledgeGap",
+   "name": "物种最优递送方式",
+   "props": {
+    "缺口": "各物种最优递送（农杆菌/基因枪/病毒载体/纳米颗粒）差异极大",
+    "处理": "需查文献确认"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:各国监管政策",
+   "type": "KnowledgeGap",
+   "name": "基因编辑监管政策",
+   "props": {
+    "缺口": "中/美/欧对基因编辑作物法规不同且在更新",
+    "处理": "表述时以官方最新为准",
+    "敏感": "生殖系编辑在多数国家被禁止（需注意语境）"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:酶动力学参数Km Vmax",
+   "type": "KnowledgeGap",
+   "name": "酶动力学参数",
+   "props": {
+    "缺口": "酶动力学参数(Km/Vmax)对实际产量影响的定量预测",
+    "处理": "需查文献确认"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:亚细胞定位影响",
+   "type": "KnowledgeGap",
+   "name": "亚细胞定位影响",
+   "props": {
+    "缺口": "质体vs内质网vs线粒体区隔效应对代谢工程的具体影响",
+    "处理": "需查文献确认"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:商用LDLS参数",
+   "type": "KnowledgeGap",
+   "name": "商用LDLS未公开参数",
+   "props": {
+    "缺口": "商用LDLS确切激光波长、灯泡充气压属厂商未公开",
+    "处理": "本笔记只有文献量级",
+    "合规": "不编造厂商专有参数"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:复合与轫致辐射主导比例",
+   "type": "KnowledgeGap",
+   "name": "复合/轫致辐射主导比例",
+   "props": {
+    "缺口": "复合辐射vs轫致辐射的主导比例拆分未找到可引用公开来源",
+    "处理": "对外只说连续谱为主、谱线次要"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:光谱漂移套刻误差定量",
+   "type": "KnowledgeGap",
+   "name": "光谱漂移→误差定量",
+   "props": {
+    "缺口": "光谱漂移量→套刻/CD误差量的定量公开数据未找到",
+    "现状": "只有定性机理",
+    "处理": "表述避免给出定量因果"
+   },
+   "sources": [
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:国产厂商客户关系",
+   "type": "KnowledgeGap",
+   "name": "国产厂商客户与供货",
+   "props": {
+    "缺口": "国产厂商客户关系/供货状态多为未公开信息",
+    "处理": "一律不收",
+    "合规": "不编造客户/销售信息"
+   },
+   "sources": [
+    "kb/产业/宽谱光源与半导体量测产业图谱.md"
+   ]
+  },
+  {
+   "id": "FactRule:数据有出处",
+   "type": "FactRule",
+   "name": "数据有出处",
+   "props": {
+    "铁律": "每条定量表述要能写出公开出处",
+    "违规处理": "写不出出处标待确认或丢弃",
+    "来源": "角色卡+入库规则"
+   },
+   "sources": [
+    "agents/scientist.md",
+    "kb/入库规则.md"
+   ]
+  },
+  {
+   "id": "FactRule:绝不编造",
+   "type": "FactRule",
+   "name": "绝不编造",
+   "props": {
+    "铁律": "不确定的概念绝不能编造",
+    "处理": "拿不准一律不入库",
+    "红线": "知识库缺一条可补，机密泄一次收不回"
+   },
+   "sources": [
+    "agents/scientist.md",
+    "kb/入库规则.md",
+    "kb/隐私红线.md"
+   ]
+  },
+  {
+   "id": "FactRule:翻译不牺牲准确性",
+   "type": "FactRule",
+   "name": "翻译不牺牲准确性",
+   "props": {
+    "铁律": "术语翻译成受众能懂说法，但翻译不得牺牲准确性",
+    "配套": "类比有误导性时指出"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "FactRule:类比有误导时指出",
+   "type": "FactRule",
+   "name": "类比有误导性时指出",
+   "props": {
+    "铁律": "类比有误导性时指出并注明误导点",
+    "要求": "类比须≥2个并标适用受众",
+    "来源": "角色卡+入库规则"
+   },
+   "sources": [
+    "agents/scientist.md",
+    "kb/入库规则.md"
+   ]
+  },
+  {
+   "id": "FactRule:低于L2不得创作",
+   "type": "FactRule",
+   "name": "低于L2不得进入创作",
+   "props": {
+    "铁律": "理解深度低于L2不允许进入创作阶段",
+    "处理": "先查资料或向用户要材料",
+    "目标": "达到L2最低标准，争取L3"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "FactRule:一票否决权",
+   "type": "FactRule",
+   "name": "科学顾问一票否决权",
+   "props": {
+    "铁律": "对未经验证的科学表述有一票否决权",
+    "处理": "标待确认的内容确认前不得进入定稿",
+    "来源": "角色卡"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "FactRule:四门槛入库",
+   "type": "FactRule",
+   "name": "四门槛入库",
+   "props": {
+    "铁律": "通用/公开/有用/干净四条同时满足才入库",
+    "补充": "有用=类比库与可视化点子必填",
+    "违规": "拿不准一律不入库"
+   },
+   "sources": [
+    "kb/入库规则.md",
+    "kb/隐私红线.md"
+   ]
+  },
+  {
+   "id": "FactRule:LDLS非激光",
+   "type": "FactRule",
+   "name": "LDLS输出非激光",
+   "props": {
+    "表述": "输出是非相干宽谱等离子体辐射，激光封闭在灯室内",
+    "误区纠正": "正常工作无激光输出"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "FactRule:误区用正确表述",
+   "type": "FactRule",
+   "name": "误区用✅正确理解替代",
+   "props": {
+    "表述": "用✅正确理解替代❌错误说法",
+    "示例": "无电极烧蚀而非无电极灯；170nm下是石英透过截止而非发不出"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "FactRule:隐私三分法",
+   "type": "FactRule",
+   "name": "隐私三分法分拣",
+   "props": {
+    "铁律": "🟢公开通用直接收/🟡带项目痕迹脱敏泛化/🔴项目专有一字不留",
+    "检查": "脱敏检查清单逐项过",
+    "来源": "隐私红线"
+   },
+   "sources": [
+    "kb/隐私红线.md"
+   ]
+  },
+  {
+   "id": "Domain:生物学",
+   "type": "Domain",
+   "name": "生物学",
+   "props": {
+    "涵盖": "合成生物学/基因编辑/植物代谢",
+    "说明": "生物制造大科学设施/代谢工程/细胞工厂"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md",
+    "kb/生物学/基因编辑.md",
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "Domain:医学",
+   "type": "Domain",
+   "name": "医学",
+   "props": {
+    "涵盖": "基因编辑临床/青蒿素/紫杉醇",
+    "说明": "疾病治疗与药物研发应用领域"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md",
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "Domain:化学",
+   "type": "Domain",
+   "name": "化学",
+   "props": {
+    "涵盖": "化合物化学/光谱分析下游",
+    "说明": "天然产物化学与谱学鉴定"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md",
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "Domain:物理学",
+   "type": "Domain",
+   "name": "物理学",
+   "props": {
+    "涵盖": "等离子体物理/光学原理",
+    "说明": "光源物理机制所在领域"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "Domain:光学",
+   "type": "Domain",
+   "name": "光学",
+   "props": {
+    "涵盖": "LDLS宽谱光源/半导体量测光源需求",
+    "说明": "光源与量测光学技术领域"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "Domain:产业",
+   "type": "Domain",
+   "name": "产业",
+   "props": {
+    "涵盖": "宽谱光源厂/量测整机厂/国产替代",
+    "说明": "光源-设备-半导体产业图谱"
+   },
+   "sources": [
+    "kb/产业/宽谱光源与半导体量测产业图谱.md"
+   ]
+  },
+  {
+   "id": "Company:Energetiq",
+   "type": "Company",
+   "name": "Energetiq(美国)",
+   "props": {
+    "定位": "LDLS技术发明者（源自LLNL研究）",
+    "产品": "EQ-99X/EQ-77/EQ-400系列覆盖小到大功率",
+    "变迁": "2017年被滨松收购作为子品牌运营",
+    "手法": "白皮书+对数坐标对比图+FAQ误区澄清"
+   },
+   "sources": [
+    "kb/产业/宽谱光源与半导体量测产业图谱.md"
+   ]
+  },
+  {
+   "id": "Company:滨松Hamamatsu",
+   "type": "Company",
+   "name": "滨松 Hamamatsu",
+   "props": {
+    "定位": "光子学巨头",
+    "产品线": "LDLS即Energetiq系；另有氙灯/氘灯全谱系",
+    "商业手法": "图标化卖点块+专利号清单背书",
+    "技术内容": "LDLS特性页参数"
+   },
+   "sources": [
+    "kb/产业/宽谱光源与半导体量测产业图谱.md",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "Company:KLA",
+   "type": "Company",
+   "name": "KLA(美国)",
+   "props": {
+    "定位": "量测与检测龙头",
+    "产品": "套刻Archer/ATL100/OCD SpectraShape/膜厚SpectraFilm/Aleris/缺陷检测39xx/C30x/Puma/Surfscan",
+    "手法": "技术商标化(SR-DUV/iDO)+口号对仗"
+   },
+   "sources": [
+    "kb/产业/宽谱光源与半导体量测产业图谱.md",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "Company:ASML",
+   "type": "Company",
+   "name": "ASML(荷兰)",
+   "props": {
+    "定位": "光刻与套刻量测",
+    "产品": "YieldStar系列（DBO套刻）",
+    "趋势": "多波长向红外延伸（JM3 2022论文佐证）"
+   },
+   "sources": [
+    "kb/产业/宽谱光源与半导体量测产业图谱.md",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "Method:7步深度理解法",
+   "type": "Method",
+   "name": "7步深度理解法",
+   "props": {
+    "步骤": "定位→意义链→核心原理→关键数据→翻译准备→知识缺口→费曼自检",
+    "自检": "每步有自问与自检标准",
+    "输出": "理解报告+深度等级自评+待确认清单"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "Method:入库五步流程",
+   "type": "Method",
+   "name": "入库五步流程",
+   "props": {
+    "步骤": "分拣→成文→脱敏→织网→登记",
+    "渠道": "项目收尾主渠道/项目中立幼苗/日常手动",
+    "引用": "唯一权威版本见kb/入库规则.md"
+   },
+   "sources": [
+    "kb/入库规则.md"
+   ]
+  },
+  {
+   "id": "Method:隐私三分法",
+   "type": "Method",
+   "name": "隐私三分法",
+   "props": {
+    "分拣": "🟢公开通用/🟡带项目痕迹脱敏泛化/🔴项目专有",
+    "泛化": "去专名/数值模糊化/路线泛化/组合去标识",
+    "底线": "拿不准一律不入库"
+   },
+   "sources": [
+    "kb/隐私红线.md"
+   ]
+  },
+  {
+   "id": "Method:脱敏检查清单",
+   "type": "Method",
+   "name": "脱敏检查清单",
+   "props": {
+    "检查项": "无未公开数值名称代号/无项目机构人名/组合推断/来源公开/标隐私",
+    "处理": "有一项拿不准就不入库"
+   },
+   "sources": [
+    "kb/隐私红线.md"
+   ]
+  },
+  {
+   "id": "Method:概念笔记模板结构",
+   "type": "Method",
+   "name": "概念笔记模板结构",
+   "props": {
+    "结构": "一句话定位/机制原理/三层意义/关键数据/类比库/可视化点子/常见误区/知识边界",
+    "必填": "类比库与可视化点子两节必填",
+    "三观": "对个人/对领域/对社会"
+   },
+   "sources": [
+    "kb/_模板/概念笔记.md"
+   ]
+  },
+  {
+   "id": "Milestone:2012CRISPR发明",
+   "type": "Milestone",
+   "name": "2012 CRISPR发明",
+   "props": {
+    "事件": "Jinek等(Doudna/Charpentier)证明Cas9-gRNA可编程切割DNA",
+    "意义": "开启CRISPR时代",
+    "后续": "2020获诺贝尔化学奖,2021首个药物Casgevy获批"
+   },
+   "sources": [
+    "kb/生物学/基因编辑.md"
+   ]
+  },
+  {
+   "id": "Milestone:2013青蒿素微生物合成",
+   "type": "Milestone",
+   "name": "2013 青蒿素微生物合成",
+   "props": {
+    "事件": "Keasling+Amyris实现青蒿素前体微生物全合成",
+    "意义": "证明复杂植物次生代谢物可用细胞工厂生产",
+    "对比": "替代植物提取"
+   },
+   "sources": [
+    "kb/生物学/合成生物学.md",
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "Milestone:2015屠呦呦诺贝尔奖",
+   "type": "Milestone",
+   "name": "2015 屠呦呦诺贝尔奖",
+   "props": {
+    "事件": "青蒿素（倍半萜）拯救数百万生命获诺奖",
+    "意义": "天然产物药物里程碑",
+    "关联": "萜类化合物C15"
+   },
+   "sources": [
+    "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "DataPoint:深紫外大气吸收与氮气吹扫",
+   "type": "DataPoint",
+   "name": "深紫外大气吸收与氮气吹扫",
+   "props": {
+    "数值": "大气中氧气/水汽强吸收 <200nm 深紫外；氧气还会生成臭氧，臭氧强吸收 220-280nm；故 <200nm 深紫外宽带光源应用需氮气吹扫清除氧，以保住短波端谱形",
+    "出处": "玦芯PHO-SC-4产品手册《_pdf_text.txt》P2 备注 + kb/光学/激光驱动等离子体宽谱光源.md 机理段",
+    "对比基准": "普通大气直接输出 vs 氮气吹扫后(厂商建议 0.04MPa)",
+    "意义": "深紫外(<200nm)宽带光源的工程前提；短波端是否够紫外由它决定，而非等离子体本身"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "FactRule:归一化光谱不证明绝对强度",
+   "type": "FactRule",
+   "name": "归一化光谱只能证明谱形",
+   "props": {
+    "规则": "归一化光谱图(y轴为任意单位 a.u.)只表明各波长间的相对谱形，不能单独用于跨光源的绝对强度/亮度对比；跨曲线绝对强度对比须用同一横坐标、同一量纲/共同归一化基准，加实测灰度或功率数据",
+    "适用范围": "光谱对比类可视化与产品宣传(竞品对比尤其)，防止把更干净或连续谱占比更高夸大成绝对更亮若干倍",
+    "示例": "EQ77 在 976nm 线谱强、连续谱占比低；PHO-SC-4 连续谱占比高——结论应说谱形/平坦度/连续谱占比更优，而非绝对比它亮若干倍",
+    "风险": "归一化谱等于我比它亮，是竞品对比最容易踩的误导"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "DataPoint:EQ-77-QZ-S辐射亮度约为标准EQ-99X三倍",
+   "type": "DataPoint",
+   "name": "EQ-77-QZ-S辐射亮度",
+   "props": {
+    "定位": "高输出功率LDLS",
+    "数值": "辐射照度比标准型号EQ-99X高约3倍",
+    "维护": "需氮气吹扫+水冷",
+    "竞品": "滨松Energetiq EQ-77-QZ-S",
+    "对比基准": "同厂EQ-99X"
+   },
+   "sources": [
+    "https://www.hamamatsu.com.cn/cn/zh-cn/product/light-and-radiation-sources/Laser-Driven-Light-Source-LDLS/EQ-77-QZ-S.html"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "ScientificConcept:合成生物学",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:DNA组装",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因组重编码",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:代谢通路重构",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:细胞工厂",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:高通量筛选",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:CRISPR-Cas9",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:碱基编辑",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:引物编辑",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:脱靶效应",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因敲除与敲入",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:植物代谢",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:初生次生代谢",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:黄酮类化合物",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:萜类化合物",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:代谢通路",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:酶",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:转录因子",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "target": "Domain:光学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:光放电等离子体",
+   "target": "Domain:物理学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:étendue",
+   "target": "Domain:光学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:连续谱辐射",
+   "target": "Domain:光学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:套刻误差测量",
+   "target": "Domain:光学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:光谱椭偏",
+   "target": "Domain:光学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:OCD关键尺寸",
+   "target": "Domain:光学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:半导体量测光源需求链",
+   "target": "Domain:光学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因编辑",
+   "target": "Domain:生物学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因编辑",
+   "target": "Domain:医学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:萜类化合物",
+   "target": "Domain:医学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:萜类化合物",
+   "target": "Domain:化学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:黄酮类化合物",
+   "target": "Domain:化学",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "Company:Energetiq",
+   "target": "Domain:产业",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "Company:滨松Hamamatsu",
+   "target": "Domain:产业",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "Company:KLA",
+   "target": "Domain:产业",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "Company:ASML",
+   "target": "Domain:产业",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "Analogy:DNA组装-搭积木",
+   "target": "ScientificConcept:DNA组装",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:基因组重编码-重写书籍",
+   "target": "ScientificConcept:基因组重编码",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:代谢通路重构-工厂改造",
+   "target": "ScientificConcept:代谢通路重构",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:细胞工厂-面包发酵",
+   "target": "ScientificConcept:细胞工厂",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:高通量筛选-选秀海选",
+   "target": "ScientificConcept:高通量筛选",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:CRISPR-GPS导航剪刀",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:碱基编辑-单字修改",
+   "target": "ScientificConcept:碱基编辑",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:引物编辑-瑞士军刀",
+   "target": "ScientificConcept:引物编辑",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:脱靶效应-药物副作用",
+   "target": "ScientificConcept:脱靶效应",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:基因敲除-拔插头",
+   "target": "ScientificConcept:基因敲除与敲入",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:基因敲入-换零件",
+   "target": "ScientificConcept:基因敲除与敲入",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:黄酮类-防晒霜防弹衣",
+   "target": "ScientificConcept:黄酮类化合物",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:萜类-乐高积木",
+   "target": "ScientificConcept:萜类化合物",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:代谢通路-工厂流水线",
+   "target": "ScientificConcept:代谢通路",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:酶-专用工具",
+   "target": "ScientificConcept:酶",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:转录因子-调音台推子",
+   "target": "ScientificConcept:转录因子",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:LDLS-指尖微型恒星",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:LDLS电极-点火器vs燃料",
+   "target": "ScientificConcept:光放电等离子体",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:光源亮度-工人到岗",
+   "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "Analogy:谱形漂移-尺子刻度变",
+   "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "analogy-for-concept",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:DNA组装",
+   "target": "Analogy:DNA组装-搭积木",
+   "type": "concept-uses-analogy",
+   "props": {}
+  },
+  {
+   "source": "VisualizationIdea:LDLS-针尖白点爆亮",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "viz-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualizationIdea:LDLS-腔体环绕恒星",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "viz-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualizationIdea:LDLS-色散光谱带",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "viz-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualizationIdea:LDLS-稳定性波形线",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "viz-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualizationIdea:光源需求-左右对照卡",
+   "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "viz-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualizationIdea:光谱覆盖条-应用分区",
+   "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "viz-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:Gibson组装-10片段低错误率",
+   "target": "ScientificConcept:DNA组装",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:基因组重编码-321密码子",
+   "target": "ScientificConcept:基因组重编码",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:青蒿素产量-25gL",
+   "target": "ScientificConcept:代谢通路重构",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:生物制造规模-2030数千亿美元",
+   "target": "ScientificConcept:细胞工厂",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:微流控高通量-每秒一万变体",
+   "target": "ScientificConcept:高通量筛选",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:CRISPR成本-5000到100美元",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:碱基编辑CT效率-60%",
+   "target": "ScientificConcept:碱基编辑",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:敲入效率-1到20%",
+   "target": "ScientificConcept:基因敲除与敲入",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:高保真Cas9降低脱靶-90%",
+   "target": "ScientificConcept:脱靶效应",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:黄酮类超9000种",
+   "target": "ScientificConcept:黄酮类化合物",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:萜类占天然产物-60%",
+   "target": "ScientificConcept:萜类化合物",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:黄金大米二号-20倍",
+   "target": "ScientificConcept:初生次生代谢",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:紫杉醇-1kg需3000棵树",
+   "target": "ScientificConcept:萜类化合物",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:LDLS温度-1到2万K",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:LDLS发光点-0.1毫米",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:LDLS寿命-1万小时",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:LDLS 200nm亮度-氙灯10倍氘灯100倍",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:DBO多波长-400到1100nm",
+   "target": "ScientificConcept:套刻误差测量",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:DUV-266nm缺陷检测",
+   "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:启动子宿主表达量",
+   "target": "ScientificConcept:代谢通路重构",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:DNA合成成本变化",
+   "target": "ScientificConcept:DNA组装",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:体内递送方法",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:物种最优递送",
+   "target": "ScientificConcept:基因敲除与敲入",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:各国监管政策",
+   "target": "ScientificConcept:基因敲除与敲入",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:酶动力学参数Km Vmax",
+   "target": "ScientificConcept:酶",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:亚细胞定位影响",
+   "target": "ScientificConcept:代谢通路",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:商用LDLS参数",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:复合与轫致辐射主导比例",
+   "target": "ScientificConcept:连续谱辐射",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:光谱漂移套刻误差定量",
+   "target": "ScientificConcept:套刻误差测量",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:国产厂商客户关系",
+   "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "gap-in-concept",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:合成生物学",
+   "target": "ScientificConcept:基因编辑",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:合成生物学",
+   "target": "ScientificConcept:植物代谢",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因编辑",
+   "target": "ScientificConcept:植物代谢",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:DNA组装",
+   "target": "ScientificConcept:基因组重编码",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因组重编码",
+   "target": "ScientificConcept:细胞工厂",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:代谢通路重构",
+   "target": "ScientificConcept:细胞工厂",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:代谢通路重构",
+   "target": "ScientificConcept:酶",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:代谢通路重构",
+   "target": "ScientificConcept:转录因子",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:黄酮类化合物",
+   "target": "ScientificConcept:代谢通路",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:萜类化合物",
+   "target": "ScientificConcept:代谢通路",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:酶",
+   "target": "ScientificConcept:代谢通路",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:转录因子",
+   "target": "ScientificConcept:酶",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:碱基编辑",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因编辑",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因编辑",
+   "target": "ScientificConcept:碱基编辑",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因编辑",
+   "target": "ScientificConcept:引物编辑",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:引物编辑",
+   "target": "ScientificConcept:碱基编辑",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:引物编辑",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:脱靶效应",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因敲除与敲入",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "target": "ScientificConcept:连续谱辐射",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:光放电等离子体",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:半导体量测光源需求链",
+   "target": "ScientificConcept:套刻误差测量",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:套刻误差测量",
+   "target": "ScientificConcept:光谱椭偏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:套刻误差测量",
+   "target": "ScientificConcept:OCD关键尺寸",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:étendue",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:细胞工厂",
+   "target": "ScientificConcept:高通量筛选",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:代谢通路重构",
+   "target": "ScientificConcept:高通量筛选",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:半导体量测光源需求链",
+   "target": "ScientificConcept:OCD关键尺寸",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:光放电等离子体",
+   "target": "ScientificConcept:连续谱辐射",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:初生次生代谢",
+   "target": "ScientificConcept:黄酮类化合物",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:初生次生代谢",
+   "target": "ScientificConcept:萜类化合物",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因组重编码",
+   "target": "ScientificConcept:基因编辑",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:代谢通路重构",
+   "target": "ScientificConcept:植物代谢",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "target": "Company:Energetiq",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "target": "Company:滨松Hamamatsu",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:套刻误差测量",
+   "target": "Company:KLA",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:套刻误差测量",
+   "target": "Company:ASML",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:半导体量测光源需求链",
+   "target": "Company:KLA",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:OCD关键尺寸",
+   "target": "Company:KLA",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Milestone:2012CRISPR发明",
+   "target": "ScientificConcept:CRISPR-Cas9",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Milestone:2013青蒿素微生物合成",
+   "target": "ScientificConcept:代谢通路重构",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Milestone:2013青蒿素微生物合成",
+   "target": "ScientificConcept:细胞工厂",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Milestone:2015屠呦呦诺贝尔奖",
+   "target": "ScientificConcept:萜类化合物",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Method:7步深度理解法",
+   "target": "ScientificConcept:合成生物学",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Method:7步深度理解法",
+   "target": "ScientificConcept:基因编辑",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Method:入库五步流程",
+   "target": "Method:隐私三分法",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Method:隐私三分法",
+   "target": "Method:脱敏检查清单",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Method:脱敏检查清单",
+   "target": "Method:入库五步流程",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Method:概念笔记模板结构",
+   "target": "Method:入库五步流程",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Method:概念笔记模板结构",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "target": "UnderstandingLevel:L3因果",
+   "type": "level-requires",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:半导体量测光源需求链",
+   "target": "UnderstandingLevel:L3因果",
+   "type": "level-requires",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:代谢通路重构",
+   "target": "UnderstandingLevel:L3因果",
+   "type": "level-requires",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基因编辑",
+   "target": "UnderstandingLevel:L2机制",
+   "type": "level-requires",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:合成生物学",
+   "target": "UnderstandingLevel:L2机制",
+   "type": "level-requires",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:高通量筛选",
+   "target": "UnderstandingLevel:L2机制",
+   "type": "level-requires",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:套刻误差测量",
+   "target": "UnderstandingLevel:L4洞察",
+   "type": "level-requires",
+   "props": {}
+  },
+  {
+   "source": "FactRule:数据有出处",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:数据有出处",
+   "target": "ScientificConcept:套刻误差测量",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:绝不编造",
+   "target": "ScientificConcept:脱靶效应",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:绝不编造",
+   "target": "Domain:产业",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:翻译不牺牲准确性",
+   "target": "ScientificConcept:合成生物学",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:类比有误导时指出",
+   "target": "Analogy:LDLS-指尖微型恒星",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:低于L2不得创作",
+   "target": "UnderstandingLevel:L1表面",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:低于L2不得创作",
+   "target": "UnderstandingLevel:L2机制",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:一票否决权",
+   "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:四门槛入库",
+   "target": "Method:入库五步流程",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:LDLS非激光",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:误区用正确表述",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "FactRule:隐私三分法",
+   "target": "Domain:产业",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:深紫外大气吸收与氮气吹扫",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:深紫外大气吸收与氮气吹扫",
+   "target": "ScientificConcept:连续谱辐射",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "FactRule:归一化光谱不证明绝对强度",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:EQ-77-QZ-S辐射亮度约为标准EQ-99X三倍",
+   "target": "ScientificConcept:激光驱动等离子体宽谱光源",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:EQ-77-QZ-S辐射亮度约为标准EQ-99X三倍",
+   "target": "Company:滨松Hamamatsu",
+   "type": "data-for-company",
+   "props": {}
+  }
+ ]
+}

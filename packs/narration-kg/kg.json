@@ -1,0 +1,1656 @@
+{
+ "schema_version": "1.0",
+ "pack": "narration-kg",
+ "role": "编剧",
+ "entities": [
+  {
+   "id": "NarrationRule:参数价值翻译律",
+   "type": "NarrationRule",
+   "name": "参数价值翻译律",
+   "props": {
+    "规则": "每个参数后必须跟价值答案(客户得到什么): 精度→良率→成本 / 速度→产能 / 寿命→维护成本",
+    "纪律": "spec 只做证据, 价值才是台词",
+    "案例": "0.015μm重复精度→尺寸误差不到头发丝二十分之一→良率稳不稳看它"
+   },
+   "sources": [
+    "https://lllve.cn/h-nd-3467.html",
+    "https://eastdigi.com/dont-describe-your-product-sell-the-outcome/"
+   ]
+  },
+  {
+   "id": "NarrationRule:卖结果不卖功能",
+   "type": "NarrationRule",
+   "name": "卖结果不卖功能",
+   "props": {
+    "规则": "旁白写结果/收益(outcome), 功能与规格清单留给画面与图表层",
+    "依据": "功能清单正在吃掉你的利润(70%订单流失论)",
+    "案例": "❌支持双路进样→✅开箱即检, 停机时间归零"
+   },
+   "sources": [
+    "https://eastdigi.com/dont-describe-your-product-sell-the-outcome/"
+   ]
+  },
+  {
+   "id": "NarrationRule:数字口语化",
+   "type": "NarrationRule",
+   "name": "数字口语化",
+   "props": {
+    "规则": "大数改口语量级(103.3亿美元→百亿美元级/全球过半市场); 参数用量级词(约/高达/仅为)而非生硬朗读",
+    "注意": "关键准确数字保留(售价/精度/时间)但配口语参照",
+    "例": "每小时480片→每分钟8片, 一个班次多检一整批"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "NarrationRule:术语第一遍即译",
+   "type": "NarrationRule",
+   "name": "术语第一遍即译",
+   "props": {
+    "规则": "术语首次出现必须一句人话解释(专家版除外); 解释要配画面(说+演)",
+    "禁止": "术语连击: 一行台词不得出现≥2个未解释术语",
+    "例": "套刻误差→上下两层图形没对准, 差了一根头发丝的1/50"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "NarrationRule:旁白不抢画面",
+   "type": "NarrationRule",
+   "name": "旁白不抢画面",
+   "props": {
+    "规则": "画面演动(过程/微观/宏观), 旁白说原因与意义; 一句话≤1个信息点",
+    "密度": "旁白密度≤信息点3个/分钟, 留白=呼吸",
+    "反例": "画面放实验, 旁白背参数表"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "knowledge/动感三来源.md"
+   ]
+  },
+  {
+   "id": "NarrationRule:克制信任律",
+   "type": "NarrationRule",
+   "name": "克制信任律",
+   "props": {
+    "规则": "高科产品禁炫技词(震撼/颠覆/革命性/世界级体验), 信任来自: 留白+数据+条件句+沉稳语速",
+    "参照": "一慢一快之间, 品牌气质全暴露——气质由语速/用词决定",
+    "声线": "冷峻=短句少形容词; 温润=长句多留白"
+   },
+   "sources": [
+    "http://m.cydjt.cn/yaopeiyinwz/17585487.html",
+    "https://www.litchi-vision.com/news_cont_6457.html"
+   ]
+  },
+  {
+   "id": "NarrationRule:证据句构造",
+   "type": "NarrationRule",
+   "name": "证据句构造",
+   "props": {
+    "公式": "数据+条件+口径 一句说全",
+    "例": "在10万小时测试条件下, 亮度衰减率0.1%",
+    "红线": "无出处数字跳出口播=科学错误(铁律)"
+   },
+   "sources": [
+    "protocols/quality-gate.md",
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "NarrationRule:语速档位",
+   "type": "NarrationRule",
+   "name": "语速档位",
+   "props": {
+    "标准": "宣传片240-260字/分钟(约4-4.5字/秒)",
+    "慢版": "宏大/抒情/设施 180-220字/分钟",
+    "快版": "短视频/信息流 280-300字/分钟",
+    "旁白密度": "信息点≤3个/分钟"
+   },
+   "sources": [
+    "http://m.cydjt.cn/yaopeiyinwz/17585487.html",
+    "https://www.paikera.com/faq/86735.html"
+   ]
+  },
+  {
+   "id": "NarrationRule:单句呼吸律",
+   "type": "NarrationRule",
+   "name": "单句呼吸律",
+   "props": {
+    "规则": "单句≤20字为宜, 长句拆短; 数字与转折前留停顿",
+    "原因": "配音需要呼吸; TTS 长句易读糊",
+    "例": "3-7字短语+9-13字句交替"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "http://m.cydjt.cn/yaopeiyinwz/17585487.html"
+   ]
+  },
+  {
+   "id": "NarrationRule:开头钩子高科版",
+   "type": "NarrationRule",
+   "name": "开头钩子高科版",
+   "props": {
+    "四型": "反常识数字/对比真相(有vs无)/不可能之问(怎么在纳米尺度看见错)/故障故事(客户曾丢失良率)",
+    "前5秒": "前5秒必须兑现: 画面+钩子同一拍",
+    "忌": "公司简介式开场(我们成立于…)"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md",
+    "https://www.litchi-vision.com/news_cont_6457.html"
+   ]
+  },
+  {
+   "id": "NarrationRule:证据式CTA",
+   "type": "NarrationRule",
+   "name": "证据式CTA",
+   "props": {
+    "公式": "证据+索取动作: 取完整实测报告/预约现场演示/索要对比数据",
+    "禁": "品质无可挑剔/值得信赖 等空泛承诺",
+    "末端": "CTA前留1-2秒静音间隙"
+   },
+   "sources": [
+    "knowledge/hooks/cta-examples.md",
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
+   "id": "NarrationRule:旁白与基调一致性",
+   "type": "NarrationRule",
+   "name": "旁白与基调一致性",
+   "props": {
+    "规则": "旁白语气随导演阐述与VI: 冷峻工业=短句+留白+中性词; 温润信任=短长交替+温度词",
+    "检查": "口播稿语气与本片风格token块/九宫格基调一致"
+   },
+   "sources": [
+    "agents/director.md",
+    "agents/art-director.md"
+   ]
+  },
+  {
+   "id": "NarrationHook:反常识数字钩",
+   "type": "NarrationHook",
+   "name": "反常识数字钩",
+   "props": {
+    "写法": "用行业之外的参照系讲数字",
+    "例": "它测的, 是你良率里的最后1%"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "NarrationHook:对比真相钩",
+   "type": "NarrationHook",
+   "name": "对比真相钩",
+   "props": {
+    "写法": "有/无, 新/旧, 同/不同 的实测对比开场",
+    "例": "同样一批晶圆, 为什么你多亏3个点?"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "NarrationHook:不可能之问钩",
+   "type": "NarrationHook",
+   "name": "不可能之问钩",
+   "props": {
+    "写法": "用问题制造悬念, 把原理留到中段",
+    "例": "怎么在纳米尺度, 看见一层薄膜的厚度?"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "NarrationHook:第一视角实拍钩",
+   "type": "NarrationHook",
+   "name": "第一视角实拍钩",
+   "props": {
+    "写法": "工厂/产线/操作台第一视角开场(沉浸+真实素材优先)",
+    "例": "早上8点, 检测线上的第一片晶圆"
+   },
+   "sources": [
+    "playbooks/production-workflow.md",
+    "https://mp.weixin.qq.com/s?__biz=Mzk0MjQzNTE0Ng==&mid=2247483722&idx=1&sn=e8c847d6075497fee37f67acb5358c8f"
+   ]
+  },
+  {
+   "id": "NarrationRule:设备产品片产品名开场",
+   "type": "NarrationRule",
+   "name": "设备产品片产品名开场",
+   "props": {
+    "规则": "B2B高端设备/仪器类产品片(半导体/量测/工业)开场惯例=产品名/品类名片式起手(「玦芯PHO-SC-4。」), 产品名第一句出场, 前5秒画面(产品/光效/应用)+产品名同拍兑现",
+    "依据": "甲方现场经验(玦芯2026-08-30)确认: 此类产品钩子从念产品名开始; 产业客户(IND)展会只看产品名+规格, 不吃意象悬念",
+    "禁忌": "设备产品片开场禁用尺寸/比喻类悬念(如「针尖大的光」)当钩子——发光点尺寸只是支持卖点, 不是第一卖点",
+    "第一卖点": "波段覆盖/性能参数紧随产品名之后(如「从170到2500纳米,完整覆盖」)"
+   },
+   "sources": [
+    "https://www.juexinbio.com/guangyuan/33",
+    "https://www.hamamatsu.com.cn/cn/zh-cn/product/light-and-radiation-sources/Laser-Driven-Light-Source-LDLS/EQ-77-QZ-S.html"
+   ]
+  },
+  {
+   "id": "NarrationRule:层级公式句",
+   "type": "NarrationRule",
+   "name": "层级公式句",
+   "props": {
+    "公式": "第N重/第N级 + 动作 + 效果(一句话)",
+    "例": "第一重过滤：拦截大颗粒杂质 / 第三重过滤：深度吸附，进一步净化水质",
+    "适用": "多级/多步流程型产品(过滤/检测/反应), 一镜一句, 观众秒懂结构顺序"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ]
+  },
+  {
+   "id": "NarrationRule:字幕短句",
+   "type": "NarrationRule",
+   "name": "字幕短句",
+   "props": {
+    "规则": "信息型字幕/旁白≤14字为宜, 一句一信息, 与画面动作同拍",
+    "反例": "一句话塞两个信息点+一条参数",
+    "与构图分工": "画面演结构, 口播说'是什么效果'——旁白不抢画面(配套)"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/69153230000000000d03c141",
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "NarrationExample:麦格米特·1/3以下",
+   "type": "NarrationExample",
+   "name": "体积重量降至水冷激光1/3以下",
+   "props": {
+    "原文": "体积、重量均降至水冷激光的1/3以下",
+    "结构": "对比基准卖点句(相对参照, 不报绝对重量)",
+    "画面": "参数尺寸图+≤50KG大字"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/69153230000000000d03c141"
+   ]
+  },
+  {
+   "id": "NarrationExample:麦格米特·风冷散热",
+   "type": "NarrationExample",
+   "name": "独特的风冷散热结构",
+   "props": {
+    "原文": "独特的风冷散热结构",
+    "结构": "属性点明短句(6+4字), 画面负责讲原理(气流动画)",
+    "规矩": "不夸词, '独特'即最大形容词"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/69153230000000000d03c141"
+   ]
+  },
+  {
+   "id": "NarrationExample:麦格米特·多重保护",
+   "type": "NarrationExample",
+   "name": "具备多重保护报警功能",
+   "props": {
+    "原文": "具备多重保护报警功能",
+    "结构": "安全价值句, 画面配真实面板UI(安全地锁/报警) ",
+    "信任": "证据在画面, 不靠嘴吹"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/69153230000000000d03c141"
+   ]
+  },
+  {
+   "id": "NarrationExample:旭诚·杂质钩子",
+   "type": "NarrationExample",
+   "name": "看似洁净仍含微小杂质",
+   "props": {
+    "原文": "看似洁净的自来水中，仍存在微小杂质",
+    "结构": "反常识钩子句(打破'看着干净=干净'), 开场问题引入",
+    "画面": "自来水管第一视角穿越"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ]
+  },
+  {
+   "id": "NarrationExample:旭诚·增压",
+   "type": "NarrationExample",
+   "name": "增压系统稳定水压保障过滤效果",
+   "props": {
+    "原文": "增压系统，稳定水压，保障过滤效果",
+    "结构": "结构+功能+结果 因果三连句",
+    "画面": "水泵三维动画"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ]
+  },
+  {
+   "id": "NarrationExample:旭诚·第一重过滤",
+   "type": "NarrationExample",
+   "name": "第一重过滤拦截大颗粒杂质",
+   "props": {
+    "原文": "第一重过滤：拦截大颗粒杂质",
+    "结构": "层级+动作+效果(第N重公式句)",
+    "画面": "PP棉纤维网特写"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ]
+  },
+  {
+   "id": "NarrationExample:旭诚·第三重吸附",
+   "type": "NarrationExample",
+   "name": "第三重过滤深度吸附",
+   "props": {
+    "原文": "第三重过滤：深度吸附，进一步净化水质",
+    "结构": "层级+动作+递进效果",
+    "画面": "活性炭颗粒特写"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ]
+  },
+  {
+   "id": "NarrationExample:旭诚·第五重口感",
+   "type": "NarrationExample",
+   "name": "第五重过滤改善口感",
+   "props": {
+    "原文": "第五重过滤：改善口感，让水更甘甜",
+    "结构": "层级+结果+感受词(落到体感)",
+    "画面": "RO膜孔圆形放大镜标注"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ]
+  },
+  {
+   "id": "NarrationExample:旭诚·落版承诺",
+   "type": "NarrationExample",
+   "name": "旭诚净水守护饮用水安全",
+   "props": {
+    "原文": "旭诚净水·守护您的饮用水安全",
+    "结构": "品牌+承诺(保护型承诺句, 不夸性能)",
+    "画面": "厨房真实场景落版"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F01钩子句",
+   "type": "NarrationFormula",
+   "name": "钩子句",
+   "props": {
+    "功能": "首句抓停",
+    "模板": "反常识事实/对比真相/不可能之问, 一句戛然",
+    "例": "看似洁净的自来水中, 仍存在微小杂质",
+    "位置": "开头1句"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F02痛点句",
+   "type": "NarrationFormula",
+   "name": "痛点句",
+   "props": {
+    "功能": "建立问题",
+    "模板": "对象+现状缺陷/代价",
+    "例": "检测慢了, 良率就悄悄溜走",
+    "位置": "钩子后1-2句"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F03定义句",
+   "type": "NarrationFormula",
+   "name": "定义句",
+   "props": {
+    "功能": "一句话说清是什么",
+    "模板": "产品/概念+是+一句人话功能(术语首现即译)",
+    "例": "套刻误差, 就是上下两层没对准",
+    "位置": "首见产品/术语"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F04层级句",
+   "type": "NarrationFormula",
+   "name": "层级句",
+   "props": {
+    "功能": "多级结构说明书",
+    "模板": "第N重/级+动作+效果",
+    "例": "第一重过滤: 拦截大颗粒杂质",
+    "位置": "结构段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F05属性句",
+   "type": "NarrationFormula",
+   "name": "属性句",
+   "props": {
+    "功能": "点明独特点",
+    "模板": "特性+受限形容词(独特/专属)+一句话特性",
+    "例": "独特的风冷散热结构",
+    "位置": "结构段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F06价值句",
+   "type": "NarrationFormula",
+   "name": "价值句",
+   "props": {
+    "功能": "参数→客户得到什么",
+    "模板": "参数/特性→良率/成本/产能/保养",
+    "例": "精度上去了, 你的良率就稳了",
+    "位置": "价值段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F07对比句",
+   "type": "NarrationFormula",
+   "name": "对比句",
+   "props": {
+    "功能": "参照系卖点",
+    "模板": "本产品+相对基准+超出/降低幅度",
+    "例": "体积、重量均降至水冷激光的1/3以下",
+    "位置": "价值段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F08参数句",
+   "type": "NarrationFormula",
+   "name": "参数句",
+   "props": {
+    "功能": "数字入耳",
+    "模板": "数字+量级词(约/高达/仅为)+口语参照",
+    "例": "扫描速度400mm/s",
+    "位置": "证据段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F09证据句",
+   "type": "NarrationFormula",
+   "name": "证据句",
+   "props": {
+    "功能": "数字可信",
+    "模板": "数据+测试条件/口径→结论",
+    "例": "在10万小时测试下, 亮度衰减率0.1%",
+    "位置": "证据段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F10因果句",
+   "type": "NarrationFormula",
+   "name": "因果句",
+   "props": {
+    "功能": "结构→结果",
+    "模板": "结构/动作+于是/才+结果",
+    "例": "增压系统, 稳定水压, 保障过滤效果",
+    "位置": "结构段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F11安全句",
+   "type": "NarrationFormula",
+   "name": "安全句",
+   "props": {
+    "功能": "打消顾虑",
+    "模板": "措施/机制+保障什么",
+    "例": "具备多重保护报警功能",
+    "位置": "信任段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F12场景句",
+   "type": "NarrationFormula",
+   "name": "场景句",
+   "props": {
+    "功能": "身临其境",
+    "模板": "谁+在场景+做什么(第一视角/实拍)",
+    "例": "早上8点, 检测线上的第一片晶圆",
+    "位置": "开头/中段"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F13承诺句",
+   "type": "NarrationFormula",
+   "name": "承诺句",
+   "props": {
+    "功能": "收尾落版",
+    "模板": "品牌+保护型承诺/价值主张(不夸性能)",
+    "例": "旭诚净水·守护您的饮用水安全",
+    "位置": "结尾1句"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationFormula:F14CTA句",
+   "type": "NarrationFormula",
+   "name": "CTA句",
+   "props": {
+    "功能": "索取动作",
+    "模板": "证据/成果+索取(报告/演示/试算)",
+    "例": "完整实测报告, 我们整理好了",
+    "位置": "结尾"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationType:产品宣传片",
+   "type": "NarrationType",
+   "name": "产品宣传片(B2B工业品)",
+   "props": {
+    "受众": "采购/工程师/决策者",
+    "基调": "冷峻克制·证据信任",
+    "语速": "240-260字/分",
+    "公式链": "F01→F02→F04/F10→F06/F07→F08/F09→F13/F14",
+    "示例": "它把一根头发丝的十分之一看得清清楚楚。检测线快了，良率就稳了。在10万小时测试下，亮度衰减只有0.1%。那份实测报告，我们替你整理好了。",
+    "禁忌": "炫技词/卡通化/BGM压旁白"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:品牌形象片",
+   "type": "NarrationType",
+   "name": "品牌形象片(企业/机构)",
+   "props": {
+    "受众": "公众/客户/政府",
+    "基调": "宏大·排比·留白",
+    "语速": "200-220字/分",
+    "公式链": "F12→F05→F05→F13",
+    "示例": "我们见过凌晨的洁净间，也见过纳米尺度的光。二十年，只做一件事：把看得见的精度，交到看不见的信任里。",
+    "禁忌": "硬参数堆砌/口号空转无画面"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:项目申报成果展示",
+   "type": "NarrationType",
+   "name": "项目申报/成果展示",
+   "props": {
+    "受众": "评审专家/主管部门",
+    "基调": "官方大气·权威带口径",
+    "语速": "230-250字/分",
+    "公式链": "F02→F03→F08→F09→F13",
+    "示例": "该项目突破了自主可控的关键技术，实现了国产替代。经权威检测，重复精度达到微米级，居国际先进水平。成果已应用于产线，为良率提升提供关键支撑。",
+    "禁忌": "世界级/领先/填补空白等无依据词·无出处数据"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:科普视频",
+   "type": "NarrationType",
+   "name": "科普视频(公众)",
+   "props": {
+    "受众": "大众/学生",
+    "基调": "口语·钩子·类比",
+    "语速": "260-280字/分",
+    "公式链": "F01→F03(类比)→F10→F12",
+    "示例": "你看得见的每一滴水，都藏着看不见的战场。PP棉像一张网，把大颗粒挡在外面；活性炭就像海绵，把异味牢牢锁住。",
+    "禁忌": "术语连击/宣传腔/钩子与内容脱节"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:招生宣传",
+   "type": "NarrationType",
+   "name": "招生宣传(高校/院所)",
+   "props": {
+    "受众": "学生/家长",
+    "基调": "温暖理想·人·场景",
+    "语速": "210-230字/分",
+    "公式链": "F12→F05→F05→F13",
+    "示例": "在这里，研一就能摸到真实的晶圆。导师说，科研不是刷论文，是把不可能变成能。你的人生第一块芯片，也许就刻在这间实验室。",
+    "禁忌": "就业/待遇承诺·夸张升学率"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:融资路演",
+   "type": "NarrationType",
+   "name": "融资路演(BP视频)",
+   "props": {
+    "受众": "投资人",
+    "基调": "问题+市场+模式·快",
+    "语速": "280-300字/分",
+    "公式链": "F01→F02→F08→F05→F14",
+    "示例": "检测一台设备要等三个月？我们把它压缩到三天。在这个百亿级的市场里，卡住所有人的是'看不见的良率'。我们让每一片晶圆，都开口说话。",
+    "禁忌": "夸大市场规模/未披露信息/技术参数注水"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:科普短视频",
+   "type": "NarrationType",
+   "name": "科普短视频(小红书/抖音竖版)",
+   "props": {
+    "受众": "泛人群",
+    "基调": "3秒钩子·快·弹幕感",
+    "语速": "280-300字/分",
+    "公式链": "F01/F07→F03→F10→F14(收藏/评论)",
+    "示例": "矿泉水瓶里藏着一座'垃圾场'？第一层滤芯，先拦住它们。点个收藏，下一条讲RO膜为什么最贵。",
+    "禁忌": "标题党(钩子与正文脱节)/前3秒无信息量"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:大科学装置设施",
+   "type": "NarrationType",
+   "name": "大科学装置/设施",
+   "props": {
+    "受众": "公众/决策者",
+    "基调": "敬畏·尺度·数字诗化",
+    "语速": "190-210字/分(慢)",
+    "公式链": "F01→F08(诗化)→F10→F13",
+    "示例": "在这里，光走一公里，只为看清一皮米的距离。它不算出答案，它先提出问题。这就是它存在的意义。",
+    "禁忌": "轻快配乐/节奏急促破坏庄重感"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:科研机构介绍",
+   "type": "NarrationType",
+   "name": "科研机构/团队介绍",
+   "props": {
+    "受众": "合作方/客户/招聘",
+    "基调": "沉稳专业·人与方向并重",
+    "语速": "235-255字/分",
+    "公式链": "F02→F03→F05→F08→F13",
+    "示例": "我们研究的是让检测变快的方法。三十人的团队，一半做光学，一半做算法。他们做出来的每一台设备，都在产线上替你盯住良率。",
+    "禁忌": "过度煽情/空喊口号/人员信息失真"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://hi-banma.com/1263.html",
+    "https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408"
+   ]
+  },
+  {
+   "id": "NarrationType:直白规格型",
+   "type": "NarrationType",
+   "name": "直白规格型(规格宣读式)",
+   "props": {
+    "受众": "工程师/采购/专业展商",
+    "基调": "直接·无修饰·规格即卖点(参数自带单位/条件/关键词)",
+    "语速": "250-270字/分(匀速宣读感)",
+    "公式链": "F03定义→F08参数→F08参数→F08参数→F13收口(定位句)",
+    "示例": "X-2000 明场缺陷检测系统。分辨率 0.3μm，产能 800 片/小时，检出灵敏度 99.5%（以 90nm 线宽测试图形为基准），重复性优于 1%。适配 28nm 及以上节点，已交付国内 12 英寸产线。",
+    "禁忌": "华丽感性词/参数不带单位不带条件/无出处数据",
+    "互补": "与价值翻译型(F06)是两极: 直白=读规格给工程师, 翻译=讲价值给非专业受众; 产品片可按客户偏好选极(直白/翻译/混合)"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationExample:PHO-SC-4直白规格",
+   "type": "NarrationExample",
+   "name": "PHO-SC-4直白规格旁白",
+   "props": {
+    "原文": "PHO-SC-4 激光驱动等离子体宽谱光源，覆盖170–2500nm超宽带、光谱辐射亮度超75mW/(mm²·sr·nm)，功率稳定性优于±0.2%（三环控制），寿命达1万小时，自主知识产权，面向半导体量测/检测的高性能宽谱光源。",
+    "结构": "定义句+参数句×3(单位/条件全带)+收口定位句(自主知识产权/面向…)",
+    "来源": "用户提供范式(2026-09)"
+   },
+   "sources": [
+    "templates/narration-formula.md"
+   ]
+  },
+  {
+   "id": "NarrationDirectPattern:纯参数宣读",
+   "type": "NarrationDirectPattern",
+   "name": "纯参数宣读",
+   "props": {
+    "结构": "定义句→参数句×N(单位/条件/±全带)→收口定位句",
+    "例": "PHO-SC-4…覆盖170-2500nm…辐射亮度超75…稳定性优于±0.2%…寿命1万小时…自主知识产权，面向…",
+    "适用": "官网/展板视频/选型资料配套",
+    "注意": "指标≤6个, 超了交给图表层"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationDirectPattern:参数加应用一句",
+   "type": "NarrationDirectPattern",
+   "name": "参数+应用一句",
+   "props": {
+    "结构": "规格连发后补一句'用来做什么'",
+    "例": "…寿命达1万小时。它用在半导体检测线上，替你看住每一片晶圆。",
+    "适用": "半专业观众/行业媒体",
+    "注意": "应用句只说场景, 不夸大能力"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationDirectPattern:参数加对比基准",
+   "type": "NarrationDirectPattern",
+   "name": "参数+对比基准",
+   "props": {
+    "结构": "每个指标给参照系(同类水平/上一代/行业标准)",
+    "例": "…辐射亮度超75mW/(mm²·sr·nm)，约为传统氙灯的3倍。",
+    "适用": "选型工程师",
+    "注意": "对比基准必须真实可核, 无据不写"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationDirectPattern:分组宣读",
+   "type": "NarrationDirectPattern",
+   "name": "分组宣读(归类式)",
+   "props": {
+    "结构": "按维度分组: 光谱性能→输出亮度→稳定性→寿命→产权→应用, 每维度1-2句",
+    "例": "光谱上：覆盖170-2500nm超宽带。亮度上：辐射亮度超75…。稳定性上：优于±0.2%（三环控制）。",
+    "适用": "3分钟以上/申报配套",
+    "注意": "维度顺序按客户最关心排序, 可调"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationDirectPattern:展会口播",
+   "type": "NarrationDirectPattern",
+   "name": "展会口播(短句分点)",
+   "props": {
+    "结构": "短句分点(5-8字一句), 像现场介绍",
+    "例": "PHO-SC-4。宽谱光源。170到2500纳米。亮度高。寿命一万小时。国产，自主产权。",
+    "适用": "展会/现场/抖音竖版工业账号",
+    "注意": "段落间留停顿, 语速略放"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "DirectRule:参数纪律",
+   "type": "DirectRule",
+   "name": "参数纪律",
+   "props": {
+    "规则": "每个参数必须带单位/量纲; 幅度类带±/优于/达到; 条件类带(三环控制/测试条件); 指标≤6个, 超了交给图表层",
+    "红线": "无出处数字说出口=科学错误"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "DirectRule:排序纪律",
+   "type": "DirectRule",
+   "name": "排序纪律",
+   "props": {
+    "规则": "指标排序按客户最关心: 通常 波段范围→亮度→稳定性→寿命→产权→应用; 客户口径不同可调(采购看寿命价格, 工程师看精度)"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "DirectRule:收口纪律",
+   "type": "DirectRule",
+   "name": "收口纪律",
+   "props": {
+    "规则": "结尾必须有一句'归属句': 面向…/应用于…/自主知识产权/国产替代——三选一或组合, 不给纯参数无归属"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "DirectRule:禁修辞",
+   "type": "DirectRule",
+   "name": "禁修辞",
+   "props": {
+    "规则": "直白型禁: 比喻/排比反问/感叹号/感性形容词(极致/完美/颠覆); 数字中性陈述(用'达/超/优于'而非'高达/仅'的夸张量级)"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "DirectRule:宣读语速",
+   "type": "DirectRule",
+   "name": "宣读语速",
+   "props": {
+    "规则": "250-270字/分均匀宣读; 数字与单位之间略停(±0.2%这一口型要稳); 关键词(自主知识产权)加重音"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "DirectRule:混合极规则",
+   "type": "DirectRule",
+   "name": "混合极规则",
+   "props": {
+    "规则": "双受众时: 先直白宣读规格(给工程师) → 再一句价值翻译(给决策者) → 收口归属句; 拒绝长比喻与情绪堆叠"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationExample:PHO-SC-4分组宣读",
+   "type": "NarrationExample",
+   "name": "PHO-SC-4分组宣读版",
+   "props": {
+    "原文": "光谱上：覆盖170-2500nm超宽带。亮度上：光谱辐射亮度超75mW/(mm²·sr·nm)。稳定性上：功率漂移优于±0.2%（三环控制）。寿命上：一万小时。产权上：自主知识产权。它用在半导体检测线上。",
+    "结构": "分组宣读",
+    "来源": "范式改编"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationExample:PHO-SC-4对比基准",
+   "type": "NarrationExample",
+   "name": "PHO-SC-4对比基准版",
+   "props": {
+    "原文": "PHO-SC-4：170-2500nm 超宽带，辐射亮度超75mW/(mm²·sr·nm)，约为传统氙灯的3倍；功率优于±0.2%，寿命一万小时。自主知识产权，面向半导体量测检测。",
+    "结构": "参数+对比基准",
+    "来源": "范式改编(对比数据标注待核实)"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationExample:PHO-SC-4展会口播",
+   "type": "NarrationExample",
+   "name": "PHO-SC-4展会口播版",
+   "props": {
+    "原文": "PHO-SC-4。宽谱光源。170到2500纳米。亮度高。一万小时寿命。国产。自主产权。",
+    "结构": "展会口播短句分点",
+    "来源": "范式改编"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationExample:仪器直白规格体",
+   "type": "NarrationExample",
+   "name": "分光光度计式直白规格",
+   "props": {
+    "原文": "双光束紫外可见分光光度计。波长范围190-1100nm，光谱带宽1nm，吸光度准确度±0.005A。以'新时代的标准'为开发理念，面向科研与QC实验室。",
+    "结构": "参数+理念句+应用归属",
+    "来源": "按仪器行业惯例改编(参考分光光度计文案, 参数为占位示例)"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationExample:检测系统直白规格",
+   "type": "NarrationExample",
+   "name": "X-2000检测系统直白版",
+   "props": {
+    "原文": "X-2000 明场缺陷检测系统。分辨率 0.3μm，产能 800 片/小时，检出灵敏度 99.5%（以 90nm 线宽测试图形为基准），重复性优于 1%。适配 28nm 及以上节点，已交付国内 12 英寸产线。",
+    "结构": "定义句+参数×4(单位/条件全带)+应用归属(适配/已交付)",
+    "来源": "范式改编(参数为占位, 待项目实测替换)"
+   },
+   "sources": [
+    "templates/narration-formula.md",
+    "http://www.tianzhuniu.com/172.html",
+    "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "NarrationExample:净水机直白规格",
+   "type": "NarrationExample",
+   "name": "净水机直白版",
+   "props": {
+    "原文": "旭诚净水机。五级过滤：PP棉、UDF、CTO、RO膜、后置矿化。RO膜孔径 0.0001 微米，额定净水量 4000L，产水率 65%，一级水效。家用即饮，出水直喝。",
+    "结构": "定义+级数罗列+核心参数×3+水效等级+应用句",
+    "来源": "按旭诚案例改编(参数为占位, 待核实)"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9",
+    "templates/narration-formula.md"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "NarrationRule:参数价值翻译律",
+   "target": "NarrationRule:卖结果不卖功能",
+   "type": "rule-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:参数价值翻译律",
+   "target": "NarrationRule:证据句构造",
+   "type": "rule-requires",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:数字口语化",
+   "target": "NarrationRule:参数价值翻译律",
+   "type": "rule-supports",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:术语第一遍即译",
+   "target": "NarrationRule:旁白不抢画面",
+   "type": "rule-pairs",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:克制信任律",
+   "target": "NarrationRule:语速档位",
+   "type": "rule-governs",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:克制信任律",
+   "target": "NarrationRule:旁白与基调一致性",
+   "type": "rule-pairs",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:单句呼吸律",
+   "target": "NarrationRule:语速档位",
+   "type": "rule-supports",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:开头钩子高科版",
+   "target": "NarrationHook:反常识数字钩",
+   "type": "hook-uses",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:开头钩子高科版",
+   "target": "NarrationHook:对比真相钩",
+   "type": "hook-uses",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:开头钩子高科版",
+   "target": "NarrationHook:不可能之问钩",
+   "type": "hook-uses",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:开头钩子高科版",
+   "target": "NarrationHook:第一视角实拍钩",
+   "type": "hook-uses",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:证据式CTA",
+   "target": "NarrationRule:克制信任律",
+   "type": "rule-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:旁白与基调一致性",
+   "target": "StyleDirection:冷蓝生物荧光科学可视化风",
+   "type": "rule-consistent-with",
+   "props": {}
+  },
+  {
+   "source": "NarrationHook:第一视角实拍钩",
+   "target": "RednotePattern:工厂探访型",
+   "type": "pattern-shares",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:设备产品片产品名开场",
+   "target": "NarrationRule:开头钩子高科版",
+   "type": "rule-refines",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:设备产品片产品名开场",
+   "target": "NarrationRule:旁白与基调一致性",
+   "type": "rule-pairs",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:麦格米特·1/3以下",
+   "target": "NarrationRule:参数价值翻译律",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:麦格米特·1/3以下",
+   "target": "NarrationRule:克制信任律",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:麦格米特·风冷散热",
+   "target": "NarrationRule:字幕短句",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:麦格米特·多重保护",
+   "target": "NarrationRule:证据句构造",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·杂质钩子",
+   "target": "NarrationRule:开头钩子高科版",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·增压",
+   "target": "NarrationRule:参数价值翻译律",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·第一重过滤",
+   "target": "NarrationRule:层级公式句",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·第三重吸附",
+   "target": "NarrationRule:层级公式句",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·第五重口感",
+   "target": "NarrationRule:层级公式句",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·第五重口感",
+   "target": "NarrationRule:卖结果不卖功能",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·落版承诺",
+   "target": "NarrationRule:证据式CTA",
+   "type": "example-shows-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:层级公式句",
+   "target": "NarrationRule:字幕短句",
+   "type": "rule-supports",
+   "props": {}
+  },
+  {
+   "source": "NarrationRule:层级公式句",
+   "target": "NarrationRule:旁白不抢画面",
+   "type": "rule-pairs",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·杂质钩子",
+   "target": "XhsCase:AI产品动画工作流实录",
+   "type": "example-from-case",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:麦格米特·1/3以下",
+   "target": "XhsCase:工业产品实拍加动画结合",
+   "type": "example-from-case",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·杂质钩子",
+   "target": "NarrationFormula:F01钩子句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:麦格米特·1/3以下",
+   "target": "NarrationFormula:F07对比句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:麦格米特·风冷散热",
+   "target": "NarrationFormula:F05属性句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:麦格米特·多重保护",
+   "target": "NarrationFormula:F11安全句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·增压",
+   "target": "NarrationFormula:F10因果句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·第一重过滤",
+   "target": "NarrationFormula:F04层级句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·第三重吸附",
+   "target": "NarrationFormula:F04层级句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·第五重口感",
+   "target": "NarrationFormula:F04层级句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:旭诚·落版承诺",
+   "target": "NarrationFormula:F13承诺句",
+   "type": "example-uses-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F01钩子句",
+   "target": "NarrationRule:开头钩子高科版",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F03定义句",
+   "target": "NarrationRule:术语第一遍即译",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F04层级句",
+   "target": "NarrationRule:层级公式句",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F05属性句",
+   "target": "NarrationRule:克制信任律",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F06价值句",
+   "target": "NarrationRule:参数价值翻译律",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F07对比句",
+   "target": "NarrationRule:参数价值翻译律",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F08参数句",
+   "target": "NarrationRule:数字口语化",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F09证据句",
+   "target": "NarrationRule:证据句构造",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F14CTA句",
+   "target": "NarrationRule:证据式CTA",
+   "type": "formula-implements",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F04层级句",
+   "target": "NarrationRule:字幕短句",
+   "type": "formula-follows",
+   "props": {}
+  },
+  {
+   "source": "NarrationFormula:F07对比句",
+   "target": "NarrationRule:克制信任律",
+   "type": "formula-follows",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:产品宣传片",
+   "target": "NarrationFormula:F01钩子句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:产品宣传片",
+   "target": "NarrationFormula:F06价值句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:产品宣传片",
+   "target": "NarrationFormula:F07对比句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:产品宣传片",
+   "target": "NarrationFormula:F09证据句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:品牌形象片",
+   "target": "NarrationFormula:F05属性句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:品牌形象片",
+   "target": "NarrationFormula:F12场景句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:品牌形象片",
+   "target": "NarrationFormula:F13承诺句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:项目申报成果展示",
+   "target": "NarrationFormula:F08参数句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:项目申报成果展示",
+   "target": "NarrationFormula:F09证据句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:项目申报成果展示",
+   "target": "NarrationFormula:F03定义句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科普视频",
+   "target": "NarrationFormula:F01钩子句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科普视频",
+   "target": "NarrationFormula:F03定义句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科普视频",
+   "target": "NarrationFormula:F10因果句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:招生宣传",
+   "target": "NarrationFormula:F12场景句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:招生宣传",
+   "target": "NarrationFormula:F05属性句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:招生宣传",
+   "target": "NarrationFormula:F13承诺句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:融资路演",
+   "target": "NarrationFormula:F01钩子句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:融资路演",
+   "target": "NarrationFormula:F02痛点句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:融资路演",
+   "target": "NarrationFormula:F14CTA句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科普短视频",
+   "target": "NarrationFormula:F01钩子句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科普短视频",
+   "target": "NarrationFormula:F03定义句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科普短视频",
+   "target": "NarrationFormula:F14CTA句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:大科学装置设施",
+   "target": "NarrationFormula:F01钩子句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:大科学装置设施",
+   "target": "NarrationFormula:F08参数句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:大科学装置设施",
+   "target": "NarrationFormula:F13承诺句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科研机构介绍",
+   "target": "NarrationFormula:F03定义句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科研机构介绍",
+   "target": "NarrationFormula:F05属性句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科研机构介绍",
+   "target": "NarrationFormula:F08参数句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:产品宣传片",
+   "target": "NarrationExample:麦格米特·1/3以下",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:科普视频",
+   "target": "NarrationExample:旭诚·杂质钩子",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationFormula:F03定义句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationFormula:F08参数句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationFormula:F13承诺句",
+   "type": "type-adopts-formula",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationExample:PHO-SC-4直白规格",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationType:产品宣传片",
+   "type": "type-twin",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:PHO-SC-4直白规格",
+   "target": "NarrationRule:参数价值翻译律",
+   "type": "example-contrasts",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationDirectPattern:纯参数宣读",
+   "type": "type-uses-pattern",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationDirectPattern:参数加应用一句",
+   "type": "type-uses-pattern",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationDirectPattern:参数加对比基准",
+   "type": "type-uses-pattern",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationDirectPattern:分组宣读",
+   "type": "type-uses-pattern",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationDirectPattern:展会口播",
+   "type": "type-uses-pattern",
+   "props": {}
+  },
+  {
+   "source": "NarrationDirectPattern:纯参数宣读",
+   "target": "DirectRule:参数纪律",
+   "type": "pattern-follows",
+   "props": {}
+  },
+  {
+   "source": "NarrationDirectPattern:分组宣读",
+   "target": "DirectRule:排序纪律",
+   "type": "pattern-follows",
+   "props": {}
+  },
+  {
+   "source": "NarrationDirectPattern:展会口播",
+   "target": "DirectRule:宣读语速",
+   "type": "pattern-follows",
+   "props": {}
+  },
+  {
+   "source": "NarrationDirectPattern:参数加对比基准",
+   "target": "DirectRule:禁修辞",
+   "type": "pattern-follows",
+   "props": {}
+  },
+  {
+   "source": "NarrationDirectPattern:参数加应用一句",
+   "target": "DirectRule:混合极规则",
+   "type": "pattern-follows",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationExample:PHO-SC-4分组宣读",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationExample:PHO-SC-4对比基准",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationExample:PHO-SC-4展会口播",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationExample:仪器直白规格体",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "DirectRule:混合极规则",
+   "type": "type-adopts-rule",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationExample:检测系统直白规格",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationType:直白规格型",
+   "target": "NarrationExample:净水机直白规格",
+   "type": "type-uses-sample",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:净水机直白规格",
+   "target": "NarrationDirectPattern:分组宣读",
+   "type": "sample-shows-pattern",
+   "props": {}
+  },
+  {
+   "source": "NarrationExample:检测系统直白规格",
+   "target": "NarrationDirectPattern:纯参数宣读",
+   "type": "sample-shows-pattern",
+   "props": {}
+  }
+ ]
+}

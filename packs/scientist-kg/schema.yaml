@@ -1,0 +1,51 @@
+pack: scientist-kg
+schema_version: "1.0"
+role: 科学顾问
+role_cn: 科学顾问（Science Advisor）
+positioning: 科学理解与事实守门
+description: >
+  为「科生」科研视频制作团队的科学顾问构建的领域知识图谱 Pack。
+  收录科学概念、类比、可视化点子、关键数据点、理解深度分级、知识缺口与科学准确铁律，
+  供科学理解、脚本事实审查、类比与可视化复用、知识边界标注使用。
+  角色定位：科学理解引擎 + 事实守门人——对未经验证的科学表述拥有 一票否决权。
+
+# 复合主键约定
+primary_key:
+  convention: "id = `类型英文名:名称`"
+  example: "ScientificConcept:CRISPR-Cas9"
+  uniqueness: id 在全库唯一；source/target 引用必须存在于 entities
+
+# 构建来源与更新规则
+build_source: >
+  content_from_team: 本领域无外部 API 可富集，内容全部来自团队沉淀的 kb/ 笔记与 agents/scientist.md 角色卡。
+  files: [kb/生物学/合成生物学.md, kb/生物学/基因编辑.md, kb/生物学/植物代谢.md, kb/光学/激光驱动等离子体宽谱光源.md, kb/光学/半导体量测的光源需求.md, kb/产业/宽谱光源与半导体量测产业图谱.md, kb/_模板/概念笔记.md, kb/入库规则.md, kb/隐私红线.md, agents/scientist.md]
+update_rule: >
+  新知识由项目收尾萃取循环补充（见 kb/入库规则.md：项目收尾主渠道 + 项目进行中立幼苗 + 日常手动，
+  四门槛——通用/公开/有用/干净 同时满足才入库；拿不准一律不入库）。
+  更新时须逐条过 privacy 检查（kb/隐私红线.md），违反则立即删除。
+
+# 实体类型表
+entity_types:
+  - {type: ScientificConcept, cn: 科学概念, description: "主题/原理/因果链/关键步骤（如 DNA组装、代谢通路、套刻误差测量）", example_id: "ScientificConcept:CRISPR-Cas9"}
+  - {type: Analogy, cn: 类比, description: "把一个专业概念讲给外行听的类比，要点含适用受众与有误导风险", example_id: "Analogy:CRISPR-GPS导航剪刀"}
+  - {type: VisualizationIdea, cn: 可视化点子, description: "AI 视频可执行的画面/图表方案（景别/运镜/数据可视化）", example_id: "VisualizationIdea:LDLS-色散光谱带"}
+  - {type: DataPoint, cn: 关键数据点, description: "定量数据，含出处/样本量/对比基准；无出处标待确认", example_id: "DataPoint:LDLS寿命-1万小时"}
+  - {type: UnderstandingLevel, cn: 理解深度等级, description: "L1-L4 的判定标准（能复述/讲清因果链/为何用此法/指出局限）", example_id: "UnderstandingLevel:L2机制"}
+  - {type: KnowledgeGap, cn: 知识缺口/待确认项, description: "我不确定什么，诚实标注防止编造", example_id: "KnowledgeGap:体内递送方法"}
+  - {type: FactRule, cn: 科学准确铁律, description: "数据有出处/不编造/术语翻译不牺牲准确性/类比有误导时指出等", example_id: "FactRule:数据有出处"}
+  - {type: Domain, cn: 领域, description: "概念归属的学科/行业域（生物学/医学/化学/物理学/光学/产业）", example_id: "Domain:生物学"}
+  - {type: Company, cn: 厂商/机构, description: "上游光源厂商与下游量测/检测整机厂（公开资料级）", example_id: "Company:KLA"}
+  - {type: Method, cn: 方法论/工作法, description: "角色与知识库的工作法（7步理解法/入库五步/隐私三分法等）", example_id: "Method:7步深度理解法"}
+  - {type: Milestone, cn: 里程碑/突破, description: "领域大事纪与关键突破（可作时间线叙事）", example_id: "Milestone:2012CRISPR发明"}
+
+# 关系类型表
+relation_types:
+  - {type: concept-uses-analogy, cn: 概念引用类比, description: "ScientificConcept -> Analogy"}
+  - {type: analogy-for-concept, cn: 类比服务概念, description: "Analogy -> ScientificConcept"}
+  - {type: viz-for-concept, cn: 可视化点子服务概念, description: "VisualizationIdea -> ScientificConcept"}
+  - {type: data-for-concept, cn: 数据支撑概念, description: "DataPoint -> ScientificConcept"}
+  - {type: gap-in-concept, cn: 缺口限定概念, description: "KnowledgeGap -> ScientificConcept"}
+  - {type: concept-related-to, cn: 概念互相关联, description: "任意二元实体之间的语义关联（跨领域连结尤其珍贵）"}
+  - {type: level-requires, cn: 深度要求, description: "ScientificConcept -> UnderstandingLevel（理解该概念所需达到的深度）"}
+  - {type: rule-applies, cn: 铁律适用, description: "FactRule -> 任意实体（该铁律约束的对象）"}
+  - {type: concept-in-domain, cn: 概念属领域, description: "ScientificConcept/Company -> Domain"}

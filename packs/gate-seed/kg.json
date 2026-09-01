@@ -1,0 +1,429 @@
+{
+ "schema_version": "1.0",
+ "pack": "gate-seed",
+ "role": "制片人",
+ "entities": [
+  {
+   "id": "UserGate:定档",
+   "type": "UserGate",
+   "name": "定档拍板",
+   "props": {
+    "里程碑": "M1",
+    "问题": "项目采用哪档流程投入",
+    "选项": "M档标准(Recommended)/L档旗舰(全会+全自动)/S档轻量(快速单干)",
+    "推荐": "M档",
+    "依据": "templates/user-gate.md #1"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "docs/DESIGN.md"
+   ]
+  },
+  {
+   "id": "UserGate:受众模式",
+   "type": "UserGate",
+   "name": "受众模式拍板",
+   "props": {
+    "里程碑": "M1",
+    "问题": "面向哪类受众做内容与术语处理",
+    "选项": "PUB公众科普(Recommended)/EXP专家评审/GOV政府领导/STD学生/IND产业/自定义",
+    "推荐": "PUB",
+    "依据": "templates/user-gate.md #2"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "UserGate:投放平台",
+   "type": "UserGate",
+   "name": "投放平台拍板",
+   "props": {
+    "里程碑": "M1",
+    "问题": "用哪个AI视频工作台(决定prompt公式)",
+    "选项": "未定(Recommended,按素材与交付选)/即梦/可灵/海螺·MiniMax H3/Vidu/Runway/万相/Seedance/LibTV/多平台",
+    "推荐": "未定-由制片人按素材推荐",
+    "依据": "templates/user-gate.md #3"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "id": "UserGate:时长",
+   "type": "UserGate",
+   "name": "时长拍板",
+   "props": {
+    "里程碑": "M1",
+    "问题": "视频期望多长",
+    "选项": "3-5分钟(Recommended)/1-3分钟/5-8分钟/8-15分钟/自定义",
+    "推荐": "3-5分钟",
+    "依据": "templates/user-gate.md #4"
+   },
+   "sources": [
+    "templates/user-gate.md"
+   ]
+  },
+  {
+   "id": "UserGate:风格方向",
+   "type": "UserGate",
+   "name": "风格方向拍板",
+   "props": {
+    "里程碑": "M1-M2",
+    "问题": "选哪种调性风格方向",
+    "选项": "科技明亮风(Recommended,设备医疗类)/冷蓝生物荧光科技感/电影质感/大气官方(申报类)/轻松科普/MG动画扁平/自定义",
+    "推荐": "按题材推荐",
+    "依据": "templates/user-gate.md #5"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  },
+  {
+   "id": "UserGate:画风",
+   "type": "UserGate",
+   "name": "画风拍板",
+   "props": {
+    "里程碑": "M2",
+    "问题": "选哪种艺术画风(与调性正交)",
+    "选项": "写实摄影(Recommended)/3D渲染写实/电影感/日系动画/国风水墨/扁平矢量MG/黏土定格/自定义",
+    "推荐": "按题材推荐",
+    "依据": "templates/user-gate.md #6"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "packs/prompt-kg/expand_tables3.json"
+   ]
+  },
+  {
+   "id": "UserGate:素材缺口",
+   "type": "UserGate",
+   "name": "素材缺口拍板",
+   "props": {
+    "里程碑": "M2",
+    "问题": "缺口素材怎么补",
+    "选项": "上网找公开素材(Recommended)/用户提供/AI生成替代/删掉该内容",
+    "推荐": "公开素材",
+    "依据": "templates/user-gate.md #7"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "playbooks/production-workflow.md"
+   ]
+  },
+  {
+   "id": "UserGate:事实争议",
+   "type": "UserGate",
+   "name": "事实争议拍板",
+   "props": {
+    "里程碑": "M2-M4",
+    "问题": "待确认/争议事实如何处理",
+    "选项": "用户提供材料(Recommended)/按保守表述处理(标待确认)/删除该表述",
+    "推荐": "用户提供材料",
+    "依据": "templates/user-gate.md #8 — 事实争议绝不折中"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "UserGate:创意概念拍板",
+   "type": "UserGate",
+   "name": "创意概念拍板(选一/融合)",
+   "props": {
+    "里程碑": "KSP-04",
+    "问题": "概念卡(3-4个)已并列展示: 选哪个创意概念作为深化方向",
+    "选项": "概念A(Recommended)/概念B/概念C/融合两个概念(指出)/自定义",
+    "推荐": "按评分+红队挑战排序",
+    "依据": "templates/user-gate.md #9"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "orchestration/ORCHESTRATION.md"
+   ]
+  },
+  {
+   "id": "UserGate:品味取舍",
+   "type": "UserGate",
+   "name": "品味取舍拍板",
+   "props": {
+    "里程碑": "M3-M4",
+    "问题": "品味/品牌/价值观取舍",
+    "选项": "按团队建议(Recommended)/保持原样/换一种(用户描述)",
+    "推荐": "团队建议",
+    "依据": "templates/user-gate.md #10"
+   },
+   "sources": [
+    "templates/user-gate.md"
+   ]
+  },
+  {
+   "id": "UserGate:出口闸CONDITIONAL",
+   "type": "UserGate",
+   "name": "出口闸CONDITIONAL拍板",
+   "props": {
+    "里程碑": "M5",
+    "问题": "出口闸给出CONDITIONAL(可修正), 如何处理",
+    "选项": "按评审意见修改后重新交付(Recommended)/接受现状交付/升级讨论",
+    "推荐": "修改后重交付",
+    "依据": "templates/user-gate.md #11"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "UserGate:出口闸BLOCK",
+   "type": "UserGate",
+   "name": "出口闸BLOCK拍板",
+   "props": {
+    "里程碑": "M5",
+    "问题": "出口闸给出BLOCK, 如何处理",
+    "选项": "打回对应环节重做(Recommended,≤2循环)/用户拍板取舍/冻结交付",
+    "推荐": "打回重做",
+    "依据": "templates/user-gate.md #12"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "UserGate:术语发音",
+   "type": "UserGate",
+   "name": "术语发音拍板",
+   "props": {
+    "里程碑": "M4-M5",
+    "问题": "易读错术语如何处理",
+    "选项": "同义词替换(Recommended)/保留并在配音稿标注读音",
+    "推荐": "同义词替换",
+    "依据": "templates/user-gate.md #13"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "agents/sound-designer.md"
+   ]
+  },
+  {
+   "id": "UserGate:时长预算超限",
+   "type": "UserGate",
+   "name": "时长预算拍板",
+   "props": {
+    "里程碑": "M5",
+    "问题": "成片超过简报时长/预算, 怎么办",
+    "选项": "砍镜头(Recommended)/延长时间/减节奏内容",
+    "推荐": "砍镜头",
+    "依据": "templates/user-gate.md #14"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "UserGate:九宫格风格预览",
+   "type": "UserGate",
+   "name": "九宫格风格预览拍板",
+   "props": {
+    "里程碑": "KSP-04.5",
+    "问题": "方案已定, 风格预览九宫格是否采纳",
+    "选项": "按此风格基线执行(Recommended)/换风格方向重出/微调某几格",
+    "推荐": "按基线执行",
+    "依据": "templates/user-gate.md #15"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "UserGate:口播稿拍板",
+   "type": "UserGate",
+   "name": "口播方案选择(多选一/混搭)",
+   "props": {
+    "里程碑": "KSP-05",
+    "问题": "口播多方案(竞稿2-3个)已全文展示, 选哪个方向作为定稿依据",
+    "选项": "A直白规格型/B价值翻译型/C混合型(Recommended)/混搭(指出)/自定义",
+    "推荐": "C混合型(先规格后翻译)",
+    "依据": "templates/user-gate.md #16"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "UserGate:内容重点对齐",
+   "type": "UserGate",
+   "name": "内容重点圈选(多选)",
+   "props": {
+    "里程碑": "KSP-03.5",
+    "问题": "视频讲什么、重点讲哪几条——与用户讨论后圈选侧重点",
+    "选项": "候选重点清单多选(可追加补充条目); P0=加强/未选=弱化/指名删除",
+    "推荐": "按用户侧重",
+    "依据": "templates/user-gate.md #17"
+   },
+   "sources": [
+    "templates/user-gate.md",
+    "templates/brief.md"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "UserGate:定档",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:受众模式",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:投放平台",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:时长",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:风格方向",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:画风",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:素材缺口",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:事实争议",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:创意概念拍板",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:品味取舍",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:出口闸CONDITIONAL",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:出口闸BLOCK",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:术语发音",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:时长预算超限",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:事实争议",
+   "target": "ProcessRule:质量门控",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "UserGate:出口闸CONDITIONAL",
+   "target": "ProcessRule:质量门控",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "UserGate:出口闸BLOCK",
+   "target": "ProcessRule:质量门控",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "UserGate:时长预算超限",
+   "target": "ProcessRule:质量门控",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "UserGate:九宫格风格预览",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:口播稿拍板",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:九宫格风格预览",
+   "target": "ProcessRule:宫格previz（整图成片与切片首帧）",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "UserGate:口播稿拍板",
+   "target": "ProcessRule:质量门控",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "UserGate:内容重点对齐",
+   "target": "RoleWorkflow:制片人",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:内容重点对齐",
+   "target": "RoleWorkflow:导演",
+   "type": "gate-in",
+   "props": {}
+  },
+  {
+   "source": "UserGate:内容重点对齐",
+   "target": "ProcessRule:质量门控",
+   "type": "gate-checks",
+   "props": {}
+  }
+ ]
+}

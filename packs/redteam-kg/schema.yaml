@@ -1,0 +1,88 @@
+schema_version: "1.0"
+pack: redteam-kg
+role: 红队
+description: >-
+  「科生」科研视频制作团队的【红队】领域知识图谱 Pack。
+  红队是被制度性指定的反对者：它的职责是防止团队陷入假共识，在 M4/M5 两个闸点充当
+  质量守门人，并在方案评审中从科学/传播/制作/甲方/伦理五个角度轮换开火。
+  本 Pack 沉淀红队守门所需的失败模式、红线、检查维度与反对纪律，供红队/Reviewer
+  subagent 在门控与评审时复用。
+
+# ============================================================
+# 包说明
+# ============================================================
+pack_info:
+  role: 红队（Red Team / Devil's Advocate）
+  定位: 制度性反对者与质量守门。存在意义是防止假共识；负责 M4 前置拦截闸与 M5 出口
+    评审闸的独立评审，用预注册标准而不是"凭感觉"打分，确保科学错误/伪造数据/平台
+    红线等在出片前被拦下。
+  构建来源: agents/red-team.md、protocols/quality-gate.md 为主；交叉从 agent 角色卡
+    （scientist/screenwriter/director/prompt-engineer/audience-advocate）的
+    "必攻击点/发言风格"以及 playbooks/platform-prompts.md、knowledge/动感三来源.md
+    提取失败模式与红线判定。
+  更新规则: >-
+    本领域无外部 API 可富集，内容来自团队沉淀，新知识由项目收尾萃取循环补充。每完成
+    一个项目（米勒笔在 M5 出口闸之后、知识萃取入库前），红队/Reviewer 把本次评审中
+    新出现的失败模式、红线、检查维度与反对纪律回填本 Pack；回填时遵循
+    kb/入库规则.md 的四门槛（通用/公开/有用/干净），项目专有信息零入库。
+
+# ============================================================
+# 实体类型表：type / 说明 / 示例id
+# ============================================================
+entity_types:
+  - type: FailureMode
+    说明: 失败模式。评审中会被判定为不合格的具体缺陷（科学错误/数据无出处/编造/PPT式
+          视频/超载prompt/标题党/图文脱节/术语塌方/自嗨/密度失衡/节奏事故/抽象词/
+          错位/错误因果等）。每条均带判定标准，即由何标准（七维维度或攻击视角）判定其不合规。
+    示例id: "FailureMode:PPT式视频"
+  - type: Taboo
+    说明: 禁忌与红线。硬性禁止触碰的禁区（品牌禁区/平台审核红线/数据与文字水印交给AI
+          生成/夸大疗效/夸大能力/误导性类比）。命中即构成硬性违规，出口闸可判 BLOCK。
+    示例id: "Taboo:数据与文字水印交给AI生成"
+  - type: CheckDimension
+    说明: 检查维度。M5 出口评审闸的七维检查表（画面相关性/配音准确度/节奏感/镜头动感/
+          信息密度/开头吸引力/品牌一致性/总时长），每条给出"标准"与"不通过的处置"。
+    示例id: "CheckDimension:镜头动感"
+  - type: AttackAngle
+    说明: 攻击视角。红队逐场轮换的批评切入角度（科学风险/传播风险/制作风险/甲方风险/
+          伦理合规），每个角度规定"问什么问题"。
+    示例id: "AttackAngle:伦理合规"
+  - type: GateCheckpoint
+    说明: 闸点。门控执行的关键节点（M4 前置拦截闸/M5 出口评审闸），含执行者、检查依据、
+          产出文件与三态裁决（PASS/CONDITIONAL/BLOCK）及 ≤2 循环打回规则。
+    示例id: "GateCheckpoint:M5出口评审闸"
+  - type: RebuttalRule
+    说明: 反对纪律。红队进行有原则反对时须遵守的规则（引用预注册标准/禁止每点必杠/
+          给出推翻条件/只评制品不评人/少数派报告必须留档/事实性争议不折中等）。
+    示例id: "RebuttalRule:引用预注册标准"
+
+# ============================================================
+# 关系类型表：type / 说明（source -> target）
+# ============================================================
+relation_types:
+  - type: failure-detected-by
+    说明: FailureMode -> CheckDimension。一种失败模式在门控评审中由哪个七维检查维度检出
+          （该维度的"标准/不通过处置"即该失败的判定依据）。
+  - type: taboo-flagged-by
+    说明: Taboo -> AttackAngle。该红线/禁忌由哪个攻击视角标记或追问（如伦理合规视角
+          追问夸大疗效）。
+  - type: dimension-in-gate
+    说明: CheckDimension -> GateCheckpoint。该检查维度属于/被纳入哪个闸点的检查表
+          （七维检查表归属于 M5 出口评审闸）。
+  - type: angle-covers
+    说明: AttackAngle -> FailureMode。该攻击视角会暴露/覆盖哪些失败模式（红队在该视角
+          轮换时会开火的问题）。
+  - type: gate-checks
+    说明: GateCheckpoint -> Taboo。该闸点硬性拦截/检查哪些红线（M4 前置拦拦截品牌禁区/
+          平台审核红线/数据画面交AI；M5 终审核对无夸大/无误导类比）。
+  - type: rule-applies
+    说明: RebuttalRule -> GateCheckpoint。该反对纪律适用于哪个闸点/评审环节。
+
+# ============================================================
+# 复合主键约定
+# ============================================================
+primary_key:
+  约定: 'id = `Type:名称`，其中 Type 为实体类型英文名（FailureMode/Taboo/CheckDimension/
+        AttackAngle/GateCheckpoint/RebuttalRule），名称为中文。'
+  示例: 'FailureMode:PPT式视频 / Taboo:平台审核红线 / CheckDimension:镜头动感 /
+        AttackAngle:伦理合规 / GateCheckpoint:M4前置拦截闸 / RebuttalRule:少数派报告必须留档'

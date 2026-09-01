@@ -1,0 +1,1962 @@
+{
+ "schema_version": "1.0",
+ "pack": "director-kg",
+ "role": "视觉导演",
+ "entities": [
+  {
+   "id": "ShotType:远景",
+   "type": "ShotType",
+   "name": "远景",
+   "props": {
+    "焦段": "16-24mm",
+    "叙事功能": "交代环境、空间关系、格局",
+    "景别动线": "推进式叙事起点",
+    "典型": "开篇环境锚定"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "ShotType:全景",
+   "type": "ShotType",
+   "name": "全景",
+   "props": {
+    "焦段": "35mm",
+    "叙事功能": "人物全身动作、场景全貌",
+    "景别动线": "推进式叙事场景建立",
+    "典型": "人物/环境全貌"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "ShotType:中景",
+   "type": "ShotType",
+   "name": "中景",
+   "props": {
+    "焦段": "50mm",
+    "叙事功能": "人物上半身、产品与人的交互",
+    "定位": "带货演示主力景别",
+    "典型": "产品使用交互镜头"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "ShotType:近景",
+   "type": "ShotType",
+   "name": "近景",
+   "props": {
+    "焦段": "50mm",
+    "叙事功能": "面部表情、情绪反馈",
+    "定位": "情绪与反馈景别",
+    "典型": "人物反应镜头"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "ShotType:特写",
+   "type": "ShotType",
+   "name": "特写",
+   "props": {
+    "焦段": "85mm",
+    "叙事功能": "产品细节、关键动作",
+    "定位": "卖点演示主力景别",
+    "典型": "产品卖点/关键动作"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "ShotType:大特写",
+   "type": "ShotType",
+   "name": "大特写",
+   "props": {
+    "焦段": "135mm",
+    "叙事功能": "微观细节：水珠、气泡、纹理、膏体",
+    "定位": "微观细节景别",
+    "典型": "材质/微观展示"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "CameraMove:推",
+   "type": "CameraMove",
+   "name": "推",
+   "props": {
+    "英文": "dolly-in",
+    "情绪效果": "建立紧张、聚焦注意力、情感逼近",
+    "适用场景": "戏剧性揭示、情绪时刻、开场建立"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:拉",
+   "type": "CameraMove",
+   "name": "拉",
+   "props": {
+    "英文": "dolly-out",
+    "情绪效果": "释然、孤独、交代全貌",
+    "适用场景": "收尾、揭示环境规模、情绪抽离"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:摇",
+   "type": "CameraMove",
+   "name": "摇",
+   "props": {
+    "英文": "pan/tilt",
+    "情绪效果": "扫视信息、跟随视线",
+    "适用场景": "展现场景宽度/高度、跟视线引导"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:移",
+   "type": "CameraMove",
+   "name": "移",
+   "props": {
+    "英文": "truck",
+    "情绪效果": "平行观察、展示场景深度",
+    "适用场景": "跟随角色侧面移动、空间关系"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:跟",
+   "type": "CameraMove",
+   "name": "跟",
+   "props": {
+    "英文": "tracking",
+    "情绪效果": "陪伴感、行动感",
+    "适用场景": "角色行进、动作场面、低机位跟拍显步伐"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:环绕",
+   "type": "CameraMove",
+   "name": "环绕",
+   "props": {
+    "英文": "orbit",
+    "情绪效果": "英雄时刻、全方位审视",
+    "适用场景": "产品展示、人物高光、主角登场",
+    "旋转速度": "慢360奢侈/中360时尚/快360科技"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:升降",
+   "type": "CameraMove",
+   "name": "升降",
+   "props": {
+    "英文": "crane/jib",
+    "情绪效果": "史诗感、规模揭示",
+    "适用场景": "建立全景、开场/收尾的格局拉开"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:变焦",
+   "type": "CameraMove",
+   "name": "变焦",
+   "props": {
+    "英文": "zoom",
+    "情绪效果": "突然强调、快速转向",
+    "适用场景": "强调关键元素（比推更硬更主观）"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:希区柯克变焦",
+   "type": "CameraMove",
+   "name": "希区柯克变焦",
+   "props": {
+    "英文": "dolly-zoom",
+    "情绪效果": "眩晕、心理冲击、世界塌陷感",
+    "适用场景": "震惊瞬间、转折揭示、背景虚化焦点回缩主体"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:手持",
+   "type": "CameraMove",
+   "name": "手持",
+   "props": {
+    "英文": "handheld",
+    "情绪效果": "纪实、紧迫、亲密",
+    "适用场景": "纪录片感、UGC 真实感、追逐"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:FPV穿越",
+   "type": "CameraMove",
+   "name": "FPV穿越",
+   "props": {
+    "英文": "fpv",
+    "情绪效果": "沉浸、速度、探索",
+    "适用场景": "第一人称体验、穿空间、开箱/跑酷"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "CameraMove:甩",
+   "type": "CameraMove",
+   "name": "甩",
+   "props": {
+    "英文": "whip-pan",
+    "情绪效果": "节奏、转场冲击",
+    "适用场景": "快速切换场景且保持视觉连贯"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:固定",
+   "type": "CameraMove",
+   "name": "固定",
+   "props": {
+    "英文": "locked-off",
+    "情绪效果": "稳定、客观、仪式感",
+    "适用场景": "对话、产品细节、数据/落版镜头"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "CameraMove:探针微距穿梭",
+   "type": "CameraMove",
+   "name": "探针微距穿梭",
+   "props": {
+    "英文": "macro-probe",
+    "情绪效果": "奢侈、解压、微观奇观",
+    "适用场景": "首饰手表贴面滑行、穿缝隙、个护微观效果"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "CameraMove:低角度环绕",
+   "type": "CameraMove",
+   "name": "低角度环绕",
+   "props": {
+    "英文": "low-angle-orbit",
+    "情绪效果": "力量感、时尚感",
+    "适用场景": "潮流服饰、模特全身、产品英雄化"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:鱼眼贴脸",
+   "type": "CameraMove",
+   "name": "鱼眼贴脸",
+   "props": {
+    "英文": "fisheye",
+    "情绪效果": "畸变张力、街头感",
+    "适用场景": "潮流/重音卡点片头，配合重影闪烁"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "CameraMove:无人机升镜",
+   "type": "CameraMove",
+   "name": "无人机升镜",
+   "props": {
+    "英文": "drone-rise",
+    "情绪效果": "史诗感、上帝视角规模揭示",
+    "适用场景": "航拍前景、设施俯瞰、全景建立"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Transition:硬切",
+   "type": "Transition",
+   "name": "硬切",
+   "props": {
+    "效果": "干脆、节奏",
+    "适用": "对话、快节奏带货"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Transition:匹配剪辑",
+   "type": "Transition",
+   "name": "匹配剪辑",
+   "props": {
+    "效果": "高级、流畅穿越",
+    "适用": "主体轴向一致换场景（产品不变背景变）"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "Transition:鞭甩转场",
+   "type": "Transition",
+   "name": "鞭甩转场",
+   "props": {
+    "效果": "速度、张力",
+    "适用": "潮流/运动片场景切换"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Transition:溶解",
+   "type": "Transition",
+   "name": "溶解",
+   "props": {
+    "效果": "柔和、时光流逝",
+    "适用": "礼盒揭示、回忆、情绪过渡"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Transition:遮挡转场",
+   "type": "Transition",
+   "name": "遮挡转场",
+   "props": {
+    "效果": "无缝、一镜到底错觉",
+    "适用": "前景物体掠过镜头后换场景"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Transition:粒子消散重组",
+   "type": "Transition",
+   "name": "粒子消散重组",
+   "props": {
+    "效果": "科技感、变装",
+    "适用": "极速变装、材质转换"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Transition:冻结帧爆发",
+   "type": "Transition",
+   "name": "冻结帧爆发",
+   "props": {
+    "效果": "节奏中断再炸开",
+    "适用": "钩子段、卡点片头"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "VisualMetaphor:微观穿越",
+   "type": "VisualMetaphor",
+   "name": "微观穿越",
+   "props": {
+    "手法": "进细胞/沿 DNA 飞行",
+    "作用": "把微观世界做成奇观招牌镜头",
+    "关联": "探针/微距穿梭"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "VisualMetaphor:宏观俯瞰",
+   "type": "VisualMetaphor",
+   "name": "宏观俯瞰",
+   "props": {
+    "手法": "设施航拍感/尺度揭示",
+    "作用": "交代工程规模与时空尺度",
+    "关联": "升降/无人机升镜"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "VisualMetaphor:数据动起来",
+   "type": "VisualMetaphor",
+   "name": "数据动起来",
+   "props": {
+    "手法": "图表动起来/数据可视化",
+    "作用": "把指标/趋势变成可感画面",
+    "纪律": "数据后期重绘且不许加字"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/图表层.md"
+   ]
+  },
+  {
+   "id": "VisualMetaphor:过程演示",
+   "type": "VisualMetaphor",
+   "name": "过程演示",
+   "props": {
+    "手法": "反应/组装/编辑过程可视化",
+    "作用": "把机理/工艺步骤讲成过程",
+    "典型": "实验反应、组装、基因编辑"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "VisualMetaphor:工程隐喻",
+   "type": "VisualMetaphor",
+   "name": "工程隐喻",
+   "props": {
+    "手法": "用工程结构/装置比喻抽象概念",
+    "作用": "把抽象科学翻译成可拍结构",
+    "纪律": "精确结构走首帧图+图生视频"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "VisualMetaphor:生长效果可视化",
+   "type": "VisualMetaphor",
+   "name": "生长效果可视化",
+   "props": {
+    "手法": "首帧=初始状态，尾帧=理想效果，时间压缩生长",
+    "作用": "把模糊预期效果做出演化感",
+    "适用": "种子/生发液等效果难可视化品类"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "VisualMetaphor:探针微观视角",
+   "type": "VisualMetaphor",
+   "name": "探针微观视角",
+   "props": {
+    "手法": "微距拍膏体涂抹后的微观变化",
+    "作用": "让效果难可视化品类产生解压治愈感",
+    "适用": "美妆个护微观效果展示"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "ViStyle:科技蓝生物绿VI模板",
+   "type": "ViStyle",
+   "name": "科技蓝生物绿VI模板",
+   "props": {
+    "适用": "国家大设施/高校研究所/生物医药企业",
+    "主色": "科技蓝#1a56db 生物绿#00b67a",
+    "背景": "主背景#0a0e27深夜蓝",
+    "字体": "思源黑体 Heavy + Roboto 等宽数据",
+    "转场": "粒子流/光轨/数据流汇聚；数据色四系统各一勿混"
+   },
+   "sources": [
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  },
+  {
+   "id": "ViStyle:医疗洁净风VI模板",
+   "type": "ViStyle",
+   "name": "医疗洁净风VI模板",
+   "props": {
+    "适用": "医疗器械/临床研究/制药/CRO",
+    "主色": "医疗蓝#0077BE 生命粉#E91E63 纯净白",
+    "背景": "极浅灰白#FAFBFC",
+    "字体": "思源黑体+Roboto/Poppins",
+    "转场": "柔和模糊过渡+细线条延伸（非粒子爆炸）"
+   },
+   "sources": [
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  },
+  {
+   "id": "ViStyle:自然暖色调VI模板",
+   "type": "ViStyle",
+   "name": "自然暖色调VI模板",
+   "props": {
+    "适用": "公众科普/开放日/学生/新媒体传播",
+    "主色": "阳光橙#FF9500 天空蓝#5AC8FA 草地绿#34C759",
+    "背景": "浅色渐变或纯白，禁忌纯黑",
+    "字体": "思源黑体 Round + Nunito/Quicksand 圆润",
+    "转场": "弹性变形/可爱元素弹入/自然过渡"
+   },
+   "sources": [
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  },
+  {
+   "id": "ViStyle:VI适配速查表",
+   "type": "ViStyle",
+   "name": "VI适配速查表",
+   "props": {
+    "申报答辩版": "深蓝+深绿、深色背景、Heavy标题、速0.5-1s",
+    "公众科普版": "暖橙+天空蓝、浅色背景、Medium即可、慢1-2s",
+    "产业商业版": "企业品牌色、中性灰白、按品牌手册、中1s"
+   },
+   "sources": [
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  },
+  {
+   "id": "ViStyle:风格token块",
+   "type": "ViStyle",
+   "name": "风格token块",
+   "props": {
+    "手法": "全片写死一句风格描述逐字粘贴进每镜 prompt",
+    "范例": "冷蓝生物荧光科学可视化风格，体积光，浅景深，8K 超精细",
+    "跨平台": "换平台也带着走（Runway 翻英文）"
+   },
+   "sources": [
+    "playbooks/consistency.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:精确结构首帧图加图生视频",
+   "type": "FeasibilityRule",
+   "name": "精确结构参考包优先",
+   "props": {
+    "约束": "蛋白折叠/设备构造/实验装置: 参考包多角度(@图片外观+三视图+剖视+45°)优先; 仅I2V流才首帧图+图生视频",
+    "原因": "全能参考模型吃多角度参考包, 单张首帧是一代旧范式",
+    "对应": "RouteRule:精确结构参考包路线"
+   },
+   "sources": [
+    "agents/director.md",
+    "playbooks/consistency.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:单镜时长上限10秒",
+   "type": "FeasibilityRule",
+   "name": "单镜时长≤10秒",
+   "props": {
+    "约束": "单镜 3-10 秒，≤10s 为质量门控硬指标",
+    "节奏": "口播稿按镜头切段对齐"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:单镜不超两种运镜",
+   "type": "FeasibilityRule",
+   "name": "单镜≤2种运镜",
+   "props": {
+    "约束": "单镜 ≤2 种运镜",
+    "动感": "要动感靠变速和复合，不靠堆数量"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/动感三来源.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:单镜单动作单重点",
+   "type": "FeasibilityRule",
+   "name": "单镜单动作单重点",
+   "props": {
+    "约束": "1 主体+1 动作+1 运镜",
+    "原因": "一镜只传递一个核心信息，信息过载必崩",
+    "反面": "单镜头塞 3 个动作=不可制作"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:匀速单运镜不合格",
+   "type": "FeasibilityRule",
+   "name": "匀速单运镜不合格",
+   "props": {
+    "约束": "只写缓慢推近的匀速单运镜=PPT式视频，不合格",
+    "项目验证": "PHO-SC-4 广告：匀速被甲方判PPT，变速+复合后通过"
+   },
+   "sources": [
+    "knowledge/动感三来源.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:角色表演需参考图方案",
+   "type": "FeasibilityRule",
+   "name": "角色表演需参考图方案",
+   "props": {
+    "约束": "需要角色表演但没参考图方案=不可制作",
+    "解法": "先角色三视图/参考图做首帧再图生视频"
+   },
+   "sources": [
+    "agents/director.md",
+    "playbooks/consistency.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:连续三同景别为节奏事故",
+   "type": "FeasibilityRule",
+   "name": "连续3同景别/无远景锚定=节奏事故",
+   "props": {
+    "约束": "连续 3 个同景别、没有远景锚定就切特写=节奏事故",
+    "景别节奏": "远/全/中/近/特的呼吸感"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:强制约束收口",
+   "type": "FeasibilityRule",
+   "name": "每片强制约束收口",
+   "props": {
+    "约束": "末尾加约束词：无穿模/无偏色/无模糊/人脸自然",
+    "品类加码": "美妆无脸崩、3C接口精准、食品色泽鲜亮"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:AI画面零文字",
+   "type": "FeasibilityRule",
+   "name": "AI画面零文字",
+   "props": {
+    "约束": "AI 生成的画面不许出现文字/字幕/水印/数据",
+    "图表纪律": "图表全部后期做，AI 一个像素都不许碰数据",
+    "门控": "M4 出口强制"
+   },
+   "sources": [
+    "knowledge/图表层.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:Slogan不捏造",
+   "type": "FeasibilityRule",
+   "name": "Slogan不捏造",
+   "props": {
+    "约束": "Slogan 必须来自用户输入，AI 绝不捏造",
+    "若没给": "只用极致光影展示产品和 Logo"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:容器场景符合常识",
+   "type": "FeasibilityRule",
+   "name": "容器/场景符合常识",
+   "props": {
+    "约束": "容器和场景必须符合生活常识",
+    "范例": "运动饮料用原包装易拉罐不用玻璃杯",
+    "原因": "AI 不会替你常识把关"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:避免纯黑背景",
+   "type": "FeasibilityRule",
+   "name": "科普向避免纯黑背景",
+   "props": {
+    "约束": "公众科普向避免纯黑背景（太严肃吓跑路人）",
+    "替代": "浅色渐变或纯白背景"
+   },
+   "sources": [
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  },
+  {
+   "id": "FeasibilityRule:黑白线稿规避真人审核",
+   "type": "FeasibilityRule",
+   "name": "黑白线稿规避真人审核",
+   "props": {
+    "约束": "分镜用黑白线稿规避平台真人参考拦截",
+    "定位": "线稿只当视觉骨架，最终色调交给视频模型"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "MovingTechnique:运镜变速",
+   "type": "MovingTechnique",
+   "name": "运镜变速",
+   "props": {
+    "手法": "由快到缓收稳/骤然放缓/急速俯冲急停",
+    "作用": "快慢本身就是情绪，避免匀速"
+   },
+   "sources": [
+    "knowledge/动感三来源.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "MovingTechnique:复合运镜",
+   "type": "MovingTechnique",
+   "name": "复合运镜",
+   "props": {
+    "手法": "环绕+上升、推近+旋转",
+    "作用": "在两镜之内制造动感层次"
+   },
+   "sources": [
+    "knowledge/动感三来源.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "MovingTechnique:画面内部运动",
+   "type": "MovingTechnique",
+   "name": "画面内部运动",
+   "props": {
+    "手法": "光扫/粒子/前景遮挡掠过/元素展开",
+    "作用": "每镜至少设计一个，让画面自己动"
+   },
+   "sources": [
+    "knowledge/动感三来源.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "MovingTechnique:剪辑节奏",
+   "type": "MovingTechnique",
+   "name": "剪辑节奏",
+   "props": {
+    "手法": "动作匹配剪辑（动势相接）、快慢相间",
+    "作用": "剪辑端制造动感落差"
+   },
+   "sources": [
+    "knowledge/动感三来源.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "MovingTechnique:相邻镜动势衔接",
+   "type": "MovingTechnique",
+   "name": "相邻镜动势衔接",
+   "props": {
+    "手法": "环绕接推近，动势顺势相接",
+    "作用": "分镜阶段就要标注，让镜间不断供",
+    "首尾帧": "上镜尾帧≈下镜首帧无缝连续"
+   },
+   "sources": [
+    "knowledge/动感三来源.md",
+    "agents/director.md",
+    "playbooks/consistency.md"
+   ]
+  },
+  {
+   "id": "MovingTechnique:数据稳定镜头动感补偿",
+   "type": "MovingTechnique",
+   "name": "数据稳定镜头动感补偿",
+   "props": {
+    "手法": "主体钉死不动，动感全部交给镜头",
+    "举例": "下移俯拍揭示、缓推"
+   },
+   "sources": [
+    "knowledge/动感三来源.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "GridTechnique:九宫格分镜图",
+   "type": "GridTechnique",
+   "name": "九宫格分镜图",
+   "props": {
+    "做法": "一次生成一张 3x3 宫格分镜图（常用黑白线稿）",
+    "用途": "全片镜头构图一次定型，开分镜会直接看图辩论",
+    "成片": "整图喂多镜原生模型或切片当首帧"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "GridTechnique:Image2五段式prompt",
+   "type": "GridTechnique",
+   "name": "Image2 五段式 prompt",
+   "props": {
+    "结构": "基础设置→风格方向→逐格镜头→视觉规范→底部信息栏",
+    "要点": "写死3列x3行共9格格间白边；分辨率选2K",
+    "工具": "GPT Image 2 首选，Nano Banana/Seedream 备选"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "GridTechnique:黑白线稿分镜",
+   "type": "GridTechnique",
+   "name": "黑白线稿分镜",
+   "props": {
+    "做法": "黑白手绘线稿/马克笔分镜稿，线条干净灰排线",
+    "作用": "规避真人审核+只当视觉骨架",
+    "重渲染": "视频模型按 prompt 把黑白重渲成彩色成片"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "GridTechnique:整图一次成片",
+   "type": "GridTechnique",
+   "name": "整图一次成片",
+   "props": {
+    "路径": "把宫格图当参考图上传 Seedance 2.x / Sora 2",
+    "关键prompt": "按从左到右、从上到下顺序演绎成一段15秒视频",
+    "坑": "不写清顺序会变成9格各自动"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "GridTechnique:切片逐格当首帧",
+   "type": "GridTechnique",
+   "name": "切片逐格当首帧",
+   "props": {
+    "路径": "切图或AI提取单格→逐格作为首帧进图生视频",
+    "运动prompt": "按 I2V 公式写运动；线稿首帧写明最终彩色风格"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "GridTechnique:单格重绘微调",
+   "type": "GridTechnique",
+   "name": "单格重绘微调",
+   "props": {
+    "手法": "用继续编辑写“只重画第N格，其余保持不变”",
+    "为何": "单格翻车不重抽整图，省成本保一致性",
+    "提取": "把某格重绘为独立高清 16:9 图（可指定4K）"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "GridTechnique:宫格变体格数",
+   "type": "GridTechnique",
+   "name": "宫格变体格数",
+   "props": {
+    "四宫格": "简单场景/LibTV剧情推演",
+    "九宫格": "≈15s 短片",
+    "十六宫格": "≈30s",
+    "二十五宫格": "≈60s（官方上限≤15格，超了按关键帧写法）"
+   },
+   "sources": [
+    "playbooks/storyboard-grid.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "GridTechnique:宫格时间线分镜",
+   "type": "GridTechnique",
+   "name": "宫格时间线分镜",
+   "props": {
+    "做法": "时间区间/镜头动作/画面内容三列表格逐秒控制",
+    "用途": "精确控制的带货/叙事分镜"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md",
+    "playbooks/storyboard-grid.md"
+   ]
+  },
+  {
+   "id": "Mood:紧张聚焦",
+   "type": "Mood",
+   "name": "紧张聚焦",
+   "props": {
+    "情绪": "建立紧张、聚焦注意力、情感逼近"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:释然孤独",
+   "type": "Mood",
+   "name": "释然孤独",
+   "props": {
+    "情绪": "释然、孤独、交代全貌、情绪抽离"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:扫视跟视",
+   "type": "Mood",
+   "name": "扫视跟视",
+   "props": {
+    "情绪": "扫视信息、跟随视线"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:平行观察",
+   "type": "Mood",
+   "name": "平行观察",
+   "props": {
+    "情绪": "平行观察、展示场景深度"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:陪伴行动",
+   "type": "Mood",
+   "name": "陪伴行动",
+   "props": {
+    "情绪": "陪伴感、行动感"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:英雄力量审视",
+   "type": "Mood",
+   "name": "英雄力量审视",
+   "props": {
+    "情绪": "英雄时刻、全方位审视、力量感/时尚感"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:史诗规模",
+   "type": "Mood",
+   "name": "史诗规模",
+   "props": {
+    "情绪": "史诗感、规模揭示、上帝视角"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:眩晕心理冲击",
+   "type": "Mood",
+   "name": "眩晕心理冲击",
+   "props": {
+    "情绪": "眩晕、心理冲击、世界塌陷感"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:纪实紧迫亲密",
+   "type": "Mood",
+   "name": "纪实紧迫亲密",
+   "props": {
+    "情绪": "纪实、紧迫、亲密"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:沉浸速度探索",
+   "type": "Mood",
+   "name": "沉浸速度探索",
+   "props": {
+    "情绪": "沉浸、速度、探索"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:节奏转场冲击",
+   "type": "Mood",
+   "name": "节奏转场冲击",
+   "props": {
+    "情绪": "节奏、转场冲击"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:稳定客观仪式",
+   "type": "Mood",
+   "name": "稳定客观仪式",
+   "props": {
+    "情绪": "稳定、客观、仪式感"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:奢侈微观奇观",
+   "type": "Mood",
+   "name": "奢侈微观奇观",
+   "props": {
+    "情绪": "奢侈、解压、微观奇观"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:街头畸变张力",
+   "type": "Mood",
+   "name": "街头畸变张力",
+   "props": {
+    "情绪": "畸变张力、街头感"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Mood:突然强调",
+   "type": "Mood",
+   "name": "突然强调",
+   "props": {
+    "情绪": "突然强调、快速转向、材质转换强调"
+   },
+   "sources": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Beat:建立场景节拍",
+   "type": "Beat",
+   "name": "建立场景节拍",
+   "props": {
+    "景别": "远景/全景",
+    "作用": "交代环境、空间关系、场景全貌"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Beat:推进信息节拍",
+   "type": "Beat",
+   "name": "推进信息节拍",
+   "props": {
+    "景别": "中景",
+    "作用": "推进信息、产品与人交互"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Beat:情绪数据节拍",
+   "type": "Beat",
+   "name": "情绪数据节拍",
+   "props": {
+    "景别": "近景/特写",
+    "作用": "给情绪反馈、卖点与数据"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Beat:微观细节节拍",
+   "type": "Beat",
+   "name": "微观细节节拍",
+   "props": {
+    "景别": "大特写/特写",
+    "作用": "展示水珠、气泡、纹理、膏体等微观细节"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "Beat:推进式叙事动线",
+   "type": "Beat",
+   "name": "推进式叙事动线",
+   "props": {
+    "动线": "远→中→近→特写",
+    "作用": "推进式叙事的景别推进"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "Beat:悬念式揭示动线",
+   "type": "Beat",
+   "name": "悬念式揭示动线",
+   "props": {
+    "动线": "特写→远",
+    "作用": "悬念式揭示：先细节后全貌"
+   },
+   "sources": [
+    "knowledge/camera-language.md",
+    "knowledge/产品开场语法.md"
+   ]
+  },
+  {
+   "id": "Concept:微观结构",
+   "type": "Concept",
+   "name": "微观结构",
+   "props": {
+    "含义": "细胞、DNA、生物大分子等微观世界结构"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "id": "Concept:宏观规模",
+   "type": "Concept",
+   "name": "宏观规模",
+   "props": {
+    "含义": "设施规模、时空尺度、工程体量"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "Concept:数据指标",
+   "type": "Concept",
+   "name": "数据指标",
+   "props": {
+    "含义": "性能、趋势、指标对比等数据"
+   },
+   "sources": [
+    "agents/director.md",
+    "knowledge/图表层.md"
+   ]
+  },
+  {
+   "id": "Concept:过程机理",
+   "type": "Concept",
+   "name": "过程机理",
+   "props": {
+    "含义": "反应、组装、编辑等工艺过程机理"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "Concept:工程结构",
+   "type": "Concept",
+   "name": "工程结构",
+   "props": {
+    "含义": "装置、设备精确结构构造"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "Concept:材质质感",
+   "type": "Concept",
+   "name": "材质质感",
+   "props": {
+    "含义": "表面工艺、微观质感、光泽"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md",
+    "knowledge/产品开场语法.md"
+   ]
+  },
+  {
+   "id": "Concept:生长变化",
+   "type": "Concept",
+   "name": "生长变化",
+   "props": {
+    "含义": "种子/预期效果的演化与生长"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "Gate:镜头动感门控",
+   "type": "Gate",
+   "name": "镜头动感门控",
+   "props": {
+    "检查": "七维表“镜头动感”行",
+    "依据": "动感三来源：变速/复合/画面内部运动/剪辑节奏"
+   },
+   "sources": [
+    "knowledge/动感三来源.md"
+   ]
+  },
+  {
+   "id": "Gate:M4出口门控",
+   "type": "Gate",
+   "name": "M4出口门控",
+   "props": {
+    "检查": "数据/图表画面是否后期制作、AI 是否生成数据/文字",
+    "依据": "图表层 M4 出口强制"
+   },
+   "sources": [
+    "knowledge/图表层.md"
+   ]
+  },
+  {
+   "id": "Gate:可拍性门控",
+   "type": "Gate",
+   "name": "可拍性门控",
+   "props": {
+    "检查": "必攻击点：不可制作/陈词滥调/图文脱节/节奏事故"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "Scenario:申报答辩场景",
+   "type": "Scenario",
+   "name": "申报答辩场景",
+   "props": {
+    "适用": "国家大设施/高校研究所/生物医药企业申报",
+    "风格": "深蓝+深绿、深色背景、大字发光"
+   },
+   "sources": [
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  },
+  {
+   "id": "Scenario:公众科普场景",
+   "type": "Scenario",
+   "name": "公众科普场景",
+   "props": {
+    "适用": "公众科普/开放日/学生/新媒体传播",
+    "风格": "暖橙+天空蓝、浅色背景、圆润字体"
+   },
+   "sources": [
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  },
+  {
+   "id": "Scenario:产业商业场景",
+   "type": "Scenario",
+   "name": "产业商业场景",
+   "props": {
+    "适用": "企业品牌片/产业商业广告",
+    "风格": "企业品牌色、中性灰白、商务现代"
+   },
+   "sources": [
+    "knowledge/vi_styles/vi-style-templates.md"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "CameraMove:推",
+   "target": "Mood:紧张聚焦",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:推",
+   "target": "Mood:奢侈微观奇观",
+   "type": "move-conveys-mood",
+   "props": {
+    "注": "缓慢=奢侈/沉思"
+   }
+  },
+  {
+   "source": "CameraMove:拉",
+   "target": "Mood:释然孤独",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:摇",
+   "target": "Mood:扫视跟视",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:移",
+   "target": "Mood:平行观察",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:跟",
+   "target": "Mood:陪伴行动",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:环绕",
+   "target": "Mood:英雄力量审视",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:环绕",
+   "target": "Mood:奢侈微观奇观",
+   "type": "move-conveys-mood",
+   "props": {
+    "注": "慢速360°=奢侈品腕表"
+   }
+  },
+  {
+   "source": "CameraMove:环绕",
+   "target": "Mood:沉浸速度探索",
+   "type": "move-conveys-mood",
+   "props": {
+    "注": "快速360°=科技动感"
+   }
+  },
+  {
+   "source": "CameraMove:升降",
+   "target": "Mood:史诗规模",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:变焦",
+   "target": "Mood:突然强调",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:希区柯克变焦",
+   "target": "Mood:眩晕心理冲击",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:手持",
+   "target": "Mood:纪实紧迫亲密",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:FPV穿越",
+   "target": "Mood:沉浸速度探索",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:甩",
+   "target": "Mood:节奏转场冲击",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:固定",
+   "target": "Mood:稳定客观仪式",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:探针微距穿梭",
+   "target": "Mood:奢侈微观奇观",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:低角度环绕",
+   "target": "Mood:英雄力量审视",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:鱼眼贴脸",
+   "target": "Mood:街头畸变张力",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "CameraMove:无人机升镜",
+   "target": "Mood:史诗规模",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "Transition:硬切",
+   "target": "Mood:节奏转场冲击",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "Transition:匹配剪辑",
+   "target": "Mood:稳定客观仪式",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "Transition:鞭甩转场",
+   "target": "Mood:节奏转场冲击",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "Transition:溶解",
+   "target": "Mood:释然孤独",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "Transition:遮挡转场",
+   "target": "Mood:稳定客观仪式",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "Transition:粒子消散重组",
+   "target": "Mood:突然强调",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "Transition:冻结帧爆发",
+   "target": "Mood:节奏转场冲击",
+   "type": "move-conveys-mood",
+   "props": {}
+  },
+  {
+   "source": "ShotType:远景",
+   "target": "Beat:建立场景节拍",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:远景",
+   "target": "Beat:推进式叙事动线",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:远景",
+   "target": "Beat:悬念式揭示动线",
+   "type": "shottype-for-beat",
+   "props": {
+    "注": "特写→远动线的终点"
+   }
+  },
+  {
+   "source": "ShotType:全景",
+   "target": "Beat:建立场景节拍",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:全景",
+   "target": "Beat:推进式叙事动线",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:中景",
+   "target": "Beat:推进信息节拍",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:中景",
+   "target": "Beat:情绪数据节拍",
+   "type": "shottype-for-beat",
+   "props": {
+    "注": "产品与人的交互带情绪"
+   }
+  },
+  {
+   "source": "ShotType:中景",
+   "target": "Beat:推进式叙事动线",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:近景",
+   "target": "Beat:情绪数据节拍",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:近景",
+   "target": "Beat:推进信息节拍",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:特写",
+   "target": "Beat:情绪数据节拍",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:特写",
+   "target": "Beat:微观细节节拍",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:特写",
+   "target": "Beat:悬念式揭示动线",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "ShotType:大特写",
+   "target": "Beat:微观细节节拍",
+   "type": "shottype-for-beat",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:微观穿越",
+   "target": "Concept:微观结构",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:微观穿越",
+   "target": "Concept:材质质感",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:宏观俯瞰",
+   "target": "Concept:宏观规模",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:数据动起来",
+   "target": "Concept:数据指标",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:数据动起来",
+   "target": "Concept:过程机理",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:过程演示",
+   "target": "Concept:过程机理",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:工程隐喻",
+   "target": "Concept:工程结构",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:工程隐喻",
+   "target": "Concept:过程机理",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:探针微观视角",
+   "target": "Concept:材质质感",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "VisualMetaphor:生长效果可视化",
+   "target": "Concept:生长变化",
+   "type": "metaphor-for-concept",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:科技蓝生物绿VI模板",
+   "target": "FeasibilityRule:AI画面零文字",
+   "type": "style-set-constraint",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:科技蓝生物绿VI模板",
+   "target": "FeasibilityRule:强制约束收口",
+   "type": "style-set-constraint",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:医疗洁净风VI模板",
+   "target": "FeasibilityRule:强制约束收口",
+   "type": "style-set-constraint",
+   "props": {
+    "注": "医疗片要求人脸自然/干净"
+   }
+  },
+  {
+   "source": "ViStyle:医疗洁净风VI模板",
+   "target": "FeasibilityRule:容器场景符合常识",
+   "type": "style-set-constraint",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:自然暖色调VI模板",
+   "target": "FeasibilityRule:避免纯黑背景",
+   "type": "style-set-constraint",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:自然暖色调VI模板",
+   "target": "FeasibilityRule:强制约束收口",
+   "type": "style-set-constraint",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:风格token块",
+   "target": "FeasibilityRule:强制约束收口",
+   "type": "style-set-constraint",
+   "props": {
+    "注": "风格+约束词逐字复用每镜"
+   }
+  },
+  {
+   "source": "ViStyle:VI适配速查表",
+   "target": "FeasibilityRule:强制约束收口",
+   "type": "style-set-constraint",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:精确结构首帧图加图生视频",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:单镜时长上限10秒",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:单镜时长上限10秒",
+   "target": "Gate:镜头动感门控",
+   "type": "rule-enforced-in-gate",
+   "props": {
+    "注": "节奏与长度双卡"
+   }
+  },
+  {
+   "source": "FeasibilityRule:单镜不超两种运镜",
+   "target": "Gate:镜头动感门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:单镜单动作单重点",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:匀速单运镜不合格",
+   "target": "Gate:镜头动感门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:匀速单运镜不合格",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:角色表演需参考图方案",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:连续三同景别为节奏事故",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:强制约束收口",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:AI画面零文字",
+   "target": "Gate:M4出口门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:Slogan不捏造",
+   "target": "Gate:M4出口门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:容器场景符合常识",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:避免纯黑背景",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "FeasibilityRule:黑白线稿规避真人审核",
+   "target": "Gate:可拍性门控",
+   "type": "rule-enforced-in-gate",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:运镜变速",
+   "target": "FeasibilityRule:匀速单运镜不合格",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:运镜变速",
+   "target": "FeasibilityRule:连续三同景别为节奏事故",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:复合运镜",
+   "target": "FeasibilityRule:匀速单运镜不合格",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:画面内部运动",
+   "target": "FeasibilityRule:匀速单运镜不合格",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:画面内部运动",
+   "target": "FeasibilityRule:单镜不超两种运镜",
+   "type": "technique-for-avoiding",
+   "props": {
+    "注": "动感交给内部运动而非堆运镜"
+   }
+  },
+  {
+   "source": "MovingTechnique:剪辑节奏",
+   "target": "FeasibilityRule:匀速单运镜不合格",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:剪辑节奏",
+   "target": "FeasibilityRule:连续三同景别为节奏事故",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:相邻镜动势衔接",
+   "target": "FeasibilityRule:连续三同景别为节奏事故",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:相邻镜动势衔接",
+   "target": "FeasibilityRule:匀速单运镜不合格",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "MovingTechnique:数据稳定镜头动感补偿",
+   "target": "FeasibilityRule:匀速单运镜不合格",
+   "type": "technique-for-avoiding",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:九宫格分镜图",
+   "target": "Beat:推进式叙事动线",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:九宫格分镜图",
+   "target": "Beat:建立场景节拍",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:Image2五段式prompt",
+   "target": "Beat:推进式叙事动线",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:黑白线稿分镜",
+   "target": "Beat:建立场景节拍",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:整图一次成片",
+   "target": "Beat:推进式叙事动线",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:切片逐格当首帧",
+   "target": "Beat:微观细节节拍",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:切片逐格当首帧",
+   "target": "FeasibilityRule:精确结构首帧图加图生视频",
+   "type": "grid-for-previz",
+   "props": {
+    "注": "切片逐格当首帧即满足精确结构路线"
+   }
+  },
+  {
+   "source": "GridTechnique:单格重绘微调",
+   "target": "Beat:微观细节节拍",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:宫格变体格数",
+   "target": "Beat:推进式叙事动线",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "GridTechnique:宫格时间线分镜",
+   "target": "Beat:推进式叙事动线",
+   "type": "grid-for-previz",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:科技蓝生物绿VI模板",
+   "target": "Scenario:申报答辩场景",
+   "type": "style-applied-to",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:科技蓝生物绿VI模板",
+   "target": "Scenario:产业商业场景",
+   "type": "style-applied-to",
+   "props": {
+    "注": "高校/生物医药企业"
+   }
+  },
+  {
+   "source": "ViStyle:医疗洁净风VI模板",
+   "target": "Scenario:产业商业场景",
+   "type": "style-applied-to",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:医疗洁净风VI模板",
+   "target": "Scenario:申报答辩场景",
+   "type": "style-applied-to",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:自然暖色调VI模板",
+   "target": "Scenario:公众科普场景",
+   "type": "style-applied-to",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:VI适配速查表",
+   "target": "Scenario:申报答辩场景",
+   "type": "style-applied-to",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:VI适配速查表",
+   "target": "Scenario:公众科普场景",
+   "type": "style-applied-to",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:VI适配速查表",
+   "target": "Scenario:产业商业场景",
+   "type": "style-applied-to",
+   "props": {}
+  },
+  {
+   "source": "ViStyle:风格token块",
+   "target": "Scenario:公众科普场景",
+   "type": "style-applied-to",
+   "props": {}
+  }
+ ]
+}

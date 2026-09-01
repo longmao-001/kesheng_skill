@@ -1,0 +1,77 @@
+# ================= Schema: prompt-kg =================
+# 科生(Kesheng)科研视频团队 —「prompt 工程师」领域知识图谱包
+# 角色=AI视频 prompt 工程师；定位=分镜表→平台 prompt 的翻译与一致性设计
+
+package: prompt-kg
+schema_version: "1.0"
+role: prompt工程师
+description: 覆盖分平台 prompt 公式、运镜词表、生成路线、跨镜一致性、失败修复、负面词与参考引用规则，供「prompt 工程师」agent 在每次下笔前快速查证。
+
+# ---------- 复合主键约定 ----------
+# id = "{Type英文名}:{实体名称}"
+#   Type 英文名取自下方 entity_types.type；
+#   名称用中文（可为等价英文括注，如 "MoveTerm:环绕(orbit)"）。
+#   id 在 entities 内唯一；relations 的 source/target 必须精确命中某个 id。
+
+# ---------- 实体类型 ----------
+entity_types:
+  - type: Platform
+    说明: AI视频工作台（含语法特性/参考图能力/时长档/版本差异）
+    示例id: "Platform:可灵"
+  - type: PromptFormula
+    说明: 平台 prompt 公式（通用公式与各平台专属公式）
+    示例id: "PromptFormula:通用公式"
+  - type: MoveTerm
+    说明: 运镜词表（中英对照及情绪/适用场景，用于 prompt 内运镜指令）
+    示例id: "MoveTerm:环绕(orbit)"
+  - type: GenerateRoute
+    说明: 生成路线（文生视频/图生视频I2V/首尾帧/参考生视频/宫格整图/宫格切片）
+    示例id: "GenerateRoute:图生视频I2V"
+  - type: StyleTokenRule
+    说明: 风格 token 规则（全片统一风格句逐字复用/一致性锁定写法）
+    示例id: "StyleTokenRule:风格token块"
+  - type: ConsistencyTool
+    说明: 一致性工具箱（三视图/风格token块/首尾帧衔接链/种子复用/LoRA/多镜原生模型/后期兜底）
+    示例id: "ConsistencyTool:首帧锚定"
+  - type: FailFix
+    说明: 常见失败→修复策略（抽象词/超载prompt/I2V复述画面/平台错配/穿帮/漂移）
+    示例id: "FailFix:抽象词"
+  - type: NegativeRule
+    说明: 负面词与禁用（具体排除项；文字/水印/数据画面不交给AI）
+    示例id: "NegativeRule:通用负面清单"
+  - type: ImageGenTool   # 本包从 storyboard-grid.md 扩充出的额外类型
+    说明: 生图工具（宫格分镜图/首帧/参考图生成）
+    示例id: "ImageGenTool:GPT Image 2"
+  - type: ReferenceRule   # 本包从 seedance/consistency 扩充出的额外类型
+    说明: 参考引用规则（@引用语法/参考素材语法/全能参考三用法/音频符号）
+    示例id: "ReferenceRule:@引用语法速查"
+
+# ---------- 关系类型 ----------
+relation_types:
+  - type: platform-uses-formula
+    说明: "平台 → 公式：该平台使用/适用某 prompt 公式"
+  - type: formula-includes
+    说明: "公式 → 构成元素：该公式包含的运镜词 / 参考规则 / 风格token规则"
+  - type: term-usable-in
+    说明: "运镜词 → 平台：该词可在某平台使用（含中英写法/参数化）"
+  - type: route-for-shot
+    说明: "生成路线 ↔ 平台/生图工具/一致性工具：某路线落地于某平台、用到某生图工具或配合某一致性工具（方向按语义取）"
+  - type: tool-for-consistency
+    说明: "一致性工具 → 平台/风格token规则/路线：该工具用于某平台、承载某规则或支撑某路线"
+  - type: fix-for-failure
+    说明: "失败修复 → 公式/平台/路线/风格token：该修复针对或落在某处"
+  - type: rule-applies-to
+    说明: "风格token / 负面 / 参考规则 → 平台或公式：该规则适用于某平台或某公式"
+  - type: negative-for-platform
+    说明: "负面词 → 平台：该负面 prompt 用于某平台"
+
+# ---------- 包说明 ----------
+notes: |
+  角色=AI视频prompt工程师（科生科研视频团队）。
+  定位=分镜表→平台prompt的翻译与一致性设计：把分镜表每一行翻译成目标AI视频工作台能听懂、能出片的prompt，
+        并决定每个镜头的生成路线、给出跨镜一致性方案与失败改prompt策略。
+  构建来源=团队内部沉淀（playbooks/platform-prompts.md、playbooks/consistency.md、playbooks/storyboard-grid.md、
+        knowledge/seedance-template-library.md、knowledge/prompt-reverse.md、knowledge/camera-language.md、
+        agents/prompt-engineer.md）。本领域无外部API可富集，内容来自团队沉淀，新知识由项目收尾萃取循环补充。
+  更新规则=平台参数（单镜时长/模型版本/参考素材上限）以用户当前UI为准，会随平台迭代而过期；prompt公式与一致性原则是稳定的。
+        平台迭代后按需增补 Platform / PromptFormula 节点；新失败模式与修复沉淀进 FailFix；新一致性手法进 ConsistencyTool。

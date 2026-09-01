@@ -1,0 +1,1112 @@
+{
+ "schema_version": "1.0",
+ "pack": "rednote-industry-kg",
+ "role": "产业/叙事",
+ "entities": [
+  {
+   "id": "IndustryConcept:前道制造",
+   "type": "IndustryConcept",
+   "name": "前道制造",
+   "props": {
+    "定义": "晶圆制造: 光刻/蚀刻/薄膜/掺杂/量测检测全流程",
+    "环节": "Fab前道(wafer fab)"
+   },
+   "sources": [
+    "kb/产业/宽谱光源与半导体量测产业图谱.md",
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "IndustryConcept:后道封装",
+   "type": "IndustryConcept",
+   "name": "后道封装",
+   "props": {
+    "定义": "芯片切割/封装/测试",
+    "环节": "封测后道"
+   },
+   "sources": [
+    "kb/产业/宽谱光源与半导体量测产业图谱.md"
+   ]
+  },
+  {
+   "id": "IndustryConcept:前道检测",
+   "type": "IndustryConcept",
+   "name": "前道检测Inspection",
+   "props": {
+    "定义": "发现晶圆缺陷/颗粒/图形错误",
+    "类别": "缺陷检测/颗粒检测/图形检测",
+    "设备": "光学+电子束检测机"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459",
+    "https://dxpress.gelonghui.com/p/4478709"
+   ]
+  },
+  {
+   "id": "IndustryConcept:前道量测",
+   "type": "IndustryConcept",
+   "name": "前道量测Metrology",
+   "props": {
+    "定义": "测量工艺参数: 膜厚/关键尺寸CD/套刻精度OVL",
+    "设备": "CD-SEM/OCD/光学量测/原子力",
+    "作用": "工艺控制的眼睛"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "IndustryConcept:套刻精度",
+   "type": "IndustryConcept",
+   "name": "套刻精度OVL",
+   "props": {
+    "定义": "曝光层间对准误差",
+    "量测": "套刻量测(overlay metrology)",
+    "驱动": "先进节点核心指标"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "IndustryConcept:关键尺寸CD",
+   "type": "IndustryConcept",
+   "name": "关键尺寸CD",
+   "props": {
+    "定义": "线宽/沟槽尺寸",
+    "量测": "CD-SEM/OCD",
+    "先进节点": "EUV后更依赖量测"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "IndustryConcept:代工厂",
+   "type": "IndustryConcept",
+   "name": "代工厂Foundry",
+   "props": {
+    "定义": "对外代工制造(台积电/中芯等)",
+    "下游": "应用分类之代工厂"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "IndustryConcept:垂直整合制造商",
+   "type": "IndustryConcept",
+   "name": "垂直整合IDM",
+   "props": {
+    "定义": "自研自产(Intel/三星/长存等)",
+    "下游": "应用分类之IDM"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "IndustryConcept:宽谱光源",
+   "type": "IndustryConcept",
+   "name": "宽谱光源",
+   "props": {
+    "定义": "检测量测设备的核心光源(激光驱动等离子体LDLS等)",
+    "需求": "高亮度/稳定光谱/长寿命",
+    "来源": "科生已有知识图谱内容"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md",
+    "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "MarketData:前道检测量测2025规模",
+   "type": "MarketData",
+   "name": "前道检测量测设备2025规模",
+   "props": {
+    "数值": "约103.3亿美元",
+    "口径": "QYResearch《2026-2032全球及中国半导体前道检测和量测设备行业研究》",
+    "年份": "2025"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "MarketData:前道检测量测2032预测",
+   "type": "MarketData",
+   "name": "前道检测量测设备2032预测",
+   "props": {
+    "数值": "约190.6亿美元",
+    "口径": "QYResearch",
+    "年份": "2032"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "MarketData:前道检测量测CAGR",
+   "type": "MarketData",
+   "name": "前道检测量测设备CAGR",
+   "props": {
+    "数值": "9.3%",
+    "区间": "2026-2032",
+    "口径": "QYResearch"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "MarketData:量测检测2025增长",
+   "type": "MarketData",
+   "name": "量测检测2025增长",
+   "props": {
+    "数值": "约+15%",
+    "口径": "Metrology and Inspection Drive Semiconductor Innovation (ET)",
+    "年份": "2025"
+   },
+   "sources": [
+    "https://datacenters.economictimes.indiatimes.com/news/ai-compute-infrastructure/15-growth-in-2025-metrology-and-inspection-drive-semiconductor-innovation/132066667"
+   ]
+  },
+  {
+   "id": "Company:KLA",
+   "type": "Company",
+   "name": "KLA Corporation",
+   "props": {
+    "定位": "全球前道检测量测领导者",
+    "主业": "检测+量测设备/套刻与CD",
+    "份额": "行业第一梯队"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459",
+    "kb/产业/宽谱光源与半导体量测产业图谱.md"
+   ]
+  },
+  {
+   "id": "Company:Hitachi High-Tech",
+   "type": "Company",
+   "name": "Hitachi High-Tech",
+   "props": {
+    "定位": "CD-SEM/缺陷检测",
+    "主业": "电子束检测量测"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459",
+    "kb/产业/宽谱光源与半导体量测产业图谱.md"
+   ]
+  },
+  {
+   "id": "Company:Applied Materials",
+   "type": "Company",
+   "name": "Applied Materials",
+   "props": {
+    "定位": "前道设备巨头",
+    "其他": "检测量测(子公司), 2025关税环境风险"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:Onto Innovation",
+   "type": "Company",
+   "name": "Onto Innovation",
+   "props": {
+    "定位": "量测检测(薄膜/表面/图案)",
+    "业务": "光学量测+无损检测"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:中科飞测",
+   "type": "Company",
+   "name": "深圳中科飞测科技",
+   "props": {
+    "定位": "国产检测量测代表",
+    "业务": "光学检测/量测设备",
+    "标签": "国产替代"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:ASML",
+   "type": "Company",
+   "name": "ASML",
+   "props": {
+    "定位": "光刻/量测(光学)",
+    "关联": "套刻量测也是其延伸"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459",
+    "kb/产业/宽谱光源与半导体量测产业图谱.md"
+   ]
+  },
+  {
+   "id": "Company:Lasertec",
+   "type": "Company",
+   "name": "Lasertec",
+   "props": {
+    "定位": "掩膜检测/量测",
+    "业务": "EUV掩膜检测单车"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:SCREEN",
+   "type": "Company",
+   "name": "SCREEN Semiconductor",
+   "props": {
+    "定位": "清洗/检测量测",
+    "业务": "半导体设备"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:Camtek",
+   "type": "Company",
+   "name": "Camtek",
+   "props": {
+    "定位": "先进封装检测",
+    "业务": "2D/3D检测"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:TASMIT",
+   "type": "Company",
+   "name": "TASMIT",
+   "props": {
+    "定位": "韩国检测量测",
+    "业务": "晶圆检测设备"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:NEXTIN",
+   "type": "Company",
+   "name": "NEXTIN",
+   "props": {
+    "定位": "韩系检测设备商"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:NanoSystem",
+   "type": "Company",
+   "name": "NanoSystem Solutions",
+   "props": {
+    "定位": "套刻专用量测",
+    "业务": "Ov量测"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:FRT",
+   "type": "Company",
+   "name": "FRT GmbH",
+   "props": {
+    "定位": "表面/薄膜测量",
+    "业务": "高端微米测量"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:Chroma",
+   "type": "Company",
+   "name": "Chroma ATE",
+   "props": {
+    "定位": "台湾检测设备",
+    "业务": "半导体测试量测"
+   },
+   "sources": [
+    "https://dxpress.gelonghui.com/p/6016459"
+   ]
+  },
+  {
+   "id": "Company:Energetiq",
+   "type": "Company",
+   "name": "Energetiq",
+   "props": {
+    "定位": "激光驱动等离子体宽谱光源",
+    "关联": "LDLS 用于检测量测",
+    "来源": "科生已有知识"
+   },
+   "sources": [
+    "kb/光学/激光驱动等离子体宽谱光源.md",
+    "kb/产业/宽谱光源与半导体量测产业图谱.md"
+   ]
+  },
+  {
+   "id": "RednotePattern:痛点参数型",
+   "type": "RednotePattern",
+   "name": "痛点参数型",
+   "props": {
+    "结构": "客户痛苦(良率差/检测慢)→关键参数(精度/速度)→证据上屏",
+    "钩子": "反常识数字/对比基准",
+    "适合": "检测量测/精密设备"
+   },
+   "sources": [
+    "https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing",
+    "https://www.meifannao.com/news/rwtg/3556.html"
+   ]
+  },
+  {
+   "id": "RednotePattern:对比实测型",
+   "type": "RednotePattern",
+   "name": "对比实测型",
+   "props": {
+    "结构": "A/B或有/无实测数据对比(曲线/光斑/检出率)→结论",
+    "钩子": "过程展示·结果反转",
+    "适合": "设备性能/检测系统"
+   },
+   "sources": [
+    "https://www.meifannao.com/news/rwtg/3556.html"
+   ]
+  },
+  {
+   "id": "RednotePattern:工厂探访型",
+   "type": "RednotePattern",
+   "name": "工厂探访型",
+   "props": {
+    "结构": "厂房/洁净间/产线实拍→工程师讲工艺→品质承诺",
+    "钩子": "沉浸随手拍",
+    "适合": "制造/检测设备"
+   },
+   "sources": [
+    "https://mp.weixin.qq.com/s?__biz=Mzk0MjQzNTE0Ng==&mid=2247483722&idx=1&sn=e8c847d6075497fee37f67acb5358c8f"
+   ]
+  },
+  {
+   "id": "RednotePattern:工程师人设型",
+   "type": "RednotePattern",
+   "name": "工程师人设型",
+   "props": {
+    "结构": "硬核工程师口吻讲原理/避坑→专业信任→品牌",
+    "钩子": "术语+大白话翻译",
+    "适合": "精密仪器/半导体"
+   },
+   "sources": [
+    "https://www.marketup.cn/marketupblog/narongyingxiao/23905.html"
+   ]
+  },
+  {
+   "id": "RednotePattern:场景演示型",
+   "type": "RednotePattern",
+   "name": "场景演示型",
+   "props": {
+    "结构": "一线场景(量测机台/产线动作)→产品做什么→价值换算",
+    "钩子": "动作特写·速度感",
+    "适合": "设备/软件"
+   },
+   "sources": [
+    "https://www.meifannao.com/news/rwtg/3556.html"
+   ]
+  },
+  {
+   "id": "RednotePattern:避坑指南型",
+   "type": "RednotePattern",
+   "name": "避坑指南型",
+   "props": {
+    "结构": "行业坑(参数虚标/测试条件不透明)→我们的做法→收藏钩",
+    "钩子": "得罪同行式揭秘",
+    "适合": "通用精品/检测量测"
+   },
+   "sources": [
+    "https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing"
+   ]
+  },
+  {
+   "id": "RednotePattern:干货清单型",
+   "type": "RednotePattern",
+   "name": "干货清单型",
+   "props": {
+    "结构": "可收藏清单/教程/参数表→挂载资料",
+    "钩子": "收藏价值",
+    "适合": "B2B获客/选型指南"
+   },
+   "sources": [
+    "https://www.marketup.cn/marketupblog/narongyingxiao/23905.html"
+   ]
+  },
+  {
+   "id": "RednotePattern:轻商品线索型",
+   "type": "RednotePattern",
+   "name": "轻商品线索型",
+   "props": {
+    "结构": "痛点场景+解决方案+商品挂载(白皮书/模板1元)→订单→合规线索→CRM",
+    "钩子": "免费/低价资料降低决策成本",
+    "适合": "工业品线索获客"
+   },
+   "sources": [
+    "https://www.marketup.cn/marketupblog/narongyingxiao/23905.html"
+   ]
+  },
+  {
+   "id": "RednoteRule:CES权重模型",
+   "type": "RednoteRule",
+   "name": "CES权重模型",
+   "props": {
+    "权重": "收藏★5>评论★4>转发★4>关注★3>点赞★2",
+    "原则": "内容优先可收藏价值(干货/清单/教程/对比评测)"
+   },
+   "sources": [
+    "https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing"
+   ]
+  },
+  {
+   "id": "RednoteRule:完播与阅读深度",
+   "type": "RednoteRule",
+   "name": "完播与阅读深度",
+   "props": {
+    "阈值": "视频完播>40% / 图文阅读深度>80%",
+    "作用": "标记高质量加权推荐"
+   },
+   "sources": [
+    "https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing"
+   ]
+  },
+  {
+   "id": "RednoteRule:三层流量池",
+   "type": "RednoteRule",
+   "name": "三层流量池节奏",
+   "props": {
+    "冷启动": "0-2h 200-500曝光, CTR>8%, 前3-5秒钩子, 前10互动",
+    "推荐期": "1K-10K, 互动深度(评论字数/收藏分类/转发渠道)",
+    "爆发期": "10K+, 首页/搜索置顶, 24h评论回复>90%"
+   },
+   "sources": [
+    "https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing"
+   ]
+  },
+  {
+   "id": "RednoteRule:搜索SEO",
+   "type": "RednoteRule",
+   "name": "搜索SEO双引擎",
+   "props": {
+    "规模": "日均3亿搜索",
+    "词型": "品类词/场景词/痛点词/人群词",
+    "要点": "标题前12字含关键词, 正文前100字首现, 3-5长尾标签"
+   },
+   "sources": [
+    "https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing"
+   ]
+  },
+  {
+   "id": "RednoteRule:推荐流封面首屏",
+   "type": "RednoteRule",
+   "name": "推荐流封面首屏",
+   "props": {
+    "封面": "3:4竖版, 高饱和, 人脸或产品特写",
+    "首屏": "信息增量(划走会错过)",
+    "情绪": "好奇/羡慕/焦虑/归属"
+   },
+   "sources": [
+    "https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing"
+   ]
+  },
+  {
+   "id": "RednoteRule:痛点方案挂载结构",
+   "type": "RednoteRule",
+   "name": "痛点方案挂载结构",
+   "props": {
+    "结构": "高频场景+具体问题+可通过手册/模板解决",
+    "示例": "痛点场景(朋友圈没人理)+解决方案(3类话术模板)+商品挂载"
+   },
+   "sources": [
+    "https://www.marketup.cn/marketupblog/narongyingxiao/23905.html"
+   ]
+  },
+  {
+   "id": "RednoteRule:B2B轻商品闭环",
+   "type": "RednoteRule",
+   "name": "B2B轻商品线索闭环",
+   "props": {
+    "选品": "轻(白皮书/资料/样品/低定价)",
+    "转化": "订单→合规引导→CRM线索→长期孵化",
+    "加推": "内容复用换痛点角度+薯条投流50-100元定向"
+   },
+   "sources": [
+    "https://www.marketup.cn/marketupblog/narongyingxiao/23905.html"
+   ]
+  },
+  {
+   "id": "RednoteRule:工业品内容铁律",
+   "type": "RednoteRule",
+   "name": "工业品内容铁律",
+   "props": {
+    "红线": "参数不夸大不编测试; 最/第一/终极等极限词禁用",
+    "数据": "图表层后期做, AI不生成数据画面",
+    "结构": "前5秒钩子+结尾CTA(收藏/评论/私信)",
+    "素材": "真实素材优先(实拍/曲线/装机>华丽CG)"
+   },
+   "sources": [
+    "https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "MarketData:全球半导体制造设备2025销售额",
+   "type": "MarketData",
+   "name": "全球半导体制造设备2025销售额",
+   "props": {
+    "数值": "约1351亿美元",
+    "口径": "SEMI(2025年全球半导体制造设备销售额创历史新高)",
+    "年份": "2025"
+   },
+   "sources": [
+    "https://www.semi.org/zh/node/171071"
+   ]
+  },
+  {
+   "id": "MarketData:全球量检测市场2024规模",
+   "type": "MarketData",
+   "name": "全球量检测市场2024规模",
+   "props": {
+    "数值": "约174.4亿美元",
+    "口径": "智研咨询(半导体晶圆量检测设备, 含前道+中道)",
+    "年份": "2024"
+   },
+   "sources": [
+    "https://m.chyxx.com/industry/1277377.html"
+   ]
+  },
+  {
+   "id": "MarketData:KLA量检测份额2024",
+   "type": "MarketData",
+   "name": "KLA量检测份额2024",
+   "props": {
+    "数值": "50.08%",
+    "格局": "寡头垄断·一超多追(美日主导)",
+    "备注": "KLA单台价高/交付周期长, 国产替代窗口"
+   },
+   "sources": [
+    "https://m.chyxx.com/industry/1277377.html"
+   ]
+  },
+  {
+   "id": "IndustryConcept:芯片制造四大核心设备",
+   "type": "IndustryConcept",
+   "name": "芯片制造四大核心设备",
+   "props": {
+    "设备": "光刻/刻蚀/薄膜沉积/量检测",
+    "定位": "量检测=品质看门人·良率管控与工艺优化核心依托",
+    "占比": "先进制程产线量检测投资占比可达15-20%"
+   },
+   "sources": [
+    "https://m.chyxx.com/industry/1277377.html"
+   ]
+  },
+  {
+   "id": "IndustryConcept:前道七大核心装备",
+   "type": "IndustryConcept",
+   "name": "前道七大核心装备",
+   "props": {
+    "排序": "量检测仅次于刻蚀/薄膜沉积/光刻",
+    "环节": "贯穿晶圆制造+先进封装全流程"
+   },
+   "sources": [
+    "https://m.chyxx.com/industry/1277377.html"
+   ]
+  },
+  {
+   "id": "Company:精测电子",
+   "type": "Company",
+   "name": "精测电子(300567)",
+   "props": {
+    "定位": "国产检测量测上市龙头",
+    "布局": "上海精测半导体子公司/前道纳米级量检测",
+    "标签": "国产替代"
+   },
+   "sources": [
+    "https://m.chyxx.com/industry/1277377.html",
+    "https://www.sgpjbg.com/labelsyh/liangcejianceshebeiguochantidai.html"
+   ]
+  },
+  {
+   "id": "Company:华兴源创",
+   "type": "Company",
+   "name": "华兴源创(688001)",
+   "props": {
+    "定位": "检测设备上市企业(量检测相关)",
+    "标签": "国产替代"
+   },
+   "sources": [
+    "https://m.chyxx.com/industry/1277377.html"
+   ]
+  },
+  {
+   "id": "Company:天准科技",
+   "type": "Company",
+   "name": "天准科技(688003)",
+   "props": {
+    "定位": "检测设备上市企业(量检测相关)",
+    "标签": "国产替代"
+   },
+   "sources": [
+    "https://m.chyxx.com/industry/1277377.html"
+   ]
+  },
+  {
+   "id": "Company:东方晶源",
+   "type": "Company",
+   "name": "东方晶源微电子",
+   "props": {
+    "定位": "国产电子束检测(微电子)",
+    "标签": "国产替代"
+   },
+   "sources": [
+    "https://m.chyxx.com/industry/1277377.html"
+   ]
+  },
+  {
+   "id": "RednoteRule:广告资源三件套",
+   "type": "RednoteRule",
+   "name": "广告资源三件套",
+   "props": {
+    "资源": "聚光平台(效果广告/线索)/蒲公英(达人合作)/薯条(内容加热)",
+    "打法": "冷启动/爆文加推用薯条, 获客线索用聚光+轻商品"
+   },
+   "sources": [
+    "https://www.sohu.com/a/864189519_122014422",
+    "https://m.xiao-ad.com/jd/2226.html"
+   ]
+  },
+  {
+   "id": "MarketData:2026全球半导体销售预测",
+   "type": "MarketData",
+   "name": "2026全球半导体销售预测",
+   "props": {
+    "数值": "首破1万亿美元",
+    "口径": "SIA预测(AI需求爆发驱动)",
+    "年份": "2026"
+   },
+   "sources": [
+    "https://www.esmchina.com/news/13919.html",
+    "https://www.aastocks.com/tc/stocks/news/anue-news/AN6336787/"
+   ]
+  },
+  {
+   "id": "IndustryConcept:大基金三期",
+   "type": "IndustryConcept",
+   "name": "国家大基金三期",
+   "props": {
+    "规模": "约3440亿元",
+    "定位": "半导体自主化全产业链战略投资(设备/材料/制造等)",
+    "意义": "国产替代资金主线"
+   },
+   "sources": [
+    "https://www.163.com/dy/article/KGM3QJCQ05568W0A.html"
+   ]
+  },
+  {
+   "id": "IndustryConcept:国产替代主线",
+   "type": "IndustryConcept",
+   "name": "国产替代主线",
+   "props": {
+    "行业定位": "2025电子行业年中展望主线",
+    "驱动": "政策资金+自主可控+AI需求",
+    "赛道": "半导体设备/材料/量检测"
+   },
+   "sources": [
+    "http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/804195517618/index.phtml",
+    "http://www.nbd.com.cn/rss/zaker/articles/4459477.html"
+   ]
+  },
+  {
+   "id": "IndustryConcept:LDLS量测应用",
+   "type": "IndustryConcept",
+   "name": "LDLS量测应用",
+   "props": {
+    "技术": "scatterometry/椭偏ellipsometry/反射reflectometry",
+    "测量": "薄膜厚度+关键尺寸CD",
+    "优势": "深紫外宽带小光斑·高通量更亮光学信号",
+    "地位": "行业标准解决方案"
+   },
+   "sources": [
+    "https://www.energetiq.com/high-throughput-light-sources-for-semiconductor-metrology",
+    "https://www.spark-opt.com.cn/article-item-1646.html"
+   ]
+  },
+  {
+   "id": "IndustryConcept:LDLS产品线",
+   "type": "IndustryConcept",
+   "name": "LDLS产品线",
+   "props": {
+    "系列": "EQ-99X(含FC/CAL)/EQX-850/EQ-77X/EQ-77C/EQ-400",
+    "可调": "LDTLS(TLS-EQ-77系列)",
+    "EUV": "EQS-10/EQ-10R(软X射线)",
+    "应用": "半导体计量/传感器校准/科研"
+   },
+   "sources": [
+    "https://www.energetiq.com/high-throughput-light-sources-for-semiconductor-metrology"
+   ]
+  },
+  {
+   "id": "IndustryConcept:LDLS改进FTIR",
+   "type": "IndustryConcept",
+   "name": "LDLS改进FTIR",
+   "props": {
+    "场景": "半导体材料中杂质含量FTIR测量",
+    "增益": "激光驱动光源改进测量质量"
+   },
+   "sources": [
+    "https://www.spark-opt.com.cn/article-item-1646.html"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "MarketData:前道检测量测2025规模",
+   "target": "IndustryConcept:前道检测",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "MarketData:前道检测量测2025规模",
+   "target": "IndustryConcept:前道量测",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "MarketData:前道检测量测2032预测",
+   "target": "IndustryConcept:前道检测",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "MarketData:前道检测量测CAGR",
+   "target": "IndustryConcept:前道检测",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "MarketData:量测检测2025增长",
+   "target": "IndustryConcept:前道量测",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:前道检测",
+   "target": "IndustryConcept:前道制造",
+   "type": "part-of",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:前道量测",
+   "target": "IndustryConcept:前道制造",
+   "type": "part-of",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:套刻精度",
+   "target": "IndustryConcept:前道量测",
+   "type": "measured-by",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:关键尺寸CD",
+   "target": "IndustryConcept:前道量测",
+   "type": "measured-by",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:宽谱光源",
+   "target": "IndustryConcept:前道检测",
+   "type": "supplies",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:宽谱光源",
+   "target": "IndustryConcept:前道量测",
+   "type": "supplies",
+   "props": {}
+  },
+  {
+   "source": "Company:KLA",
+   "target": "MarketData:前道检测量测2025规模",
+   "type": "company-in-market",
+   "props": {}
+  },
+  {
+   "source": "Company:中科飞测",
+   "target": "IndustryConcept:前道检测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:中科飞测",
+   "target": "IndustryConcept:前道量测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:Hitachi High-Tech",
+   "target": "IndustryConcept:前道量测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:Onto Innovation",
+   "target": "IndustryConcept:前道量测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:Applied Materials",
+   "target": "IndustryConcept:前道制造",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:ASML",
+   "target": "IndustryConcept:前道制造",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:Lasertec",
+   "target": "IndustryConcept:前道检测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:SCREEN",
+   "target": "IndustryConcept:前道制造",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:Camtek",
+   "target": "IndustryConcept:后道封装",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:Energetiq",
+   "target": "IndustryConcept:宽谱光源",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:痛点参数型",
+   "target": "IndustryConcept:前道检测",
+   "type": "pattern-for-industry",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:痛点参数型",
+   "target": "RednoteRule:痛点方案挂载结构",
+   "type": "pattern-uses-rule",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:对比实测型",
+   "target": "RednoteRule:工业品内容铁律",
+   "type": "pattern-uses-rule",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:工厂探访型",
+   "target": "RednoteRule:推荐流封面首屏",
+   "type": "pattern-uses-rule",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:工程师人设型",
+   "target": "RednoteRule:搜索SEO",
+   "type": "pattern-uses-rule",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:场景演示型",
+   "target": "IndustryConcept:前道量测",
+   "type": "pattern-for-industry",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:避坑指南型",
+   "target": "RednoteRule:工业品内容铁律",
+   "type": "pattern-uses-rule",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:干货清单型",
+   "target": "RednoteRule:CES权重模型",
+   "type": "pattern-uses-rule",
+   "props": {}
+  },
+  {
+   "source": "RednotePattern:轻商品线索型",
+   "target": "RednoteRule:B2B轻商品闭环",
+   "type": "pattern-uses-rule",
+   "props": {}
+  },
+  {
+   "source": "RednoteRule:痛点方案挂载结构",
+   "target": "RednoteRule:CES权重模型",
+   "type": "rule-references",
+   "props": {}
+  },
+  {
+   "source": "RednoteRule:三层流量池",
+   "target": "RednoteRule:完播与阅读深度",
+   "type": "rule-references",
+   "props": {}
+  },
+  {
+   "source": "RednoteRule:搜索SEO",
+   "target": "RednoteRule:推荐流封面首屏",
+   "type": "rule-references",
+   "props": {}
+  },
+  {
+   "source": "MarketData:全球量检测市场2024规模",
+   "target": "IndustryConcept:前道检测",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "MarketData:全球量检测市场2024规模",
+   "target": "IndustryConcept:前道量测",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "MarketData:KLA量检测份额2024",
+   "target": "Company:KLA",
+   "type": "share-of-company",
+   "props": {}
+  },
+  {
+   "source": "Company:KLA",
+   "target": "MarketData:全球量检测市场2024规模",
+   "type": "company-in-market",
+   "props": {}
+  },
+  {
+   "source": "Company:精测电子",
+   "target": "IndustryConcept:前道量测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:华兴源创",
+   "target": "IndustryConcept:前道检测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:天准科技",
+   "target": "IndustryConcept:前道检测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "Company:东方晶源",
+   "target": "IndustryConcept:前道检测",
+   "type": "company-in-segment",
+   "props": {}
+  },
+  {
+   "source": "MarketData:全球半导体制造设备2025销售额",
+   "target": "IndustryConcept:前道制造",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:芯片制造四大核心设备",
+   "target": "IndustryConcept:前道制造",
+   "type": "part-of",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:前道七大核心装备",
+   "target": "IndustryConcept:前道制造",
+   "type": "part-of",
+   "props": {}
+  },
+  {
+   "source": "RednoteRule:广告资源三件套",
+   "target": "RednoteRule:B2B轻商品闭环",
+   "type": "rule-references",
+   "props": {}
+  },
+  {
+   "source": "MarketData:2026全球半导体销售预测",
+   "target": "IndustryConcept:前道制造",
+   "type": "market-for-segment",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:大基金三期",
+   "target": "IndustryConcept:国产替代主线",
+   "type": "drives",
+   "props": {}
+  },
+  {
+   "source": "Company:中科飞测",
+   "target": "IndustryConcept:国产替代主线",
+   "type": "company-in-trend",
+   "props": {}
+  },
+  {
+   "source": "Company:精测电子",
+   "target": "IndustryConcept:国产替代主线",
+   "type": "company-in-trend",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:LDLS量测应用",
+   "target": "IndustryConcept:前道量测",
+   "type": "supplies",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:LDLS量测应用",
+   "target": "IndustryConcept:前道检测",
+   "type": "supplies",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:LDLS产品线",
+   "target": "IndustryConcept:LDLS量测应用",
+   "type": "has-product-line",
+   "props": {}
+  },
+  {
+   "source": "IndustryConcept:LDLS改进FTIR",
+   "target": "IndustryConcept:LDLS量测应用",
+   "type": "extends",
+   "props": {}
+  },
+  {
+   "source": "Company:Energetiq",
+   "target": "IndustryConcept:LDLS产品线",
+   "type": "company-in-segment",
+   "props": {}
+  }
+ ]
+}

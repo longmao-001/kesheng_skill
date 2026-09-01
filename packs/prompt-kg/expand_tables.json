@@ -1,0 +1,2629 @@
+{
+ "platforms": [
+  {
+   "name": "Seedance（火山引擎）",
+   "version": "2.0",
+   "syntax": "单镜内多动作/变速/光效变化也必须按时间轴分段: 【时间轴】0-2秒[画面+动作+运镜+光影]2-4秒[...]...; 段=动作触发/变速/光效转折点, 时段连续不重叠, 一段一动作, 结尾贯穿约束收口; 2.0: 同样按 0-X秒 整秒分段(时间轴公式有效), 但不响应秒以下精调(别写停顿0.3秒), 也可用镜头N序号(渐起/渐快/收稳); 多镜分镜按时间轴公式：素材指代→一句话概述(主体+地点+事件+风格)→分镜逐段→贯穿约束收口；每镜四要素(运镜+主体动作+空间变化+音频)，用0-X秒整秒分段或“镜头N”序号(不响应秒以下精调)；单镜运镜≤2种并写标准术语+变速/复合运镜",
+   "routes": [
+    "T2V",
+    "I2V",
+    "参考生视频",
+    "编辑",
+    "延长",
+    "多镜原生分镜"
+   ],
+   "durations": [
+    "4-15s"
+   ],
+   "lang": "中文",
+   "params": [
+    "@图片1/@视频1/@音频1 参考素材",
+    "音频符号 {台词}/(音乐)/<音效>/【字幕】",
+    "参考素材共15个(9图+3视频+3音频)",
+    "镜头N 多镜逐段写法",
+    "标准运镜术语 推/拉/摇/移/跟/环绕/一镜到底/希区柯克变焦/FPV/子弹时间",
+    "原料指代 + 一句话概述 + 分镜逐段 + 贯穿约束收口"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "[旧后端兼容] 团队统一按2.5写法; 2.0仅当后端切旧版时注意: 单次上限15s, 不响应秒以下精调；画幅6档固定；分辨率480p/720p/1080p/4K(标准版)；时间控制不响应精确时间戳、改用镜头N序号；真人脸参考图会被审核直接拦截；参考素材4-5个为宜；人物参考大头照+全身照分开给；别直接多次续写模型产物(画质劣化)；宫格分镜参考≤15格、火柴人/线稿为宜；要严格对齐逐格用关键帧写法“以图片1至图片7的顺序作为关键帧…”；⚠️ 锚定范式: 全能参考(参考包@引用)为正统(Seedance2.x: 参考素材15/50个), 不用首尾帧衔接旧范式; 多图参考写清每张取什么",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "knowledge/seedance-template-library.md",
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "name": "Seedance（火山引擎）",
+   "version": "2.5",
+   "syntax": "单镜内多动作/变速/光效变化也必须按时间轴分段: 【时间轴】0-2秒[画面+动作+运镜+光影]2-4秒[...]...; 段=动作触发/变速/光效转折点, 时段连续不重叠, 一段一动作, 结尾贯穿约束收口; 2.5: 整数秒时间戳(0-3s/3-7s)必须连续; 同2.0时间轴公式，但响应整数秒时间戳(0-3s…3-7s…时间轴必须连续)；单镜只指定1种运镜；官方推荐结构 素材指代→一句话概述→分镜逐段→贯穿约束收口",
+   "routes": [
+    "T2V",
+    "I2V",
+    "参考生视频",
+    "编辑",
+    "延长",
+    "多镜原生分镜"
+   ],
+   "durations": [
+    "4-30s",
+    "可多轮延长"
+   ],
+   "lang": "中文",
+   "params": [
+    "@图片1/@视频1/@音频1 参考素材",
+    "音频符号 {台词}/(音乐)/<音效>/【字幕】",
+    "整数秒时间戳(时间轴必须连续)",
+    "参考素材共50个(30图+10视频+10音频) 含纯音频参考",
+    "镜头序号或整数秒时间戳双写法",
+    "纯音频参考"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "⭐统一使用版本; 单次生成4-30s(可多轮延长, ⚠️时间轴总长≤30s, 超长走分段+延长)；分辨率仅480p/720p(暂时倒退)；第三方“2.5原生4K”与官方文档矛盾；画幅6档+adaptive(编辑/延长/首尾帧任务必须用)；真人脸参考图会被审核直接拦截；⚠️ 锚定范式: 全能参考(参考包@引用)为正统(Seedance2.x: 参考素材15/50个), 不用首尾帧衔接旧范式; 多图参考写清每张取什么",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "knowledge/seedance-template-library.md",
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "name": "即梦 Jimeng（Seedance 引擎）",
+   "version": "",
+   "syntax": "运镜公式【运镜动作】+【节奏/速度】+【景别/角度】+【主体/场景】+【画质/氛围】；运镜放公式最前面，≤2-3个；全能参考用@引用",
+   "routes": [
+    "T2V",
+    "I2V",
+    "全能参考(参考生视频)",
+    "智能多帧(≤10帧)",
+    "多图参考@引用"
+   ],
+   "durations": [],
+   "lang": "中文",
+   "params": [
+    "全能参考 @引用 最多12个参考文件",
+    "智能多帧 ≤10帧 串多节拍",
+    "运镜可写量化参数(镜头高度/匀速速度/焦段)",
+    "首尾帧",
+    "主体是@图1中的……"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "运镜放公式最前；运镜≤2-3个；即梦Pro为Seedance核心后端；“镜头高度1.6米，匀速前推，速度0.8米/秒，焦段24毫米”这种量化写法最稳；⚠️ 锚定范式: 全能参考(参考包@引用)为正统(Seedance2.x: 参考素材15/50个), 不用首尾帧衔接旧范式; 多图参考写清每张取什么",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "name": "可灵 Kling",
+   "version": "",
+   "syntax": "文生视频 主体(主体描述)+运动+场景(场景描述)+(镜头语言+光影+氛围)；图生视频 主体+运动，背景+运动(只写运动，不复述画面)",
+   "routes": [
+    "T2V",
+    "I2V",
+    "首尾帧",
+    "运动笔刷(Motion Brush)",
+    "视频延长",
+    "面部/多图参考"
+   ],
+   "durations": [],
+   "lang": "中文",
+   "params": [
+    "独立负面prompt字段",
+    "相机控制六轴(水平/垂直/摇/俯仰/翻滚/变焦 [-10,10])",
+    "运动笔刷 Motion Brush",
+    "首尾帧",
+    "面部/多图参考",
+    "视频延长"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "自然语言+相机六轴数值控制(单轴先试±5~±7、组合≤2轴)；局部运动用运动笔刷；运镜可翻译成数值",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "knowledge/prompt-reverse.md",
+    "playbooks/consistency.md"
+   ]
+  },
+  {
+   "name": "Vidu",
+   "version": "",
+   "syntax": "公式 主体+场景细节+镜头运镜+动态效果+风格氛围；招牌是参考生视频(上传角色/道具参考图, prompt只写新动作新场景)",
+   "routes": [
+    "T2V",
+    "I2V",
+    "参考生视频(角色/道具参考图)",
+    "多图首尾帧"
+   ],
+   "durations": [],
+   "lang": "中文",
+   "params": [
+    "参考生视频(上传角色/道具参考图, prompt只写新动作新场景)",
+    "多图首尾帧"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "“同一主体，全新故事”；prompt只写新动作新场景，画面交给参考图",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "playbooks/consistency.md"
+   ]
+  },
+  {
+   "name": "海螺 Hailuo / MiniMax（Director 模型）",
+   "version": "",
+   "syntax": "运镜指令必须放在prompt最开头，方括号包裹，最多2条，英文逗号分隔",
+   "routes": [],
+   "durations": [],
+   "lang": "中文",
+   "params": [
+    "方括号运镜指令 [推进][拉远][左摇]",
+    "最多2条, 英文逗号分隔",
+    "顺序运镜用“然后”连接"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "主模型Director；本手册上限2条，反推方法论记录同组≤3条，以当前UI为准",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "name": "海螺 Hailuo 3.0（MiniMax H3）",
+   "version": "3.0 / H3",
+   "syntax": "官方 H3 正文用自然动作散文式运镜（“The camera pushes in with small amplitude at slow speed”，含幅度/速度），按固定字段顺序书写：base模式→integrated_multimodal_description→overall_soundscape→non_diegetic_music；Ref2VA 走 subject_definitions→summary→retention_analysis→detailed_description→overall_soundscape→non_diegetic_music；官方不用方括号运镜标签（手册的“运镜方括号放开头、最多2条”为旧版 Hailuo/Director 写法，H3 是否沿用待核实）",
+   "routes": [
+    "T2VA(文生视频+原生音频)",
+    "I2V 首帧",
+    "I2V 尾帧",
+    "I2V 首尾帧(FL2VA)",
+    "L2VA(尾帧收敛)",
+    "Ref2VA 全模态参考(图+视频+音频同请求)",
+    "多镜头/分镜 [Shot N] 块",
+    "V2V 视频编辑续写"
+   ],
+   "durations": [
+    "4-15s(官方规格)",
+    "5s/10s/15s 档(API文档列出的档位, 任意整数可用 e.g. 7≈7.29s)"
+   ],
+   "lang": "英文（官方重写正文为英文；对白/歌词/画面文字保留原语言；官方App/PI 用中文自然语言亦可）",
+   "params": [
+    "多模态上下文输入(图/视频/音频同请求)",
+    "原生32kHz立体声音频(同帧生成,不可关闭)",
+    "固定24fps",
+    "画幅 21:9/16:9/4:3/1:1/3:4/9:16 + adaptive",
+    "分辨率 2K / 768P(默认短边768px)",
+    "参考标签 <Picture N>/<Video N>/<Audio N>/<Subject N>",
+    "说话人ID (S1)(S2) + 对白 <d>[语言]...</d>",
+    "镜头编号 [Shot N] + At MM:SS.mmm 时间戳",
+    "运镜辞典 Zoom/Push/Pan/Truck/Tilt/Pedestal/Arc/Tracking/Static/Shake/POV/Roll"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "官方开源(权重开放 2026-07)；时长上限15s；提示词长度上限7000字符(第三方口径2000,未证实)；参考限制 ≤9图/≤3视频(各2-15s 总≤15s)/≤3音频(各2-15s 总≤15s)/混合总≤12文件；首尾帧模式与参考模式互斥；参考模式需≥1图或视频、不能仅音频；无 seed 参数→不可复现；音频始终生成不可关；媒体上限 图JPG/JPEG/PNG/WEBP/HEIC/HEIF≤30MB、视频MP4/MOV H.264/H.265≤50MB、音频WAV/MP3≤15MB；手册未收录H3专版，部分字段待核实（按官网/API文档）",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "knowledge/prompt-reverse.md",
+    "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+    "https://raw.githubusercontent.com/MiniMax-AI/MiniMax-H3/main/skills/h3-prompt-writing/references/base-en.txt",
+    "https://raw.githubusercontent.com/MiniMax-AI/MiniMax-H3/main/skills/h3-prompt-writing/references/ref-en.txt",
+    "https://raw.githubusercontent.com/yajnignez/minimax-h3-prompts/main/write-minimax-h3-video-prompts/references/official-h3-notes.md",
+    "https://raw.githubusercontent.com/joeVenner/awesome-minimax-h3/main/minimax-video/references/api-reference.md",
+    "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+    "https://www.minimax.io/news/minimax-h3-open-source",
+    "https://github.com/ye4wzp/minimax-h3-prompt-skill"
+   ]
+  },
+  {
+   "name": "海螺 Hailuo 3.0 Turbo（MiniMax H3 Turbo）",
+   "version": "H3 Turbo（3.0 变体）",
+   "syntax": "同 H3 官方结构（自然动作散文式运镜 + 固定字段顺序）；H3 Turbo 与 H3 共用 32px网格/固定24fps/原生32kHz立体声音频/124-362帧 规格",
+   "routes": [],
+   "durations": [
+    "约5-15s(124-362帧 @24fps, 124+n×17)"
+   ],
+   "lang": "英文/中文",
+   "params": [
+    "32px网格",
+    "固定24fps",
+    "原生32kHz立体声音频",
+    "124-362帧(124+n×17)"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "H3 的快速/轻量变体；与 H3 共用规格，具体生成路线/分辨率/时长档/限制差异待核实（手册未收录，按官网）",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "https://www.npmjs.com/package/@sogni-ai/sogni-creative-agent-skill",
+    "https://github.com/MiniMax-AI/MiniMax-H3"
+   ]
+  },
+  {
+   "name": "海螺 Hailuo 2.3（MiniMax 旧版）",
+   "version": "2.3",
+   "syntax": "旧版沿用手册 Hailuo/MiniMax 写法（运镜方括号放开头、最多2条）；官方 H3 的字段序列/全模态结构为 H3 新增，2.3 未收录",
+   "routes": [
+    "T2V",
+    "I2V(无尾帧)"
+   ],
+   "durations": [
+    "6s",
+    "10s"
+   ],
+   "lang": "中/英",
+   "params": [
+    "720p/1080p",
+    "1080p 上限6s",
+    "无首尾帧",
+    "无原声音频"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "旧版本(与 H3 对比参照)：仅 6s/10s；1080p 仅支持到 6s；768p/1080p；无尾帧、无原声；手册未收录独立的 2.3 专版语法，待核实（按官网/Replicate 2.3）",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "https://replicate.com/minimax/hailuo-2.3",
+    "https://www.orcarouter.ai/blog/minimax-h3-vs-hailuo-2-3"
+   ]
+  },
+  {
+   "name": "Runway",
+   "version": "Gen-3 / Gen-4",
+   "syntax": "结构 [camera movement]: [establishing scene]. [additional details]；关键词家族 camera/lighting/speed",
+   "routes": [
+    "T2V",
+    "I2V",
+    "Gen-4 References(角色一致性)",
+    "Motion Brush(局部运动)"
+   ],
+   "durations": [],
+   "lang": "英文",
+   "params": [
+    "camera 关键词(low angle/overhead/FPV)",
+    "lighting 关键词(diffused/silhouette/lens flare)",
+    "speed 关键词(slow motion/hyperspeed)",
+    "Camera presets + Motion Brush",
+    "Gen-4 References"
+   ],
+   "negatives": [
+    "no morphing",
+    "no flickering",
+    "no jitter",
+    "no melting",
+    "no warping",
+    "no temporal distortion",
+    "no extra limbs",
+    "no identity drift",
+    "no text drift"
+   ],
+   "notes": "英文平台写英文prompt；迭代编辑工作流强；Gen-4 References 做角色一致性",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "name": "通义万相 Wan",
+   "version": "2.6+",
+   "syntax": "官方7要素词典 景别/视角/镜头/运镜/速率/氛围/风格 按要素组装；首尾帧API 传首帧+尾帧图 prompt只写运动；多镜头公式 总体描述+镜头序号+时间戳+分镜内容",
+   "routes": [
+    "T2V",
+    "I2V",
+    "首尾帧API",
+    "多镜原生(2.6+)",
+    "character引用锁角色"
+   ],
+   "durations": [],
+   "lang": "中文",
+   "params": [
+    "官方7要素词典(景别/视角/镜头/运镜/速率/氛围/风格)",
+    "首尾帧API(首帧+尾帧图, prompt只写运动)",
+    "多镜头公式 总体描述+镜头序号+时间戳+分镜内容",
+    "声音公式(人声=内容+情绪+语调+语速+音色)",
+    "character引用锁角色"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "多镜头叙事；首尾帧差异大时保持同场景同构图只改一个元素；多镜原生保证主体/场景/氛围天然一致",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "knowledge/prompt-reverse.md",
+    "playbooks/consistency.md"
+   ]
+  },
+  {
+   "name": "LibTV（LiblibAI 视频工作台）",
+   "version": "",
+   "syntax": "节点画布工作流；后端模型可选，prompt按所选后端模型公式写；剧本节点→分镜节点→视频节点，分镜图直接作为视频节点首帧参考",
+   "routes": [
+    "多镜原生分镜节点",
+    "后端模型路由(Seedance2.x/可灵/MiniMax)"
+   ],
+   "durations": [],
+   "lang": "中文",
+   "params": [
+    "节点画布工作流",
+    "剧本→分镜→视频节点",
+    "分镜图直接作为视频节点首帧参考",
+    "团队版共享资产库",
+    "LoRA角色/风格训练(Wan/SD/FLUX底模, 本地ComfyUI)"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "prompt层面无独立语法，看所选后端；适合整条片的生产线；可用LoRA维持硬一致性",
+   "source": [
+    "playbooks/platform-prompts.md",
+    "playbooks/consistency.md",
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "name": "智谱清影",
+   "version": "",
+   "syntax": "主体+场景+运动 基础式，可叠美学控制；结构最简单",
+   "routes": [],
+   "durations": [],
+   "lang": "中文",
+   "params": [
+    "基础式 主体+场景+运动",
+    "可叠美学控制"
+   ],
+   "negatives": [
+    "变形",
+    "扭曲",
+    "多余的手指",
+    "面部扭曲",
+    "文字",
+    "字幕",
+    "水印",
+    "logo",
+    "模糊",
+    "低清晰度",
+    "抖动",
+    "画面撕裂",
+    "闪烁",
+    "过曝",
+    "死黑",
+    "卡通化(写实片用)"
+   ],
+   "notes": "结构最简单，适合快速验证",
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "name": "Sora",
+   "version": "",
+   "syntax": "自然语言，懂电影术语(镜头/胶片/画幅)；分析块可全展开写",
+   "routes": [
+    "T2V",
+    "多镜原生(Sora Storyboard)",
+    "角色/cameo"
+   ],
+   "durations": [
+    "最长60s"
+   ],
+   "lang": "英文",
+   "params": [
+    "自然语言懂电影术语(镜头/胶片/画幅)",
+    "Sora Storyboard 多镜原生",
+    "角色/cameo 角色一致性",
+    "最长60s"
+   ],
+   "negatives": [
+    "no morphing",
+    "no flickering",
+    "no jitter",
+    "no melting",
+    "no warping",
+    "no temporal distortion",
+    "no extra limbs",
+    "no identity drift",
+    "no text drift"
+   ],
+   "notes": "分析块可全展开写；长连贯段路由到Sora；一段一模型路由策略",
+   "source": [
+    "knowledge/prompt-reverse.md",
+    "playbooks/consistency.md"
+   ]
+  },
+  {
+   "name": "Veo 3",
+   "version": "3",
+   "syntax": "5块结构(camera/subject/action/setting/audio)，原生音频；对话用引号、≤2个音频事件；每段迭代只改一块",
+   "routes": [],
+   "durations": [],
+   "lang": "英文",
+   "params": [
+    "5块结构 camera/subject/action/setting/audio",
+    "原生音频(对话用引号)",
+    "≤2个音频事件",
+    "每段迭代只改一块"
+   ],
+   "negatives": [
+    "no morphing",
+    "no flickering",
+    "no jitter",
+    "no melting",
+    "no warping",
+    "no temporal distortion",
+    "no extra limbs",
+    "no identity drift",
+    "no text drift"
+   ],
+   "notes": "音频段路由到Veo3；原生音频能力",
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "name": "Pika（Pikaframes）",
+   "version": "",
+   "syntax": "支持首尾帧衔接链：导出镜头N尾帧→镜头N+1首帧，无缝连续",
+   "routes": [
+    "首尾帧(Pikaframes)"
+   ],
+   "durations": [],
+   "params": [
+    "Pikaframes 首尾帧衔接链"
+   ],
+   "negatives": [
+    "no morphing",
+    "no flickering",
+    "no jitter",
+    "no melting",
+    "no warping",
+    "no temporal distortion",
+    "no extra limbs",
+    "no identity drift",
+    "no text drift"
+   ],
+   "notes": "用于多镜首尾帧接力；首尾帧图保持同场景同构图只改一个元素",
+   "source": [
+    "playbooks/consistency.md"
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "cat": "景别",
+   "name": "远景",
+   "props": {
+    "画面要点": "16-24mm焦段，交代环境、空间关系与格局",
+    "情绪作用": "交代环境、空间关系、格局",
+    "prompt句式": "远景，16-24mm，交代实验室整体空间格局与人物位置关系",
+    "典型用法": "开场建立环境与空间关系"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "景别",
+   "name": "全景",
+   "props": {
+    "画面要点": "35mm焦段，人物全身动作与场景全貌",
+    "情绪作用": "呈现人物全身动作与场景全貌",
+    "prompt句式": "全景，35mm，展示人物全身动作与场景全貌",
+    "典型用法": "人物登场、动作交代"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "景别",
+   "name": "中景",
+   "props": {
+    "画面要点": "50mm焦段，人物上半身、产品与人的交互",
+    "情绪作用": "平衡叙事，突出产品与人交互",
+    "prompt句式": "中景，50mm，人物上半身与产品交互",
+    "典型用法": "带货演示主力景别"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "景别",
+   "name": "近景",
+   "props": {
+    "画面要点": "50mm焦段，聚焦面部表情与情绪反馈",
+    "情绪作用": "拉近情绪，突出面部反馈",
+    "prompt句式": "近景，50mm，聚焦人物面部表情与情绪反馈",
+    "典型用法": "情绪戏、口播表情段"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "景别",
+   "name": "特写",
+   "props": {
+    "画面要点": "85mm焦段，产品细节与关键动作",
+    "情绪作用": "强调细节与卖点",
+    "prompt句式": "特写，85mm，突出产品细节与关键动作",
+    "典型用法": "卖点演示主力景别"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "景别",
+   "name": "大特写",
+   "props": {
+    "画面要点": "135mm焦段，微观细节：水珠、气泡、纹理、膏体",
+    "情绪作用": "放大微观奇观",
+    "prompt句式": "大特写，135mm，微观细节：水珠、气泡、纹理、膏体",
+    "典型用法": "个护/产品微观质感展示"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "景别",
+   "name": "大全景",
+   "props": {
+    "画面要点": "大空间内景，暖色顶灯，交代实验室内景全貌",
+    "情绪作用": "宏阔、交代地点与时间",
+    "prompt句式": "大全景，傍晚的生物实验室，暖色顶灯",
+    "典型用法": "大空间落版/空镜建立地点"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "平视",
+   "props": {
+    "画面要点": "镜头与主体同高，机位水平",
+    "情绪作用": "客观、平等",
+    "prompt句式": "平视角度拍摄，客观平等",
+    "典型用法": "对话与产品展示默认"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "俯视（高角）",
+   "props": {
+    "画面要点": "镜头由上向下俯拍主体",
+    "情绪作用": "弱势、脆弱、孤立",
+    "prompt句式": "俯视/高角度，由上向下拍摄主体",
+    "典型用法": "表现弱势；产品俯拍摆阵"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "仰视（低角）",
+   "props": {
+    "画面要点": "镜头由下向上仰拍主体",
+    "情绪作用": "权力、胁迫、英雄感",
+    "prompt句式": "仰视/低角度，由下向上拍摄主体",
+    "典型用法": "英雄感；产品显得大"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "过肩",
+   "props": {
+    "画面要点": "越过一人肩部拍摄对面主体",
+    "情绪作用": "对话、对抗、互动关系标配",
+    "prompt句式": "过肩镜头，越过肩部看向对面人物",
+    "典型用法": "对话、对抗、互动关系"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "居中固定",
+   "props": {
+    "画面要点": "主体居中、机位固定不动",
+    "情绪作用": "仪式感、客观",
+    "prompt句式": "居中固定机位，主体居中，落版镜头",
+    "典型用法": "仪式感、落版专用"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "FPV 第一人称视角",
+   "props": {
+    "画面要点": "镜头即第一人称主观视角",
+    "情绪作用": "沉浸、代入",
+    "prompt句式": "FPV 第一人称视角，代入主体视点",
+    "典型用法": "第一人称体验、开箱/跑酷前置"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "顶拍/鸟瞰",
+   "props": {
+    "画面要点": "近似垂直向下俯拍机位",
+    "情绪作用": "全局、上帝视角",
+    "prompt句式": "overhead 顶拍/鸟瞰角度拍摄",
+    "典型用法": "俯视全局、产品俯拍摆阵"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "低角度环绕",
+   "props": {
+    "画面要点": "低机位环绕主体运动",
+    "情绪作用": "力量感、时尚感",
+    "prompt句式": "低角度环绕主体，突出力量感与时尚感",
+    "典型用法": "潮流服饰、模特全身、产品英雄化"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "角度",
+   "name": "鱼眼贴脸",
+   "props": {
+    "画面要点": "鱼眼镜头贴近主体脸部，畸变",
+    "情绪作用": "畸变张力、街头感",
+    "prompt句式": "鱼眼贴脸，配合重影闪烁，卡点片头",
+    "典型用法": "潮流/重音卡点片头"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "推镜头",
+   "props": {
+    "画面要点": "机位向主体推进，画面由远到近",
+    "情绪作用": "建立紧张、聚焦注意力、情感逼近",
+    "prompt句式": "缓慢推镜头，由中景推至特写",
+    "典型用法": "戏剧性揭示、情绪时刻、开场建立"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "拉镜头",
+   "props": {
+    "画面要点": "机位远离主体，画面由近到远",
+    "情绪作用": "释然、孤独、交代全貌",
+    "prompt句式": "拉镜头，由近拉远交代环境规模",
+    "典型用法": "收尾、揭示环境规模、情绪抽离"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "摇镜头",
+   "props": {
+    "画面要点": "机位原地水平/垂直扫视",
+    "情绪作用": "扫视信息、跟随视线",
+    "prompt句式": "摇镜头，水平扫视展现场景宽度",
+    "典型用法": "展现场景宽/高，跟视线引导"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "移镜头",
+   "props": {
+    "画面要点": "机位平行移动，保持距离不变",
+    "情绪作用": "平行观察、展示场景深度",
+    "prompt句式": "横向移动镜头，平行跟随角色侧面",
+    "典型用法": "跟随角色侧面移动、空间关系"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "跟镜头",
+   "props": {
+    "画面要点": "机位跟随主体运动",
+    "情绪作用": "陪伴感、行动感",
+    "prompt句式": "跟镜头，低机位跟拍显步伐",
+    "典型用法": "角色行进、动作场面、低机位跟拍"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "环绕镜头",
+   "props": {
+    "画面要点": "机位绕主体做360°或半圈环绕",
+    "情绪作用": "英雄时刻、全方位审视",
+    "prompt句式": "环绕主体半圈/一圈，展示产品全貌",
+    "典型用法": "产品展示、人物高光、主角登场"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "升降镜头",
+   "props": {
+    "画面要点": "吊臂/升降机垂直上抬或下放",
+    "情绪作用": "史诗感、规模揭示",
+    "prompt句式": "吊臂升起，揭示城市/空间规模",
+    "典型用法": "建立全景、开场/收尾格局拉开"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "变焦",
+   "props": {
+    "画面要点": "镜头内变焦而不移动机位",
+    "情绪作用": "突然强调、快速转向",
+    "prompt句式": "镜头内变焦，强调关键元素",
+    "典型用法": "强调关键元素（比推更硬更主观）"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "希区柯克变焦",
+   "props": {
+    "画面要点": "推拉与变焦反向运动",
+    "情绪作用": "眩晕、心理冲击、世界塌陷感",
+    "prompt句式": "希区柯克变焦，背景虚化焦点回缩主体",
+    "典型用法": "震惊瞬间、转折揭示"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "手持镜头",
+   "props": {
+    "画面要点": "机位带自然手持晃动",
+    "情绪作用": "纪实、紧迫、亲密",
+    "prompt句式": "手持镜头，自然微晃，UGC质感",
+    "典型用法": "纪录片感、UGC真实感、追逐"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "FPV 穿越",
+   "props": {
+    "画面要点": "第一人称高速穿行空间",
+    "情绪作用": "沉浸、速度、探索",
+    "prompt句式": "FPV 穿越，穿过缝隙/镜头",
+    "典型用法": "第一人称体验、穿空间、开箱/跑酷"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "甩镜头",
+   "props": {
+    "画面要点": "快速水平甩动形成拖影",
+    "情绪作用": "节奏、转场冲击",
+    "prompt句式": "快速甩镜头，转场冲击",
+    "典型用法": "快速切换场景且保持视觉连贯"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "固定镜头",
+   "props": {
+    "画面要点": "机位完全固定",
+    "情绪作用": "稳定、客观、仪式感",
+    "prompt句式": "固定镜头，机位不动，稳定无抖动",
+    "典型用法": "对话、产品细节、数据/落版镜头"
+   },
+   "source": [
+    "knowledge/camera-language.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "运动",
+   "name": "探针/微距穿梭",
+   "props": {
+    "画面要点": "探头贴近主体滑行/穿缝隙, 微距",
+    "情绪作用": "奢侈、解压、微观奇观",
+    "prompt句式": "探针微距穿梭，贴面滑行穿缝隙",
+    "典型用法": "首饰手表贴面滑行、个护微观效果"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "环绕+上升（复合运镜）",
+   "props": {
+    "画面要点": "环绕主体同时吊臂上升",
+    "情绪作用": "威风、揭示",
+    "prompt句式": "环绕主体并上升，复合运镜",
+    "典型用法": "产品高光/主角登场增强动感"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "推近+旋转（复合运镜）",
+   "props": {
+    "画面要点": "推进同时镜头旋转",
+    "情绪作用": "强调+动感",
+    "prompt句式": "推近主体并旋转镜头，复合运镜",
+    "典型用法": "卖点特写动感呈现"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "由快到缓收稳（变速）",
+   "props": {
+    "画面要点": "运镜先快后慢收稳",
+    "情绪作用": "高级、收束",
+    "prompt句式": "由快到缓收稳，运镜平稳无抖动",
+    "典型用法": "广告片落版/产品定格"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "骤然放缓（变速）",
+   "props": {
+    "画面要点": "运动突然减速",
+    "情绪作用": "节奏突兀、强调",
+    "prompt句式": "骤然放缓，制造节奏落差",
+    "典型用法": "卡点/情绪转折"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "急速俯冲急停悬停（变速）",
+   "props": {
+    "画面要点": "快速俯冲后急停悬停",
+    "情绪作用": "冲击、悬停凝视",
+    "prompt句式": "急速俯冲后急停悬停",
+    "典型用法": "钩子/冲击镜头"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "匹配剪辑",
+   "props": {
+    "画面要点": "两镜主体轴向一致无缝衔接",
+    "情绪作用": "高级、流畅穿越",
+    "prompt句式": "匹配剪辑，主体轴向一致切换场景",
+    "典型用法": "产品不变背景变"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "动作匹配剪辑",
+   "props": {
+    "画面要点": "环绕动势接推近动势",
+    "情绪作用": "流畅、动感",
+    "prompt句式": "动作匹配剪辑，环绕动势接推近动势",
+    "典型用法": "广告片剪辑节奏动感来源"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "快慢相间（剪辑节奏）",
+   "props": {
+    "画面要点": "快镜头与慢镜头交替",
+    "情绪作用": "节奏鲜明",
+    "prompt句式": "快慢相间，节奏分明",
+    "典型用法": "广告片剪辑节奏动感来源"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "组合",
+   "name": "主角度慢起加速（多速度）",
+   "props": {
+    "画面要点": "产品旋转主角度慢起后加速",
+    "情绪作用": "变速即高级",
+    "prompt句式": "主角度慢起，旋转逐渐加速",
+    "典型用法": "产品360°展示动感"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "特效",
+   "name": "粒子消散/重组",
+   "props": {
+    "画面要点": "粒子散开又重组",
+    "情绪作用": "科技感、变装",
+    "prompt句式": "粒子消散重组转场，科技感变装",
+    "典型用法": "极速变装、材质转换"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "特效",
+   "name": "冻结帧→爆发",
+   "props": {
+    "画面要点": "画面定格后瞬间炸开",
+    "情绪作用": "节奏中断再炸开",
+    "prompt句式": "冻结帧后爆发，卡点冲击",
+    "典型用法": "钩子段、卡点片头"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "特效",
+   "name": "遮挡转场",
+   "props": {
+    "画面要点": "前景物体掠过镜头后换场景",
+    "情绪作用": "无缝、一镜到底错觉",
+    "prompt句式": "遮挡转场，前景掠过镜头切换场景",
+    "典型用法": "无缝衔接、一镜到底错觉"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "特效",
+   "name": "鞭甩转场",
+   "props": {
+    "画面要点": "甩动接场景切换",
+    "情绪作用": "速度、张力",
+    "prompt句式": "鞭甩转场，快速切换场景",
+    "典型用法": "潮流/运动片场景切换"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "特效",
+   "name": "溶解",
+   "props": {
+    "画面要点": "两镜叠加淡入淡出",
+    "情绪作用": "柔和、时光流逝",
+    "prompt句式": "溶解转场，柔和过渡",
+    "典型用法": "礼盒揭示、回忆、情绪过渡"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "特效",
+   "name": "光学光斑 bokeh",
+   "props": {
+    "画面要点": "背景光点失焦成圆形光斑",
+    "情绪作用": "梦幻、浪漫、电影质感",
+    "prompt句式": "浅景深光学光斑bokeh，梦幻质感",
+    "典型用法": "浪漫/电影质感渲染"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "特效",
+   "name": "移动焦点 rack focus",
+   "props": {
+    "画面要点": "焦点在画面中转移",
+    "情绪作用": "揭示信息、引导注意力",
+    "prompt句式": "移动焦点rack focus，焦点从A平滑移到B",
+    "典型用法": "揭示信息、引导注意力"
+   },
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "场景",
+   "name": "产品广告场景",
+   "props": {
+    "画面要点": "产品棚拍/售点, 材质反光, hero角度, 产品占画面比例",
+    "情绪作用": "质感与卖点",
+    "prompt句式": "产品广告：材质反光、棚拍光、hero角度展示",
+    "典型用法": "产品卖点展示"
+   },
+   "source": [
+    "knowledge/prompt-reverse.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "场景",
+   "name": "人物/口播场景",
+   "props": {
+    "画面要点": "镜头焦段/光线/景深/色调",
+    "情绪作用": "亲近、可信",
+    "prompt句式": "人物口播：固定镜头加跟随，表情动作连贯",
+    "典型用法": "口播/主持人出镜"
+   },
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "场景",
+   "name": "风景/空镜",
+   "props": {
+    "画面要点": "前中远景/时间光线/氛围（雾云雨）",
+    "情绪作用": "氛围与过渡",
+    "prompt句式": "空镜：航拍滑行/慢摇/延时展现场景",
+    "典型用法": "转场、环境交代"
+   },
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "场景",
+   "name": "叙事故事片场景",
+   "props": {
+    "画面要点": "分镜表/镜头衔接/情绪曲线",
+    "情绪作用": "张力与推进",
+    "prompt句式": "故事片：每镜一主运动，运镜语法+节奏",
+    "典型用法": "叙事段落、情绪推进"
+   },
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "场景",
+   "name": "电商带货场景",
+   "props": {
+    "画面要点": "前3秒钩子/卖点展示/证明动作",
+    "情绪作用": "转化/冲动",
+    "prompt句式": "电商带货：快速运镜+特写切换+紧凑节奏",
+    "典型用法": "带货短视频、转化片"
+   },
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "场景",
+   "name": "风格片场景",
+   "props": {
+    "画面要点": "风格词+对应运镜",
+    "情绪作用": "风格化",
+    "prompt句式": "风格片：赛博=霓虹摇移；国风=水墨缓推",
+    "典型用法": "风格化短片、氛围片"
+   },
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "主体",
+   "name": "人物面部主体",
+   "props": {
+    "画面要点": "聚焦人物面部五官与表情变化",
+    "情绪作用": "情绪直接传达",
+    "prompt句式": "人物面部特写，写微表情：瞳孔放大、喉结滚动、耳垂泛红",
+    "典型用法": "情感戏、口播表情段"
+   },
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "主体",
+   "name": "手部操作主体",
+   "props": {
+    "画面要点": "聚焦手部与工具/样本交互细节",
+    "情绪作用": "专业、可信",
+    "prompt句式": "手部特写：移液器精准点样，手指动作清晰",
+    "典型用法": "实验操作、手工演示"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "主体",
+   "name": "产品主体",
+   "props": {
+    "画面要点": "产品外观/材质/工艺细节",
+    "情绪作用": "质感、高端",
+    "prompt句式": "产品特写：展示材质与工艺细节，环绕/推拉运镜",
+    "典型用法": "产品展示、卖点呈现"
+   },
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "主体",
+   "name": "微观样本主体",
+   "props": {
+    "画面要点": "细胞/分子/蛋白结构运镜",
+    "情绪作用": "微观奇观、科学感",
+    "prompt句式": "显微镜视野中细胞缓缓漂移，焦点从细胞壁移到细胞核",
+    "典型用法": "科研/科普可视化"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "主体",
+   "name": "实验设备主体",
+   "props": {
+    "画面要点": "显微镜/离心机/超净工作台等设备",
+    "情绪作用": "专业、严肃",
+    "prompt句式": "透射电子显微镜物镜下方，样品截面逐层显现",
+    "典型用法": "科研片、设备展示"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "主体",
+   "name": "生物活体主体",
+   "props": {
+    "画面要点": "微小生物（水熊虫等）运动",
+    "情绪作用": "生命力、微观世界",
+    "prompt句式": "载玻片上的水熊虫缓慢爬行，腿部划水动作清晰",
+    "典型用法": "微观生物/科普"
+   },
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "主体",
+   "name": "角色一致性主体",
+   "props": {
+    "画面要点": "同一人物异镜身份/外貌/服装锁定",
+    "情绪作用": "跨镜可信",
+    "prompt句式": "same male, short dark hair, black jacket；continuous from shot 2, same location, same wardrobe",
+    "典型用法": "多镜人物贯穿，双锚定/角色锁定"
+   },
+   "source": [
+    "knowledge/prompt-reverse.md",
+    "playbooks/consistency.md"
+   ]
+  }
+ ],
+ "moves": [
+  {
+   "name": "推",
+   "en": "dolly-in / push in",
+   "mood": "建立紧张、聚焦注意力、情感逼近",
+   "writeup": "由远及近推进，可由快到缓收稳；戏剧性揭示、开场建立（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "拉",
+   "en": "dolly-out / pull out",
+   "mood": "释然、孤独、交代全貌",
+   "writeup": "由近拉远揭示环境规模，收尾/情绪抽离（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "摇",
+   "en": "pan / tilt",
+   "mood": "扫视信息、跟随视线",
+   "writeup": "水平或垂直扫视，展现场景宽/高，跟视线引导（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "移",
+   "en": "truck / lateral move",
+   "mood": "平行观察、展示场景深度",
+   "writeup": "平行横移跟随角色侧面，保留空间关系（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "跟",
+   "en": "follow / tracking",
+   "mood": "陪伴感、行动感",
+   "writeup": "跟随主体行进，低机位跟拍显步伐（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "环绕",
+   "en": "orbit / 360° arc",
+   "mood": "英雄时刻、全方位审视",
+   "writeup": "环绕主体半圈/一圈，可配上升做复合（环绕+上升）（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "升降",
+   "en": "crane / jib",
+   "mood": "史诗感、规模揭示",
+   "writeup": "吊臂升降拉开格局，开场/收尾（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "甩",
+   "en": "whip pan",
+   "mood": "节奏、转场冲击",
+   "writeup": "快速甩动制造转场冲击，保持视觉连贯（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "变焦",
+   "en": "zoom",
+   "mood": "突然强调、快速转向",
+   "writeup": "镜头内变焦强调关键元素，比推更硬更主观（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "希区柯克变焦",
+   "en": "dolly-zoom",
+   "mood": "眩晕、心理冲击、世界塌陷感",
+   "writeup": "推拉与变焦反向，震惊瞬间/转折揭示（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "FPV 穿越",
+   "en": "FPV flythrough",
+   "mood": "沉浸、速度、探索",
+   "writeup": "第一人称穿行空间，开箱/跑酷（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "一镜到底",
+   "en": "single take / oner",
+   "mood": "连续、沉浸、真实",
+   "writeup": "无缝长镜头一镜到底，保持空间连续（出处：playbooks/platform-prompts.md 运镜词表）"
+  },
+  {
+   "name": "固定镜头",
+   "en": "locked-off shot",
+   "mood": "稳定、客观、仪式感",
+   "writeup": "机位固定不动，落版/数据/对话镜头（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "手持",
+   "en": "handheld",
+   "mood": "纪实、紧迫、亲密",
+   "writeup": "自然手持微晃，UGC/纪录片/追逐（出处：playbooks/platform-prompts.md 运镜词表 + knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "探针/微距穿梭",
+   "en": "probe / macro flythrough",
+   "mood": "奢侈、解压、微观奇观",
+   "writeup": "探头贴近滑行/穿缝隙，首饰手表、个护微观效果（出处：knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "低角度环绕",
+   "en": "low-angle orbit",
+   "mood": "力量感、时尚感",
+   "writeup": "低机位环绕主体，潮流服饰/模特全身/产品英雄化（出处：knowledge/camera-language.md 运镜表）"
+  },
+  {
+   "name": "鱼眼贴脸",
+   "en": "fisheye close-up",
+   "mood": "畸变张力、街头感",
+   "writeup": "鱼眼镜头贴脸，配合重影闪烁，潮流卡点片头（出处：knowledge/camera-language.md 运镜表）"
+  }
+ ],
+ "tags": [
+  {
+   "cat": "光影",
+   "name": "逆光",
+   "writeup": "逆光，主体背对光源形成剪影轮廓（backlight）",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "光影",
+   "name": "侧光",
+   "writeup": "侧光，从侧面照打突出立体感",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "光影",
+   "name": "顶光",
+   "writeup": "顶光，冷白顶灯自上而下照明",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "光影",
+   "name": "伦勃朗光",
+   "writeup": "伦勃朗光，斜侧三角光带戏剧层次",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "光影",
+   "name": "剪影",
+   "writeup": "剪影，主体压暗只留轮廓",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "光影",
+   "name": "轮廓光/背光",
+   "writeup": "背光/轮廓光，主体从背景分离，三维感",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "光影",
+   "name": "体积光",
+   "writeup": "体积光，光束可见的丁达尔/光柱",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "光影",
+   "name": "丁达尔效应",
+   "writeup": "丁达尔效应，光束穿过浑浊介质",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "风格",
+   "name": "电影级",
+   "writeup": "电影级光影，电影质感",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "风格",
+   "name": "科教纪录片风格",
+   "writeup": "写实科教纪录片风格，画质高清细节丰富",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "风格",
+   "name": "广告质感",
+   "writeup": "广告质感，商业广告/极简/高端/科技感",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "风格",
+   "name": "MV 风格",
+   "writeup": "MV 风格，节奏感强画面自由",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "风格",
+   "name": "赛博朋克",
+   "writeup": "赛博朋克，霓虹摇移、冷色高对比",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "风格",
+   "name": "复古胶片",
+   "writeup": "复古胶片，胶片颗粒、低饱和年代感",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "风格",
+   "name": "国风水墨",
+   "writeup": "国风东方，水墨缓推、水墨感",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "风格",
+   "name": "超写实产品级",
+   "writeup": "超写实产品级，细节锐利质感真实",
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "氛围",
+   "name": "温馨",
+   "writeup": "温馨，暖色调柔和光，治愈氛围",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "氛围",
+   "name": "紧张",
+   "writeup": "紧张，低调打光高对比戏剧阴影",
+   "source": [
+    "knowledge/seedance-template-library.md",
+    "knowledge/camera-language.md"
+   ]
+  },
+  {
+   "cat": "氛围",
+   "name": "悬疑",
+   "writeup": "悬疑，暗部富戏剧性、留白压迫",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "氛围",
+   "name": "欢快",
+   "writeup": "欢快，高饱和亮调",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "氛围",
+   "name": "忧伤",
+   "writeup": "忧伤，低饱和褪色、冷色",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "氛围",
+   "name": "史诗",
+   "writeup": "史诗，宏大叙事、规模揭示",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "氛围",
+   "name": "治愈",
+   "writeup": "治愈，柔光暖调、缓慢温和",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "氛围",
+   "name": "惊悚",
+   "writeup": "惊悚，极低调打光、硬光阴影",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "材质",
+   "name": "金属质感",
+   "writeup": "金属质感，冷硬反光表面",
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "cat": "材质",
+   "name": "玻璃质感",
+   "writeup": "玻璃质感，通透折射高光",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "材质",
+   "name": "水墨感",
+   "writeup": "水墨感，墨迹晕染流动质感",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "材质",
+   "name": "油画感",
+   "writeup": "油画感，笔触厚重色彩层叠",
+   "source": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "cat": "材质",
+   "name": "胶片颗粒/锐度",
+   "writeup": "胶片颗粒、锐度，质感层级",
+   "source": [
+    "knowledge/prompt-reverse.md"
+   ]
+  },
+  {
+   "cat": "材质",
+   "name": "微观纹理",
+   "writeup": "水珠、气泡、纹理、膏体等微观细节",
+   "source": [
+    "knowledge/camera-language.md"
+   ]
+  }
+ ],
+ "negatives": [
+  {
+   "cn": "变形",
+   "en": "deformed / morphing",
+   "use": "通用写实负向；视频物理优先用 no morphing"
+  },
+  {
+   "cn": "扭曲",
+   "en": "warped",
+   "use": "主体/背景形变"
+  },
+  {
+   "cn": "多余的手指",
+   "en": "extra fingers",
+   "use": "手部特写、人物出镜"
+  },
+  {
+   "cn": "面部扭曲",
+   "en": "distorted face",
+   "use": "人物面部特写"
+  },
+  {
+   "cn": "文字",
+   "en": "unwanted text",
+   "use": "科教/广告片无文字需求"
+  },
+  {
+   "cn": "字幕",
+   "en": "subtitles",
+   "use": "无字幕的写实片"
+  },
+  {
+   "cn": "水印",
+   "en": "watermark",
+   "use": "通用"
+  },
+  {
+   "cn": "logo",
+   "en": "logo",
+   "use": "品牌/广告成片不可带logo"
+  },
+  {
+   "cn": "模糊",
+   "en": "blurry",
+   "use": "通用画质"
+  },
+  {
+   "cn": "低清晰度",
+   "en": "low clarity",
+   "use": "写实/高清需求"
+  },
+  {
+   "cn": "抖动",
+   "en": "jitter",
+   "use": "相机稳定需求"
+  },
+  {
+   "cn": "画面撕裂",
+   "en": "frame tearing",
+   "use": "快速运镜/转场"
+  },
+  {
+   "cn": "闪烁",
+   "en": "flickering",
+   "use": "通用；视频物理用 no flickering"
+  },
+  {
+   "cn": "过曝",
+   "en": "overexposed",
+   "use": "棚拍/高光场景"
+  },
+  {
+   "cn": "死黑",
+   "en": "crushed blacks",
+   "use": "暗部细节需求"
+  },
+  {
+   "cn": "卡通化",
+   "en": "cartoon-ish",
+   "use": "写实片禁用卡通"
+  },
+  {
+   "cn": "身份漂移",
+   "en": "identity drift",
+   "use": "人物多镜一致性"
+  },
+  {
+   "cn": "多余肢体",
+   "en": "extra limbs",
+   "use": "多人互动/运动场景"
+  },
+  {
+   "cn": "文字漂移",
+   "en": "text drift",
+   "use": "含文字/字卡内容"
+  }
+ ],
+ "failfix": [
+  {
+   "fail": "prompt 又长又密，出来四不像",
+   "fix": "砍到 1 主体 + 1 动作 + 1 运镜",
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "fail": "堆了多个运镜，镜头乱飞",
+   "fix": "运镜 ≤2 个",
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "fail": "全是抽象形容词",
+   "fix": "每个抽象词换成一个具体视觉事实",
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "fail": "图生视频里复述画面内容",
+   "fix": "只写运动；画面交给首帧图",
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "fail": "首尾帧差异太大，过渡崩坏",
+   "fix": "保持同场景同构图，只改一个元素",
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "fail": "手部/多人互动穿帮",
+   "fix": "简化成单主体；或用参考图/表演迁移",
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "fail": "跨镜风格漂移",
+   "fix": "按 playbooks/consistency.md 上锚定组合",
+   "source": [
+    "playbooks/platform-prompts.md"
+   ]
+  }
+ ],
+ "fonts": [
+  {
+   "name": "思源黑体 Source Han Sans / Noto Sans CJK",
+   "family": "黑体(无衬线)/中英",
+   "style": "现代无衬线，笔画清晰、几何规整",
+   "weights": [
+    "ExtraLight",
+    "Light",
+    "Normal",
+    "Regular",
+    "Medium",
+    "Bold",
+    "Heavy"
+   ],
+   "usage": "正文/标题/数据卡",
+   "license": "开源 SIL OFL",
+   "notes": "简体/繁体全覆盖，中文正文字体首选；系列化科普片通用，与 Inter 混排",
+   "sources": [
+    "https://blog.gitcode.com/0c316c5bf73bb8a993f9d949bc96f25f.html",
+    "https://freepd.cn/guides/top-10-free-fonts"
+   ]
+  },
+  {
+   "name": "思源宋体 Source Han Serif / Noto Serif CJK",
+   "family": "宋体(衬线)/中英",
+   "style": "书卷衬线，横细竖粗、庄重",
+   "weights": [
+    "ExtraLight",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "Heavy"
+   ],
+   "usage": "标题/落版/旁白卡",
+   "license": "开源 SIL OFL",
+   "notes": "庄重有书卷气，适合科学纪录片大标题与正文引语",
+   "sources": [
+    "https://blog.gitcode.com/0c316c5bf73bb8a993f9d949bc96f25f.html",
+    "https://freepd.cn/guides/top-10-free-fonts"
+   ]
+  },
+  {
+   "name": "阿里巴巴普惠体 Alibaba PuHuiTi",
+   "family": "黑体(无衬线)/中英",
+   "style": "几何黑体，中英文数字利落、商用友好",
+   "weights": [
+    "Light",
+    "Regular",
+    "Medium",
+    "Bold",
+    "Heavy"
+   ],
+   "usage": "正文/标题/数据",
+   "license": "免费商用(官方)",
+   "notes": "阿里面向全场景免费商用，混排西文和数字清晰",
+   "sources": [
+    "https://www.hellofont.cn/article/free-font-download-sites",
+    "https://www.xiang-ying.cn/article/10796.html"
+   ]
+  },
+  {
+   "name": "MiSans",
+   "family": "黑体(无衬线)/中英",
+   "style": "现代无衬线，字形圆润、数字清晰",
+   "weights": [
+    "Thin",
+    "Light",
+    "Regular",
+    "Medium",
+    "Semibold",
+    "Bold",
+    "Heavy"
+   ],
+   "usage": "标题/正文/数据卡",
+   "license": "免费商用(小米)",
+   "notes": "小米生态字体，可免费商用；适合科技短片标题与数字",
+   "sources": [
+    "https://www.bilibili.com/opus/611875656768130903",
+    "https://freepd.cn/guides/top-10-free-fonts"
+   ]
+  },
+  {
+   "name": "HarmonyOS Sans",
+   "family": "黑体(无衬线)/中英",
+   "style": "现代无衬线，横竖笔画协调、克制",
+   "weights": [
+    "Thin",
+    "Light",
+    "Regular",
+    "Medium",
+    "Bold",
+    "Black"
+   ],
+   "usage": "标题/正文",
+   "license": "免费商用(华为)",
+   "notes": "华为鸿蒙生态字体，通用于硬核科技短片",
+   "sources": [
+    "https://www.hellofont.cn/article/free-font-download-sites",
+    "https://www.xiang-ying.cn/article/10796.html"
+   ]
+  },
+  {
+   "name": "得意黑 Smiley Sans",
+   "family": "黑体(斜体)/中文为主",
+   "style": "后现代斜体，笔画倾角动感强烈",
+   "weights": [
+    "Regular"
+   ],
+   "usage": "大标题/落版/钩子字",
+   "license": "开源 SIL OFL(免费商用)",
+   "notes": "曾用 CCTV 世界杯转播，动感强，适合科技/体育钩子与落版",
+   "sources": [
+    "https://meta.appinn.net/t/topic/38336/11",
+    "https://blog.gitcode.com/0c316c5bf73bb8a993f9d949bc96f25f.html"
+   ]
+  },
+  {
+   "name": "站酷高端黑 ZCOOL GaoDuanHei",
+   "family": "黑体(无衬线)/中文",
+   "style": "笔画凌厉、现代锐利",
+   "weights": [
+    "Regular"
+   ],
+   "usage": "标题/落版",
+   "license": "免费商用(站酷)",
+   "notes": "站酷免费商用系列，适合标题与包装字",
+   "sources": [
+    "https://www.digitaling.com/articles/16006.html",
+    "https://www.hellofont.cn/article/free-font-download-sites"
+   ]
+  },
+  {
+   "name": "站酷快乐体 ZCOOL KuaiLe",
+   "family": "黑体/卡通/中文",
+   "style": "轻松卡通、活泼",
+   "weights": [
+    "Regular"
+   ],
+   "usage": "活泼标题/字幕",
+   "license": "免费商用(站酷)",
+   "notes": "站酷免费商用，适合科普/儿童向/轻松内容",
+   "sources": [
+    "https://www.hellofont.cn/article/free-font-download-sites",
+    "https://www.xiang-ying.cn/article/10796.html"
+   ]
+  },
+  {
+   "name": "站酷庆科黄油体 ZCOOL QingKe HuangYou",
+   "family": "黑体/圆润/中文",
+   "style": "圆润厚重、有分量",
+   "weights": [
+    "Regular"
+   ],
+   "usage": "标题/包装字",
+   "license": "免费商用(站酷)",
+   "notes": "站酷免费商用系列，标题厚重感",
+   "sources": [
+    "https://www.hellofont.cn/article/free-font-download-sites",
+    "https://www.digitaling.com/articles/16006.html"
+   ]
+  },
+  {
+   "name": "站酷小微 LoGo ZCOOL XiaoWei",
+   "family": "黑体/中文",
+   "style": "简洁有力、适合 Logo/标题",
+   "weights": [
+    "Regular"
+   ],
+   "usage": "Logo/落版/标题",
+   "license": "免费商用(站酷)",
+   "notes": "站酷免费商用系列，品牌落版与标题",
+   "sources": [
+    "https://www.hellofont.cn/article/free-font-download-sites",
+    "https://www.xiang-ying.cn/article/10796.html"
+   ]
+  },
+  {
+   "name": "优设标题黑",
+   "family": "黑体(无衬线)/中文",
+   "style": "粗壮醒目、标题张力强",
+   "weights": [
+    "Regular",
+    "Bold"
+   ],
+   "usage": "标题/落版/钩子字",
+   "license": "免费商用",
+   "notes": "优设合作字体，标题醒目、视觉冲击",
+   "sources": [
+    "https://freepd.cn/guides/top-10-free-fonts",
+    "https://www.hellofont.cn/article/free-font-download-sites"
+   ]
+  },
+  {
+   "name": "霞鹜文楷 LXGW WenKai",
+   "family": "楷体/中文",
+   "style": "手写楷体、温润书卷",
+   "weights": [
+    "Light",
+    "Regular",
+    "Bold"
+   ],
+   "usage": "旁白卡/字幕/引语",
+   "license": "开源 SIL OFL",
+   "notes": "开源手写楷体，适合人文科普旁白与引语",
+   "sources": [
+    "https://launchpad.net/ubuntu/+source/fonts-lxgw-wenkai",
+    "https://blog.gitcode.com/0c316c5bf73bb8a993f9d949bc96f25f.html"
+   ]
+  },
+  {
+   "name": "汇文明朝体",
+   "family": "宋体(衬线)/中文",
+   "style": "明朝体衬线、复古庄重",
+   "weights": [
+    "Regular"
+   ],
+   "usage": "字幕/标题(宋体类)",
+   "license": "免费商用",
+   "notes": "免费商用宋体，复古质感，适合叙事片字幕/标题",
+   "sources": [
+    "https://www.xiang-ying.cn/article/10796.html",
+    "https://www.hellofont.cn/article/free-font-download-sites"
+   ]
+  },
+  {
+   "name": "方正兰亭黑",
+   "family": "黑体(无衬线)/中英",
+   "style": "方正中文字库黑体，现代匀称",
+   "weights": [
+    "Light",
+    "Regular",
+    "Medium",
+    "Bold"
+   ],
+   "usage": "标题/正文/数据",
+   "license": "官网授权(免费商用)",
+   "notes": "方正字库官网授权的免费商用款，适合正式内容",
+   "sources": [
+    "https://www.xiang-ying.cn/article/10796.html",
+    "https://www.hellofont.cn/article/free-font-download-sites"
+   ]
+  },
+  {
+   "name": "方正书宋",
+   "family": "宋体(衬线)/中文",
+   "style": "书宋衬线、经典正文",
+   "weights": [
+    "Regular",
+    "Bold"
+   ],
+   "usage": "正文/落版",
+   "license": "官网授权(免费商用)",
+   "notes": "方正字库官网授权的免费商用款，正文阅读佳",
+   "sources": [
+    "https://www.xiang-ying.cn/article/10796.html",
+    "https://www.hellofont.cn/article/free-font-download-sites"
+   ]
+  },
+  {
+   "name": "Inter",
+   "family": "无衬线/英文",
+   "style": "现代 UI 无衬线、均一高度",
+   "weights": [
+    "Thin",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "Black",
+    "Variable"
+   ],
+   "usage": "英文正文/UI/数据",
+   "license": "开源 SIL OFL",
+   "notes": "现代界面标准字，与中文黑体混排统一高度",
+   "sources": [
+    "https://fonts.google.com/specimen/Inter",
+    "https://fontalternatives.com/blog/best-open-source-brand-fonts-github/"
+   ]
+  },
+  {
+   "name": "Roboto",
+   "family": "无衬线/英文",
+   "style": "几何无衬线、系统感",
+   "weights": [
+    "Thin",
+    "Light",
+    "Regular",
+    "Medium",
+    "Bold",
+    "Black"
+   ],
+   "usage": "英文正文/界面",
+   "license": "开源 Apache 2.0",
+   "notes": "Android 系统字体，跨端通用",
+   "sources": [
+    "https://fonts.google.com/specimen/Roboto/license",
+    "https://fontalternatives.com/blog/best-open-source-brand-fonts-github/"
+   ]
+  },
+  {
+   "name": "Space Grotesk",
+   "family": "无衬线/英文",
+   "style": "几何怪诞、科技感",
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "usage": "英文标题/科技",
+   "license": "开源 SIL OFL",
+   "notes": "科幻/科技标题感强，数字利落",
+   "sources": [
+    "https://fonts.google.com/specimen/Space+Grotesk/license",
+    "https://fontalternatives.com/blog/best-open-source-brand-fonts-github/"
+   ]
+  },
+  {
+   "name": "Playfair Display",
+   "family": "衬线/英文",
+   "style": "高对比衬线、优雅高级",
+   "weights": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "usage": "英文标题/落版",
+   "license": "开源 SIL OFL",
+   "notes": "高级感落版与标题，适合品牌收口",
+   "sources": [
+    "https://fonts.google.com/specimen/Playfair+Display/license"
+   ]
+  },
+  {
+   "name": "Montserrat",
+   "family": "无衬线/英文",
+   "style": "几何无衬线、中性通用",
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "usage": "英文标题/正文",
+   "license": "开源 SIL OFL",
+   "notes": "通用几何无衬线，标题正文皆宜",
+   "sources": [
+    "https://fonts.google.com/specimen/Montserrat/license",
+    "https://fontalternatives.com/blog/best-open-source-brand-fonts-github/"
+   ]
+  },
+  {
+   "name": "IBM Plex Sans",
+   "family": "无衬线/英文",
+   "style": "企业级无衬线、专业克制",
+   "weights": [
+    "Thin",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold"
+   ],
+   "usage": "正文/标题/数据",
+   "license": "开源 SIL OFL",
+   "notes": "IBM 企业字体，正式研究报告气质",
+   "sources": [
+    "https://fontalternatives.com/blog/best-open-source-brand-fonts-github/",
+    "https://madegooddesigns.com/best-tech-fonts/"
+   ]
+  },
+  {
+   "name": "IBM Plex Mono",
+   "family": "等宽/英文",
+   "style": "等宽数字、专业对齐",
+   "weights": [
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold"
+   ],
+   "usage": "数据卡/数字/代码",
+   "license": "开源 SIL OFL",
+   "notes": "等宽让数值纵向对齐，适合数据卡与 OSD 数字",
+   "sources": [
+    "https://fontalternatives.com/blog/best-open-source-brand-fonts-github/"
+   ]
+  },
+  {
+   "name": "Oswald",
+   "family": "无衬线(窄)/英文",
+   "style": "窄体无衬线、高瘦有力量",
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700"
+   ],
+   "usage": "英文标题/数字落版",
+   "license": "开源 SIL OFL",
+   "notes": "窄体适合数据与 OSD 数字、大标题",
+   "sources": [
+    "https://fonts.google.com/specimen/Oswald/license",
+    "https://madegooddesigns.com/din-alternatives/"
+   ]
+  },
+  {
+   "name": "Bebas Neue",
+   "family": "无衬线(全大写)/英文",
+   "style": "全大写窄体、海报张狂",
+   "weights": [
+    "Regular"
+   ],
+   "usage": "英文大标题/数字",
+   "license": "开源 SIL OFL",
+   "notes": "全大写海报/落版冲击力，适合数据大数字",
+   "sources": [
+    "https://fonts.google.com/specimen/Bebas+Neue",
+    "https://madegooddesigns.com/din-alternatives/"
+   ]
+  },
+  {
+   "name": "JetBrains Mono",
+   "family": "等宽/英文",
+   "style": "等宽现代、可读性强",
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800"
+   ],
+   "usage": "数字/代码/数据",
+   "license": "开源 SIL OFL",
+   "notes": "开发者等宽字，适合指标/代码/OSD 数字",
+   "sources": [
+    "https://fontalternatives.com/blog/best-open-source-brand-fonts-github/"
+   ]
+  },
+  {
+   "name": "Lato",
+   "family": "无衬线/英文",
+   "style": "温和无衬线、圆润友好",
+   "weights": [
+    "100",
+    "300",
+    "400",
+    "700",
+    "900"
+   ],
+   "usage": "英文正文/字幕",
+   "license": "开源 SIL OFL",
+   "notes": "友好阅读，字幕与正文皆宜",
+   "sources": [
+    "https://fonts.google.com/specimen/Lato/license"
+   ]
+  },
+  {
+   "name": "Merriweather",
+   "family": "衬线/英文",
+   "style": "高辨识衬线、正文阅读",
+   "weights": [
+    "300",
+    "400",
+    "700",
+    "900"
+   ],
+   "usage": "英文正文/长文",
+   "license": "开源 SIL OFL",
+   "notes": "长文阅读衬线，适合旁白/信息卡",
+   "sources": [
+    "https://fonts.google.com/specimen/Merriweather/license"
+   ]
+  },
+  {
+   "name": "Source Sans 3",
+   "family": "无衬线/英文",
+   "style": "Adobe 开源无衬线、中性",
+   "weights": [
+    "200",
+    "300",
+    "400",
+    "600",
+    "700",
+    "900"
+   ],
+   "usage": "英文正文/UI",
+   "license": "开源 SIL OFL",
+   "notes": "Adobe 开源，UI/正文通用",
+   "sources": [
+    "https://fontalternatives.com/blog/best-open-source-brand-fonts-github/"
+   ]
+  },
+  {
+   "name": "Rubik",
+   "family": "无衬线/英文",
+   "style": "现代圆角无衬线",
+   "weights": [
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900"
+   ],
+   "usage": "英文标题/正文",
+   "license": "开源 SIL OFL",
+   "notes": "圆角现代，标题正文平衡",
+   "sources": [
+    "https://fonts.google.com/specimen/Rubik/license"
+   ]
+  },
+  {
+   "name": "Space Mono",
+   "family": "等宽/英文",
+   "style": "复古等宽、科技感",
+   "weights": [
+    "Regular",
+    "Bold"
+   ],
+   "usage": "数字/科技",
+   "license": "开源 SIL OFL",
+   "notes": "复古等宽，适合 OSD/数据/科技氛围",
+   "sources": [
+    "https://fonts.google.com/specimen/Space+Mono/license"
+   ]
+  },
+  {
+   "name": "Archivo",
+   "family": "无衬线/英文",
+   "style": "可变字重无衬线、多变",
+   "weights": [
+    "100",
+    "200",
+    "300",
+    "400",
+    "500",
+    "600",
+    "700",
+    "800",
+    "900",
+    "Variable"
+   ],
+   "usage": "英文标题/正文",
+   "license": "开源 SIL OFL",
+   "notes": "字重可变，标题/正文灵活",
+   "sources": [
+    "https://fonts.google.com/specimen/Archivo/license"
+   ]
+  }
+ ],
+ "routeRules": [
+  {
+   "name": "全能参考包优先",
+   "rules": [
+    "Seedance 2.x/即梦等全能参考模型: 用参考包(@图片/@视频/@音频)+@引用语法定锚定, 一镜挂多张(外观+三视图+结构+场景), 不要用首帧图+尾帧衔接的1.0旧范式",
+    "参考包写法: prompt写清每张图取什么(图片1的外观+图片2的结构); 带文字标注的参考图加忽略图中的文字与标注线",
+    "参考素材上限: Seedance2.0=15(9图3视频3音频)/2.5=50(30图10视频10音频); 即梦全能参考@引用最多12个参考文件"
+   ],
+   "relates": [
+    "Seedance（火山引擎）",
+    "参考生视频",
+    "即梦 Jimeng（Seedance 引擎）"
+   ],
+   "sources": [
+    "playbooks/production-workflow.md",
+    "knowledge/seedance-template-library.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "name": "首尾帧仅限支持平台",
+   "rules": [
+    "首尾帧衔接链只用于以首尾帧为衔接机制的平台: 可灵首尾帧/即梦智能多帧(≤10帧)/Vidu多图首尾帧等",
+    "Seedance 2.x 不要硬凑首尾帧: 用时间轴公式+延长+参考包保持连续(段间动势衔接+统一调色收尾)",
+    "判断顺序: ①模型支持全能参考→参考包 ②支持多镜原生→多镜原生 ③都不支持才考虑首尾帧"
+   ],
+   "relates": [
+    "Seedance（火山引擎）",
+    "首尾帧",
+    "多镜原生"
+   ],
+   "sources": [
+    "playbooks/production-workflow.md",
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "name": "精确结构参考包路线",
+   "rules": [
+    "精确结构镜头(蛋白折叠/设备构造/实验装置): 参考包挂多角度示意图(三视图/剖视/45°/特写)+结构描述, 替代尾帧续接",
+    "参考图以官方图/实拍为参考生成, 全能参考类模型吃多角度图一致性才稳",
+    "图表/数据/文字永不交给模型生成(后期制作)"
+   ],
+   "relates": [
+    "Seedance（火山引擎）",
+    "参考生视频"
+   ],
+   "sources": [
+    "agents/dop.md",
+    "playbooks/consistency.md",
+    "playbooks/production-workflow.md"
+   ]
+  }
+ ],
+ "timeAxisRules": [
+  {
+   "name": "按秒时间轴断句",
+   "rules": [
+    "凡多动作/长动态(>6s)/变速/光效变化的镜头, prompt 必须按秒分段写(统一Seedance 2.5写法): 0-2秒[画面+动作+运镜+光影] 2-4秒[...]整数秒时间戳必须连续",
+    "分段点=动作触发/变速/光效/转场转折; 时段连续无重叠; 一个时段只讲一个动作或一次变化",
+    "结尾一句贯穿约束收口(主体/外观锚定/风格/禁止项), 不得散落在各段里",
+    "不足6s的单动作镜头可用一段式通用公式(主体+动作+场景+镜头语言+光影+风格)"
+   ],
+   "relates": [
+    "Seedance（火山引擎）",
+    "参考生视频"
+   ],
+   "sources": [
+    "knowledge/seedance-template-library.md",
+    "playbooks/platform-prompts.md",
+    "agents/prompt-engineer.md"
+   ]
+  },
+  {
+   "name": "Seedance时间轴结构",
+   "rules": [
+    "⭐统一按 2.5: 结构 【风格】…+【时间轴】0-X秒[镜头+画面+动作+特效]…+【声音】…+【参考】…; 整数秒时间戳(0-3s/3-7s...)必须连续, 单镜只指定1种运镜, 画幅 adaptive(编辑/延长/首尾帧任务必须)",
+    "⚠️最大时长: 2.5 单次生成4-30s(可多轮延长), 时间轴总长≤30s; 超30s走长镜头分段生成(分段+首尾帧衔接/参考包+延长); 2.0仅旧后端: 单次上限15s, 不响应秒以下精调",
+    "参考素材: 50个(30图10视频10音频)含纯音频参考, 写清每张取什么(@图片1的外观+@图片2的结构); 带文字参考图加忽略图中的文字与标注线"
+   ],
+   "relates": [
+    "Seedance（火山引擎）",
+    "参考生视频"
+   ],
+   "sources": [
+    "knowledge/seedance-template-library.md"
+   ]
+  },
+  {
+   "name": "单镜分段与抽卡",
+   "rules": [
+    "分段点优先选动作自然转折(起始/变速/光效触发/收稳), 不硬拆",
+    "首尾段设计锚定帧(首帧≈开场构图, 尾帧≈收稳构图) 便于多镜衔接/参考包",
+    "抽卡仍按镜(3-6次), 不按段; 失败时按失败→修复表改对应段"
+   ],
+   "relates": [
+    "Seedance（火山引擎）",
+    "单镜抽卡"
+   ],
+   "sources": [
+    "knowledge/seedance-template-library.md",
+    "agents/prompt-engineer.md"
+   ]
+  }
+ ]
+}

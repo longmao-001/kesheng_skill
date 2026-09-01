@@ -1,0 +1,301 @@
+{
+ "schema_version": "1.0",
+ "pack": "xhs-cases-kg",
+ "role": "案例/叙事/工艺/prompt",
+ "entities": [
+  {
+   "id": "XhsCase:工业产品实拍加动画结合",
+   "type": "XhsCase",
+   "name": "工业产品实拍+三维动画结合",
+   "props": {
+    "案例": "小红书《工业产品这么拍》: 实拍+动画案例",
+    "手法": "实拍(信任/真实场景) + 三维动画(原理/内部结构) 结合",
+    "适用": "制造/检测/精密设备 宣传片",
+    "来源": "笔记描述(视频内容未逐帧审)",
+    "视频实测": "视频实测(74.8s 麦格米特LUX-1200激光焊机): 参数尺寸图(630/550/335mm+≤50KG+「体积重量降至水冷激光1/3以下」)→风冷散热内部原理动画(蓝气流进/橙热流出)→真实面板UI特写(板厚1.0mm/扫描速度400mm/s/峰值800W/安全地锁)→三分屏实测(碳钢/不锈钢/铝合金2mm同台火花)→品牌落版"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/69153230000000000d03c141"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "XhsCase:AI产品动画工作流实录",
+   "type": "XhsCase",
+   "name": "AI产品动画工作流实录",
+   "props": {
+    "案例": "小红书《用Ai帮老爸公司做了一个产品介绍》(净水机)",
+    "流程": "GPT写脚本分镜(专业编导身份, 精确到秒)→Image2生成十个分镜头→Seedance 2.0生成视频",
+    "启示": "与科生: 编剧口播/脚本→首帧图(Image2)→Seedance 2.0 一致; 分镜=10格, 脚本侧精确到秒(prompt层2.0用整秒段)",
+    "视频实测": "视频实测(15.5s 旭诚净水机): 钩子「看似洁净的自来水中仍含微小杂质」→增压系统→第一重过滤拦截大颗粒(PP棉)→第三重深度吸附(活性炭)→第五重改善口感(RO膜孔圆形放大镜标注)→厨房真实场景落版「旭诚净水·守护饮用水安全」; 逐级字幕「第N重过滤」+圆形画中画+约1.5s/镜快节奏"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ],
+   "domains": [
+    "叙事",
+    "工艺"
+   ]
+  },
+  {
+   "id": "NarrationPrompt:第一视角穿越脚本",
+   "type": "NarrationPrompt",
+   "name": "第一视角穿越脚本prompt",
+   "props": {
+    "模板": "以专业编导身份写脚本: 跟随「介质」第一视角进入产品内部路径(顺序列出每级结构)→上网搜查结构→描写可能的画面→写成镜头脚本精确到秒",
+    "要素": "①身份设定(专业编导) ②路径顺序(零件逐级) ③外部检索(结构真实) ④分镜输出(精确到秒)",
+    "适用": "产品内部结构/流程动画(净水/过滤/检测/反应)"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ],
+   "domains": [
+    "prompt"
+   ]
+  },
+  {
+   "id": "PatternNarration:微观穿越过程演示",
+   "type": "PatternNarration",
+   "name": "第一视角穿越·过程演示",
+   "props": {
+    "结构": "介质(水/光/数据)第一视角走完产品内部路径: 入口→每级结构(滤芯/传感器/反应室)→出口→结果(饮用/指标/良品)",
+    "表现": "微观穿越+过程演示组合, 一镜一结构, 逐级推进",
+    "价值": "把'看不见的内部'变成可走的旅程——产品动画最受欢迎的叙事机器"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9",
+    "knowledge/camera-language.md"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "SupplierInfo:璟琰智能科技",
+   "type": "SupplierInfo",
+   "name": "璟琰智能科技(上海三维动画)",
+   "props": {
+    "定位": "上海三维动画制作公司(可全国上门交流报价)",
+    "领域": "医疗设备/分析仪/全自动设备/免疫检测设备 产品宣传3D视频",
+    "资历": "10年专注三维制作, 技术人均10+年项目经验",
+    "用途": "三维动画外包/供应商比选参考"
+   },
+   "sources": [
+    "https://xhslink.cn/o/4GPVZJ8nEdv"
+   ],
+   "domains": [
+    "产业"
+   ]
+  },
+  {
+   "id": "XhsCase:医疗设备三维动画宣传",
+   "type": "XhsCase",
+   "name": "医疗设备三维动画宣传",
+   "props": {
+    "案例": "三维动画制作公司报价笔记案例集: 医疗设备/分析仪/全自动设备/免疫检测设备",
+    "手法": "3D产品宣传视频(结构分解/动态原理/洁净场景)",
+    "应用": "医疗/检测设备 宣传片参考"
+   },
+   "sources": [
+    "https://xhslink.cn/o/4GPVZJ8nEdv"
+   ],
+   "domains": [
+    "产业"
+   ]
+  },
+  {
+   "id": "Workflow:AI产品动画三件套",
+   "type": "Workflow",
+   "name": "AI产品动画三件套",
+   "props": {
+    "流程": "脚本分镜(GPT类LLM, 精确到秒)→分镜首帧(Image2, 10格)→视频(Seedance 2.0)",
+    "备注": "与科生 M4 完全同构: 编剧→首帧图→图生视频; 可用宫格一次出10格",
+    "关键": "脚本内容先查结构(上网检索), 分镜=10格节奏清晰"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "VideoPattern:层级字幕",
+   "type": "VideoPattern",
+   "name": "层级字幕标注",
+   "props": {
+    "用法": "第N重过滤/第N级/第N步句式的屏幕字幕, 一镜一个层级, 观众秒懂结构顺序",
+    "来源": "旭诚净水机动画(第一/第三/第五重过滤)",
+    "适用": "流程/级数/步骤型 内部结构动画"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "VideoPattern:圆形放大镜标注",
+   "type": "VideoPattern",
+   "name": "圆形放大镜画中画",
+   "props": {
+    "用法": "圆形镜头放大关键局部(膜孔/结构/接缝), 与全景同框, 细节不靠嘴说",
+    "来源": "旭诚净水机动画(RO膜孔放大)",
+    "适用": "材料/表面/结构细节展示"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9"
+   ],
+   "domains": [
+    "叙事",
+    "分镜"
+   ]
+  },
+  {
+   "id": "VideoPattern:三分屏实测对比",
+   "type": "VideoPattern",
+   "name": "三分屏实测对比",
+   "props": {
+    "用法": "同机位三路同台实测(碳钢/不锈钢/铝合金2mm), 火花同帧, 信任度最高的一镜",
+    "来源": "麦格米特激光焊机宣传片",
+    "适用": "多材料/多工况性能展示"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/69153230000000000d03c141"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "VideoPattern:参数尺寸图",
+   "type": "VideoPattern",
+   "name": "参数尺寸图+卖点大字",
+   "props": {
+    "用法": "产品三视图+尺寸标注+一句对比卖点大字(体积重量降至1/3以下), 数据字卡入画面",
+    "来源": "麦格米特激光焊机宣传片",
+    "适用": "工业品参数交代与卖点对比"
+   },
+   "sources": [
+    "https://www.xiaohongshu.com/discovery/item/69153230000000000d03c141"
+   ],
+   "domains": [
+    "叙事",
+    "分镜"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "PatternNarration:微观穿越过程演示",
+   "target": "VisualMetaphor:微观穿越",
+   "type": "pattern-based-on",
+   "props": {}
+  },
+  {
+   "source": "PatternNarration:微观穿越过程演示",
+   "target": "VisualMetaphor:过程演示",
+   "type": "pattern-combines",
+   "props": {}
+  },
+  {
+   "source": "NarrationPrompt:第一视角穿越脚本",
+   "target": "PatternNarration:微观穿越过程演示",
+   "type": "prompt-outputs",
+   "props": {}
+  },
+  {
+   "source": "NarrationPrompt:第一视角穿越脚本",
+   "target": "TimeAxisRule:按秒时间轴断句",
+   "type": "prompt-follows",
+   "props": {}
+  },
+  {
+   "source": "Workflow:AI产品动画三件套",
+   "target": "ProcessRule:首帧图+图生视频",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "Workflow:AI产品动画三件套",
+   "target": "ProcessRule:宫格previz（整图成片与切片首帧）",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "XhsCase:AI产品动画工作流实录",
+   "target": "Workflow:AI产品动画三件套",
+   "type": "case-proves",
+   "props": {}
+  },
+  {
+   "source": "XhsCase:工业产品实拍加动画结合",
+   "target": "PatternNarration:微观穿越过程演示",
+   "type": "case-shows-pattern",
+   "props": {}
+  },
+  {
+   "source": "XhsCase:医疗设备三维动画宣传",
+   "target": "SupplierInfo:璟琰智能科技",
+   "type": "case-from-supplier",
+   "props": {}
+  },
+  {
+   "source": "XhsCase:医疗设备三维动画宣传",
+   "target": "NarrationRule:克制信任律",
+   "type": "case-consistent-with",
+   "props": {}
+  },
+  {
+   "source": "SupplierInfo:璟琰智能科技",
+   "target": "RednoteRule:工业品内容铁律",
+   "type": "supplier-follows",
+   "props": {}
+  },
+  {
+   "source": "VideoPattern:三分屏实测对比",
+   "target": "RednotePattern:对比实测型",
+   "type": "pattern-implements",
+   "props": {}
+  },
+  {
+   "source": "VideoPattern:参数尺寸图",
+   "target": "RednotePattern:痛点参数型",
+   "type": "pattern-implements",
+   "props": {}
+  },
+  {
+   "source": "VideoPattern:圆形放大镜标注",
+   "target": "VisualMetaphor:微观穿越",
+   "type": "pattern-supports",
+   "props": {}
+  },
+  {
+   "source": "XhsCase:AI产品动画工作流实录",
+   "target": "VideoPattern:层级字幕",
+   "type": "case-uses",
+   "props": {}
+  },
+  {
+   "source": "XhsCase:AI产品动画工作流实录",
+   "target": "VideoPattern:圆形放大镜标注",
+   "type": "case-uses",
+   "props": {}
+  },
+  {
+   "source": "XhsCase:工业产品实拍加动画结合",
+   "target": "VideoPattern:三分屏实测对比",
+   "type": "case-uses",
+   "props": {}
+  },
+  {
+   "source": "XhsCase:工业产品实拍加动画结合",
+   "target": "VideoPattern:参数尺寸图",
+   "type": "case-uses",
+   "props": {}
+  }
+ ]
+}

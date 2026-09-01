@@ -1,0 +1,329 @@
+{
+  "artStyles": [
+    {
+      "name": "摄影写实",
+      "category": "写实类",
+      "definition": "模仿单反/无反相机光学成像的极致真实感，反映真实世界的光、材质与微瑕疵，不追求艺术化描摹。",
+      "keywords": ["photorealistic 照片般写实", "hyperrealistic 超写实", "DSLR photo 单反摄影", "35mm lens 35mm镜头", "shallow depth of field 浅景深", "natural texture 自然质感", "8K ultra-detailed 8K超精细", "f/1.8 aperture 大光圈", "realistic skin pores 真实毛孔肤质"],
+      "writing": "photorealistic DSLR still, 35mm f/1.8, natural window light, shallow DoF, 8K ultra-detailed, no illustration style",
+      "palette": "还原真实色彩，宽容度大，阴影/高光接近人眼观感；肤色与材质色自然偏暖或中性。",
+      "lighting": "环境光主导：柔光箱/自然窗光/逆光轮廓，光比真实，高光克制，有真实镜头的焦外虚化。",
+      "subjects": "科研设备、设施结构、实验台面、显微镜结构等需要向观众确认'真实存在'的画面；申报/成果展示的实拍替代。",
+      "compat": "写实类模型（可灵/即梦/Sora/Seedance 写实档）较稳；Midjourney/FLUX 出图很稳；文生视频易出现手/工具穿帮。一致性中等，靠参考图/三视图锁定。",
+      "risk": "塑料感（皮肤/金属过亮）、AI水印/多余细节、手部/器械结构崩坏、'AI感'（过曝死黑、过锐）。",
+      "sources": ["https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html", "https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/"]
+    },
+    {
+      "name": "3D渲染写实",
+      "category": "数字科技类",
+      "definition": "用 CG 渲染引擎（Octane/Redshift/Blender/CGI）模拟的'完美写实'，比摄影更干净、几何边缘更锐，常用于产品可视化与机械结构。",
+      "keywords": ["3D render 3D渲染", "CGI 计算机生成图像", "octane render Octane渲染", "redshift render Redshift渲染", "subsurface scattering 次表面散射", "physically based rendering (PBR) 物理渲染", "studio lighting 工作室布光", "glass and metal materials 玻璃金属材质", "product visualization 产品可视化", "Bevel edges 倒角边缘"],
+      "writing": "high-end 3D CGI render, octane, PBR materials, studio three-point lighting, sharp bevel edges, clean metal and glass surfaces",
+      "palette": "饱和而干净的工业色，金属/玻璃/塑料的反射色偏冷偏锐，黑白灰对比强。",
+      "lighting": "三点布光（key/fill/rim）加环境光遮蔽，高光锐利、阴影边界清晰，产品渲染感强。",
+      "subjects": "仪器内部结构、设备拆解、微观结构放大、产品爆炸图/拆解图；申报片的核心技术与装备展示。",
+      "compat": "出图模型（DALL·E/FLUX/Midjourney 3D 档）稳定；文生视频的3D模型易在运动时出现'橡皮拉伸'。一致性较好，靠固定 asset 和三视图。",
+      "risk": "塑料/玻璃质感易'假'、极简几何易显空洞、动画运动时结构扭曲、镜面反射闪崩。",
+      "sources": ["https://cloud.tencent.cn/document/product/1729/105846", "https://github.com/lvzhengbin/AI-Prompts/blob/main/skills/seedance-storyboard/references/visual-styles.md"]
+    },
+    {
+      "name": "电影感",
+      "category": "影视类",
+      "definition": "仿电影工业成片观感，强调大片般的构图、光影氛围、运镜气势与色彩分级，而非照片级细节。",
+      "keywords": ["cinematic 电影感", "film still 电影剧照", "anamorphic lens 变形宽银幕镜头", "cine color grading 电影调色", "volumetric light 体积光", "god rays 丁达尔光束", "35mm film grain 胶片颗粒", "letterboxed 宽银幕画幅", "shallow DoF 浅景深", "epic composition 史诗构图"],
+      "writing": "cinematic film still, anamorphic lens, volumetric god rays, teal-and-orange grade, subtle grain, epic wide composition",
+      "palette": "常走青橙（teal & orange）或冷暖对比增强色，去饱和保有电影质感，暗部有层次不死黑。",
+      "lighting": "大光比、主光侧逆光、轮廓光烘托，体积光/丁达尔光束营造氛围，有电影镜头光晕。",
+      "subjects": "申报片、成果片、品牌宣传片的开篇/高潮镜；大场景、设施航拍、人物情感特写。",
+      "compat": "Seedance/即梦/Sora/Runway cinematic 档稳定；风险是'大片感'易滑向'预告片式空洞'。一致性靠风格token块+多镜原生。",
+      "risk": "样式化过度显'假大片'、光晕/粒子滥用、调色漂移跨镜、人物脸型不稳。",
+      "sources": ["https://www.volcengine.com/article/40840", "https://github.com/lvzhengbin/AI-Prompts/blob/main/skills/seedance-storyboard/references/visual-styles.md"]
+    },
+    {
+      "name": "日系动画",
+      "category": "二次元动漫类",
+      "definition": "日本动画（赛璐璐上色）风格：清晰的线稿、大块的平涂阴影、夸张表情与大眼睛角色的卡通化表达。",
+      "keywords": ["anime style 日系动画", "cel shading 赛璐璐平涂", "SAI/Clip Studio Paint 日系绘画软件感", "flat cell shading 平涂阴影", "clean lineart 干净线稿", "bishoujo 美少女", "1-bit outline 单色描边", "manga illustration 漫画插画", "anime still 动画剧照"],
+      "writing": "anime style, clean cel-shaded lineart, flat cell shadows, expressive large eyes, Studio-Ghibli-esque soft palette",
+      "palette": "明亮高饱和、冷暖分明的日系色；天空/粉蓝色系常用，暗部用蓝紫而非纯黑。",
+      "lighting": "平光+硬边缘投影，无复杂渐变；营造'二次元质感的干净阳光或黄昏'。",
+      "subjects": "以角色/拟人形象讲故事的科普；卡通化微观世界、拟人化细胞/器官，降低心智负担。",
+      "compat": "图生视频（即梦/可灵/Seedance 动漫档）稳；文生视频易'人物变形/崩脸'。一致性靠三视图+首帧锚定。",
+      "risk": "画风漂移成'欧美卡通'或'3D渲染'、崩脸、手指畸变、线稿细节在运动中糊掉。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html"]
+    },
+    {
+      "name": "国风水墨",
+      "category": "国风传统类",
+      "definition": "中国水墨画风格：笔墨的浓淡干湿、留白、宣纸肌理与写意造型，讲究意境大于形似。",
+      "keywords": ["Chinese ink wash painting 中国水墨画", "ink and wash 水墨", "shuimo 水墨", "xuan paper texture 宣纸肌理", "negative space 留白", "calligraphy brushwork 书法笔触", "splashed ink 泼墨", "damp ink bleed 晕染", "mountain-and-water shanshui 山水"],
+      "writing": "traditional Chinese ink wash, xuan paper texture, negative space, splashed ink mountain-and-water, calligraphic brushstrokes",
+      "palette": "黑墨为主、浓淡干湿，辅以少量朱砂/赭石/花青点色；大量留白，色彩极克制。",
+      "lighting": "无真实光源，强调墨色浓淡层次与明暗的气韵；背景留白营造'虚'的空间。",
+      "subjects": "科普传统文化、中医/本草、古诗词意境、中国地理与节气；赋能'国潮'内容。",
+      "compat": "出图稳（水墨是强风格，模型易识别）；文生视频'笔触流动感'好但易崩成水彩/版画。一致性中等，靠固定笔触token块。",
+      "risk": "易滑向水彩/水墨画本质丢失、留白被填满、AI味的'泼墨特效'叠加、人物造型写意过度难辨认。",
+      "sources": ["https://cloud.tencent.cn/document/product/1729/105846", "https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/"]
+    },
+    {
+      "name": "水彩",
+      "category": "手绘插画类",
+      "definition": "水彩画风格：透明的水色叠加、边缘晕染渗透、纸面水渍与轻快透亮的质感，气质清新。",
+      "keywords": ["watercolor 水彩", "watercolor illustration 水彩插画", "wet-on-wet technique 湿画法晕染", "transparent pigment 透明颜料", "watercolor wash 水彩铺色", "paper texture 纸面肌理", "soft color bleeding 柔和晕色", "children book illustration 绘本插画"],
+      "writing": "soft watercolor illustration, wet-on-wet bleeding, transparent pigment washes, paper grain, light airy mood",
+      "palette": "透明清透的明亮色，色块间互相渗透，饱和度中等偏低，画面轻快。",
+      "lighting": "无硬阴影，靠色块明度与留白表达高光，光线感柔和浮动。",
+      "subjects": "学生向/亲子向科普、童话式生物植物、'生命科学'的亲和表达；VI 自然暖调版面。",
+      "compat": "出图极稳（强风格识别）；文生视频易'水彩糊成一团'或变成油画。一致性较好，靠固定笔触+色块token。",
+      "risk": "色彩糊化/结构瘫软、水彩感滑向油画或彩铅、边缘毛刺在动画中抖动。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://developer.baidu.com/article/detail.html?id=7337276"]
+    },
+    {
+      "name": "厚涂油画",
+      "category": "手绘插画类",
+      "definition": "厚涂油画/数字厚涂风格：笔触清晰、颜料堆叠、覆盖式上色、强调体积与质感，光影厚重。",
+      "keywords": ["impasto oil painting 厚涂油画", "thick paint 厚涂", "digital painting 数字绘画", "visible brushstrokes 可见笔触", "impasto texture 厚涂肌理", "baroque oil 巴洛克油画", "chiaroscuro 明暗对照", "canvas texture 画布肌理", "painterly style 绘画感"],
+      "writing": "impasto oil painting, visible heavy brushstrokes, layered thick pigment, canvas texture, dramatic chiaroscuro lighting",
+      "palette": "油画级的饱和与厚重，暖亮冷暗，色彩多层叠加，暗部深邃。",
+      "lighting": "体积光与明暗对照（chiaroscuro），光从一侧打入，戏剧性强，有厚涂高光。",
+      "subjects": "历史/科学史意境的插画、'发现时刻'的戏剧化呈现、人文基调的科普封面。",
+      "compat": "出图稳（厚涂是强风格）；文生视频笔触易'流水状'拖影。一致性中等，靠锁定笔触密度。",
+      "risk": "笔触变数独/水彩、AI味'画得很用力'、色调油腻、主体在运动中笔触崩坏。",
+      "sources": ["https://developer.baidu.com/article/detail.html?id=7337276", "https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html"]
+    },
+    {
+      "name": "扁平矢量MG",
+      "category": "数字科技类",
+      "definition": "扁平矢量/动态图形风格：纯色色块、无渐变或极简渐变、几何化图形与简洁线条，适合图标化概念讲解。",
+      "keywords": ["flat design 扁平设计", "flat vector illustration 扁平矢量插画", "vector graphics 矢量图形", "motion graphics (MG) 动态图形", "minimal flat shapes 极简扁平图形", "flat 2D icon style 扁平图标", "no gradients 无渐变", "geometric shapes 几何图形", "UI-style flat 现代UI扁平"],
+      "writing": "clean flat vector illustration, solid block colors, geometric shapes, no gradients or shadows, modern motion-graphics style",
+      "palette": "高饱和纯色块，配色系统化（品牌色/科普标签色），很少渐晕，区块分明。",
+      "lighting": "无光影或仅硬边投影；用色块明度与描边区分层级，不模拟真实光源。",
+      "subjects": "概念讲解、流程图/原理图/图标层、片头动效与数据字卡；'把抽象原理说清'的最稳画风。",
+      "compat": "出图与生成路线都稳（风格明确、元素简单）；多镜原生一致性极好。尤其适合做 PPT 感转场。",
+      "risk": "过度扁平显'廉价PPT'、元素相互遮叠、动画运动生硬、配色易撞但难出大片感。",
+      "sources": ["https://developer.baidu.com/article/detail.html?id=7337276", "https://cloud.tencent.cn/document/product/1729/105846"]
+    },
+    {
+      "name": "赛博朋克",
+      "category": "数字科技类",
+      "definition": "赛博朋克：霓虹灯、湿滑反光、高对比蓝紫+品红、科技与反乌托邦的都市夜景视觉。",
+      "keywords": ["cyberpunk 赛博朋克", "neon lights 霓虹灯", "rainy neon street 雨夜霓虹街道", "blade-runner aesthetic 银翼杀手美学", "holographic HUD 全息HUD", "blue and magenta palette 蓝紫品红配色", "wet reflective asphalt 湿滑反光路面", "synthwave elements 合成波元素", "sci-fi metropolis 科幻都市"],
+      "writing": "cyberpunk, rain-soaked neon street, magenta-and-cyan glow, wet reflective asphalt, holographic HUD overlays, sci-fi metropolis",
+      "palette": "高对比蓝紫+品红/青，黑底色衬托霓虹，荧光色块密集。",
+      "lighting": "人造霓虹光源光斑与湿润反射，逆光轮廓，有强烈的色光污染与光晕。",
+      "subjects": "前沿科技、未来感技术、生物信息/基因的'科幻呈现'；包装'黑科技'气质。",
+      "compat": "出图稳；文生视频霓虹闪烁易'频闪/过曝'，影子与镜面反射易崩。一致性中等，靠锁定霓虹色调+固定资产。",
+      "risk": "霓虹过溢/频闪、蓝紫滤镜滥用显'抖音风'、镜面反射崩坏、主题滑向沉闷。",
+      "sources": ["https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html", "https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/"]
+    },
+    {
+      "name": "像素",
+      "category": "数字科技类",
+      "definition": "像素/像素艺术风格：低分辨率方块像素构图，复古游戏/8bit 怀旧感，颗粒分明。",
+      "keywords": ["pixel art 像素艺术", "pixelated 像素化", "8-bit style 8位复古", "16-bit style 16位", "retro game aesthetic 复古游戏美学", "sprite 像素精灵", "dithering 抖动过渡", "limited color palette 受限色谱", "chunky pixels 粗颗粒像素"],
+      "writing": "8-bit pixel art, chunky pixels, retro game sprite look, limited color palette, visible dithering grid",
+      "palette": "受限色板（8/16位经典色），用抖动过渡模拟渐变，区块分明。",
+      "lighting": "用色块明暗表示光影，无平滑过渡；高光/阴影呈锯齿状。",
+      "subjects": "'算法/逻辑/流程'的趣味表达、怀旧科普、游戏化教学，降低科学门槛。",
+      "compat": "出图稳（像素是硬风格）；生成路线若做动画易'像素抖动/画面跳格'。一致性极好（元素简单）。",
+      "risk": "低分辨率易显'糊'、风格过渡变形、dithering 在运动中闪烁、过度复古喧宾夺主。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html"]
+    },
+    {
+      "name": "黏土定格",
+      "category": "材质工艺类",
+      "definition": "黏土/定格动画风格：手工黏土、毛毡、木偶的立体质感，圆润表面与轻微的不完美，憨萌亲切。",
+      "keywords": ["clay animation 黏土动画", "claymation 黏土定格", "stop-motion 定格动画", "plasticine figure 黏土人偶", "handmade textures 手工质感", "felt and wool 毛毡", "puppet animation 木偶动画", "tactile and toy-like 触感玩具感", "soft stop-motion motion 定格顿挫"],
+      "writing": "claymation, plasticine figures, tactile handmade surfaces, stop-motion puppet look, soft jitter frame-by-frame feel",
+      "palette": "温润低反光的泥土色/糖果色，表面哑光，色彩亲切柔和。",
+      "lighting": "真实棚拍柔光（如微缩摄影），软阴影，微距景深，偶有定格'顿挫感'。",
+      "subjects": "趣味科普、儿童/亲子向、拟人化微生物/细胞、'把科学讲得可爱'。",
+      "compat": "出图稳；文生视频'定格顿挫'易滑向'果冻/橡胶感'，运动帧率难控。一致性中等，靠定格顿挫词+固定配色。",
+      "risk": "黏土味滑向塑料/果冻、顿挫感消失变丝滑、手指受压变形、材质过度光滑显'假手办'。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://github.com/lvzhengbin/AI-Prompts/blob/main/skills/seedance-storyboard/references/visual-styles.md"]
+    },
+    {
+      "name": "低多边形",
+      "category": "数字科技类",
+      "definition": "低多边形（low-poly）3D风格：用极少几何面/三角面构成的立体造型，棱角分明、现代简约的手工3D感。",
+      "keywords": ["low poly 低多边形", "low-poly 3D 低多边形3D", "faceted geometry 多面几何", "triangulated mesh 三角网格", "origami-like facets 折纸切面", "flat-shaded 3D 平直着色3D", "geometric minimalism 几何极简", "stylized 3D 风格化3D"],
+      "writing": "low-poly 3D, faceted triangulated mesh, flat-shaded colors, origami-like geometric planes, stylized minimal render",
+      "palette": "大色块平涂，每面单一色，面与面交界清晰，色彩干净有现代感。",
+      "lighting": "多为平光或正面光，硬边面着色，棱线清晰，不追求写实光影渐变。",
+      "subjects": "地图/地理科普、数据可视化3D、抽象概念的'立体积木化'呈现；现代感概念片。",
+      "compat": "出图稳；文生视频的棱线在运动中易'网格坍塌/面片抖动'。一致性较好，靠固定模型+构图。",
+      "risk": "棱面在动画中崩塌、几何过碎显乱、过度挖角显'廉价游戏'、配色单一难分辨。",
+      "sources": ["https://cloud.tencent.cn/document/product/1729/105846", "https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/"]
+    },
+    {
+      "name": "复古胶片",
+      "category": "写实类",
+      "definition": "复古胶片摄影风格：颗粒、偏色、漏光、高光溢出，模拟老照片/胶片相机的怀旧成像。",
+      "keywords": ["film photography 胶片摄影", "vintage film aesthetic 复古胶片", "35mm film grain 胶片颗粒", "Kodak Portra look 柯达Portra色", "light leaks 漏光", "color negative 彩色负片", "slight vignette 轻微暗角", "analog photography 模拟摄影", "film scan 胶片扫描"],
+      "writing": "vintage 35mm film photo, Kodak Portra palette, visible grain, subtle light leaks, soft faded highlights, analog scan look",
+      "palette": "胶片特有的暖黄/青调，去饱和、偏色（偏绿或偏暖），高光柔化发灰。",
+      "lighting": "自然柔光或窗光，光比柔、高光微溢，暗角与颗粒营造温润的怀旧感。",
+      "subjects": "历史照片/档案感、人物情感回溯、'过去年代'的纪实科普；烘托时间与记忆。",
+      "compat": "出图稳（偏色是强风格）；文生视频颗粒易'噪点闪烁'、胶片感滑向'旧视频'。一致性中等，靠固定胶卷token。",
+      "risk": "颗粒/噪点在动画中闪烁、漏光滥用、偏色过头显'阿宝色'、人物历史感失真。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html"]
+    },
+    {
+      "name": "波普",
+      "category": "艺术史类",
+      "definition": "波普艺术（Pop Art）：印刷品网点、大色块、高饱和撞色与重复图案，源自安迪·沃霍尔的商业图像语言。",
+      "keywords": ["pop art 波普艺术", "Andy Warhol style 安迪·沃霍尔风格", "halftone dots 半调网点", "ben-day dots 本戴点", "screen printing 丝网印刷", "bold saturated colors 高饱和撞色", "repeated iconic imagery 重复标志图像", "thick black outlines 粗黑描边"],
+      "writing": "pop art, halftone Ben-Day dots, bold saturated flat colors, thick black outlines, screen-print repetition look",
+      "palette": "极简但高饱和的原色撞色（红黄蓝/品红青），黑色描边与白色背景形成强反差。",
+      "lighting": "无光影或极扁平，靠色块与网点构造层次，画面有印刷品式的平面感。",
+      "subjects": "'名人/经典/符号'的科普包装、科学人物的波普化呈现、吸引眼球的封面/预告。",
+      "compat": "出图稳（强风格）；文生视频网点在运动中易'摩尔纹/闪烁'。一致性较好，靠固定网点密度。",
+      "risk": "网点闪烁、撞色过度显'廉价包装'、重复图案易'呆板'、主题难承载复杂信息。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html"]
+    },
+    {
+      "name": "浮世绘",
+      "category": "艺术史类",
+      "definition": "日本浮世绘（木版画）：清晰轮廓、平涂色块、装饰性图案与'浪/山/花'的经典母题，风格鲜明复古。",
+      "keywords": ["ukiyo-e 浮世绘", "Japanese woodblock print 日本木版画", "Hokusai style 葛饰北斋风格", "the Great Wave 神奈川冲浪里母题", "flat decorative pattern 平涂装饰纹样", "crisp outlines 清晰轮廓", "indigo and ochre palette 靛蓝赭石配色", "traditional Japanese art 日本传统艺术"],
+      "writing": "ukiyo-e woodblock print, Hokusai-esque, the Great Wave motif, crisp flat outlines, indigo and ochre palette, decorative pattern",
+      "palette": "经典靛蓝（蓝染）+赭石/灰/白，色块平涂，黑线勾边，低调而有装饰感。",
+      "lighting": "无真实光影，靠色块明度与线条密度表达层次，画面呈平面装饰性。",
+      "subjects": "'自然/海洋/运动'的东方美学科普、节气与自然现象、传统文化意境包装。",
+      "compat": "出图稳（强风格）；文生视频线条与图案在运动中易'变形/错位'。一致性较好，靠固定母题+色板。",
+      "risk": "木版画味滑向'漫画线稿'、浪/花图案变形、线条抖动、装饰过密难读。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://github.com/lvzhengbin/AI-Prompts/blob/main/skills/seedance-storyboard/references/visual-styles.md"]
+    },
+    {
+      "name": "国漫",
+      "category": "二次元动漫类",
+      "definition": "中国风动画（国漫/新国漫）：融合国风元素与赛璐璐/厚涂的国潮画风，常带古风服饰、山水与水墨现代演绎。",
+      "keywords": ["Chinese animation 中国动画", "guoman 国漫", "donghua style 国漫动画", "new Chinese style 新国风", "traditional Chinese elements 国风元素", "ink-wash hybrid 水墨融合", "ancient costume figure 古风人物", "CG anime 3D国漫"],
+      "writing": "Chinese donghua animation style, new-Chinese aesthetic, ancient-costume figure with ink-wash inspired tones, CG anime look",
+      "palette": "在传统水墨/国风中加入现代动漫的饱和色，暖金朱红+靛蓝点缀，古雅而不沉闷。",
+      "lighting": "动漫平光+水墨留白意境，偶尔偏电影感的体积光，光影有情致。",
+      "subjects": "古诗词/历史/中医/传统文化的'讲故事'科普，国潮气质的内容包装。",
+      "compat": "出图较稳；文生视频'国风+动画'易滑向常规动漫或水墨糊化，人物服饰细节易崩。一致性中等，靠三视图+风格token。",
+      "risk": "画风在'水墨'与'动漫'间漂移、古风服饰结构崩、人物脸型不稳、装饰花纹抖。",
+      "sources": ["https://cloud.tencent.cn/document/product/1729/105846", "https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html"]
+    },
+    {
+      "name": "美漫",
+      "category": "二次元动漫类",
+      "definition": "美式漫画/美漫风格（Comic Book）：粗犷轮廓、强烈的跨页画风、重阴影网点与超级英雄式动感塑造。",
+      "keywords": ["comic book style 美漫风格", "American comic art 美式漫画", "bold ink lines 粗犷墨线", "heavy shadow hatching 重阴影排线", "halftone shading 网点阴影", "superhero dynamic pose 超级英雄动感姿态", "speech bubble free 无对话框（提示词负向）, dynamic composition 动感构图"],
+      "writing": "comic book art, bold black ink lines, heavy hatching shadows, halftone shading, dynamic action composition, high contrast",
+      "palette": "原色撞色、高对比，墨黑加重，网点阴影，画面冲击力强。",
+      "lighting": "硬边区光影，排线/网点表达明暗，强对比、无柔和渐变。",
+      "subjects": "'冲突/突破/前沿'的强情绪表达，科学突破的戏剧化、挑战问题的燃向呈现。",
+      "compat": "出图稳；文生视频动感姿态易'骨骼扭曲/四肢多余'。一致性中等，靠固定姿态+排线密度。",
+      "risk": "四肢/关节崩坏、网点闪烁、线条在运动中抖动、过度夸张显'中二'。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html"]
+    },
+    {
+      "name": "超现实",
+      "category": "艺术史类",
+      "definition": "超现实主义：梦境逻辑与虚幻意象的并置，如漂浮物体、变形比例、达利式的奇异时空，激发想象。",
+      "keywords": ["surrealism 超现实主义", "surreal 超现实", "dreamlike 如梦似幻", "Salvador Dali style 达利风格", "impossible perspective 不可能透视", "floating objects 漂浮物体", "metamorphosis 变形转化", "unexpected juxtaposition 意外并置", "oneiric atmosphere 梦魇氛围"],
+      "writing": "surrealism, dreamlike oneiric atmosphere, impossible floating proportions, Salvador-Dali-esque metamorphosis, unexpected juxtaposition",
+      "palette": "现实色被奇异组合，常偏冷或超现实灰蓝，色彩有象征意味。",
+      "lighting": "常带剧场感的侧光/体积光，营造'不合理却可信'的光影。",
+      "subjects": "把抽象科学概念'具象化比喻'：基因=迷宫、时间=河流、细胞=星系；激发想象的概念片。",
+      "compat": "出图稳（风格化强）；文生视频'不可能物体'易在运动中崩坏、比例错乱。一致性中等，靠固定符号+构图。",
+      "risk": "逻辑混乱难懂、变形崩坏、'假艺术'感、运动时物体穿插错位。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://github.com/lvzhengbin/AI-Prompts/blob/main/skills/seedance-storyboard/references/visual-styles.md"]
+    },
+    {
+      "name": "极简",
+      "category": "手绘插画类",
+      "definition": "极简/性冷淡风（Minimalism）：大面积留白、极简几何、克制配色与大量负空间，强调'少即是多'的高级感。",
+      "keywords": ["minimalism 极简主义", "minimalist 极简风", "negative space 留白/负空间", "clean composition 简洁构图", "muted palette 低饱和配色", "reduced geometry 简练几何", "white space 大量留白", "editorial simplicity 编辑式简洁"],
+      "writing": "minimalist composition, generous negative space, single focal subject, muted palette, clean editorial simplicity",
+      "palette": "低饱和中性色+一个强调色，克制的莫兰迪/黑白灰，色块极简。",
+      "lighting": "柔和均匀光或纯色背景，无多余投影，画面干净高级。",
+      "subjects": "高级感封面、数据字卡、品牌VI应用、'专业/可信'的科研呈现；B2B/申报视觉。",
+      "compat": "出图稳；文生视频要素少所以一致性极好，但易'太空洞'。适合做章节转场与落版。",
+      "risk": "过度空泛显'未完成'、极简滑向'AI默认界面'、缺少视觉焦点、信息承载弱。",
+      "sources": ["https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html", "F:/AI/kesheng/knowledge/vi_styles/vi-style-templates.md"]
+    },
+    {
+      "name": "印象派",
+      "category": "艺术史类",
+      "definition": "印象派油画：短促笔触、直接厚涂色点、捕捉光与色的瞬间氛围，轮廓模糊而色彩鲜活。",
+      "keywords": ["impressionism 印象派", "impressionist oil painting 印象派油画", "loose visible brushstrokes 松散可见笔触", "broken color 碎色", "optical color mixing 视觉混色", "outdoor light study 户外光研究", "Claude Monet style 莫奈风格", "atmospheric rendering 氛围渲染"],
+      "writing": "impressionist oil painting, loose broken brushstrokes, optical color blending, vivid atmospheric light, Monet-esque outdoor study",
+      "palette": "碎色点临近色并置，用视觉混合取代调和色，色彩明亮、无纯黑阴影。",
+      "lighting": "捕捉自然光（尤其黄昏/晨光）的光色瞬间，光影变化柔和而有氛围。",
+      "subjects": "'自然/光/季节'的意境科普，风景与自然的诗意表达，弱化结构强调氛围。",
+      "compat": "出图稳；文生视频笔触易'糊'、色彩滑动。一致性中等，靠固定色点+笔触密度。",
+      "risk": "笔触糊成一团、碎色变单色、轮廓过散难辨认主体、光色滑向写实。",
+      "sources": ["https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/", "https://developer.baidu.com/article/detail.html?id=7337276"]
+    }
+  ],
+  "styleRules": [
+    {
+      "name": "画风漂移防范",
+      "rules": [
+        "逐镜复用同一句风格token块，逐字粘贴，绝不逐镜重写或改写风格描述（风格句是锚，不是每次自由发挥）。",
+        "风格token块位置在每镜prompt中固定（统一放首行/风格段），画风词在句内位置也固定，避免模型受位置影响。",
+        "禁止每镜diverge：同一主题内不临时换风格词（如前一镜写实下一镜就滑到3D/动漫）。",
+        "风格切换必须用明确的转场/过渡镜（渐隐、白闪、运镜拉远、形状过渡），不能在同一主题内硬切。",
+        "用角色三视图/首帧锚定来锚定画风：先出正确静帧、验收、再图生视频，不让文生视频逐镜碰运气。",
+        "多镜原生模型（Seedance 2.x/万相2.6+/Sora Storyboard/LibTV）一次成片优先，天然保风，仍要写清分镜结构+风格token块。",
+        "换平台也要带同一风格token块行走（中文平台用中文句，Runway等翻成英文但语义不变）。",
+        "全片统一LUT（剪映）+同配音音色+同BGM风格，听觉一致性会'脑补'掉残余视觉漂移。"
+      ],
+      "relates": ["Seedance", "即梦", "可灵", "Vidu", "Runway", "Sora", "LibTV", "风格token块", "首帧锚定", "角色三视图", "多镜原生分镜", "后期LUT兜底"],
+      "sources": ["https://invideo.io/faq/why-does-ai-video-style-drift-happen-between-scenes-and/", "F:/AI/kesheng/playbooks/consistency.md", "F:/AI/kesheng/knowledge/seedance-template-library.md"]
+    },
+    {
+      "name": "风格token块锚定",
+      "rules": [
+        "全片写死一句风格描述（如'冷蓝生物荧光科学可视化风格，体积光，浅景深，8K超精细'），逐字粘贴进每镜prompt。",
+        "风格token块内容=媒介/技法+色彩+光影+画质兜底四要素齐备，缺一易漂移。",
+        "换平台带着走：中文平台用中文句，Runway等翻成英文（语义不变、位置固定）。",
+        "风格词优先用已验证的具体术语（photorealistic/cel shading/ink wash），不用抽象模糊词。",
+        "同一主题内风格token块不增删词、不换序，保证跨镜在模型眼里是'同一种风格'。"
+      ],
+      "relates": ["风格token块", "prompt模板化", "Runway", "Seedance", "即梦"],
+      "sources": ["F:/AI/kesheng/playbooks/consistency.md", "F:/AI/kesheng/knowledge/seedance-template-library.md"]
+    },
+    {
+      "name": "三视图画风锚定",
+      "rules": [
+        "有角色/主持人/吉祥物的项目，开拍前用文生图生成角色三视图（正面/侧面/背面），作为全片画风与形象基准资产。",
+        "每个有角色的镜头：以三视图为参考图生成该镜首帧，再图生视频（I2V），不让文生视频逐镜碰运气。",
+        "三视图同时锚定'画风+形象'：正面定肤色/服饰/发型基准，侧面定体态，背面定发饰/背面设计。",
+        "平台对应功能：Vidu 参考生视频、即梦全能参考（@引用）、可灵面部/多图参考、Runway Gen-4 References、Sora 角色/cameo。",
+        "人物参考图给'大头照+全身照'分开供应，避免模型只抓一张脸而忽略造型/风格。"
+      ],
+      "relates": ["角色三视图", "首帧锚定", "Vidu", "即梦", "可灵", "Runway", "Sora"],
+      "sources": ["F:/AI/kesheng/playbooks/consistency.md", "https://www.vidu.com/blog/consistent-character-ai"]
+    },
+    {
+      "name": "多镜原生保风",
+      "rules": [
+        "能用多镜原生模型的场景尽量用：Seedance 2.x、万相2.6+、Sora Storyboard、LibTV 分镜节点，一次生成内含多个镜头，主体/场景/氛围天然一致。",
+        "仍要在prompt里写明'分镜结构+风格token块+贯穿约束收口'（总起约束→分段→收口重申三段式）。",
+        "凡多镜原生，开头一致性总约束说一遍、结尾再重申一遍（同一风格token+无漂移约束）。",
+        "时间轴要连续（Seedance 2.5 整数秒时间戳0-3s、3-7s…不能跳），避免镜头间衔接崩。",
+        "多镜原生仍要配套参考图锚定主体，风格靠token块、形象靠参考图双保险。"
+      ],
+      "relates": ["Seedance", "万相", "Sora Storyboard", "LibTV", "多镜原生分镜", "时间轴分镜公式"],
+      "sources": ["F:/AI/kesheng/playbooks/consistency.md", "F:/AI/kesheng/knowledge/seedance-template-library.md", "https://www.volcengine.com/article/40840"]
+    },
+    {
+      "name": "画风切换过渡",
+      "rules": [
+        "不同画风绝不在同一主题内硬切（前一镜写实后一镜突然变水墨），必须用过渡镜衔接。",
+        "过渡手段：渐隐渐显、白闪、拉远/推近运镜、形状/粒子过渡、同主体从一种画风'演化'到另一种。",
+        "切换处给模型明确提示（如'the scene morphs from photorealistic to ink-wash style via a white flash'）。",
+        "画风切换与'时间/空间/叙事节点'绑定（如从现实回忆切换到梦境/历史），让切换有意义、不生硬。",
+        "多画风混用的片子，先定义'何时用哪种画风'的叙事规则，再逐镜执行，避免随意漂移。"
+      ],
+      "relates": ["运镜词表", "转场", "剪辑师", "画风漂移防范"],
+      "sources": ["https://invideo.io/faq/why-does-ai-video-style-drift-happen-between-scenes-and/", "F:/AI/kesheng/knowledge/seedance-template-library.md"]
+    }
+  ]
+}

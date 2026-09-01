@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0",
+  "pack": "audience-kg",
+  "role": "观众代言人",
+  "entities": [
+    {
+      "id": "AudienceMode:专家评审版",
+      "type": "AudienceMode",
+      "name": "专家评审版",
+      "props": {
+        "模式代号": "EXP",
+        "身份": "专家/评审",
+        "场景": "成果评审",
+        "接触渠道": "论文/同行口碑",
+        "叙事": "技术驱动数据说话",
+        "开头": "直接切入科学问题"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceMode:政府领导版",
+      "type": "AudienceMode",
+      "name": "政府领导版",
+      "props": {
+        "模式代号": "GOV",
+        "身份": "政府领导",
+        "场景": "项目申报/战略汇报",
+        "接触渠道": "招标参数表/汇报",
+        "叙事": "成果导向突出战略意义",
+        "开头": "国家战略高度切入"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceMode:公众科普版",
+      "type": "AudienceMode",
+      "name": "公众科普版",
+      "props": {
+        "模式代号": "PUB",
+        "身份": "大众",
+        "场景": "短视频科普",
+        "接触渠道": "短视频平台",
+        "叙事": "故事化叙事类比驱动",
+        "开头": "反常识钩子或悬念提问"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceMode:学生青年版",
+      "type": "AudienceMode",
+      "name": "学生青年版",
+      "props": {
+        "模式代号": "STD",
+        "身份": "学生/青年研究者",
+        "场景": "招生/宣讲",
+        "接触渠道": "讲座/校园",
+        "叙事": "启发式展示前沿性和可能性",
+        "开头": "激发好奇心+展示领域前景"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceMode:产业合作版",
+      "type": "AudienceMode",
+      "name": "产业合作版",
+      "props": {
+        "模式代号": "IND",
+        "身份": "产业合作伙伴",
+        "场景": "商务对接/中试放大",
+        "接触渠道": "规格书/展会",
+        "叙事": "应用导向强调商业价值和ROI",
+        "开头": "痛点直击市场机会/行业瓶颈"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceParam:叙事策略",
+      "type": "AudienceParam",
+      "name": "叙事策略",
+      "props": {
+        "定义": "同一份技术内容的整体讲法骨架",
+        "EXP": "技术驱动数据说话",
+        "PUB": "故事化叙事类比驱动",
+        "GOV": "成果导向突出战略意义"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceParam:开头钩子",
+      "type": "AudienceParam",
+      "name": "开头钩子",
+      "props": {
+        "作用": "前几秒留住观众并兑现",
+        "EXP": "直接切入科学问题",
+        "PUB": "反常识钩子/悬念提问",
+        "IND": "痛点直击市场机会"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceParam:术语处理",
+      "type": "AudienceParam",
+      "name": "术语处理",
+      "props": {
+        "口径": "该保留/该翻译/该删除",
+        "EXP": "保留全称不加解释",
+        "PUB": "全部翻译成口语+类比",
+        "GOV": "首次出现加3-6字通俗注解"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md", "agents/audience-advocate.md"]
+    },
+    {
+      "id": "AudienceParam:数据密度",
+      "type": "AudienceParam",
+      "name": "数据密度",
+      "props": {
+        "EXP": "高，每30秒≥2个数据点",
+        "GOV": "中，选最震撼的3-5个关键数据",
+        "PUB": "低，只留最震撼的1-2个数字",
+        "参考": "B2B只关心解决什么问题"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceParam:类比用量",
+      "type": "AudienceParam",
+      "name": "类比用量",
+      "props": {
+        "EXP": "极少，1-2个点到为止",
+        "GOV": "适中，每个核心概念配1个生活化类比",
+        "PUB": "大量，每个概念都必须有类比",
+        "STD": "较多，帮助理解新概念"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceParam:语气",
+      "type": "AudienceParam",
+      "name": "语气",
+      "props": {
+        "EXP": "客观精炼不废话",
+        "GOV": "大气有格局强调领先",
+        "PUB": "有趣温暖如和朋友聊天",
+        "STD": "激励性降低门槛"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceParam:时长",
+      "type": "AudienceParam",
+      "name": "时长",
+      "props": {
+        "EXP": "8-10min，专家有耐心看细节",
+        "GOV": "3-5min，领导时间宝贵",
+        "PUB": "1-3min，短视频黄金时长",
+        "STD": "3-5min",
+        "IND": "2-4min"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "AudienceParam:结尾策略",
+      "type": "AudienceParam",
+      "name": "结尾策略",
+      "props": {
+        "EXP": "指向后续研究方向/开放问题讨论",
+        "GOV": "强调社会效益/经济效益/带动就业",
+        "PUB": "情感升华+关注引导",
+        "STD": "招生态+展望感",
+        "IND": "明确合作邀请+下一步行动"
+      },
+      "sources": ["knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "ValueChain:痛点链结构",
+      "type": "ValueChain",
+      "name": "痛点链结构",
+      "props": {
+        "链条": "任务→需求→亮点→证据",
+        "规则": "串不上就删",
+        "B2B": "只为'能解决我什么问题'停留",
+        "出处": "knowledge/痛点链.md"
+      },
+      "sources": ["knowledge/痛点链.md", "agents/audience-advocate.md"]
+    },
+    {
+      "id": "ValueChain:B2B问题停留",
+      "type": "ValueChain",
+      "name": "B2B问题停留",
+      "props": {
+        "现象": "B2B只为'能解决我什么问题'停留",
+        "反面": "参数堆砌（'我们亮度>75'）被跳过",
+        "要求": "每个亮点必须回答受众的什么任务需要它",
+        "验证": "PHO-SC-4 v1无痛点链被甲方推翻"
+      },
+      "sources": ["knowledge/痛点链.md", "agents/audience-advocate.md"]
+    },
+    {
+      "id": "ValueChain:套刻误差案例",
+      "type": "ValueChain",
+      "name": "套刻误差案例",
+      "props": {
+        "例子": "套刻误差每小一纳米，对光就苛刻一分",
+        "需求": "必须又宽又稳",
+        "亮点": "170-2500nm、±0.2%",
+        "验证": "PHO-SC-4 v4补链后通过"
+      },
+      "sources": ["knowledge/痛点链.md"]
+    },
+    {
+      "id": "EvidenceType:真实测试曲线",
+      "type": "EvidenceType",
+      "name": "真实测试曲线",
+      "props": {
+        "用途分级": "可直接入镜",
+        "信任度": "最高",
+        "受众": "工程师最先看实测曲线与测试条件",
+        "原则": "真实素材优先，AI只做延伸不替代"
+      },
+      "sources": ["knowledge/素材分级.md", "playbooks/production-workflow.md", "agents/audience-advocate.md"]
+    },
+    {
+      "id": "EvidenceType:实测光斑",
+      "type": "EvidenceType",
+      "name": "实测光斑",
+      "props": {
+        "用途分级": "可直接入镜",
+        "信任度": "真实",
+        "验证": "实测光斑证据",
+        "原则": "真实素材优先"
+      },
+      "sources": ["knowledge/素材分级.md", "agents/audience-advocate.md"]
+    },
+    {
+      "id": "EvidenceType:真实装机场景",
+      "type": "EvidenceType",
+      "name": "真实装机场景",
+      "props": {
+        "用途分级": "可直接入镜",
+        "信任度": "高",
+        "受众": "决策者看案例",
+        "原则": "有真实素材的段落AI只做延伸不替代"
+      },
+      "sources": ["knowledge/素材分级.md", "agents/audience-advocate.md"]
+    },
+    {
+      "id": "EvidenceType:概念CG",
+      "type": "EvidenceType",
+      "name": "概念CG",
+      "props": {
+        "用途分级": "参考图/延伸",
+        "信任度": "低于真实素材",
+        "用法": "AI只做延伸不做替代",
+        "风险": "华丽但不被受众信任"
+      },
+      "sources": ["knowledge/素材分级.md", "agents/audience-advocate.md"]
+    },
+    {
+      "id": "EvidenceType:真实素材优先",
+      "type": "EvidenceType",
+      "name": "真实素材优先",
+      "props": {
+        "原则": "真实素材优先，AI只做延伸不做替代",
+        "三用法": "可直接入镜/参考图/内容参考",
+        "全量收集": "客户给的都收下，PDF/PPT全量抠图",
+        "缺口": "上网找公开素材注明来源"
+      },
+      "sources": ["knowledge/素材分级.md", "playbooks/production-workflow.md", "agents/audience-advocate.md"]
+    },
+    {
+      "id": "RetentionRule:第五秒钩子兑现",
+      "type": "RetentionRule",
+      "name": "第五秒钩子兑现",
+      "props": {
+        "时点": "第5秒",
+        "检查": "开头的钩子是否兑现",
+        "标准": "不只靠开头留人，还要靠兑现"
+      },
+      "sources": ["agents/audience-advocate.md"]
+    },
+    {
+      "id": "RetentionRule:中段尿点检查",
+      "type": "RetentionRule",
+      "name": "中段尿点检查",
+      "props": {
+        "时点": "中段",
+        "风险": "尿点导致观众划走",
+        "检查": "有没有注水段/密度失衡",
+        "标准": "前后密度均衡"
+      },
+      "sources": ["agents/audience-advocate.md"]
+    },
+    {
+      "id": "RetentionRule:结尾记忆点",
+      "type": "RetentionRule",
+      "name": "结尾记忆点",
+      "props": {
+        "检查": "结尾观众记住的是什么",
+        "标准": "有明确记忆点而非空洞",
+        "案例": "落版/招生态/合作邀请"
+      },
+      "sources": ["agents/audience-advocate.md"]
+    },
+    {
+      "id": "RetentionRule:术语塌方检查",
+      "type": "RetentionRule",
+      "name": "术语塌方检查",
+      "props": {
+        "风险": "公众版连续两个未解释术语；领导版讲机制细节",
+        "检查": "陌生概念是否超过受众承受上限",
+        "标准": "逐个翻译或删除，不叠生词"
+      },
+      "sources": ["agents/audience-advocate.md", "knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "RetentionRule:一次看懂率",
+      "type": "RetentionRule",
+      "name": "一次看懂率",
+      "props": {
+        "定义": "第一遍不停下来重听能懂吗",
+        "画面": "不读字幕能看懂吗",
+        "标准": "看懂不靠重听或重播"
+      },
+      "sources": ["agents/audience-advocate.md"]
+    },
+    {
+      "id": "MisalignmentPattern:自嗨",
+      "type": "MisalignmentPattern",
+      "name": "自嗨",
+      "props": {
+        "症状": "团队在欣赏自己的聪明",
+        "后果": "观众在第10秒划走",
+        "解法": "以观众身份复述检查"
+      },
+      "sources": ["agents/audience-advocate.md"]
+    },
+    {
+      "id": "MisalignmentPattern:学生版申报腔",
+      "type": "MisalignmentPattern",
+      "name": "学生版申报腔",
+      "props": {
+        "错配": "给学生版用申报腔",
+        "后果": "门槛高不激励",
+        "改法": "激励性、展示'这个领域很酷'、降低门槛"
+      },
+      "sources": ["agents/audience-advocate.md", "knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "MisalignmentPattern:专家版网络梗",
+      "type": "MisalignmentPattern",
+      "name": "专家版网络梗",
+      "props": {
+        "错配": "给专家版用网络梗",
+        "后果": "专业度受损",
+        "改法": "客观精炼、数据说话、不废话"
+      },
+      "sources": ["agents/audience-advocate.md", "knowledge/templates/C-multi-audience-guide.md"]
+    },
+    {
+      "id": "MisalignmentPattern:前30秒塞干货",
+      "type": "MisalignmentPattern",
+      "name": "前30秒塞干货",
+      "props": {
+        "错配": "前30秒塞完全部干货",
+        "后果": "后段时间注水、密度失衡",
+        "改法": "重排密度分配，中段留悬念"
+      },
+      "sources": ["agents/audience-advocate.md"]
+    }
+  ],
+  "relations": [
+    { "source": "AudienceParam:叙事策略", "target": "AudienceMode:专家评审版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:叙事策略", "target": "AudienceMode:公众科普版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:开头钩子", "target": "AudienceMode:公众科普版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:开头钩子", "target": "AudienceMode:产业合作版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:术语处理", "target": "AudienceMode:专家评审版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:术语处理", "target": "AudienceMode:政府领导版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:术语处理", "target": "AudienceMode:公众科普版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:数据密度", "target": "AudienceMode:专家评审版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:数据密度", "target": "AudienceMode:公众科普版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:类比用量", "target": "AudienceMode:公众科普版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:类比用量", "target": "AudienceMode:专家评审版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:语气", "target": "AudienceMode:学生青年版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:语气", "target": "AudienceMode:产业合作版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:时长", "target": "AudienceMode:专家评审版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:时长", "target": "AudienceMode:政府领导版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:时长", "target": "AudienceMode:公众科普版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:结尾策略", "target": "AudienceMode:专家评审版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:结尾策略", "target": "AudienceMode:产业合作版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:结尾策略", "target": "AudienceMode:学生青年版", "type": "param-for-mode", "props": {} },
+    { "source": "AudienceParam:结尾策略", "target": "AudienceMode:公众科普版", "type": "param-for-mode", "props": {} },
+    { "source": "ValueChain:痛点链结构", "target": "EvidenceType:真实素材优先", "type": "chain-validates-brightspot", "props": {} },
+    { "source": "ValueChain:B2B问题停留", "target": "EvidenceType:真实测试曲线", "type": "chain-validates-brightspot", "props": {} },
+    { "source": "ValueChain:套刻误差案例", "target": "EvidenceType:真实素材优先", "type": "chain-validates-brightspot", "props": {} },
+    { "source": "EvidenceType:真实素材优先", "target": "EvidenceType:真实测试曲线", "type": "evidence-prioritizes", "props": {} },
+    { "source": "EvidenceType:真实素材优先", "target": "EvidenceType:实测光斑", "type": "evidence-prioritizes", "props": {} },
+    { "source": "EvidenceType:真实素材优先", "target": "EvidenceType:真实装机场景", "type": "evidence-prioritizes", "props": {} },
+    { "source": "EvidenceType:真实素材优先", "target": "EvidenceType:概念CG", "type": "evidence-prioritizes", "props": {} },
+    { "source": "EvidenceType:真实测试曲线", "target": "EvidenceType:概念CG", "type": "evidence-prioritizes", "props": {} },
+    { "source": "EvidenceType:实测光斑", "target": "EvidenceType:概念CG", "type": "evidence-prioritizes", "props": {} },
+    { "source": "EvidenceType:真实装机场景", "target": "EvidenceType:概念CG", "type": "evidence-prioritizes", "props": {} },
+    { "source": "MisalignmentPattern:学生版申报腔", "target": "AudienceMode:学生青年版", "type": "pattern-warns-mode", "props": {} },
+    { "source": "MisalignmentPattern:专家版网络梗", "target": "AudienceMode:专家评审版", "type": "pattern-warns-mode", "props": {} },
+    { "source": "MisalignmentPattern:前30秒塞干货", "target": "AudienceMode:公众科普版", "type": "pattern-warns-mode", "props": {} },
+    { "source": "MisalignmentPattern:自嗨", "target": "AudienceMode:公众科普版", "type": "pattern-warns-mode", "props": {} },
+    { "source": "RetentionRule:第五秒钩子兑现", "target": "AudienceMode:公众科普版", "type": "rule-for-retention", "props": {} },
+    { "source": "RetentionRule:中段尿点检查", "target": "AudienceMode:专家评审版", "type": "rule-for-retention", "props": {} },
+    { "source": "RetentionRule:结尾记忆点", "target": "AudienceMode:公众科普版", "type": "rule-for-retention", "props": {} },
+    { "source": "RetentionRule:术语塌方检查", "target": "AudienceMode:公众科普版", "type": "rule-for-retention", "props": {} },
+    { "source": "RetentionRule:术语塌方检查", "target": "AudienceMode:政府领导版", "type": "rule-for-retention", "props": {} },
+    { "source": "RetentionRule:一次看懂率", "target": "AudienceMode:学生青年版", "type": "rule-for-retention", "props": {} }
+  ]
+}

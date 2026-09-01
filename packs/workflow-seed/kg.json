@@ -1,0 +1,344 @@
+{
+ "schema_version": "1.0",
+ "pack": "workflow-seed",
+ "role": "全角色",
+ "entities": [
+  {
+   "id": "RoleWorkflow:制片人",
+   "type": "RoleWorkflow",
+   "name": "制片人工作流程",
+   "props": {
+    "阶段": "M1→M5 全程",
+    "触发": "用户提出需求",
+    "步骤": "定档(S/M/L)→简报卡+预注册标准→派活(并行subagent)→汇总📤→裁决/门控→用户关卡→decision-log→知识萃取",
+    "产出": "brief.md/decision-log/交接卡",
+    "边界": "只编排不写内容(S档除外)"
+   },
+   "sources": [
+    "agents/producer.md",
+    "docs/ROLE_WORKFLOWS.md",
+    "orchestration/ORCHESTRATION.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:导演",
+   "type": "RoleWorkflow",
+   "name": "导演工作流程",
+   "props": {
+    "阶段": "M1→M5",
+    "触发": "M1 简报定稿",
+    "步骤": "导演阐述(M1)→艺术基调与可拍调研(M2)→盲提案+整合总方案(M3)→审核分镜/摄影/声音方案(M4)→定剪三遍(M5)",
+    "产出": "director-艺术阐述.md/m3-proposal.md/director-定剪意见.md",
+    "边界": "艺术不越界, 不代庖部门执行"
+   },
+   "sources": [
+    "agents/director.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:编剧",
+   "type": "RoleWorkflow",
+   "name": "编剧工作流程",
+   "props": {
+    "阶段": "M2(可选)→M4",
+    "触发": "M3 定稿",
+    "步骤": "读理解报告+受众模型→盲提案(叙事角度)→质询→口播稿v2(钩子/意义/核心/收尾/CTA, 单段≤10s≈40字)→朗读版核对",
+    "产出": "screenwriter-口播稿.md",
+    "边界": "数据出处被科学顾问查, 一次看懂被观众代言人查"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:分镜师",
+   "type": "RoleWorkflow",
+   "name": "分镜师工作流程",
+   "props": {
+    "阶段": "M3→M4",
+    "触发": "口播稿v2到手",
+    "步骤": "读口播稿+导演阐述+美术方案→分镜拆分(单镜3-10s)→构图/景别/视觉隐喻/招牌镜头→运镜列与摄影指导合议→(镜头多)宫格previz→标记首帧图结构镜头与三视图需求→按质控意见修改",
+    "产出": "storyboard-分镜表.md",
+    "边界": "画面设计归你, 怎么拍归摄影指导, 风格规范归美术指导"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:美术指导",
+   "type": "RoleWorkflow",
+   "name": "美术指导工作流程",
+   "props": {
+    "阶段": "M1→M4→出口闸",
+    "触发": "M1 简报定稿",
+    "步骤": "美术方案(风格关键词/色板/字体/VI/风格token块视觉部分)→关键主体多角度示意图清单+素材分级→图表层视觉规范→M4逐项批复风格口径→出口闸前VI逐项过",
+    "产出": "art-director-美术方案.md/资产清单/图表层规范",
+    "边界": "定规范和标准, 不碰具体镜头与运镜"
+   },
+   "sources": [
+    "agents/art-director.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:摄影指导",
+   "type": "RoleWorkflow",
+   "name": "摄影指导工作流程",
+   "props": {
+    "阶段": "M1→M4",
+    "触发": "M1 简报/分镜表定稿",
+    "步骤": "可拍约束清单(M1)→盲提案·影像质感(M3)→每镜摄影方案(运镜≤2带变速或复合+光影氛围+动态设计+拍法路线+参考资产+首尾帧链)→与prompt工程师结对→运镜列合议定稿",
+    "产出": "dop-摄影方案.md",
+    "边界": "只要画面写法, 不写分词句(交给prompt工程师)"
+   },
+   "sources": [
+    "agents/dop.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:声音设计师",
+   "type": "RoleWorkflow",
+   "name": "声音设计师工作流程",
+   "props": {
+    "阶段": "M4→M5",
+    "触发": "口播稿v2到手(与分镜师并行)",
+    "步骤": "读导演阐述+口播稿+受众模式→声音方案(BGM情绪曲线/曲风/商用素材库)→音效清单+配音建议(音色/语速/术语发音检查)→分镜表声音标注→卡点表→M5混音三遍听",
+    "产出": "sound-声音方案.md/卡点表/混音审查意见",
+    "边界": "音效层归你, 卡点对位与剪辑师共管"
+   },
+   "sources": [
+    "agents/sound-designer.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:剪辑师",
+   "type": "RoleWorkflow",
+   "name": "剪辑师工作流程",
+   "props": {
+    "阶段": "M3→M5",
+    "触发": "M3 定稿",
+    "步骤": "剪辑预计划(节奏曲线/转场策略/字幕图表层工作量)→M4分镜表补剪辑备注→M5剪辑/后期执行单(素材顺序/转场/字幕/图表层/文案层/调色LUT/片头片尾)→交付前自查",
+    "产出": "editor-剪辑预计划.md/执行单/自查清单",
+    "边界": "改呈现不改内容; 图表数值一字不能改"
+   },
+   "sources": [
+    "agents/editor.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:科学顾问",
+   "type": "RoleWorkflow",
+   "name": "科学顾问工作流程",
+   "props": {
+    "阶段": "M1→M5+萃取",
+    "触发": "M1 简报",
+    "步骤": "科学硬约束清单(M1)→7步深度理解法+自评L2底线+待确认清单(M2)→事实复核(M3)→涉科学镜头/表述复核(M4, 独立上下文)→终审全片(M5)→知识萃取入库",
+    "产出": "scientist-理解报告.md/kb新笔记",
+    "边界": "对事实有一票否决权, 但无创作权"
+   },
+   "sources": [
+    "agents/scientist.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:prompt工程师",
+   "type": "RoleWorkflow",
+   "name": "prompt工程师工作流程",
+   "props": {
+    "阶段": "M4→M5",
+    "触发": "分镜表+摄影方案定稿",
+    "步骤": "读分镜表(六要素)→分段(5-8镜/段)→每段按平台公式写prompt(风格token块逐字复用/负面词/参考图需求/时长档/抽卡建议)→按摄影方案运镜光影写法执行→失败修复表自检→出片期翻车改prompt重跑",
+    "产出": "prompt-<section>.md",
+    "边界": "只写怎么写给AI, 画面语义争议升级摄影指导"
+   },
+   "sources": [
+    "agents/prompt-engineer.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:观众代言人",
+   "type": "RoleWorkflow",
+   "name": "观众代言人工作流程",
+   "props": {
+    "阶段": "M1→M5",
+    "触发": "M1 简报",
+    "步骤": "受众证据模型(M1)→受众语境与证据映射(M2)→提案质询·一次看懂(M3)→口播稿+分镜审查(M4: 受众口吻复述/术语负担/5秒钩子/尿点)→成片朗读版过审(M5)",
+    "产出": "audience-受众模型.md/audience-审查意见.md",
+    "边界": "替受众说话, 不做审美决策"
+   },
+   "sources": [
+    "agents/audience-advocate.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:红队",
+   "type": "RoleWorkflow",
+   "name": "红队工作流程",
+   "props": {
+    "阶段": "闸点触发(M3/M4/M5)",
+    "触发": "M3对抗/M4前置闸/M5出口闸",
+    "步骤": "只读制品+预注册标准(不听辩护)→轮换视角(科学/传播/制作/甲方/伦理)→前置闸=硬性违规pass/fail; 出口闸=七维评分单+三态裁决→每条反对附推翻条件→少数派报告入纪要",
+    "产出": "red-team-<闸>.md",
+    "边界": "只在闸点出现, 不参与创作"
+   },
+   "sources": [
+    "agents/red-team.md",
+    "docs/ROLE_WORKFLOWS.md"
+   ]
+  },
+  {
+   "id": "RoleWorkflow:检察官",
+   "type": "RoleWorkflow",
+   "name": "检察官工作流程",
+   "props": {
+    "阶段": "交付前(L1-L4.5), 闸点触发",
+    "触发": "交付前检查",
+    "步骤": "素材检查(L1)→prompt检查(L2)→事实检查(L3)→出口评分(L4)→总汇总裁决书(L4.5)→交用户签收(L5)",
+    "纪律": "独立上下文只看证据不听辩护; 每条结论引证据; 给推翻条件; 抽查即全查; 发现问题打回对应角色不代修",
+    "产出": "L1-L4检查报告 + 检查裁决书(三态+各层评分+打回清单)"
+   },
+   "sources": [
+    "agents/inspector.md",
+    "docs/USER_SOP.md"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "RoleWorkflow:制片人",
+   "target": "ProcessRule:质量门控",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:导演",
+   "target": "ProcessRule:质量门控",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:编剧",
+   "target": "ProcessRule:术语发音检查",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:分镜师",
+   "target": "ProcessRule:宫格previz（整图成片与切片首帧）",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:分镜师",
+   "target": "ProcessRule:三视图锚定",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:美术指导",
+   "target": "ProcessRule:风格token块确定",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:美术指导",
+   "target": "ProcessRule:素材库建库（PDF-PPT抠图）",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:摄影指导",
+   "target": "ProcessRule:首帧图+图生视频",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:摄影指导",
+   "target": "ProcessRule:首尾帧衔接链",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:声音设计师",
+   "target": "ProcessRule:术语发音检查",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:声音设计师",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:剪辑师",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:剪辑师",
+   "target": "ProcessRule:质量门控",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:科学顾问",
+   "target": "ProcessRule:质量门控",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:prompt工程师",
+   "target": "ProcessRule:失败→修复循环",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:prompt工程师",
+   "target": "ProcessRule:风格token块确定",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:prompt工程师",
+   "target": "ProcessRule:参考包组装",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:观众代言人",
+   "target": "ProcessRule:质量门控",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:红队",
+   "target": "ProcessRule:质量门控",
+   "type": "workflow-uses",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:检察官",
+   "target": "Rule:五层检查体系",
+   "type": "rule-empowers",
+   "props": {}
+  },
+  {
+   "source": "RoleWorkflow:检察官",
+   "target": "KspStep:KSP-06制作交付",
+   "type": "workflow-gates",
+   "props": {}
+  }
+ ]
+}
