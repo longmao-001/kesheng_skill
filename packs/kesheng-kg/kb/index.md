@@ -852,6 +852,11 @@
 
 | 实体 | 类型 | 一句话 | 原文 |
 |---|---|---|---|
+| 参考图选片法（对位需求→8维打分→角色+部位对应+位置） | Method | 每镜先列对位需求(主体/动作状态/机位角度/必看清部件/材质/场景)，再从素材库候选按8维打分(对位度/清晰/角度/光影 | templates/reference-selection.md |
+| 参考图合规过滤 | Rule | 水印/竞品/团队合影/商标原理图/未授权/模糊到看不清部件=一票否决，不作参考喂模型。 | templates/reference-selection.md |
+| 参考图按对位需求选片 | Rule | 参考图必须按该镜对位需求选出——先定'这镜参考图要提供什么'再在候选里挑，不是随手拿好看的。 | templates/reference-selection.md |
+| 参考图角色+部位对应+位置必写 | Rule | 每张参考图标角色(主体/部件参考/场景参考/质感参考)+部位对应(参考图<部位X>＝主体<部位X'>)+放哪位置；场景参 | templates/product-prompt-formula.md / templates/reference-selection.md |
+| 参考图锚图优先 | Rule | 主体一致性优先复用三视图/角色锚图(跨镜)，辅助参考(机位/场景/质感)才新挑，别每镜重挑一张主体图。 | playbooks/consistency.md / templates/reference-selection.md |
 | 3D渲染写实 | ArtStyle | 数字科技类 | https://cloud.tencent.cn/document/product/1729/105846 / https://github.com/lvzhengbin/AI-Prompts/blob/main/skills/seedance-storyboard/references/visual-styles.md |
 | 低多边形 | ArtStyle | 数字科技类 | https://cloud.tencent.cn/document/product/1729/105846 / https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/ |
 | 像素 | ArtStyle | 数字科技类 | https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/ / https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html |
@@ -1158,6 +1163,7 @@
 | 长镜头保持时空连续性 | Finding | 长镜头/不间断运动镜头保留时空的连续与真实，使场面调度在单一镜头内完成叙事 | Paper:OA-摄影-71 |
 | 风格'look'一致性靠全流程约束 | Finding | 电影风格'look'需在摄影-后期-调色全流程用统一色彩/风格约束才能保持，单点处理会漂移 | Paper:OA-摄影-64 / Paper:OA-摄影-67 / Paper:OA-摄影-68 |
 | 三维摄影测量标定 | Method | 用直接线性变换(DLT)从二维电影帧反推三维坐标，重建机位与空间运动 | Paper:OA-摄影-6 |
+| 参考图选片法（对位需求→8维打分→角色+部位对应+位置） | Method | 每镜先列对位需求(主体/动作状态/机位角度/必看清部件/材质/场景)，再从素材库候选按8维打分(对位度/清晰/角度/光影 | templates/reference-selection.md |
 | 声明式相机控制 | Method | 用「目标构图/语义」声明镜头意图而非直接指定数值参数，由系统推导机位与运镜 | Paper:OA-摄影-8 |
 | 大数据内容分析 | Method | 面向平台海量短视频的内容/卷入度/互动大数据分析与效果量化范式。 | 10.1016/j.jretconser.2022.103170 / 10.1108/intr-07-2023-0521 / 10.1080/10696679.2022.2056487 / 10.3390/app13063386 |
 | 实证实验研究 | Method | 控制变量比较视频制作/呈现方式对engagement、学习与态度的影响。 | 10.1080/09523987.2013.862364 / 10.1016/j.system.2018.01.006 / 10.1080/15391523.2009.10782542 |
@@ -1359,6 +1365,10 @@
 | 自然语言的镜头运动理解 | Paper | 镜头语言/摄影 | https://arxiv.org/abs/2607.03043 |
 | 摄影专业文献 | PaperTopic | 摄影 | https://api.openalex.org/works |
 | 视频专业文献 | PaperTopic | 视频 | https://api.openalex.org/works |
+| 参考图合规过滤 | Rule | 水印/竞品/团队合影/商标原理图/未授权/模糊到看不清部件=一票否决，不作参考喂模型。 | templates/reference-selection.md |
+| 参考图按对位需求选片 | Rule | 参考图必须按该镜对位需求选出——先定'这镜参考图要提供什么'再在候选里挑，不是随手拿好看的。 | templates/reference-selection.md |
+| 参考图角色+部位对应+位置必写 | Rule | 每张参考图标角色(主体/部件参考/场景参考/质感参考)+部位对应(参考图<部位X>＝主体<部位X'>)+放哪位置；场景参 | templates/product-prompt-formula.md / templates/reference-selection.md |
+| 参考图锚图优先 | Rule | 主体一致性优先复用三视图/角色锚图(跨镜)，辅助参考(机位/场景/质感)才新挑，别每镜重挑一张主体图。 | playbooks/consistency.md / templates/reference-selection.md |
 | SOR模型 | Theory | 刺激-机体-响应模型：短视频特征(刺激)经用户认知情绪(机体)驱动参与/购买(响应)。 | 10.1016/j.jretconser.2022.103170 / 10.1016/j.chb.2024.108448 / 10.1108/intr-07-2023-0521 |
 | 叙事传播理论 | Theory | 叙事/数字故事化(叙事传输)增强认同、沉浸与传播。 | 10.1080/21532974.2016.1276871 / 10.2307/4140670 / 10.1080/09523987.2013.862364 / 10.1598/jaal.51.5.4 / 10.1080/1554480x.2010.509473 |
 | 多媒体学习认知理论 | Theory | 图文声多渠道同步呈现(CTA)利于学习(Mayer多媒体学习认知理论)。 | 10.14742/ajet.458 / 10.1021/acs.jchemed.8b00647 / 10.1080/0142159x.2017.1302081 |
