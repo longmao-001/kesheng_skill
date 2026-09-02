@@ -9,7 +9,7 @@
     {"id": "CrossDeptConfirm:跨部门裁决", "type": "CrossDeptConfirm", "name": "跨部门裁决", "props": {"方式": "先总结分歧再给裁决", "依据": "预注册标准或导演阐述", "仲裁对象": "分镜师vs美术指导 / 摄影指导vs声音设计师"}, "sources": ["agents/director.md", "protocols/meeting.md"]},
     {"id": "FinalCut:定剪", "type": "FinalCut", "name": "定剪", "props": {"时机": "M5 出口", "三遍": "画面/声音/节奏各过一遍", "产出": "回炉清单(哪几镜重抽/哪段重做/哪些保留)"}, "sources": ["agents/director.md"]},
     {"id": "ArtScopeRule:艺术不越界", "type": "ArtScopeRule", "name": "艺术不越界", "props": {"红线": "艺术表达不得偏离简报(甲方要申报片不是实验电影)", "制裁": "退回重做"}, "sources": ["agents/director.md"]},
-    {"id": "ProposalMerge:导演整合", "type": "ProposalMerge", "name": "导演整合", "props": {"职责": "M3 合并四份盲提案出总方案v1", "原则": "艺术整合不是和稀泥, 取舍写明理由与基调依据"}, "sources": ["agents/director.md", "orchestration/ORCHESTRATION.md"]},
+    {"id": "ProposalMerge:导演整合", "type": "ProposalMerge", "name": "导演整合", "props": {"职责": "M3 整合5个创意概念→概念拍板→深化为总方案v1", "原则": "艺术整合不是和稀泥, 取舍写明理由与基调依据"}, "sources": ["agents/director.md", "orchestration/ORCHESTRATION.md"]},
     {"id": "DirectorRisk:单点自嗨", "type": "DirectorRisk", "name": "单点自嗨", "props": {"定义": "分镜漂亮但没服务主题/华丽拖慢信息/风格漂移/偏离简报", "拦截": "导演必攻击点"}, "sources": ["agents/director.md"]}
   ],
   "relations": [

@@ -28,7 +28,7 @@ runs/          v2 新增：项目工坊（黑板）目录约定，每项目一�
 
 1. 整个文件夹已装入 agent 环境的 user skills 目录（`~/.dsh/skills/kesheng`）。
 2. 提出科研视频需求即触发：制片人先定档（S/M/L）→ 简报卡+预注册标准 → 按 `orchestration/ORCHESTRATION.md` 派活。
-3. **默认关卡式**：每里程碑派 parallel subagent（M2 调研 3-5 路 / M3 盲提案+质询 / M4 prompt 分段转写），关键处停下请用户确认。
+3. **默认关卡式**：每里程碑派 parallel subagent（M2 调研 3-5 路 / M3 概念先行+概念拍板 / M4 prompt 分段转写），关键处停下请用户确认。
 4. **全自动模式**：用户说"全自动跑完"时，用 DSH `workflow` 工具跑 `orchestration/kesheng_workflow.js`（args: topic/runDir/platform/audienceMode/withCouncil）。
 5. `kb/` 文件夹用 Obsidian 打开即得知识图谱（Graph View）。
 
@@ -36,7 +36,7 @@ runs/          v2 新增：项目工坊（黑板）目录约定，每项目一�
 
 ```
 开工 → todo_write 清单 → 定档 → 简报卡+预注册标准 → 用户确认
-→ M2 并行3路调研 → L2检查 → M3 盲提案3路 → 质询3路(+红队) → 裁决+纪要 → 用户确认
+→ M2 并行3路调研 → L2检查 → M3 概念先行（多方向）→ 概念拍板 → 裁决+纪要 → 用户确认
 → M4 口播→分镜→prompt分段并行 → 科学复核 → 红队前置闸 → 用户确认
 → M5 陪跑出片 → 红队出口闸(≤2循环) → 用户签收 → kb萃取
 ```

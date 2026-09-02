@@ -791,7 +791,7 @@
 | “It's just art”: auteur apologism in the post-Weinstein era | Paper | 导演 | https://doi.org/10.1080/14680777.2018.1456158 |
 | 导演专业文献 | PaperTopic | 导演 | https://api.openalex.org/works |
 | 调度专业文献 | PaperTopic | 调度 | https://api.openalex.org/works |
-| 导演整合 | ProposalMerge | M3 合并四份盲提案出总方案v1 | agents/director.md / orchestration/ORCHESTRATION.md |
+| 导演整合 | ProposalMerge | M3 整合5个创意概念→概念拍板→深化为总方案v1 | agents/director.md / orchestration/ORCHESTRATION.md |
 | 全片节奏曲线 | TempoCurve | 信息密度与情绪曲线的协调 | agents/director.md |
 | Mise-en-scene theory | Theory |  | 10.2307/2911641 |
 | Performance/embodiment theory | Theory |  | 10.1080/14649365.2018.1551563 |
@@ -3201,7 +3201,7 @@
 | KSP-02 需求简报+预注册 | KspStep | brief.md调研→4约束清单→预注册标准3-5条→组合拍板卡(受众/平台/时长/风格/画风/素材) | docs/USER_SOP.md / templates/brief.md |
 | KSP-03 科学理解 | KspStep | 7步理解法≥L2+受众/导演并行+事实处置→调研报告全文交用户阅读讨论(先读后谈)→讨论记录m2-纪要→两点讲明 | docs/USER_SOP.md / agents/scientist.md |
 | KSP-03.5 主题共识+内容重点对齐 | KspStep | 一句话主体共识(用户确认/纠偏)→内容重点清单3-8条逐条讨论→重点圈选(多选)→重点协议落brief(权重×证据×镜头 | docs/USER_SOP.md / templates/brief.md |
-| KSP-04 创意概念先行 | KspStep | Ideation概念生成(导演/编剧/摄影各1-2个概念: 大创意+基调+为什么成立)→Evaluation评分(预注册 | docs/USER_SOP.md / protocols/meeting.md |
+| KSP-04 创意概念先行 | KspStep | Ideation概念生成(导演/编剧/摄影各5个概念: 大创意+基调+为什么成立)→Evaluation评分(预注册/传 | docs/USER_SOP.md / protocols/meeting.md |
 | KSP-04.5 九宫格风格预览 | KspStep | 宫格技法出全片风格预览→美术批复→用户拍板→风格基线固化(写入分镜表表头) | docs/USER_SOP.md / playbooks/storyboard-grid.md |
 | KSP-05 分镜/声音/prompt/剪辑 | KspStep | 口播稿→用户拍板→(分镜‖声音)→摄影方案→prompt分段‖剪辑→VI/科学复核→红队前置闸(分镜尊重九宫格风格基线) | docs/USER_SOP.md / protocols/quality-gate.md |
 | KSP-06 制作交付+出口闸 | KspStep | 陪跑出片→导演定剪→红队出口闸评分 | docs/USER_SOP.md / playbooks/production-workflow.md |

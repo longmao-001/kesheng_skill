@@ -13,7 +13,7 @@
 
 | 机制 | 工具 | 用途 | 科生用法 |
 |---|---|---|---|
-| 派生独立 worker | `subagent`（后台默认 true=并行） | 每个角色独立上下文、真并行 | M2 调研 / M3 盲提案 / M4 转写 |
+| 派生独立 worker | `subagent`（后台默认 true=并行） | 每个角色独立上下文、真并行 | M2 调研 / M3 概念先行 / M4 转写 |
 | 继承上下文复核 | `subagent_fork`（后台默认 true） | 用下游角色视角复核上游制品 | 科学顾问复核 prompt 表；制片人复核争议条款 |
 | 全自动扇出 | `workflow`（JS 多阶段+屏障） | 无依赖阶段的真并行、批量转写 | 用户说"全自动跑完"时：`orchestration/kesheng_workflow.js` |
 | 人在回路关卡 | `ask_user_question` | 每里程碑停等用户确认 | M1/M3/M5 必用；M2/M4 出口按定档用 |
@@ -46,11 +46,11 @@
 
 | 角色 | 角色卡文件 | 输出规约（写入黑板） | 并行位 |
 |---|---|---|---|
-| 导演 | `agents/director.md` | `director-艺术阐述.md` / `director-盲提案.md` / `director-定剪意见.md` | M1/M2 可并行；M3 整合；M5 定剪 |
-| 编剧 | `agents/screenwriter.md` | `screenwriter-口播稿.md` / `screenwriter-盲提案.md` | M3 提案并列；M4 先行 |
-| 分镜师 | `agents/storyboard-artist.md` | `storyboard-分镜表.md` / `storyboard-盲提案.md` | M3 提案并列；M4 等口播稿 |
+| 导演 | `agents/director.md` | `director-艺术阐述.md` / `director-概念先行.md` / `director-定剪意见.md` | M1/M2 可并行；M3 整合；M5 定剪 |
+| 编剧 | `agents/screenwriter.md` | `screenwriter-口播稿.md` / `screenwriter-概念先行.md` | M3 提案并列；M4 先行 |
+| 分镜师 | `agents/storyboard-artist.md` | `storyboard-分镜表.md` / `storyboard-概念先行.md` | M3 提案并列；M4 等口播稿 |
 | 美术指导 | `agents/art-director.md` | `art-director-美术方案.md`（VI/色板/资产规范） | M2 可并行；M4 合规审核 |
-| 摄影指导 | `agents/dop.md` | `dop-摄影方案.md` / `dop-盲提案.md` | M1/M3 可并行；M4 等分镜表 |
+| 摄影指导 | `agents/dop.md` | `dop-摄影方案.md` / `dop-概念先行.md` | M1/M3 可并行；M4 等分镜表 |
 | 声音设计师 | `agents/sound-designer.md` | `sound-声音方案.md`（BGM曲线/音效/配音） | M4 可与分镜师并行 |
 | 剪辑师 | `agents/editor.md` | `editor-剪辑预计划.md` | M4 可与 prompt 转写并行 |
 | 科学顾问 | `agents/scientist.md` | `scientist-理解报告.md` | M2 可并行；M4 复核串行 |
@@ -103,8 +103,8 @@
 
 汇总：制片人读各 📤，确认理解深度 ≥L2（否则查证或升级）；待确认项全部有去向。**由用户确认后进 M3。**
 
-### M3 创意概念先行（Insight→Ideation→Evaluation→Presentation→Refine；替代旧"盲提案×4+评审"）
-1. **Ideation（概念生成，并行 3-4 路）**：导演/编剧/摄影指导各出 **1-2 个创意概念**（不是完整方案！）——方法论 SIT/SCAMPER/TRIZ/Bisociation/换位/加减法/极端化；每概念=**大创意一句话+核心信息+风格基调(moodboard)+为什么成立（对接重点协议/受众/证据）+概念标题** → `concepts/`。
+### M3 创意概念先行（Insight→Ideation→Evaluation→Presentation→Refine；替代旧"概念先行（多方向）+评审"）
+1. **Ideation（概念生成，并行 3-4 路）**：导演/编剧/摄影指导各出 **5 个创意概念**（不是完整方案！）——方法论 SIT/SCAMPER/TRIZ/Bisociation/换位/加减法/极端化；每概念=**大创意一句话+核心信息+风格基调(moodboard)+为什么成立（对接重点协议/受众/证据）+概念标题** → `concepts/`。
 2. **Evaluation（评分）**：制片人+观众代言人按四维（预注册标准/传播力/科学准确/可执行，0-1）打分；红队（L 档）每概念 1-2 条挑战（含推翻条件）→ 排名表 `m3-scoring.md`。
 3. **Presentation（概念拍板）**：概念卡并列全文展示 → `ask_user_question` 选一/融合/自定义（**#9 创意概念拍板**）。
 4. **Refine（深化，只深化所选概念）**：导演整合各角色补位 → 完整方案 `m3-proposal.md`（定位/文案结构/分镜概览/执行计划）+ `decision-log.md`（含被否概念与少数派报告）。
@@ -158,7 +158,7 @@
 
 ## 6. 全自动模式（用户说"全自动跑完"才用）
 
-把 `orchestration/kesheng_workflow.js`（script 体）+ `orchestration/kesheng_workflow.meta.json`（meta）交给 DSH `workflow` 工具，`args` 传 `{ topic, runDir, platform, audienceMode, withCouncil }`。内部自动：M2 并行调研 → M3 盲提案（+可选交叉质询+红队）→ M4 口播→分镜→分段转写 fan-out → 出口红队闸。返回结构化摘要；**裁决与用户关卡仍由制片人执行**。
+把 `orchestration/kesheng_workflow.js`（script 体）+ `orchestration/kesheng_workflow.meta.json`（meta）交给 DSH `workflow` 工具，`args` 传 `{ topic, runDir, platform, audienceMode, withCouncil }`。内部自动：M2 并行调研 → M3 概念先行（+可选红队评审）→ M4 口播→分镜→分段转写 fan-out → 出口红队闸。返回结构化摘要；**裁决与用户关卡仍由制片人执行**。
 
 ## 7. 降级规则（异常处理）
 
@@ -173,7 +173,7 @@
 
 ```
 开工 → todo_write 建清单 → 定档(S/M/L) → 简报卡+预注册标准 → 用户确认
-→ [M档] M2 并行3路(科学/受众/导演) → 汇总L2检查 → M3 盲提案4路(编剧/分镜/摄影/导演)
+→ [M档] M2 并行3路(科学/受众/导演) → 汇总L2检查 → M3 概念先行（编剧/分镜/摄影/导演各出概念并展示）
 → 质询4路 → 导演整合 → 制片人裁决+纪要 → 用户确认
 → M4 口播稿 → 分镜表‖声音方案 → 摄影方案 → prompt分段并行 → 剪辑预计划
 → 美术VI复核 → 科学复核 → 红队前置闸 → 用户确认
