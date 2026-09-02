@@ -58325,6 +58325,24 @@
    ]
   },
   {
+   "id": "ProcessRule:科学报告进对话",
+   "type": "ProcessRule",
+   "name": "科学报告进对话+docx/PPT",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "科学调查官 M2 完成后：完整报告写进对话(不压3行总结) + 产出 docx+PPT(可上图)；讲透 重点/时间/产品原理/产品卖点/科学原理；用 report-writer/markdown-exporter(报告)、ppt-master/markdown-exporter/pipitmk(PPT) 赋能。",
+    "出处": "orchestration/ORCHESTRATION.md §5-18"
+   },
+   "sources": [
+    "orchestration/ORCHESTRATION.md",
+    "templates/science-report.md",
+    "templates/science-ppt.md",
+    "agents/scientist.md"
+   ]
+  },
+  {
    "id": "ProcessRule:素材库命名规范",
    "type": "ProcessRule",
    "name": "素材库命名规范",

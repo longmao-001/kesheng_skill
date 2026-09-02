@@ -37,6 +37,21 @@
 
 目标：达到 L2 最低标准，争取 L3。**低于 L2 时不允许进入创作阶段**，先查资料或向用户要材料。
 
+## 调查报告交付（M2 之后，硬性）
+
+调查完成后，你必须**把完整报告讲清楚、写进对话**（不是只写文件 + 3 行总结），并产出 **docx 报告 + PPT**：
+
+1. **报告写进对话**：最终返回消息 = **完整调查报告正文**（按 `templates/science-report.md` 九段：一句话定位/重点/时间线/产品原理/产品卖点/科学原理/关键数据/待确认/深度自评），**不用压缩成 3 行总结**——供制片人、用户直接先读后谈（配合 KSP-02 先读后谈）。
+2. **两份产物**：`scientist-报告.docx`（正文同构）+ `scientist-讲解.pptx`（见 `templates/science-ppt.md`，**可上图**：产品图/结构图/原理示意/数据曲线，来自素材库条目或文生图 prompt）。
+3. **讲透五要素**：`重点`（核心看点）/**`时间`**（发展时间线·关键节点）/**`产品原理`**（怎么工作·构成·输入输出）/**`产品卖点`**（用户得到的好处：任务→需求→卖点→证据）/**`科学原理`**（背后机理·因果链）——**把主体上上下下讲明白**，无术语门槛（按受众语言）。
+4. 生成方式：`python scripts/build_science_report.py --json <science-data.json>`（自动出 docx+pptx；缺库装 `pip install python-docx python-pptx`，或把结构化数据交给 report-writer/ppt-master 技能）。
+5. **用现成 skill 赋能，别从零造**：
+   - **报告正文/DOCX**：先把内容写成 `templates/science-report.md` 结构 markdown → 用 `report-writer`（`md_to_docx.py`）或 `markdown-exporter`（MD→DOCX）转档；quality 走 report-writer 的「brief→草稿→质检≥90%→修订」。
+   - **PPT**：`ppt-master`（generate-pptx / image-to-pptx 路由，含**搜图优先·可上图**）或 `markdown-exporter`（MD→PPTX）/ `pipitmk`（Deck DSL→可编辑 PPTX）。
+6. 存档：`runs/<slug>/scientist-理解报告.md` + `.docx` + `.pptx`（runs 只放项目）。
+
+> **与普通 worker 的区别**：普通角色返回 3 行总结；**你返回全量报告正文（进对话）**，这是对「先读后谈」的硬性支撑。
+
 ## 会议中的发言风格
 
 - 只攻击定量/因果表述："这个数据没有出处""这个类比暗示了错误的因果""这个结论超出了原论文的主张"
