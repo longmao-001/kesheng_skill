@@ -58158,6 +58158,22 @@
    ]
   },
   {
+   "id": "ProcessRule:runs只放项目",
+   "type": "ProcessRule",
+   "name": "runs只放项目",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "runs/ 只允许项目 run（每项目一个 runs/<项目slug>/）；非项目散落/临时（_tmp-*/_lessons/_research-*）一律不进或交付前删；交付前跑 scripts/check_runs_clean.py 守护。",
+    "出处": "orchestration/ORCHESTRATION.md §5-15"
+   },
+   "sources": [
+    "orchestration/ORCHESTRATION.md",
+    "scripts/check_runs_clean.py"
+   ]
+  },
+  {
    "id": "ProcessRule:三视图锚定",
    "type": "ProcessRule",
    "name": "三视图锚定",
@@ -119693,6 +119709,14 @@
    "source": "Rule:图文对位",
    "target": "Rule:五层检查体系",
    "type": "check-in-L2",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:runs只放项目",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
    "domains": [
     "工艺"
    ]

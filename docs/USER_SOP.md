@@ -105,6 +105,7 @@
 ### KSP-07 知识萃取归档（闭环）
 - 动作：通用知识 → 域片段 → `build_union_kg.py` 重建 → **追加失败教训到 `knowledge/FAILURE-LIBRARY.md`**（现象/根因/已固化到哪/证据）→ 交付包归档（成片/分镜表/prompt 表/纪要/来源清单）
 - **开工前读库**：KSP-01/02 简报阶段先过一遍失败图书馆，同类问题直接规避（防重复踩坑）
+- **runs/ 只放项目**：`runs/` 只允许项目 run（每项目一个 `<slug>/`）；非项目散落/临时（`_tmp-*`/`_lessons`/`_research-*`）一律不进或交付前删；交付前跑 `python scripts/check_runs_clean.py` 守护（见 ORCHESTRATION §5-15）
 - 交付包结构：`runs/<slug>/delivery/{成片, storyboard.md, prompts.md, README.md}`
 - 隐私：`kb/隐私红线.md` 三分法；项目专有信息零入库
 

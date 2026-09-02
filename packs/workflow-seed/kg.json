@@ -211,6 +211,22 @@
     "agents/inspector.md",
     "docs/USER_SOP.md"
    ]
+  },
+  {
+   "id": "ProcessRule:runs只放项目",
+   "type": "ProcessRule",
+   "name": "runs只放项目",
+   "props": {
+    "说明": "runs/ 只允许项目 run（每项目一个 runs/<项目slug>/）；非项目散落/临时（_tmp-*/_lessons/_research-*）一律不进或交付前删；交付前跑 scripts/check_runs_clean.py 守护。",
+    "出处": "orchestration/ORCHESTRATION.md §5-15"
+   },
+   "sources": [
+    "orchestration/ORCHESTRATION.md",
+    "scripts/check_runs_clean.py"
+   ],
+   "domains": [
+    "工艺"
+   ]
   }
  ],
  "relations": [
@@ -338,6 +354,12 @@
    "source": "RoleWorkflow:检察官",
    "target": "KspStep:KSP-06制作交付",
    "type": "workflow-gates",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:runs只放项目",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
    "props": {}
   }
  ]

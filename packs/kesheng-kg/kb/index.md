@@ -3215,6 +3215,7 @@
 | Towards Effective GenAI Multi-Agent Collaboration: Design an | Paper | 2412.05449 | https://arxiv.org/abs/2412.05449 |
 | 快手短视频质量评估 | Paper | 新媒体/质量 | https://arxiv.org/abs/2402.07220 |
 | Koda十步管线映射科生 | PipelineMapping | brief=KSP-02简报(制片人)→concept=KSP-04概念(导演)→script=口播稿(编剧)→stor | libs/koda-stack/README.md |
+| runs只放项目 | ProcessRule | runs/ 只允许项目 run（每项目一个 runs/<项目slug>/）；非项目散落/临时（_tmp-*/_lesso | orchestration/ORCHESTRATION.md / scripts/check_runs_clean.py |
 | 三视图锚定 | ProcessRule | 为 recurring 角色/主持人/吉祥物及产品道具生成三视图（正/侧/背）作全片基准资产，杜绝跨镜变脸。 | playbooks/consistency.md / playbooks/production-workflow.md |
 | 剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾） | ProcessRule | 成片最后道工序：按分镜表组接，配音逐句对齐、图层/文案层执行、字幕校对、统一调色、片头片尾 VI。 | playbooks/production-workflow.md / agents/editor.md / knowledge/图表层.md |
 | 单镜抽卡 | ProcessRule | 逐镜生成：选模式、粘 prompt、按时长档抽 3-6 个变体，选中最优并固定。 | playbooks/production-workflow.md / playbooks/platform-prompts.md / playbooks/consistency.md |

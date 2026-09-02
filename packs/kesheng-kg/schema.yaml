@@ -154,7 +154,7 @@
 | company-in-segment | 产业 | 见片段 schema.yaml |
 | company-in-trend | 产业 | 见片段 schema.yaml |
 | concept-in-domain | 产业/科学 | 见片段 schema.yaml |
-| concept-related-to | 产业/叙事/导演/影像/科学/美术 | 见片段 schema.yaml |
+| concept-related-to | 产业/叙事/导演/工艺/影像/科学/美术 | 见片段 schema.yaml |
 | concept-uses-analogy | 科学 | 见片段 schema.yaml |
 | data-for-company | 科学 | 见片段 schema.yaml |
 | data-for-concept | 科学 | 见片段 schema.yaml |
