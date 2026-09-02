@@ -3272,6 +3272,7 @@
 | 品味取舍拍板 | UserGate | M3-M4 | templates/user-gate.md |
 | 定档拍板 | UserGate | M1 | templates/user-gate.md / docs/DESIGN.md |
 | 投放平台拍板 | UserGate | M1 | templates/user-gate.md / playbooks/platform-prompts.md |
+| 报告审阅（中间交付件） | UserGate | KSP-03 | orchestration/ORCHESTRATION.md / docs/USER_SOP.md / templates/science-report.md |
 | 时长拍板 | UserGate | M1 | templates/user-gate.md |
 | 时长预算拍板 | UserGate | M5 | templates/user-gate.md / protocols/quality-gate.md |
 | 术语发音拍板 | UserGate | M4-M5 | templates/user-gate.md / agents/sound-designer.md |
