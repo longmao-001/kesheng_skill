@@ -890,6 +890,7 @@
 | 灯光设计（Lighting Design） | Concept | 以光影为媒介的整体设计，综合亮度、反差、色温、方向与运动来塑造场景、情绪与叙事。 | Paper:OA-灯光场景-007 / Paper:OA-灯光场景-008 / Paper:OA-灯光场景-011 / Paper:OA-灯光场景-015 / Paper:OA-灯光场景-016 / Paper:OA-灯光场景-018 / Paper:OA-灯光场景-019 / Paper:OA-灯光场景-020 / Paper:OA-灯光场景-021 / Paper:OA-灯光场景-022 / Paper:OA-灯光场景-023 / Paper:OA-灯光场景-025 / Paper:OA-灯光场景-026 / Paper:OA-灯光场景-027 / Paper:OA-灯光场景-028 |
 | 照明作为叙事/意识形态工具（Lighting as Narrative/Ideology） | Concept | 灯光不只是技术手段，更承载创作意图与意识形态，可主动传达情绪与立场。 | Paper:OA-灯光场景-000 / Paper:OA-灯光场景-014 / Paper:OA-灯光场景-028 |
 | 电影照明（Cinematic Lighting） | Concept | 面向电影影像的布光体系，强调光影叙事、情绪定调与形式美感。 | Paper:OA-灯光场景-000 / Paper:OA-灯光场景-002 / Paper:OA-灯光场景-005 / Paper:OA-灯光场景-006 / Paper:OA-灯光场景-007 / Paper:OA-灯光场景-008 / Paper:OA-灯光场景-009 / Paper:OA-灯光场景-010 |
+| 素材库分类（两轴） | Concept | 用途分级（IN直接入镜/RF参考图/CT内容参考）× 内容类型（MAIN主体锚/PART部件/SCENE场景/TEXT质 | templates/assets-inventory.md / playbooks/production-workflow.md |
 | 续光规则（Lighting Continuity） | Concept | 跨镜头、跨场景保持光源方向、强度与色温一致，避免跳光并维持视觉可信度。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-016 |
 | 美术设计（Production/Art Design） | Concept | 场景、道具、灯光、色彩的统一视觉设计，决定影像风格与还原度。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-016 |
 | 舞台灯光（Stage/Theatrical Lighting） | Concept | 剧场舞台的灯具系统与布光设计，服务空间塑造、焦点引导与氛围营造。 | Paper:OA-灯光场景-011 / Paper:OA-灯光场景-015 / Paper:OA-灯光场景-016 / Paper:OA-灯光场景-017 / Paper:OA-灯光场景-018 / Paper:OA-灯光场景-019 / Paper:OA-灯光场景-020 / Paper:OA-灯光场景-021 / Paper:OA-灯光场景-023 / Paper:OA-灯光场景-024 / Paper:OA-灯光场景-025 / Paper:OA-灯光场景-026 / Paper:OA-灯光场景-027 |
@@ -1030,6 +1031,7 @@
 | 灯光场景专业文献 | PaperTopic | 灯光场景 | https://api.openalex.org/works |
 | 单强调色 | Rule | 全片仅一个强调色，只出现在封面/章节/数据卡表头/高亮；与背景对比≥4.5:1；不默认用蓝。 | templates/visual-baseline.md |
 | 系统色彩≤3 | Rule | 全片系统≤3色，避免视觉噪音；强调色不上正文/字幕。 | templates/visual-baseline.md |
+| 素材文件名即条目ID | Rule | 文件名编码 用途/类型/主体/视角，引用一律用文件名（选片/分镜/prompt 的 @图号），禁止凭记忆翻文件夹。 | templates/assets-inventory.md |
 | 风格根植内容 | Rule | 每个风格决策根植于内容与目的；一个因为贴合内容而选的颜色，永远胜过因为『看起来安全』而选的颜色。 | templates/visual-baseline.md |
 | 产业商业场景 | Scenario | 企业品牌片/产业商业广告 | knowledge/vi_styles/vi-style-templates.md |
 | 公众科普场景 | Scenario | 公众科普/开放日/学生/新媒体传播 | knowledge/vi_styles/vi-style-templates.md |
@@ -3221,6 +3223,7 @@
 | 失败→修复循环 | ProcessRule | 按平台手册『常见失败→修复表』逐症状改 prompt 再来，抽卡 6 次仍翻车则改路线，而非死磕。 | playbooks/platform-prompts.md / playbooks/production-workflow.md / playbooks/consistency.md |
 | 宫格previz（整图成片与切片首帧） | ProcessRule | 一次生成九宫格分镜图定全片构图，再走整图一次成片或切片逐格当首帧两条路径。 | playbooks/storyboard-grid.md / playbooks/production-workflow.md / playbooks/platform-prompts.md |
 | 术语发音检查 | ProcessRule | 检查口播稿/字幕里的术语发音与多音字，术语错字是科研片重灾区，别指望 TTS 猜对。 | playbooks/production-workflow.md / agents/editor.md / playbooks/platform-prompts.md |
+| 素材库命名规范 | ProcessRule | 源素材 `<用途>_<类型>_<主体>_<视角或部位>_<版本>`；生成资产 `项目_镜号_内容_版本`。名字要能回答  | templates/assets-inventory.md / playbooks/production-workflow.md |
 | 素材库建库（PDF-PPT抠图） | ProcessRule | 开工前把客户 PDF/PPT 全量抠图，按用途分级（可直接入镜/参考图/内容参考）建参考图库，素材是第一资产。 | playbooks/production-workflow.md / knowledge/图表层.md |
 | 质量门控 | ProcessRule | 交付任何里程碑产物前过七维检查表和交付清单，逐条写出来逐项打勾，全部通过才交付。 | playbooks/production-workflow.md / knowledge/图表层.md / agents/editor.md |
 | 资产命名 | ProcessRule | 生成资产遵循『项目_镜号_内容_版本』命名规范，能回答『用在哪一镜、是不是定版』，生成物一多也不乱。 | playbooks/production-workflow.md |

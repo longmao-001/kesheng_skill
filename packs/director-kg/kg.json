@@ -1515,6 +1515,53 @@
     "影像",
     "美术"
    ]
+  },
+  {
+   "id": "Concept:素材库分类两轴",
+   "type": "Concept",
+   "name": "素材库分类（两轴）",
+   "props": {
+    "说明": "用途分级（IN直接入镜/RF参考图/CT内容参考）× 内容类型（MAIN主体锚/PART部件/SCENE场景/TEXT质感/STR结构/DATA图表/BRAND品牌/RAW实拍）；文件名=条目ID。",
+    "出处": "templates/assets-inventory.md"
+   },
+   "sources": [
+    "templates/assets-inventory.md",
+    "playbooks/production-workflow.md"
+   ],
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "id": "Rule:素材文件名即条目ID",
+   "type": "Rule",
+   "name": "素材文件名即条目ID",
+   "props": {
+    "说明": "文件名编码 用途/类型/主体/视角，引用一律用文件名（选片/分镜/prompt 的 @图号），禁止凭记忆翻文件夹。",
+    "出处": "templates/assets-inventory.md"
+   },
+   "sources": [
+    "templates/assets-inventory.md"
+   ],
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "id": "ProcessRule:素材库命名规范",
+   "type": "ProcessRule",
+   "name": "素材库命名规范",
+   "props": {
+    "说明": "源素材 `<用途>_<类型>_<主体>_<视角或部位>_<版本>`；生成资产 `项目_镜号_内容_版本`。名字要能回答 干什么用/是什么/拍什么。",
+    "出处": "templates/assets-inventory.md / production-workflow.md"
+   },
+   "sources": [
+    "templates/assets-inventory.md",
+    "playbooks/production-workflow.md"
+   ],
+   "domains": [
+    "工艺"
+   ]
   }
  ],
  "relations": [
@@ -2263,6 +2310,30 @@
   {
    "source": "Rule:参考图按对位需求选片",
    "target": "Rule:图文对位",
+   "type": "rule-implements",
+   "props": {}
+  },
+  {
+   "source": "Concept:素材库分类两轴",
+   "target": "Method:参考图选片法",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:素材文件名即条目ID",
+   "target": "Method:参考图选片法",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:素材库分类两轴",
+   "target": "Rule:图文对位",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:素材库命名规范",
+   "target": "Concept:素材库分类两轴",
    "type": "rule-implements",
    "props": {}
   }

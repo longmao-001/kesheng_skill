@@ -248,7 +248,7 @@
 | rule-enforced-in-gate | 影像 | 见片段 schema.yaml |
 | rule-for-retention | 受众 | 见片段 schema.yaml |
 | rule-governs | 叙事/工艺 | 见片段 schema.yaml |
-| rule-implements | prompt/叙事/影像 | 见片段 schema.yaml |
+| rule-implements | prompt/叙事/工艺/影像 | 见片段 schema.yaml |
 | rule-pairs | 叙事 | 见片段 schema.yaml |
 | rule-references | 叙事 | 见片段 schema.yaml |
 | rule-refines | 叙事 | 见片段 schema.yaml |
