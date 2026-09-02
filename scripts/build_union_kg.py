@@ -42,6 +42,10 @@ DOMAIN_MAP = {
     "xhs-cases-kg": "叙事",
     "creative-kg": "叙事",
     "lessons-kg": "工艺",
+    "papers-kg": "叙事",
+    "papers-guanggao-kg": "叙事", "papers-shipin-kg": "影像", "papers-shangye-kg": "产业",
+    "papers-bianju-kg": "叙事", "papers-daoyan-kg": "导演", "papers-sheying-kg": "影像",
+    "papers-dengguang-kg": "美术", "papers-diaodu-kg": "导演",
     "rednote-industry-kg": None,  # 特殊: 按实体类型分流(产业/叙事), 见 INDUSTRY_TYPE_DOMAIN
 }
 

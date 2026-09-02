@@ -1,0 +1,3587 @@
+{
+  "schema_version": "1.0",
+  "pack": "papers-dengguang-kg",
+  "role": "灯光场景/美术设计",
+  "entities": [
+    {
+      "id": "Concept:三点布光",
+      "type": "Concept",
+      "name": "三点布光（主光Key+辅光Fill+背光Backlight）",
+      "props": {
+        "说明": "电影摄影棚布光基本功：主光定型、辅光补暗部、背光分离主体与背景，共同塑造立体感与轮廓。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-024",
+        "Paper:OA-灯光场景-029",
+        "Paper:OA-灯光场景-030",
+        "Paper:OA-灯光场景-031",
+        "Paper:OA-灯光场景-032"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:高调布光",
+      "type": "Concept",
+      "name": "高调布光（High-key）",
+      "props": {
+        "说明": "主光强、光比低、整体明亮均匀的布光，多用于轻松、梦幻、理想化场景。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-033"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:低调布光",
+      "type": "Concept",
+      "name": "低调布光（Low-key）",
+      "props": {
+        "说明": "暗部占主导、高反差、阴影浓重的布光，多用于悬疑、压抑、戏剧张力场景。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-033",
+        "Paper:OA-灯光场景-034"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:光比",
+      "type": "Concept",
+      "name": "光比（Lighting Ratio）",
+      "props": {
+        "说明": "主光与辅光强度之比，决定明暗反差；低光比柔和扁平，高光比轮廓强烈戏剧化。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-010",
+        "Paper:OA-灯光场景-013",
+        "Paper:OA-灯光场景-030",
+        "Paper:OA-灯光场景-033",
+        "Paper:OA-灯光场景-038"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:色温",
+      "type": "Concept",
+      "name": "色温（Color Temperature）",
+      "props": {
+        "说明": "用开尔文衡量光源色彩，暖色（低K）亲和，冷色（高K）疏离；是定场景情绪的关键变量。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-003",
+        "Paper:OA-灯光场景-039"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:场景氛围",
+      "type": "Concept",
+      "name": "场景氛围（Atmosphere/Mood）",
+      "props": {
+        "说明": "灯光、色温、反差共同营造的情绪基调，是美术设计传递给观众的第一感受。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-017",
+        "Paper:OA-灯光场景-027",
+        "Paper:OA-灯光场景-034",
+        "Paper:OA-灯光场景-035"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:美术设计",
+      "type": "Concept",
+      "name": "美术设计（Production/Art Design）",
+      "props": {
+        "说明": "场景、道具、灯光、色彩的统一视觉设计，决定影像风格与还原度。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-016"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:场景还原",
+      "type": "Concept",
+      "name": "场景还原（Period/Set Authenticity）",
+      "props": {
+        "说明": "布光与美术对特定年代、环境、昼夜的忠实再现，增强影像可信度。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-016",
+        "Paper:OA-灯光场景-019"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:摄影棚布光",
+      "type": "Concept",
+      "name": "摄影棚布光（Studio Lighting）",
+      "props": {
+        "说明": "在摄影棚内以可控灯具再造自然光的布光体系，是好莱坞经典灯光的核心。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-032"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:黑色电影美学",
+      "type": "Concept",
+      "name": "黑色电影美学（Film Noir Style）",
+      "props": {
+        "说明": "低调、高反差、明暗对照的布光风格，象征道德模糊与内心幽暗，具强视觉符号性。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-012",
+        "Paper:OA-灯光场景-013",
+        "Paper:OA-灯光场景-014",
+        "Paper:OA-灯光场景-036"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:照明作为叙事",
+      "type": "Concept",
+      "name": "照明作为叙事/意识形态工具（Lighting as Narrative/Ideology）",
+      "props": {
+        "说明": "灯光不只是技术手段，更承载创作意图与意识形态，可主动传达情绪与立场。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-014",
+        "Paper:OA-灯光场景-028"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:明暗对比",
+      "type": "Concept",
+      "name": "明暗对比/明暗对照（Chiaroscuro）",
+      "props": {
+        "说明": "以强烈明暗对立塑造形体、纵深与情绪，是雕塑感与戏剧张力的基础语言。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-004",
+        "Paper:OA-灯光场景-012",
+        "Paper:OA-灯光场景-035",
+        "Paper:OA-灯光场景-036",
+        "Paper:OA-灯光场景-037",
+        "Paper:OA-灯光场景-038",
+        "Paper:OA-灯光场景-039"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:色彩分级",
+      "type": "Concept",
+      "name": "色彩分级（Color Grading）",
+      "props": {
+        "说明": "后期统一色调、对比与色温的影像加工，使全片观感一致并强化风格化情绪。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-002",
+        "Paper:OA-灯光场景-003"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:主光辅光轮廓光",
+      "type": "Concept",
+      "name": "主光/辅光/轮廓光（Key/ Fill/ Rim）",
+      "props": {
+        "说明": "三点布光的三元构成：主光定型、辅光补暗、轮廓光勾边，分别承担塑造、柔化与分离。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-010",
+        "Paper:OA-灯光场景-024",
+        "Paper:OA-灯光场景-029",
+        "Paper:OA-灯光场景-030",
+        "Paper:OA-灯光场景-031",
+        "Paper:OA-灯光场景-037"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:连续光",
+      "type": "Concept",
+      "name": "连续光/持续光（Continuous Lighting）",
+      "props": {
+        "说明": "持续发光的光源，光影稳定可预测、高光过渡自然，带来真实可感的光照质感。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-002",
+        "Paper:OA-灯光场景-004",
+        "Paper:OA-灯光场景-006",
+        "Paper:OA-灯光场景-026"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:续光规则",
+      "type": "Concept",
+      "name": "续光规则（Lighting Continuity）",
+      "props": {
+        "说明": "跨镜头、跨场景保持光源方向、强度与色温一致，避免跳光并维持视觉可信度。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-016"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:舞台灯光",
+      "type": "Concept",
+      "name": "舞台灯光（Stage/Theatrical Lighting）",
+      "props": {
+        "说明": "剧场舞台的灯具系统与布光设计，服务空间塑造、焦点引导与氛围营造。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-011",
+        "Paper:OA-灯光场景-015",
+        "Paper:OA-灯光场景-016",
+        "Paper:OA-灯光场景-017",
+        "Paper:OA-灯光场景-018",
+        "Paper:OA-灯光场景-019",
+        "Paper:OA-灯光场景-020",
+        "Paper:OA-灯光场景-021",
+        "Paper:OA-灯光场景-023",
+        "Paper:OA-灯光场景-024",
+        "Paper:OA-灯光场景-025",
+        "Paper:OA-灯光场景-026",
+        "Paper:OA-灯光场景-027"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:灯光设计",
+      "type": "Concept",
+      "name": "灯光设计（Lighting Design）",
+      "props": {
+        "说明": "以光影为媒介的整体设计，综合亮度、反差、色温、方向与运动来塑造场景、情绪与叙事。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-007",
+        "Paper:OA-灯光场景-008",
+        "Paper:OA-灯光场景-011",
+        "Paper:OA-灯光场景-015",
+        "Paper:OA-灯光场景-016",
+        "Paper:OA-灯光场景-018",
+        "Paper:OA-灯光场景-019",
+        "Paper:OA-灯光场景-020",
+        "Paper:OA-灯光场景-021",
+        "Paper:OA-灯光场景-022",
+        "Paper:OA-灯光场景-023",
+        "Paper:OA-灯光场景-025",
+        "Paper:OA-灯光场景-026",
+        "Paper:OA-灯光场景-027",
+        "Paper:OA-灯光场景-028"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Concept:电影照明",
+      "type": "Concept",
+      "name": "电影照明（Cinematic Lighting）",
+      "props": {
+        "说明": "面向电影影像的布光体系，强调光影叙事、情绪定调与形式美感。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-002",
+        "Paper:OA-灯光场景-005",
+        "Paper:OA-灯光场景-006",
+        "Paper:OA-灯光场景-007",
+        "Paper:OA-灯光场景-008",
+        "Paper:OA-灯光场景-009",
+        "Paper:OA-灯光场景-010"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:历史分析",
+      "type": "Method",
+      "name": "历史分析法（Historical Analysis）",
+      "props": {
+        "分类": "研究范式",
+        "说明": "沿电影/舞台灯光史脉络梳理布光流变与技术/观念变迁。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-009",
+        "Paper:OA-灯光场景-015",
+        "Paper:OA-灯光场景-018",
+        "Paper:OA-灯光场景-025"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:风格分析",
+      "type": "Method",
+      "name": "风格/形式分析（Stylistic Analysis）",
+      "props": {
+        "分类": "研究范式",
+        "说明": "拆解高调/低调、光比、反差等视觉元素，归纳灯光风格与特征。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-012",
+        "Paper:OA-灯光场景-013",
+        "Paper:OA-灯光场景-033",
+        "Paper:OA-灯光场景-038",
+        "Paper:OA-灯光场景-039"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:电影文本细读",
+      "type": "Method",
+      "name": "电影文本细读（Close Reading）",
+      "props": {
+        "分类": "研究范式",
+        "说明": "以具体影片/场景为案例，逐镜分析灯光如何表达情绪与叙事。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-010",
+        "Paper:OA-灯光场景-012",
+        "Paper:OA-灯光场景-034",
+        "Paper:OA-灯光场景-036"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:意识形态批评",
+      "type": "Method",
+      "name": "意识形态批评（Ideological Criticism）",
+      "props": {
+        "分类": "研究范式",
+        "说明": "解读布光背后承载的权力关系、社会观念与创作意识形态。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-009",
+        "Paper:OA-灯光场景-014"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:灯光设计分析",
+      "type": "Method",
+      "name": "灯光设计分析（Lighting Design Analysis）",
+      "props": {
+        "分类": "研究方法",
+        "说明": "从亮度、反差、色温、方向与光源构成入手，分解并评价灯光设计。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-005",
+        "Paper:OA-灯光场景-007",
+        "Paper:OA-灯光场景-011",
+        "Paper:OA-灯光场景-016",
+        "Paper:OA-灯光场景-017",
+        "Paper:OA-灯光场景-019",
+        "Paper:OA-灯光场景-020",
+        "Paper:OA-灯光场景-021",
+        "Paper:OA-灯光场景-022",
+        "Paper:OA-灯光场景-023",
+        "Paper:OA-灯光场景-024",
+        "Paper:OA-灯光场景-026",
+        "Paper:OA-灯光场景-027",
+        "Paper:OA-灯光场景-029",
+        "Paper:OA-灯光场景-030",
+        "Paper:OA-灯光场景-032",
+        "Paper:OA-灯光场景-037"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:调色分析",
+      "type": "Method",
+      "name": "调色分析（Color Grading Analysis）",
+      "props": {
+        "分类": "研究方法",
+        "说明": "分析色彩分级如何统一色调、情绪与风格，并解读其对观感的影响。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-003"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:符号学分析",
+      "type": "Method",
+      "name": "符号学分析（Semiotic Analysis）",
+      "props": {
+        "分类": "研究范式",
+        "说明": "把灯光视作符号系统，解读其表意、象征与文化约定。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-008",
+        "Paper:OA-灯光场景-028"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:受众感知实验",
+      "type": "Method",
+      "name": "受众感知实验（Audience Perception Experiment）",
+      "props": {
+        "分类": "实证方法",
+        "说明": "以受控实验量化灯光/色彩对观众情绪与印象的影响。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-003",
+        "Paper:OA-灯光场景-035"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Method:计算机图形布光模拟",
+      "type": "Method",
+      "name": "计算机图形布光模拟（CG Lighting Simulation）",
+      "props": {
+        "分类": "技术方法",
+        "说明": "以渲染与算法模拟布光，验证电影感阴影、模型化打光并支持可复现控制。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-002",
+        "Paper:OA-灯光场景-004",
+        "Paper:OA-灯光场景-005",
+        "Paper:OA-灯光场景-006",
+        "Paper:OA-灯光场景-031"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:高调布光_明亮氛围",
+      "type": "Finding",
+      "name": "高调布光→明亮轻盈氛围",
+      "props": {
+        "操作": "提升主光、压低光比，让画面均匀明亮，营造轻松/梦幻/理想化情绪。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:低调布光_戏剧张力",
+      "type": "Finding",
+      "name": "低调布光→戏剧张力与压抑",
+      "props": {
+        "操作": "压暗整体亮度、抬高反差，让阴影占据主导，快速建立悬疑/压抑/沉重情绪。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-012",
+        "Paper:OA-灯光场景-014",
+        "Paper:OA-灯光场景-034"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:低光比_柔和扁平",
+      "type": "Finding",
+      "name": "低光比→柔和扁平影像",
+      "props": {
+        "操作": "用接近主光的辅光补暗部，让画面柔和、细节均匀但缺乏立体纵深。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:高光比_轮廓强化",
+      "type": "Finding",
+      "name": "高光比→轮廓强化与戏剧感",
+      "props": {
+        "操作": "拉开主辅光强度差，使明暗对立陡峭，强化主体轮廓并放大戏剧冲突。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-013",
+        "Paper:OA-灯光场景-030"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:暖色温_亲密度",
+      "type": "Finding",
+      "name": "暖色温→亲近温馨感",
+      "props": {
+        "操作": "调低色温（偏黄橙），提升画面亲近感、居家感与安全感。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-003"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:冷色温_疏离感",
+      "type": "Finding",
+      "name": "冷色温→疏离冷静科技感",
+      "props": {
+        "操作": "调高色温（偏蓝），制造距离感、冷静感或科技/医疗环境质感。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-003"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:三点布光_立体感",
+      "type": "Finding",
+      "name": "三点布光→立体感与主体分离",
+      "props": {
+        "操作": "用主光+辅光+背光组合，让主体从背景中分离并呈现圆润立体感。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:背光_轮廓光",
+      "type": "Finding",
+      "name": "背光/逆光→轮廓光与剪影",
+      "props": {
+        "操作": "在主体后方打逆光，形成轮廓光或剪影，突出形体并增强纵深感。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-010"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:低比低调_黑色电影氛围",
+      "type": "Finding",
+      "name": "低均匀感+高反差低调→黑色电影氛围",
+      "props": {
+        "操作": "控制铺光到最低、留高反差阴影区，直接指向黑色电影的幽暗/悬疑气质。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-012"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:可控色温_场景时间可信",
+      "type": "Finding",
+      "name": "可控色温还原昼夜→场景时间可信",
+      "props": {
+        "操作": "按场景时段匹配色温（晨昏偏暖、夜晚偏冷），让画面时间与氛围自洽可信。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-016",
+        "Paper:OA-灯光场景-019"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:高低调布光_情绪基调建立",
+      "type": "Finding",
+      "name": "高调/低调布光→情绪基调建立",
+      "props": {
+        "操作": "据情绪需要选择高调或低调布光，先轴定全片明暗基调，再分工完成情绪建调。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-007",
+        "Paper:OA-灯光场景-033",
+        "Paper:OA-灯光场景-037"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:三点布光_主体分离",
+      "type": "Finding",
+      "name": "三点布光→主体分离",
+      "props": {
+        "操作": "以主光/辅光/背光配合，把主体从同调背景中分离，强化被摄对象的清晰与突出。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-005",
+        "Paper:OA-灯光场景-024",
+        "Paper:OA-灯光场景-029",
+        "Paper:OA-灯光场景-030",
+        "Paper:OA-灯光场景-031",
+        "Paper:OA-灯光场景-032"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:色彩分级_风格统一",
+      "type": "Finding",
+      "name": "色彩分级→风格统一",
+      "props": {
+        "操作": "以统一色调与对比进行色彩分级，使多镜头、多场景观感一致并强化视觉风格。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-003"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:连续光_真实感",
+      "type": "Finding",
+      "name": "连续光→真实感",
+      "props": {
+        "操作": "维持持续稳定光源，使光影高光过渡自然、方向可预测，营造真实可感的光照质感。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-002",
+        "Paper:OA-灯光场景-004",
+        "Paper:OA-灯光场景-006",
+        "Paper:OA-灯光场景-026"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:明暗对比_纵深",
+      "type": "Finding",
+      "name": "明暗对比→纵深",
+      "props": {
+        "操作": "增强明暗对立与阴影层次，拉开前后景反差，让画面产生纵深与立体空间感。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-004",
+        "Paper:OA-灯光场景-012",
+        "Paper:OA-灯光场景-035",
+        "Paper:OA-灯光场景-036",
+        "Paper:OA-灯光场景-037",
+        "Paper:OA-灯光场景-038",
+        "Paper:OA-灯光场景-039"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:彩色灯光_角色印象",
+      "type": "Finding",
+      "name": "彩色电影灯光→观众角色印象",
+      "props": {
+        "操作": "以不同色彩倾向的灯光照射角色，影响观众对角色气质/处境的印象判断。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-003"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:灯光符号化_象征表意",
+      "type": "Finding",
+      "name": "灯光符号化→象征表意",
+      "props": {
+        "操作": "赋予特定亮度/色彩/方向以约定符号含义，使灯光承载隐喻与情感立场。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-008",
+        "Paper:OA-灯光场景-009",
+        "Paper:OA-灯光场景-028"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:音乐情绪映射_灯光联动",
+      "type": "Finding",
+      "name": "音乐情绪→舞台灯光联动",
+      "props": {
+        "操作": "提取音乐情绪参数映射到灯光强度/色彩/节奏，实现声音与视觉同步配合。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-017"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:照明性格映射_人物塑造",
+      "type": "Finding",
+      "name": "布光方向/色温→人物性格塑造",
+      "props": {
+        "操作": "用特定光位与色温暗示人物性格、心理或双重性，让灯光参与人物造型。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-010"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Finding:舞台灯光_空间造型",
+      "type": "Finding",
+      "name": "舞台灯光→空间造型与焦点",
+      "props": {
+        "操作": "用灯位、光区与明暗在舞台空间塑造体积、引导观众焦点并营造氛围。",
+        "形式": "条件→效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-011",
+        "Paper:OA-灯光场景-015",
+        "Paper:OA-灯光场景-016",
+        "Paper:OA-灯光场景-018",
+        "Paper:OA-灯光场景-019",
+        "Paper:OA-灯光场景-020",
+        "Paper:OA-灯光场景-021",
+        "Paper:OA-灯光场景-022",
+        "Paper:OA-灯光场景-023",
+        "Paper:OA-灯光场景-024",
+        "Paper:OA-灯光场景-025",
+        "Paper:OA-灯光场景-027"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Theory:灯光心理学",
+      "type": "Theory",
+      "name": "灯光心理学（Psychology of Lighting）",
+      "props": {
+        "说明": "不同亮度/反差/色温对观者情绪、注意与心理距离的系统性影响机制。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-035"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Theory:色彩心理学",
+      "type": "Theory",
+      "name": "色彩心理学（Color Psychology）",
+      "props": {
+        "说明": "色彩与色温如何触发情绪联想，为灯光定调提供心理依据。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-003",
+        "Paper:OA-灯光场景-039"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Theory:灯光意识形态批判",
+      "type": "Theory",
+      "name": "灯光意识形态批判（Ideology of Lighting）",
+      "props": {
+        "说明": "布光体系内嵌创作立场与权力关系，灯光是携带意识形态的符号系统。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Theory:形式主义风格论",
+      "type": "Theory",
+      "name": "形式主义/风格论（Formalism & Stylistics）",
+      "props": {
+        "说明": "从光影、构图等视觉形式本身解读风格与美学，是灯光风格分析的基座。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-001",
+        "Paper:OA-灯光场景-008",
+        "Paper:OA-灯光场景-012"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Theory:灯光设计理论",
+      "type": "Theory",
+      "name": "灯光设计理论（Lighting Design Theory）",
+      "props": {
+        "说明": "综合布光设计的原则、体系、功能与风格学说，为灯光设计提供系统框架。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-000",
+        "Paper:OA-灯光场景-015",
+        "Paper:OA-灯光场景-018",
+        "Paper:OA-灯光场景-020",
+        "Paper:OA-灯光场景-025"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Theory:装饰与造型灯光",
+      "type": "Theory",
+      "name": "装饰与造型灯光（Decorative & Form-giving Lighting）",
+      "props": {
+        "说明": "灯光作为造型与装饰手段，参与场景塑造、器物表现与美术定调的学说。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-011",
+        "Paper:OA-灯光场景-016",
+        "Paper:OA-灯光场景-022"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Theory:色彩理论",
+      "type": "Theory",
+      "name": "色彩理论（Color Theory）",
+      "props": {
+        "说明": "色彩搭配、色温与对比的基础理论，为灯光色彩与调色提供依据。",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "Paper:OA-灯光场景-003",
+        "Paper:OA-灯光场景-039"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-000",
+      "type": "Paper",
+      "name": "On the History and Ideology of Film Lighting",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "1975",
+        "被引": "35",
+        "DOI": "10.1093/screen/16.3.83",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "追溯电影布光的历史脉络与其背后的意识形态，照明作为叙事与权力工具。"
+      },
+      "sources": [
+        "https://doi.org/10.1093/screen/16.3.83"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-001",
+      "type": "Paper",
+      "name": "Hollywood Lighting: from the silent era to film noir",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2011",
+        "被引": "32",
+        "DOI": "10.1080/01439685.2011.574451",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "梳理好莱坞从默片到黑色电影的布光体系演变，含高调/低调与明暗对比。"
+      },
+      "sources": [
+        "https://doi.org/10.1080/01439685.2011.574451"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-002",
+      "type": "Paper",
+      "name": "iCheat: A Representation for Artistic Control of Indirect Cinematic Lighting",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2008",
+        "被引": "22",
+        "DOI": "10.1111/j.1467-8659.2008.01260.x",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "用间接光照控制表示法实现电影感布光的艺术化控制。"
+      },
+      "sources": [
+        "https://doi.org/10.1111/j.1467-8659.2008.01260.x"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-003",
+      "type": "Paper",
+      "name": "Quantifying the unquantifiable: the color of cinematic lighting and its effect on audience's impressions towards the appearance of film characters",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2020",
+        "被引": "4",
+        "DOI": "10.1007/s12144-020-00900-3",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "量化彩色电影灯光对观众角色印象的影响。"
+      },
+      "sources": [
+        "https://doi.org/10.1007/s12144-020-00900-3"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-004",
+      "type": "Paper",
+      "name": "Intelligent Lighting Angle Dynamics for Enhanced Cinematic Shadows in VR-based Serious Games",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2025",
+        "被引": "1",
+        "DOI": "10.48084/etasr.11315",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "通过智能打光角度动态增强VR严肃游戏的电影感阴影。"
+      },
+      "sources": [
+        "https://doi.org/10.48084/etasr.11315"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-005",
+      "type": "Paper",
+      "name": "Directing the Photography: Combining Cinematic Rules, Indirect Light Controls and Lighting-by-Example",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2018",
+        "被引": "1",
+        "DOI": "10.1111/cgf.13546",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "结合电影布光规则、间接光控制与示例式打光的引导方法。"
+      },
+      "sources": [
+        "https://doi.org/10.1111/cgf.13546"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-006",
+      "type": "Paper",
+      "name": "Precomputed low-frequency lighting in cinematic volume rendering",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2024",
+        "被引": "0",
+        "DOI": "10.1371/journal.pone.0312339",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "预计算低频光照用于电影级体渲染。"
+      },
+      "sources": [
+        "https://doi.org/10.1371/journal.pone.0312339"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-007",
+      "type": "Paper",
+      "name": "A Critical Scrutiny of Cinematic Lighting Technique in Cultural works of Selected Yoruba Nollywood Films",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2023",
+        "被引": "0",
+        "DOI": "10.58709/niujhu.v8i3.1694",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "审视尼日利亚诺莱坞电影文化作品中的电影布光技法。"
+      },
+      "sources": [
+        "https://doi.org/10.58709/niujhu.v8i3.1694"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-008",
+      "type": "Paper",
+      "name": "Semiotics study for cinematic lighting",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2020",
+        "被引": "0",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "从符号学角度研究电影灯光的表意与象征。"
+      },
+      "sources": [
+        "Semiotics study for cinematic lighting (2020)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-009",
+      "type": "Paper",
+      "name": "History (Whose Story?) \"Written With Lighting\": A Cinematic Representation of the \"Traumatic Past\" of the Germans in World War I",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2019",
+        "被引": "0",
+        "DOI": "10.17265/2159-5542/2019.03.003",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "用灯光书写历史：一战德国创伤记忆的电影再现。"
+      },
+      "sources": [
+        "https://doi.org/10.17265/2159-5542/2019.03.003"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-010",
+      "type": "Paper",
+      "name": "Employing lighting to express the cinematic personality duplication",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2018",
+        "被引": "0",
+        "DOI": "10.35560/jcofarts89/167-180",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "用布光表现电影人物的人格分裂/双重性。"
+      },
+      "sources": [
+        "https://doi.org/10.35560/jcofarts89/167-180"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-011",
+      "type": "Paper",
+      "name": "Stage Spectacles Constructed by Lighting and Other Cinematic Techniques",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2010",
+        "被引": "0",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "由灯光与电影技法共同构建的舞台奇观。"
+      },
+      "sources": [
+        "Stage Spectacles Constructed by Lighting and Other Cinematic Techniques (2010)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-012",
+      "type": "Paper",
+      "name": "Film Noir and the Arts of Lighting",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2024",
+        "被引": "1",
+        "DOI": "10.36019/9781978810297",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "专论黑色电影及其灯光艺术。"
+      },
+      "sources": [
+        "https://doi.org/10.36019/9781978810297"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-013",
+      "type": "Paper",
+      "name": "The Raw Deal Lighting of John Alton in Hollywood Film Noir",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2012",
+        "被引": "0",
+        "DOI": "10.1386/fm.3.2.60_1",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "解析摄影指导John Alton在黑色电影中的冷酷布光。"
+      },
+      "sources": [
+        "https://doi.org/10.1386/fm.3.2.60_1"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-014",
+      "type": "Paper",
+      "name": "\"The Dynamism of Violent Death\": Lighting, Censorship, and Violence in Film Noir",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2017",
+        "被引": "0",
+        "DOI": "10.5040/9798216434702.ch-019",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "黑色电影中灯光、审查与暴力呈现的动力学。"
+      },
+      "sources": [
+        "https://doi.org/10.5040/9798216434702.ch-019"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-015",
+      "type": "Paper",
+      "name": "The Magic of Light: The Craft and Career of Jean Rosenthal, Pioneer in Lighting for the Modern Stage",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "1975",
+        "被引": "60",
+        "DOI": "10.2307/3206368",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "现代舞台灯光先驱Jean Rosenthal的工艺与生涯。"
+      },
+      "sources": [
+        "https://doi.org/10.2307/3206368"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-016",
+      "type": "Paper",
+      "name": "Scene Design and Stage Lighting",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "1976",
+        "被引": "35",
+        "DOI": "10.2307/1573164",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "场景设计与舞台灯光的基础专著。"
+      },
+      "sources": [
+        "https://doi.org/10.2307/1573164"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-017",
+      "type": "Paper",
+      "name": "Methodology for stage lighting control based on music emotions",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2017",
+        "被引": "32",
+        "DOI": "10.1016/j.ins.2017.05.026",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "基于音乐情绪的舞台灯光控制方法。"
+      },
+      "sources": [
+        "https://doi.org/10.1016/j.ins.2017.05.026"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-018",
+      "type": "Paper",
+      "name": "The Lighting Art: The Aesthetics of Stage Lighting Design",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "1986",
+        "被引": "27",
+        "DOI": "10.2307/3208316",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "舞台灯光设计的美学体系。"
+      },
+      "sources": [
+        "https://doi.org/10.2307/3208316"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-019",
+      "type": "Paper",
+      "name": "Scenic Design and Lighting Techniques: A Basic Guide for Theatre",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2006",
+        "被引": "7",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "剧场场景设计与灯光技法基础指南。"
+      },
+      "sources": [
+        "Scenic Design and Lighting Techniques: A Basic Guide for Theatre (2006)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-020",
+      "type": "Paper",
+      "name": "Theatre Lighting Design",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2024",
+        "被引": "0",
+        "DOI": "10.5040/9781350295964",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "剧场灯光设计的现代综述。"
+      },
+      "sources": [
+        "https://doi.org/10.5040/9781350295964"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-021",
+      "type": "Paper",
+      "name": "Little Theatre lighting design.",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2007",
+        "被引": "0",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "小剧场灯光设计实践。"
+      },
+      "sources": [
+        "Little Theatre lighting design. (2007)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-022",
+      "type": "Paper",
+      "name": "Lighting Design Beyond Theatre",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2024",
+        "被引": "0",
+        "DOI": "10.4324/9781003322825",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "剧场之外的灯光设计应用。"
+      },
+      "sources": [
+        "https://doi.org/10.4324/9781003322825"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-023",
+      "type": "Paper",
+      "name": "Theatre and dance lighting design",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2015",
+        "被引": "0",
+        "DOI": "10.17077/etd.rej7m2h3",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "剧场与舞蹈灯光设计。"
+      },
+      "sources": [
+        "https://doi.org/10.17077/etd.rej7m2h3"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-024",
+      "type": "Paper",
+      "name": "Introduction to stage lighting: the fundamentals of theatre lighting design",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2005",
+        "被引": "0",
+        "DOI": "10.5860/choice.42-5184",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "舞台灯光基础入门。"
+      },
+      "sources": [
+        "https://doi.org/10.5860/choice.42-5184"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-025",
+      "type": "Paper",
+      "name": "Towering figures in the history of theatre lighting design",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2015",
+        "被引": "0",
+        "DOI": "10.4324/9781315691305-10",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "戏剧灯光设计史上的重要人物。"
+      },
+      "sources": [
+        "https://doi.org/10.4324/9781315691305-10"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-026",
+      "type": "Paper",
+      "name": "New technologies of theatre lighting design and their influence",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2000",
+        "被引": "0",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "舞台灯光设计新技术及其影响。"
+      },
+      "sources": [
+        "New technologies of theatre lighting design and their influence (2000)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-027",
+      "type": "Paper",
+      "name": "Arts Theatres in Nigeria and Challenges of Lighting Design",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2011",
+        "被引": "0",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "尼日利亚艺术剧院与灯光设计面临的挑战。"
+      },
+      "sources": [
+        "Arts Theatres in Nigeria and Challenges of Lighting Design (2011)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-028",
+      "type": "Paper",
+      "name": "Sign By Design: the Semiotics of Lighting Design as Illustrated Through the Lighting of Tent Theatre, 1996",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "1997",
+        "被引": "0",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "以帐篷剧场为例的灯光设计符号学。"
+      },
+      "sources": [
+        "Sign By Design: the Semiotics of Lighting Design as Illustrated Through the Lighting of Tent Theatre, 1996 (1997)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-029",
+      "type": "Paper",
+      "name": "Three-Point Lighting",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2019",
+        "被引": "0",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "三点布光技法。"
+      },
+      "sources": [
+        "Three-Point Lighting (2019)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-030",
+      "type": "Paper",
+      "name": "Applying Three-Point Lighting",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2013",
+        "被引": "0",
+        "DOI": "10.4324/9780240824673-44",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "三点布光的具体应用。"
+      },
+      "sources": [
+        "https://doi.org/10.4324/9780240824673-44"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-031",
+      "type": "Paper",
+      "name": "ALGORITHMS FOR THREE-POINT LIGHTING ADJUSTING FOR MONITORING OR STAGE OBJECTS CAPTURE",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2014",
+        "被引": "0",
+        "DOI": "10.46687/jsar.v6i1.148",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "面向监控或舞台物体捕捉的三点布光算法。"
+      },
+      "sources": [
+        "https://doi.org/10.46687/jsar.v6i1.148"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-032",
+      "type": "Paper",
+      "name": "Implementation of the Three-Point Lighting Technique in Advertising Photography as Promotional Media at Politeknik Negeri Media Kreatif PSDKU Medan Campus",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2025",
+        "被引": "0",
+        "DOI": "10.4108/eai.11-11-2024.2354466",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "广告摄影中三点布光的应用。"
+      },
+      "sources": [
+        "https://doi.org/10.4108/eai.11-11-2024.2354466"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-033",
+      "type": "Paper",
+      "name": "High- and Low-Key Lighting",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2020",
+        "被引": "0",
+        "DOI": "10.4324/9781003103776-11",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "高调与低调布光。"
+      },
+      "sources": [
+        "https://doi.org/10.4324/9781003103776-11"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-034",
+      "type": "Paper",
+      "name": "Penggunaan low-key lighting dan dolly in untuk membangun mood pada lingkungan dalam film wahyu",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2018",
+        "被引": "0",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "用低调布光与推镜在影片中营造氛围。"
+      },
+      "sources": [
+        "Penggunaan low-key lighting dan dolly in untuk membangun mood pada lingkungan dalam film wahyu (2018)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-035",
+      "type": "Paper",
+      "name": "On the Ambient Optic Array: James Gibson's Insights About the Phenomenon of Chiaroscuro",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2020",
+        "被引": "8",
+        "DOI": "10.1177/2041669520952097",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "重读吉布森的『环境光阵列』对明暗现象的洞见。"
+      },
+      "sources": [
+        "https://doi.org/10.1177/2041669520952097"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-036",
+      "type": "Paper",
+      "name": "The Quay Brothers: Choreographed Chiaroscuro, Enigmatic and Sublime",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "1998",
+        "被引": "3",
+        "DOI": "10.2307/1213598",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "奎氏兄弟电影中被编排的明暗对比。"
+      },
+      "sources": [
+        "https://doi.org/10.2307/1213598"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-037",
+      "type": "Paper",
+      "name": "Drawing light & shade : understanding chiaroscuro",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2006",
+        "被引": "3",
+        "DOI": "",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "明暗画法/明暗对比入门。"
+      },
+      "sources": [
+        "Drawing light & shade : understanding chiaroscuro (2006)"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-038",
+      "type": "Paper",
+      "name": "Characterization of Rembrandt self-portraits through digital-chiaroscuro statistics",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "2018",
+        "被引": "9",
+        "DOI": "10.1016/j.culher.2018.12.005",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "用数字化明暗统计刻画伦勃朗自画像。"
+      },
+      "sources": [
+        "https://doi.org/10.1016/j.culher.2018.12.005"
+      ],
+      "domains": [
+        "美术"
+      ]
+    },
+    {
+      "id": "Paper:OA-灯光场景-039",
+      "type": "Paper",
+      "name": "Leonardo's Colour and Chiaroscuro",
+      "props": {
+        "专业": "灯光场景",
+        "年份": "1962",
+        "被引": "14",
+        "DOI": "10.2307/1481484",
+        "域": "美术",
+        "置信度": "DB_REFERENCE",
+        "说明": "达芬奇的色彩与明暗对照法。"
+      },
+      "sources": [
+        "https://doi.org/10.2307/1481484"
+      ],
+      "domains": [
+        "美术"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Concept:三点布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Concept:摄影棚布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Concept:照明作为叙事",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Concept:电影照明",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Concept:高调布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Concept:低调布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Concept:黑色电影美学",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Concept:光比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Concept:场景还原",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Concept:美术设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Concept:续光规则",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-002",
+      "target": "Concept:连续光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-002",
+      "target": "Concept:电影照明",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-002",
+      "target": "Concept:色彩分级",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Concept:色彩分级",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Concept:色温",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-004",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-004",
+      "target": "Concept:连续光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-005",
+      "target": "Concept:电影照明",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-005",
+      "target": "Concept:三点布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-006",
+      "target": "Concept:电影照明",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-006",
+      "target": "Concept:连续光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-007",
+      "target": "Concept:电影照明",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-007",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-008",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-008",
+      "target": "Concept:电影照明",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-009",
+      "target": "Concept:照明作为叙事",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-009",
+      "target": "Concept:电影照明",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-010",
+      "target": "Concept:主光辅光轮廓光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-010",
+      "target": "Concept:光比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-011",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-011",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Concept:黑色电影美学",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Concept:低调布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-013",
+      "target": "Concept:黑色电影美学",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-013",
+      "target": "Concept:光比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-014",
+      "target": "Concept:黑色电影美学",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-014",
+      "target": "Concept:照明作为叙事",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-015",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-015",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Concept:场景还原",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Concept:美术设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Concept:续光规则",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-017",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-017",
+      "target": "Concept:场景氛围",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-018",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-018",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-018",
+      "target": "Concept:场景氛围",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-019",
+      "target": "Concept:场景还原",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-019",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-019",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-020",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-020",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-021",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-021",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-022",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-022",
+      "target": "Concept:场景氛围",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-023",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-023",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-024",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-024",
+      "target": "Concept:三点布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-024",
+      "target": "Concept:主光辅光轮廓光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-025",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-025",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-026",
+      "target": "Concept:舞台灯光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-026",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-027",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-027",
+      "target": "Concept:场景氛围",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-028",
+      "target": "Concept:灯光设计",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-028",
+      "target": "Concept:照明作为叙事",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-029",
+      "target": "Concept:三点布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-029",
+      "target": "Concept:主光辅光轮廓光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-030",
+      "target": "Concept:三点布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-030",
+      "target": "Concept:主光辅光轮廓光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-030",
+      "target": "Concept:光比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-031",
+      "target": "Concept:三点布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-031",
+      "target": "Concept:主光辅光轮廓光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-032",
+      "target": "Concept:三点布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-032",
+      "target": "Concept:摄影棚布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-033",
+      "target": "Concept:高调布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-033",
+      "target": "Concept:低调布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-033",
+      "target": "Concept:光比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-034",
+      "target": "Concept:低调布光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-034",
+      "target": "Concept:场景氛围",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-035",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-035",
+      "target": "Concept:场景氛围",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-036",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-036",
+      "target": "Concept:黑色电影美学",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-037",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-037",
+      "target": "Concept:主光辅光轮廓光",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-038",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-038",
+      "target": "Concept:光比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-039",
+      "target": "Concept:明暗对比",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-039",
+      "target": "Concept:色温",
+      "type": "paper-about",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Method:历史分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Method:意识形态批评",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Method:风格分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Method:电影文本细读",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-002",
+      "target": "Method:计算机图形布光模拟",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Method:调色分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Method:受众感知实验",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-004",
+      "target": "Method:计算机图形布光模拟",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-005",
+      "target": "Method:计算机图形布光模拟",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-005",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-006",
+      "target": "Method:计算机图形布光模拟",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-007",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-008",
+      "target": "Method:符号学分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-009",
+      "target": "Method:历史分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-009",
+      "target": "Method:意识形态批评",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-010",
+      "target": "Method:电影文本细读",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-011",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Method:电影文本细读",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Method:风格分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-013",
+      "target": "Method:风格分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-014",
+      "target": "Method:意识形态批评",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-015",
+      "target": "Method:历史分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-017",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-018",
+      "target": "Method:历史分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-019",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-020",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-021",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-022",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-023",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-024",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-025",
+      "target": "Method:历史分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-026",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-027",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-028",
+      "target": "Method:符号学分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-029",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-030",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-031",
+      "target": "Method:计算机图形布光模拟",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-032",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-033",
+      "target": "Method:风格分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-034",
+      "target": "Method:电影文本细读",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-035",
+      "target": "Method:受众感知实验",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-036",
+      "target": "Method:电影文本细读",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-037",
+      "target": "Method:灯光设计分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-038",
+      "target": "Method:风格分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-039",
+      "target": "Method:风格分析",
+      "type": "paper-proposes",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Finding:三点布光_立体感",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Finding:三点布光_主体分离",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Finding:暖色温_亲密度",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:高调布光_明亮氛围",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:低调布光_戏剧张力",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:低光比_柔和扁平",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:高光比_轮廓强化",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:暖色温_亲密度",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:冷色温_疏离感",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:背光_轮廓光",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:低比低调_黑色电影氛围",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:可控色温_场景时间可信",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Finding:高低调布光_情绪基调建立",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-002",
+      "target": "Finding:连续光_真实感",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Finding:彩色灯光_角色印象",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Finding:色彩分级_风格统一",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Finding:暖色温_亲密度",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Finding:冷色温_疏离感",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-004",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-004",
+      "target": "Finding:连续光_真实感",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-005",
+      "target": "Finding:三点布光_主体分离",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-006",
+      "target": "Finding:连续光_真实感",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-007",
+      "target": "Finding:高低调布光_情绪基调建立",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-008",
+      "target": "Finding:灯光符号化_象征表意",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-009",
+      "target": "Finding:灯光符号化_象征表意",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-010",
+      "target": "Finding:照明性格映射_人物塑造",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-010",
+      "target": "Finding:背光_轮廓光",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-011",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Finding:低调布光_戏剧张力",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Finding:低比低调_黑色电影氛围",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-013",
+      "target": "Finding:高光比_轮廓强化",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-014",
+      "target": "Finding:低调布光_戏剧张力",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-015",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Finding:可控色温_场景时间可信",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-017",
+      "target": "Finding:音乐情绪映射_灯光联动",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-018",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-019",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-019",
+      "target": "Finding:可控色温_场景时间可信",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-020",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-021",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-022",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-023",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-024",
+      "target": "Finding:三点布光_主体分离",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-024",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-025",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-026",
+      "target": "Finding:连续光_真实感",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-027",
+      "target": "Finding:舞台灯光_空间造型",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-028",
+      "target": "Finding:灯光符号化_象征表意",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-029",
+      "target": "Finding:三点布光_主体分离",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-030",
+      "target": "Finding:三点布光_主体分离",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-030",
+      "target": "Finding:高光比_轮廓强化",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-031",
+      "target": "Finding:三点布光_主体分离",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-032",
+      "target": "Finding:三点布光_主体分离",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-033",
+      "target": "Finding:高低调布光_情绪基调建立",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-033",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-034",
+      "target": "Finding:低调布光_戏剧张力",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-035",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-036",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-037",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-037",
+      "target": "Finding:高低调布光_情绪基调建立",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-038",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-039",
+      "target": "Finding:明暗对比_纵深",
+      "type": "paper-finds",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Theory:灯光意识形态批判",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-000",
+      "target": "Theory:灯光设计理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Theory:形式主义风格论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-001",
+      "target": "Theory:灯光心理学",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Theory:色彩理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-003",
+      "target": "Theory:色彩心理学",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-008",
+      "target": "Theory:形式主义风格论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-009",
+      "target": "Theory:灯光意识形态批判",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-011",
+      "target": "Theory:装饰与造型灯光",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-012",
+      "target": "Theory:形式主义风格论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-014",
+      "target": "Theory:灯光意识形态批判",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-015",
+      "target": "Theory:灯光设计理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-016",
+      "target": "Theory:装饰与造型灯光",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-018",
+      "target": "Theory:灯光设计理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-020",
+      "target": "Theory:灯光设计理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-022",
+      "target": "Theory:装饰与造型灯光",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-024",
+      "target": "Theory:灯光设计理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-025",
+      "target": "Theory:灯光设计理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-029",
+      "target": "Theory:灯光设计理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-030",
+      "target": "Theory:灯光设计理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-035",
+      "target": "Theory:灯光心理学",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-036",
+      "target": "Theory:灯光心理学",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Paper:OA-灯光场景-039",
+      "target": "Theory:色彩理论",
+      "type": "paper-uses",
+      "props": {}
+    },
+    {
+      "source": "Method:历史分析",
+      "target": "Rule:概念先行",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:风格分析",
+      "target": "Rule:图文对位",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:电影文本细读",
+      "target": "Rule:概念先行",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:意识形态批评",
+      "target": "Rule:五层检查体系",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:灯光设计分析",
+      "target": "Rule:Prompt严格统一格式",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:灯光设计分析",
+      "target": "Rule:图文对位",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:符号学分析",
+      "target": "Rule:概念先行",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:受众感知实验",
+      "target": "Rule:AI原生交付原则",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:计算机图形布光模拟",
+      "target": "Rule:Prompt严格统一格式",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Method:调色分析",
+      "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+      "type": "method-supports-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:明暗对比_纵深",
+      "target": "Rule:图文对位",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:高低调布光_情绪基调建立",
+      "target": "Rule:概念先行",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:三点布光_主体分离",
+      "target": "Rule:概念先行",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:色彩分级_风格统一",
+      "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:连续光_真实感",
+      "target": "Rule:AI原生交付原则",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:彩色灯光_角色印象",
+      "target": "Rule:图文对位",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:灯光符号化_象征表意",
+      "target": "Rule:概念先行",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:音乐情绪映射_灯光联动",
+      "target": "ProcessRule:单镜抽卡",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:照明性格映射_人物塑造",
+      "target": "Rule:图文对位",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:舞台灯光_空间造型",
+      "target": "ProcessRule:单镜抽卡",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:高调布光_明亮氛围",
+      "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:低调布光_戏剧张力",
+      "target": "Rule:概念先行",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:低光比_柔和扁平",
+      "target": "Rule:图文对位",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:高光比_轮廓强化",
+      "target": "Rule:Prompt严格统一格式",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:暖色温_亲密度",
+      "target": "Rule:图文对位",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:冷色温_疏离感",
+      "target": "Rule:Prompt严格统一格式",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:三点布光_立体感",
+      "target": "Rule:概念先行",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:背光_轮廓光",
+      "target": "Rule:图文对位",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:低比低调_黑色电影氛围",
+      "target": "NarrationType:科普短视频",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Finding:可控色温_场景时间可信",
+      "target": "ProcessRule:单镜抽卡",
+      "type": "finding-evidence-for-rule",
+      "props": {}
+    },
+    {
+      "source": "Concept:三点布光",
+      "target": "Concept:主光辅光轮廓光",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:主光辅光轮廓光",
+      "target": "Concept:光比",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:明暗对比",
+      "target": "Concept:光比",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:明暗对比",
+      "target": "Concept:黑色电影美学",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:明暗对比",
+      "target": "Concept:场景氛围",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:色彩分级",
+      "target": "Concept:色温",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:色彩分级",
+      "target": "Concept:电影照明",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:连续光",
+      "target": "Concept:电影照明",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:连续光",
+      "target": "Concept:场景还原",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:续光规则",
+      "target": "Concept:连续光",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:续光规则",
+      "target": "Concept:场景还原",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:电影照明",
+      "target": "Concept:灯光设计",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:舞台灯光",
+      "target": "Concept:灯光设计",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:舞台灯光",
+      "target": "Concept:场景氛围",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:灯光设计",
+      "target": "Concept:美术设计",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:灯光设计",
+      "target": "Concept:场景还原",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:美术设计",
+      "target": "Concept:场景氛围",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:场景氛围",
+      "target": "Concept:照明作为叙事",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:照明作为叙事",
+      "target": "Concept:灯光设计",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:高调布光",
+      "target": "Concept:光比",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:高调布光",
+      "target": "Concept:低调布光",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:高调布光",
+      "target": "Concept:场景氛围",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:低调布光",
+      "target": "Concept:光比",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:低调布光",
+      "target": "Concept:黑色电影美学",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:色温",
+      "target": "Concept:场景氛围",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:摄影棚布光",
+      "target": "Concept:美术设计",
+      "type": "concept-related-to",
+      "props": {}
+    },
+    {
+      "source": "Concept:美术设计",
+      "target": "Concept:场景还原",
+      "type": "concept-related-to",
+      "props": {}
+    }
+  ]
+}

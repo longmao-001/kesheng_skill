@@ -1,0 +1,2872 @@
+{
+  "schema_version": "1.0",
+  "pack": "papers-guanggao-kg",
+  "entities": [
+    {
+      "id": "Paper:OA-广告-0",
+      "type": "Paper",
+      "name": "Central and Peripheral Routes to Advertising Effectiveness: The Moderating Role of Involvement",
+      "props": {
+        "专业": "广告",
+        "年份": 1983,
+        "被引": 4618,
+        "DOI": "10.1086/208954",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/208954"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-1",
+      "type": "Paper",
+      "name": "Advertising as Information",
+      "props": {
+        "专业": "广告",
+        "年份": 1974,
+        "被引": 3489,
+        "DOI": "10.1086/260231",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/260231"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-2",
+      "type": "Paper",
+      "name": "Price and Advertising Signals of Product Quality",
+      "props": {
+        "专业": "广告",
+        "年份": 1986,
+        "被引": 2327,
+        "DOI": "10.1086/261408",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/261408"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-3",
+      "type": "Paper",
+      "name": "An Empirical Examination of the Structural Antecedents of Attitude toward the Ad in an Advertising Pretesting Context",
+      "props": {
+        "专业": "广告",
+        "年份": 1989,
+        "被引": 2167,
+        "DOI": "10.1177/002224298905300204",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1177/002224298905300204"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-4",
+      "type": "Paper",
+      "name": "Homophily and Differential Returns: Sex Differences in Network Structure and Access in an Advertising Firm",
+      "props": {
+        "专业": "广告",
+        "年份": 1992,
+        "被引": 2154,
+        "DOI": "10.2307/2393451",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/2393451"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-5",
+      "type": "Paper",
+      "name": "The Role of Attitude toward the Ad as a Mediator of Advertising Effectiveness: A Test of Competing Explanations",
+      "props": {
+        "专业": "广告",
+        "年份": 1986,
+        "被引": 1962,
+        "DOI": "10.2307/3151660",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/3151660"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-6",
+      "type": "Paper",
+      "name": "The Personal Involvement Inventory: Reduction, Revision, and Application to Advertising",
+      "props": {
+        "专业": "广告",
+        "年份": 1994,
+        "被引": 1725,
+        "DOI": "10.1080/00913367.1943.10673459",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/00913367.1943.10673459"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-7",
+      "type": "Paper",
+      "name": "Internet Advertising and the Generalized Second-Price Auction: Selling Billions of Dollars Worth of Keywords",
+      "props": {
+        "专业": "广告",
+        "年份": 2007,
+        "被引": 1640,
+        "DOI": "10.1257/aer.97.1.242",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1257/aer.97.1.242"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-8",
+      "type": "Paper",
+      "name": "Assessing the Role of Emotions as Mediators of Consumer Responses to Advertising",
+      "props": {
+        "专业": "广告",
+        "年份": 1987,
+        "被引": 1625,
+        "DOI": "10.1086/209123",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/209123"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-9",
+      "type": "Paper",
+      "name": "Green consumers in the 1990s: Profile and implications for advertising",
+      "props": {
+        "专业": "广告",
+        "年份": 1996,
+        "被引": 1577,
+        "DOI": "10.1016/0148-2963(95)00150-6",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1016/0148-2963(95)00150-6"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-10",
+      "type": "Paper",
+      "name": "The Impact of Television Advertising: Learning Without Involvement",
+      "props": {
+        "专业": "广告",
+        "年份": 1965,
+        "被引": 1549,
+        "DOI": "10.1086/267335",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/267335"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-11",
+      "type": "Paper",
+      "name": "Are Product Attribute Beliefs the Only Mediator of Advertising Effects on Brand Attitude?",
+      "props": {
+        "专业": "广告",
+        "年份": 1981,
+        "被引": 1484,
+        "DOI": "10.2307/3150973",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/3150973"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-12",
+      "type": "Paper",
+      "name": "A Model for Predictive Measurements of Advertising Effectiveness",
+      "props": {
+        "专业": "广告",
+        "年份": 1961,
+        "被引": 1478,
+        "DOI": "10.1177/002224296102500611",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1177/002224296102500611"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-13",
+      "type": "Paper",
+      "name": "Celebrity vs. Influencer endorsements in advertising: the role of identification, credibility, and Product-Endorser fit",
+      "props": {
+        "专业": "广告",
+        "年份": 2019,
+        "被引": 1373,
+        "DOI": "10.1080/02650487.2019.1634898",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/02650487.2019.1634898"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-14",
+      "type": "Paper",
+      "name": "An Empirical Examination of the Structural Antecedents of Attitude toward the Ad in an Advertising Pretesting Context",
+      "props": {
+        "专业": "广告",
+        "年份": 1989,
+        "被引": 1295,
+        "DOI": "10.2307/1251413",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/1251413"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-15",
+      "type": "Paper",
+      "name": "Advertising Value and Advertising on the Web",
+      "props": {
+        "专业": "广告",
+        "年份": 1996,
+        "被引": 1294,
+        "DOI": "10.1080/00218499.1996.12466626",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/00218499.1996.12466626"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-16",
+      "type": "Paper",
+      "name": "An Investigation into the “Match-up” Hypothesis in Celebrity Advertising: When Beauty May Be Only Skin Deep",
+      "props": {
+        "专业": "广告",
+        "年份": 1990,
+        "被引": 1294,
+        "DOI": "10.1080/00913367.1990.10673175",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/00913367.1990.10673175"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-17",
+      "type": "Paper",
+      "name": "The Effects of Price-Comparison Advertising on Buyers’ Perceptions of Acquisition Value, Transaction Value, and Behavioral Intentions",
+      "props": {
+        "专业": "广告",
+        "年份": 1998,
+        "被引": 1274,
+        "DOI": "10.1177/002224299806200204",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1177/002224299806200204"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-18",
+      "type": "Paper",
+      "name": "Consumer Attitudes Toward Mobile Advertising: An Empirical Study",
+      "props": {
+        "专业": "广告",
+        "年份": 2004,
+        "被引": 1188,
+        "DOI": "10.1080/10864415.2004.11044301",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/10864415.2004.11044301"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-19",
+      "type": "Paper",
+      "name": "The Role of Attitude toward the Ad as a Mediator of Advertising Effectiveness: A Test of Competing Explanations",
+      "props": {
+        "专业": "广告",
+        "年份": 1986,
+        "被引": 1153,
+        "DOI": "10.1177/002224378602300205",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1177/002224378602300205"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-20",
+      "type": "Paper",
+      "name": "What is Interactivity and is it Always Such a Good Thing? Implications of Definition, Person, and Situation for the Influence of Interactivity on Advertising Effectiveness",
+      "props": {
+        "专业": "广告",
+        "年份": 2002,
+        "被引": 1131,
+        "DOI": "10.1080/00913367.2002.10673685",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/00913367.2002.10673685"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-21",
+      "type": "Paper",
+      "name": "The Power of Feelings in Understanding Advertising Effects",
+      "props": {
+        "专业": "广告",
+        "年份": 1987,
+        "被引": 1122,
+        "DOI": "10.1086/209124",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/209124"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-22",
+      "type": "Paper",
+      "name": "How Advertising Works: What Do We Really Know?",
+      "props": {
+        "专业": "广告",
+        "年份": 1999,
+        "被引": 1114,
+        "DOI": "10.2307/1251999",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/1251999"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-23",
+      "type": "Paper",
+      "name": "Equilibrium Distributions of Sales and Advertising Prices",
+      "props": {
+        "专业": "广告",
+        "年份": 1977,
+        "被引": 1070,
+        "DOI": "10.2307/2296902",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/2296902"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-24",
+      "type": "Paper",
+      "name": "Affective Responses Mediating Acceptance of Advertising",
+      "props": {
+        "专业": "广告",
+        "年份": 1986,
+        "被引": 1063,
+        "DOI": "10.1086/209063",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/209063"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-25",
+      "type": "Paper",
+      "name": "Optimal Advertising Policy under Dynamic Conditions",
+      "props": {
+        "专业": "广告",
+        "年份": 1962,
+        "被引": 1049,
+        "DOI": "10.2307/2551549",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/2551549"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-26",
+      "type": "Paper",
+      "name": "Are Product Attribute Beliefs the Only Mediator of Advertising Effects on Brand Attitude?",
+      "props": {
+        "专业": "广告",
+        "年份": 1981,
+        "被引": 1044,
+        "DOI": "10.1177/002224378101800306",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1177/002224378101800306"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-27",
+      "type": "Paper",
+      "name": "An Experimental Study of the Relationship between Online Engagement and Advertising Effectiveness",
+      "props": {
+        "专业": "广告",
+        "年份": 2009,
+        "被引": 1029,
+        "DOI": "10.1016/j.intmar.2009.07.002",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1016/j.intmar.2009.07.002"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-28",
+      "type": "Paper",
+      "name": "Attention Capture and Transfer in Advertising: Brand, Pictorial, and Text-Size Effects",
+      "props": {
+        "专业": "广告",
+        "年份": 2004,
+        "被引": 1027,
+        "DOI": "10.1509/jmkg.68.2.36.27794",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1509/jmkg.68.2.36.27794"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-29",
+      "type": "Paper",
+      "name": "Audience Involvement in Advertising: Four Levels",
+      "props": {
+        "专业": "广告",
+        "年份": 1984,
+        "被引": 1019,
+        "DOI": "10.1086/208994",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/208994"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-30",
+      "type": "Paper",
+      "name": "Development of a Scale to Measure Consumer Skepticism Toward Advertising",
+      "props": {
+        "专业": "广告",
+        "年份": 1998,
+        "被引": 1008,
+        "DOI": "10.1207/s15327663jcp0702_03",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1207/s15327663jcp0702_03"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-31",
+      "type": "Paper",
+      "name": "Brand Positioning through Advertising in Asia, North America, and Europe: The Role of Global Consumer Culture",
+      "props": {
+        "专业": "广告",
+        "年份": 1999,
+        "被引": 1005,
+        "DOI": "10.1177/002224299906300106",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1177/002224299906300106"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-32",
+      "type": "Paper",
+      "name": "The Effects of Price-Comparison Advertising on Buyers' Perceptions of Acquisition Value, Transaction Value, and Behavioral Intentions",
+      "props": {
+        "专业": "广告",
+        "年份": 1998,
+        "被引": 997,
+        "DOI": "10.2307/1252160",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/1252160"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-33",
+      "type": "Paper",
+      "name": "Captains of Consciousness: Advertising and the Social Roots of the Consumer Culture",
+      "props": {
+        "专业": "广告",
+        "年份": 1977,
+        "被引": 972,
+        "DOI": "10.2307/1865368",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/1865368"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-34",
+      "type": "Paper",
+      "name": "Social Comparison and the Idealized Images of Advertising",
+      "props": {
+        "专业": "广告",
+        "年份": 1991,
+        "被引": 970,
+        "DOI": "10.1086/209242",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/209242"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-35",
+      "type": "Paper",
+      "name": "Priming effects of television food advertising on eating behavior.",
+      "props": {
+        "专业": "广告",
+        "年份": 2009,
+        "被引": 957,
+        "DOI": "10.1037/a0014399",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1037/a0014399"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-36",
+      "type": "Paper",
+      "name": "INTERNET USES AND GRATIFICATIONS: A Structural Equation Model of Interactive Advertising",
+      "props": {
+        "专业": "广告",
+        "年份": 2005,
+        "被引": 950,
+        "DOI": "10.1080/00913367.2005.10639191",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/00913367.2005.10639191"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-37",
+      "type": "Paper",
+      "name": "Viral Marketing or Electronic Word-of-Mouth Advertising: Examining Consumer Responses and Motivations to Pass Along Email",
+      "props": {
+        "专业": "广告",
+        "年份": 2004,
+        "被引": 943,
+        "DOI": "10.1017/s0021849904040371",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1017/s0021849904040371"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-38",
+      "type": "Paper",
+      "name": "Consumer Learning: Advertising and the Ambiguity of Product Experience",
+      "props": {
+        "专业": "广告",
+        "年份": 1986,
+        "被引": 925,
+        "DOI": "10.1086/209062",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1086/209062"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-39",
+      "type": "Paper",
+      "name": "Investigating the impact of social media advertising features on customer purchase intention",
+      "props": {
+        "专业": "广告",
+        "年份": 2018,
+        "被引": 896,
+        "DOI": "10.1016/j.ijinfomgt.2018.06.001",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1016/j.ijinfomgt.2018.06.001"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-40",
+      "type": "Paper",
+      "name": "Disclosing Instagram Influencer Advertising: The Effects of Disclosure Language on Advertising Recognition, Attitudes, and Behavioral Intent",
+      "props": {
+        "专业": "广告",
+        "年份": 2017,
+        "被引": 892,
+        "DOI": "10.1080/15252019.2017.1366885",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/15252019.2017.1366885"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-41",
+      "type": "Paper",
+      "name": "Advertising Content and Consumer Engagement on Social Media: Evidence from Facebook",
+      "props": {
+        "专业": "广告",
+        "年份": 2018,
+        "被引": 882,
+        "DOI": "10.1287/mnsc.2017.2902",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1287/mnsc.2017.2902"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-42",
+      "type": "Paper",
+      "name": "Advertising, Breadth of Ownership, and Liquidity",
+      "props": {
+        "专业": "广告",
+        "年份": 2003,
+        "被引": 861,
+        "DOI": "10.1093/rfs/hhg039",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1093/rfs/hhg039"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-43",
+      "type": "Paper",
+      "name": "The Impact of Corporate Credibility and Celebrity Credibility on Consumer Reaction to Advertisements and Brands",
+      "props": {
+        "专业": "广告",
+        "年份": 2000,
+        "被引": 1290,
+        "DOI": "10.1080/00913367.2000.10673616",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/00913367.2000.10673616"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-44",
+      "type": "Paper",
+      "name": "Information Processing from Advertisements: Toward an Integrative Framework",
+      "props": {
+        "专业": "广告",
+        "年份": 1989,
+        "被引": 1009,
+        "DOI": "10.2307/1251376",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.2307/1251376"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-45",
+      "type": "Paper",
+      "name": "Going negative : how political advertisements shrink and polarize the electorate",
+      "props": {
+        "专业": "广告",
+        "年份": 1997,
+        "被引": 837,
+        "DOI": "",
+        "来源分层": "LLM_INFERRED"
+      },
+      "sources": []
+    },
+    {
+      "id": "Paper:OA-广告-46",
+      "type": "Paper",
+      "name": "Unraveling the Personalization Paradox: The Effect of Information Collection and Trust-Building Strategies on Online Advertisement Effectiveness",
+      "props": {
+        "专业": "广告",
+        "年份": 2014,
+        "被引": 824,
+        "DOI": "10.1016/j.jretai.2014.09.005",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1016/j.jretai.2014.09.005"
+      ]
+    },
+    {
+      "id": "Paper:OA-广告-47",
+      "type": "Paper",
+      "name": "Measuring the Intrusiveness of Advertisements: Scale Development and Validation",
+      "props": {
+        "专业": "广告",
+        "年份": 2002,
+        "被引": 722,
+        "DOI": "10.1080/00913367.2002.10673665",
+        "来源分层": "DB_REFERENCE"
+      },
+      "sources": [
+        "10.1080/00913367.2002.10673665"
+      ]
+    },
+    {
+      "id": "Concept:品牌态度",
+      "type": "Concept",
+      "name": "品牌态度",
+      "props": {
+        "定义": "消费者对品牌的总评/情感倾向；广告效果的核心落点",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/208954",
+        "10.2307/3151660",
+        "10.1086/209123"
+      ]
+    },
+    {
+      "id": "Concept:态度向广告",
+      "type": "Concept",
+      "name": "态度向广告",
+      "props": {
+        "定义": "消费者对\"这条广告\"本身的态度(Aad)；是连接广告刺激与品牌态度的关键中介",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1177/002224298905300204",
+        "10.2307/3151660",
+        "10.1177/002224378602300205"
+      ]
+    },
+    {
+      "id": "Concept:卷入度",
+      "type": "Concept",
+      "name": "卷入度",
+      "props": {
+        "定义": "消费者处理信息时的卷入/涉入程度，决定其走中心路径还是边缘路径",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/208954",
+        "10.1080/00913367.1943.10673459",
+        "10.1086/208994"
+      ]
+    },
+    {
+      "id": "Concept:来源可信度",
+      "type": "Concept",
+      "name": "来源可信度",
+      "props": {
+        "定义": "信息来源(企业/名人/媒体)被感知的专业性与可信度",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/02650487.2019.1634898",
+        "10.1207/s15327663jcp0702_03",
+        "10.1080/00913367.2000.10673616"
+      ]
+    },
+    {
+      "id": "Concept:情绪诉求",
+      "type": "Concept",
+      "name": "情绪诉求",
+      "props": {
+        "定义": "以情感/情绪为诉求的广告内容与情绪转移路径",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/209123",
+        "10.1086/209124",
+        "10.1086/209063"
+      ]
+    },
+    {
+      "id": "Concept:理性诉求",
+      "type": "Concept",
+      "name": "理性诉求",
+      "props": {
+        "定义": "以功能/信息/价格对比为主要诉求的广告内容",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/260231",
+        "10.1086/261408",
+        "10.1177/002224299806200204"
+      ]
+    },
+    {
+      "id": "Concept:注意捕获",
+      "type": "Concept",
+      "name": "注意捕获",
+      "props": {
+        "定义": "广告刺激(品牌/图画/文字)对注意的捕获与转移",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1509/jmkg.68.2.36.27794",
+        "10.2307/1251376"
+      ]
+    },
+    {
+      "id": "Concept:广告效果层级",
+      "type": "Concept",
+      "name": "广告效果层级",
+      "props": {
+        "定义": "广告效果层级：注意→认知→态度→行为(AIDA式)",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/208954",
+        "10.1177/002224296102500611",
+        "10.1086/208994"
+      ]
+    },
+    {
+      "id": "Concept:互动性",
+      "type": "Concept",
+      "name": "互动性",
+      "props": {
+        "定义": "广告可被用户介入/回应的互动性程度",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/00218499.1996.12466626",
+        "10.1080/10864415.2004.11044301",
+        "10.1080/00913367.2002.10673685"
+      ]
+    },
+    {
+      "id": "Concept:代言人-品牌匹配",
+      "type": "Concept",
+      "name": "代言人-品牌匹配",
+      "props": {
+        "定义": "代言人与品牌/产品之间的匹配一致性(match-up)",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/02650487.2019.1634898",
+        "10.1080/00913367.1990.10673175"
+      ]
+    },
+    {
+      "id": "Concept:广告识别",
+      "type": "Concept",
+      "name": "广告识别",
+      "props": {
+        "定义": "受众对\"这是广告\"的识别、广告披露与广告警觉",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/15252019.2017.1366885",
+        "10.1016/j.jretai.2014.09.005"
+      ]
+    },
+    {
+      "id": "Concept:用户参与与电子口碑",
+      "type": "Concept",
+      "name": "用户参与与电子口碑",
+      "props": {
+        "定义": "用户对广告/品牌的参与、转发、口碑与互动(eWOM)",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1016/j.intmar.2009.07.002",
+        "10.1017/s0021849904040371",
+        "10.1287/mnsc.2017.2902"
+      ]
+    },
+    {
+      "id": "Concept:广告产业与消费者文化",
+      "type": "Concept",
+      "name": "广告产业与消费者文化",
+      "props": {
+        "定义": "广告作为产业形态与消费者文化塑造机制(社会/文化视角)",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.2307/2393451",
+        "10.2307/1865368",
+        "10.1177/002224299906300106"
+      ]
+    },
+    {
+      "id": "Method:内容分析法",
+      "type": "Method",
+      "name": "内容分析法",
+      "props": {
+        "说明": "对广告文本/画面/内容特征进行系统编码的定性-定量方法",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1016/0148-2963(95)00150-6",
+        "10.1080/00913367.2002.10673685",
+        "10.1287/mnsc.2017.2902"
+      ]
+    },
+    {
+      "id": "Method:受众实验",
+      "type": "Method",
+      "name": "受众实验",
+      "props": {
+        "说明": "随机/受控实验(被试)检验广告刺激对态度与行为的因果效应",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/208954",
+        "10.1080/02650487.2019.1634898",
+        "10.1080/00913367.1990.10673175",
+        "10.1080/00913367.2000.10673616"
+      ]
+    },
+    {
+      "id": "Method:眼动追踪",
+      "type": "Method",
+      "name": "眼动追踪",
+      "props": {
+        "说明": "用眼动记录注意方向与驻留，刻画广告注意捕获",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1509/jmkg.68.2.36.27794"
+      ]
+    },
+    {
+      "id": "Method:元分析与综述",
+      "type": "Method",
+      "name": "元分析与综述",
+      "props": {
+        "说明": "对大量广告实证研究做系统综述与效应量汇总",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.2307/1251999",
+        "10.1287/mnsc.2017.2902"
+      ]
+    },
+    {
+      "id": "Method:量表开发与验证",
+      "type": "Method",
+      "name": "量表开发与验证",
+      "props": {
+        "说明": "开发并验证测量广告心理构念(卷入/怀疑/侵扰)的量表",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/00913367.1943.10673459",
+        "10.1207/s15327663jcp0702_03",
+        "10.1177/002224298905300204"
+      ]
+    },
+    {
+      "id": "Method:结构方程建模",
+      "type": "Method",
+      "name": "结构方程建模",
+      "props": {
+        "说明": "用结构方程模型检验广告变量间的中介/路径关系",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/10864415.2004.11044301",
+        "10.1080/00913367.2005.10639191",
+        "10.1016/j.ijinfomgt.2018.06.001"
+      ]
+    },
+    {
+      "id": "Theory:精细加工可能性模型(ELM)",
+      "type": "Theory",
+      "name": "精细加工可能性模型(ELM)",
+      "props": {
+        "说明": "说服双路径：高卷入走中心路径(论据)，低卷入走边缘路径(线索)",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/208954",
+        "10.1080/02650487.2019.1634898"
+      ]
+    },
+    {
+      "id": "Theory:使用与满足理论",
+      "type": "Theory",
+      "name": "使用与满足理论",
+      "props": {
+        "说明": "受众主动使用媒介/广告以满足特定需求并形成态度",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/10864415.2004.11044301",
+        "10.1080/00913367.2005.10639191",
+        "10.1017/s0021849904040371"
+      ]
+    },
+    {
+      "id": "Theory:社会比较理论",
+      "type": "Theory",
+      "name": "社会比较理论",
+      "props": {
+        "说明": "消费者将广告理想化形象与自身比较，影响自我评价",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/209242"
+      ]
+    },
+    {
+      "id": "Theory:广告信息经济学(信号/搜索成本)",
+      "type": "Theory",
+      "name": "广告信息经济学(信号/搜索成本)",
+      "props": {
+        "说明": "广告与价格作为质量信号，降低信息不对称/搜索成本",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/260231",
+        "10.1086/261408",
+        "10.1086/209062"
+      ]
+    },
+    {
+      "id": "Theory:情感迁移与中介理论",
+      "type": "Theory",
+      "name": "情感迁移与中介理论",
+      "props": {
+        "说明": "广告唤起的情绪经由情感迁移/情绪中介影响品牌态度",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/209123",
+        "10.1086/209124",
+        "10.1086/209063"
+      ]
+    },
+    {
+      "id": "Finding:高卷入情境下中心路径论证比边缘线索更有效，低卷入情境下边缘线索更有效",
+      "type": "Finding",
+      "name": "高卷入情境下中心路径论证比边缘线索更有效，低卷入情境下边缘线索更有效",
+      "props": {
+        "条件": "——",
+        "结论": "高卷入/产品相关时论据质量主导；低卷入/无关时启发式线索主导",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/208954"
+      ]
+    },
+    {
+      "id": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "type": "Finding",
+      "name": "态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "props": {
+        "条件": "——",
+        "结论": "Aad是广告→品牌态度的中介变量",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.2307/3151660",
+        "10.2307/3150973",
+        "10.1177/002224378101800306"
+      ]
+    },
+    {
+      "id": "Finding:情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
+      "type": "Finding",
+      "name": "情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
+      "props": {
+        "条件": "——",
+        "结论": "广告唤起的正性情绪经中介提升品牌态度",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/209123",
+        "10.1086/209124",
+        "10.1086/209063"
+      ]
+    },
+    {
+      "id": "Finding:代言人与品牌高度匹配时名人背书说服力更强；匹配不足时美色等表面线索不足以说服",
+      "type": "Finding",
+      "name": "代言人与品牌高度匹配时名人背书说服力更强；匹配不足时美色等表面线索不足以说服",
+      "props": {
+        "条件": "——",
+        "结论": "代言人-品牌匹配度越高背书越有效",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/02650487.2019.1634898",
+        "10.1080/00913367.1990.10673175"
+      ]
+    },
+    {
+      "id": "Finding:来源可信度(企业/名人可信度)提升时受众对广告与品牌的评价更正面",
+      "type": "Finding",
+      "name": "来源可信度(企业/名人可信度)提升时受众对广告与品牌的评价更正面",
+      "props": {
+        "条件": "——",
+        "结论": "可信度↑ → 广告/品牌评价↑",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/00913367.2000.10673616"
+      ]
+    },
+    {
+      "id": "Finding:品牌、图画、文字尺寸更大更醒目时，注意捕获与记忆更强",
+      "type": "Finding",
+      "name": "品牌、图画、文字尺寸更大更醒目时，注意捕获与记忆更强",
+      "props": {
+        "条件": "——",
+        "结论": "刺激尺寸/凸显度↑ → 注意捕获与记忆↑",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1509/jmkg.68.2.36.27794"
+      ]
+    },
+    {
+      "id": "Finding:价格比较广告经由感知获取价值与交易价值的中介，提升购买意向",
+      "type": "Finding",
+      "name": "价格比较广告经由感知获取价值与交易价值的中介，提升购买意向",
+      "props": {
+        "条件": "——",
+        "结论": "价格对比 → 感知价值中介 → 购买意向↑",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1177/002224299806200204",
+        "10.2307/1252160"
+      ]
+    },
+    {
+      "id": "Finding:互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+      "type": "Finding",
+      "name": "互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+      "props": {
+        "条件": "——",
+        "结论": "互动性对广告效果为正/负取决于人与情境",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/00913367.2002.10673685",
+        "10.1080/00913367.2002.10673665"
+      ]
+    },
+    {
+      "id": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "type": "Finding",
+      "name": "社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "props": {
+        "条件": "——",
+        "结论": "社交/参与特征↑ → 用户参与与购买意向↑",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1016/j.intmar.2009.07.002",
+        "10.1080/00913367.2005.10639191",
+        "10.1016/j.ijinfomgt.2018.06.001",
+        "10.1287/mnsc.2017.2902"
+      ]
+    },
+    {
+      "id": "Finding:明确披露广告身份能提升广告识别，但可能降低广告态度(披露悖论)",
+      "type": "Finding",
+      "name": "明确披露广告身份能提升广告识别，但可能降低广告态度(披露悖论)",
+      "props": {
+        "条件": "——",
+        "结论": "披露 ↑ 识别，但可能 ↓ 态度",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1080/15252019.2017.1366885"
+      ]
+    },
+    {
+      "id": "Finding:低卷入电视广告即使无主动精细加工，曝光本身也能建立品牌认知",
+      "type": "Finding",
+      "name": "低卷入电视广告即使无主动精细加工，曝光本身也能建立品牌认知",
+      "props": {
+        "条件": "——",
+        "结论": "低卷入曝光 → 品牌认知(无需精细加工)",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1086/267335"
+      ]
+    },
+    {
+      "id": "Finding:消费者广告怀疑主义(广告警觉)提升时，广告说服效果下降",
+      "type": "Finding",
+      "name": "消费者广告怀疑主义(广告警觉)提升时，广告说服效果下降",
+      "props": {
+        "条件": "——",
+        "结论": "广告怀疑主义↑ → 说服效果↓",
+        "置信度": "LLM_INFERRED"
+      },
+      "sources": [
+        "10.1207/s15327663jcp0702_03"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-0001",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-0",
+      "target": "Concept:卷入度",
+      "props": {}
+    },
+    {
+      "id": "rel-0002",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-0",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0003",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-0",
+      "target": "Concept:广告效果层级",
+      "props": {}
+    },
+    {
+      "id": "rel-0004",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-0",
+      "target": "Theory:精细加工可能性模型(ELM)",
+      "props": {}
+    },
+    {
+      "id": "rel-0005",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-0",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0006",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-0",
+      "target": "Finding:高卷入情境下中心路径论证比边缘线索更有效，低卷入情境下边缘线索更有效",
+      "props": {}
+    },
+    {
+      "id": "rel-0007",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-1",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0008",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-1",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0009",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-1",
+      "target": "Theory:广告信息经济学(信号/搜索成本)",
+      "props": {}
+    },
+    {
+      "id": "rel-0010",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-2",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0011",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-2",
+      "target": "Theory:广告信息经济学(信号/搜索成本)",
+      "props": {}
+    },
+    {
+      "id": "rel-0012",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-3",
+      "target": "Concept:态度向广告",
+      "props": {}
+    },
+    {
+      "id": "rel-0013",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-3",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0014",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-3",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0015",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-3",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0016",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-3",
+      "target": "Method:量表开发与验证",
+      "props": {}
+    },
+    {
+      "id": "rel-0017",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-3",
+      "target": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0018",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-4",
+      "target": "Concept:广告产业与消费者文化",
+      "props": {}
+    },
+    {
+      "id": "rel-0019",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-5",
+      "target": "Concept:态度向广告",
+      "props": {}
+    },
+    {
+      "id": "rel-0020",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-5",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0021",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-5",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0022",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-5",
+      "target": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0023",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-6",
+      "target": "Concept:卷入度",
+      "props": {}
+    },
+    {
+      "id": "rel-0024",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-6",
+      "target": "Method:量表开发与验证",
+      "props": {}
+    },
+    {
+      "id": "rel-0025",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-7",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0026",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-7",
+      "target": "Theory:广告信息经济学(信号/搜索成本)",
+      "props": {}
+    },
+    {
+      "id": "rel-0027",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-8",
+      "target": "Concept:情绪诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0028",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-8",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0029",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-8",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0030",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-8",
+      "target": "Finding:情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
+      "props": {}
+    },
+    {
+      "id": "rel-0031",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-9",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0032",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-9",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0033",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-9",
+      "target": "Method:内容分析法",
+      "props": {}
+    },
+    {
+      "id": "rel-0034",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-10",
+      "target": "Concept:卷入度",
+      "props": {}
+    },
+    {
+      "id": "rel-0035",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-10",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0036",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-10",
+      "target": "Finding:低卷入电视广告即使无主动精细加工，曝光本身也能建立品牌认知",
+      "props": {}
+    },
+    {
+      "id": "rel-0037",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-11",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0038",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-11",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0039",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-11",
+      "target": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0040",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-12",
+      "target": "Concept:广告效果层级",
+      "props": {}
+    },
+    {
+      "id": "rel-0041",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-12",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0042",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-13",
+      "target": "Concept:来源可信度",
+      "props": {}
+    },
+    {
+      "id": "rel-0043",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-13",
+      "target": "Concept:代言人-品牌匹配",
+      "props": {}
+    },
+    {
+      "id": "rel-0044",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-13",
+      "target": "Theory:精细加工可能性模型(ELM)",
+      "props": {}
+    },
+    {
+      "id": "rel-0045",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-13",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0046",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-13",
+      "target": "Finding:代言人与品牌高度匹配时名人背书说服力更强；匹配不足时美色等表面线索不足以说服",
+      "props": {}
+    },
+    {
+      "id": "rel-0047",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-14",
+      "target": "Concept:态度向广告",
+      "props": {}
+    },
+    {
+      "id": "rel-0048",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-14",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0049",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-14",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0050",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-14",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0051",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-14",
+      "target": "Method:量表开发与验证",
+      "props": {}
+    },
+    {
+      "id": "rel-0052",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-14",
+      "target": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0053",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-15",
+      "target": "Concept:互动性",
+      "props": {}
+    },
+    {
+      "id": "rel-0054",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-15",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0055",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-16",
+      "target": "Concept:代言人-品牌匹配",
+      "props": {}
+    },
+    {
+      "id": "rel-0056",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-16",
+      "target": "Concept:来源可信度",
+      "props": {}
+    },
+    {
+      "id": "rel-0057",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-16",
+      "target": "Theory:精细加工可能性模型(ELM)",
+      "props": {}
+    },
+    {
+      "id": "rel-0058",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-16",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0059",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-16",
+      "target": "Finding:代言人与品牌高度匹配时名人背书说服力更强；匹配不足时美色等表面线索不足以说服",
+      "props": {}
+    },
+    {
+      "id": "rel-0060",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-17",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0061",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-17",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0062",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-17",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0063",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-17",
+      "target": "Finding:价格比较广告经由感知获取价值与交易价值的中介，提升购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0064",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-18",
+      "target": "Concept:互动性",
+      "props": {}
+    },
+    {
+      "id": "rel-0065",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-18",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0066",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-18",
+      "target": "Theory:使用与满足理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0067",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-18",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0068",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-18",
+      "target": "Method:结构方程建模",
+      "props": {}
+    },
+    {
+      "id": "rel-0069",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-19",
+      "target": "Concept:态度向广告",
+      "props": {}
+    },
+    {
+      "id": "rel-0070",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-19",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0071",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-19",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0072",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-19",
+      "target": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0073",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-20",
+      "target": "Concept:互动性",
+      "props": {}
+    },
+    {
+      "id": "rel-0074",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-20",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0075",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-20",
+      "target": "Method:内容分析法",
+      "props": {}
+    },
+    {
+      "id": "rel-0076",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-20",
+      "target": "Finding:互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+      "props": {}
+    },
+    {
+      "id": "rel-0077",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-21",
+      "target": "Concept:情绪诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0078",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-21",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0079",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-21",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0080",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-21",
+      "target": "Finding:情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
+      "props": {}
+    },
+    {
+      "id": "rel-0081",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-22",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0082",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-22",
+      "target": "Concept:广告效果层级",
+      "props": {}
+    },
+    {
+      "id": "rel-0083",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-22",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0084",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-23",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0085",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-23",
+      "target": "Theory:广告信息经济学(信号/搜索成本)",
+      "props": {}
+    },
+    {
+      "id": "rel-0086",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-24",
+      "target": "Concept:情绪诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0087",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-24",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0088",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-24",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0089",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-24",
+      "target": "Finding:情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
+      "props": {}
+    },
+    {
+      "id": "rel-0090",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-25",
+      "target": "Concept:广告效果层级",
+      "props": {}
+    },
+    {
+      "id": "rel-0091",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-26",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0092",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-26",
+      "target": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0093",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-27",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0094",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-27",
+      "target": "Concept:互动性",
+      "props": {}
+    },
+    {
+      "id": "rel-0095",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-27",
+      "target": "Theory:使用与满足理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0096",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-27",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0097",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-27",
+      "target": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0098",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-28",
+      "target": "Concept:注意捕获",
+      "props": {}
+    },
+    {
+      "id": "rel-0099",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-28",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0100",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-28",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0101",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-28",
+      "target": "Method:眼动追踪",
+      "props": {}
+    },
+    {
+      "id": "rel-0102",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-28",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0103",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-28",
+      "target": "Finding:品牌、图画、文字尺寸更大更醒目时，注意捕获与记忆更强",
+      "props": {}
+    },
+    {
+      "id": "rel-0104",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-29",
+      "target": "Concept:卷入度",
+      "props": {}
+    },
+    {
+      "id": "rel-0105",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-29",
+      "target": "Concept:广告效果层级",
+      "props": {}
+    },
+    {
+      "id": "rel-0106",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-30",
+      "target": "Concept:来源可信度",
+      "props": {}
+    },
+    {
+      "id": "rel-0107",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-30",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0108",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-30",
+      "target": "Method:量表开发与验证",
+      "props": {}
+    },
+    {
+      "id": "rel-0109",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-30",
+      "target": "Finding:消费者广告怀疑主义(广告警觉)提升时，广告说服效果下降",
+      "props": {}
+    },
+    {
+      "id": "rel-0110",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-31",
+      "target": "Concept:广告产业与消费者文化",
+      "props": {}
+    },
+    {
+      "id": "rel-0111",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-31",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0112",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-31",
+      "target": "Theory:广告信息经济学(信号/搜索成本)",
+      "props": {}
+    },
+    {
+      "id": "rel-0113",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-32",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0114",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-32",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0115",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-32",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0116",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-32",
+      "target": "Finding:价格比较广告经由感知获取价值与交易价值的中介，提升购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0117",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-33",
+      "target": "Concept:广告产业与消费者文化",
+      "props": {}
+    },
+    {
+      "id": "rel-0118",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-34",
+      "target": "Concept:情绪诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0119",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-34",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0120",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-34",
+      "target": "Theory:社会比较理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0121",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-35",
+      "target": "Concept:情绪诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0122",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-35",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0123",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-35",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0124",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-35",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0125",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-36",
+      "target": "Concept:互动性",
+      "props": {}
+    },
+    {
+      "id": "rel-0126",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-36",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0127",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-36",
+      "target": "Theory:使用与满足理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0128",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-36",
+      "target": "Method:结构方程建模",
+      "props": {}
+    },
+    {
+      "id": "rel-0129",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-36",
+      "target": "Method:内容分析法",
+      "props": {}
+    },
+    {
+      "id": "rel-0130",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-36",
+      "target": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0131",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-37",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0132",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-37",
+      "target": "Theory:使用与满足理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0133",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-37",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0134",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-37",
+      "target": "Method:内容分析法",
+      "props": {}
+    },
+    {
+      "id": "rel-0135",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-37",
+      "target": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0136",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-38",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0137",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-38",
+      "target": "Theory:广告信息经济学(信号/搜索成本)",
+      "props": {}
+    },
+    {
+      "id": "rel-0138",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-39",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0139",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-39",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0140",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-39",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0141",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-39",
+      "target": "Method:结构方程建模",
+      "props": {}
+    },
+    {
+      "id": "rel-0142",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-39",
+      "target": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0143",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-40",
+      "target": "Concept:广告识别",
+      "props": {}
+    },
+    {
+      "id": "rel-0144",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-40",
+      "target": "Concept:来源可信度",
+      "props": {}
+    },
+    {
+      "id": "rel-0145",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-40",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0146",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-40",
+      "target": "Finding:明确披露广告身份能提升广告识别，但可能降低广告态度(披露悖论)",
+      "props": {}
+    },
+    {
+      "id": "rel-0147",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-41",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0148",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-41",
+      "target": "Method:内容分析法",
+      "props": {}
+    },
+    {
+      "id": "rel-0149",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-41",
+      "target": "Method:元分析与综述",
+      "props": {}
+    },
+    {
+      "id": "rel-0150",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-41",
+      "target": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "props": {}
+    },
+    {
+      "id": "rel-0151",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-42",
+      "target": "Concept:广告产业与消费者文化",
+      "props": {}
+    },
+    {
+      "id": "rel-0152",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-42",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0153",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-42",
+      "target": "Theory:广告信息经济学(信号/搜索成本)",
+      "props": {}
+    },
+    {
+      "id": "rel-0154",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-43",
+      "target": "Concept:来源可信度",
+      "props": {}
+    },
+    {
+      "id": "rel-0155",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-43",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0156",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-43",
+      "target": "Theory:情感迁移与中介理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0157",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-43",
+      "target": "Theory:精细加工可能性模型(ELM)",
+      "props": {}
+    },
+    {
+      "id": "rel-0158",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-43",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0159",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-43",
+      "target": "Finding:来源可信度(企业/名人可信度)提升时受众对广告与品牌的评价更正面",
+      "props": {}
+    },
+    {
+      "id": "rel-0160",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-44",
+      "target": "Concept:注意捕获",
+      "props": {}
+    },
+    {
+      "id": "rel-0161",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-44",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0162",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-44",
+      "target": "Theory:精细加工可能性模型(ELM)",
+      "props": {}
+    },
+    {
+      "id": "rel-0163",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-45",
+      "target": "Concept:情绪诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0164",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-45",
+      "target": "Concept:广告效果层级",
+      "props": {}
+    },
+    {
+      "id": "rel-0165",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-45",
+      "target": "Method:内容分析法",
+      "props": {}
+    },
+    {
+      "id": "rel-0166",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-46",
+      "target": "Concept:广告识别",
+      "props": {}
+    },
+    {
+      "id": "rel-0167",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-46",
+      "target": "Concept:互动性",
+      "props": {}
+    },
+    {
+      "id": "rel-0168",
+      "type": "paper-uses",
+      "source": "Paper:OA-广告-46",
+      "target": "Theory:使用与满足理论",
+      "props": {}
+    },
+    {
+      "id": "rel-0169",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-46",
+      "target": "Method:受众实验",
+      "props": {}
+    },
+    {
+      "id": "rel-0170",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-47",
+      "target": "Concept:互动性",
+      "props": {}
+    },
+    {
+      "id": "rel-0171",
+      "type": "paper-about",
+      "source": "Paper:OA-广告-47",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0172",
+      "type": "paper-proposes",
+      "source": "Paper:OA-广告-47",
+      "target": "Method:量表开发与验证",
+      "props": {}
+    },
+    {
+      "id": "rel-0173",
+      "type": "paper-finds",
+      "source": "Paper:OA-广告-47",
+      "target": "Finding:互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+      "props": {}
+    },
+    {
+      "id": "rel-0174",
+      "type": "method-supports-rule",
+      "source": "Method:内容分析法",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0175",
+      "type": "method-supports-rule",
+      "source": "Method:内容分析法",
+      "target": "Rule:图文对位",
+      "props": {}
+    },
+    {
+      "id": "rel-0176",
+      "type": "method-supports-rule",
+      "source": "Method:内容分析法",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0177",
+      "type": "method-supports-rule",
+      "source": "Method:受众实验",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0178",
+      "type": "method-supports-rule",
+      "source": "Method:受众实验",
+      "target": "NarrationType:科普短视频",
+      "props": {}
+    },
+    {
+      "id": "rel-0179",
+      "type": "method-supports-rule",
+      "source": "Method:受众实验",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0180",
+      "type": "method-supports-rule",
+      "source": "Method:眼动追踪",
+      "target": "Rule:图文对位",
+      "props": {}
+    },
+    {
+      "id": "rel-0181",
+      "type": "method-supports-rule",
+      "source": "Method:眼动追踪",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0182",
+      "type": "method-supports-rule",
+      "source": "Method:元分析与综述",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0183",
+      "type": "method-supports-rule",
+      "source": "Method:元分析与综述",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0184",
+      "type": "method-supports-rule",
+      "source": "Method:量表开发与验证",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0185",
+      "type": "method-supports-rule",
+      "source": "Method:量表开发与验证",
+      "target": "Rule:Prompt严格统一格式",
+      "props": {}
+    },
+    {
+      "id": "rel-0186",
+      "type": "method-supports-rule",
+      "source": "Method:量表开发与验证",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0187",
+      "type": "method-supports-rule",
+      "source": "Method:结构方程建模",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0188",
+      "type": "method-supports-rule",
+      "source": "Method:结构方程建模",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0189",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:高卷入情境下中心路径论证比边缘线索更有效，低卷入情境下边缘线索更有效",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0190",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:高卷入情境下中心路径论证比边缘线索更有效，低卷入情境下边缘线索更有效",
+      "target": "NarrationType:直白规格型",
+      "props": {}
+    },
+    {
+      "id": "rel-0191",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:高卷入情境下中心路径论证比边缘线索更有效，低卷入情境下边缘线索更有效",
+      "target": "NarrationRule:语速档位",
+      "props": {}
+    },
+    {
+      "id": "rel-0192",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0193",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "target": "Rule:图文对位",
+      "props": {}
+    },
+    {
+      "id": "rel-0194",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0195",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
+      "target": "Rule:图文对位",
+      "props": {}
+    },
+    {
+      "id": "rel-0196",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0197",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:代言人与品牌高度匹配时名人背书说服力更强；匹配不足时美色等表面线索不足以说服",
+      "target": "Rule:图文对位",
+      "props": {}
+    },
+    {
+      "id": "rel-0198",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:代言人与品牌高度匹配时名人背书说服力更强；匹配不足时美色等表面线索不足以说服",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0199",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:来源可信度(企业/名人可信度)提升时受众对广告与品牌的评价更正面",
+      "target": "NarrationType:直白规格型",
+      "props": {}
+    },
+    {
+      "id": "rel-0200",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:来源可信度(企业/名人可信度)提升时受众对广告与品牌的评价更正面",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0201",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:来源可信度(企业/名人可信度)提升时受众对广告与品牌的评价更正面",
+      "target": "Rule:图文对位",
+      "props": {}
+    },
+    {
+      "id": "rel-0202",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:品牌、图画、文字尺寸更大更醒目时，注意捕获与记忆更强",
+      "target": "Rule:图文对位",
+      "props": {}
+    },
+    {
+      "id": "rel-0203",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:品牌、图画、文字尺寸更大更醒目时，注意捕获与记忆更强",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0204",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:价格比较广告经由感知获取价值与交易价值的中介，提升购买意向",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0205",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:价格比较广告经由感知获取价值与交易价值的中介，提升购买意向",
+      "target": "NarrationType:直白规格型",
+      "props": {}
+    },
+    {
+      "id": "rel-0206",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0207",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0208",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+      "target": "Rule:AI原生交付原则",
+      "props": {}
+    },
+    {
+      "id": "rel-0209",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "target": "NarrationType:科普短视频",
+      "props": {}
+    },
+    {
+      "id": "rel-0210",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "target": "Rule:图文对位",
+      "props": {}
+    },
+    {
+      "id": "rel-0211",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0212",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:明确披露广告身份能提升广告识别，但可能降低广告态度(披露悖论)",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0213",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:明确披露广告身份能提升广告识别，但可能降低广告态度(披露悖论)",
+      "target": "Rule:Prompt严格统一格式",
+      "props": {}
+    },
+    {
+      "id": "rel-0214",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:明确披露广告身份能提升广告识别，但可能降低广告态度(披露悖论)",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0215",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:低卷入电视广告即使无主动精细加工，曝光本身也能建立品牌认知",
+      "target": "NarrationRule:语速档位",
+      "props": {}
+    },
+    {
+      "id": "rel-0216",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:低卷入电视广告即使无主动精细加工，曝光本身也能建立品牌认知",
+      "target": "NarrationType:直白规格型",
+      "props": {}
+    },
+    {
+      "id": "rel-0217",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:消费者广告怀疑主义(广告警觉)提升时，广告说服效果下降",
+      "target": "Rule:概念先行",
+      "props": {}
+    },
+    {
+      "id": "rel-0218",
+      "type": "finding-evidence-for-rule",
+      "source": "Finding:消费者广告怀疑主义(广告警觉)提升时，广告说服效果下降",
+      "target": "Rule:五层检查体系",
+      "props": {}
+    },
+    {
+      "id": "rel-0219",
+      "type": "concept-related-to",
+      "source": "Concept:品牌态度",
+      "target": "Concept:态度向广告",
+      "props": {}
+    },
+    {
+      "id": "rel-0220",
+      "type": "concept-related-to",
+      "source": "Concept:态度向广告",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0221",
+      "type": "concept-related-to",
+      "source": "Concept:卷入度",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0222",
+      "type": "concept-related-to",
+      "source": "Concept:卷入度",
+      "target": "Concept:广告效果层级",
+      "props": {}
+    },
+    {
+      "id": "rel-0223",
+      "type": "concept-related-to",
+      "source": "Concept:情绪诉求",
+      "target": "Concept:理性诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0224",
+      "type": "concept-related-to",
+      "source": "Concept:理性诉求",
+      "target": "Concept:情绪诉求",
+      "props": {}
+    },
+    {
+      "id": "rel-0225",
+      "type": "concept-related-to",
+      "source": "Concept:来源可信度",
+      "target": "Concept:代言人-品牌匹配",
+      "props": {}
+    },
+    {
+      "id": "rel-0226",
+      "type": "concept-related-to",
+      "source": "Concept:代言人-品牌匹配",
+      "target": "Concept:来源可信度",
+      "props": {}
+    },
+    {
+      "id": "rel-0227",
+      "type": "concept-related-to",
+      "source": "Concept:注意捕获",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0228",
+      "type": "concept-related-to",
+      "source": "Concept:注意捕获",
+      "target": "Concept:广告效果层级",
+      "props": {}
+    },
+    {
+      "id": "rel-0229",
+      "type": "concept-related-to",
+      "source": "Concept:互动性",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0230",
+      "type": "concept-related-to",
+      "source": "Concept:用户参与与电子口碑",
+      "target": "Concept:互动性",
+      "props": {}
+    },
+    {
+      "id": "rel-0231",
+      "type": "concept-related-to",
+      "source": "Concept:用户参与与电子口碑",
+      "target": "Concept:广告识别",
+      "props": {}
+    },
+    {
+      "id": "rel-0232",
+      "type": "concept-related-to",
+      "source": "Concept:广告识别",
+      "target": "Concept:用户参与与电子口碑",
+      "props": {}
+    },
+    {
+      "id": "rel-0233",
+      "type": "concept-related-to",
+      "source": "Concept:广告识别",
+      "target": "Concept:来源可信度",
+      "props": {}
+    },
+    {
+      "id": "rel-0234",
+      "type": "concept-related-to",
+      "source": "Concept:广告效果层级",
+      "target": "Concept:品牌态度",
+      "props": {}
+    },
+    {
+      "id": "rel-0235",
+      "type": "concept-related-to",
+      "source": "Concept:广告效果层级",
+      "target": "Concept:注意捕获",
+      "props": {}
+    },
+    {
+      "id": "rel-0236",
+      "type": "concept-related-to",
+      "source": "Concept:品牌态度",
+      "target": "Concept:广告产业与消费者文化",
+      "props": {}
+    }
+  ]
+}

@@ -1,0 +1,3514 @@
+{
+ "schema_version": "1.0",
+ "pack": "papers-shangye-kg",
+ "role": "研究支撑",
+ "dom": "产业",
+ "entities": [
+  {
+   "id": "Paper:OA-商业媒体-1",
+   "type": "Paper",
+   "name": "Influencer Marketing: How Message Value and Credibility Affect Consumer Trust of Branded Content on Social Media",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2018",
+    "被引": "2677",
+    "doi": "10.1080/15252019.2018.1533501",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/15252019.2018.1533501"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-2",
+   "type": "Paper",
+   "name": "Creative Strategies in Social Media Marketing: An Exploratory Study of Branded Social Content and Consumer Engagement",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2014",
+    "被引": "1458",
+    "doi": "10.1002/mar.20761",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1002/mar.20761"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-3",
+   "type": "Paper",
+   "name": "Social Media Brand Community and Consumer Behavior: Quantifying the Relative Impact of User- and Marketer-Generated Content",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2013",
+    "被引": "1231",
+    "doi": "10.1287/isre.1120.0469",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1287/isre.1120.0469"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-4",
+   "type": "Paper",
+   "name": "How Does Brand-related User-generated Content Differ across YouTube, Facebook, and Twitter?",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2012",
+    "被引": "1036",
+    "doi": "10.1016/j.intmar.2012.01.002",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.intmar.2012.01.002"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-5",
+   "type": "Paper",
+   "name": "Factors influencing popularity of branded content in Facebook fan pages",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2014",
+    "被引": "555",
+    "doi": "10.1016/j.emj.2014.05.001",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.emj.2014.05.001"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-6",
+   "type": "Paper",
+   "name": "Measuring Consumers' Engagement With Brand-Related Social-Media Content",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2016",
+    "被引": "527",
+    "doi": "10.2501/jar-2016-004",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.2501/jar-2016-004"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-7",
+   "type": "Paper",
+   "name": "Power of consumers using social media: Examining the influences of brand-related user-generated content on Facebook",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2016",
+    "被引": "488",
+    "doi": "10.1016/j.chb.2015.12.047",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.chb.2015.12.047"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-8",
+   "type": "Paper",
+   "name": "What Drives Virality (Sharing) of Online Digital Content? The Critical Role of Information, Emotion, and Brand Prominence",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "485",
+    "doi": "10.1177/0022242919841034",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1177/0022242919841034"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-9",
+   "type": "Paper",
+   "name": "Cutting through Content Clutter: How Speech and Image Acts Drive Consumer Sharing of Social Media Brand Messages",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2018",
+    "被引": "328",
+    "doi": "10.1093/jcr/ucy032",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1093/jcr/ucy032"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-10",
+   "type": "Paper",
+   "name": "Bridging the online offline gap: Assessing the impact of brands' social network content quality on brand awareness and purchase intention",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "298",
+    "doi": "10.1016/j.jretconser.2019.101966",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jretconser.2019.101966"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-11",
+   "type": "Paper",
+   "name": "Fake News, Real Problems for Brands: The Impact of Content Truthfulness and Source Credibility on consumers' Behavioral Intentions toward the Advertised Brands",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "272",
+    "doi": "10.1016/j.intmar.2018.09.001",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.intmar.2018.09.001"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-12",
+   "type": "Paper",
+   "name": "\"I follow what you post!\": The role of social media influencers' content characteristics in consumers' online brand-related activities (COBRAs)",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2022",
+    "被引": "264",
+    "doi": "10.1016/j.jretconser.2022.102940",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jretconser.2022.102940"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-13",
+   "type": "Paper",
+   "name": "Analyzing destination branding and image from online sources: A web content mining approach",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2015",
+    "被引": "261",
+    "doi": "10.1016/j.jbusres.2015.01.011",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2015.01.011"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-14",
+   "type": "Paper",
+   "name": "Do you create your content yourself? Using generative artificial intelligence for social media content creation diminishes perceived brand authenticity",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2024",
+    "被引": "247",
+    "doi": "10.1016/j.jretconser.2024.103790",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jretconser.2024.103790"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-15",
+   "type": "Paper",
+   "name": "An Investigation of Brand-Related User-Generated Content on Twitter",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2017",
+    "被引": "243",
+    "doi": "10.1080/00913367.2017.1297273",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/00913367.2017.1297273"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-16",
+   "type": "Paper",
+   "name": "Tourist-created content: rethinking destination branding",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2011",
+    "被引": "233",
+    "doi": "10.1108/17506181111156989",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1108/17506181111156989"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-17",
+   "type": "Paper",
+   "name": "Social Media, Social Me: A Content Analysis of Beauty Companies' Use of Facebook in Marketing and Branding",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2013",
+    "被引": "228",
+    "doi": "10.1080/10496491.2013.829160",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10496491.2013.829160"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-18",
+   "type": "Paper",
+   "name": "Something social, something entertaining? How digital content marketing augments consumer experience and brand loyalty",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2020",
+    "被引": "225",
+    "doi": "10.1080/02650487.2020.1788311",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/02650487.2020.1788311"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-19",
+   "type": "Paper",
+   "name": "Role of content strategy in social media brand communities: a case of higher education institutes in India",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2013",
+    "被引": "216",
+    "doi": "10.1108/10610421311298687",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1108/10610421311298687"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-20",
+   "type": "Paper",
+   "name": "Branding with social media: User gratifications, usage patterns, and brand message content strategies",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2016",
+    "被引": "214",
+    "doi": "10.1016/j.chb.2016.06.022",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.chb.2016.06.022"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-21",
+   "type": "Paper",
+   "name": "Social media content aesthetic quality and customer engagement: The mediating role of entertainment and impacts on brand love and loyalty",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2023",
+    "被引": "210",
+    "doi": "10.1016/j.jbusres.2023.113778",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2023.113778"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-22",
+   "type": "Paper",
+   "name": "User generated content presenting brands on social media increases young adults' purchase intention",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "209",
+    "doi": "10.1080/02650487.2019.1596447",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/02650487.2019.1596447"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-23",
+   "type": "Paper",
+   "name": "At the movies, on the Web: An investigation of the effects of entertaining and interactive Web content on site and brand evaluations",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2003",
+    "被引": "206",
+    "doi": "10.1002/dir.10064",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1002/dir.10064"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-24",
+   "type": "Paper",
+   "name": "Investigating the Relationship Between the Content of Online Word of Mouth, Advertising, and Brand Performance",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2014",
+    "被引": "204",
+    "doi": "10.1287/mksc.2013.0820",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1287/mksc.2013.0820"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-25",
+   "type": "Paper",
+   "name": "Content strategies and audience response on Facebook brand pages",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2015",
+    "被引": "201",
+    "doi": "10.1108/mip-07-2014-0135",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1108/mip-07-2014-0135"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-26",
+   "type": "Paper",
+   "name": "Netflix, Amazon, and branded television content in subscription video on-demand portals",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2017",
+    "被引": "191",
+    "doi": "10.1177/0163443717736118",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1177/0163443717736118"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-27",
+   "type": "Paper",
+   "name": "Consumer generated content - trends and implications for branding.",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2006",
+    "被引": "188",
+    "doi": "",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-28",
+   "type": "Paper",
+   "name": "Using Twitter for Promotion and Branding: A Content Analysis of Local Television Twitter Sites",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2011",
+    "被引": "187",
+    "doi": "10.1080/08838151.2011.570824",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/08838151.2011.570824"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-29",
+   "type": "Paper",
+   "name": "Impact of Brand Awareness and Social Media Content Marketing on Consumer Purchase Decision",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "169",
+    "doi": "10.31580/jpvai.v2i2.896",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.31580/jpvai.v2i2.896"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-30",
+   "type": "Paper",
+   "name": "Analyzing media types and content orientations in Facebook for global brands",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2015",
+    "被引": "160",
+    "doi": "10.1108/jrim-05-2014-0023",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1108/jrim-05-2014-0023"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-31",
+   "type": "Paper",
+   "name": "Internet Food Marketing Strategies Aimed at Children and Adolescents: A Content Analysis of Food and Beverage Brand Web Sites",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2006",
+    "被引": "160",
+    "doi": "10.1016/j.jada.2006.06.014",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jada.2006.06.014"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-32",
+   "type": "Paper",
+   "name": "Content is king - But who is the king of kings? The effect of content marketing, sponsored content & user-generated content on brand responses",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "157",
+    "doi": "10.1016/j.chb.2019.02.006",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.chb.2019.02.006"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-33",
+   "type": "Paper",
+   "name": "The Impact of Social Media Content Marketing (SMCM) towards Brand Health",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2016",
+    "被引": "156",
+    "doi": "10.1016/s2212-5671(16)30133-2",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/s2212-5671(16)30133-2"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-34",
+   "type": "Paper",
+   "name": "Using Video to Build an Organization's Identity and Brand: A Content Analysis of Nonprofit Organizations' YouTube Videos",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2011",
+    "被引": "154",
+    "doi": "10.1080/10495142.2011.594779",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10495142.2011.594779"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-35",
+   "type": "Paper",
+   "name": "Consumer engagement within retail communication channels: an examination of online brand communities and digital content marketing initiatives",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2021",
+    "被引": "149",
+    "doi": "10.1108/ejm-01-2018-0007",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1108/ejm-01-2018-0007"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-36",
+   "type": "Paper",
+   "name": "The mediating effect of brand image on the relationships between social media advertising content, sales promotion content and behaviuoral intention",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "131",
+    "doi": "10.1108/jrim-01-2018-0004",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1108/jrim-01-2018-0004"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-37",
+   "type": "Paper",
+   "name": "What Motivates Consumers to Re-Tweet Brand Content?",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2015",
+    "被引": "130",
+    "doi": "10.2501/jar-2015-009",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.2501/jar-2015-009"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-38",
+   "type": "Paper",
+   "name": "How does brand-related user-generated content differ across social media? Evidence reloaded",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2018",
+    "被引": "125",
+    "doi": "10.1016/j.jbusres.2018.11.055",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2018.11.055"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-39",
+   "type": "Paper",
+   "name": "Generating Business Intelligence Through Social Media Analytics: Measuring Brand Personality with Consumer-, Employee-, and Firm-Generated Content",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "120",
+    "doi": "10.1080/07421222.2019.1628908",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/07421222.2019.1628908"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-40",
+   "type": "Paper",
+   "name": "Let's give them something to talk about: Global brands' use of visual content to drive engagement and build relationships",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2018",
+    "被引": "115",
+    "doi": "10.1016/j.pubrev.2018.04.010",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.pubrev.2018.04.010"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-41",
+   "type": "Paper",
+   "name": "Antecedents of consumers' engagement with brand-related content on social media",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2019",
+    "被引": "113",
+    "doi": "10.1108/mip-04-2018-0130",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1108/mip-04-2018-0130"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-42",
+   "type": "Paper",
+   "name": "Advertising Content When Brand Choice is a Signal",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "1990",
+    "被引": "110",
+    "doi": "10.1086/296485",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1086/296485"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-43",
+   "type": "Paper",
+   "name": "Evaluating Facebook brand content popularity for service versus goods offerings",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2017",
+    "被引": "109",
+    "doi": "10.1016/j.jbusres.2017.06.003",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2017.06.003"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-44",
+   "type": "Paper",
+   "name": "Betrayed by the Buzz? Covert Content and Consumer-Brand Relationships",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2009",
+    "被引": "109",
+    "doi": "10.1509/jppm.28.2.212",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1509/jppm.28.2.212"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-45",
+   "type": "Paper",
+   "name": "Extending the luxury experience to social media - User-Generated Content co-creation in a branded event",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2018",
+    "被引": "108",
+    "doi": "10.1016/j.jbusres.2018.10.030",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2018.10.030"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-46",
+   "type": "Paper",
+   "name": "Like the ad or the brand? Marketing stimulates different electronic word-of-mouth content to drive online and offline performance",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2016",
+    "被引": "108",
+    "doi": "10.1016/j.ijresmar.2016.01.005",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.ijresmar.2016.01.005"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-47",
+   "type": "Paper",
+   "name": "Between global and glocal: content analysis of the Chinese Web Sites of the 100 top global brands",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2004",
+    "被引": "107",
+    "doi": "10.1016/j.pubrev.2004.04.003",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.pubrev.2004.04.003"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-48",
+   "type": "Paper",
+   "name": "How Advergame Content Influences Explicit and Implicit Brand Attitudes: When Violence Spills Over",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2013",
+    "被引": "105",
+    "doi": "10.1080/00913367.2013.774590",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1080/00913367.2013.774590"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Paper:OA-商业媒体-49",
+   "type": "Paper",
+   "name": "Female athletes, women's sport, and the sport media commercial complex: Have we really \"come a long way, baby\"?",
+   "props": {
+    "专业": "商业媒体",
+    "年份": "2014",
+    "被引": "391",
+    "doi": "10.1016/j.smr.2014.05.001",
+    "置信度": "DB_REFERENCE",
+    "dom": "产业",
+    "领域": "商业媒体/品牌内容/内容营销"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.smr.2014.05.001"
+   ],
+   "domains": [
+    "产业",
+    "商业媒体"
+   ]
+  },
+  {
+   "id": "Concept:品牌内容",
+   "type": "Concept",
+   "name": "品牌内容(Branded Content)",
+   "props": {
+    "定义": "品牌产出并承载品牌信息的内容(文字/图/视频/广告游戏/赞助内容), 区别于纯广告; 目标是建立品牌认知、喜爱与转化",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1080/15252019.2018.1533501",
+    "https://doi.org/10.1016/j.emj.2014.05.001",
+    "https://doi.org/10.1093/jcr/ucy032",
+    "https://doi.org/10.1016/j.intmar.2018.09.001",
+    "https://doi.org/10.1108/17506181111156989",
+    "https://doi.org/10.1177/0163443717736118",
+    "https://doi.org/10.1080/08838151.2011.570824",
+    "https://doi.org/10.1108/jrim-05-2014-0023",
+    "https://doi.org/10.1016/j.jada.2006.06.014",
+    "https://doi.org/10.1080/10495142.2011.594779",
+    "https://doi.org/10.1108/jrim-01-2018-0004",
+    "https://doi.org/10.2501/jar-2015-009",
+    "https://doi.org/10.1016/j.pubrev.2018.04.010",
+    "https://doi.org/10.1108/mip-04-2018-0130",
+    "https://doi.org/10.1086/296485",
+    "https://doi.org/10.1016/j.jbusres.2017.06.003",
+    "https://doi.org/10.1509/jppm.28.2.212",
+    "https://doi.org/10.1016/j.jbusres.2018.10.030",
+    "https://doi.org/10.1016/j.pubrev.2004.04.003",
+    "https://doi.org/10.1080/00913367.2013.774590",
+    "https://doi.org/10.1016/j.smr.2014.05.001"
+   ]
+  },
+  {
+   "id": "Concept:用户生成内容UGC",
+   "type": "Concept",
+   "name": "用户生成内容(UGC)",
+   "props": {
+    "定义": "由消费者/用户产出的与品牌相关的内容(点评/晒单/共创/转发); 具备天然真实感与口碑属性",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1287/isre.1120.0469",
+    "https://doi.org/10.1016/j.intmar.2012.01.002",
+    "https://doi.org/10.1016/j.chb.2015.12.047",
+    "https://doi.org/10.1016/j.jbusres.2015.01.011",
+    "https://doi.org/10.1080/00913367.2017.1297273",
+    "https://doi.org/10.1108/17506181111156989",
+    "https://doi.org/10.1080/02650487.2019.1596447",
+    "https://doi.org/10.1016/j.chb.2019.02.006",
+    "https://doi.org/10.1016/j.jbusres.2018.11.055",
+    "https://doi.org/10.1016/j.jbusres.2018.10.030"
+   ]
+  },
+  {
+   "id": "Concept:营销者生成内容MGC",
+   "type": "Concept",
+   "name": "营销者生成内容(MGC)",
+   "props": {
+    "定义": "由品牌方/营销者制作发布的内容; 可控性强但真实性/信任感低于UGC",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1287/isre.1120.0469",
+    "https://doi.org/10.1016/j.chb.2019.02.006"
+   ]
+  },
+  {
+   "id": "Concept:内容营销",
+   "type": "Concept",
+   "name": "内容营销(Content Marketing)",
+   "props": {
+    "定义": "以持续生产对受众有价值/有趣的内容来吸引、留存并转化受众, 而非直接推销; 核心是内容价值而非广告叫卖",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1002/mar.20761",
+    "https://doi.org/10.1016/j.jretconser.2019.101966",
+    "https://doi.org/10.1016/j.jbusres.2015.01.011",
+    "https://doi.org/10.1016/j.jretconser.2024.103790",
+    "https://doi.org/10.1080/10496491.2013.829160",
+    "https://doi.org/10.1080/02650487.2020.1788311",
+    "https://doi.org/10.1108/10610421311298687",
+    "https://doi.org/10.1016/j.chb.2016.06.022",
+    "https://doi.org/10.1016/j.jbusres.2023.113778",
+    "https://doi.org/10.1002/dir.10064",
+    "https://doi.org/10.1287/mksc.2013.0820",
+    "https://doi.org/10.1108/mip-07-2014-0135",
+    "https://doi.org/10.31580/jpvai.v2i2.896",
+    "https://doi.org/10.1016/j.jada.2006.06.014",
+    "https://doi.org/10.1016/j.chb.2019.02.006",
+    "https://doi.org/10.1016/s2212-5671(16)30133-2",
+    "https://doi.org/10.1080/10495142.2011.594779",
+    "https://doi.org/10.1108/ejm-01-2018-0007",
+    "https://doi.org/10.1108/jrim-01-2018-0004",
+    "https://doi.org/10.1080/07421222.2019.1628908"
+   ]
+  },
+  {
+   "id": "Concept:网红营销",
+   "type": "Concept",
+   "name": "网红营销(Influencer Marketing)",
+   "props": {
+    "定义": "借力社交媒体意见领袖/网红的内容与信任背书为品牌内容带来可信度与触达",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1080/15252019.2018.1533501",
+    "https://doi.org/10.1016/j.jretconser.2022.102940"
+   ]
+  },
+  {
+   "id": "Concept:品牌社区",
+   "type": "Concept",
+   "name": "品牌社区(Brand Community)",
+   "props": {
+    "定义": "围绕品牌形成的用户聚合/互动场域(品牌主页/粉丝页/社区), 是内容营销与参与的关键场景",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1287/isre.1120.0469",
+    "https://doi.org/10.1108/10610421311298687",
+    "https://doi.org/10.1108/ejm-01-2018-0007"
+   ]
+  },
+  {
+   "id": "Concept:品牌内容参与度",
+   "type": "Concept",
+   "name": "品牌内容参与度(Engagement)",
+   "props": {
+    "定义": "用户对品牌内容产生的点赞/评论/分享/转发/收藏等行为投入程度, 是内容效果的核心度量",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1002/mar.20761",
+    "https://doi.org/10.1287/isre.1120.0469",
+    "https://doi.org/10.1016/j.emj.2014.05.001",
+    "https://doi.org/10.2501/jar-2016-004",
+    "https://doi.org/10.1016/j.jretconser.2019.101966",
+    "https://doi.org/10.1016/j.jretconser.2022.102940",
+    "https://doi.org/10.1080/02650487.2020.1788311",
+    "https://doi.org/10.1016/j.chb.2016.06.022",
+    "https://doi.org/10.1002/dir.10064",
+    "https://doi.org/10.1108/mip-07-2014-0135",
+    "https://doi.org/10.31580/jpvai.v2i2.896",
+    "https://doi.org/10.1016/j.chb.2019.02.006",
+    "https://doi.org/10.1016/s2212-5671(16)30133-2",
+    "https://doi.org/10.1108/ejm-01-2018-0007",
+    "https://doi.org/10.1080/07421222.2019.1628908",
+    "https://doi.org/10.1016/j.pubrev.2018.04.010",
+    "https://doi.org/10.1108/mip-04-2018-0130",
+    "https://doi.org/10.1016/j.jbusres.2017.06.003",
+    "https://doi.org/10.1080/00913367.2013.774590"
+   ]
+  },
+  {
+   "id": "Concept:电子口碑eWOM",
+   "type": "Concept",
+   "name": "电子口碑(eWOM)",
+   "props": {
+    "定义": "通过社交媒体传播的品牌推荐/讨论/口碑内容, 影响他人态度与购买决策",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.chb.2015.12.047",
+    "https://doi.org/10.1016/j.chb.2016.06.022",
+    "https://doi.org/10.1080/02650487.2019.1596447",
+    "https://doi.org/10.1287/mksc.2013.0820",
+    "https://doi.org/10.1016/j.jbusres.2018.10.030",
+    "https://doi.org/10.1016/j.ijresmar.2016.01.005"
+   ]
+  },
+  {
+   "id": "Concept:内容病毒传播",
+   "type": "Concept",
+   "name": "内容病毒传播/分享(Virality)",
+   "props": {
+    "定义": "内容被用户主动转发扩散的程度; 由信息价值、情绪唤醒与品牌显著度等因素驱动",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1177/0022242919841034",
+    "https://doi.org/10.1093/jcr/ucy032",
+    "https://doi.org/10.2501/jar-2015-009",
+    "https://doi.org/10.1016/j.ijresmar.2016.01.005"
+   ]
+  },
+  {
+   "id": "Concept:品牌-内容契合度",
+   "type": "Concept",
+   "name": "品牌-内容契合度(Brand-Content Fit)",
+   "props": {
+    "定义": "内容/代言/场景与品牌(或产品属性)的匹配程度, 匹配高则说服与信任更强",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1093/jcr/ucy032",
+    "https://doi.org/10.1080/10496491.2013.829160",
+    "https://doi.org/10.1177/0163443717736118",
+    "https://doi.org/10.1016/j.pubrev.2018.04.010",
+    "https://doi.org/10.1509/jppm.28.2.212"
+   ]
+  },
+  {
+   "id": "Concept:来源可信度",
+   "type": "Concept",
+   "name": "来源可信度(Source Credibility)",
+   "props": {
+    "定义": "内容信息源(品牌/网红/媒体)被感知的专业性与可信程度, 决定说服效果",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1080/15252019.2018.1533501",
+    "https://doi.org/10.1016/j.intmar.2018.09.001",
+    "https://doi.org/10.1086/296485",
+    "https://doi.org/10.1016/j.smr.2014.05.001"
+   ]
+  },
+  {
+   "id": "Concept:品牌真实性",
+   "type": "Concept",
+   "name": "品牌真实性(Brand Authenticity)",
+   "props": {
+    "定义": "品牌及内容被感知为真诚/真实/不伪装的程度; 虚假或AI痕迹会削弱真实性",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.intmar.2018.09.001",
+    "https://doi.org/10.1016/j.jretconser.2024.103790",
+    "https://doi.org/10.1509/jppm.28.2.212"
+   ]
+  },
+  {
+   "id": "Concept:内容美学质量",
+   "type": "Concept",
+   "name": "内容美学质量(Aesthetic Quality)",
+   "props": {
+    "定义": "内容的视觉/呈现美感受(构图/色彩/音画)的品质, 通过娱乐中介影响参与与忠诚",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1080/02650487.2020.1788311",
+    "https://doi.org/10.1016/j.jbusres.2023.113778"
+   ]
+  },
+  {
+   "id": "Concept:平台差异",
+   "type": "Concept",
+   "name": "平台差异(Platform Differences)",
+   "props": {
+    "定义": "不同社媒平台(YouTube/Facebook/Twitter/抖音)的内容形态、UGC特征与参与机制不同, 内容须随平台适配",
+    "置信度": "LLM_INFERRED",
+    "来源": "商业媒体文献",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.intmar.2012.01.002",
+    "https://doi.org/10.1080/00913367.2017.1297273",
+    "https://doi.org/10.1080/08838151.2011.570824",
+    "https://doi.org/10.1108/jrim-05-2014-0023",
+    "https://doi.org/10.1016/j.jbusres.2018.11.055",
+    "https://doi.org/10.1016/j.pubrev.2004.04.003"
+   ]
+  },
+  {
+   "id": "Method:内容分析法",
+   "type": "Method",
+   "name": "内容分析法(Content Analysis)",
+   "props": {
+    "范式": "对品牌/用户生成内容进行编码、分类与统计, 提取内容策略、主题与形态规律",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1002/mar.20761",
+    "https://doi.org/10.1016/j.intmar.2012.01.002",
+    "https://doi.org/10.1016/j.emj.2014.05.001",
+    "https://doi.org/10.1080/00913367.2017.1297273",
+    "https://doi.org/10.1108/17506181111156989",
+    "https://doi.org/10.1080/10496491.2013.829160",
+    "https://doi.org/10.1108/10610421311298687",
+    "https://doi.org/10.1108/mip-07-2014-0135",
+    "https://doi.org/10.1177/0163443717736118",
+    "https://doi.org/10.1080/08838151.2011.570824",
+    "https://doi.org/10.1108/jrim-05-2014-0023",
+    "https://doi.org/10.1016/j.jada.2006.06.014",
+    "https://doi.org/10.1080/10495142.2011.594779",
+    "https://doi.org/10.1016/j.jbusres.2018.11.055",
+    "https://doi.org/10.1016/j.pubrev.2018.04.010",
+    "https://doi.org/10.1016/j.jbusres.2017.06.003",
+    "https://doi.org/10.1016/j.jbusres.2018.10.030",
+    "https://doi.org/10.1016/j.pubrev.2004.04.003",
+    "https://doi.org/10.1016/j.smr.2014.05.001"
+   ]
+  },
+  {
+   "id": "Method:问卷调查与结构方程模型",
+   "type": "Method",
+   "name": "问卷调查与结构方程模型(Survey-SEM)",
+   "props": {
+    "范式": "用问卷量表测量受众感知/态度并用SEM检验变量间因果关系与中介",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1080/15252019.2018.1533501",
+    "https://doi.org/10.2501/jar-2016-004",
+    "https://doi.org/10.1016/j.chb.2015.12.047",
+    "https://doi.org/10.1016/j.jretconser.2019.101966",
+    "https://doi.org/10.1016/j.jretconser.2022.102940",
+    "https://doi.org/10.1080/02650487.2020.1788311",
+    "https://doi.org/10.1016/j.chb.2016.06.022",
+    "https://doi.org/10.1016/j.jbusres.2023.113778",
+    "https://doi.org/10.31580/jpvai.v2i2.896",
+    "https://doi.org/10.1016/j.chb.2019.02.006",
+    "https://doi.org/10.1016/s2212-5671(16)30133-2",
+    "https://doi.org/10.1108/ejm-01-2018-0007",
+    "https://doi.org/10.1108/jrim-01-2018-0004",
+    "https://doi.org/10.2501/jar-2015-009",
+    "https://doi.org/10.1108/mip-04-2018-0130"
+   ]
+  },
+  {
+   "id": "Method:随机实验法",
+   "type": "Method",
+   "name": "随机实验法(Experiment)",
+   "props": {
+    "范式": "随机分组操纵自变量(内容/标注/来源)以分离因果效应",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1093/jcr/ucy032",
+    "https://doi.org/10.1016/j.intmar.2018.09.001",
+    "https://doi.org/10.1016/j.jretconser.2024.103790",
+    "https://doi.org/10.1080/02650487.2019.1596447",
+    "https://doi.org/10.1002/dir.10064",
+    "https://doi.org/10.1509/jppm.28.2.212",
+    "https://doi.org/10.1080/00913367.2013.774590"
+   ]
+  },
+  {
+   "id": "Method:网络文本挖掘与语义分析",
+   "type": "Method",
+   "name": "网络文本挖掘与语义分析(Web Content Mining/NLP)",
+   "props": {
+    "范式": "抓取并挖掘海量线上文本/评论, 识别内容特征、话题与情绪",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2015.01.011",
+    "https://doi.org/10.1080/07421222.2019.1628908"
+   ]
+  },
+  {
+   "id": "Method:计量与网络建模",
+   "type": "Method",
+   "name": "计量与网络建模(Econometric & Network Modeling)",
+   "props": {
+    "范式": "用面板回归/经济信号模型/网络结构量化内容对品牌表现的贡献",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1287/isre.1120.0469",
+    "https://doi.org/10.1177/0022242919841034",
+    "https://doi.org/10.1287/mksc.2013.0820",
+    "https://doi.org/10.1086/296485",
+    "https://doi.org/10.1016/j.ijresmar.2016.01.005"
+   ]
+  },
+  {
+   "id": "Finding:信息价值与来源可信度→品牌内容信任",
+   "type": "Finding",
+   "name": "信息价值与来源可信度→品牌内容信任",
+   "props": {
+    "可操作结论": "信息价值高与来源可信度高→消费者对品牌内容信任上升、转发意愿提升; 网红内容要'给干货+可信'而非硬广",
+    "条件→效应": "信息价值高与来源可信度高→消费者对品牌内容信任上升、转发意愿提升; 网红内容要'给干货+可信'而非硬广",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1080/15252019.2018.1533501",
+    "https://doi.org/10.1016/j.jretconser.2022.102940"
+   ]
+  },
+  {
+   "id": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "Finding",
+   "name": "UGC强于MGC→品牌社区参与与购买意向",
+   "props": {
+    "可操作结论": "在品牌社区中, 用户生成内容(UGC)相对营销者生成内容(MGC)更能提升参与与购买意向; 应策划/放大UGC而非纯品牌自产",
+    "条件→效应": "在品牌社区中, 用户生成内容(UGC)相对营销者生成内容(MGC)更能提升参与与购买意向; 应策划/放大UGC而非纯品牌自产",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1287/isre.1120.0469",
+    "https://doi.org/10.1080/02650487.2019.1596447"
+   ]
+  },
+  {
+   "id": "Finding:信息价值与高唤醒情绪→分享升、品牌显著→分享降",
+   "type": "Finding",
+   "name": "信息价值与高唤醒情绪→分享升、品牌显著→分享降",
+   "props": {
+    "可操作结论": "内容信息价值高、情绪唤醒强(兴奋/愤怒)→分享(病毒传播)上升; 品牌显著度过高→分享下降; 做爆款先给信息与情绪, 弱化赤裸品牌露出",
+    "条件→效应": "内容信息价值高、情绪唤醒强(兴奋/愤怒)→分享(病毒传播)上升; 品牌显著度过高→分享下降; 做爆款先给信息与情绪, 弱化赤裸品牌露出",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1177/0022242919841034",
+    "https://doi.org/10.1016/j.ijresmar.2016.01.005"
+   ]
+  },
+  {
+   "id": "Finding:内容真实与来源可信→品牌行为意向升、虚假→信任降",
+   "type": "Finding",
+   "name": "内容真实与来源可信→品牌行为意向升、虚假→信任降",
+   "props": {
+    "可操作结论": "内容真实度高+来源可信→对广告品牌行为意向上升; 虚假新闻/伪内容→信任与意向双降; 必须保真并标注来源",
+    "条件→效应": "内容真实度高+来源可信→对广告品牌行为意向上升; 虚假新闻/伪内容→信任与意向双降; 必须保真并标注来源",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.intmar.2018.09.001"
+   ]
+  },
+  {
+   "id": "Finding:网红内容特征→COBRA参与升",
+   "type": "Finding",
+   "name": "网红内容特征→COBRA参与升",
+   "props": {
+    "可操作结论": "网红内容的实用性/趣味性/可信度特征→消费者品牌相关活动(COBRA, 如观看/点赞/分享)参与上升; 选品与内容围绕有用与有趣",
+    "条件→效应": "网红内容的实用性/趣味性/可信度特征→消费者品牌相关活动(COBRA, 如观看/点赞/分享)参与上升; 选品与内容围绕有用与有趣",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jretconser.2022.102940"
+   ]
+  },
+  {
+   "id": "Finding:娱乐性与美学→品牌喜爱忠诚升(经娱乐中介)",
+   "type": "Finding",
+   "name": "娱乐性与美学→品牌喜爱忠诚升(经娱乐中介)",
+   "props": {
+    "可操作结论": "内容的美学质量与娱乐性→经由娱乐中介带来品牌喜爱与忠诚上升; 科普也要'好看+好玩', 视觉美学能当参与杠杆",
+    "条件→效应": "内容的美学质量与娱乐性→经由娱乐中介带来品牌喜爱与忠诚上升; 科普也要'好看+好玩', 视觉美学能当参与杠杆",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2023.113778",
+    "https://doi.org/10.1080/02650487.2020.1788311",
+    "https://doi.org/10.1002/dir.10064"
+   ]
+  },
+  {
+   "id": "Finding:言语与图像协同→穿透内容杂音促分享",
+   "type": "Finding",
+   "name": "言语与图像协同→穿透内容杂音促分享",
+   "props": {
+    "可操作结论": "言语(口播)与图像(画面)协同互补的'行为/动作'表达→穿透信息杂音、显著提升分享; 口播与画面必须互相支撑而非重复",
+    "条件→效应": "言语(口播)与图像(画面)协同互补的'行为/动作'表达→穿透信息杂音、显著提升分享; 口播与画面必须互相支撑而非重复",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1093/jcr/ucy032"
+   ]
+  },
+  {
+   "id": "Finding:品牌内容形态随平台适配→参与升",
+   "type": "Finding",
+   "name": "品牌内容形态随平台适配→参与升",
+   "props": {
+    "可操作结论": "品牌内容形态需随平台适配(YouTube重视频叙事、Facebook重图文互动、Twitter重短文本)才更有效; 同一片须分平台定裁剪与文案",
+    "条件→效应": "品牌内容形态需随平台适配(YouTube重视频叙事、Facebook重图文互动、Twitter重短文本)才更有效; 同一片须分平台定裁剪与文案",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.intmar.2012.01.002",
+    "https://doi.org/10.1080/00913367.2017.1297273",
+    "https://doi.org/10.1080/07421222.2019.1628908",
+    "https://doi.org/10.1080/08838151.2011.570824"
+   ]
+  },
+  {
+   "id": "Finding:AI生成内容→感知品牌真实性降",
+   "type": "Finding",
+   "name": "AI生成内容→感知品牌真实性降",
+   "props": {
+    "可操作结论": "用生成式AI制作社媒内容→感知品牌真实性显著下降; AI原生内容需保留真实素材锚点与人工痕迹以护真实性",
+    "条件→效应": "用生成式AI制作社媒内容→感知品牌真实性显著下降; AI原生内容需保留真实素材锚点与人工痕迹以护真实性",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jretconser.2024.103790"
+   ]
+  },
+  {
+   "id": "Finding:品牌社交内容质量→品牌意识与购买意向升",
+   "type": "Finding",
+   "name": "品牌社交内容质量→品牌意识与购买意向升",
+   "props": {
+    "可操作结论": "品牌社交网络内容质量高→品牌意识与购买意向上升; 内容质量是能跨线上线下的硬杠杆",
+    "条件→效应": "品牌社交网络内容质量高→品牌意识与购买意向上升; 内容质量是能跨线上线下的硬杠杆",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jretconser.2019.101966"
+   ]
+  },
+  {
+   "id": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "Finding",
+   "name": "创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "props": {
+    "可操作结论": "信息性/娱乐性等创意策略→内容营销带来更好体验反馈与品牌忠诚; 内容要有'信息价值+娱乐价值'双引擎",
+    "条件→效应": "信息性/娱乐性等创意策略→内容营销带来更好体验反馈与品牌忠诚; 内容要有'信息价值+娱乐价值'双引擎",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1002/mar.20761",
+    "https://doi.org/10.1016/j.chb.2016.06.022"
+   ]
+  },
+  {
+   "id": "Finding:隐性内容被识破→消费者-品牌关系受损",
+   "type": "Finding",
+   "name": "隐性内容被识破→消费者-品牌关系受损",
+   "props": {
+    "可操作结论": "未标注的隐性/伪装内容一旦被识破(触发说服知识)→消费者-品牌关系受损; 必须透明标注'广告/合作'",
+    "条件→效应": "未标注的隐性/伪装内容一旦被识破(触发说服知识)→消费者-品牌关系受损; 必须透明标注'广告/合作'",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2018.10.030",
+    "https://doi.org/10.1016/j.intmar.2018.09.001"
+   ]
+  },
+  {
+   "id": "Theory:说服知识模型",
+   "type": "Theory",
+   "name": "说服知识模型(Persuasion Knowledge Model)",
+   "props": {
+    "要点": "消费者会动用'说服知识'识别商家意图; 隐性/伪装内容一旦被识破即产生防御与不信任",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.intmar.2018.09.001",
+    "https://doi.org/10.1016/j.jretconser.2024.103790",
+    "https://doi.org/10.1016/j.jada.2006.06.014",
+    "https://doi.org/10.1016/j.chb.2019.02.006",
+    "https://doi.org/10.1086/296485",
+    "https://doi.org/10.1509/jppm.28.2.212"
+   ]
+  },
+  {
+   "id": "Theory:来源可信度理论",
+   "type": "Theory",
+   "name": "来源可信度理论(Source Credibility Theory)",
+   "props": {
+    "要点": "信息源的专业性与可信度决定说服效果; 网红/媒体背书的价值来自可信度, 而非曝光量",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1080/15252019.2018.1533501",
+    "https://doi.org/10.1016/j.jretconser.2019.101966",
+    "https://doi.org/10.1016/j.jretconser.2022.102940",
+    "https://doi.org/10.1080/02650487.2019.1596447",
+    "https://doi.org/10.1287/mksc.2013.0820",
+    "https://doi.org/10.1016/s2212-5671(16)30133-2",
+    "https://doi.org/10.1016/j.ijresmar.2016.01.005"
+   ]
+  },
+  {
+   "id": "Theory:使用与满足理论",
+   "type": "Theory",
+   "name": "使用与满足理论(Uses & Gratifications)",
+   "props": {
+    "要点": "受众主动为满足信息/娱乐/社交等需求而使用媒介; 内容策略应贴合满足动机",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1002/mar.20761",
+    "https://doi.org/10.1016/j.emj.2014.05.001",
+    "https://doi.org/10.1177/0022242919841034",
+    "https://doi.org/10.1016/j.jbusres.2015.01.011",
+    "https://doi.org/10.1080/02650487.2020.1788311",
+    "https://doi.org/10.1016/j.chb.2016.06.022",
+    "https://doi.org/10.1002/dir.10064",
+    "https://doi.org/10.1108/mip-07-2014-0135",
+    "https://doi.org/10.31580/jpvai.v2i2.896",
+    "https://doi.org/10.2501/jar-2015-009",
+    "https://doi.org/10.1108/mip-04-2018-0130"
+   ]
+  },
+  {
+   "id": "Theory:社会认同与社区归属理论",
+   "type": "Theory",
+   "name": "社会认同/社区归属(Social Identity)",
+   "props": {
+    "要点": "个体在社区中通过参与获得认同与归属; 品牌社区参与由认同与群体动力驱动",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1287/isre.1120.0469",
+    "https://doi.org/10.2501/jar-2016-004",
+    "https://doi.org/10.1016/j.chb.2015.12.047",
+    "https://doi.org/10.1108/17506181111156989",
+    "https://doi.org/10.1108/10610421311298687",
+    "https://doi.org/10.1080/10495142.2011.594779",
+    "https://doi.org/10.1108/ejm-01-2018-0007",
+    "https://doi.org/10.1080/07421222.2019.1628908",
+    "https://doi.org/10.1016/j.jbusres.2018.10.030",
+    "https://doi.org/10.1016/j.smr.2014.05.001"
+   ]
+  },
+  {
+   "id": "Theory:一致性匹配假说",
+   "type": "Theory",
+   "name": "一致性/匹配假说(Consistency & Match-up Hypotheses)",
+   "props": {
+    "要点": "内容/代言/场景与品牌属性匹配时说服更强, 不匹配产生'溢出'负效应",
+    "置信度": "LLM_INFERRED",
+    "专业": "商业媒体"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.intmar.2012.01.002",
+    "https://doi.org/10.1093/jcr/ucy032",
+    "https://doi.org/10.1080/00913367.2017.1297273",
+    "https://doi.org/10.1080/10496491.2013.829160",
+    "https://doi.org/10.1016/j.jbusres.2023.113778",
+    "https://doi.org/10.1177/0163443717736118",
+    "https://doi.org/10.1080/08838151.2011.570824",
+    "https://doi.org/10.1108/jrim-05-2014-0023",
+    "https://doi.org/10.1108/jrim-01-2018-0004",
+    "https://doi.org/10.1016/j.jbusres.2018.11.055",
+    "https://doi.org/10.1016/j.pubrev.2018.04.010",
+    "https://doi.org/10.1016/j.jbusres.2017.06.003",
+    "https://doi.org/10.1016/j.pubrev.2004.04.003",
+    "https://doi.org/10.1080/00913367.2013.774590"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "Paper:OA-商业媒体-1",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-1",
+   "target": "Concept:网红营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-1",
+   "target": "Concept:来源可信度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-2",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-2",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-3",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-3",
+   "target": "Concept:营销者生成内容MGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-3",
+   "target": "Concept:品牌社区",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-3",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-4",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-4",
+   "target": "Concept:平台差异",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-5",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-5",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-6",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-7",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-7",
+   "target": "Concept:电子口碑eWOM",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-8",
+   "target": "Concept:内容病毒传播",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-9",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-9",
+   "target": "Concept:内容病毒传播",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-9",
+   "target": "Concept:品牌-内容契合度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-10",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-10",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-11",
+   "target": "Concept:来源可信度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-11",
+   "target": "Concept:品牌真实性",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-11",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-12",
+   "target": "Concept:网红营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-12",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-13",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-13",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-14",
+   "target": "Concept:品牌真实性",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-14",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-15",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-15",
+   "target": "Concept:平台差异",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-16",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-16",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-17",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-17",
+   "target": "Concept:品牌-内容契合度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-18",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-18",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-18",
+   "target": "Concept:内容美学质量",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-19",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-19",
+   "target": "Concept:品牌社区",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-20",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-20",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-20",
+   "target": "Concept:电子口碑eWOM",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-21",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-21",
+   "target": "Concept:内容美学质量",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-22",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-22",
+   "target": "Concept:电子口碑eWOM",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-23",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-23",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-24",
+   "target": "Concept:电子口碑eWOM",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-24",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-25",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-25",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-26",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-26",
+   "target": "Concept:品牌-内容契合度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-27",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-27",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-28",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-28",
+   "target": "Concept:平台差异",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-29",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-29",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-30",
+   "target": "Concept:平台差异",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-30",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-31",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-31",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-32",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-32",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-32",
+   "target": "Concept:营销者生成内容MGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-32",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-33",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-33",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-34",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-34",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-35",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-35",
+   "target": "Concept:品牌社区",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-35",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-36",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-36",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-37",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-37",
+   "target": "Concept:内容病毒传播",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-38",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-38",
+   "target": "Concept:平台差异",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-39",
+   "target": "Concept:内容营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-39",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-40",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-40",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-40",
+   "target": "Concept:品牌-内容契合度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-41",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-41",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-42",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-42",
+   "target": "Concept:来源可信度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-43",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-43",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-44",
+   "target": "Concept:品牌真实性",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-44",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-44",
+   "target": "Concept:品牌-内容契合度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-45",
+   "target": "Concept:用户生成内容UGC",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-45",
+   "target": "Concept:电子口碑eWOM",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-45",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-46",
+   "target": "Concept:电子口碑eWOM",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-46",
+   "target": "Concept:内容病毒传播",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-47",
+   "target": "Concept:平台差异",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-47",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-48",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-48",
+   "target": "Concept:品牌内容参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-49",
+   "target": "Concept:品牌内容",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-49",
+   "target": "Concept:来源可信度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-1",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-2",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-3",
+   "target": "Method:计量与网络建模",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-4",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-5",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-6",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-7",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-8",
+   "target": "Method:计量与网络建模",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-9",
+   "target": "Method:随机实验法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-10",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-11",
+   "target": "Method:随机实验法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-12",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-13",
+   "target": "Method:网络文本挖掘与语义分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-14",
+   "target": "Method:随机实验法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-15",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-16",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-17",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-18",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-19",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-20",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-21",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-22",
+   "target": "Method:随机实验法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-23",
+   "target": "Method:随机实验法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-24",
+   "target": "Method:计量与网络建模",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-25",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-26",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-27",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-28",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-29",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-30",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-31",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-32",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-33",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-34",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-35",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-36",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-37",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-38",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-39",
+   "target": "Method:网络文本挖掘与语义分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-40",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-41",
+   "target": "Method:问卷调查与结构方程模型",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-42",
+   "target": "Method:计量与网络建模",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-43",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-44",
+   "target": "Method:随机实验法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-45",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-46",
+   "target": "Method:计量与网络建模",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-47",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-48",
+   "target": "Method:随机实验法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-49",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-1",
+   "target": "Finding:信息价值与来源可信度→品牌内容信任",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-2",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-3",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-4",
+   "target": "Finding:品牌内容形态随平台适配→参与升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-5",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-6",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-7",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-8",
+   "target": "Finding:信息价值与高唤醒情绪→分享升、品牌显著→分享降",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-9",
+   "target": "Finding:言语与图像协同→穿透内容杂音促分享",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-10",
+   "target": "Finding:品牌社交内容质量→品牌意识与购买意向升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-11",
+   "target": "Finding:内容真实与来源可信→品牌行为意向升、虚假→信任降",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-12",
+   "target": "Finding:网红内容特征→COBRA参与升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-13",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-14",
+   "target": "Finding:AI生成内容→感知品牌真实性降",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-15",
+   "target": "Finding:品牌内容形态随平台适配→参与升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-16",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-17",
+   "target": "Finding:娱乐性与美学→品牌喜爱忠诚升(经娱乐中介)",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-18",
+   "target": "Finding:娱乐性与美学→品牌喜爱忠诚升(经娱乐中介)",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-19",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-20",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-21",
+   "target": "Finding:娱乐性与美学→品牌喜爱忠诚升(经娱乐中介)",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-22",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-23",
+   "target": "Finding:娱乐性与美学→品牌喜爱忠诚升(经娱乐中介)",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-24",
+   "target": "Finding:信息价值与高唤醒情绪→分享升、品牌显著→分享降",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-25",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-26",
+   "target": "Finding:品牌内容形态随平台适配→参与升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-27",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-28",
+   "target": "Finding:品牌内容形态随平台适配→参与升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-29",
+   "target": "Finding:品牌社交内容质量→品牌意识与购买意向升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-30",
+   "target": "Finding:品牌内容形态随平台适配→参与升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-31",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-32",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-33",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-34",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-35",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-36",
+   "target": "Finding:品牌社交内容质量→品牌意识与购买意向升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-37",
+   "target": "Finding:信息价值与高唤醒情绪→分享升、品牌显著→分享降",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-38",
+   "target": "Finding:品牌内容形态随平台适配→参与升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-39",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-40",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-41",
+   "target": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-42",
+   "target": "Finding:品牌社交内容质量→品牌意识与购买意向升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-43",
+   "target": "Finding:品牌社交内容质量→品牌意识与购买意向升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-44",
+   "target": "Finding:隐性内容被识破→消费者-品牌关系受损",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-45",
+   "target": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-46",
+   "target": "Finding:信息价值与高唤醒情绪→分享升、品牌显著→分享降",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-47",
+   "target": "Finding:品牌内容形态随平台适配→参与升",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-48",
+   "target": "Finding:娱乐性与美学→品牌喜爱忠诚升(经娱乐中介)",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-49",
+   "target": "Finding:内容真实与来源可信→品牌行为意向升、虚假→信任降",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-1",
+   "target": "Theory:来源可信度理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-2",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-3",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-4",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-5",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-6",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-7",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-8",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-9",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-10",
+   "target": "Theory:来源可信度理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-11",
+   "target": "Theory:说服知识模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-12",
+   "target": "Theory:来源可信度理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-13",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-14",
+   "target": "Theory:说服知识模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-15",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-16",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-17",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-18",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-19",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-20",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-21",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-22",
+   "target": "Theory:来源可信度理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-23",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-24",
+   "target": "Theory:来源可信度理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-25",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-26",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-27",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-28",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-29",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-30",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-31",
+   "target": "Theory:说服知识模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-32",
+   "target": "Theory:说服知识模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-33",
+   "target": "Theory:来源可信度理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-34",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-35",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-36",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-37",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-38",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-39",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-40",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-41",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-42",
+   "target": "Theory:说服知识模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-43",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-44",
+   "target": "Theory:说服知识模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-45",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-46",
+   "target": "Theory:来源可信度理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-47",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-48",
+   "target": "Theory:一致性匹配假说",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-商业媒体-49",
+   "target": "Theory:社会认同与社区归属理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Concept:品牌内容",
+   "target": "Concept:内容营销",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:品牌内容",
+   "target": "Concept:用户生成内容UGC",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:用户生成内容UGC",
+   "target": "Concept:营销者生成内容MGC",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:内容营销",
+   "target": "Concept:品牌内容参与度",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:网红营销",
+   "target": "Concept:品牌内容",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:网红营销",
+   "target": "Concept:来源可信度",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:品牌内容参与度",
+   "target": "Concept:内容病毒传播",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:电子口碑eWOM",
+   "target": "Concept:内容病毒传播",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:品牌真实性",
+   "target": "Concept:品牌内容",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:品牌-内容契合度",
+   "target": "Concept:来源可信度",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:平台差异",
+   "target": "Concept:内容营销",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:内容美学质量",
+   "target": "Concept:品牌内容参与度",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:来源可信度",
+   "target": "Concept:电子口碑eWOM",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Method:内容分析法",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:内容分析法",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:问卷调查与结构方程模型",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:问卷调查与结构方程模型",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:随机实验法",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:网络文本挖掘与语义分析",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:网络文本挖掘与语义分析",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:计量与网络建模",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:信息价值与来源可信度→品牌内容信任",
+   "target": "NarrationType:直白规格型",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:信息价值与来源可信度→品牌内容信任",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:UGC强于MGC→品牌社区参与与购买意向",
+   "target": "Rule:AI原生交付原则",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:信息价值与高唤醒情绪→分享升、品牌显著→分享降",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:信息价值与高唤醒情绪→分享升、品牌显著→分享降",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:内容真实与来源可信→品牌行为意向升、虚假→信任降",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:内容真实与来源可信→品牌行为意向升、虚假→信任降",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:网红内容特征→COBRA参与升",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:娱乐性与美学→品牌喜爱忠诚升(经娱乐中介)",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:言语与图像协同→穿透内容杂音促分享",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:言语与图像协同→穿透内容杂音促分享",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:品牌内容形态随平台适配→参与升",
+   "target": "Rule:AI原生交付原则",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:品牌内容形态随平台适配→参与升",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:品牌内容形态随平台适配→参与升",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:AI生成内容→感知品牌真实性降",
+   "target": "Rule:AI原生交付原则",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:AI生成内容→感知品牌真实性降",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:品牌社交内容质量→品牌意识与购买意向升",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:品牌社交内容质量→品牌意识与购买意向升",
+   "target": "NarrationType:直白规格型",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:创意策略(信息/娱乐)→内容营销效果与忠诚",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:隐性内容被识破→消费者-品牌关系受损",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:隐性内容被识破→消费者-品牌关系受损",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  }
+ ]
+}

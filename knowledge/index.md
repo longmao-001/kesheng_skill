@@ -22,6 +22,8 @@
 | [[产品开场语法]] | 先近景细节（光带划过展示材质）→后整体揭示，卡第一句文案 | 甲方实战经验 |
 | 镜头语言百科 | 运镜/景别/角度/转场什么时候用、传达什么情绪 | `knowledge/camera-language.md` |
 | 视频反推方法论 | 好视频拆成 prompt：运动四维度+六维诊断+平台语法差异 | `knowledge/prompt-reverse.md` |
+| 图生成 Prompt 公式总集 | Seedream 5.0/GPT Image 2/即梦 4.5 三套公式+通用产品公式+参考图用法+两条铁律 | `knowledge/image-gen-formulas.md` |
+| 产品镜头 Prompt 公式 | 参数→镜头→灯光→主体→场景构图→动效→文字→约束（产品=干净/功能=复杂/保真实造型） | `templates/product-prompt-formula.md` |
 | 宫格分镜 | 一次出全片分镜图，整图成片或切片首帧 | `playbooks/storyboard-grid.md` |
 
 ### 一致性（跨镜不翻车）

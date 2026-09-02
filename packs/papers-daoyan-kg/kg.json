@@ -1,0 +1,3389 @@
+{
+ "schema_version": "1.0",
+ "pack": "papers-daoyan-kg",
+ "role": "导演/研究支撑",
+ "dom": "导演",
+ "entities": [
+  {
+   "id": "Paper:OA-导演-01",
+   "type": "Paper",
+   "name": "Taiwan Film Directors: A Treasure Island",
+   "props": {
+    "专业": "导演",
+    "年份": "2005",
+    "被引": "103",
+    "DOI": "",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "台湾导演群像/作者史, 不写正文摘要"
+   },
+   "sources": [
+    "Taiwan Film Directors: A Treasure Island (2005)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-02",
+   "type": "Paper",
+   "name": "The Film Director as Superstar",
+   "props": {
+    "专业": "导演",
+    "年份": "1971",
+    "被引": "71",
+    "DOI": "10.2307/1225242",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "导演作者地位/明星化, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1225242"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-03",
+   "type": "Paper",
+   "name": "Examining creative performance over time using hierarchical linear modeling: An illustration using film directors",
+   "props": {
+    "专业": "导演",
+    "年份": "1999",
+    "被引": "56",
+    "DOI": "10.1080/08959289909539870",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "导演创作绩效随时间的层级线性建模, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1080/08959289909539870"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-04",
+   "type": "Paper",
+   "name": "Anger and fear in decision-making: The case of film directors on set",
+   "props": {
+    "专业": "导演",
+    "年份": "2011",
+    "被引": "55",
+    "DOI": "10.1016/j.emj.2011.06.003",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "导演片场决策中的愤怒/恐惧情绪, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.emj.2011.06.003"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-05",
+   "type": "Paper",
+   "name": "Managerial ability and success: Evidence from the career paths of film directors",
+   "props": {
+    "专业": "导演",
+    "年份": "2014",
+    "被引": "51",
+    "DOI": "10.1016/j.jcorpfin.2014.11.001",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "导演管理能力与职业成功, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jcorpfin.2014.11.001"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-06",
+   "type": "Paper",
+   "name": "A Transactional Geography of the Image-Event: The Films of Scottish Director, Bill Forsyth",
+   "props": {
+    "专业": "导演",
+    "年份": "1991",
+    "被引": "47",
+    "DOI": "10.2307/622909",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "Bill Forsyth 电影的事件地理/作者风格, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.2307/622909"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-07",
+   "type": "Paper",
+   "name": "Great Film Directors: A Critical Anthology",
+   "props": {
+    "专业": "导演",
+    "年份": "1978",
+    "被引": "26",
+    "DOI": "10.2307/2906477",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "导演批评选集/作者论典范, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.2307/2906477"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-08",
+   "type": "Paper",
+   "name": "Women and Minority Film Directors in Hollywood: Performance Implications of Product Development and Distribution Biases",
+   "props": {
+    "专业": "导演",
+    "年份": "2022",
+    "被引": "25",
+    "DOI": "10.1177/00222437221100217",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "好莱坞女性与少数族裔导演的开发/发行偏见, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1177/00222437221100217"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-09",
+   "type": "Paper",
+   "name": "The emergence of women's film-making in francophone sub-Saharan Africa: From pioneering figures to contemporary directors",
+   "props": {
+    "专业": "导演",
+    "年份": "2012",
+    "被引": "25",
+    "DOI": "10.1386/jac.4.2.157_1",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "法语撒哈拉以南女性电影与作者涌现, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1386/jac.4.2.157_1"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-10",
+   "type": "Paper",
+   "name": "Director in Action: Johnnie To and the Hong Kong Action Film",
+   "props": {
+    "专业": "导演",
+    "年份": "2010",
+    "被引": "21",
+    "DOI": "",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "杜琪峰类型导演风格与动作调度, 不写正文摘要"
+   },
+   "sources": [
+    "Director in Action: Johnnie To and the Hong Kong Action Film (2010)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-11",
+   "type": "Paper",
+   "name": "Depictions of Gender Across Eight Decades of Disney Animated Film: The Role of Film Producer, Director, and Writer Gender",
+   "props": {
+    "专业": "导演",
+    "年份": "2022",
+    "被引": "19",
+    "DOI": "10.1007/s11199-022-01273-6",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "80 年迪士尼动画中主创性别与银幕性别表征, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1007/s11199-022-01273-6"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-12",
+   "type": "Paper",
+   "name": "Film world: interviews with cinema's leading directors",
+   "props": {
+    "专业": "导演",
+    "年份": "2009",
+    "被引": "19",
+    "DOI": "",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "当代导演访谈口述史, 不写正文摘要"
+   },
+   "sources": [
+    "Film world: interviews with cinema's leading directors (2009)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-13",
+   "type": "Paper",
+   "name": "Where Are the Film Directors (Who Happen to be Women)?",
+   "props": {
+    "专业": "导演",
+    "年份": "2012",
+    "被引": "18",
+    "DOI": "10.1080/10509201003601167",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "女性导演的性别与职业结构, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10509201003601167"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-14",
+   "type": "Paper",
+   "name": "Women as film directors in Turkish cinema",
+   "props": {
+    "专业": "导演",
+    "年份": "2016",
+    "被引": "16",
+    "DOI": "10.1177/1350506816649985",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "土耳其电影中的女性导演, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1177/1350506816649985"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-15",
+   "type": "Paper",
+   "name": "Locating the Postcolonial in Transnational Cinema: The Place of Algerian Émigré Directors in Contemporary French Film",
+   "props": {
+    "专业": "导演",
+    "年份": "2007",
+    "被引": "16",
+    "DOI": "10.1080/09639480601115284",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "阿尔及利亚移民导演的跨国/后殖民定位, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1080/09639480601115284"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-16",
+   "type": "Paper",
+   "name": "The final cut: Directors, producers and the gender regime of the Swedish film industry",
+   "props": {
+    "专业": "导演",
+    "年份": "2021",
+    "被引": "15",
+    "DOI": "10.1111/gwao.12621",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "瑞典电影行业终剪权/性别体制, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1111/gwao.12621"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-17",
+   "type": "Paper",
+   "name": "Spanish Film Directors (1950-1985): 21 Profiles",
+   "props": {
+    "专业": "导演",
+    "年份": "1987",
+    "被引": "15",
+    "DOI": "10.2307/1347610",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "西班牙导演(1950-1985)21 篇作者论, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1347610"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-18",
+   "type": "Paper",
+   "name": "The role of the Embodiment Director in virtual reality film production",
+   "props": {
+    "专业": "导演",
+    "年份": "2022",
+    "被引": "14",
+    "DOI": "10.1080/17510694.2021.2017634",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "VR 电影制作中的具身导演角色, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1080/17510694.2021.2017634"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:作者论",
+   "type": "Concept",
+   "name": "作者论 (Auteur)",
+   "props": {
+    "说明": "把导演视为作品核心作者, 强调可识别的个人风格/签名与创作权威",
+    "置信度": "LLM_INFERRED",
+    "来源学科": "电影研究"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1225242",
+    "https://doi.org/10.2307/2906477",
+    "https://doi.org/10.2307/1347610"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:导演风格",
+   "type": "Concept",
+   "name": "导演风格 (Directorial Style)",
+   "props": {
+    "说明": "导演可识别的统一视觉/叙事/主题语言, 是区分作者与匠人的核心",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.2307/622909",
+    "https://doi.org/10.1080/08959289909539870",
+    "Director in Action: Johnnie To and the Hong Kong Action Film (2010)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:叙事节奏",
+   "type": "Concept",
+   "name": "叙事节奏 (Narrative Pacing)",
+   "props": {
+    "说明": "叙事推进的速度/强弱/停顿安排, 与信息密度和情绪曲线协调",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Director in Action: Johnnie To and the Hong Kong Action Film (2010)",
+    "https://doi.org/10.1080/17510694.2021.2017634"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:场面调度",
+   "type": "Concept",
+   "name": "场面调度 (Mise-en-scène)",
+   "props": {
+    "说明": "镜头内空间/构图/走位/景别/光影的整体编排, 是导演风格签名的重要来源",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.2307/622909",
+    "Director in Action: Johnnie To and the Hong Kong Action Film (2010)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:视点",
+   "type": "Concept",
+   "name": "视点 (Point of View)",
+   "props": {
+    "说明": "镜头/叙事采用的主体视角与立场, 决定观众与信息的距离",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.2307/622909",
+    "https://doi.org/10.1080/17510694.2021.2017634"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:长镜头",
+   "type": "Concept",
+   "name": "长镜头 (Long Take)",
+   "props": {
+    "说明": "不间断的连续镜头, 保留时空连续性, 是作者调度/类型识别的符号",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Director in Action: Johnnie To and the Hong Kong Action Film (2010)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:定剪",
+   "type": "Concept",
+   "name": "定剪 (Final Cut)",
+   "props": {
+    "说明": "决定成片最终版本的权利, 关系到导演/制片/性别体制的权力分配",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1111/gwao.12621"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:导演权威",
+   "type": "Concept",
+   "name": "导演权威 (Directorial Authority)",
+   "props": {
+    "说明": "导演在创作/决策中的主导权与签字权, 与署名、终剪、制作体制相关",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1225242",
+    "https://doi.org/10.1016/j.emj.2011.06.003",
+    "https://doi.org/10.1016/j.jcorpfin.2014.11.001",
+    "https://doi.org/10.1111/gwao.12621"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:艺术基调",
+   "type": "Concept",
+   "name": "艺术基调 (Artistic Tone)",
+   "props": {
+    "说明": "全片的调性/情绪/影像气质, 开拍前由导演定调并作为各部门宪法",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Taiwan Film Directors: A Treasure Island (2005)",
+    "Director in Action: Johnnie To and the Hong Kong Action Film (2010)",
+    "https://doi.org/10.1080/17510694.2021.2017634"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:可拍性",
+   "type": "Concept",
+   "name": "可拍性 (Feasibility)",
+   "props": {
+    "说明": "理想艺术表达落地为可执行拍摄的程度, 与预算/管理/能力耦合, 越早评估越省返工",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.emj.2011.06.003",
+    "https://doi.org/10.1016/j.jcorpfin.2014.11.001",
+    "https://doi.org/10.1080/17510694.2021.2017634"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:性别与导演",
+   "type": "Concept",
+   "name": "性别与导演 (Gender & Directing)",
+   "props": {
+    "说明": "主创性别比例如何影响开发/发行机会与银幕性别表征",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1177/00222437221100217",
+    "https://doi.org/10.1007/s11199-022-01273-6",
+    "https://doi.org/10.1080/10509201003601167",
+    "https://doi.org/10.1177/1350506816649985",
+    "https://doi.org/10.1111/gwao.12621"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:跨国电影",
+   "type": "Concept",
+   "name": "跨国电影 (Transnational Cinema)",
+   "props": {
+    "说明": "跨越民族国家边界的电影生产与身份认同, 移民/后殖民导演的创作语境",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1386/jac.4.2.157_1",
+    "https://doi.org/10.1080/09639480601115284"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Method:作者论批评",
+   "type": "Method",
+   "name": "作者论批评 (Auteur Criticism)",
+   "props": {
+    "说明": "以导演为文本核心, 跨作品识别可复现的风格签名与创作主张, 用于导演史与作者定位",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1225242",
+    "https://doi.org/10.2307/2906477",
+    "https://doi.org/10.2307/1347610"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Method:职业生涯轨迹分析",
+   "type": "Method",
+   "name": "职业生涯轨迹分析 (Career Trajectory / Hierarchical Linear Modeling)",
+   "props": {
+    "说明": "用层级线性建模等量化方法刻画导演跨年创作绩效的波动与顶点, 预测成功因素",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1080/08959289909539870",
+    "https://doi.org/10.1016/j.jcorpfin.2014.11.001"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Method:产业与制度分析",
+   "type": "Method",
+   "name": "产业与制度分析 (Industry & Institutional Analysis)",
+   "props": {
+    "说明": "分析制片体制/开发发行链条/权力结构对导演产品表现的影响, 面向管理与评估",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.emj.2011.06.003",
+    "https://doi.org/10.1016/j.jcorpfin.2014.11.001",
+    "https://doi.org/10.1177/00222437221100217",
+    "https://doi.org/10.1111/gwao.12621"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Method:访谈与口述史",
+   "type": "Method",
+   "name": "访谈与口述史 (Interview & Oral History)",
+   "props": {
+    "说明": "通过导演访谈/口述史采集创作意图与执行细节, 用于还原作者方法论",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Film world: interviews with cinema's leading directors (2009)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Method:性别与表征分析",
+   "type": "Method",
+   "name": "性别与表征分析 (Gender & Representation Analysis)",
+   "props": {
+    "说明": "量化/文本分析主创性别与银幕性别表征之间的关系, 用于公平与内容把关",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1007/s11199-022-01273-6",
+    "https://doi.org/10.1080/10509201003601167",
+    "https://doi.org/10.1177/1350506816649985"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Method:跨国与后殖民分析",
+   "type": "Method",
+   "name": "跨国与后殖民分析 (Transnational & Postcolonial Analysis)",
+   "props": {
+    "说明": "从身份/地域/权力切入分析移民与后殖民导演创作, 理解主题选择的社会语境",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1386/jac.4.2.157_1",
+    "https://doi.org/10.1080/09639480601115284"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:创作绩效随经验波动",
+   "type": "Finding",
+   "name": "导演创作绩效随经验呈非线性波动",
+   "props": {
+    "说明": "导演的创作绩效会随从业时间先升后波动, 需要靠稳定协作框架穿越低谷",
+    "置信度": "LLM_INFERRED",
+    "可操作": "科研片导演流程应越早固化协作框架与角色分工, 以稳定产出对抗绩效波动"
+   },
+   "sources": [
+    "https://doi.org/10.1080/08959289909539870"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:作者署名溢价",
+   "type": "Finding",
+   "name": "作者署名提升作品辨识度与市场预期",
+   "props": {
+    "说明": "导演作为可识别作者会被资本与观众赋予稳定预期, 产生署名溢价",
+    "置信度": "LLM_INFERRED",
+    "可操作": "概念与作者定位先行, 让导演署名/风格成为可预期资产"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1225242"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:情绪损害决策",
+   "type": "Finding",
+   "name": "导演片场情绪状态损害当次决策质量",
+   "props": {
+    "说明": "愤怒/恐惧等情绪会显著影响导演在片场的判断与决策",
+    "置信度": "LLM_INFERRED",
+    "可操作": "导演流程应设情绪缓冲带与预注册标准, 情绪化时刻不拍板"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.emj.2011.06.003"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:开发发行偏见",
+   "type": "Finding",
+   "name": "开发与发行环节偏见压低女性/少数导演作品表现",
+   "props": {
+    "说明": "前期开发与发行链条的系统性偏见会压低女性和少数族裔导演的作品市场表现",
+    "置信度": "LLM_INFERRED",
+    "可操作": "导演流程须前置公平把关, 在开发与发行评估中消除结构性偏见"
+   },
+   "sources": [
+    "https://doi.org/10.1177/00222437221100217",
+    "https://doi.org/10.1080/10509201003601167"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:可拍性调研降返工",
+   "type": "Finding",
+   "name": "前期可拍性调研越充分, 后续执行返工越少",
+   "props": {
+    "说明": "导演的管理能力与可拍性评估前置能降低执行中的返工与失败成本",
+    "置信度": "LLM_INFERRED",
+    "可操作": "开拍前完成可拍性/艺术基调调研, 用可行性约束艺术表达"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jcorpfin.2014.11.001",
+    "https://doi.org/10.1016/j.emj.2011.06.003"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:风格签名",
+   "type": "Finding",
+   "name": "固定可识别的场面调度/镜头语言构成作者风格签名",
+   "props": {
+    "说明": "导演反复出现的调度与镜头选择会沉淀为可识别的风格签名",
+    "置信度": "LLM_INFERRED",
+    "可操作": "用风格签名作为风格基线/参考包, 保证同一导演作品的一致性"
+   },
+   "sources": [
+    "https://doi.org/10.2307/622909",
+    "https://doi.org/10.2307/2906477"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:主创性别影响表征",
+   "type": "Finding",
+   "name": "主创性别比例显著影响银幕性别表征",
+   "props": {
+    "说明": "导演/编剧/制片性别会传导为银幕角色的性别刻板与代表性差异",
+    "置信度": "LLM_INFERRED",
+    "可操作": "在导演阐述与分镜阶段即作性别敏感把关, 避免刻板表征上行"
+   },
+   "sources": [
+    "https://doi.org/10.1007/s11199-022-01273-6"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:跨国身份影响主题",
+   "type": "Finding",
+   "name": "民族/跨国导演的流动身份影响主题选择",
+   "props": {
+    "说明": "移民与后殖民导演的身份定位会塑造其主题与叙事立场",
+    "置信度": "LLM_INFERRED",
+    "可操作": "导演阐述需包含身份/语境判断, 避免脱离社会语境的纯技术表达"
+   },
+   "sources": [
+    "https://doi.org/10.1386/jac.4.2.157_1",
+    "https://doi.org/10.1080/09639480601115284"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:长镜头类型签名",
+   "type": "Finding",
+   "name": "长镜头与动作调度是类型导演的识别符",
+   "props": {
+    "说明": "类型导演(如杜琪峰)用固定长镜头/动作调度建立可辨认的作者节奏",
+    "置信度": "LLM_INFERRED",
+    "可操作": "长镜头与调度节奏可迁移为科研片的分镜节奏曲线, 用于定剪判断"
+   },
+   "sources": [
+    "Director in Action: Johnnie To and the Hong Kong Action Film (2010)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:新媒介具身导演",
+   "type": "Finding",
+   "name": "新媒介(VR)需要具身导演角色补齐可拍性",
+   "props": {
+    "说明": "虚拟现实等新媒介要求导演把身体/空间参与纳入创作, 否则可拍性失真",
+    "置信度": "LLM_INFERRED",
+    "可操作": "引入具身导演/空间视角, 在分镜与调度中纳入观众身体参与"
+   },
+   "sources": [
+    "https://doi.org/10.1080/17510694.2021.2017634"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Theory:作者论",
+   "type": "Theory",
+   "name": "作者论 (Auteur Theory)",
+   "props": {
+    "说明": "导演为作品作者, 跨作品可识别风格签名, 是导演中心制理论基石",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1225242",
+    "https://doi.org/10.2307/1347610"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Theory:现实主义",
+   "type": "Theory",
+   "name": "现实主义 (Realism)",
+   "props": {
+    "说明": "视电影为现实的再现, 强调记录性/现场性, 关联杂志与作者纪实倾向",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.2307/622909"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Theory:蒙太奇",
+   "type": "Theory",
+   "name": "蒙太奇理论 (Montage)",
+   "props": {
+    "说明": "通过镜头剪辑组合生产的含义与节奏, 关联动作/类型片的调度与节奏设计",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Director in Action: Johnnie To and the Hong Kong Action Film (2010)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Theory:性别与媒介",
+   "type": "Theory",
+   "name": "性别与媒介理论 (Gender & Media Theory)",
+   "props": {
+    "说明": "分析媒介生产/表征中的性别权力与刻板印象, 用于主创与内容审查",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1007/s11199-022-01273-6",
+    "https://doi.org/10.1080/10509201003601167",
+    "https://doi.org/10.1177/1350506816649985"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Theory:跨国电影",
+   "type": "Theory",
+   "name": "跨国电影理论 (Transnational Cinema)",
+   "props": {
+    "说明": "跨越民族边界理解电影生产与身份, 应用于移民/后殖民导演研究",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1386/jac.4.2.157_1",
+    "https://doi.org/10.1080/09639480601115284"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Theory:装置理论",
+   "type": "Theory",
+   "name": "影像装置/具身理论 (Apparatus / Embodiment Theory)",
+   "props": {
+    "说明": "影像机器与观众身体的关系, 应用于 VR 等新媒介的具身制作研究",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "https://doi.org/10.1080/17510694.2021.2017634"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-19",
+   "type": "Paper",
+   "name": "To the Distant Observer: Form and Meaning in the Japanese Cinema",
+   "props": {
+    "专业": "导演",
+    "年份": "1981",
+    "被引": "217",
+    "DOI": "10.2307/1225004",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "日本电影形式与意义/作者史奠基, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1225004"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-20",
+   "type": "Paper",
+   "name": "Mr. Smith goes to Tokyo: Japanese cinema under the American occupation, 1945-1952",
+   "props": {
+    "专业": "导演",
+    "年份": "1993",
+    "被引": "104",
+    "DOI": "10.5860/choice.30-3179",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "美军占领期日本电影与体制/作者变迁, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5860/choice.30-3179"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-21",
+   "type": "Paper",
+   "name": "Reframing Japanese cinema: authorship, genre, history",
+   "props": {
+    "专业": "导演",
+    "年份": "1993",
+    "被引": "88",
+    "DOI": "10.5860/choice.30-4301",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "日本电影作者/类型/史重述, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5860/choice.30-4301"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-22",
+   "type": "Paper",
+   "name": "Kurosawa: film studies and Japanese cinema",
+   "props": {
+    "专业": "导演",
+    "年份": "2000",
+    "被引": "116",
+    "DOI": "10.5860/choice.38-1473",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "黑泽明作者研究, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5860/choice.38-1473"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-23",
+   "type": "Paper",
+   "name": "Word and image in Japanese cinema",
+   "props": {
+    "专业": "导演",
+    "年份": "2001",
+    "被引": "74",
+    "DOI": "10.5860/choice.38-3811",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "日本电影图文关系/视点与调度, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5860/choice.38-3811"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-24",
+   "type": "Paper",
+   "name": "A New History of Japanese Cinema",
+   "props": {
+    "专业": "导演",
+    "年份": "2005",
+    "被引": "76",
+    "DOI": "10.5040/9781628929195",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "日本电影通史/作者谱系, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5040/9781628929195"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-25",
+   "type": "Paper",
+   "name": "Japanese cinema: texts and contexts",
+   "props": {
+    "专业": "导演",
+    "年份": "2008",
+    "被引": "51",
+    "DOI": "10.5860/choice.45-6061",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "日本电影文本与语境集, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5860/choice.45-6061"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-26",
+   "type": "Paper",
+   "name": "Classical Japanese Cinema Revisited",
+   "props": {
+    "专业": "导演",
+    "年份": "2011",
+    "被引": "38",
+    "DOI": "10.5040/9781628928594",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "经典日本电影重访/作者重估, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5040/9781628928594"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-27",
+   "type": "Paper",
+   "name": "The Oxford Handbook of Japanese Cinema",
+   "props": {
+    "专业": "导演",
+    "年份": "2014",
+    "被引": "68",
+    "DOI": "10.1093/oxfordhb/9780199731664.001.0001",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "日本电影研究手册/作者与类型, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1093/oxfordhb/9780199731664.001.0001"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-28",
+   "type": "Paper",
+   "name": "When Pigs Fly: Anime, Auteurism, and Miyazaki's Porco Rosso",
+   "props": {
+    "专业": "导演",
+    "年份": "2007",
+    "被引": "27",
+    "DOI": "10.1177/1746847706068904",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "宫崎骏动画作者论, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1177/1746847706068904"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-29",
+   "type": "Paper",
+   "name": "The Auteur of Anime",
+   "props": {
+    "专业": "导演",
+    "年份": "2006",
+    "被引": "0",
+    "DOI": "10.1017/s1557466006004505",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "动画作者论界定, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1017/s1557466006004505"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-30",
+   "type": "Paper",
+   "name": "In the context of auteur theory: Japanese anime studios",
+   "props": {
+    "专业": "导演",
+    "年份": "2023",
+    "被引": "0",
+    "DOI": "",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "日本动画工作室的作者制语境, 不写正文摘要"
+   },
+   "sources": [
+    "In the context of auteur theory: Japanese anime studios (2023)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-31",
+   "type": "Paper",
+   "name": "Auteur and Anime as Seen in the Naruto TV Series: An Intercultural Dialogue between Film Studies and Anime Research",
+   "props": {
+    "专业": "导演",
+    "年份": "2014",
+    "被引": "1",
+    "DOI": "10.4324/9780203366196-22",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "《火影》剧集动画作者论跨文化对话, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.4324/9780203366196-22"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-32",
+   "type": "Paper",
+   "name": "The Anime Director, the Fantasy Girl and the Very Real Tsunami",
+   "props": {
+    "专业": "导演",
+    "年份": "2012",
+    "被引": "3",
+    "DOI": "10.1017/s1557466012015811",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "动画导演的现实介入/作者表达, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1017/s1557466012015811"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-33",
+   "type": "Paper",
+   "name": "CINEMA OF MIYAZAKI AND AUTEUR THEORY",
+   "props": {
+    "专业": "导演",
+    "年份": "2015",
+    "被引": "6",
+    "DOI": "10.7816/idil-04-18-06",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "宫崎骏电影与作者论, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.7816/idil-04-18-06"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-34",
+   "type": "Paper",
+   "name": "AUTEUR HAYAO MIYAZAKI VE INSANBICIMCI YAKLASIM: KUCUK DENIZ KIZI PONYO ANIMASYON FILMI",
+   "props": {
+    "专业": "导演",
+    "年份": "2021",
+    "被引": "1",
+    "DOI": "10.34189/asd.2021.14.007",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "宫崎骏拟人化/作者研究(Ponyo), 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.34189/asd.2021.14.007"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-35",
+   "type": "Paper",
+   "name": "Anime Auteurs",
+   "props": {
+    "专业": "导演",
+    "年份": "2026",
+    "被引": "0",
+    "DOI": "10.4324/9781003432142-50",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "动画作者群像/作者论, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.4324/9781003432142-50"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-36",
+   "type": "Paper",
+   "name": "Notes on the 'Auteur' Theory in 1962",
+   "props": {
+    "专业": "导演",
+    "年份": "2007",
+    "被引": "56",
+    "DOI": "",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "Sarris 作者论纲要/经典文本, 不写正文摘要"
+   },
+   "sources": [
+    "Notes on the 'Auteur' Theory in 1962 (2007)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-37",
+   "type": "Paper",
+   "name": "The Auteur Theory Reexamined",
+   "props": {
+    "专业": "导演",
+    "年份": "1966",
+    "被引": "19",
+    "DOI": "10.2307/1225411",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "作者论再审视, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1225411"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-38",
+   "type": "Paper",
+   "name": "The Auteur Theory and the Perils of Pauline",
+   "props": {
+    "专业": "导演",
+    "年份": "1963",
+    "被引": "21",
+    "DOI": "10.2307/3185951",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "作者论早期批评/泛化之弊, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.2307/3185951"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-39",
+   "type": "Paper",
+   "name": "Qu'est-ce qu'un auteur?",
+   "props": {
+    "专业": "导演",
+    "年份": "1969",
+    "被引": "136",
+    "DOI": "",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "福柯\"作者是什么\"/作者功能, 不写正文摘要"
+   },
+   "sources": [
+    "Qu'est-ce qu'un auteur? (1969)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-40",
+   "type": "Paper",
+   "name": "Authors and Auteurs: The Uses of Theory",
+   "props": {
+    "专业": "导演",
+    "年份": "2008",
+    "被引": "7",
+    "DOI": "10.4135/9781849200400.n26",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "作者/作者论的理论运用, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.4135/9781849200400.n26"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-41",
+   "type": "Paper",
+   "name": "The Commerce of Auteurism: A Voice without Authority",
+   "props": {
+    "专业": "导演",
+    "年份": "1990",
+    "被引": "52",
+    "DOI": "10.2307/488373",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "作者论的商品化/权威缺席, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.2307/488373"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-42",
+   "type": "Paper",
+   "name": "Auteur discourse and the cultural consecration of American films",
+   "props": {
+    "专业": "导演",
+    "年份": "2006",
+    "被引": "38",
+    "DOI": "10.1016/j.poetic.2006.01.001",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "作者论话语与美国电影文化经典化, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.poetic.2006.01.001"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-43",
+   "type": "Paper",
+   "name": "Film Authorship: Auteurs and Other Myths",
+   "props": {
+    "专业": "导演",
+    "年份": "2011",
+    "被引": "30",
+    "DOI": "",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "电影作者性/作者神话重估, 不写正文摘要"
+   },
+   "sources": [
+    "Film Authorship: Auteurs and Other Myths (2011)"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-44",
+   "type": "Paper",
+   "name": "Pseudepigraphy, Anonymity, and Auteur Theory",
+   "props": {
+    "专业": "导演",
+    "年份": "2011",
+    "被引": "33",
+    "DOI": "10.1163/156852911x580810",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "假名/匿名与作者理论, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1163/156852911x580810"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-45",
+   "type": "Paper",
+   "name": "Auteur Theory and Structuralism",
+   "props": {
+    "专业": "导演",
+    "年份": "2007",
+    "被引": "0",
+    "DOI": "10.5040/9781838710484.0059",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "作者论与结构主义, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5040/9781838710484.0059"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-46",
+   "type": "Paper",
+   "name": "Auteur Theory in Britain",
+   "props": {
+    "专业": "导演",
+    "年份": "2007",
+    "被引": "0",
+    "DOI": "10.5040/9781838710484.0058",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "英国作者论传统, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5040/9781838710484.0058"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-47",
+   "type": "Paper",
+   "name": "Positioning auteur theory in Chinese cinemas studies: intratextuality, intertextuality and paratextuality in the films of Tsai Ming-liang",
+   "props": {
+    "专业": "导演",
+    "年份": "2007",
+    "被引": "31",
+    "DOI": "10.1386/jcc.1.3.223_7",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "蔡明亮/华语电影作者论定位, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1386/jcc.1.3.223_7"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-48",
+   "type": "Paper",
+   "name": "The Global Auteur",
+   "props": {
+    "专业": "导演",
+    "年份": "2016",
+    "被引": "27",
+    "DOI": "10.5040/9781501312663",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "全球作者/电影作者跨国研究, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5040/9781501312663"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-49",
+   "type": "Paper",
+   "name": "Abderrahmane Sissako: On the politics of African auteurs",
+   "props": {
+    "专业": "导演",
+    "年份": "2016",
+    "被引": "28",
+    "DOI": "10.5040/9781501312663.ch-002",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "非洲电影作者的政治性, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.5040/9781501312663.ch-002"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Paper:OA-导演-50",
+   "type": "Paper",
+   "name": "“It's just art”: auteur apologism in the post-Weinstein era",
+   "props": {
+    "专业": "导演",
+    "年份": "2018",
+    "被引": "43",
+    "DOI": "10.1080/14680777.2018.1456158",
+    "域": "导演",
+    "置信度": "DB_REFERENCE",
+    "说明": "后Weinstein时代作者论辩护与问责, 不写正文摘要"
+   },
+   "sources": [
+    "https://doi.org/10.1080/14680777.2018.1456158"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:日本电影",
+   "type": "Concept",
+   "name": "日本电影 (Japanese Cinema)",
+   "props": {
+    "说明": "以国别电影史/民族电影框架研究日本电影的作者与形式",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-导演-19",
+    "Paper:OA-导演-21",
+    "Paper:OA-导演-24",
+    "Paper:OA-导演-27"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:动画作者",
+   "type": "Concept",
+   "name": "动画作者 (Anime Auteur)",
+   "props": {
+    "说明": "动画/电视动画中可识别的作者签名, 是导演风格在动画媒介的延伸",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-导演-28",
+    "Paper:OA-导演-29",
+    "Paper:OA-导演-31",
+    "Paper:OA-导演-33"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Concept:工作室作者制",
+   "type": "Concept",
+   "name": "工作室作者制 (Studio Auteurism / 泛作者化)",
+   "props": {
+    "说明": "作者性由工作室与团队协作生产, 泛化于单一导演署名; 动画尤甚",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-导演-30",
+    "Paper:OA-导演-35",
+    "Paper:OA-导演-28"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Method:影史与国别电影研究",
+   "type": "Method",
+   "name": "影史与国别电影研究 (National-Cinema Historiography)",
+   "props": {
+    "说明": "以国别电影史与文本分析定位导演与作者谱系, 用于作者史与国别研究",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-导演-19",
+    "Paper:OA-导演-21",
+    "Paper:OA-导演-24",
+    "Paper:OA-导演-27"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Method:跨媒介作者研究",
+   "type": "Method",
+   "name": "跨媒介作者研究 (Cross-media Auteur Study)",
+   "props": {
+    "说明": "将作者论应用于剧集/动画/电视等系列化媒介, 识别跨媒介作者签名",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-导演-30",
+    "Paper:OA-导演-31",
+    "Paper:OA-导演-34",
+    "Paper:OA-导演-35"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:作者论延展至剧集动画",
+   "type": "Finding",
+   "name": "作者论可延展至剧集与动画媒介",
+   "props": {
+    "说明": "作者签名可跨剧集/动画识别, 用于系列化创作的一致性判断",
+    "置信度": "LLM_INFERRED",
+    "可操作": "系列/动画创作以作者签名锚定跨集一致性, 定剪权横跨整季"
+   },
+   "sources": [
+    "Paper:OA-导演-31",
+    "Paper:OA-导演-32",
+    "Paper:OA-导演-35"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Finding:动画作者性依赖工作室协作",
+   "type": "Finding",
+   "name": "动画作者性依赖工作室协作生产",
+   "props": {
+    "说明": "动画作者性由工作室/团队协作生产而非单一导演独立完成",
+    "置信度": "LLM_INFERRED",
+    "可操作": "科研/动画系列片的作者定位应纳入工作室与协作署名, 避免单一署名归因"
+   },
+   "sources": [
+    "Paper:OA-导演-28",
+    "Paper:OA-导演-30",
+    "Paper:OA-导演-35"
+   ],
+   "domains": [
+    "导演"
+   ]
+  },
+  {
+   "id": "Theory:国别电影",
+   "type": "Theory",
+   "name": "国别电影理论 (National Cinema Theory)",
+   "props": {
+    "说明": "以民族/国别为框架分析电影生产与身份, 用于日本等民族电影研究",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-导演-19",
+    "Paper:OA-导演-20",
+    "Paper:OA-导演-24"
+   ],
+   "domains": [
+    "导演"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "Paper:OA-导演-02",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-02",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-02",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-02",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-02",
+   "target": "Finding:作者署名溢价",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-07",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-07",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-07",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-07",
+   "target": "Finding:风格签名",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-12",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-12",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-12",
+   "target": "Method:访谈与口述史",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-12",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-12",
+   "target": "Finding:作者署名溢价",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-17",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-17",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-17",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-17",
+   "target": "Finding:风格签名",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-01",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-01",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-01",
+   "target": "Concept:艺术基调",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-01",
+   "target": "Concept:跨国电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-01",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-01",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-01",
+   "target": "Finding:作者署名溢价",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-03",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-03",
+   "target": "Method:职业生涯轨迹分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-03",
+   "target": "Finding:创作绩效随经验波动",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-06",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-06",
+   "target": "Concept:场面调度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-06",
+   "target": "Concept:视点",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-06",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-06",
+   "target": "Theory:现实主义",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-06",
+   "target": "Finding:风格签名",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-10",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-10",
+   "target": "Concept:叙事节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-10",
+   "target": "Concept:场面调度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-10",
+   "target": "Concept:长镜头",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-10",
+   "target": "Concept:艺术基调",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-10",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-10",
+   "target": "Theory:蒙太奇",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-10",
+   "target": "Finding:长镜头类型签名",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-18",
+   "target": "Concept:叙事节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-18",
+   "target": "Concept:场面调度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-18",
+   "target": "Concept:视点",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-18",
+   "target": "Concept:艺术基调",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-18",
+   "target": "Concept:可拍性",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-18",
+   "target": "Method:访谈与口述史",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-18",
+   "target": "Theory:装置理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-18",
+   "target": "Finding:新媒介具身导演",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-04",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-04",
+   "target": "Concept:可拍性",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-04",
+   "target": "Method:产业与制度分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-04",
+   "target": "Finding:情绪损害决策",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-05",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-05",
+   "target": "Concept:可拍性",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-05",
+   "target": "Method:职业生涯轨迹分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-05",
+   "target": "Method:产业与制度分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-05",
+   "target": "Finding:可拍性调研降返工",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-08",
+   "target": "Concept:性别与导演",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-08",
+   "target": "Method:产业与制度分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-08",
+   "target": "Finding:开发发行偏见",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-11",
+   "target": "Concept:性别与导演",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-11",
+   "target": "Method:性别与表征分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-11",
+   "target": "Theory:性别与媒介",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-11",
+   "target": "Finding:主创性别影响表征",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-13",
+   "target": "Concept:性别与导演",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-13",
+   "target": "Method:性别与表征分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-13",
+   "target": "Theory:性别与媒介",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-13",
+   "target": "Finding:开发发行偏见",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-14",
+   "target": "Concept:性别与导演",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-14",
+   "target": "Method:性别与表征分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-14",
+   "target": "Theory:性别与媒介",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-14",
+   "target": "Finding:主创性别影响表征",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-16",
+   "target": "Concept:定剪",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-16",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-16",
+   "target": "Concept:性别与导演",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-16",
+   "target": "Method:产业与制度分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-16",
+   "target": "Finding:开发发行偏见",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-16",
+   "target": "Finding:主创性别影响表征",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-09",
+   "target": "Concept:跨国电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-09",
+   "target": "Method:跨国与后殖民分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-09",
+   "target": "Theory:跨国电影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-09",
+   "target": "Finding:跨国身份影响主题",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-15",
+   "target": "Concept:跨国电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-15",
+   "target": "Method:跨国与后殖民分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-15",
+   "target": "Theory:跨国电影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-15",
+   "target": "Finding:跨国身份影响主题",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Method:作者论批评",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:职业生涯轨迹分析",
+   "target": "RoleWorkflow:导演",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:产业与制度分析",
+   "target": "ProcessRule:质量门控",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:访谈与口述史",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:性别与表征分析",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:性别与表征分析",
+   "target": "ProcessRule:质量门控",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:跨国与后殖民分析",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:创作绩效随经验波动",
+   "target": "RoleWorkflow:导演",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:创作绩效随经验波动",
+   "target": "ProcessRule:质量门控",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:作者署名溢价",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:情绪损害决策",
+   "target": "ProcessRule:质量门控",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:开发发行偏见",
+   "target": "RoleWorkflow:导演",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:可拍性调研降返工",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:风格签名",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:主创性别影响表征",
+   "target": "ProcessRule:质量门控",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:主创性别影响表征",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:跨国身份影响主题",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:长镜头类型签名",
+   "target": "RoleWorkflow:导演",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:新媒介具身导演",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:新媒介具身导演",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:开发发行偏见",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:情绪损害决策",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:作者论批评",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Concept:作者论",
+   "target": "Concept:导演风格",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:作者论",
+   "target": "Concept:导演权威",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:作者论",
+   "target": "Concept:定剪",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:导演风格",
+   "target": "Concept:艺术基调",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:导演风格",
+   "target": "Concept:场面调度",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:场面调度",
+   "target": "Concept:长镜头",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:场面调度",
+   "target": "Concept:视点",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:长镜头",
+   "target": "Concept:叙事节奏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:视点",
+   "target": "Concept:叙事节奏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:艺术基调",
+   "target": "Concept:叙事节奏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:定剪",
+   "target": "Concept:导演权威",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:可拍性",
+   "target": "Concept:导演权威",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:性别与导演",
+   "target": "Concept:导演权威",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:跨国电影",
+   "target": "Concept:导演风格",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-19",
+   "target": "Concept:日本电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-19",
+   "target": "Concept:场面调度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-19",
+   "target": "Method:影史与国别电影研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-19",
+   "target": "Theory:国别电影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-20",
+   "target": "Concept:日本电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-20",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-20",
+   "target": "Method:影史与国别电影研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-20",
+   "target": "Theory:国别电影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-21",
+   "target": "Concept:日本电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-21",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-21",
+   "target": "Method:影史与国别电影研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-21",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-22",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-22",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-22",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-22",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-22",
+   "target": "Finding:风格签名",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-23",
+   "target": "Concept:日本电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-23",
+   "target": "Concept:视点",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-23",
+   "target": "Concept:场面调度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-23",
+   "target": "Method:影史与国别电影研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-24",
+   "target": "Concept:日本电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-24",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-24",
+   "target": "Method:影史与国别电影研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-24",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-25",
+   "target": "Concept:日本电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-25",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-25",
+   "target": "Method:影史与国别电影研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-26",
+   "target": "Concept:日本电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-26",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-26",
+   "target": "Method:影史与国别电影研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-26",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-27",
+   "target": "Concept:日本电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-27",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-27",
+   "target": "Concept:叙事节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-27",
+   "target": "Method:影史与国别电影研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-28",
+   "target": "Concept:动画作者",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-28",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-28",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-28",
+   "target": "Method:跨媒介作者研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-28",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-28",
+   "target": "Finding:动画作者性依赖工作室协作",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-29",
+   "target": "Concept:动画作者",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-29",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-29",
+   "target": "Method:跨媒介作者研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-29",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-30",
+   "target": "Concept:工作室作者制",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-30",
+   "target": "Concept:动画作者",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-30",
+   "target": "Method:跨媒介作者研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-30",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-30",
+   "target": "Finding:动画作者性依赖工作室协作",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-31",
+   "target": "Concept:动画作者",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-31",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-31",
+   "target": "Method:跨媒介作者研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-31",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-31",
+   "target": "Finding:作者论延展至剧集动画",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-32",
+   "target": "Concept:动画作者",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-32",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-32",
+   "target": "Method:跨媒介作者研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-32",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-32",
+   "target": "Finding:作者论延展至剧集动画",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-33",
+   "target": "Concept:动画作者",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-33",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-33",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-33",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-33",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-33",
+   "target": "Finding:风格签名",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-34",
+   "target": "Concept:动画作者",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-34",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-34",
+   "target": "Method:跨媒介作者研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-34",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-35",
+   "target": "Concept:动画作者",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-35",
+   "target": "Concept:工作室作者制",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-35",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-35",
+   "target": "Method:跨媒介作者研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-35",
+   "target": "Finding:动画作者性依赖工作室协作",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-36",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-36",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-36",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-36",
+   "target": "Finding:作者署名溢价",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-37",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-37",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-37",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-38",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-38",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-38",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-38",
+   "target": "Finding:作者署名溢价",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-39",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-39",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-39",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-39",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-39",
+   "target": "Finding:作者署名溢价",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-40",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-40",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-40",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-41",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-41",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-41",
+   "target": "Method:产业与制度分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-41",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-41",
+   "target": "Finding:作者署名溢价",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-42",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-42",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-42",
+   "target": "Method:产业与制度分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-42",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-42",
+   "target": "Finding:风格签名",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-43",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-43",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-43",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-44",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-44",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-44",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-44",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-45",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-45",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-45",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-46",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-46",
+   "target": "Method:作者论批评",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-46",
+   "target": "Theory:作者论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-47",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-47",
+   "target": "Concept:跨国电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-47",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-47",
+   "target": "Method:跨国与后殖民分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-47",
+   "target": "Theory:跨国电影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-47",
+   "target": "Finding:跨国身份影响主题",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-48",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-48",
+   "target": "Concept:跨国电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-48",
+   "target": "Concept:导演风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-48",
+   "target": "Theory:跨国电影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-48",
+   "target": "Finding:跨国身份影响主题",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-49",
+   "target": "Concept:跨国电影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-49",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-49",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-49",
+   "target": "Method:跨国与后殖民分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-49",
+   "target": "Theory:跨国电影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-49",
+   "target": "Finding:跨国身份影响主题",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-50",
+   "target": "Concept:作者论",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-50",
+   "target": "Concept:性别与导演",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-50",
+   "target": "Concept:导演权威",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-50",
+   "target": "Method:性别与表征分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-50",
+   "target": "Theory:性别与媒介",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-导演-50",
+   "target": "Finding:开发发行偏见",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Method:影史与国别电影研究",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:影史与国别电影研究",
+   "target": "ProcessRule:质量门控",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:跨媒介作者研究",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:跨媒介作者研究",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:作者论延展至剧集动画",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:作者论延展至剧集动画",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:动画作者性依赖工作室协作",
+   "target": "ProcessRule:质量门控",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:动画作者性依赖工作室协作",
+   "target": "Rule:AI原生交付原则",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Concept:日本电影",
+   "target": "Concept:跨国电影",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:日本电影",
+   "target": "Concept:动画作者",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:动画作者",
+   "target": "Concept:作者论",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:动画作者",
+   "target": "Concept:导演风格",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:工作室作者制",
+   "target": "Concept:动画作者",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:工作室作者制",
+   "target": "Concept:作者论",
+   "type": "concept-related-to",
+   "props": {}
+  }
+ ]
+}

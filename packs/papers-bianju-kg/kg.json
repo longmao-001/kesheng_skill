@@ -1,0 +1,2367 @@
+{
+ "schema_version": "1.0",
+ "pack": "papers-bianju-kg",
+ "role": "编剧",
+ "domains": [
+  "叙事"
+ ],
+ "entities": [
+  {
+   "id": "Paper:OA-编剧-001",
+   "type": "Paper",
+   "name": "Screenplay: The Foundations of Screenwriting",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "1979",
+    "被引": "379",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-002",
+   "type": "Paper",
+   "name": "Birds of a Feather: Informal Recruitment Practices and Gendered Outcomes for Screenwriting Work in the UK Film Industry",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2015",
+    "被引": "81",
+    "DOI": "10.1111/1467-954x.12242",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1111/1467-954x.12242"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-003",
+   "type": "Paper",
+   "name": "Screenwriting studies, screenwriting practice and the screenwriting manual",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2016",
+    "被引": "44",
+    "DOI": "10.1080/14790726.2015.1134579",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1134579"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-004",
+   "type": "Paper",
+   "name": "Re-conceptualising screenwriting for the academy: the social, cultural and creative practice of developing a screenplay",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2016",
+    "被引": "41",
+    "DOI": "10.1080/14790726.2015.1134580",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1134580"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-005",
+   "type": "Paper",
+   "name": "An overview of the linguistics of screenwriting and its interdisciplinary connections, with special focus on dialogue in episodic television",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2015",
+    "被引": "31",
+    "DOI": "10.1386/josc.6.2.221_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.6.2.221_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-006",
+   "type": "Paper",
+   "name": "Script development and the hidden practices of screenwriting: perspectives from industry professionals",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2015",
+    "被引": "30",
+    "DOI": "10.1080/14790726.2015.1120314",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1120314"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-007",
+   "type": "Paper",
+   "name": "Screenwriting: The Sequence Approach",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2004",
+    "被引": "29",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-007"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-008",
+   "type": "Paper",
+   "name": "Using Screenwriting Techniques to Create Realistic and Ethical Role Plays",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2002",
+    "被引": "28",
+    "DOI": "10.1002/j.1556-6978.2002.tb01806.x",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1002/j.1556-6978.2002.tb01806.x"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-009",
+   "type": "Paper",
+   "name": "Eva Novrup Redvall: Writing and Producing Television Drama in Denmark. From The Kingdom to The Killing",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2015",
+    "被引": "26",
+    "DOI": "10.18452/8158",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.18452/8158"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-010",
+   "type": "Paper",
+   "name": "Everybody's a Writer Theorizing screenwriting as creative labour",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2010",
+    "被引": "25",
+    "DOI": "10.1386/josc.1.1.27/1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.1.1.27/1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-011",
+   "type": "Paper",
+   "name": "Some attitudes and trajectories in screenwriting research",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2011",
+    "被引": "23",
+    "DOI": "10.1386/josc.2.2.275_7",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.2.2.275_7"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-012",
+   "type": "Paper",
+   "name": "Adaptation studies through screenwriting studies: Transitionality and the adapted screenplay",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2016",
+    "被引": "20",
+    "DOI": "10.1386/josc.7.1.11_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.7.1.11_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-013",
+   "type": "Paper",
+   "name": "The Total Filmmaker: thinking of screenwriting, directing and editing as one role",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2016",
+    "被引": "20",
+    "DOI": "10.1080/14790726.2016.1142571",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1080/14790726.2016.1142571"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-014",
+   "type": "Paper",
+   "name": "Formatting the imagination: A reflection on screenwriting as a creative practice",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2017",
+    "被引": "19",
+    "DOI": "10.1386/josc.8.3.267_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.8.3.267_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-015",
+   "type": "Paper",
+   "name": "Screenwriting and authorial control in narrative video games",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2015",
+    "被引": "19",
+    "DOI": "10.1386/josc.6.3.343_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.6.3.343_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-016",
+   "type": "Paper",
+   "name": "Teaching screenwriting in a time of storytelling blindness: the meeting of the auteur and the screenwriting tradition in Danish film-making",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2010",
+    "被引": "19",
+    "DOI": "10.1386/josc.1.1.59/1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.1.1.59/1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-017",
+   "type": "Paper",
+   "name": "Netflix speaks Arabic, Arabs speak Netflix: How SVOD is transforming Arabic series screenwriting",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2021",
+    "被引": "18",
+    "DOI": "10.1386/jammr_00034_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/jammr_00034_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-018",
+   "type": "Paper",
+   "name": "William Faulkner in Hollywood: Screenwriting for the Studios",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2017",
+    "被引": "17",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-018"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-019",
+   "type": "Paper",
+   "name": "Towards a critique of universalism in screenwriting criticism",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2017",
+    "被引": "17",
+    "DOI": "10.1386/josc.8.2.177_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.8.2.177_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-020",
+   "type": "Paper",
+   "name": "The Academic Screenplay: Approaching Screenwriting as a Research Practice",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2016",
+    "被引": "17",
+    "DOI": "10.62959/wip-02-2016-09",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.62959/wip-02-2016-09"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-021",
+   "type": "Paper",
+   "name": "Cultural influences in screenwriting: Australia vs. Hollywood",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2020",
+    "被引": "15",
+    "DOI": "10.1386/josc_00012_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc_00012_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-022",
+   "type": "Paper",
+   "name": "Screenwriting for new film mediums: Conceptualizing visual models for interactive storytelling",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2019",
+    "被引": "15",
+    "DOI": "10.1386/josc.10.1.3_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.10.1.3_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-023",
+   "type": "Paper",
+   "name": "Adapting Lesbians: Maria Maggenti and the Practice of Lesbian Screenwriting",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2009",
+    "被引": "15",
+    "DOI": "10.1093/adaptation/app004",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1093/adaptation/app004"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-024",
+   "type": "Paper",
+   "name": "The Left Side of Paradise: The Screenwriting of John Howard Lawson",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "1984",
+    "被引": "15",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-024"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-025",
+   "type": "Paper",
+   "name": "Screenwriting and the higher degree by research: writing a screenplay for a creative practice PhD",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2016",
+    "被引": "14",
+    "DOI": "10.1080/14790726.2015.1135964",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1135964"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-027",
+   "type": "Paper",
+   "name": "Poststructural Writerly Representation: Screenplay as Creative Analytic Practice",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2010",
+    "被引": "74",
+    "DOI": "10.1177/1077800410393887",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1177/1077800410393887"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-028",
+   "type": "Paper",
+   "name": "The creativity maze: Exploring creativity in screenplay writing",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2014",
+    "被引": "67",
+    "DOI": "10.1037/a0037839",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1037/a0037839"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-029",
+   "type": "Paper",
+   "name": "Script culture and the American screenplay",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2008",
+    "被引": "65",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-029"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-030",
+   "type": "Paper",
+   "name": "Darkening Ethan: John Ford's \"The Searchers\" (1956) from Novel to Screenplay to Screen",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "1998",
+    "被引": "62",
+    "DOI": "10.2307/1225733",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.2307/1225733"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-032",
+   "type": "Paper",
+   "name": "After the typewriter: the screenplay in a digital era",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2010",
+    "被引": "39",
+    "DOI": "10.1386/josc.1.1.11/1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.1.1.11/1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-033",
+   "type": "Paper",
+   "name": "An Account of the Subtitling of Offensive and Taboo Language in Tarantino's Screenplays",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2015",
+    "被引": "37",
+    "DOI": "10.30827/sendebar.v26i0.2501",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.30827/sendebar.v26i0.2501"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-034",
+   "type": "Paper",
+   "name": "Cinematic virtual reality: Towards the spatialized screenplay",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2018",
+    "被引": "36",
+    "DOI": "10.1386/josc.9.2.191_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.9.2.191_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-035",
+   "type": "Paper",
+   "name": "Film as Art versus Film as Business: Differential Correlates of Screenplay Characteristics",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2005",
+    "被引": "36",
+    "DOI": "10.2190/dm5y-fhem-cxqt-uexw",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.2190/dm5y-fhem-cxqt-uexw"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-036",
+   "type": "Paper",
+   "name": "The screenplay as text: academic scriptwriting as creative research",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2016",
+    "被引": "32",
+    "DOI": "10.1080/14790726.2015.1133654",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1133654"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-037",
+   "type": "Paper",
+   "name": "Four Screenplays of Ingmar Bergman",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "1960",
+    "被引": "32",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-037"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-038",
+   "type": "Paper",
+   "name": "Screenplay: Cinema/videogames/interfaces",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2003",
+    "被引": "31",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-038"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-039",
+   "type": "Paper",
+   "name": "No room for the fun stuff: the question of the screenplay in American indie cinema",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2010",
+    "被引": "30",
+    "DOI": "10.1386/josc.1.1.175/1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/josc.1.1.175/1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-040",
+   "type": "Paper",
+   "name": "Some thoughts on analysing the screenplay, the process of screenplay writing and the balance between craft and creativity",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2007",
+    "被引": "29",
+    "DOI": "10.1386/jmpr.8.2.107_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/jmpr.8.2.107_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-041",
+   "type": "Paper",
+   "name": "The Screenplay as Postmodern Literary Exemplar: Authorial Distraction, Disappearance, Dissolution",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2000",
+    "被引": "26",
+    "DOI": "10.1177/107780040000600405",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1177/107780040000600405"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-042",
+   "type": "Paper",
+   "name": "The pricing of soft and hard information: economic lessons from screenplay sales",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2012",
+    "被引": "25",
+    "DOI": "10.1007/s10824-012-9183-5",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1007/s10824-012-9183-5"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-043",
+   "type": "Paper",
+   "name": "Why Can't Screenplays Be Artworks?",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2011",
+    "被引": "25",
+    "DOI": "10.1111/j.1540-6245.2011.01484.x",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1111/j.1540-6245.2011.01484.x"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-044",
+   "type": "Paper",
+   "name": "Instructions and Artworks: Musical Scores, Theatrical Scripts, Architectural Plans, and Screenplays",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2011",
+    "被引": "24",
+    "DOI": "10.1093/aesthj/ayr029",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1093/aesthj/ayr029"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-045",
+   "type": "Paper",
+   "name": "Me and You and Memento and Fargo: How Independent Screenplays Work",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2007",
+    "被引": "23",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-045"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-046",
+   "type": "Paper",
+   "name": "London Kills Me: Three Screenplays and Four Essays",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "1992",
+    "被引": "23",
+    "DOI": "10.2307/40148705",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.2307/40148705"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-047",
+   "type": "Paper",
+   "name": "Thinking through the screenplay: The academy as a site for research-based script development",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2016",
+    "被引": "20",
+    "DOI": "10.1386/jwcp.9.1-2.149_1",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.1386/jwcp.9.1-2.149_1"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-048",
+   "type": "Paper",
+   "name": "Alternative scriptwriting : successfully breaking the rules",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2002",
+    "被引": "42",
+    "DOI": "(著作/无DOI)",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-048"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-049",
+   "type": "Paper",
+   "name": "Scriptwriting as a creative, collaborative learning process of problem finding and problem solving",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2009",
+    "被引": "30",
+    "DOI": "10.7146/mediekultur.v25i46.1342",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.7146/mediekultur.v25i46.1342"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Paper:OA-编剧-050",
+   "type": "Paper",
+   "name": "Scriptwriting in the Age of AI: Revolutionizing Storytelling with Artificial Intelligence",
+   "props": {
+    "专业": "编剧",
+    "域": "叙事",
+    "年份": "2023",
+    "被引": "27",
+    "DOI": "10.46745/ilma.jmc.2023.04.01.02",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "10.46745/ilma.jmc.2023.04.01.02"
+   ],
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "id": "Concept:三幕结构",
+   "type": "Concept",
+   "name": "三幕结构",
+   "props": {
+    "定义": "三幕结构：建置/对抗/结局，叙事主线三段式骨架",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:人物弧",
+   "type": "Concept",
+   "name": "人物弧",
+   "props": {
+    "定义": "人物弧：主角从初始状态到终局的内在转变轨迹",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:情节点",
+   "type": "Concept",
+   "name": "情节点",
+   "props": {
+    "定义": "情节点：推动剧情节节推进、改变方向的关键转折事件",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:钩子",
+   "type": "Concept",
+   "name": "钩子",
+   "props": {
+    "定义": "钩子：开场或段落间抓住注意的悬念/反差/问题",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:对话",
+   "type": "Concept",
+   "name": "对话",
+   "props": {
+    "定义": "对话：人物语言，兼塑性格与传递信息",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:主题",
+   "type": "Concept",
+   "name": "主题",
+   "props": {
+    "定义": "主题：故事要表达的核心理念/意图",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:冲突",
+   "type": "Concept",
+   "name": "冲突",
+   "props": {
+    "定义": "冲突：人物欲望与阻碍的对立，叙事动力来源",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:悬念",
+   "type": "Concept",
+   "name": "悬念",
+   "props": {
+    "定义": "悬念：延迟信息释放制造的好奇与张力",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:节拍",
+   "type": "Concept",
+   "name": "节拍",
+   "props": {
+    "定义": "节拍：剧本最小节奏单元，逐拍推进情感",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:场景",
+   "type": "Concept",
+   "name": "场景",
+   "props": {
+    "定义": "场景：时间地点连续的动作单元，叙事基本容器",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:潜台词",
+   "type": "Concept",
+   "name": "潜台词",
+   "props": {
+    "定义": "潜台词：话外之意，说A蕴B",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:人物关系网",
+   "type": "Concept",
+   "name": "人物关系网",
+   "props": {
+    "定义": "人物关系网：角色间联结构成的社会/情感网络",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Method:案例分析法",
+   "type": "Method",
+   "name": "案例分析法",
+   "props": {
+    "定义": "对剧本文本进行细读/个案分析，提取结构与技法",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1134579",
+    "10.1080/14790726.2015.1120314"
+   ]
+  },
+  {
+   "id": "Method:行业访谈民族志",
+   "type": "Method",
+   "name": "行业访谈民族志",
+   "props": {
+    "定义": "对编剧从业者的访谈与田野观察，揭示行业实践",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1134579",
+    "10.1080/14790726.2015.1120314"
+   ]
+  },
+  {
+   "id": "Method:文本话语分析",
+   "type": "Method",
+   "name": "文本话语分析",
+   "props": {
+    "定义": "从语言学/话语视角分析剧本对话与语言",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1134579",
+    "10.1080/14790726.2015.1120314"
+   ]
+  },
+  {
+   "id": "Method:创意实践研究",
+   "type": "Method",
+   "name": "创意实践研究",
+   "props": {
+    "定义": "以创作实践本身作为研究对象的研究范式",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1134579",
+    "10.1080/14790726.2015.1120314"
+   ]
+  },
+  {
+   "id": "Method:定量实证",
+   "type": "Method",
+   "name": "定量实证",
+   "props": {
+    "定义": "对剧本特征与结果做统计/相关性测量",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14790726.2015.1134579",
+    "10.1080/14790726.2015.1120314"
+   ]
+  },
+  {
+   "id": "Finding:三幕结构清晰提升信息记忆",
+   "type": "Finding",
+   "name": "三幕结构清晰提升信息记忆",
+   "props": {
+    "结论": "按清晰叙事结构(如三幕/序列)组织信息时，观众对关键信息/概念的记忆与理解显著提升。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:开场钩子增强持续观看",
+   "type": "Finding",
+   "name": "开场钩子增强持续观看",
+   "props": {
+    "结论": "开场若干拍内设置钩子(悬念/反差/问题)显著提升观众继续观看的意愿。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:概念前置优于结论前置",
+   "type": "Finding",
+   "name": "概念前置优于结论前置",
+   "props": {
+    "结论": "先给出概念与定义、再展开论证，比先抛结论更贴合观众认知，信息留存更高。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:潜台词克制表达提升可信度",
+   "type": "Finding",
+   "name": "潜台词克制表达提升可信度",
+   "props": {
+    "结论": "用潜台词与克制表达传递信息，比直白灌输更能降低观众抵触、提升信任。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:冲突双线强化高潮张力",
+   "type": "Finding",
+   "name": "冲突双线强化高潮张力",
+   "props": {
+    "结论": "外部冲突与内部冲突叠加时，高潮的情感张力显著更强。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:悬念信息控制维持注意",
+   "type": "Finding",
+   "name": "悬念信息控制维持注意",
+   "props": {
+    "结论": "延迟关键信息释放(信息控制)能在整体时长内维持观众注意力。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:节拍节奏驱动情感起伏",
+   "type": "Finding",
+   "name": "节拍节奏驱动情感起伏",
+   "props": {
+    "结论": "逐场景/逐节拍的节奏安排(节拍器)提升叙事的情感起伏与感染力。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:改写迭代提升剧本完成度",
+   "type": "Finding",
+   "name": "改写迭代提升剧本完成度",
+   "props": {
+    "结论": "结构化反馈驱动的开发/改写迭代显著提升剧本完成度与创意质量。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:空间化书写适配新媒介",
+   "type": "Finding",
+   "name": "空间化书写适配新媒介",
+   "props": {
+    "结论": "为VR/交互等新媒介采用空间化/可视化剧本格式，能显著增强叙事沉浸感。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:人物弧对齐强化主题传达",
+   "type": "Finding",
+   "name": "人物弧对齐强化主题传达",
+   "props": {
+    "结论": "角色弧与发展与主题对齐时，叙事主题传达更清晰、更有力。",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Theory:三幕结构理论",
+   "type": "Theory",
+   "name": "三幕结构理论",
+   "props": {
+    "定义": "经典三幕(建置/对抗/结局)叙事结构框架",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-048"
+   ]
+  },
+  {
+   "id": "Theory:英雄之旅",
+   "type": "Theory",
+   "name": "英雄之旅",
+   "props": {
+    "定义": "坎贝尔式英雄旅程的单主体历险结构",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-048"
+   ]
+  },
+  {
+   "id": "Theory:序列法",
+   "type": "Theory",
+   "name": "序列法",
+   "props": {
+    "定义": "以8个序列为单位组织剧本的结构方法",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-048"
+   ]
+  },
+  {
+   "id": "Theory:叙事传输理论",
+   "type": "Theory",
+   "name": "叙事传输理论",
+   "props": {
+    "定义": "受众被故事卷入并潜移默化地改变态度/信念",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-048"
+   ]
+  },
+  {
+   "id": "Theory:创意劳动理论",
+   "type": "Theory",
+   "name": "创意劳动理论",
+   "props": {
+    "定义": "把编剧视为一种受行业与社会结构约束的创造性劳动",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-048"
+   ]
+  },
+  {
+   "id": "Theory:剧本作为指令理论",
+   "type": "Theory",
+   "name": "剧本作为指令理论",
+   "props": {
+    "定义": "剧本是给制作/表演的指令-蓝图，兼具艺术与功能属性",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-编剧-001",
+    "Paper:OA-编剧-048"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "Paper:OA-编剧-001",
+   "target": "Concept:三幕结构",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-002",
+   "target": "Concept:人物关系网",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-003",
+   "target": "Concept:场景",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-004",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-005",
+   "target": "Concept:对话",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-006",
+   "target": "Concept:情节点",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-007",
+   "target": "Concept:节拍",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-008",
+   "target": "Concept:冲突",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-009",
+   "target": "Concept:情节点",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-010",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-011",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-012",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-013",
+   "target": "Concept:场景",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-014",
+   "target": "Concept:场景",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-015",
+   "target": "Concept:人物关系网",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-016",
+   "target": "Concept:人物弧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-017",
+   "target": "Concept:对话",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-018",
+   "target": "Concept:人物弧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-019",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-020",
+   "target": "Concept:场景",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-021",
+   "target": "Concept:冲突",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-022",
+   "target": "Concept:悬念",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-023",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-024",
+   "target": "Concept:对话",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-025",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-027",
+   "target": "Concept:潜台词",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-028",
+   "target": "Concept:人物弧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-029",
+   "target": "Concept:场景",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-030",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-032",
+   "target": "Concept:对话",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-033",
+   "target": "Concept:对话",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-034",
+   "target": "Concept:悬念",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-035",
+   "target": "Concept:情节点",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-036",
+   "target": "Concept:潜台词",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-037",
+   "target": "Concept:人物弧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-038",
+   "target": "Concept:场景",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-039",
+   "target": "Concept:冲突",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-040",
+   "target": "Concept:节拍",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-041",
+   "target": "Concept:潜台词",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-042",
+   "target": "Concept:情节点",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-043",
+   "target": "Concept:场景",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-044",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-045",
+   "target": "Concept:钩子",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-046",
+   "target": "Concept:对话",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-047",
+   "target": "Concept:主题",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-048",
+   "target": "Concept:情节点",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-049",
+   "target": "Concept:人物弧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-050",
+   "target": "Concept:钩子",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-001",
+   "target": "Theory:三幕结构理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-001",
+   "target": "Theory:英雄之旅",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-003",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-005",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-007",
+   "target": "Theory:序列法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-012",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-013",
+   "target": "Theory:三幕结构理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-016",
+   "target": "Theory:三幕结构理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-017",
+   "target": "Theory:叙事传输理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-022",
+   "target": "Theory:序列法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-023",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-027",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-033",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-038",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-039",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-040",
+   "target": "Theory:三幕结构理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-043",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-044",
+   "target": "Theory:剧本作为指令理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-045",
+   "target": "Theory:叙事传输理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-048",
+   "target": "Theory:三幕结构理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-048",
+   "target": "Theory:英雄之旅",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-050",
+   "target": "Theory:叙事传输理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-010",
+   "target": "Theory:创意劳动理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-049",
+   "target": "Theory:创意劳动理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-006",
+   "target": "Theory:创意劳动理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-002",
+   "target": "Theory:创意劳动理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-001",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-002",
+   "target": "Method:行业访谈民族志",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-003",
+   "target": "Method:文本话语分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-005",
+   "target": "Method:文本话语分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-006",
+   "target": "Method:行业访谈民族志",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-007",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-008",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-009",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-010",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-011",
+   "target": "Method:文本话语分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-012",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-014",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-016",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-017",
+   "target": "Method:行业访谈民族志",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-018",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-019",
+   "target": "Method:文本话语分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-020",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-021",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-022",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-023",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-024",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-025",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-027",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-028",
+   "target": "Method:定量实证",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-029",
+   "target": "Method:文本话语分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-030",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-032",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-033",
+   "target": "Method:文本话语分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-034",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-035",
+   "target": "Method:定量实证",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-036",
+   "target": "Method:创意实践研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-037",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-038",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-041",
+   "target": "Method:文本话语分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-042",
+   "target": "Method:定量实证",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-043",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-044",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-045",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-046",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-047",
+   "target": "Method:行业访谈民族志",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-048",
+   "target": "Method:案例分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-049",
+   "target": "Method:行业访谈民族志",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-050",
+   "target": "Method:定量实证",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-001",
+   "target": "Finding:三幕结构清晰提升信息记忆",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-006",
+   "target": "Finding:改写迭代提升剧本完成度",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-007",
+   "target": "Finding:节拍节奏驱动情感起伏",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-015",
+   "target": "Finding:空间化书写适配新媒介",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-022",
+   "target": "Finding:空间化书写适配新媒介",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-028",
+   "target": "Finding:改写迭代提升剧本完成度",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-030",
+   "target": "Finding:人物弧对齐强化主题传达",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-034",
+   "target": "Finding:空间化书写适配新媒介",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-035",
+   "target": "Finding:开场钩子增强持续观看",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-038",
+   "target": "Finding:空间化书写适配新媒介",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-039",
+   "target": "Finding:改写迭代提升剧本完成度",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-040",
+   "target": "Finding:冲突双线强化高潮张力",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-045",
+   "target": "Finding:悬念信息控制维持注意",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-047",
+   "target": "Finding:改写迭代提升剧本完成度",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-048",
+   "target": "Finding:节拍节奏驱动情感起伏",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-049",
+   "target": "Finding:人物弧对齐强化主题传达",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-编剧-050",
+   "target": "Finding:开场钩子增强持续观看",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Concept:三幕结构",
+   "target": "Concept:情节点",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:三幕结构",
+   "target": "Concept:节拍",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:三幕结构",
+   "target": "Concept:冲突",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:情节点",
+   "target": "Concept:悬念",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:情节点",
+   "target": "Concept:冲突",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:节拍",
+   "target": "Concept:悬念",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:钩子",
+   "target": "Concept:悬念",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:钩子",
+   "target": "Concept:冲突",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:人物弧",
+   "target": "Concept:冲突",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:人物弧",
+   "target": "Concept:主题",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:人物弧",
+   "target": "Concept:潜台词",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:对话",
+   "target": "Concept:潜台词",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:对话",
+   "target": "Concept:人物关系网",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:主题",
+   "target": "Concept:冲突",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:场景",
+   "target": "Concept:节拍",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:场景",
+   "target": "Concept:人物关系网",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Finding:三幕结构清晰提升信息记忆",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:三幕结构清晰提升信息记忆",
+   "target": "NarrationFormula:F04层级句",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:概念前置优于结论前置",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:开场钩子增强持续观看",
+   "target": "NarrationFormula:F01钩子句",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:开场钩子增强持续观看",
+   "target": "NarrationRule:开头钩子高科版",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:悬念信息控制维持注意",
+   "target": "NarrationRule:开头钩子高科版",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:悬念信息控制维持注意",
+   "target": "NarrationFormula:F01钩子句",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:潜台词克制表达提升可信度",
+   "target": "NarrationRule:克制信任律",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:冲突双线强化高潮张力",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:节拍节奏驱动情感起伏",
+   "target": "NarrationRule:语速档位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:改写迭代提升剧本完成度",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:改写迭代提升剧本完成度",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:空间化书写适配新媒介",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:人物弧对齐强化主题传达",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:案例分析法",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:文本话语分析",
+   "target": "NarrationFormula:F04层级句",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:创意实践研究",
+   "target": "Rule:AI原生交付原则",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:行业访谈民族志",
+   "target": "NarrationType:直白规格型",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:定量实证",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  }
+ ]
+}

@@ -1,0 +1,3300 @@
+{
+ "schema_version": "1.0",
+ "pack": "papers-sheying-kg",
+ "role": "摄影/电影摄影",
+ "entities": [
+  {
+   "id": "Paper:OA-摄影-1",
+   "type": "Paper",
+   "name": "Ideological Effects of the Basic Cinematographic Apparatus",
+   "props": {
+    "专业": "摄影",
+    "年份": "1974",
+    "被引": "608",
+    "DOI": "10.2307/1211632",
+    "域": "影像",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1211632"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-12",
+   "type": "Paper",
+   "name": "Ideological Effects of the Basic Cinematographic Apparatus (Film Quarterly reprint)",
+   "props": {
+    "专业": "摄影",
+    "年份": "1974",
+    "被引": "169",
+    "DOI": "10.1525/fq.1974.28.2.04a00080",
+    "域": "影像",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "https://doi.org/10.1525/fq.1974.28.2.04a00080"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-49",
+   "type": "Paper",
+   "name": "Cinematography: Theory and Practice: Image Making for Cinematographers and Directors",
+   "props": {
+    "专业": "摄影",
+    "年份": "2011",
+    "被引": "77",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-46",
+   "type": "Paper",
+   "name": "Technologies of Seeing: Photography, Cinematography and Television",
+   "props": {
+    "专业": "摄影",
+    "年份": "1996",
+    "被引": "82",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-8",
+   "type": "Paper",
+   "name": "Declarative camera control for automatic cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "1996",
+    "被引": "186",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-13",
+   "type": "Paper",
+   "name": "Real-time planning for automated multi-view drone cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "2017",
+    "被引": "168",
+    "DOI": "10.1145/3072959.3073712",
+    "域": "影像",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "https://doi.org/10.1145/3072959.3073712"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-22",
+   "type": "Paper",
+   "name": "High-Level Multiple-UAV Cinematography Tools for Covering Outdoor Events",
+   "props": {
+    "专业": "摄影",
+    "年份": "2019",
+    "被引": "116",
+    "DOI": "10.1109/tbc.2019.2892585",
+    "域": "影像",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "https://doi.org/10.1109/tbc.2019.2892585"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-23",
+   "type": "Paper",
+   "name": "Re-cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "2008",
+    "被引": "116",
+    "DOI": "10.1145/1404880.1404882",
+    "域": "影像",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "https://doi.org/10.1145/1404880.1404882"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-37",
+   "type": "Paper",
+   "name": "Where am I? What am I looking at? (cinematography)",
+   "props": {
+    "专业": "摄影",
+    "年份": "1988",
+    "被引": "91",
+    "DOI": "10.1109/38.7751",
+    "域": "影像",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "https://doi.org/10.1109/38.7751"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-6",
+   "type": "Paper",
+   "name": "Direct Linear Transformation Method for Three-Dimensional Cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "1978",
+    "被引": "201",
+    "DOI": "10.1080/10671315.1978.10615524",
+    "域": "影像",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10671315.1978.10615524"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-10",
+   "type": "Paper",
+   "name": "Cinematographic images of a city",
+   "props": {
+    "专业": "摄影",
+    "年份": "1996",
+    "被引": "181",
+    "DOI": "10.1016/0261-5177(96)00033-7",
+    "域": "影像",
+    "置信度": "DB_REFERENCE"
+   },
+   "sources": [
+    "https://doi.org/10.1016/0261-5177(96)00033-7"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:景别",
+   "type": "Concept",
+   "name": "景别",
+   "props": {
+    "含义": "镜头中主体在画面中的范围/距离，从远景到特写的叙事语言单元",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:运镜",
+   "type": "Concept",
+   "name": "运镜",
+   "props": {
+    "含义": "摄影机在拍摄中的运动方式：推/拉/摇/移/跟/环绕/升降等",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49",
+    "Paper:OA-摄影-13"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:构图",
+   "type": "Concept",
+   "name": "构图",
+   "props": {
+    "含义": "主体、环境与空间在画面中的组织与平衡",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:景深",
+   "type": "Concept",
+   "name": "景深",
+   "props": {
+    "含义": "画面中清晰成像的空间范围，由光圈/焦距/物距决定",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:光影",
+   "type": "Concept",
+   "name": "光影",
+   "props": {
+    "含义": "光的照度、方向与明暗对比作用于主体体积感与情绪",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:机位",
+   "type": "Concept",
+   "name": "机位",
+   "props": {
+    "含义": "摄影机所处位置、角度与高度，决定透视与观看关系",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49",
+    "Paper:OA-摄影-6"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:长镜头",
+   "type": "Concept",
+   "name": "长镜头",
+   "props": {
+    "含义": "保持摄影机连续不间断拍摄的镜头，强调真实时空的连续性",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:手持移动摄影",
+   "type": "Concept",
+   "name": "手持/移动摄影",
+   "props": {
+    "含义": "摄影机由人手持或机架移动拍摄，带来呼吸感/临场感/晃动纪实感",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:镜头视点凝视",
+   "type": "Concept",
+   "name": "镜头视点/凝视",
+   "props": {
+    "含义": "镜头隐含的观看者位置与视线，决定观众如何进入画面",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-1",
+    "Paper:OA-摄影-37"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:摄影机装置",
+   "type": "Concept",
+   "name": "摄影机装置",
+   "props": {
+    "含义": "摄影机作为技术装置，其运作隐含地组织观看主体与观看关系",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-1",
+    "Paper:OA-摄影-12",
+    "Paper:OA-摄影-46"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:都市影像",
+   "type": "Concept",
+   "name": "都市影像",
+   "props": {
+    "含义": "以城市为对象的电影/影像再现，重组空间为可读意象",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-10"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:自动电影摄影",
+   "type": "Concept",
+   "name": "自动电影摄影",
+   "props": {
+    "含义": "以算法/规划自动生成或控制镜头语言的计算电影摄影",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-8",
+    "Paper:OA-摄影-13",
+    "Paper:OA-摄影-22"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:镜头语法",
+   "type": "Concept",
+   "name": "镜头语法",
+   "props": {
+    "含义": "镜头的组合与排列（景别/运镜/组接）形成可读叙事的语法系统",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49",
+    "Paper:OA-摄影-23"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:自动电影摄影规划",
+   "type": "Method",
+   "name": "自动电影摄影规划",
+   "props": {
+    "含义": "以约束/搜索/实时规划在多个机位间自动选择与运镜，覆盖事件或主体",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-13",
+    "Paper:OA-摄影-22"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:声明式相机控制",
+   "type": "Method",
+   "name": "声明式相机控制",
+   "props": {
+    "含义": "用「目标构图/语义」声明镜头意图而非直接指定数值参数，由系统推导机位与运镜",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-8"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:三维摄影测量标定",
+   "type": "Method",
+   "name": "三维摄影测量标定",
+   "props": {
+    "含义": "用直接线性变换(DLT)从二维电影帧反推三维坐标，重建机位与空间运动",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-6"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:电影语言分析",
+   "type": "Method",
+   "name": "电影语言/视听形式分析",
+   "props": {
+    "含义": "分析镜头的景别/构图/运镜/组接如何组织空间叙事与隐喻",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-10",
+    "Paper:OA-摄影-23",
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:意识形态装置批判",
+   "type": "Method",
+   "name": "意识形态装置批判",
+   "props": {
+    "含义": "从摄影机装置出发批判其隐含的观看主体定位与意识形态效果",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-1",
+    "Paper:OA-摄影-12"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:机位视点即立场",
+   "type": "Finding",
+   "name": "机位/视点即立场：摄影机装置使观众无意识认同镜头位置",
+   "props": {
+    "结论": "摄影机装置把观看者安放到「主体-中心」位置，使其无意识认同镜头视点；换机位即换观看立场",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-1",
+    "Paper:OA-摄影-12"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:运镜组织空间叙",
+   "type": "Finding",
+   "name": "运镜+蒙太奇把城市空间重构成可读意象",
+   "props": {
+    "结论": "运动镜头与蒙太奇能把碎片化城市空间重组为连贯可读的都市意象，运镜本身即叙事",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-10"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:声明目标构图更稳",
+   "type": "Finding",
+   "name": "声明式目标构图比数值参数更易得到稳定可复现镜头",
+   "props": {
+    "结论": "用「目标构图/语义」声明镜头意图，比直接指定轨迹数值更能稳定推导机位与运镜",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-8"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:多机位实时规划",
+   "type": "Finding",
+   "name": "多机位实时规划可同时满足避障与构图约束生成连贯运镜",
+   "props": {
+    "结论": "面向开阔事件的多视点实时规划能兼顾避障+构图约束自动生成连贯的航拍运镜，接近人工水准",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-13"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:多机覆盖减少干预",
+   "type": "Finding",
+   "name": "多无人机协同巡航可自动衔接多机位覆盖，减少人工干预",
+   "props": {
+    "结论": "多无人机高层协同可在开阔户外事件中自动切换/衔接机位实现全程覆盖，显著减少人工导播干预",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-22"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:重摄影产生新意义",
+   "type": "Finding",
+   "name": "引用/重拍既有影像可在新引用关系中产生意义",
+   "props": {
+    "结论": "对既有影像「再摄影/再投映」会在新的引用关系中产生新意义，意义不只在影像材料本身",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-23"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:景别定重点",
+   "type": "Finding",
+   "name": "景别与机位距离决定主体叙事重量",
+   "props": {
+    "结论": "景别与机位距离决定主体叙事重量：近景/特写聚焦情感与主体细节，全景/远景交代环境与关系",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:景深压向主体",
+   "type": "Finding",
+   "name": "景深控制主体与环境分离度，浅景深把注意力压向主体",
+   "props": {
+    "结论": "景深（光圈/焦距/物距）控制主体与环境的分离度；浅景深把视觉注意力压向主体，深景深强调环境关系",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:光影定基调",
+   "type": "Finding",
+   "name": "光影方向与明暗对比决定体积感与情绪基调",
+   "props": {
+    "结论": "光影方向与明暗对比决定主体体积感与画面情绪基调：软光柔和亲近，硬光/低对比冷峻纪实",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:观看受装置塑造",
+   "type": "Finding",
+   "name": "观看方式由技术装置塑造（摄影/电影/电视作为观看技术）",
+   "props": {
+    "结论": "摄影/电影/电视是不同的「观看技术」，其装置特性塑造了特定时代的观看方式与可见性",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-46"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:装置理论",
+   "type": "Theory",
+   "name": "装置理论",
+   "props": {
+    "含义": "摄影机是意识形态装置，其运作隐藏地建构观看主体与「自然再现」幻觉",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-1",
+    "Paper:OA-摄影-12"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:视觉技术论",
+   "type": "Theory",
+   "name": "视觉技术/观看技术论",
+   "props": {
+    "含义": "摄影、电影、电视作为社会建构的「观看技术」，装置塑造观看方式",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-46"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:电影摄影形式语法",
+   "type": "Theory",
+   "name": "电影摄影形式/语法理论",
+   "props": {
+    "含义": "景别/构图/运镜/组接构成可读叙事的镜头语法系统",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-49",
+    "Paper:OA-摄影-23"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:计算电影摄影",
+   "type": "Theory",
+   "name": "计算电影摄影",
+   "props": {
+    "含义": "以算法/规划/约束自动生成或控制镜头语言的计算摄影范式",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-13",
+    "Paper:OA-摄影-22"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-50",
+   "type": "Paper",
+   "name": "The Five C's of Cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "1965",
+    "被引": "130",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "电影摄影五要素（机位/连续/剪辑/特写/构图）的经典入门教科书"
+   },
+   "sources": [
+    "The Five C's of Cinematography (1965)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-51",
+   "type": "Paper",
+   "name": "Cinema before cinema: the origins of scientific cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "2006",
+    "被引": "93",
+    "DOI": "10.5860/choice.44-1351",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "梳理科学运动影像技术（迈布里奇/马莱）如何催生电影的摄影技术史"
+   },
+   "sources": [
+    "https://doi.org/10.5860/choice.44-1351"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-52",
+   "type": "Paper",
+   "name": "Expressive autonomous cinematography for interactive virtual environments",
+   "props": {
+    "专业": "摄影",
+    "年份": "2000",
+    "被引": "88",
+    "DOI": "10.1145/336595.337513",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "面向交互虚拟环境的具表现力自动电影摄影系统"
+   },
+   "sources": [
+    "https://doi.org/10.1145/336595.337513"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-53",
+   "type": "Paper",
+   "name": "The Technique of Special Effects Cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "1965",
+    "被引": "69",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "传统到特技电影摄影的胶片技术与特效手法"
+   },
+   "sources": [
+    "The Technique of Special Effects Cinematography (1965)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-54",
+   "type": "Paper",
+   "name": "Challenges in Autonomous UAV Cinematography: An Overview",
+   "props": {
+    "专业": "摄影",
+    "年份": "2018",
+    "被引": "75",
+    "DOI": "10.1109/icme.2018.8486586",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "综述自主无人机电影摄影的挑战与研究方向"
+   },
+   "sources": [
+    "https://doi.org/10.1109/icme.2018.8486586"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-55",
+   "type": "Paper",
+   "name": "Lighting Controls for Computer Cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "1997",
+    "被引": "63",
+    "DOI": "10.1080/10867651.1997.10487467",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "计算机电影摄影（虚拟场景）的灯光控制方法"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10867651.1997.10487467"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-56",
+   "type": "Paper",
+   "name": "Pano2Vid: Automatic Cinematography for Watching 360° Videos",
+   "props": {
+    "专业": "摄影",
+    "年份": "2017",
+    "被引": "83",
+    "DOI": "10.1007/978-3-319-54190-7_10",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "为360°全景视频自动生成电影化视角的运镜方案"
+   },
+   "sources": [
+    "https://doi.org/10.1007/978-3-319-54190-7_10"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-57",
+   "type": "Paper",
+   "name": "Autonomous UAV Cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "2019",
+    "被引": "49",
+    "DOI": "10.1145/3347713",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "自主无人机电影摄影的控制与规划综述"
+   },
+   "sources": [
+    "https://doi.org/10.1145/3347713"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-58",
+   "type": "Paper",
+   "name": "Digital Cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "2014",
+    "被引": "20",
+    "DOI": "10.4324/9780240817927",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "数字电影摄影的拍摄/曝光/色彩技术体系"
+   },
+   "sources": [
+    "https://doi.org/10.4324/9780240817927"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-59",
+   "type": "Paper",
+   "name": "Digital Cinematography & Directing",
+   "props": {
+    "专业": "摄影",
+    "年份": "2002",
+    "被引": "12",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "数字电影摄影与导演工作流"
+   },
+   "sources": [
+    "Digital Cinematography & Directing (2002)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-60",
+   "type": "Paper",
+   "name": "Digital Cinematography: Fundamentals, Tools, Techniques, and Workflows",
+   "props": {
+    "专业": "摄影",
+    "年份": "2013",
+    "被引": "9",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "数字电影摄影的流程/工具/工作流基础"
+   },
+   "sources": [
+    "Digital Cinematography: Fundamentals, Tools, Techniques, and Workflows (2013)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-61",
+   "type": "Paper",
+   "name": "Digital Cinematography: Evolution of Craft or Revolution in Production?",
+   "props": {
+    "专业": "摄影",
+    "年份": "2014",
+    "被引": "5",
+    "DOI": "10.5406/jfilmvideo.66.2.0003",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "数字电影摄影是工艺演进还是制作革命"
+   },
+   "sources": [
+    "https://doi.org/10.5406/jfilmvideo.66.2.0003"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-62",
+   "type": "Paper",
+   "name": "The Emergence of Filmic Artifacts: Cinema and Cinematography in the Digital Era",
+   "props": {
+    "专业": "摄影",
+    "年份": "2004",
+    "被引": "60",
+    "DOI": "10.1525/fq.2004.57.3.24",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "数字时代电影与电影摄影的影像本体与风格转变"
+   },
+   "sources": [
+    "https://doi.org/10.1525/fq.2004.57.3.24"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-63",
+   "type": "Paper",
+   "name": "Digital Cinema: The Revolution in Cinematography, Post-Production, and Distribution",
+   "props": {
+    "专业": "摄影",
+    "年份": "2005",
+    "被引": "37",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "数字电影在摄影/后期/发行的革命"
+   },
+   "sources": [
+    "Digital Cinema: The Revolution in Cinematography, Post-Production, and Distribution (2005)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-64",
+   "type": "Paper",
+   "name": "The 'look' and how to keep it: cinematography, postproduction and digital colour",
+   "props": {
+    "专业": "摄影",
+    "年份": "2010",
+    "被引": "15",
+    "DOI": "10.1093/screen/hjq045",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "电影风格'look'在摄影-后期-数字调色中的保持"
+   },
+   "sources": [
+    "https://doi.org/10.1093/screen/hjq045"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-65",
+   "type": "Paper",
+   "name": "The ILM Version: Recent Digital Effects and the Aesthetics of 1970s Cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "2012",
+    "被引": "16",
+    "DOI": "10.2979/filmhistory.24.2.158",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "ILM数字特效与1970年代电影摄影美学的关系"
+   },
+   "sources": [
+    "https://doi.org/10.2979/filmhistory.24.2.158"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-66",
+   "type": "Paper",
+   "name": "The All-Digital Camcorder — The Arrival of Electronic Cinematography",
+   "props": {
+    "专业": "摄影",
+    "年份": "1996",
+    "被引": "5",
+    "DOI": "10.5594/j15852",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "全数字摄录一体机的电子电影摄影到来"
+   },
+   "sources": [
+    "https://doi.org/10.5594/j15852"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-67",
+   "type": "Paper",
+   "name": "Elegies to Cinematography: The Digital Workflow, Digital Naturalism and Recent Best Cinematography Oscars",
+   "props": {
+    "专业": "摄影",
+    "年份": "2017",
+    "被引": "3",
+    "DOI": "10.16997/book4.g",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "数字工作流与数字自然主义的电影摄影风潮"
+   },
+   "sources": [
+    "https://doi.org/10.16997/book4.g"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-68",
+   "type": "Paper",
+   "name": "Visual Effects Cinematography: The Cinematographer's Filmic Technique from Traditional to Digital Era",
+   "props": {
+    "专业": "摄影",
+    "年份": "2012",
+    "被引": "4",
+    "DOI": "10.7456/10202100/016",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "传统到数字时代的特效电影摄影技法"
+   },
+   "sources": [
+    "https://doi.org/10.7456/10202100/016"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-69",
+   "type": "Paper",
+   "name": "Virtual Cinematography and the Digital Real: (dis)placing the moving image between reality and simulacra",
+   "props": {
+    "专业": "摄影",
+    "年份": "2007",
+    "被引": "4",
+    "DOI": "10.5040/9780755699865.ch-013",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "虚拟电影摄影中真实/拟像的辩证"
+   },
+   "sources": [
+    "https://doi.org/10.5040/9780755699865.ch-013"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-70",
+   "type": "Paper",
+   "name": "Film Shot Type Classification Based on Camera Movement Styles",
+   "props": {
+    "专业": "摄影",
+    "年份": "2022",
+    "被引": "5",
+    "DOI": "10.1007/978-3-031-04881-4_48",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "按运镜风格进行电影镜头类型分类"
+   },
+   "sources": [
+    "https://doi.org/10.1007/978-3-031-04881-4_48"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-71",
+   "type": "Paper",
+   "name": "The Mobile Mise En Scene: A Critical Analysis of the Theory and Practice of Long-Take Camera Movement in the Narrative Film",
+   "props": {
+    "专业": "摄影",
+    "年份": "1978",
+    "被引": "10",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "叙事电影中长镜头/运动镜头的场面调度理论"
+   },
+   "sources": [
+    "The Mobile Mise En Scene: A Critical Analysis of the Theory and Practice of Long-Take Camera Movement in the Narrative Film (1978)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-72",
+   "type": "Paper",
+   "name": "Camera Movement in Edison and Biograph Films, 1900-1906",
+   "props": {
+    "专业": "摄影",
+    "年份": "1980",
+    "被引": "3",
+    "DOI": "10.2307/1224867",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "1900-1906早期电影的运动镜头发展"
+   },
+   "sources": [
+    "https://doi.org/10.2307/1224867"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-73",
+   "type": "Paper",
+   "name": "Which Way Did He Go? Directionality of Film Character and Camera Movement and Subsequent Spectator Interpretation",
+   "props": {
+    "专业": "摄影",
+    "年份": "2012",
+    "被引": "3",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "人物与镜头的运动方向如何影响观众解读"
+   },
+   "sources": [
+    "Which Way Did He Go? Directionality of Film Character and Camera Movement and Subsequent Spectator Interpretation (2012)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-74",
+   "type": "Paper",
+   "name": "The virtual cinematographer",
+   "props": {
+    "专业": "摄影",
+    "年份": "1996",
+    "被引": "311",
+    "DOI": "10.1145/237170.237259",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "自动实时摄影机控制与导演的虚拟摄影师范式"
+   },
+   "sources": [
+    "https://doi.org/10.1145/237170.237259"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-75",
+   "type": "Paper",
+   "name": "Notes on the Cinematographer",
+   "props": {
+    "专业": "摄影",
+    "年份": "1975",
+    "被引": "91",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "布列松《电影书写札记》的电影摄影风格与构图笔记"
+   },
+   "sources": [
+    "Notes on the Cinematographer (1975)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-76",
+   "type": "Paper",
+   "name": "The British cinematographer",
+   "props": {
+    "专业": "摄影",
+    "年份": "1997",
+    "被引": "31",
+    "DOI": "10.5860/choice.34-3779",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "英国电影摄影师的历史与风格"
+   },
+   "sources": [
+    "https://doi.org/10.5860/choice.34-3779"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-77",
+   "type": "Paper",
+   "name": "American Cinematographer Manual",
+   "props": {
+    "专业": "摄影",
+    "年份": "2002",
+    "被引": "34",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "ASC美国电影摄影师手册的技术参考"
+   },
+   "sources": [
+    "American Cinematographer Manual (2002)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-78",
+   "type": "Paper",
+   "name": "Masters of Light: Conversations with Contemporary Cinematographers",
+   "props": {
+    "专业": "摄影",
+    "年份": "1984",
+    "被引": "43",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "与当代电影摄影师对话谈用光与影像风格"
+   },
+   "sources": [
+    "Masters of Light: Conversations with Contemporary Cinematographers (1984)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-79",
+   "type": "Paper",
+   "name": "Towards a Drone Cinematographer: Guiding Quadrotor Cameras using Visual Composition Principles",
+   "props": {
+    "专业": "摄影",
+    "年份": "2016",
+    "被引": "51",
+    "DOI": "10.48550/arxiv.1610.01691",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "以视觉构图原则引导无人机相机航拍运镜"
+   },
+   "sources": [
+    "https://doi.org/10.48550/arxiv.1610.01691"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-80",
+   "type": "Paper",
+   "name": "The Virtual Cinematographer: A Paradigm for Automatic Real-Time Camera Control and Directing",
+   "props": {
+    "专业": "摄影",
+    "年份": "2023",
+    "被引": "35",
+    "DOI": "10.1145/3596711.3596786",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "自动实时摄影机控制与导演的范式重述"
+   },
+   "sources": [
+    "https://doi.org/10.1145/3596711.3596786"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-81",
+   "type": "Paper",
+   "name": "Case Study: Cinematography using Digital Human in Tiny Virtual Production",
+   "props": {
+    "专业": "摄影",
+    "年份": "2023",
+    "被引": "2",
+    "DOI": "10.15701/kcgs.2023.29.3.21",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "虚拟制片中数字人的电影摄影案例"
+   },
+   "sources": [
+    "https://doi.org/10.15701/kcgs.2023.29.3.21"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-82",
+   "type": "Paper",
+   "name": "Cinematography, Architecture, and Design in the Digital Age",
+   "props": {
+    "专业": "摄影",
+    "年份": "2021",
+    "被引": "2",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "数字时代的电影摄影/建筑与设计"
+   },
+   "sources": [
+    "Cinematography, Architecture, and Design in the Digital Age (2021)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-83",
+   "type": "Paper",
+   "name": "Videographic film studies and the analysis of camera movement",
+   "props": {
+    "专业": "摄影",
+    "年份": "2016",
+    "被引": "1",
+    "DOI": "10.25969/mediarep/3346",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "用影像写作进行运镜分析的视频电影研究"
+   },
+   "sources": [
+    "https://doi.org/10.25969/mediarep/3346"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-84",
+   "type": "Paper",
+   "name": "When and Where Is the Digital Revolution in Cinematography?",
+   "props": {
+    "专业": "摄影",
+    "年份": "2012",
+    "被引": "1",
+    "DOI": "10.3167/proj.2012.060103",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "数字电影摄影革命发生的时间与地点"
+   },
+   "sources": [
+    "https://doi.org/10.3167/proj.2012.060103"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-85",
+   "type": "Paper",
+   "name": "Digital Cinematography: The Medium is the Message?",
+   "props": {
+    "专业": "摄影",
+    "年份": "2014",
+    "被引": "1",
+    "DOI": "10.30958/ajmmc.1-1-4",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "媒介即讯息视角下的数字电影摄影"
+   },
+   "sources": [
+    "https://doi.org/10.30958/ajmmc.1-1-4"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-86",
+   "type": "Paper",
+   "name": "'How movies move us just the right way' - Exploring the role of camera movement and montage in human film perception",
+   "props": {
+    "专业": "摄影",
+    "年份": "2015",
+    "被引": "0",
+    "DOI": "",
+    "域": "影像",
+    "置信度": "LLM_INFERRED",
+    "说明": "运镜与蒙太奇如何影响人类电影知觉"
+   },
+   "sources": [
+    "'How movies move us just the right way' - Exploring the role of camera movement and montage in human film perception (2015)"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-摄影-87",
+   "type": "Paper",
+   "name": "Camera Movement in Japanese Silent Films (and the 20th Giornate del Cinema Muto, in Sacile, Italy, October 2001)",
+   "props": {
+    "专业": "摄影",
+    "年份": "2003",
+    "被引": "0",
+    "DOI": "10.1386/ac.14.2.197_1",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "日本默片时期的摄影机运动"
+   },
+   "sources": [
+    "https://doi.org/10.1386/ac.14.2.197_1"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:数字电影摄影",
+   "type": "Concept",
+   "name": "数字电影摄影",
+   "props": {
+    "含义": "以数字传感器与数字工作流为核心的电影摄影范式，涵盖拍摄/曝光/色彩管理与数字后期",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-58",
+    "Paper:OA-摄影-60",
+    "Paper:OA-摄影-62",
+    "Paper:OA-摄影-64",
+    "Paper:OA-摄影-66"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:电影摄影风格",
+   "type": "Concept",
+   "name": "电影摄影风格/'look'",
+   "props": {
+    "含义": "由光影/镜头/胶片或数字质感/色彩共同塑造的、可辨识的影像美学签名",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-64",
+    "Paper:OA-摄影-65",
+    "Paper:OA-摄影-67",
+    "Paper:OA-摄影-75",
+    "Paper:OA-摄影-78"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:电影摄影史",
+   "type": "Concept",
+   "name": "电影摄影史",
+   "props": {
+    "含义": "电影摄影技术与风格从诞生到数字时代的演进史",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-51",
+    "Paper:OA-摄影-72",
+    "Paper:OA-摄影-76",
+    "Paper:OA-摄影-84",
+    "Paper:OA-摄影-87"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:虚拟电影摄影",
+   "type": "Concept",
+   "name": "虚拟电影摄影",
+   "props": {
+    "含义": "在虚拟环境/数字世界中以算法或实时引擎生成与控制镜头的计算电影摄影",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-52",
+    "Paper:OA-摄影-74",
+    "Paper:OA-摄影-80",
+    "Paper:OA-摄影-81"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:运动镜头分析",
+   "type": "Method",
+   "name": "运动镜头/长镜头分析",
+   "props": {
+    "含义": "分析摄影机运动方向/幅度/时长及长镜头如何组织空间叙事与引导观众解读",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-70",
+    "Paper:OA-摄影-71",
+    "Paper:OA-摄影-73",
+    "Paper:OA-摄影-86"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:数字色彩与风格化工作流",
+   "type": "Method",
+   "name": "数字色彩与风格化工作流",
+   "props": {
+    "含义": "以调色/色彩管理与全流程约束保持电影'look'的数字后制方法",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-58",
+    "Paper:OA-摄影-64",
+    "Paper:OA-摄影-67",
+    "Paper:OA-摄影-68"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:运镜引导情绪与紧张",
+   "type": "Finding",
+   "name": "运镜/运动镜头引导情绪与紧张感",
+   "props": {
+    "结论": "摄影机运动（速度/幅度/方向）能直接塑造情绪与紧张感，运动镜头的节奏即叙事节奏",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-86",
+    "Paper:OA-摄影-73",
+    "Paper:OA-摄影-71"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:长镜头保持时空连续",
+   "type": "Finding",
+   "name": "长镜头保持时空连续性",
+   "props": {
+    "结论": "长镜头/不间断运动镜头保留时空的连续与真实，使场面调度在单一镜头内完成叙事",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-71"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:数字转换重塑影像风格",
+   "type": "Finding",
+   "name": "数字转换重塑影像本体与风格",
+   "props": {
+    "结论": "数字技术改变电影影像的本体与美学：从介质/颗粒到'数字化自然主义'，重塑可辨识的摄影风格谱系",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-62",
+    "Paper:OA-摄影-61",
+    "Paper:OA-摄影-65",
+    "Paper:OA-摄影-66"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:风格一致需全流程约束",
+   "type": "Finding",
+   "name": "风格'look'一致性靠全流程约束",
+   "props": {
+    "结论": "电影风格'look'需在摄影-后期-调色全流程用统一色彩/风格约束才能保持，单点处理会漂移",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-64",
+    "Paper:OA-摄影-67",
+    "Paper:OA-摄影-68"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:自动虚拟摄影机产可用镜头",
+   "type": "Finding",
+   "name": "自动/虚拟摄影机可产出可用镜头",
+   "props": {
+    "结论": "自动实时摄影机控制与规划（含无人机/虚拟环境）能在构图与避障约束下产出可用、连贯的电影化镜头，减少人工干预",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-74",
+    "Paper:OA-摄影-80",
+    "Paper:OA-摄影-79",
+    "Paper:OA-摄影-56"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:运动方向引导观众解读",
+   "type": "Finding",
+   "name": "镜头/人物运动方向引导观众解读",
+   "props": {
+    "结论": "人物与镜头的运动方向会引导观众的注意与解读取向（视点/阅读方向性），运镜即意义的组织",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-73",
+    "Paper:OA-摄影-86"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:数字电影摄影理论",
+   "type": "Theory",
+   "name": "数字电影摄影理论",
+   "props": {
+    "含义": "数字技术重塑电影摄影的本体/工作流/美学与'真实'想象的理论框架",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-摄影-62",
+    "Paper:OA-摄影-61",
+    "Paper:OA-摄影-69",
+    "Paper:OA-摄影-84"
+   ],
+   "domains": [
+    "影像"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "Paper:OA-摄影-1",
+   "target": "Concept:镜头视点凝视",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-1",
+   "target": "Concept:摄影机装置",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-12",
+   "target": "Concept:摄影机装置",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-6",
+   "target": "Concept:机位",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-8",
+   "target": "Concept:自动电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-13",
+   "target": "Concept:自动电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-13",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-22",
+   "target": "Concept:自动电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-22",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-10",
+   "target": "Concept:都市影像",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-10",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-23",
+   "target": "Concept:镜头语法",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-23",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-37",
+   "target": "Concept:镜头视点凝视",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-37",
+   "target": "Concept:机位",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-46",
+   "target": "Concept:摄影机装置",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:景别",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:构图",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:景深",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:光影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:机位",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:长镜头",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:手持移动摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Concept:镜头语法",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-1",
+   "target": "Method:意识形态装置批判",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-12",
+   "target": "Method:意识形态装置批判",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-6",
+   "target": "Method:三维摄影测量标定",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-8",
+   "target": "Method:声明式相机控制",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-13",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-22",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-10",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-23",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-1",
+   "target": "Finding:机位视点即立场",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-12",
+   "target": "Finding:机位视点即立场",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-10",
+   "target": "Finding:运镜组织空间叙",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-8",
+   "target": "Finding:声明目标构图更稳",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-13",
+   "target": "Finding:多机位实时规划",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-22",
+   "target": "Finding:多机覆盖减少干预",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-23",
+   "target": "Finding:重摄影产生新意义",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Finding:景别定重点",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Finding:景深压向主体",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Finding:光影定基调",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-46",
+   "target": "Finding:观看受装置塑造",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-1",
+   "target": "Theory:装置理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-12",
+   "target": "Theory:装置理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-46",
+   "target": "Theory:视觉技术论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-49",
+   "target": "Theory:电影摄影形式语法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-23",
+   "target": "Theory:电影摄影形式语法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-13",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-22",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-8",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Method:自动电影摄影规划",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:自动电影摄影规划",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:声明式相机控制",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:声明式相机控制",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:三维摄影测量标定",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:电影语言分析",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:电影语言分析",
+   "target": "NarrationRule:旁白不抢画面",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:意识形态装置批判",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:机位视点即立场",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:机位视点即立场",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:运镜组织空间叙",
+   "target": "NarrationRule:旁白不抢画面",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:运镜组织空间叙",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:声明目标构图更稳",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:声明目标构图更稳",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:多机位实时规划",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:多机覆盖减少干预",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:重摄影产生新意义",
+   "target": "Rule:AI原生交付原则",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:景别定重点",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:景深压向主体",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:光影定基调",
+   "target": "NarrationRule:旁白不抢画面",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:观看受装置塑造",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Concept:景别",
+   "target": "Concept:构图",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:景别",
+   "target": "Concept:机位",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:景别",
+   "target": "Concept:景深",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:景别",
+   "target": "Concept:运镜",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:构图",
+   "target": "Concept:运镜",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:构图",
+   "target": "Concept:机位",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:构图",
+   "target": "Concept:光影",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:景深",
+   "target": "Concept:机位",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:景深",
+   "target": "Concept:光影",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:运镜",
+   "target": "Concept:长镜头",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:运镜",
+   "target": "Concept:手持移动摄影",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:运镜",
+   "target": "Concept:自动电影摄影",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:长镜头",
+   "target": "Concept:手持移动摄影",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:机位",
+   "target": "Concept:镜头视点凝视",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:镜头视点凝视",
+   "target": "Concept:摄影机装置",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:摄影机装置",
+   "target": "Concept:镜头视点凝视",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:摄影机装置",
+   "target": "Concept:自动电影摄影",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:镜头语法",
+   "target": "Concept:运镜",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:镜头语法",
+   "target": "Concept:构图",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:镜头语法",
+   "target": "Concept:景别",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:都市影像",
+   "target": "Concept:镜头语法",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:自动电影摄影",
+   "target": "Concept:运镜",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:自动电影摄影",
+   "target": "Concept:机位",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:手持移动摄影",
+   "target": "Concept:机位",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-50",
+   "target": "Concept:构图",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-50",
+   "target": "Concept:光影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-50",
+   "target": "Concept:景别",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-50",
+   "target": "Concept:机位",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-50",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-50",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-50",
+   "target": "Theory:电影摄影形式语法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-51",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-51",
+   "target": "Concept:摄影机装置",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-51",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-52",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-52",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-52",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-52",
+   "target": "Finding:自动虚拟摄影机产可用镜头",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-52",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-53",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-53",
+   "target": "Concept:镜头语法",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-53",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-53",
+   "target": "Theory:电影摄影形式语法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-54",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-54",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-54",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-54",
+   "target": "Finding:自动虚拟摄影机产可用镜头",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-54",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-55",
+   "target": "Concept:光影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-55",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-55",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-56",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-56",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-56",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-56",
+   "target": "Finding:自动虚拟摄影机产可用镜头",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-56",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-57",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-57",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-57",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-57",
+   "target": "Finding:自动虚拟摄影机产可用镜头",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-57",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-58",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-58",
+   "target": "Method:数字色彩与风格化工作流",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-58",
+   "target": "Finding:数字转换重塑影像风格",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-58",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-59",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-59",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-59",
+   "target": "Method:数字色彩与风格化工作流",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-59",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-60",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-60",
+   "target": "Method:数字色彩与风格化工作流",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-60",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-61",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-61",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-61",
+   "target": "Finding:数字转换重塑影像风格",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-61",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-62",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-62",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-62",
+   "target": "Finding:数字转换重塑影像风格",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-62",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-63",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-63",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-63",
+   "target": "Method:数字色彩与风格化工作流",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-63",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-64",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-64",
+   "target": "Concept:光影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-64",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-64",
+   "target": "Method:数字色彩与风格化工作流",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-64",
+   "target": "Finding:风格一致需全流程约束",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-64",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-65",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-65",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-65",
+   "target": "Finding:数字转换重塑影像风格",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-65",
+   "target": "Theory:电影摄影形式语法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-66",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-66",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-66",
+   "target": "Finding:数字转换重塑影像风格",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-67",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-67",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-67",
+   "target": "Method:数字色彩与风格化工作流",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-67",
+   "target": "Finding:风格一致需全流程约束",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-67",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-68",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-68",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-68",
+   "target": "Method:数字色彩与风格化工作流",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-68",
+   "target": "Finding:风格一致需全流程约束",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-69",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-69",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-69",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-70",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-70",
+   "target": "Concept:景别",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-70",
+   "target": "Method:运动镜头分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-70",
+   "target": "Theory:电影摄影形式语法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-71",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-71",
+   "target": "Concept:长镜头",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-71",
+   "target": "Method:运动镜头分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-71",
+   "target": "Finding:长镜头保持时空连续",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-71",
+   "target": "Theory:电影摄影形式语法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-72",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-72",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-72",
+   "target": "Method:运动镜头分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-73",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-73",
+   "target": "Concept:镜头视点凝视",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-73",
+   "target": "Method:运动镜头分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-73",
+   "target": "Finding:运动方向引导观众解读",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-74",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-74",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-74",
+   "target": "Finding:自动虚拟摄影机产可用镜头",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-74",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-75",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-75",
+   "target": "Concept:构图",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-75",
+   "target": "Concept:机位",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-75",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-75",
+   "target": "Theory:电影摄影形式语法",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-76",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-76",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-76",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-77",
+   "target": "Concept:机位",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-77",
+   "target": "Concept:光影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-77",
+   "target": "Concept:景别",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-77",
+   "target": "Concept:构图",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-77",
+   "target": "Concept:摄影机装置",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-77",
+   "target": "Theory:装置理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-78",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-78",
+   "target": "Concept:光影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-78",
+   "target": "Method:电影语言分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-79",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-79",
+   "target": "Concept:构图",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-79",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-79",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-79",
+   "target": "Finding:自动虚拟摄影机产可用镜头",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-79",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-80",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-80",
+   "target": "Method:自动电影摄影规划",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-80",
+   "target": "Finding:自动虚拟摄影机产可用镜头",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-80",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-81",
+   "target": "Concept:虚拟电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-81",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-81",
+   "target": "Theory:计算电影摄影",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-82",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-82",
+   "target": "Concept:构图",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-82",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-82",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-83",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-83",
+   "target": "Method:运动镜头分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-84",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-84",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-84",
+   "target": "Finding:数字转换重塑影像风格",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-84",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-85",
+   "target": "Concept:数字电影摄影",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-85",
+   "target": "Concept:电影摄影风格",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-85",
+   "target": "Theory:数字电影摄影理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-86",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-86",
+   "target": "Method:运动镜头分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-86",
+   "target": "Finding:运动方向引导观众解读",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-87",
+   "target": "Concept:运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-87",
+   "target": "Concept:电影摄影史",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-摄影-87",
+   "target": "Method:运动镜头分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Method:运动镜头分析",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:运动镜头分析",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:数字色彩与风格化工作流",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:数字色彩与风格化工作流",
+   "target": "ProcessRule:质量门控",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:数字色彩与风格化工作流",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:运镜引导情绪与紧张",
+   "target": "NarrationRule:旁白不抢画面",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:运镜引导情绪与紧张",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:长镜头保持时空连续",
+   "target": "ProcessRule:长镜头分段生成",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:长镜头保持时空连续",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:数字转换重塑影像风格",
+   "target": "Rule:AI原生交付原则",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:风格一致需全流程约束",
+   "target": "ProcessRule:质量门控",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:风格一致需全流程约束",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:自动虚拟摄影机产可用镜头",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:自动虚拟摄影机产可用镜头",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:运动方向引导观众解读",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  }
+ ]
+}

@@ -13,7 +13,7 @@ import sys
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
-PLATFORMS = {"Seedance2.5", "Jimeng", "Kling", "LibTV", "Vidu", "Hailuo", "Wan", "Runway"}
+PLATFORMS = {"Seedance2.5", "Jimeng", "Kling", "LibTV", "Vidu", "Hailuo", "Wan", "Runway", "cgprism"}
 ROUTES = {"T2V", "I2V", "参考生视频", "首尾帧", "多镜原生"}
 FIELDS = ["参考", "风格", "时间轴", "口播", "声音", "负面", "参数"]
 

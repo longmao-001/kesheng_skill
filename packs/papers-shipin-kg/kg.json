@@ -1,0 +1,3508 @@
+{
+ "schema_version": "1.0",
+ "pack": "papers-shipin-kg",
+ "role": "研究支撑",
+ "dom": "影像",
+ "专业": "视频",
+ "entities": [
+  {
+   "id": "Paper:OA-视频-000",
+   "type": "Paper",
+   "name": "Audio and video podcasts of lectures for campus-based students: production and evaluation of student use",
+   "props": {
+    "专业": "视频",
+    "年份": 2007,
+    "被引": 479,
+    "DOI": "10.1080/14703290701602805"
+   },
+   "sources": [
+    "10.1080/14703290701602805"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-001",
+   "type": "Paper",
+   "name": "How Video Production Affects Student Engagement: An Empirical Study of MOOC Videos",
+   "props": {
+    "专业": "视频",
+    "年份": 2019,
+    "被引": 436,
+    "DOI": ""
+   },
+   "sources": [
+    "https://api.openalex.org/works"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-003",
+   "type": "Paper",
+   "name": "‘I want to record and share my wonderful journey’: Chinese Millennials’ production and sharing of short-form travel videos on TikTok or Douyin",
+   "props": {
+    "专业": "视频",
+    "年份": 2020,
+    "被引": 262,
+    "DOI": "10.1080/13683500.2020.1810212"
+   },
+   "sources": [
+    "10.1080/13683500.2020.1810212"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-004",
+   "type": "Paper",
+   "name": "Production model based digital video segmentation",
+   "props": {
+    "专业": "视频",
+    "年份": 1995,
+    "被引": 206,
+    "DOI": "10.1007/bf01261224"
+   },
+   "sources": [
+    "10.1007/bf01261224"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-005",
+   "type": "Paper",
+   "name": "A versatile HDR video production system",
+   "props": {
+    "专业": "视频",
+    "年份": 2011,
+    "被引": 197,
+    "DOI": "10.1145/2010324.1964936"
+   },
+   "sources": [
+    "10.1145/2010324.1964936"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-006",
+   "type": "Paper",
+   "name": "Teaching Youth Media: A Critical Guide to Literacy, Video Production, and Social Change",
+   "props": {
+    "专业": "视频",
+    "年份": 2004,
+    "被引": 187,
+    "DOI": "10.2307/4140670"
+   },
+   "sources": [
+    "10.2307/4140670"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-008",
+   "type": "Paper",
+   "name": "Learning to engage: how positive attitudes about the news, media literacy, and video production contribute to adolescent civic engagement",
+   "props": {
+    "专业": "视频",
+    "年份": 2013,
+    "被引": 113,
+    "DOI": "10.1080/09523987.2013.862364"
+   },
+   "sources": [
+    "10.1080/09523987.2013.862364"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-010",
+   "type": "Paper",
+   "name": "Shehui Ren: cultural production and rural youths’ use of the Kuaishou video-sharing app in Eastern China",
+   "props": {
+    "专业": "视频",
+    "年份": 2019,
+    "被引": 80,
+    "DOI": "10.1080/1369118x.2019.1585469"
+   },
+   "sources": [
+    "10.1080/1369118x.2019.1585469"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-011",
+   "type": "Paper",
+   "name": "Bringing Digital Storytelling to the Elementary Classroom: Video Production for Preservice Teachers",
+   "props": {
+    "专业": "视频",
+    "年份": 2017,
+    "被引": 80,
+    "DOI": "10.1080/21532974.2016.1276871"
+   },
+   "sources": [
+    "10.1080/21532974.2016.1276871"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-012",
+   "type": "Paper",
+   "name": "From Netflix to Movistar+: How Subscription Video-on-Demand Services Have Transformed Spanish TV Production",
+   "props": {
+    "专业": "视频",
+    "年份": 2020,
+    "被引": 79,
+    "DOI": "10.1353/cj.2020.0019"
+   },
+   "sources": [
+    "10.1353/cj.2020.0019"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-013",
+   "type": "Paper",
+   "name": "Mimetic Production in YouTube Toy Unboxing Videos",
+   "props": {
+    "专业": "视频",
+    "年份": 2018,
+    "被引": 69,
+    "DOI": "10.1177/2056305118790761"
+   },
+   "sources": [
+    "10.1177/2056305118790761"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-017",
+   "type": "Paper",
+   "name": "A key frame extraction method for processing greenhouse vegetables production monitoring video",
+   "props": {
+    "专业": "视频",
+    "年份": 2015,
+    "被引": 62,
+    "DOI": "10.1016/j.compag.2014.12.007"
+   },
+   "sources": [
+    "10.1016/j.compag.2014.12.007"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-020",
+   "type": "Paper",
+   "name": "Developing EFL students’ digital empathy through video production",
+   "props": {
+    "专业": "视频",
+    "年份": 2018,
+    "被引": 59,
+    "DOI": "10.1016/j.system.2018.01.006"
+   },
+   "sources": [
+    "10.1016/j.system.2018.01.006"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-021",
+   "type": "Paper",
+   "name": "What counts as educational video? Working toward best practice alignment between video production approaches and outcomes.",
+   "props": {
+    "专业": "视频",
+    "年份": 2014,
+    "被引": 58,
+    "DOI": "10.14742/ajet.458"
+   },
+   "sources": [
+    "10.14742/ajet.458"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-022",
+   "type": "Paper",
+   "name": "Designing and implementing a PBL course on educational digital video production: lessons learned from a design-based research",
+   "props": {
+    "专业": "视频",
+    "年份": 2007,
+    "被引": 58,
+    "DOI": "10.1007/s11423-007-9039-4"
+   },
+   "sources": [
+    "10.1007/s11423-007-9039-4"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-025",
+   "type": "Paper",
+   "name": "Making Meaning on the Screen: Digital Video Production About the Dominican Republic",
+   "props": {
+    "专业": "视频",
+    "年份": 2008,
+    "被引": 56,
+    "DOI": "10.1598/jaal.51.5.4"
+   },
+   "sources": [
+    "10.1598/jaal.51.5.4"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-027",
+   "type": "Paper",
+   "name": "Video for teaching: classroom use, instructor self-production and teachers’ preferences in presentation format",
+   "props": {
+    "专业": "视频",
+    "年份": 2020,
+    "被引": 54,
+    "DOI": "10.1080/1475939x.2020.1726805"
+   },
+   "sources": [
+    "10.1080/1475939x.2020.1726805"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-028",
+   "type": "Paper",
+   "name": "A Review of Video Triggers and Video Production in Higher Education and Continuing Education PBL Settings",
+   "props": {
+    "专业": "视频",
+    "年份": 2016,
+    "被引": 52,
+    "DOI": "10.7771/1541-5015.1609"
+   },
+   "sources": [
+    "10.7771/1541-5015.1609"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-030",
+   "type": "Paper",
+   "name": "Recent advances in artificial intelligence for video production system",
+   "props": {
+    "专业": "视频",
+    "年份": 2023,
+    "被引": 49,
+    "DOI": "10.1080/17517575.2023.2246188"
+   },
+   "sources": [
+    "10.1080/17517575.2023.2246188"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-031",
+   "type": "Paper",
+   "name": "Video production in content-area pedagogy: a scoping study of the research literature",
+   "props": {
+    "专业": "视频",
+    "年份": 2018,
+    "被引": 49,
+    "DOI": "10.1080/17439884.2018.1504788"
+   },
+   "sources": [
+    "10.1080/17439884.2018.1504788"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-032",
+   "type": "Paper",
+   "name": "Research on the Influence of New Media Technology on Internet Short Video Content Production under Artificial Intelligence Background",
+   "props": {
+    "专业": "视频",
+    "年份": 2021,
+    "被引": 48,
+    "DOI": "10.1155/2021/8875700"
+   },
+   "sources": [
+    "10.1155/2021/8875700"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-033",
+   "type": "Paper",
+   "name": "From image to ideology: analysing shifting identity positions of marginalized youth across the cultural sites of video production",
+   "props": {
+    "专业": "视频",
+    "年份": 2010,
+    "被引": 46,
+    "DOI": "10.1080/1554480x.2010.509473"
+   },
+   "sources": [
+    "10.1080/1554480x.2010.509473"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-034",
+   "type": "Paper",
+   "name": "Production and validation of educational video to encourage breastfeeding",
+   "props": {
+    "专业": "视频",
+    "年份": 2022,
+    "被引": 45,
+    "DOI": "10.1590/1983-1447.2022.20210247.en"
+   },
+   "sources": [
+    "10.1590/1983-1447.2022.20210247.en"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-035",
+   "type": "Paper",
+   "name": "Twelve tips for reducing production time and increasing long-term usability of instructional video",
+   "props": {
+    "专业": "视频",
+    "年份": 2017,
+    "被引": 45,
+    "DOI": "10.1080/0142159x.2017.1322190"
+   },
+   "sources": [
+    "10.1080/0142159x.2017.1322190"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-036",
+   "type": "Paper",
+   "name": "Twelve tips for the production of digital chalk-talk videos",
+   "props": {
+    "专业": "视频",
+    "年份": 2017,
+    "被引": 45,
+    "DOI": "10.1080/0142159x.2017.1302081"
+   },
+   "sources": [
+    "10.1080/0142159x.2017.1302081"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-037",
+   "type": "Paper",
+   "name": "Video as Digital Object: Production and Distribution of Video Content in the Internet Media Ecosystem",
+   "props": {
+    "专业": "视频",
+    "年份": 2011,
+    "被引": 45,
+    "DOI": "10.1080/01972243.2011.607025"
+   },
+   "sources": [
+    "10.1080/01972243.2011.607025"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-039",
+   "type": "Paper",
+   "name": "Development and Production of Interactive Videos for Teaching Chemical Techniques during Laboratory Sessions",
+   "props": {
+    "专业": "视频",
+    "年份": 2019,
+    "被引": 43,
+    "DOI": "10.1021/acs.jchemed.8b00647"
+   },
+   "sources": [
+    "10.1021/acs.jchemed.8b00647"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-042",
+   "type": "Paper",
+   "name": "Personalized production of basketball videos from multi-sensored data under limited display resolution",
+   "props": {
+    "专业": "视频",
+    "年份": 2010,
+    "被引": 43,
+    "DOI": "10.1016/j.cviu.2010.01.005"
+   },
+   "sources": [
+    "10.1016/j.cviu.2010.01.005"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-043",
+   "type": "Paper",
+   "name": "Geodesic image and video editing",
+   "props": {
+    "专业": "视频",
+    "年份": 2010,
+    "被引": 177,
+    "DOI": "10.1145/1857907.1857910"
+   },
+   "sources": [
+    "10.1145/1857907.1857910"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-044",
+   "type": "Paper",
+   "name": "Virtual video editing in interactive multimedia applications",
+   "props": {
+    "专业": "视频",
+    "年份": 1989,
+    "被引": 158,
+    "DOI": "10.1145/65445.65447"
+   },
+   "sources": [
+    "10.1145/65445.65447"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-045",
+   "type": "Paper",
+   "name": "Schematic storyboarding for video visualization and editing",
+   "props": {
+    "专业": "视频",
+    "年份": 2006,
+    "被引": 150,
+    "DOI": "10.1145/1141911.1141967"
+   },
+   "sources": [
+    "10.1145/1141911.1141967"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-046",
+   "type": "Paper",
+   "name": "Using Video Editing to Cultivate Novice Teachers’ Practice",
+   "props": {
+    "专业": "视频",
+    "年份": 2009,
+    "被引": 136,
+    "DOI": "10.1080/15391523.2009.10782542"
+   },
+   "sources": [
+    "10.1080/15391523.2009.10782542"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-047",
+   "type": "Paper",
+   "name": "A General Framework for Edited Video and Raw Video Summarization",
+   "props": {
+    "专业": "视频",
+    "年份": 2017,
+    "被引": 126,
+    "DOI": "10.1109/tip.2017.2695887"
+   },
+   "sources": [
+    "10.1109/tip.2017.2695887"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-048",
+   "type": "Paper",
+   "name": "Computational video editing for dialogue-driven scenes",
+   "props": {
+    "专业": "视频",
+    "年份": 2017,
+    "被引": 124,
+    "DOI": "10.1145/3072959.3073653"
+   },
+   "sources": [
+    "10.1145/3072959.3073653"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-049",
+   "type": "Paper",
+   "name": "An Exploratory Study of Digital Video Editing as a Tool for Teacher Preparation",
+   "props": {
+    "专业": "视频",
+    "年份": 2008,
+    "被引": 117,
+    "DOI": ""
+   },
+   "sources": [
+    "https://api.openalex.org/works"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:蒙太奇",
+   "type": "Concept",
+   "name": "蒙太奇",
+   "props": {
+    "定义": "镜头组接与并置产生意义的方法，后期剪辑核心；含连续/对比/隐喻式组接。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/1857907.1857910",
+    "10.1145/65445.65447",
+    "10.1145/1141911.1141967",
+    "10.1145/3072959.3073653",
+    "10.1007/bf01261224"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:剪辑节奏",
+   "type": "Concept",
+   "name": "剪辑节奏",
+   "props": {
+    "定义": "镜头时长与切换频率形成的观感速度/张力控制，是短视频抓留存的杠杆。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/1141911.1141967",
+    "10.1145/3072959.3073653",
+    "10.1109/tip.2017.2695887",
+    "10.1145/1857907.1857910"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:分镜故事板",
+   "type": "Concept",
+   "name": "分镜故事板",
+   "props": {
+    "定义": "拍摄与剪辑前用画面序列规划镜头构图、动作与层级（script→shot）。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/1141911.1141967",
+    "10.1080/21532974.2016.1276871",
+    "10.1145/1857907.1857910",
+    "10.1021/acs.jchemed.8b00647"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:镜头语言景别运镜",
+   "type": "Concept",
+   "name": "镜头语言景别运镜",
+   "props": {
+    "定义": "景别(远/全/中/近/特)、运镜(推拉摇移)等画面语法，传递信息与情绪。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/2010324.1964936",
+    "10.1145/1857907.1857910",
+    "10.1145/1141911.1141967",
+    "10.1080/09523987.2013.862364"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:转场",
+   "type": "Concept",
+   "name": "转场",
+   "props": {
+    "定义": "镜头/场景之间的衔接方式(硬切、叠化、匹配、淡入淡出)。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/1857907.1857910",
+    "10.1145/65445.65447",
+    "10.1145/3072959.3073653"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:声音设计配音",
+   "type": "Concept",
+   "name": "声音设计配音",
+   "props": {
+    "定义": "旁白/配乐/音效与画面的同步配合，决定信息获取与基调一致。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14703290701602805",
+    "10.1080/0142159x.2017.1302081",
+    "10.1145/3072959.3073653"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:字幕图文对位",
+   "type": "Concept",
+   "name": "字幕图文对位",
+   "props": {
+    "定义": "字幕、文案与画面文字/图形同步对齐的呈现规范。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/0142159x.2017.1302081",
+    "10.14742/ajet.458"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:完播率留存",
+   "type": "Concept",
+   "name": "完播率留存",
+   "props": {
+    "定义": "观众看完视频的比例与粘性，短视频核心效果指标。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/13683500.2020.1810212",
+    "10.1155/2021/8875700",
+    "10.1177/2056305118790761"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:教学科普视频",
+   "type": "Concept",
+   "name": "教学科普视频",
+   "props": {
+    "定义": "面向讲解与传播的说明性视频(科研/教学/科普)，重理解与可信。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.14742/ajet.458",
+    "10.1080/1475939x.2020.1726805",
+    "10.7771/1541-5015.1609",
+    "10.1080/0142159x.2017.1302081",
+    "10.1080/17439884.2018.1504788"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:短视频内容生产",
+   "type": "Concept",
+   "name": "短视频内容生产",
+   "props": {
+    "定义": "移动端短时、高密度、易转发的短视频内容创作与分发。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/13683500.2020.1810212",
+    "10.1080/1369118x.2019.1585469",
+    "10.1155/2021/8875700",
+    "10.1177/2056305118790761"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:AI原生视频生成",
+   "type": "Concept",
+   "name": "AI原生视频生成",
+   "props": {
+    "定义": "用AI/生成式工具直接产出或智能切分/剪辑/增强视频的生产范式。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/17517575.2023.2246188",
+    "10.1155/2021/8875700"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:视频信息密度",
+   "type": "Concept",
+   "name": "视频信息密度",
+   "props": {
+    "定义": "单位时间承载的概念与画面信息量；过高易造成认知负荷。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.14742/ajet.458",
+    "10.1080/0142159x.2017.1302081",
+    "10.1080/0142159x.2017.1322190"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:视频分段关键帧",
+   "type": "Concept",
+   "name": "视频分段关键帧",
+   "props": {
+    "定义": "把视频切分为镜头/片段并以关键帧表示，支撑索引、检索与再剪辑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1007/bf01261224",
+    "10.1016/j.compag.2014.12.007",
+    "10.1109/tip.2017.2695887",
+    "10.1016/j.cviu.2010.01.005"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:内容分析法",
+   "type": "Method",
+   "name": "内容分析法",
+   "props": {
+    "含义": "对视频内容/文本进行系统编码、分类与量化分析(内容/文化/生态研究范式)。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/1369118x.2019.1585469",
+    "10.1177/2056305118790761",
+    "10.1353/cj.2020.0019",
+    "10.1080/01972243.2011.607025",
+    "10.14742/ajet.458"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:计算视频分析算法",
+   "type": "Method",
+   "name": "计算视频分析算法",
+   "props": {
+    "含义": "基于视觉与时间结构的视频切分、关键帧、摘要、自动剪辑算法。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1007/bf01261224",
+    "10.1016/j.compag.2014.12.007",
+    "10.1016/j.cviu.2010.01.005",
+    "10.1145/1857907.1857910",
+    "10.1145/1141911.1141967",
+    "10.1109/tip.2017.2695887",
+    "10.1145/3072959.3073653"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:设计性研究",
+   "type": "Method",
+   "name": "设计性研究",
+   "props": {
+    "含义": "迭代式设计与实证改进教学视频/课程产品(DBR、PBL、制作规范)。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1007/s11423-007-9039-4",
+    "10.7771/1541-5015.1609",
+    "10.1080/21532974.2016.1276871",
+    "10.1080/17439884.2018.1504788",
+    "10.1080/0142159x.2017.1322190"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:问卷调查与使用评估",
+   "type": "Method",
+   "name": "问卷调查与使用评估",
+   "props": {
+    "含义": "收集学习者/用户对视频的使用、偏好与有效性反馈。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14703290701602805",
+    "10.1080/1475939x.2020.1726805",
+    "10.1590/1983-1447.2022.20210247.en",
+    "10.7771/1541-5015.1609"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:实证实验研究",
+   "type": "Method",
+   "name": "实证实验研究",
+   "props": {
+    "含义": "控制变量比较视频制作/呈现方式对engagement、学习与态度的影响。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/09523987.2013.862364",
+    "10.1016/j.system.2018.01.006",
+    "10.1080/15391523.2009.10782542"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:分段单点叙事提升留存",
+   "type": "Finding",
+   "name": "分段单点叙事提升留存",
+   "props": {
+    "结论": "把视频按镜头/知识点分段、每段聚焦单一焦点 → 认知负荷↓、理解与留存↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1007/bf01261224",
+    "10.14742/ajet.458",
+    "10.1109/tip.2017.2695887",
+    "10.1080/13683500.2020.1810212"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:信息密度过载损害完播",
+   "type": "Finding",
+   "name": "信息密度过载损害完播",
+   "props": {
+    "结论": "单位时间术语/画面切换过多(信息密度过高) → 认知负荷↑、理解与完播↓。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.14742/ajet.458",
+    "10.1080/0142159x.2017.1302081",
+    "10.1080/0142159x.2017.1322190"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:配音与画面同步提升学习",
+   "type": "Finding",
+   "name": "配音与画面同步提升学习",
+   "props": {
+    "结论": "旁白/配音与画面内容同步对齐 → 信息获取与学习效果↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14703290701602805",
+    "10.1080/0142159x.2017.1302081"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:先分镜再制作提效率",
+   "type": "Finding",
+   "name": "先分镜再制作提效率",
+   "props": {
+    "结论": "拍摄/剪辑前先做分镜/故事板 → 结构清晰、可编辑性与制作效率↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/1141911.1141967",
+    "10.1080/21532974.2016.1276871",
+    "10.1145/1857907.1857910"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:AI自动化降本增效",
+   "type": "Finding",
+   "name": "AI自动化降本增效",
+   "props": {
+    "结论": "AI视频生成与智能剪辑 → 制作时间↓、规模化与复用↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/17517575.2023.2246188",
+    "10.1155/2021/8875700",
+    "10.1080/0142159x.2017.1322190"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:交互元素提升参与",
+   "type": "Finding",
+   "name": "交互元素提升参与",
+   "props": {
+    "结论": "视频中注入交互/可点击元素 → 参与度与学习留存↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1021/acs.jchemed.8b00647",
+    "10.1007/s11423-007-9039-4"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:字幕与文案对位提升获取",
+   "type": "Finding",
+   "name": "字幕与文案对位提升获取",
+   "props": {
+    "结论": "字幕与画面文字同步短句(图文对位) → 信息获取与留存↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/0142159x.2017.1302081"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:内容与目标对齐才有效",
+   "type": "Finding",
+   "name": "内容与目标对齐才有效",
+   "props": {
+    "结论": "视频制作方式需与教学目标/受众对齐 → 对齐则有效，否则投入浪费。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.14742/ajet.458",
+    "10.1080/17439884.2018.1504788"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:视觉语言引导注意",
+   "type": "Finding",
+   "name": "视觉语言引导注意",
+   "props": {
+    "结论": "镜头景别/运镜等视觉语言设计 → 注意力聚焦与叙事理解↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/1857907.1857910",
+    "10.1145/1141911.1141967"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:语速匹配信息密度",
+   "type": "Finding",
+   "name": "语速匹配信息密度",
+   "props": {
+    "结论": "解说语速档位需匹配信息密度；语速过快 → 理解与留存↓。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/14703290701602805",
+    "10.1080/0142159x.2017.1302081",
+    "10.14742/ajet.458"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:认知负荷理论",
+   "type": "Theory",
+   "name": "认知负荷理论",
+   "props": {
+    "理论": "说明性/教学视频应控制单位信息量，降低工作记忆认知负担以保理解。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.14742/ajet.458",
+    "10.1080/0142159x.2017.1302081",
+    "10.1080/0142159x.2017.1322190",
+    "10.1021/acs.jchemed.8b00647"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:多媒体学习认知理论",
+   "type": "Theory",
+   "name": "多媒体学习认知理论",
+   "props": {
+    "理论": "图文声多渠道同步呈现(CTA)利于学习(Mayer多媒体学习认知理论)。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.14742/ajet.458",
+    "10.1021/acs.jchemed.8b00647",
+    "10.1080/0142159x.2017.1302081"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:蒙太奇理论",
+   "type": "Theory",
+   "name": "蒙太奇理论",
+   "props": {
+    "理论": "镜头组接产生非单纯相加的意义，是剪辑表达的理论根基。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/1857907.1857910",
+    "10.1145/65445.65447",
+    "10.1145/1141911.1141967",
+    "10.1145/3072959.3073653"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:使用与满足理论",
+   "type": "Theory",
+   "name": "使用与满足理论",
+   "props": {
+    "理论": "用户出于自身需求而主动使用与分享短视频/平台内容。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/13683500.2020.1810212",
+    "10.1080/1369118x.2019.1585469",
+    "10.1080/01972243.2011.607025",
+    "10.1177/2056305118790761"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:叙事传播理论",
+   "type": "Theory",
+   "name": "叙事传播理论",
+   "props": {
+    "理论": "叙事/数字故事化(叙事传输)增强认同、沉浸与传播。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/21532974.2016.1276871",
+    "10.2307/4140670",
+    "10.1080/09523987.2013.862364",
+    "10.1598/jaal.51.5.4",
+    "10.1080/1554480x.2010.509473"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:短视频营销",
+   "type": "Concept",
+   "name": "短视频营销",
+   "props": {
+    "定义": "以短视频为载体、围绕注意力/互动/转化展开的营销内容创作与分发。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1016/j.tourman.2023.104795",
+    "10.1108/intr-02-2022-0121",
+    "10.1016/j.jretconser.2023.103572",
+    "10.1080/13683500.2023.2242559",
+    "10.3390/app13063386"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:消费者参与度",
+   "type": "Concept",
+   "name": "消费者参与度",
+   "props": {
+    "定义": "用户对视频内容的点赞/评论/转发/停留等互动行为强度，短视频效果核心指标。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1108/intr-02-2022-0121",
+    "10.1016/j.jretconser.2022.103170",
+    "10.1016/j.jbusres.2024.114874"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:视听一致性",
+   "type": "Concept",
+   "name": "视听一致性",
+   "props": {
+    "定义": "听觉(情绪/配乐/声效)与视觉(画面变化/节奏)同步共振的一致性设计。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.3390/jtaer20020069",
+    "10.1108/intr-07-2023-0521"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:叙事吸引力",
+   "type": "Concept",
+   "name": "叙事吸引力",
+   "props": {
+    "定义": "通过故事性/趣味性/真实性增强视频吸引力与沉浸感。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1016/j.tourman.2023.104795",
+    "10.1080/13683500.2023.2242559"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Concept:临场感",
+   "type": "Concept",
+   "name": "临场感",
+   "props": {
+    "定义": "视频营造的'身临其境'式沉浸体验(telepresence)，增强代入与行为意愿。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/13683500.2023.2242559",
+    "10.3389/fpsyg.2022.1024286"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Method:大数据内容分析",
+   "type": "Method",
+   "name": "大数据内容分析",
+   "props": {
+    "含义": "面向平台海量短视频的内容/卷入度/互动大数据分析与效果量化范式。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1016/j.jretconser.2022.103170",
+    "10.1108/intr-07-2023-0521",
+    "10.1080/10696679.2022.2056487",
+    "10.3390/app13063386"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:视听一致提升参与",
+   "type": "Finding",
+   "name": "视听一致提升参与",
+   "props": {
+    "结论": "听觉情绪唤起与视觉变化保持一致(视听一致) → 用户参与度↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.3390/jtaer20020069",
+    "10.1108/intr-07-2023-0521"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:叙事吸引力提升转化",
+   "type": "Finding",
+   "name": "叙事吸引力提升转化",
+   "props": {
+    "结论": "视频叙事/趣味性/真实性越强 → 参与、分享与意愿↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1016/j.tourman.2023.104795",
+    "10.1080/13683500.2023.2242559"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:碎片化切换损害注意力",
+   "type": "Finding",
+   "name": "碎片化切换损害注意力",
+   "props": {
+    "结论": "短视频高频快速切换/成瘾式碎片 → 注意力与意图保持↓。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1145/3544548.3580778",
+    "10.1080/0144929x.2022.2151512"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:内容与受众匹配增强参与",
+   "type": "Finding",
+   "name": "内容与受众匹配增强参与",
+   "props": {
+    "结论": "内容特征与受众/平台匹配度越高 → 参与与转化↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1108/intr-02-2022-0121",
+    "10.1016/j.jretconser.2022.103170",
+    "10.1016/j.jbusres.2024.114874",
+    "10.3389/fpsyg.2022.1024286"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Finding:数据驱动优化提升效果",
+   "type": "Finding",
+   "name": "数据驱动优化提升效果",
+   "props": {
+    "结论": "基于平台数据的反馈迭代 → 内容与投放效果↑。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1080/10696679.2022.2056487",
+    "10.3390/app13063386"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Theory:SOR模型",
+   "type": "Theory",
+   "name": "SOR模型",
+   "props": {
+    "理论": "刺激-机体-响应模型：短视频特征(刺激)经用户认知情绪(机体)驱动参与/购买(响应)。",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "10.1016/j.jretconser.2022.103170",
+    "10.1016/j.chb.2024.108448",
+    "10.1108/intr-07-2023-0521"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-050",
+   "type": "Paper",
+   "name": "Short video marketing and travel intentions: The interplay between visual perspective, visual content, and narration appeal",
+   "props": {
+    "专业": "视频",
+    "年份": 2023,
+    "被引": 173,
+    "DOI": "10.1016/j.tourman.2023.104795",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "短视频营销中视觉视角、视觉内容与叙事吸引力对旅游意愿的交互影响。"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.tourman.2023.104795"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-051",
+   "type": "Paper",
+   "name": "Short video marketing: what, when and how short-branded videos facilitate consumer engagement",
+   "props": {
+    "专业": "视频",
+    "年份": 2023,
+    "被引": 112,
+    "DOI": "10.1108/intr-02-2022-0121",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "解析短品牌短视频在何种时机与形式下促进消费者参与。"
+   },
+   "sources": [
+    "https://doi.org/10.1108/intr-02-2022-0121"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-052",
+   "type": "Paper",
+   "name": "Attention marketing in fragmented entertainment: How advertising embedding influences purchase decision in short-form video apps",
+   "props": {
+    "专业": "视频",
+    "年份": 2023,
+    "被引": 105,
+    "DOI": "10.1016/j.jretconser.2023.103572",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "碎片化娱乐场景中广告嵌入式注意力营销对消费决策的影响。"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jretconser.2023.103572"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-053",
+   "type": "Paper",
+   "name": "Harmonizing Sight and Sound: The Impact of Auditory Emotional Arousal, Visual Variation, and Their Congruence on Consumer Engagement in Short Video Marketing",
+   "props": {
+    "专业": "视频",
+    "年份": 2025,
+    "被引": 24,
+    "DOI": "10.3390/jtaer20020069",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "听觉情绪唤起、视觉变化及其一致性对短视频营销参与的影响。"
+   },
+   "sources": [
+    "https://doi.org/10.3390/jtaer20020069"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-054",
+   "type": "Paper",
+   "name": "Exploring the factors influencing consumer engagement behavior regarding short-form video advertising: A big data perspective",
+   "props": {
+    "专业": "视频",
+    "年份": 2022,
+    "被引": 187,
+    "DOI": "10.1016/j.jretconser.2022.103170",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "大数据视角下短视频广告消费者参与行为的影响因素。"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jretconser.2022.103170"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-055",
+   "type": "Paper",
+   "name": "Humor and camera view on mobile short-form video apps influence user experience and technology-adoption intent, an example of TikTok (DouYin)",
+   "props": {
+    "专业": "视频",
+    "年份": 2020,
+    "被引": 422,
+    "DOI": "10.1016/j.chb.2020.106373",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "幽默与镜头视角对短视频用户体验与采纳意愿的影响。"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.chb.2020.106373"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-056",
+   "type": "Paper",
+   "name": "AI in the spotlight: The impact of artificial intelligence disclosure on user engagement in short-form videos",
+   "props": {
+    "专业": "视频",
+    "年份": 2024,
+    "被引": 66,
+    "DOI": "10.1016/j.chb.2024.108448",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "AI生成披露对短视频用户参与度的影响。"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.chb.2024.108448"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-057",
+   "type": "Paper",
+   "name": "The impact of content characteristics of Short-Form video ads on consumer purchase Behavior: Evidence from TikTok",
+   "props": {
+    "专业": "视频",
+    "年份": 2024,
+    "被引": 72,
+    "DOI": "10.1016/j.jbusres.2024.114874",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "短视频广告内容特征对消费者购买行为的影响。"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2024.114874"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-058",
+   "type": "Paper",
+   "name": "Exploring user engagement behavior with short-form video advertising on short-form video platforms: a visual-audio perspective",
+   "props": {
+    "专业": "视频",
+    "年份": 2024,
+    "被引": 40,
+    "DOI": "10.1108/intr-07-2023-0521",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "视听觉视角下短视频平台广告的用户参与行为。"
+   },
+   "sources": [
+    "https://doi.org/10.1108/intr-07-2023-0521"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-059",
+   "type": "Paper",
+   "name": "The marketing of destination distinctiveness: the power of tourism short videos with enjoyability and authenticity",
+   "props": {
+    "专业": "视频",
+    "年份": 2023,
+    "被引": 38,
+    "DOI": "10.1080/13683500.2023.2242559",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "旅游短视频的趣味性与真实性对目的地独特性的营销作用。"
+   },
+   "sources": [
+    "https://doi.org/10.1080/13683500.2023.2242559"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-060",
+   "type": "Paper",
+   "name": "Seeing destinations through short-form videos: Implications for leveraging audience involvement to increase travel intention",
+   "props": {
+    "专业": "视频",
+    "年份": 2022,
+    "被引": 42,
+    "DOI": "10.3389/fpsyg.2022.1024286",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "受众卷入度对短视频提升旅游意愿的作用。"
+   },
+   "sources": [
+    "https://doi.org/10.3389/fpsyg.2022.1024286"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-061",
+   "type": "Paper",
+   "name": "Short-Form Videos Degrade Our Capacity to Retain Intentions: Effect of Context Switching On Prospective Memory",
+   "props": {
+    "专业": "视频",
+    "年份": 2023,
+    "被引": 79,
+    "DOI": "10.1145/3544548.3580778",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "短视频高频切换损害前瞻记忆与意图保持。"
+   },
+   "sources": [
+    "https://doi.org/10.1145/3544548.3580778"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-062",
+   "type": "Paper",
+   "name": "The effect of short-form video addiction on users' attention",
+   "props": {
+    "专业": "视频",
+    "年份": 2022,
+    "被引": 171,
+    "DOI": "10.1080/0144929x.2022.2151512",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "短视频成瘾对用户注意力的损害。"
+   },
+   "sources": [
+    "https://doi.org/10.1080/0144929x.2022.2151512"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-063",
+   "type": "Paper",
+   "name": "Digital analytics approach to understanding short video advertising in digital marketing",
+   "props": {
+    "专业": "视频",
+    "年份": 2022,
+    "被引": 27,
+    "DOI": "10.1080/10696679.2022.2056487",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "数字分析法理解短视频广告的营销效果。"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10696679.2022.2056487"
+   ],
+   "domains": [
+    "影像"
+   ]
+  },
+  {
+   "id": "Paper:OA-视频-064",
+   "type": "Paper",
+   "name": "Short-Form Videos for Public Library Marketing: Performance Analytics of Douyin in China",
+   "props": {
+    "专业": "视频",
+    "年份": 2023,
+    "被引": 34,
+    "DOI": "10.3390/app13063386",
+    "域": "影像",
+    "置信度": "DB_REFERENCE",
+    "说明": "抖音短视频图书馆营销的效果分析与量化。"
+   },
+   "sources": [
+    "https://doi.org/10.3390/app13063386"
+   ],
+   "domains": [
+    "影像"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "Paper:OA-视频-000",
+   "target": "Concept:声音设计配音",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-000",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-001",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-001",
+   "target": "Concept:完播率留存",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-001",
+   "target": "Concept:视频信息密度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-003",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-003",
+   "target": "Concept:完播率留存",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-004",
+   "target": "Concept:视频分段关键帧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-004",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-005",
+   "target": "Concept:镜头语言景别运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-005",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-006",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-006",
+   "target": "Concept:分镜故事板",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-008",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-010",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-011",
+   "target": "Concept:分镜故事板",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-011",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-013",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-017",
+   "target": "Concept:视频分段关键帧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-020",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-021",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-021",
+   "target": "Concept:视频信息密度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-022",
+   "target": "Concept:分镜故事板",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-022",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-025",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-027",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-027",
+   "target": "Concept:声音设计配音",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-028",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-030",
+   "target": "Concept:AI原生视频生成",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-031",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-032",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-032",
+   "target": "Concept:AI原生视频生成",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-032",
+   "target": "Concept:完播率留存",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-033",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-034",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-035",
+   "target": "Concept:视频信息密度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-035",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Concept:声音设计配音",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Concept:字幕图文对位",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Concept:视频信息密度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-037",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-039",
+   "target": "Concept:教学科普视频",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-039",
+   "target": "Concept:分镜故事板",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-042",
+   "target": "Concept:视频分段关键帧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-043",
+   "target": "Concept:蒙太奇",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-043",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-043",
+   "target": "Concept:转场",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-043",
+   "target": "Concept:镜头语言景别运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-044",
+   "target": "Concept:蒙太奇",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-044",
+   "target": "Concept:转场",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-044",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-045",
+   "target": "Concept:分镜故事板",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-045",
+   "target": "Concept:蒙太奇",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-045",
+   "target": "Concept:视频分段关键帧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-046",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-047",
+   "target": "Concept:视频分段关键帧",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-047",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-048",
+   "target": "Concept:蒙太奇",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-048",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-048",
+   "target": "Concept:声音设计配音",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-049",
+   "target": "Concept:剪辑节奏",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-000",
+   "target": "Method:问卷调查与使用评估",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-001",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-003",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-004",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-005",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-006",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-008",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-010",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-011",
+   "target": "Method:设计性研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-012",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-013",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-017",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-020",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-021",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-022",
+   "target": "Method:设计性研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-025",
+   "target": "Method:设计性研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-027",
+   "target": "Method:问卷调查与使用评估",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-028",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-030",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-031",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-032",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-033",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-034",
+   "target": "Method:问卷调查与使用评估",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-035",
+   "target": "Method:设计性研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Method:设计性研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-037",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-039",
+   "target": "Method:设计性研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-042",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-043",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-044",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-045",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-046",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-047",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-048",
+   "target": "Method:计算视频分析算法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-049",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-000",
+   "target": "Finding:配音与画面同步提升学习",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-000",
+   "target": "Finding:语速匹配信息密度",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-001",
+   "target": "Finding:分段单点叙事提升留存",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-001",
+   "target": "Finding:内容与目标对齐才有效",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-003",
+   "target": "Finding:分段单点叙事提升留存",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-004",
+   "target": "Finding:分段单点叙事提升留存",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-013",
+   "target": "Finding:信息密度过载损害完播",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-017",
+   "target": "Finding:分段单点叙事提升留存",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-021",
+   "target": "Finding:信息密度过载损害完播",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-021",
+   "target": "Finding:内容与目标对齐才有效",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-022",
+   "target": "Finding:交互元素提升参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-027",
+   "target": "Finding:配音与画面同步提升学习",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-030",
+   "target": "Finding:AI自动化降本增效",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-031",
+   "target": "Finding:内容与目标对齐才有效",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-032",
+   "target": "Finding:AI自动化降本增效",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-032",
+   "target": "Finding:分段单点叙事提升留存",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-034",
+   "target": "Finding:内容与目标对齐才有效",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-035",
+   "target": "Finding:AI自动化降本增效",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-035",
+   "target": "Finding:信息密度过载损害完播",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Finding:配音与画面同步提升学习",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Finding:字幕与文案对位提升获取",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Finding:语速匹配信息密度",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-039",
+   "target": "Finding:交互元素提升参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-039",
+   "target": "Finding:信息密度过载损害完播",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-043",
+   "target": "Finding:视觉语言引导注意",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-043",
+   "target": "Finding:先分镜再制作提效率",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-044",
+   "target": "Finding:视觉语言引导注意",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-045",
+   "target": "Finding:先分镜再制作提效率",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-045",
+   "target": "Finding:视觉语言引导注意",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-046",
+   "target": "Finding:先分镜再制作提效率",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-047",
+   "target": "Finding:分段单点叙事提升留存",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-048",
+   "target": "Finding:视觉语言引导注意",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-048",
+   "target": "Finding:配音与画面同步提升学习",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-049",
+   "target": "Finding:先分镜再制作提效率",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-000",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-000",
+   "target": "Theory:多媒体学习认知理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-001",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-003",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-006",
+   "target": "Theory:叙事传播理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-008",
+   "target": "Theory:叙事传播理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-010",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-011",
+   "target": "Theory:叙事传播理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-012",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-013",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-020",
+   "target": "Theory:叙事传播理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-021",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-021",
+   "target": "Theory:多媒体学习认知理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-022",
+   "target": "Theory:多媒体学习认知理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-025",
+   "target": "Theory:叙事传播理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-027",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-028",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-031",
+   "target": "Theory:多媒体学习认知理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-032",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-033",
+   "target": "Theory:叙事传播理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-034",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-035",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-036",
+   "target": "Theory:多媒体学习认知理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-037",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-039",
+   "target": "Theory:多媒体学习认知理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-043",
+   "target": "Theory:蒙太奇理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-044",
+   "target": "Theory:蒙太奇理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-045",
+   "target": "Theory:蒙太奇理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-048",
+   "target": "Theory:蒙太奇理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Finding:分段单点叙事提升留存",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:分段单点叙事提升留存",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:信息密度过载损害完播",
+   "target": "NarrationRule:语速档位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:信息密度过载损害完播",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:配音与画面同步提升学习",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:配音与画面同步提升学习",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:先分镜再制作提效率",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:先分镜再制作提效率",
+   "target": "ProcessRule:参考包组装",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:AI自动化降本增效",
+   "target": "Rule:AI原生交付原则",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:AI自动化降本增效",
+   "target": "ProcessRule:多镜原生",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:交互元素提升参与",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:交互元素提升参与",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:字幕与文案对位提升获取",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:字幕与文案对位提升获取",
+   "target": "NarrationRule:字幕短句",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:内容与目标对齐才有效",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:内容与目标对齐才有效",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:视觉语言引导注意",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:视觉语言引导注意",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:语速匹配信息密度",
+   "target": "NarrationRule:语速档位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:语速匹配信息密度",
+   "target": "NarrationType:直白规格型",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:内容分析法",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:内容分析法",
+   "target": "Rule:数据目检确认",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:计算视频分析算法",
+   "target": "ProcessRule:单镜抽卡",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:计算视频分析算法",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:设计性研究",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:设计性研究",
+   "target": "Rule:Prompt严格统一格式",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:问卷调查与使用评估",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:实证实验研究",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Concept:蒙太奇",
+   "target": "Concept:剪辑节奏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:蒙太奇",
+   "target": "Concept:转场",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:蒙太奇",
+   "target": "Concept:分镜故事板",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:剪辑节奏",
+   "target": "Concept:视频分段关键帧",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:剪辑节奏",
+   "target": "Concept:镜头语言景别运镜",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:分镜故事板",
+   "target": "Concept:镜头语言景别运镜",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:分镜故事板",
+   "target": "Concept:视频分段关键帧",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:声音设计配音",
+   "target": "Concept:字幕图文对位",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:字幕图文对位",
+   "target": "Concept:视频信息密度",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:完播率留存",
+   "target": "Concept:短视频内容生产",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:完播率留存",
+   "target": "Concept:视频信息密度",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:教学科普视频",
+   "target": "Concept:完播率留存",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:短视频内容生产",
+   "target": "Concept:AI原生视频生成",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:短视频内容生产",
+   "target": "Concept:完播率留存",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:AI原生视频生成",
+   "target": "Concept:剪辑节奏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:视频信息密度",
+   "target": "Concept:完播率留存",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:视频分段关键帧",
+   "target": "Concept:剪辑节奏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:视频分段关键帧",
+   "target": "Concept:蒙太奇",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:转场",
+   "target": "Concept:剪辑节奏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:镜头语言景别运镜",
+   "target": "Concept:剪辑节奏",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-050",
+   "target": "Concept:短视频营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-050",
+   "target": "Concept:叙事吸引力",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-050",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-050",
+   "target": "Finding:叙事吸引力提升转化",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-050",
+   "target": "Theory:叙事传播理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-051",
+   "target": "Concept:短视频营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-051",
+   "target": "Concept:消费者参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-051",
+   "target": "Method:问卷调查与使用评估",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-051",
+   "target": "Finding:内容与受众匹配增强参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-051",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-052",
+   "target": "Concept:短视频营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-052",
+   "target": "Concept:完播率留存",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-052",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-052",
+   "target": "Finding:内容与受众匹配增强参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-052",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-053",
+   "target": "Concept:视听一致性",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-053",
+   "target": "Concept:声音设计配音",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-053",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-053",
+   "target": "Finding:视听一致提升参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-053",
+   "target": "Theory:多媒体学习认知理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-054",
+   "target": "Concept:消费者参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-054",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-054",
+   "target": "Method:大数据内容分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-054",
+   "target": "Finding:内容与受众匹配增强参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-054",
+   "target": "Theory:SOR模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-055",
+   "target": "Concept:镜头语言景别运镜",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-055",
+   "target": "Concept:叙事吸引力",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-055",
+   "target": "Method:问卷调查与使用评估",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-055",
+   "target": "Finding:内容与受众匹配增强参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-055",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-056",
+   "target": "Concept:AI原生视频生成",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-056",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-056",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-056",
+   "target": "Finding:内容与受众匹配增强参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-056",
+   "target": "Theory:SOR模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-057",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-057",
+   "target": "Concept:消费者参与度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-057",
+   "target": "Method:内容分析法",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-057",
+   "target": "Finding:内容与受众匹配增强参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-057",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-058",
+   "target": "Concept:视听一致性",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-058",
+   "target": "Concept:短视频营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-058",
+   "target": "Method:大数据内容分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-058",
+   "target": "Finding:视听一致提升参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-058",
+   "target": "Theory:SOR模型",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-059",
+   "target": "Concept:叙事吸引力",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-059",
+   "target": "Concept:临场感",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-059",
+   "target": "Method:问卷调查与使用评估",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-059",
+   "target": "Finding:叙事吸引力提升转化",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-059",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-060",
+   "target": "Concept:临场感",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-060",
+   "target": "Concept:短视频营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-060",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-060",
+   "target": "Finding:内容与受众匹配增强参与",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-060",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-061",
+   "target": "Concept:完播率留存",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-061",
+   "target": "Concept:视频信息密度",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-061",
+   "target": "Method:实证实验研究",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-061",
+   "target": "Finding:碎片化切换损害注意力",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-061",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-062",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-062",
+   "target": "Concept:完播率留存",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-062",
+   "target": "Method:问卷调查与使用评估",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-062",
+   "target": "Finding:碎片化切换损害注意力",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-062",
+   "target": "Theory:认知负荷理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-063",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-063",
+   "target": "Concept:短视频营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-063",
+   "target": "Method:大数据内容分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-063",
+   "target": "Finding:数据驱动优化提升效果",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-063",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-064",
+   "target": "Concept:短视频营销",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-064",
+   "target": "Concept:短视频内容生产",
+   "type": "paper-about",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-064",
+   "target": "Method:大数据内容分析",
+   "type": "paper-proposes",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-064",
+   "target": "Finding:数据驱动优化提升效果",
+   "type": "paper-finds",
+   "props": {}
+  },
+  {
+   "source": "Paper:OA-视频-064",
+   "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "props": {}
+  },
+  {
+   "source": "Method:大数据内容分析",
+   "target": "Rule:数据目检确认",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Method:大数据内容分析",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:视听一致提升参与",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:视听一致提升参与",
+   "target": "NarrationRule:旁白与基调一致性",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:叙事吸引力提升转化",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:叙事吸引力提升转化",
+   "target": "NarrationRule:开头钩子高科版",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:碎片化切换损害注意力",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:碎片化切换损害注意力",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:内容与受众匹配增强参与",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:内容与受众匹配增强参与",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:数据驱动优化提升效果",
+   "target": "Rule:数据目检确认",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Finding:数据驱动优化提升效果",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "props": {}
+  },
+  {
+   "source": "Concept:短视频营销",
+   "target": "Concept:短视频内容生产",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:短视频营销",
+   "target": "Concept:完播率留存",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:短视频营销",
+   "target": "Concept:叙事吸引力",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:消费者参与度",
+   "target": "Concept:完播率留存",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:视听一致性",
+   "target": "Concept:声音设计配音",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:视听一致性",
+   "target": "Concept:字幕图文对位",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:叙事吸引力",
+   "target": "Concept:蒙太奇",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Concept:临场感",
+   "target": "Concept:短视频内容生产",
+   "type": "concept-related-to",
+   "props": {}
+  }
+ ]
+}

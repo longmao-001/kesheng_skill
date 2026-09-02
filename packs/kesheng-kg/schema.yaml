@@ -39,7 +39,7 @@
 | CameraMove | prompt/影像 | 见片段 schema.yaml |
 | CheckDimension | 红队 | 见片段 schema.yaml |
 | Company | 产业/科学 | 见片段 schema.yaml |
-| Concept | 分镜 | 见片段 schema.yaml |
+| Concept | 产业/分镜/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | ConsistencyTool | prompt | 见片段 schema.yaml |
 | CreativeRule | 叙事/工艺 | 见片段 schema.yaml |
 | CrossDeptConfirm | 导演 | 见片段 schema.yaml |
@@ -57,6 +57,7 @@
 | FailureMode | 红队 | 见片段 schema.yaml |
 | FeasibilityRule | 影像 | 见片段 schema.yaml |
 | FinalCut | 导演 | 见片段 schema.yaml |
+| Finding | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | FontFamily | 美术 | 见片段 schema.yaml |
 | FontRule | 美术 | 见片段 schema.yaml |
 | Gate | 导演 | 见片段 schema.yaml |
@@ -71,7 +72,7 @@
 | KnowledgeGap | 科学 | 见片段 schema.yaml |
 | KspStep | 工艺 | 见片段 schema.yaml |
 | MarketData | 产业 | 见片段 schema.yaml |
-| Method | 科学 | 见片段 schema.yaml |
+| Method | 产业/叙事/导演/影像/科学/美术 | 见片段 schema.yaml |
 | Milestone | 科学 | 见片段 schema.yaml |
 | MisalignmentPattern | 受众 | 见片段 schema.yaml |
 | MixRule | 声音 | 见片段 schema.yaml |
@@ -87,6 +88,8 @@
 | NarrationType | 叙事 | 见片段 schema.yaml |
 | NarrativeStructure | 叙事 | 见片段 schema.yaml |
 | NegativeRule | prompt | 见片段 schema.yaml |
+| Paper | prompt/产业/剪辑/受众/叙事/商业媒体/导演/工艺/影像/美术 | 见片段 schema.yaml |
+| PaperTopic | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | PatternNarration | 叙事 | 见片段 schema.yaml |
 | PipelineMapping | 工艺 | 见片段 schema.yaml |
 | Platform | prompt | 见片段 schema.yaml |
@@ -114,6 +117,7 @@
 | Taboo | 红队 | 见片段 schema.yaml |
 | Tag | prompt | 见片段 schema.yaml |
 | TempoCurve | 导演 | 见片段 schema.yaml |
+| Theory | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | TimeAxisRule | prompt/工艺 | 见片段 schema.yaml |
 | Transition | 剪辑 | 见片段 schema.yaml |
 | UnderstandingLevel | 科学 | 见片段 schema.yaml |
@@ -150,7 +154,7 @@
 | company-in-segment | 产业 | 见片段 schema.yaml |
 | company-in-trend | 产业 | 见片段 schema.yaml |
 | concept-in-domain | 产业/科学 | 见片段 schema.yaml |
-| concept-related-to | 科学 | 见片段 schema.yaml |
+| concept-related-to | 产业/叙事/导演/影像/科学/美术 | 见片段 schema.yaml |
 | concept-uses-analogy | 科学 | 见片段 schema.yaml |
 | data-for-company | 科学 | 见片段 schema.yaml |
 | data-for-concept | 科学 | 见片段 schema.yaml |
@@ -166,6 +170,7 @@
 | example-uses-formula | 叙事 | 见片段 schema.yaml |
 | extends | 产业 | 见片段 schema.yaml |
 | failure-detected-by | 红队 | 见片段 schema.yaml |
+| finding-evidence-for-rule | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | fix-for-failure | prompt | 见片段 schema.yaml |
 | font-rule-uses | 美术 | 见片段 schema.yaml |
 | formula-follows | 叙事 | 见片段 schema.yaml |
@@ -204,11 +209,17 @@
 | metaphor-for-concept | 分镜 | 见片段 schema.yaml |
 | method-for | 叙事 | 见片段 schema.yaml |
 | method-requires | 叙事 | 见片段 schema.yaml |
+| method-supports-rule | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | mixed-with | 声音 | 见片段 schema.yaml |
 | move-conveys-mood | 剪辑/影像 | 见片段 schema.yaml |
 | negative-for-platform | prompt | 见片段 schema.yaml |
 | paired-with | 声音 | 见片段 schema.yaml |
 | pairs-with | 声音 | 见片段 schema.yaml |
+| paper-about | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
+| paper-finds | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
+| paper-in-topic | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
+| paper-proposes | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
+| paper-uses | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | param-for-mode | 受众 | 见片段 schema.yaml |
 | part-of | 产业 | 见片段 schema.yaml |
 | pattern-based-on | 叙事 | 见片段 schema.yaml |
@@ -265,6 +276,7 @@
 | term-usable-in | prompt | 见片段 schema.yaml |
 | timeaxis-rule-uses | prompt | 见片段 schema.yaml |
 | tool-for-consistency | prompt | 见片段 schema.yaml |
+| topic-supports | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | type-adopts-formula | 叙事 | 见片段 schema.yaml |
 | type-adopts-rule | 叙事 | 见片段 schema.yaml |
 | type-twin | 叙事 | 见片段 schema.yaml |

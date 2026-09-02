@@ -1,0 +1,1917 @@
+{
+ "schema_version": "1.0",
+ "pack": "papers-diaodu-kg",
+ "domain": "调度",
+ "dom": "导演",
+ "discipline": "调度/场面调度(mise-en-scene/Staging)",
+ "entities": [
+  {
+   "id": "Paper:OA-调度-1",
+   "name": "The Uses of Complicity in the Changing Mise-en-Scene of Anthropological Fieldwork",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1997,
+   "cited": 111,
+   "doi": "10.1525/rep.1997.59.1.99p0024m",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-2",
+   "name": "Mise-en-scene - Film Style and Interpretation",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2002,
+   "cited": 65,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-3",
+   "name": "A Mise-en-scene of the Shattered Habitus: The Effect of Social Mobility on Aesthetic Dispositions Towards Films",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2011,
+   "cited": 54,
+   "doi": "10.1093/esr/jcr038",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-4",
+   "name": "Men's Cinema: Masculinity and Mise-en-Scene in Hollywood",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2013,
+   "cited": 21,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-5",
+   "name": "Contemporary Mise en Scene: Staging Theatre Today",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2012,
+   "cited": 15,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-6",
+   "name": "Creating Meaning through Interpretations: A Mise-En-Scene Analysis of the Film 'The Song of Sparrows'",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2015,
+   "cited": 11,
+   "doi": "10.30935/ojcmt/5687",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-7",
+   "name": "Gender, Empire and Body Politic as Mise en Scene: Mnouchkine's \"Les Atrides\"",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1994,
+   "cited": 11,
+   "doi": "10.2307/3208952",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-8",
+   "name": "Mise en scene is dead, or the expressive, the excessive, the technical and the stylish",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1992,
+   "cited": 11,
+   "doi": "10.1080/10304319209388230",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-9",
+   "name": "The mystique of mise en scene revisited",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1992,
+   "cited": 10,
+   "doi": "10.1080/10304319209388229",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-10",
+   "name": "Menggali Minangkabau dalam film dengan mise-en-scene",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2021,
+   "cited": 9,
+   "doi": "10.24198/ptvf.v5i1.29433",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-11",
+   "name": "Mise En Scene French Theatre Now",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1997,
+   "cited": 9,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-12",
+   "name": "The Politics of Remediation: Mise-en-scene and the Subjunctive Body in Chinese Opera Film",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2010,
+   "cited": 8,
+   "doi": "10.1093/oq/kbq031",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-13",
+   "name": "12 - Mise en scene de la culture et espace public au Senegal",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2011,
+   "cited": 7,
+   "doi": "10.4314/ad.v35i4.70225",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-14",
+   "name": "Ambiguous Ecologies: Stardom's Domestic Mise-en-Scene",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2003,
+   "cited": 7,
+   "doi": "10.1353/cj.2003.0002",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-15",
+   "name": "Who knows? Youth work and the mise-en-scene: reframing pedagogies of youth participation",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2019,
+   "cited": 6,
+   "doi": "10.1080/14681366.2019.1627484",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-16",
+   "name": "'Wandering with precision': contamination and the mise-en-scene of desire in Chris Marker's Sans soleil",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2004,
+   "cited": 6,
+   "doi": "10.1093/screen/45.3.173",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-17",
+   "name": "The Use of \"Mise-en-Scene\" in Three Films of \"King Lear\"",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1991,
+   "cited": 6,
+   "doi": "10.2307/2870657",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-18",
+   "name": "Dancing with \"Faust\": A Semiotician's Reflections on Barba's Intercultural Mise-en-Scene",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1989,
+   "cited": 6,
+   "doi": "10.2307/1145986",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-19",
+   "name": "ANALISIS MISE EN SCENE PADA FILM PARASITE",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2021,
+   "cited": 5,
+   "doi": "10.22303/proporsi.6.2.2021.155-166",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-20",
+   "name": "Feminism, Metatheatricality, and Mise-en-scene in Maria Irene Fornes's Fefu and Her Friends",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1997,
+   "cited": 5,
+   "doi": "10.3138/md.40.4.442",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-21",
+   "name": "Paysages de la France exterieure: la mise en scene des colonies a l'Exposition du Centenaire",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1989,
+   "cited": 5,
+   "doi": "10.2307/3778409",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-22",
+   "name": "Representasi Identitas Jawa Pada Cerita Maya (Film Maya Daya Raya) Melalui Analisis Unsur Sinematik: Mise en Scene",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2023,
+   "cited": 4,
+   "doi": "10.24821/tnl.v20i1.9336",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-23",
+   "name": "Mise-en-scene and authenticity in Kunle Afolayan's October 1",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2018,
+   "cited": 4,
+   "doi": "10.4314/ijah.v7i3.5",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-24",
+   "name": "MISE EN SCENE DALAM FILM LAMARAN SUTRADARA MONTY TIWA",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2016,
+   "cited": 4,
+   "doi": "10.22303/proporsi.1.2.2016.165-178",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-25",
+   "name": "The Mise-en-scene of Mediation: Wagner's Gotterdammerung (Stuttgart Opera, Peter Konwitschny, 2000-2005)",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2011,
+   "cited": 4,
+   "doi": "10.1093/oq/kbr029",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-26",
+   "name": "L'Histoire de la mise en scene dans le theatre francais de 1600 a 1657.",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1934,
+   "cited": 4,
+   "doi": "10.2307/2911641",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-27",
+   "name": "Realita Visualitas Generasi Z dalam Mise en Scene Iklan Shopee Men Sale",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2022,
+   "cited": 3,
+   "doi": "10.31937/ultimart.v15i1.2410",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-28",
+   "name": "Mise-En Scene Analysis on Divergent Movie by Veronica Roth",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2020,
+   "cited": 3,
+   "doi": "10.37287/jlh.v1i1.106",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-29",
+   "name": "Interpretations of Television Aesthetics: A Mise-En-Scene Analysis in Audio-Visual Coca-Cola Commercials",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2020,
+   "cited": 3,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-30",
+   "name": "ANALISIS IDENTITAS BUDAYA LOKAL PADA FILM TOBA DREAMS SUTRADARA BENNI SETIAWAN MELALUI MISE EN SCENE DAN DIALOG",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2019,
+   "cited": 3,
+   "doi": "10.22303/proporsi.5.1.2019.72-84",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-31",
+   "name": "Theatrical Mise-En-Scene In Film Form",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2018,
+   "cited": 3,
+   "doi": "10.2478/sd-2018-0017",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-32",
+   "name": "A Study on Visual Mise-en-Scene of VR Animation",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2017,
+   "cited": 3,
+   "doi": "10.14400/jdc.2017.15.9.407",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-33",
+   "name": "Cinematic representations of female teachers: A narratological analysis of mise-en-scene in recent Hollywood films",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2014,
+   "cited": 3,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-34",
+   "name": "Cinemas outside texts: The mise-en-scene in publicity images and theaters of spectacle",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2011,
+   "cited": 3,
+   "doi": "10.1080/14746689.2011.597972",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-35",
+   "name": "Turn the page: From Mise en scene to Dispositif",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2011,
+   "cited": 3,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-37",
+   "name": "The Mise en Scene of the Non-Euclidean Character: Wellman, Jenkin and Strindberg",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1998,
+   "cited": 3,
+   "doi": "10.3138/md.41.3.355",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-38",
+   "name": "Teaching Mise-en-Scene Analysis as a Critical Tool",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1997,
+   "cited": 3,
+   "doi": "10.2307/1225778",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-39",
+   "name": "De la acumulacion a la mise en scene: el museo como medio masivo",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1994,
+   "cited": 3,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-40",
+   "name": "Being There: Performance as Mise-en-Scene, Abscene, Obscene, and Other Scene",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1992,
+   "cited": 3,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-41",
+   "name": "Fantastique et mise en scene dans les comedias de Cervantes",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1974,
+   "cited": 3,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-42",
+   "name": "Qu'est-ce que la mise en scene?",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1963,
+   "cited": 3,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-43",
+   "name": "Analysis of Emotional Colors in The Mise-en-scene of The Film",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2020,
+   "cited": 2,
+   "doi": "10.5392/jkca.2020.20.05.261",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-44",
+   "name": "Staging the Screen: The Use of Film and Video in Theatre",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2007,
+   "cited": 64,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-45",
+   "name": "The Politics of Staging Emotions in Contemporary Bollywood Films: Aditya Chopra's Dilwale Dulhania Le Jayenge (1995) and Karan Johar's My Name is Khan (2010)",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2014,
+   "cited": 33,
+   "doi": "10.1515/ang-2014-0030",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-47",
+   "name": "Staging atmosphere: collective emotional labour on the film set",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2018,
+   "cited": 16,
+   "doi": "10.1080/14649365.2018.1551563",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-48",
+   "name": "Staging Chinese Revolution: Theater, Film, and the Afterlives of Propaganda",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2018,
+   "cited": 12,
+   "doi": "",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-49",
+   "name": "Staging the Border: National Identity and the Critical Geopolitics of West German Film",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 2005,
+   "cited": 10,
+   "doi": "10.1080/14650040590946656",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Paper:OA-调度-50",
+   "name": "Staging Murders: The Social Imaginary, Film, and the City",
+   "type": "Paper",
+   "专业": "调度",
+   "year": 1998,
+   "cited": 9,
+   "doi": "10.1353/wan.1998.0033",
+   "置信度": "DB_REFERENCE"
+  },
+  {
+   "id": "Concept:场面调度",
+   "name": "Mise-en-scène",
+   "type": "Concept",
+   "description": "导演对镜头内一切视觉元素（构图/走位/景别/灯光/布景/空间纵深）的统筹，是'摄影机前'影像组织的核心尺度。",
+   "sources": [
+    "10.1525/rep.1997.59.1.99p0024m",
+    "10.2478/sd-2018-0017"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:构图",
+   "name": "Composition",
+   "type": "Concept",
+   "description": "画面内元素排列与框架裁切，决定画面重心、视线落点与情绪表达。",
+   "sources": [
+    "10.22303/proporsi.6.2.2021.155-166",
+    "10.1080/10304319209388229"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:摄影机机位",
+   "name": "Camera position/angle",
+   "type": "Concept",
+   "description": "机位与拍摄角度决定视角、人物权力关系与空间实感。",
+   "sources": [
+    "10.14400/jdc.2017.15.9.407",
+    "10.2307/2870657"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:景别",
+   "name": "Shot scale",
+   "type": "Concept",
+   "description": "远景/全景/中景/近景/特写等镜头距离尺度，控制信息暴露量与情绪距离。",
+   "sources": [
+    "10.22303/proporsi.6.2.2021.155-166",
+    "10.5392/jkca.2020.20.05.261"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:前景中景背景",
+   "name": "Foreground/midground/background",
+   "type": "Concept",
+   "description": "画面纵向三层景深，用于信息层级、遮蔽/揭示与空间关系表达。",
+   "sources": [
+    "10.2307/3208952",
+    "10.24821/tnl.v20i1.9336"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:走位",
+   "name": "Blocking",
+   "type": "Concept",
+   "description": "演员在空间中的移动与站位（调度），塑造视线引导、戏剧张力与关系疏离。",
+   "sources": [
+    "10.1515/ang-2014-0030",
+    "10.2307/1145986"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:轴线",
+   "name": "Axis of action / 180° rule",
+   "type": "Concept",
+   "description": "镜头切换时保持人物相对位置与视线方向一致的连续性规则。",
+   "sources": [
+    "10.3138/md.41.3.355",
+    "10.2478/sd-2018-0017"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:视线方向",
+   "name": "Eye-line",
+   "type": "Concept",
+   "description": "人物视线方向引导观众注意并建立画面内人与物的空间/因果连接。",
+   "sources": [
+    "10.1353/cj.2003.0002",
+    "10.2478/sd-2018-0017"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:纵深感",
+   "name": "Depth / perceptual depth",
+   "type": "Concept",
+   "description": "通过景深、遮挡、透视与调度营造的空间纵深和层次。",
+   "sources": [
+    "10.1093/screen/45.3.173",
+    "10.14400/jdc.2017.15.9.407"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:灯光布景",
+   "name": "Lighting & set design",
+   "type": "Concept",
+   "description": "光影与布景参与情绪、时代、心理与身份的外化。",
+   "sources": [
+    "10.5392/jkca.2020.20.05.261",
+    "10.1093/oq/kbr029"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Concept:空间关系",
+   "name": "Spatial relations",
+   "type": "Concept",
+   "description": "人物/物体/场景间的相对位置、距离与空间组织，承载叙事与权力结构。",
+   "sources": [
+    "10.1080/14650040590946656",
+    "10.1353/wan.1998.0033",
+    "10.4314/ad.v35i4.70225"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Method:场面调度分析",
+   "name": "Mise-en-scene analysis",
+   "type": "Method",
+   "description": "对镜头内全部可见元素做细读，解读风格与意义；场景还原式批评。",
+   "sources": [
+    "10.2307/1225778",
+    "10.2478/sd-2018-0017"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Method:叙事学分析",
+   "name": "Narratological analysis",
+   "type": "Method",
+   "description": "从叙事结构/故事层解读场面调度如何承载情节与人物。",
+   "sources": [
+    "10.30935/ojcmt/5687",
+    "10.1080/14681366.2019.1627484"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Method:风格—作者批评",
+   "name": "Auteurist/style criticism",
+   "type": "Method",
+   "description": "以稳定的场面调度选择辨认作者风格签名。",
+   "sources": [
+    "10.1080/10304319209388230",
+    "10.1080/10304319209388229"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Method:比较影片分析",
+   "name": "Comparative film analysis",
+   "type": "Method",
+   "description": "跨版本/跨媒介（剧场-电影-广告-VR）比较场面调度策略。",
+   "sources": [
+    "10.2307/2870657",
+    "10.2478/sd-2018-0017"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Method:符号学分析",
+   "name": "Semiotic analysis",
+   "type": "Method",
+   "description": "把场面调度要素当作符号系统解码。",
+   "sources": [
+    "10.2307/1145986",
+    "10.3138/md.41.3.355"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Method:意识形态批评",
+   "name": "Ideological criticism",
+   "type": "Method",
+   "description": "读解场面调度中的政治/性别/帝国权力结构。",
+   "sources": [
+    "10.2307/3208952",
+    "10.2307/3778409"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:纵深暗示权力",
+   "name": "纵深暗示权力",
+   "type": "Finding",
+   "description": "当调度用前景遮挡或俯仰机位强化空间纵深时，画中人物的权力与距离关系被视觉化。",
+   "sources": [
+    "10.2307/3208952",
+    "10.2478/sd-2018-0017"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:轴线保持空间连续",
+   "name": "轴线保持空间连续",
+   "type": "Finding",
+   "description": "连续镜头内保持轴线(180°规则)与视线方向一致时，观众的空间感与连贯理解更稳定。",
+   "sources": [
+    "10.3138/md.41.3.355",
+    "10.2478/sd-2018-0017"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:景别控制信息暴露",
+   "name": "景别控制信息暴露",
+   "type": "Finding",
+   "description": "改换镜头景别(如远景→特写)控制画面信息暴露程度，从而调节观众注意力与情绪距离。",
+   "sources": [
+    "10.30935/ojcmt/5687",
+    "10.5392/jkca.2020.20.05.261",
+    "10.37287/jlh.v1i1.106"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:前景置入信息层",
+   "name": "前景置入信息层",
+   "type": "Finding",
+   "description": "在前景放置主体/遮挡并把关键信息置于前景，可提升画面信息层级与指向性。",
+   "sources": [
+    "10.24821/tnl.v20i1.9336",
+    "10.2478/sd-2018-0017"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:走位引导视线",
+   "name": "走位引导视线",
+   "type": "Finding",
+   "description": "通过演员走位/站位改变视线聚焦点，可把观众注意力导向叙事重点。",
+   "sources": [
+    "10.1515/ang-2014-0030",
+    "10.2307/1145986"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:灯光塑情绪",
+   "name": "灯光塑情绪",
+   "type": "Finding",
+   "description": "灯光的明暗/色调塑造场景情绪基调，先于台词传递氛围。",
+   "sources": [
+    "10.5392/jkca.2020.20.05.261",
+    "10.1093/oq/kbr029"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:舞台调度迁移",
+   "name": "舞台调度迁移",
+   "type": "Finding",
+   "description": "剧场场面调度可迁移为电影调度并保留情绪强度，但需按镜头单位重新组织。",
+   "sources": [
+    "10.2478/sd-2018-0017",
+    "10.1515/ang-2014-0030"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:风格得自调度",
+   "name": "风格得自调度",
+   "type": "Finding",
+   "description": "可识别的作者风格来自稳定的场面调度选择(构图/机位/灯光)而非单一特效。",
+   "sources": [
+    "10.1080/10304319209388230",
+    "10.1080/10304319209388229"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:视线连接受众注意",
+   "name": "视线连接受众注意",
+   "type": "Finding",
+   "description": "人物视线方向引导观众注意转移，并建立画面内人与物的因果/空间连接。",
+   "sources": [
+    "10.1353/cj.2003.0002",
+    "10.1353/cj.2003.0002"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:色彩情绪传递",
+   "name": "色彩情绪传递",
+   "type": "Finding",
+   "description": "场面调度的色彩/情绪色调先于画面叙事影响观众情绪反应。",
+   "sources": [
+    "10.5392/jkca.2020.20.05.261",
+    "10.31937/ultimart.v15i1.2410"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:空间外化身份权力",
+   "name": "空间外化身份权力",
+   "type": "Finding",
+   "description": "以空间组织(边境/室内/舞台/城市)外化身份与国族/权力关系。",
+   "sources": [
+    "10.1080/14650040590946656",
+    "10.1353/wan.1998.0033"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Finding:调度距离塑张力",
+   "name": "调度距离塑张力",
+   "type": "Finding",
+   "description": "人物间调度距离(站位远/近)直接塑造亲密、对峙或疏离的戏剧张力。",
+   "sources": [
+    "10.1515/ang-2014-0030",
+    "10.1080/14681366.2019.1627484"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Theory:场面调度理论",
+   "name": "Mise-en-scene theory",
+   "type": "Theory",
+   "description": "主张镜头内视觉编排本身即意义生产，是导演美学核心。",
+   "sources": [
+    "10.2307/2911641"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Theory:作者论",
+   "name": "Auteur theory",
+   "type": "Theory",
+   "description": "导演通过场面调度形成可识别风格签名，作者中心评价。",
+   "sources": [
+    "10.1080/10304319209388230"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Theory:装置理论",
+   "name": "Dispositif/apparatus theory",
+   "type": "Theory",
+   "description": "从'装置/机器'角度把场面调度扩展到媒介与观看体制。",
+   "sources": [
+    "10.1093/oq/kbq031"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Theory:空间叙事",
+   "name": "Spatial narrative",
+   "type": "Theory",
+   "description": "以空间组织(地形/室内/边境/舞台)承载叙事、身份与权力。",
+   "sources": [
+    "10.1080/14650040590946656"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Theory:表演—身体理论",
+   "name": "Performance/embodiment theory",
+   "type": "Theory",
+   "description": "场面调度作为身体在场与表演，行动者构成场景。",
+   "sources": [
+    "10.1080/14649365.2018.1551563"
+   ],
+   "置信度": "LLM_INFERRED"
+  },
+  {
+   "id": "Theory:符号学理论",
+   "name": "Semiotics",
+   "type": "Theory",
+   "description": "把场面调度视为可解构的符号系统，读解其文化编码。",
+   "sources": [
+    "10.2307/1145986"
+   ],
+   "置信度": "LLM_INFERRED"
+  }
+ ],
+ "relations": [
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-1",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-2",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-2",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-2",
+   "target": "Concept:摄影机机位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-2",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-3",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-4",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-4",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-5",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-5",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-6",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-6",
+   "target": "Concept:景别"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-7",
+   "target": "Concept:前景中景背景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-7",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-8",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-9",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-10",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-10",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-10",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-11",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-11",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-12",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-12",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-12",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-13",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-13",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-14",
+   "target": "Concept:视线方向"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-14",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-15",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-15",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-16",
+   "target": "Concept:纵深感"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-16",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-17",
+   "target": "Concept:摄影机机位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-17",
+   "target": "Concept:景别"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-18",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-18",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-19",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-19",
+   "target": "Concept:景别"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-19",
+   "target": "Concept:摄影机机位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-20",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-20",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-21",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-21",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-22",
+   "target": "Concept:前景中景背景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-22",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-23",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-23",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-24",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-24",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-25",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-25",
+   "target": "Concept:摄影机机位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-26",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-26",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-27",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-27",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-28",
+   "target": "Concept:景别"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-28",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-29",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-29",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-30",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-30",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-31",
+   "target": "Concept:轴线"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-31",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-31",
+   "target": "Concept:前景中景背景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-32",
+   "target": "Concept:摄影机机位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-32",
+   "target": "Concept:纵深感"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-33",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-33",
+   "target": "Concept:视线方向"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-34",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-34",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-35",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-37",
+   "target": "Concept:轴线"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-37",
+   "target": "Concept:前景中景背景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-38",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-38",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-39",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-39",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-40",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-41",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-41",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-42",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-43",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-43",
+   "target": "Concept:景别"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-44",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-44",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-45",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-45",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-45",
+   "target": "Concept:摄影机机位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-47",
+   "target": "Concept:灯光布景"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-47",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-48",
+   "target": "Concept:场面调度"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-48",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-49",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-49",
+   "target": "Concept:摄影机机位"
+  },
+  {
+   "type": "paper-about",
+   "source": "Paper:OA-调度-50",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-1",
+   "target": "Theory:场面调度理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-2",
+   "target": "Theory:场面调度理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-2",
+   "target": "Theory:作者论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-4",
+   "target": "Theory:作者论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-8",
+   "target": "Theory:作者论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-8",
+   "target": "Theory:场面调度理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-9",
+   "target": "Theory:作者论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-12",
+   "target": "Theory:表演—身体理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-16",
+   "target": "Theory:表演—身体理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-18",
+   "target": "Theory:符号学理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-18",
+   "target": "Theory:表演—身体理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-20",
+   "target": "Theory:表演—身体理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-31",
+   "target": "Theory:场面调度理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-31",
+   "target": "Theory:空间叙事"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-32",
+   "target": "Theory:空间叙事"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-35",
+   "target": "Theory:装置理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-37",
+   "target": "Theory:符号学理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-37",
+   "target": "Theory:表演—身体理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-40",
+   "target": "Theory:表演—身体理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-44",
+   "target": "Theory:空间叙事"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-47",
+   "target": "Theory:表演—身体理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-48",
+   "target": "Theory:空间叙事"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-48",
+   "target": "Theory:表演—身体理论"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-49",
+   "target": "Theory:空间叙事"
+  },
+  {
+   "type": "paper-uses",
+   "source": "Paper:OA-调度-50",
+   "target": "Theory:空间叙事"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-1",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-2",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-2",
+   "target": "Method:风格—作者批评"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-3",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-5",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-6",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-6",
+   "target": "Method:叙事学分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-7",
+   "target": "Method:意识形态批评"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-8",
+   "target": "Method:风格—作者批评"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-9",
+   "target": "Method:风格—作者批评"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-12",
+   "target": "Method:意识形态批评"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-17",
+   "target": "Method:比较影片分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-18",
+   "target": "Method:符号学分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-21",
+   "target": "Method:意识形态批评"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-22",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-26",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-28",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-31",
+   "target": "Method:比较影片分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-33",
+   "target": "Method:叙事学分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-37",
+   "target": "Method:符号学分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-38",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-42",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-43",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-proposes",
+   "source": "Paper:OA-调度-45",
+   "target": "Method:场面调度分析"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-7",
+   "target": "Finding:纵深暗示权力"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-21",
+   "target": "Finding:纵深暗示权力"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-31",
+   "target": "Finding:纵深暗示权力"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-31",
+   "target": "Finding:轴线保持空间连续"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-37",
+   "target": "Finding:轴线保持空间连续"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-6",
+   "target": "Finding:景别控制信息暴露"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-28",
+   "target": "Finding:景别控制信息暴露"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-43",
+   "target": "Finding:景别控制信息暴露"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-22",
+   "target": "Finding:前景置入信息层"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-31",
+   "target": "Finding:前景置入信息层"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-40",
+   "target": "Finding:走位引导视线"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-45",
+   "target": "Finding:走位引导视线"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-20",
+   "target": "Finding:走位引导视线"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-43",
+   "target": "Finding:灯光塑情绪"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-25",
+   "target": "Finding:灯光塑情绪"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-27",
+   "target": "Finding:灯光塑情绪"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-31",
+   "target": "Finding:舞台调度迁移"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-44",
+   "target": "Finding:舞台调度迁移"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-11",
+   "target": "Finding:舞台调度迁移"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-8",
+   "target": "Finding:风格得自调度"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-9",
+   "target": "Finding:风格得自调度"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-2",
+   "target": "Finding:风格得自调度"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-14",
+   "target": "Finding:视线连接受众注意"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-33",
+   "target": "Finding:视线连接受众注意"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-43",
+   "target": "Finding:色彩情绪传递"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-27",
+   "target": "Finding:色彩情绪传递"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-49",
+   "target": "Finding:空间外化身份权力"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-50",
+   "target": "Finding:空间外化身份权力"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-48",
+   "target": "Finding:空间外化身份权力"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-45",
+   "target": "Finding:调度距离塑张力"
+  },
+  {
+   "type": "paper-finds",
+   "source": "Paper:OA-调度-15",
+   "target": "Finding:调度距离塑张力"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:纵深暗示权力",
+   "target": "Rule:图文对位"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:轴线保持空间连续",
+   "target": "ProcessRule:单镜抽卡"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:景别控制信息暴露",
+   "target": "ProcessRule:单镜抽卡"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:前景置入信息层",
+   "target": "Rule:图文对位"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:走位引导视线",
+   "target": "Rule:概念先行"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:灯光塑情绪",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:舞台调度迁移",
+   "target": "ProcessRule:单镜抽卡"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:风格得自调度",
+   "target": "Rule:AI原生交付原则"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:视线连接受众注意",
+   "target": "Rule:图文对位"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:色彩情绪传递",
+   "target": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:空间外化身份权力",
+   "target": "Rule:概念先行"
+  },
+  {
+   "type": "finding-evidence-for-rule",
+   "source": "Finding:调度距离塑张力",
+   "target": "ProcessRule:单镜抽卡"
+  },
+  {
+   "type": "method-supports-rule",
+   "source": "Method:场面调度分析",
+   "target": "Rule:图文对位"
+  },
+  {
+   "type": "method-supports-rule",
+   "source": "Method:场面调度分析",
+   "target": "ProcessRule:单镜抽卡"
+  },
+  {
+   "type": "method-supports-rule",
+   "source": "Method:叙事学分析",
+   "target": "Rule:概念先行"
+  },
+  {
+   "type": "method-supports-rule",
+   "source": "Method:风格—作者批评",
+   "target": "Rule:AI原生交付原则"
+  },
+  {
+   "type": "method-supports-rule",
+   "source": "Method:比较影片分析",
+   "target": "ProcessRule:单镜抽卡"
+  },
+  {
+   "type": "method-supports-rule",
+   "source": "Method:符号学分析",
+   "target": "Rule:图文对位"
+  },
+  {
+   "type": "method-supports-rule",
+   "source": "Method:意识形态批评",
+   "target": "Rule:五层检查体系"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:构图",
+   "target": "Concept:摄影机机位"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:构图",
+   "target": "Concept:景别"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:摄影机机位",
+   "target": "Concept:景别"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:前景中景背景",
+   "target": "Concept:纵深感"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:前景中景背景",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:走位",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:走位",
+   "target": "Concept:轴线"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:轴线",
+   "target": "Concept:视线方向"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:视线方向",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:纵深感",
+   "target": "Concept:空间关系"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:灯光布景",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:空间关系",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:场面调度",
+   "target": "Concept:构图"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:场面调度",
+   "target": "Concept:走位"
+  },
+  {
+   "type": "concept-related-to",
+   "source": "Concept:场面调度",
+   "target": "Concept:灯光布景"
+  }
+ ]
+}
