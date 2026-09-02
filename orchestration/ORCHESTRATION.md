@@ -27,7 +27,7 @@
 只以黑板文件和本提示为事实来源。
 开工三步:
   ① 用 read 工具读 F:/AI/kesheng/agents/<角色文件名>.md 作为你的角色卡，遵循其全部指令；
-     再用统一知识图谱查你的 domain: python F:/AI/kesheng/packs/kg_query.py --domain <你的域> <任务关键词>
+     再用统一知识图谱查你的 domain: python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain <你的域> <任务关键词>
      （结果含实体属性+1跳邻居+权威正文路径；按结果 read 需要的原文，不要一次性全读）
   ② 读黑板: F:/AI/kesheng/runs/<项目slug>/brief.md (项目简报+预注册标准+档位)。
   ③ 读取上游📤: <上游制品文件路径>（若无则略过）。
@@ -59,25 +59,28 @@
 | 红队 | `agents/red-team.md` | `red-team-<闸>.md`（前置闸/出口闸/M3对抗） | 闸点触发 |
 | **检察官** | `agents/inspector.md` | `L1素材-检查报告.md` / `L2prompt-检查报告.md` / `L3事实-检查报告.md` / `L4出口-检查报告.md` / **`检查裁决书.md`**（总检察官） | L1-L4.5 交付前触发（独立上下文，只看证据不听辩护） |
 
-## 3.5 知识图谱接入（每位角色一个 domain，统一大图谱）
+## 3.5 知识图谱接入（每位角色一个 domain，统一大图谱，出稿前必查）
 
-| 角色 | domain | 开工查询 |
+> 这是「知识怎样被用上」的锚点：**每个角色 subagent 出稿前必须先跑一次本域检索**（角色卡开头已写成硬性第一步），关键主张引用图上 `权威正文` 来源，无来源支撑的主张不进稿。
+
+| 角色 | domain | 开工必查（`--depth 2` 取 2 跳邻居，证据更宽） |
 |---|---|---|
-| 导演 | 导演 | `python F:/AI/kesheng/packs/kg_query.py --domain 导演 <关键词>` |
-| 编剧 | 叙事 | `python F:/AI/kesheng/packs/kg_query.py --domain 叙事 <关键词>` |
-| 分镜师 | 分镜 | `python F:/AI/kesheng/packs/kg_query.py --domain 分镜 <关键词>` |
-| 美术指导 | 美术 | `python F:/AI/kesheng/packs/kg_query.py --domain 美术 <关键词>` |
-| 摄影指导 | 影像 | `python F:/AI/kesheng/packs/kg_query.py --domain 影像 <关键词>` |
-| 声音设计师 | 声音 | `python F:/AI/kesheng/packs/kg_query.py --domain 声音 <关键词>` |
-| 剪辑师 | 剪辑 | `python F:/AI/kesheng/packs/kg_query.py --domain 剪辑 <关键词>` |
-| 科学顾问 | 科学 | `python F:/AI/kesheng/packs/kg_query.py --domain 科学 <关键词>` |
-| prompt 工程师 | prompt | `python F:/AI/kesheng/packs/kg_query.py --domain prompt <关键词>` |
-| 观众代言人 | 受众 | `python F:/AI/kesheng/packs/kg_query.py --domain 受众 <关键词>` |
-| 红队 | 红队 | `python F:/AI/kesheng/packs/kg_query.py --domain 红队 <关键词>` |
+| 制片人 | 工艺 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 工艺 门控`（可换：KSP） |
+| 导演 | 导演 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 导演 作者论`（可换：场面调度/导演风格） |
+| 编剧 | 叙事 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 叙事 结构`（可换：口播/旁白） |
+| 分镜师 | 分镜 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 分镜 景别`（可换：分镜） |
+| 美术指导 | 美术 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 美术 三点布光`（可换：色彩分级/场景氛围） |
+| 摄影指导 | 影像 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 影像 运镜`（可换：构图/景别） |
+| 声音设计师 | 声音 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 声音 音乐`（可换：情绪） |
+| 剪辑师 | 剪辑 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 剪辑 节奏`（可换：转场） |
+| 科学顾问 | 科学 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 科学 <按项目主题替换>`（可换：科普）＋ `kb/` |
+| prompt 工程师 | prompt | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain prompt 单镜`（可换：分镜） |
+| 观众代言人 | 受众 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 受众 注意力`（可换：痛点） |
+| 红队 | 红队 | `python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain 红队 红队`（可换：`--domain 工艺 门控`） |
 
-- **统一图谱**：`packs/kesheng-kg/kg.json`（并集 KG + 分区 domain；跨域实体自动合并，关系带 domain 标签）——当前 **2166 实体 / 4700 关系，prompt 域 1779 实体**（平台版本×镜头类型×风格方向×画风×流程×字体 的种子矩阵，`expand_tables*.json` 为来源表，可反复重建）
-- **分区索引**：`packs/kesheng-kg/kb/index.md`；**重建**：`python F:/AI/kesheng/scripts/build_union_kg.py`（从 7 个域片段重并）；prompt 种子扩增：`python F:/AI/kesheng/scripts/expand_prompt_seed.py`
-- 权威正文仍在原文件（`knowledge/`、`kb/`、`playbooks/`、`agents/`），图谱只做导航与多跳推理
+- **统一图谱**：`packs/kesheng-kg/kg.json`（并集 KG + 分区 domain，跨域实体自动合并）——当前 **3419 实体 / 7517 关系 / 25 片段 / 13 域，悬空 0**；含 8 大专业的论文证据层 `papers-<专业>-kg`（每专业 40–50 篇），Finding/方法已接线 `finding-evidence-for-rule`/`method-supports-rule`（权威正文=DOI）。
+- **重建**：`python F:/AI/kesheng/scripts/build_union_kg.py`；prompt 种子扩增：`python F:/AI/kesheng/scripts/expand_prompt_seed.py`。
+- **权威正文**仍在原文件（`knowledge/`、`kb/`、`playbooks/`、`agents/`），图谱做导航 + 多跳推理 + 论文证据链。
 
 ## 4. 里程碑派活清单（关卡式默认流程）
 
@@ -150,6 +153,7 @@
    ③ **参考图"标角色＋部位对应"写显式**（每张必写：标角色 `@图N 是主体（整机）／部件参考（散热鳍片＝主体鳍片）／场景参考（用于背景环境）／质感参考`；**若场景参考含主体则注明"图中<位置>的<主体>是主体，取该主体"**；＋部位对应 `参考图<部位X>＝主体<部位X'>`＋放哪位置）；图片节点参考上限 3 张/次，逐镜视频可更丰富；水印图/竞品图/团队合影/带商标原理图示=禁入镜、禁作参考喂模型。
    ④ **文字**：AI 直出的字写死+位置；**精确数据**（±0.2%/10000h/170–2500nm 等）生成后 `⚠️核对=手册原文`（错则重抽或改后期）——科学红线，数据必须=手册原文。
    ⑤ **无抽象词**（无"高级感/震撼/电影感"，换具体视觉事实）｜单镜≤2 运镜+变速（动感三来源）｜无霓虹/暖调洗墙/彩色渐变。
+17. **图谱检索先行（硬规则）**：任何角色 subagent 出稿前**必须先跑一次本域知识图谱检索**（`python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain <本域> <关键词>`，关键词见角色卡开头 + §3.5 表）；**关键主张（事实/发现/规则/视觉决策）必须引用图上 `权威正文` 来源**，无来源支撑的主张不得进稿；此检索随派活 prompt（§2 角色栏）一并注入。与 #9（知识只进图谱）、#13（文案白名单）联动：图谱是唯一知识入口、检索是唯一取用方式。制片人派活时若发现某角色未检索即出稿，打回并要求先行检索。
 
 
 ## 6. 全自动模式（用户说"全自动跑完"才用）
