@@ -34,8 +34,8 @@ description: 科生（Kesheng）—— 科研/高精尖技术方向的 AI 视频
 
 ```
 M1 需求简报   → 用 templates/brief.md 向用户调研，信息缺口直接向用户追问；定档(S/M/L)+预注册标准
-M2 科学理解   → 科学顾问等 3-5 路并行 subagent 调研；达到 L2 以上才允许创作
-M3 制作方案   → 概念先行（多方向创意）+ 概念拍板 + 红队 + 按预注册标准裁决（templates/proposal.md）
+M2 科学理解   → 科学顾问等 3-5 路并行 subagent 调研；达到 L2 以上才允许创作；**报告=中间交付件：`scientist-报告.docx`＋`scientist-讲解.pptx`（可上图）交用户 → 报告审阅闸：等用户读完回复「继续」→ 主题共识+内容重点对齐（KSP-03.5）→ 才进 M3**（见 playbooks/science-report-flow.md）
+M3 制作方案   → 概念先行（多方向创意，每路 5 个）+ 概念拍板 + 红队 + 按预注册标准裁决（templates/proposal.md）；入口=报告审阅闸通过+主题共识对齐
 M4 分镜+prompt → 口播稿→分镜→prompt 分段并行转写→科学复核→红队前置闸（templates/storyboard.md）
 M5 制作与交付 → 陪用户出片（playbooks/production-workflow.md），红队出口评审闸（protocols/quality-gate.md）
 ```
@@ -64,11 +64,14 @@ M5 制作与交付 → 陪用户出片（playbooks/production-workflow.md），�
 ## 资源索引（按需读取，不要一次性全读）
 
 - **会议与质量**：`protocols/meeting.md`、`protocols/quality-gate.md`
-- **制作实操**：`playbooks/production-workflow.md`（端到端流程）、`playbooks/platform-prompts.md`（各平台 prompt 公式+范例+运镜词表，含 Seedance 2.0/2.5 官方核实版专章）、`playbooks/storyboard-grid.md`（宫格分镜图技法：Image2 生图、九宫格模板、两条成片路径）、`playbooks/consistency.md`（跨镜一致性工具箱）
+- **制作实操**：`playbooks/production-workflow.md`（端到端流程）、`playbooks/platform-prompts.md`（各平台 prompt 公式+范例+运镜词表，含 Seedance 2.0/2.5 官方核实版专章）、`playbooks/storyboard-grid.md`（宫格分镜图技法：Image2 生图、九宫格模板、两条成片路径）、`playbooks/consistency.md`（跨镜一致性工具箱）、`playbooks/science-report-flow.md`（**M2→M3 交接：科学理解 → 报告+docx/PPT 交付 → 报告审阅闸「继续」 → 主题共识 → 概念先行**）
 - **科学知识图谱**：`kb/`（Obsidian 式知识库，用 Obsidian 打开 `kb/` 文件夹即可见图谱；入口 `kb/index.md`，按领域分文件夹：生物学/医学/化学/物理学/光学…；M2 先查库，项目收尾按 `kb/隐私红线.md` 萃取入库——**项目专有信息绝不入库**）
 - **工艺知识库**：`knowledge/`（Obsidian 兼容创作工艺图谱，入口 `knowledge/index.md`：痛点链/文案层/动感三来源/首帧锚定/全能参考三用法/素材分级/图表层等概念卡 + hooks 钩子库 + ad-copy 广告文案法则 + 脚本模板 + VI 规范）
 - **统一知识图谱（知识唯一入口）**：`packs/kesheng-kg/`——并集大图谱（全体知识 + 13 个 domain 分区：科学/叙事/导演/分镜/美术/影像/声音/prompt/工艺/受众/红队/剪辑/产业），查询 `python F:/AI/kesheng/packs/kg_query.py --domain <域> <关键词>`；重建 `scripts/build_union_kg.py`；**知识沉淀只进图谱**（追加域片段→重建），不新建概念卡；`kb/`（科学）与 `knowledge/`（工艺）仅为历史权威正文来源
-- **输出模板**：`templates/`（brief / proposal / storyboard / decision-log / breakdown / handoff）
+- **输出模板**：`templates/`（brief / proposal / storyboard / decision-log / breakdown / handoff / prompt-sheet / product-prompt-formula / video-prompt-formula / science-report / science-ppt / visual-baseline / reference-selection / assets-inventory）——报告/PPT 可上图，用现成技能生成（report-writer/markdown-exporter 出 docx，ppt-master/markdown-exporter/pipitmk 出 PPT）
+- **校验/一键工具**：`packs/kg_query.py`（图谱查询）、`scripts/build_union_kg.py`（并集重建）、`scripts/check_prompt_sheet.py`（R1-R12）、`scripts/check_residual.py`（禁词扫描）、`scripts/check_reference_selection.py`（选片校验）、`scripts/check_asset_pack.py`（零意外）、`scripts/classify_assets.py`（素材分类命名）、`scripts/check_runs_clean.py`（runs 只放项目守护）、`scripts/build_science_report.py`（报告→docx+pptx）
+- **失败图书馆**：`knowledge/FAILURE-LIBRARY.md`（跨项目踩坑记录，KSP-01 开工先读，KSP-07 收尾追加）
+- **技能赋能**：报告/PPT/设计用现成技能（`report-writer`/`ppt-master`/`markdown-exporter`/`pipitmk`），别从零造
 
 ## 使用规范（用户视角 · 硬流程）
 
@@ -98,7 +101,7 @@ M5 制作与交付 → 陪用户出片（playbooks/production-workflow.md），�
 ### 里程碑速查（完整派活清单见编排手册 §4）
 
 - **M1** 简报+预注册标准+定档 → 并行 4 worker（科学硬约束/导演艺术基调/摄影可拍约束/受众证据模型）→ 用户确认
-- **M2** 并行 3-5 路调研 → 汇总，理解深度 ≥L2、待确认有去向 → 用户确认
+- **M2** 并行 3-5 路调研 → 汇总，理解深度 ≥L2、待确认有去向 → **科学顾问交付 `scientist-报告.docx`＋`scientist-讲解.pptx`（中间交付件，可上图）→ 报告审阅闸：用户读完回复「继续」→ 主题共识+内容重点对齐（KSP-03.5）** → 进 M3（未收到「继续」禁止推进任何后续/拍板）
 - **M3** 概念先行（编剧/分镜师/摄影指导/导演各出 5 个创意方向）→ 概念拍板（选一/融合）→ 导演深化、制片人按预注册标准复核 → 纪要+少数派报告 → 用户确认
 - **M4** 口播稿（编剧）→ 分镜表（分镜师）‖ 声音方案（声音设计师）→ 摄影方案（摄影指导）→ prompt 分段并行转写（prompt 工程师×N）→ 剪辑预计划（剪辑师）→ 科学顾问复查涉科学镜头 → 红队前置闸 → 用户确认
 - **M5** 陪用户出片 → 导演定剪意见 → 红队出口评审闸（PASS/CONDITIONAL/BLOCK，打回 ≤2 循环）→ 用户签收 → 知识萃取
