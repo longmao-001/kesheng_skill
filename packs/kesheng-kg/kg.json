@@ -119977,6 +119977,14 @@
    ]
   },
   {
+   "source": "KspStep:KSP-03.5主题共识",
+   "target": "UserGate:报告审阅(中间交付件)",
+   "type": "ksp-after-gate",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
    "source": "KspStep:KSP-07萃取归档",
    "target": "RoleWorkflow:科学顾问",
    "type": "ksp-executed-by",

@@ -595,6 +595,12 @@
    "target": "RoleWorkflow:制片人工作流程",
    "type": "gate-in",
    "props": {}
+  },
+  {
+   "source": "KspStep:KSP-03.5主题共识",
+   "target": "UserGate:报告审阅(中间交付件)",
+   "type": "ksp-after-gate",
+   "props": {}
   }
  ]
 }
