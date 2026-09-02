@@ -10,7 +10,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 P = r"F:/AI/kesheng/packs/lessons-kg/kg.json"
 os.makedirs(os.path.dirname(P), exist_ok=True)
 
-SRC = ["runs/_lessons/FAILURE-LIBRARY.md", "F:/AI/DS harness/runs/20260830-pho-sc4/red-team-M4关闭确认.md"]
+SRC = ["knowledge/FAILURE-LIBRARY.md", "F:/AI/DS harness/runs/20260830-pho-sc4/red-team-M4关闭确认.md"]
 
 LESSONS = [
     ("FailureLesson:数据口径分层", "数据口径分层", {"现象": "s27_18长周期漂移图与手册10000h衰减混用并线性换算(F-01)", "根因": "来源/口径/量纲未分层", "规则": "不同口径数据不同屏不并列、禁线性换算; 数据来源三层=本机实测/官方手册/教科书, 上屏只认前两层"}),
@@ -36,7 +36,7 @@ g = {"schema_version": "1.0", "pack": "lessons-kg", "role": "全角色",
      "entities": [], "relations": []}
 for eid, name, props in LESSONS:
     g["entities"].append({"id": eid, "type": "FailureLesson", "name": name, "props": props,
-                          "sources": ["runs/_lessons/FAILURE-LIBRARY.md"], "domains": ["工艺"]})
+                          "sources": ["knowledge/FAILURE-LIBRARY.md"], "domains": ["工艺"]})
 for r in RULES:
     g["entities"].append({**r, "sources": SRC, "domains": ["工艺"]})
 

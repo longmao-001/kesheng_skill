@@ -279,7 +279,7 @@
     "来源": "用户原话: '等一下 我的口播第一句话应该是产品名啊'"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "叙事"
@@ -294,7 +294,7 @@
     "来源": "用户原话: '你看分镜合理吗？第一句话是第八镜才说？'"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -309,7 +309,7 @@
     "来源": "用户原话: '人工层是什么？我说我有能力做人工层？'"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"

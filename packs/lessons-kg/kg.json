@@ -14,7 +14,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -31,7 +31,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -48,7 +48,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -65,7 +65,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -82,7 +82,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -99,7 +99,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -116,7 +116,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -133,7 +133,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -150,7 +150,7 @@
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -165,8 +165,8 @@
     "用途": "AI配音或外部配音直接照读, 杜绝各读各的"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md",
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md",
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -180,8 +180,8 @@
     "要求": "品牌色/logo/字体一律官方源(官网矢量/VI/手册), 禁止自造色值; 品牌用字属用户拍板项#10"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md",
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md",
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"
@@ -195,8 +195,8 @@
     "要求": "关键数据必须原始文档目检(截图入库); '大概率/待确认'=L3检察官FAIL项; 教科书参数不上屏不绑机"
    },
    "sources": [
-    "runs/_lessons/FAILURE-LIBRARY.md",
-    "runs/_lessons/FAILURE-LIBRARY.md"
+    "knowledge/FAILURE-LIBRARY.md",
+    "knowledge/FAILURE-LIBRARY.md"
    ],
    "domains": [
     "工艺"

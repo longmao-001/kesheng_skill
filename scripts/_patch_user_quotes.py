@@ -8,7 +8,7 @@ import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 # 1) 失败图书馆追加用户原话证据段
-LIB = r"F:/AI/kesheng/runs/_lessons/FAILURE-LIBRARY.md"
+LIB = r"F:/AI/kesheng/knowledge/FAILURE-LIBRARY.md"
 ADD = """
 
 ## 📣 用户原话证据（session-774f5b97，2026-08 玦芯 PHO-SC-4 对话，25 条）
@@ -40,13 +40,13 @@ ids = {e["id"] for e in g["entities"]}
 NEW = [
     {"id": "Rule:口播首句产品名", "type": "Rule", "name": "口播首句=产品全名",
      "props": {"铁则": "口播第一句话必须是产品全名(如'PHO-SC-4 激光驱动等离子体宽谱光源：…'), 不得用意象句/文案腔开场", "来源": "用户原话: '等一下 我的口播第一句话应该是产品名啊'"},
-     "sources": ["runs/_lessons/FAILURE-LIBRARY.md"], "domains": ["叙事"]},
+     "sources": ["knowledge/FAILURE-LIBRARY.md"], "domains": ["叙事"]},
     {"id": "Rule:图文顺序对位", "type": "Rule", "name": "图文顺序对位",
      "props": {"铁则": "口播首句必须在首镜(镜1)出现; 口播节拍顺序与分镜顺序一一对应, 不得第1句跑到第8镜", "来源": "用户原话: '你看分镜合理吗？第一句话是第八镜才说？'"},
-     "sources": ["runs/_lessons/FAILURE-LIBRARY.md"], "domains": ["工艺"]},
+     "sources": ["knowledge/FAILURE-LIBRARY.md"], "domains": ["工艺"]},
     {"id": "Rule:零门槛措辞", "type": "Rule", "name": "零门槛措辞",
      "props": {"铁则": "交付文档/对话禁用专业术语吓用户: '人工层/图表层/首帧/后期/LUT/压字' 一律替换为零门槛表述('模板/样张直接拖进剪映/一键/照着点')", "来源": "用户原话: '人工层是什么？我说我有能力做人工层？'"},
-     "sources": ["runs/_lessons/FAILURE-LIBRARY.md"], "domains": ["工艺"]},
+     "sources": ["knowledge/FAILURE-LIBRARY.md"], "domains": ["工艺"]},
 ]
 for e in NEW:
     if e["id"] not in ids:

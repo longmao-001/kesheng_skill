@@ -485,7 +485,7 @@
 | 推荐流封面首屏 | RednoteRule | 3:4竖版, 高饱和, 人脸或产品特写 | https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing |
 | 搜索SEO双引擎 | RednoteRule | 日均3亿搜索 | https://xhs.hashmeta.com/cn/posts/xiaohongshu-algorithm-content-strategy-2025-guide-brand-marketing |
 | 痛点方案挂载结构 | RednoteRule | 高频场景+具体问题+可通过手册/模板解决 | https://www.marketup.cn/marketupblog/narongyingxiao/23905.html |
-| 口播首句=产品全名 | Rule | 口播第一句话必须是产品全名(如'PHO-SC-4 激光驱动等离子体宽谱光源：…'), 不得用意象句/文案腔开场 | runs/_lessons/FAILURE-LIBRARY.md |
+| 口播首句=产品全名 | Rule | 口播第一句话必须是产品全名(如'PHO-SC-4 激光驱动等离子体宽谱光源：…'), 不得用意象句/文案腔开场 | knowledge/FAILURE-LIBRARY.md |
 | A01申报片模板 | ScriptTemplate | 总体介绍片 | knowledge/templates/A01-total-intro.md |
 | C类分受众适配指南 | ScriptTemplate | 同一内容5种完全不同讲法 | knowledge/templates/C-multi-audience-guide.md |
 | 品牌TVC五镜骨架 | ScriptTemplate | 5镜×3秒 | knowledge/tvc-ad-templates.md |
@@ -3188,15 +3188,15 @@
 | 风格token块锚定 | ArtStyleRule | 全片写死一句风格描述（如'冷蓝生物荧光科学可视化风格，体积光，浅景深，8K超精细'），逐字粘贴进每镜prompt。；风格 | F:/AI/kesheng/playbooks/consistency.md / F:/AI/kesheng/knowledge/seedance-template-library.md |
 | 结构方法代替自由联想 | CreativeRule | 创意生成必须用结构化方法论(SIT/SCAMPER/TRIZ/双关联…20法), 禁止'灵光一现'式自由联想 | libs/creative-director-skill/creative-director/references/methods-catalog.md |
 | 创意评分标定(戛纳校准) | EvalRule | 原创性0.25/策略契合0.20/情绪反应0.20/可行性0.15/延展性0.10/简洁0.10 | libs/creative-director-skill/creative-director/SKILL.md / libs/creative-director-skill/creative-director/references/scoring-calibration.md |
-| 全局残留一致性 | FailureLesson | 主文本改完, 自评/待确认/下游建议/制作清单仍留旧表述(S1-S4)——M5按旧指令=问题回归 | runs/_lessons/FAILURE-LIBRARY.md |
-| 原始文档目检确认 | FailureLesson | 0.01nm课本精度当本机实测(F-02); 关键数值靠'大概率' | runs/_lessons/FAILURE-LIBRARY.md |
-| 口播读法批注 | FailureLesson | 口播稿缺读法, 配音/字幕各读各的(数字/单位/型号读法不一) | runs/_lessons/FAILURE-LIBRARY.md |
-| 品牌资产官方源 | FailureLesson | 落版电光青自造色(C1); 青绿logo实为'玦芯生物'(C2) | runs/_lessons/FAILURE-LIBRARY.md |
-| 型号-参数数字规避 | FailureLesson | PHO-SC-4 的'4'与输出功率8W/4W字面易误读 | runs/_lessons/FAILURE-LIBRARY.md |
-| 数据口径分层 | FailureLesson | s27_18长周期漂移图与手册10000h衰减混用并线性换算(F-01) | runs/_lessons/FAILURE-LIBRARY.md |
-| 禁用素材清单前置 | FailureLesson | 竞品曲线/水印素材进提案后被红队拦截 | runs/_lessons/FAILURE-LIBRARY.md |
-| 配音零找人 | FailureLesson | 素材包'待你提供=外部配音'——唯一遗留动作 | runs/_lessons/FAILURE-LIBRARY.md |
-| 零自创文案 | FailureLesson | 用户删CTA/slogan/痛点段, 口播=定位语原文直读, 字幕=口播逐句 | runs/_lessons/FAILURE-LIBRARY.md |
+| 全局残留一致性 | FailureLesson | 主文本改完, 自评/待确认/下游建议/制作清单仍留旧表述(S1-S4)——M5按旧指令=问题回归 | knowledge/FAILURE-LIBRARY.md |
+| 原始文档目检确认 | FailureLesson | 0.01nm课本精度当本机实测(F-02); 关键数值靠'大概率' | knowledge/FAILURE-LIBRARY.md |
+| 口播读法批注 | FailureLesson | 口播稿缺读法, 配音/字幕各读各的(数字/单位/型号读法不一) | knowledge/FAILURE-LIBRARY.md |
+| 品牌资产官方源 | FailureLesson | 落版电光青自造色(C1); 青绿logo实为'玦芯生物'(C2) | knowledge/FAILURE-LIBRARY.md |
+| 型号-参数数字规避 | FailureLesson | PHO-SC-4 的'4'与输出功率8W/4W字面易误读 | knowledge/FAILURE-LIBRARY.md |
+| 数据口径分层 | FailureLesson | s27_18长周期漂移图与手册10000h衰减混用并线性换算(F-01) | knowledge/FAILURE-LIBRARY.md |
+| 禁用素材清单前置 | FailureLesson | 竞品曲线/水印素材进提案后被红队拦截 | knowledge/FAILURE-LIBRARY.md |
+| 配音零找人 | FailureLesson | 素材包'待你提供=外部配音'——唯一遗留动作 | knowledge/FAILURE-LIBRARY.md |
+| 零自创文案 | FailureLesson | 用户删CTA/slogan/痛点段, 口播=定位语原文直读, 字幕=口播逐句 | knowledge/FAILURE-LIBRARY.md |
 | KSP-01 立项定档 | KspStep | 三问理解需求→定档拍板卡(S/M/L) | docs/USER_SOP.md / templates/user-gate.md |
 | KSP-02 需求简报+预注册 | KspStep | brief.md调研→4约束清单→预注册标准3-5条→组合拍板卡(受众/平台/时长/风格/画风/素材) | docs/USER_SOP.md / templates/brief.md |
 | KSP-03 科学理解 | KspStep | 7步理解法≥L2+受众/导演并行+事实处置→调研报告全文交用户阅读讨论(先读后谈)→讨论记录m2-纪要→两点讲明 | docs/USER_SOP.md / agents/scientist.md |
@@ -3250,15 +3250,15 @@
 | AI原生交付原则 | Rule | 只冲着AI视频生成来; 主玩法=自己在多个平台(画布/节点: LibTV/即梦/可灵/Seedance)操作生成, 默认 | docs/USER_SOP.md / playbooks/production-workflow.md / agents/editor.md |
 | Prompt严格统一格式 | Rule | 交付给用户的所有prompt文件, 模板=templates/prompt-sheet.md | templates/prompt-sheet.md / scripts/check_prompt_sheet.py |
 | 五层检查体系(co-scientist风格) | Rule | 素材完整性 check_asset_pack.py(@引用全登记/无待补提示) | docs/USER_SOP.md / orchestration/ORCHESTRATION.md |
-| 口播读法批注 | Rule | 口播稿必带: 数字读法(±0.2%→误差不超过百分之零点二)/单位不念/型号逐字母(PHO-SC-4)/停连重音/语速档 | runs/_lessons/FAILURE-LIBRARY.md / runs/_lessons/FAILURE-LIBRARY.md |
-| 品牌资产官方源 | Rule | 品牌色/logo/字体一律官方源(官网矢量/VI/手册), 禁止自造色值; 品牌用字属用户拍板项#10 | runs/_lessons/FAILURE-LIBRARY.md / runs/_lessons/FAILURE-LIBRARY.md |
+| 口播读法批注 | Rule | 口播稿必带: 数字读法(±0.2%→误差不超过百分之零点二)/单位不念/型号逐字母(PHO-SC-4)/停连重音/语速档 | knowledge/FAILURE-LIBRARY.md / knowledge/FAILURE-LIBRARY.md |
+| 品牌资产官方源 | Rule | 品牌色/logo/字体一律官方源(官网矢量/VI/手册), 禁止自造色值; 品牌用字属用户拍板项#10 | knowledge/FAILURE-LIBRARY.md / knowledge/FAILURE-LIBRARY.md |
 | 图文对位(重点检查项) | Rule | 每镜: 口播内容 ↔ 画面描述 ↔ 参考图/首帧 三者必须对位——口播讲的对象/动作/状态必须在参考图中体现或可靠衍生 | templates/storyboard.md / agents/inspector.md |
-| 图文顺序对位 | Rule | 口播首句必须在首镜(镜1)出现; 口播节拍顺序与分镜顺序一一对应, 不得第1句跑到第8镜 | runs/_lessons/FAILURE-LIBRARY.md |
-| 数据目检确认 | Rule | 关键数据必须原始文档目检(截图入库); '大概率/待确认'=L3检察官FAIL项; 教科书参数不上屏不绑机 | runs/_lessons/FAILURE-LIBRARY.md / runs/_lessons/FAILURE-LIBRARY.md |
+| 图文顺序对位 | Rule | 口播首句必须在首镜(镜1)出现; 口播节拍顺序与分镜顺序一一对应, 不得第1句跑到第8镜 | knowledge/FAILURE-LIBRARY.md |
+| 数据目检确认 | Rule | 关键数据必须原始文档目检(截图入库); '大概率/待确认'=L3检察官FAIL项; 教科书参数不上屏不绑机 | knowledge/FAILURE-LIBRARY.md / knowledge/FAILURE-LIBRARY.md |
 | 概念先行(agency流程) | Rule | Insight(洞察,=重点协议)→Ideation(概念生成: SIT/SCAMPER/TRIZ/Bisociatio | https://www.freemcplab.com/i18n/zh-CN/play/creative-director-skill/ / https://github.com/timkoda/koda-stack |
 | 调研图料三件套 | Rule | ①科学道理(原理/公式/示意→理解报告+图谱) ②网图(公开示意图/结构/场景→入库refs/标来源版权, 无授权仅参考 | docs/USER_SOP.md / playbooks/production-workflow.md |
 | 零意外素材自包含 | Rule | 交付件自包含: 所有画面素材要么①已下载入包(含来源/授权) ②附文生图/图生视频生成prompt ③取自已收集客户素材 | docs/USER_SOP.md / orchestration/ORCHESTRATION.md |
-| 零门槛措辞 | Rule | 交付文档/对话禁用专业术语吓用户: '人工层/图表层/首帧/后期/LUT/压字' 一律替换为零门槛表述('模板/样张直接 | runs/_lessons/FAILURE-LIBRARY.md |
+| 零门槛措辞 | Rule | 交付文档/对话禁用专业术语吓用户: '人工层/图表层/首帧/后期/LUT/压字' 一律替换为零门槛表述('模板/样张直接 | knowledge/FAILURE-LIBRARY.md |
 | 九宫格风格预览拍板 | UserGate | KSP-04.5 | templates/user-gate.md / playbooks/storyboard-grid.md |
 | 事实争议拍板 | UserGate | M2-M4 | templates/user-gate.md / agents/scientist.md |
 | 内容重点圈选(多选) | UserGate | KSP-03.5 | templates/user-gate.md / templates/brief.md |

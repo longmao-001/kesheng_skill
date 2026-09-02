@@ -7,7 +7,7 @@ import sys
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 P = r"F:/AI/kesheng/packs/lessons-kg/kg.json"
 OLD = "F:/AI/DS harness/runs/20260830-pho-sc4/red-team-M4关闭确认.md"
-NEW = "runs/_lessons/FAILURE-LIBRARY.md"
+NEW = "knowledge/FAILURE-LIBRARY.md"
 g = json.load(open(P, encoding="utf-8-sig"))
 n = 0
 for e in g["entities"]:
