@@ -154,7 +154,7 @@
    ④ **文字**：AI 直出的字写死+位置；**精确数据**（±0.2%/10000h/170–2500nm 等）生成后 `⚠️核对=手册原文`（错则重抽或改后期）——科学红线，数据必须=手册原文。
    ⑤ **无抽象词**（无"高级感/震撼/电影感"，换具体视觉事实）｜单镜≤2 运镜+变速（动感三来源）｜无霓虹/暖调洗墙/彩色渐变。
 17. **图谱检索先行（硬规则）**：任何角色 subagent 出稿前**必须先跑一次本域知识图谱检索**（`python F:/AI/kesheng/packs/kg_query.py --depth 2 --domain <本域> <关键词>`，关键词见角色卡开头 + §3.5 表）；**关键主张（事实/发现/规则/视觉决策）必须引用图上 `权威正文` 来源**，无来源支撑的主张不得进稿；此检索随派活 prompt（§2 角色栏）一并注入。与 #9（知识只进图谱）、#13（文案白名单）联动：图谱是唯一知识入口、检索是唯一取用方式。制片人派活时若发现某角色未检索即出稿，打回并要求先行检索。
-18. **科学调查官报告进对话＋docx/PPT（硬规则）**：M2 调查完成后，科学顾问必须①把**完整调查报告写进对话**（最终返回消息=全文，**不得压缩成 3 行总结**；按 `templates/science-report.md` 九段）②产出一份 **docx 报告** + 一份 **PPT**（`templates/science-ppt.md`，**可上图**：产品图/结构图/原理示意/数据曲线）③文件落盘 `runs/<slug>/scientist-理解报告.md`+`.docx`+`.pptx`。**讲透五要素**：`重点`/`时间`（发展时间线）/`产品原理`（怎么工作·构成·输入输出）/`产品卖点`（用户好处：任务→需求→卖点→证据）/`科学原理`（机理·因果链），无术语门槛。生成：`python scripts/build_science_report.py --json <data.json>`；**用现成技能赋能**：docx 用 `report-writer`（`md_to_docx.py`）/`markdown-exporter`，PPT 用 `ppt-master`/`markdown-exporter`/`pipitmk`，别从零拼。
+18. **科学调查官报告进对话＋docx/PPT（硬规则）**：M2 调查完成后，科学顾问必须①把**完整调查报告写进对话**（最终返回消息=全文，**不得压缩成 3 行总结**；按 `templates/science-report.md` 九段）②产出一份 **docx 报告** + 一份 **PPT**（`templates/science-ppt.md`，**可上图**：产品图/结构图/原理示意/数据曲线）③文件落盘 `runs/<slug>/scientist-理解报告.md`+`.docx`+`.pptx`。**讲透五要素**：`重点`/`时间`（发展时间线）/`产品原理`（怎么工作·构成·输入输出）/`产品卖点`（用户好处：任务→需求→卖点→证据）/`科学原理`（机理·因果链），无术语门槛。生成：`python scripts/build_science_report.py --json <data.json>`；**用现成技能赋能**：docx 用 `report-writer`（`md_to_docx.py`）/`markdown-exporter`，PPT 用 `ppt-master`/`markdown-exporter`/`pipitmk`，别从零拼。**完整流程见 `playbooks/science-report-flow.md`（七步固化：报告→docx/ppt→进对话→交用户→等「继续」）**；与硬规则 #10（中间交付件·先读后谈）联动。
 
 
 ## 6. 全自动模式（用户说"全自动跑完"才用）
