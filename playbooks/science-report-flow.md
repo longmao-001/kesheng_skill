@@ -27,11 +27,13 @@
 |---|---|---|---|
 | 1 | 科学顾问 | 7 步深度理解法（≥L2≤），先查图谱/文献/素材 | 报告骨架（`science-data.json`） |
 | 2 | 科学顾问 | 按 `templates/science-report.md` 九段组织（含**五要素**） | `scientist-理解报告.md` |
-| 3 | 科学顾问 | 生成 docx + pptx：`report-writer`/`markdown-exporter`（docx）＋ `ppt-master`/`markdown-exporter`/`pipitmk`（ppt，可上图）；或 `python scripts/build_science_report.py --json <data.json>` | `.docx` ＋ `.pptx` |
-| 4 | 科学顾问 | **把完整报告写进对话**（不压缩成 3 行总结） | 对话内全文 |
-| 5 | 制片人 | **硬性停顿**：把报告（对话+docx/PPT+落盘）交给用户，**等用户读完** | 停顿点 |
+| 3 | 科学顾问 | 生成 **docx + pptx**：`report-writer`/`markdown-exporter`（docx）＋ `ppt-master`/`markdown-exporter`/`pipitmk`（ppt，**可上图**）；或 `python scripts/build_science_report.py --json <data.json>` | **`scientist-报告.docx`** ＋ **`scientist-讲解.pptx`** |
+| 4 | 科学顾问 | **把完整报告写进对话**（不压缩成 3 行总结；正文=docx/PPT 的内容源） | 对话内全文 |
+| 5 | 制片人 | **交付 `scientist-报告.docx` + `scientist-讲解.pptx` 给用户**（这是中间交付件，用户拿到的文件）→ **硬性停顿**，等用户读完 | **docx + pptx（交付物）** |
 | 6 | 用户 | 读完 → **回复「继续」**（或 需修改/补充材料） | 用户答复 |
 | 7 | 制片人 | 收到「继续」→ 用户意见记 `m2-纪要.md` 并并入 → 才进入 M3/后续 | 纪要通过 |
+
+> **交付物=文件本体**：中间交付件是**用户能打开、能上图、能直接用的 `scientist-报告.docx` 和 `scientist-讲解.pptx`**，不是一段对话文字；对话里的全文是内容呈现（配合先读后谈）。
 
 ## 五要素（必须讲透，无术语门槛）
 
@@ -45,7 +47,7 @@
 
 ## 硬性规则
 
-1. **中间交付件**：报告是给用户看的交付物（进对话+docx/PPT），不是后台文件；用户要能直接读。
+1. **交付物=文件本体**：中间交付件是 **`scientist-报告.docx` ＋ `scientist-讲解.pptx`**（用户拿到、可打开、可上图、可直接用），**不是一段对话文字**；对话内全文是内容呈现。文件落 `runs/<slug>/`，用户随时可打开复核。
 2. 未收到用户「继续」→ 制片人/任何角色**禁止推进**任何后续环节/选项/拍板卡（方案/风格/九宫格/口播稿一律后置）。
 3. 产出一律落 `runs/<slug>/`（runs 只放项目，交付前 `check_runs_clean.py`）。
 4. 生成用现成技能（report-writer / ppt-master / markdown-exporter / pipitmk），别从零拼。
