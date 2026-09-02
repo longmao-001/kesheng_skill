@@ -227,6 +227,23 @@
    "domains": [
     "工艺"
    ]
+  },
+  {
+   "id": "ProcessRule:启动读全核心流程",
+   "type": "ProcessRule",
+   "name": "启动读全核心流程",
+   "props": {
+    "说明": "每次接手任务，制片人先读全核心流程全集（USER_SOP/ORCHESTRATION/quality-gate/production-workflow/user-gate，见 SKILL.md 启动必读）再开工；未读全前禁止派活/建文件。知识库(kg 等)用 kg_query 按需查，不一次全读；产物只落 runs/项目 (与 runs只放项目 联动)，根治到处建文件。",
+    "出处": "SKILL.md 启动必读 / ORCHESTRATION §5-19"
+   },
+   "sources": [
+    "SKILL.md",
+    "orchestration/ORCHESTRATION.md",
+    "docs/USER_SOP.md"
+   ],
+   "domains": [
+    "工艺"
+   ]
   }
  ],
  "relations": [
@@ -359,6 +376,18 @@
   {
    "source": "ProcessRule:runs只放项目",
    "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:启动读全核心流程",
+   "target": "RoleWorkflow:制片人工作流程",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:启动读全核心流程",
+   "target": "ProcessRule:runs只放项目",
    "type": "concept-related-to",
    "props": {}
   }

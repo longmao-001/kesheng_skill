@@ -3220,6 +3220,7 @@
 | 剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾） | ProcessRule | 成片最后道工序：按分镜表组接，配音逐句对齐、图层/文案层执行、字幕校对、统一调色、片头片尾 VI。 | playbooks/production-workflow.md / agents/editor.md / knowledge/图表层.md |
 | 单镜抽卡 | ProcessRule | 逐镜生成：选模式、粘 prompt、按时长档抽 3-6 个变体，选中最优并固定。 | playbooks/production-workflow.md / playbooks/platform-prompts.md / playbooks/consistency.md |
 | 参考包组装 | ProcessRule | 全能参考类模型吃参考包而非单张首帧：按这镜需要的资产从素材库/参考图库组多图，prompt 写清每张取什么。 | playbooks/production-workflow.md / playbooks/consistency.md / knowledge/seedance-template-library.md |
+| 启动读全核心流程 | ProcessRule | 每次接手任务，制片人先读全核心流程全集（USER_SOP/ORCHESTRATION/quality-gate/prod | SKILL.md / orchestration/ORCHESTRATION.md / docs/USER_SOP.md |
 | 多镜原生 | ProcessRule | 用支持多镜原生的模型一次生成内含多个镜头，主体/场景/氛围天然一致，风格 token 仍写进 prompt。 | playbooks/production-workflow.md / playbooks/consistency.md / playbooks/platform-prompts.md |
 | 失败→修复循环 | ProcessRule | 按平台手册『常见失败→修复表』逐症状改 prompt 再来，抽卡 6 次仍翻车则改路线，而非死磕。 | playbooks/platform-prompts.md / playbooks/production-workflow.md / playbooks/consistency.md |
 | 宫格previz（整图成片与切片首帧） | ProcessRule | 一次生成九宫格分镜图定全片构图，再走整图一次成片或切片逐格当首帧两条路径。 | playbooks/storyboard-grid.md / playbooks/production-workflow.md / playbooks/platform-prompts.md |

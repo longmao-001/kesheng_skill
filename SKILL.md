@@ -42,6 +42,19 @@ M5 制作与交付 → 陪用户出片（playbooks/production-workflow.md），�
 
 每个里程碑结束必须输出**会议纪要**（`templates/decision-log.md`），包含决议、被否方案、异议记录、未决风险、需要用户拍板的事项。**事实性争议不许折中**，必须查证或升级给用户。
 
+## 启动必读（每次使用科生，制片人先读全再开工）
+
+> **流程优先，否则会漏规则、到处建文件。** 每次接手任务，**制片人（主 agent）先完整读全下面这份「核心流程全集」**，再干任何活；读全后按 USER_SOP 走，产物一律落 `runs/<项目slug>/`，才不会乱建文件。
+
+**核心流程全集（本 skill 每次必读全）**：
+1. `docs/USER_SOP.md` —— KSP-01~07 + KSP-C 全流程（每关拍板点、先读后谈、报告中间交付件、runs 只放项目）
+2. `orchestration/ORCHESTRATION.md` —— §1-§8：工具映射 / 派活 prompt 模板 / 里程碑派活清单 / **硬规则 1-18**（含报告审阅闸、知识只进图谱、拍板选项卡、文案白名单、零意外、runs 只放项目）/ 降级规则
+3. `protocols/quality-gate.md` —— 七维+禁区+检察官五层
+4. `playbooks/production-workflow.md` —— 端到端制作（含素材分类命名+选片）
+5. `templates/user-gate.md` —— 用户拍板预置选项速查
+
+> 读完这 5 份再开工，才不会「到处建文件、跳过拍板、漏规则」。角色卡/知识库/平台表/工具 = 到对应里程碑再按需读。
+
 ## 团队编制（真多 agent，按真实影视剧组建制）
 
 | 角色 | 执行形态 | 角色卡 | 一句话职责 |
@@ -61,7 +74,9 @@ M5 制作与交付 → 陪用户出片（playbooks/production-workflow.md），�
 
 **编排手册（唯一操作手册）**：`orchestration/ORCHESTRATION.md` —— 工具映射、派活 prompt 模板、里程碑派活清单、降级规则。**角色 SOP**：`docs/ROLE_WORKFLOWS.md`（每角色专属工作流程）+ 图谱查询 `kg_query.py --domain 工艺 <角色>`。设计依据：`docs/DESIGN.md`。
 
-## 资源索引（按需读取，不要一次性全读）
+## 资源索引（除「启动必读」5 份外，其余按需读取）
+
+> 启动必读（上面 5 份核心流程）已读全后，本节资源**到对应里程碑再按需读/查**；**大知识库（`kb/`、`knowledge/`、`packs/`）一律用 `kg_query`/按需查，不自作主张一次全读**（避免上下文爆炸、也避免漏流程）。
 
 - **会议与质量**：`protocols/meeting.md`、`protocols/quality-gate.md`
 - **制作实操**：`playbooks/production-workflow.md`（端到端流程）、`playbooks/platform-prompts.md`（各平台 prompt 公式+范例+运镜词表，含 Seedance 2.0/2.5 官方核实版专章）、`playbooks/storyboard-grid.md`（宫格分镜图技法：Image2 生图、九宫格模板、两条成片路径）、`playbooks/consistency.md`（跨镜一致性工具箱）、`playbooks/science-report-flow.md`（**M2→M3 交接：科学理解 → 报告+docx/PPT 交付 → 报告审阅闸「继续」 → 主题共识 → 概念先行**）
