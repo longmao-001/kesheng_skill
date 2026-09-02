@@ -872,6 +872,8 @@
 | 赛博朋克 | ArtStyle | 数字科技类 | https://flowpixai.com/prompt-engineering/ai-painting-styles-list.html / https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/ |
 | 超现实 | ArtStyle | 艺术史类 | https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/ / https://github.com/lvzhengbin/AI-Prompts/blob/main/skills/seedance-storyboard/references/visual-styles.md |
 | 黏土定格 | ArtStyle | 材质工艺类 | https://www.imagetoprompt.dev/zh/blog/ai-yishu-fengge-cihui/ / https://github.com/lvzhengbin/AI-Prompts/blob/main/skills/seedance-storyboard/references/visual-styles.md |
+| 克制设计 | ArtStyleRule | 一页做到没有东西可删才算完成；无卡片、圆角≤4px仅提示框、无投影。 | templates/visual-baseline.md |
+| 反默认AI审美 | ArtStyleRule | 禁用：白底紫渐变/海军蓝+金/卡片圆角投影堆砌/emoji当图标/默认蓝强调。 | templates/visual-baseline.md |
 | 三点布光（主光Key+辅光Fill+背光Backlight） | Concept | 电影摄影棚布光基本功：主光定型、辅光补暗部、背光分离主体与背景，共同塑造立体感与轮廓。 | Paper:OA-灯光场景-000 / Paper:OA-灯光场景-001 / Paper:OA-灯光场景-024 / Paper:OA-灯光场景-029 / Paper:OA-灯光场景-030 / Paper:OA-灯光场景-031 / Paper:OA-灯光场景-032 |
 | 主光/辅光/轮廓光（Key/ Fill/ Rim） | Concept | 三点布光的三元构成：主光定型、辅光补暗、轮廓光勾边，分别承担塑造、柔化与分离。 | Paper:OA-灯光场景-010 / Paper:OA-灯光场景-024 / Paper:OA-灯光场景-029 / Paper:OA-灯光场景-030 / Paper:OA-灯光场景-031 / Paper:OA-灯光场景-037 |
 | 低调布光（Low-key） | Concept | 暗部占主导、高反差、阴影浓重的布光，多用于悬疑、压抑、戏剧张力场景。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-033 / Paper:OA-灯光场景-034 |
@@ -888,6 +890,7 @@
 | 舞台灯光（Stage/Theatrical Lighting） | Concept | 剧场舞台的灯具系统与布光设计，服务空间塑造、焦点引导与氛围营造。 | Paper:OA-灯光场景-011 / Paper:OA-灯光场景-015 / Paper:OA-灯光场景-016 / Paper:OA-灯光场景-017 / Paper:OA-灯光场景-018 / Paper:OA-灯光场景-019 / Paper:OA-灯光场景-020 / Paper:OA-灯光场景-021 / Paper:OA-灯光场景-023 / Paper:OA-灯光场景-024 / Paper:OA-灯光场景-025 / Paper:OA-灯光场景-026 / Paper:OA-灯光场景-027 |
 | 色彩分级（Color Grading） | Concept | 后期统一色调、对比与色温的影像加工，使全片观感一致并强化风格化情绪。 | Paper:OA-灯光场景-002 / Paper:OA-灯光场景-003 |
 | 色温（Color Temperature） | Concept | 用开尔文衡量光源色彩，暖色（低K）亲和，冷色（高K）疏离；是定场景情绪的关键变量。 | Paper:OA-灯光场景-000 / Paper:OA-灯光场景-003 / Paper:OA-灯光场景-039 |
+| 视觉风格基线（Visual Baseline） | Concept | 一次在九宫格/分镜前把全片风格定死：内容信号→基调→色板/字体，根植内容、单强调色、反默认AI审美、克制。 | templates/visual-baseline.md / MiniMax Design design.md |
 | 连续光/持续光（Continuous Lighting） | Concept | 持续发光的光源，光影稳定可预测、高光过渡自然，带来真实可感的光照质感。 | Paper:OA-灯光场景-002 / Paper:OA-灯光场景-004 / Paper:OA-灯光场景-006 / Paper:OA-灯光场景-026 |
 | 高调布光（High-key） | Concept | 主光强、光比低、整体明亮均匀的布光，多用于轻松、梦幻、理想化场景。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-033 |
 | 黑色电影美学（Film Noir Style） | Concept | 低调、高反差、明暗对照的布光风格，象征道德模糊与内心幽暗，具强视觉符号性。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-012 / Paper:OA-灯光场景-013 / Paper:OA-灯光场景-014 / Paper:OA-灯光场景-036 |
@@ -1020,6 +1023,9 @@
 | Unique sandwich and microstructure design of phosphor-in-glass film for high bri | Paper | 灯光场景 | https://api.openalex.org/works |
 | iCheat: A Representation for Artistic Control of Indirect Cinematic Lighting | Paper | 灯光场景 | https://doi.org/10.1111/j.1467-8659.2008.01260.x / https://api.openalex.org/works |
 | 灯光场景专业文献 | PaperTopic | 灯光场景 | https://api.openalex.org/works |
+| 单强调色 | Rule | 全片仅一个强调色，只出现在封面/章节/数据卡表头/高亮；与背景对比≥4.5:1；不默认用蓝。 | templates/visual-baseline.md |
+| 系统色彩≤3 | Rule | 全片系统≤3色，避免视觉噪音；强调色不上正文/字幕。 | templates/visual-baseline.md |
+| 风格根植内容 | Rule | 每个风格决策根植于内容与目的；一个因为贴合内容而选的颜色，永远胜过因为『看起来安全』而选的颜色。 | templates/visual-baseline.md |
 | 产业商业场景 | Scenario | 企业品牌片/产业商业广告 | knowledge/vi_styles/vi-style-templates.md |
 | 公众科普场景 | Scenario | 公众科普/开放日/学生/新媒体传播 | knowledge/vi_styles/vi-style-templates.md |
 | 申报答辩场景 | Scenario | 国家大设施/高校研究所/生物医药企业申报 | knowledge/vi_styles/vi-style-templates.md |
@@ -1033,6 +1039,8 @@
 | 科技明亮风 | StyleDirection | 明亮实验室/高调白光，玻璃与不锈钢质感，青白主色加微量荧光蓝，干净背景——检测设备与医疗器械题材的洁净感与信任感兼具。 | knowledge/vi_styles/vi-style-templates.md / knowledge/seedance-template-library.md / playbooks/consistency.md / playbooks/platform-prompts.md |
 | 轻松科普风 | StyleDirection | 自然暖色调的公众科普向，亲切、有趣、不 intimidating，适合开放日与新媒体传播。 | knowledge/vi_styles/vi-style-templates.md / templates/brief.md |
 | 黑白线稿分镜previz风 | StyleDirection | 黑白手绘线稿/马克笔分镜稿，只作视觉骨架定全片镜头构图，规避真人脸审核，成片色彩另行给定。 | playbooks/storyboard-grid.md / playbooks/platform-prompts.md |
+| 海军蓝+金 | Taboo | 烂大街企业风，禁用。 | templates/visual-baseline.md |
+| 白底紫渐变 | Taboo | 最典型的『AI生成』默认审美，禁用。 | templates/visual-baseline.md |
 | 形式主义/风格论（Formalism & Stylistics） | Theory | 从光影、构图等视觉形式本身解读风格与美学，是灯光风格分析的基座。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-008 / Paper:OA-灯光场景-012 |
 | 灯光心理学（Psychology of Lighting） | Theory | 不同亮度/反差/色温对观者情绪、注意与心理距离的系统性影响机制。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-035 |
 | 灯光意识形态批判（Ideology of Lighting） | Theory | 布光体系内嵌创作立场与权力关系，灯光是携带意识形态的符号系统。 | Paper:OA-灯光场景-000 |

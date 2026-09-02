@@ -29,7 +29,7 @@
 | ArtScopeRule | 导演 | 见片段 schema.yaml |
 | ArtStyle | prompt/美术 | 见片段 schema.yaml |
 | ArtStyleFormula | prompt | 见片段 schema.yaml |
-| ArtStyleRule | 工艺 | 见片段 schema.yaml |
+| ArtStyleRule | 工艺/美术 | 见片段 schema.yaml |
 | AttackAngle | 红队 | 见片段 schema.yaml |
 | AudienceMode | 受众/叙事 | 见片段 schema.yaml |
 | AudienceParam | 受众 | 见片段 schema.yaml |
@@ -104,7 +104,7 @@
 | RetentionRule | 受众 | 见片段 schema.yaml |
 | RoleWorkflow | 工艺 | 见片段 schema.yaml |
 | RouteRule | 工艺 | 见片段 schema.yaml |
-| Rule | 叙事/工艺 | 见片段 schema.yaml |
+| Rule | 叙事/工艺/美术 | 见片段 schema.yaml |
 | Scenario | 美术 | 见片段 schema.yaml |
 | ScientificConcept | 科学 | 见片段 schema.yaml |
 | ScriptTemplate | 叙事 | 见片段 schema.yaml |
@@ -114,7 +114,7 @@
 | StyleDirection | prompt/美术 | 见片段 schema.yaml |
 | StyleTokenRule | prompt | 见片段 schema.yaml |
 | SupplierInfo | 产业 | 见片段 schema.yaml |
-| Taboo | 红队 | 见片段 schema.yaml |
+| Taboo | 红队/美术 | 见片段 schema.yaml |
 | Tag | prompt | 见片段 schema.yaml |
 | TempoCurve | 导演 | 见片段 schema.yaml |
 | Theory | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
@@ -241,7 +241,7 @@
 | route-for-shot | prompt | 见片段 schema.yaml |
 | route-rule-uses | 工艺 | 见片段 schema.yaml |
 | rule-applies | 科学/红队 | 见片段 schema.yaml |
-| rule-applies-to | prompt/叙事 | 见片段 schema.yaml |
+| rule-applies-to | prompt/叙事/美术 | 见片段 schema.yaml |
 | rule-consistent-with | 叙事 | 见片段 schema.yaml |
 | rule-empowers | 工艺 | 见片段 schema.yaml |
 | rule-enforced-by | 工艺 | 见片段 schema.yaml |

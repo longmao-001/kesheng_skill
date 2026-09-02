@@ -67850,6 +67850,36 @@
    ]
   },
   {
+   "id": "ArtStyleRule:克制设计",
+   "type": "ArtStyleRule",
+   "name": "克制设计",
+   "domains": [
+    "美术"
+   ],
+   "props": {
+    "说明": "一页做到没有东西可删才算完成；无卡片、圆角≤4px仅提示框、无投影。",
+    "出处": "MiniMax Design design.md"
+   },
+   "sources": [
+    "templates/visual-baseline.md"
+   ]
+  },
+  {
+   "id": "ArtStyleRule:反默认AI审美",
+   "type": "ArtStyleRule",
+   "name": "反默认AI审美",
+   "domains": [
+    "美术"
+   ],
+   "props": {
+    "说明": "禁用：白底紫渐变/海军蓝+金/卡片圆角投影堆砌/emoji当图标/默认蓝强调。",
+    "出处": "MiniMax Design design.md"
+   },
+   "sources": [
+    "templates/visual-baseline.md"
+   ]
+  },
+  {
    "id": "Concept:三点布光",
    "type": "Concept",
    "name": "三点布光（主光Key+辅光Fill+背光Backlight）",
@@ -68160,6 +68190,21 @@
     "Paper:OA-灯光场景-000",
     "Paper:OA-灯光场景-003",
     "Paper:OA-灯光场景-039"
+   ]
+  },
+  {
+   "id": "Concept:视觉风格基线",
+   "type": "Concept",
+   "name": "视觉风格基线（Visual Baseline）",
+   "domains": [
+    "美术"
+   ],
+   "props": {
+    "说明": "一次在九宫格/分镜前把全片风格定死：内容信号→基调→色板/字体，根植内容、单强调色、反默认AI审美、克制。"
+   },
+   "sources": [
+    "templates/visual-baseline.md",
+    "MiniMax Design design.md"
    ]
   },
   {
@@ -70737,6 +70782,51 @@
    ]
   },
   {
+   "id": "Rule:单强调色",
+   "type": "Rule",
+   "name": "单强调色",
+   "domains": [
+    "美术"
+   ],
+   "props": {
+    "说明": "全片仅一个强调色，只出现在封面/章节/数据卡表头/高亮；与背景对比≥4.5:1；不默认用蓝。",
+    "出处": "MiniMax Design design.md"
+   },
+   "sources": [
+    "templates/visual-baseline.md"
+   ]
+  },
+  {
+   "id": "Rule:系统色彩≤3",
+   "type": "Rule",
+   "name": "系统色彩≤3",
+   "domains": [
+    "美术"
+   ],
+   "props": {
+    "说明": "全片系统≤3色，避免视觉噪音；强调色不上正文/字幕。",
+    "出处": "MiniMax Design design.md"
+   },
+   "sources": [
+    "templates/visual-baseline.md"
+   ]
+  },
+  {
+   "id": "Rule:风格根植内容",
+   "type": "Rule",
+   "name": "风格根植内容",
+   "domains": [
+    "美术"
+   ],
+   "props": {
+    "说明": "每个风格决策根植于内容与目的；一个因为贴合内容而选的颜色，永远胜过因为『看起来安全』而选的颜色。",
+    "出处": "MiniMax Design design.md"
+   },
+   "sources": [
+    "templates/visual-baseline.md"
+   ]
+  },
+  {
    "id": "Scenario:产业商业场景",
    "type": "Scenario",
    "name": "产业商业场景",
@@ -71004,6 +71094,34 @@
    "sources": [
     "playbooks/storyboard-grid.md",
     "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "id": "Taboo:海军蓝金",
+   "type": "Taboo",
+   "name": "海军蓝+金",
+   "domains": [
+    "美术"
+   ],
+   "props": {
+    "说明": "烂大街企业风，禁用。"
+   },
+   "sources": [
+    "templates/visual-baseline.md"
+   ]
+  },
+  {
+   "id": "Taboo:白底紫渐变",
+   "type": "Taboo",
+   "name": "白底紫渐变",
+   "domains": [
+    "美术"
+   ],
+   "props": {
+    "说明": "最典型的『AI生成』默认审美，禁用。"
+   },
+   "sources": [
+    "templates/visual-baseline.md"
    ]
   },
   {
@@ -127939,6 +128057,54 @@
    ]
   },
   {
+   "source": "Taboo:白底紫渐变",
+   "target": "Concept:视觉风格基线",
+   "type": "concept-related-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "Taboo:海军蓝金",
+   "target": "Concept:视觉风格基线",
+   "type": "concept-related-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "Concept:视觉风格基线",
+   "target": "ViStyle:风格token块",
+   "type": "concept-related-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "Concept:视觉风格基线",
+   "target": "Concept:美术设计",
+   "type": "concept-related-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "Concept:视觉风格基线",
+   "target": "Concept:色彩分级",
+   "type": "concept-related-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "Concept:视觉风格基线",
+   "target": "Concept:场景氛围",
+   "type": "concept-related-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
    "source": "Concept:三点布光",
    "target": "Concept:主光辅光轮廓光",
    "type": "concept-related-to",
@@ -131198,6 +131364,46 @@
    "source": "Paper:OA-灯光场景-039",
    "target": "Theory:色彩理论",
    "type": "paper-uses",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "Rule:风格根植内容",
+   "target": "Concept:视觉风格基线",
+   "type": "rule-applies-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "Rule:单强调色",
+   "target": "Concept:视觉风格基线",
+   "type": "rule-applies-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "Rule:系统色彩≤3",
+   "target": "Concept:视觉风格基线",
+   "type": "rule-applies-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "ArtStyleRule:反默认AI审美",
+   "target": "Concept:视觉风格基线",
+   "type": "rule-applies-to",
+   "domains": [
+    "美术"
+   ]
+  },
+  {
+   "source": "ArtStyleRule:克制设计",
+   "target": "Concept:视觉风格基线",
+   "type": "rule-applies-to",
    "domains": [
     "美术"
    ]
