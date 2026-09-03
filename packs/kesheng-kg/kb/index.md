@@ -890,7 +890,9 @@
 | 灯光设计（Lighting Design） | Concept | 以光影为媒介的整体设计，综合亮度、反差、色温、方向与运动来塑造场景、情绪与叙事。 | Paper:OA-灯光场景-007 / Paper:OA-灯光场景-008 / Paper:OA-灯光场景-011 / Paper:OA-灯光场景-015 / Paper:OA-灯光场景-016 / Paper:OA-灯光场景-018 / Paper:OA-灯光场景-019 / Paper:OA-灯光场景-020 / Paper:OA-灯光场景-021 / Paper:OA-灯光场景-022 / Paper:OA-灯光场景-023 / Paper:OA-灯光场景-025 / Paper:OA-灯光场景-026 / Paper:OA-灯光场景-027 / Paper:OA-灯光场景-028 |
 | 照明作为叙事/意识形态工具（Lighting as Narrative/Ideology） | Concept | 灯光不只是技术手段，更承载创作意图与意识形态，可主动传达情绪与立场。 | Paper:OA-灯光场景-000 / Paper:OA-灯光场景-014 / Paper:OA-灯光场景-028 |
 | 电影照明（Cinematic Lighting） | Concept | 面向电影影像的布光体系，强调光影叙事、情绪定调与形式美感。 | Paper:OA-灯光场景-000 / Paper:OA-灯光场景-002 / Paper:OA-灯光场景-005 / Paper:OA-灯光场景-006 / Paper:OA-灯光场景-007 / Paper:OA-灯光场景-008 / Paper:OA-灯光场景-009 / Paper:OA-灯光场景-010 |
+| 素材图反推提示词(AI合成) | Concept | 每张素材用 read_image 看真图后反推一段『用 AI 再生出这张图』的 prompt（主体+构图+光线+风格+细 | templates/assets-inventory.md / scripts/annotate_assets.py |
 | 素材库分类（两轴） | Concept | 用途分级（IN直接入镜/RF参考图/CT内容参考）× 内容类型（MAIN主体锚/PART部件/SCENE场景/TEXT质 | templates/assets-inventory.md / playbooks/production-workflow.md |
+| 素材质量分(★1-5) | Concept | 每张素材入库即打分（清晰0.25/主体完整0.25/构图0.15/光影0.15/用途匹配0.20 加权→0-1→★；合规 | templates/assets-inventory.md |
 | 续光规则（Lighting Continuity） | Concept | 跨镜头、跨场景保持光源方向、强度与色温一致，避免跳光并维持视觉可信度。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-016 |
 | 美术设计（Production/Art Design） | Concept | 场景、道具、灯光、色彩的统一视觉设计，决定影像风格与还原度。 | Paper:OA-灯光场景-001 / Paper:OA-灯光场景-016 |
 | 舞台灯光（Stage/Theatrical Lighting） | Concept | 剧场舞台的灯具系统与布光设计，服务空间塑造、焦点引导与氛围营造。 | Paper:OA-灯光场景-011 / Paper:OA-灯光场景-015 / Paper:OA-灯光场景-016 / Paper:OA-灯光场景-017 / Paper:OA-灯光场景-018 / Paper:OA-灯光场景-019 / Paper:OA-灯光场景-020 / Paper:OA-灯光场景-021 / Paper:OA-灯光场景-023 / Paper:OA-灯光场景-024 / Paper:OA-灯光场景-025 / Paper:OA-灯光场景-026 / Paper:OA-灯光场景-027 |
@@ -1380,6 +1382,8 @@
 | 视觉技术/观看技术论 | Theory | 摄影、电影、电视作为社会建构的「观看技术」，装置塑造观看方式 | Paper:OA-摄影-46 |
 | 计算电影摄影 | Theory | 以算法/规划/约束自动生成或控制镜头语言的计算摄影范式 | Paper:OA-摄影-13 / Paper:OA-摄影-22 |
 | 认知负荷理论 | Theory | 说明性/教学视频应控制单位信息量，降低工作记忆认知负担以保理解。 | 10.14742/ajet.458 / 10.1080/0142159x.2017.1302081 / 10.1080/0142159x.2017.1322190 / 10.1021/acs.jchemed.8b00647 |
+| 素材图反推提示词(AI合成) | Concept | 每张素材用 read_image 看真图后反推一段『用 AI 再生出这张图』的 prompt（主体+构图+光线+风格+细 | templates/assets-inventory.md / scripts/annotate_assets.py |
+| 素材质量分(★1-5) | Concept | 每张素材入库即打分（清晰0.25/主体完整0.25/构图0.15/光影0.15/用途匹配0.20 加权→0-1→★；合规 | templates/assets-inventory.md |
 
 ## 声音 域
 
@@ -3237,6 +3241,7 @@
 | 科学报告进对话+docx/PPT | ProcessRule | 科学调查官 M2 完成后：完整报告写进对话(不压3行总结) + 产出 docx+PPT(可上图)；讲透 重点/时间/产品 | orchestration/ORCHESTRATION.md / templates/science-report.md / templates/science-ppt.md / agents/scientist.md |
 | 素材库命名规范 | ProcessRule | 源素材 `<用途>_<类型>_<主体>_<视角或部位>_<版本>`；生成资产 `项目_镜号_内容_版本`。名字要能回答  | templates/assets-inventory.md / playbooks/production-workflow.md |
 | 素材库建库（PDF-PPT抠图） | ProcessRule | 开工前把客户 PDF/PPT 全量抠图，按用途分级（可直接入镜/参考图/内容参考）建参考图库，素材是第一资产。 | playbooks/production-workflow.md / knowledge/图表层.md |
+| 素材智能入库(拆解+反推prompt+打分) | ProcessRule | 每张素材入库做三件套：①多模态拆解标签(物品/任务/场景/结构/质感/数据/品牌/实拍) ②AI合成反推prompt ③ | templates/assets-inventory.md / scripts/annotate_assets.py |
 | 质量门控 | ProcessRule | 交付任何里程碑产物前过七维检查表和交付清单，逐条写出来逐项打勾，全部通过才交付。 | playbooks/production-workflow.md / knowledge/图表层.md / agents/editor.md |
 | 资产命名 | ProcessRule | 生成资产遵循『项目_镜号_内容_版本』命名规范，能回答『用在哪一镜、是不是定版』，生成物一多也不乱。 | playbooks/production-workflow.md |
 | 长镜头分段生成 | ProcessRule | 目标长镜头必须分段（单段 ≤10 秒），段间首尾帧衔接或同场景动作连续处断开，每段独立抽卡，Seedance 延长/时间 | playbooks/production-workflow.md / knowledge/seedance-template-library.md / playbooks/platform-prompts.md |
