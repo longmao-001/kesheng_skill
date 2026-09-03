@@ -57677,6 +57677,23 @@
    ]
   },
   {
+   "id": "FailureLesson:AI反模式负面词前置",
+   "type": "FailureLesson",
+   "name": "AI反模式负面词前置写全",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "等离子体画成大光球、光谱带变彩虹、产品被改造，靠负面词+@参考补救(F-16)",
+    "根因": "科学/品牌红线对应AI反模式负面词(大光球/激光束/彩虹/改造设备/镀铬反光)写得不全/不前置",
+    "规则": "科学/品牌红线对应AI反模式负面词前置写全，作每镜prompt强制反面，不翻车再补",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
    "id": "FailureLesson:旧表述残留",
    "type": "FailureLesson",
    "name": "全局残留一致性",
@@ -57688,6 +57705,40 @@
     "根因": "只改面向读者的主文本, 未做全项目关键词扫描",
     "规则": "每轮修订后跑 check_residual.py 禁词残留扫描(执行文件); 修改必须全局同步清除旧表述",
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
+   "id": "FailureLesson:产品结构先读图",
+   "type": "FailureLesson",
+   "name": "写产品/结构镜头前必read_image看参考图",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "把'内部腔体'镜误当挂'外壳参考'；对'产品是两件套、内部腔体无实拍靠CG'不敏感，凭印象堆'外壳/鳍片/螺纹'等没有的特征(F-13)",
+    "根因": "写产品/结构镜头前未真正read_image看参考图、不依据真实产品结构",
+    "规则": "写产品/结构镜头前必read_image看参考图+依真实产品结构(两件套/内部腔体/部件)，不凭印象堆细节",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
+   "id": "FailureLesson:信息点去重",
+   "type": "FailureLesson",
+   "name": "分镜/口播前信息点去重",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "某镜'长周期衰减≤0.1%/day+10000h<10%'与前面寿命/衰减/稳定性镜头数据点重复，被指出后删镜(F-17)",
+    "根因": "分镜阶段未做信息点去重检查",
+    "规则": "分镜表/口播前做信息点去重——同一数据点(如10000h、<10%、±0.2%)只讲一次；重复即删或换点",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md)"
    },
    "sources": [
     "knowledge/FAILURE-LIBRARY.md"
@@ -57711,6 +57762,23 @@
    ]
   },
   {
+   "id": "FailureLesson:口播锚受众模式",
+   "type": "FailureLesson",
+   "name": "口播档位必锚受众模式",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "口播写了'所以呢/术语解释/比喻'等科普句，被用户纠正'口播琐碎用户不需要科普'(EXP专家客户)(F-14)",
+    "根因": "没锚定受众模式，套用通用科普模板(同类坑二次踩)",
+    "规则": "口播档位必锚受众mode：EXP=直接陈述规格/术语不解释/字幕注承担；PUB=才科普；同类教训前置到简报阶段强制检查防二次踩",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
    "id": "FailureLesson:读法批注",
    "type": "FailureLesson",
    "name": "口播读法批注",
@@ -57722,6 +57790,23 @@
     "根因": "口播稿无配音层规范",
     "规则": "口播稿必带读法批注: 数字读法/单位不念/型号逐字母/停连重音/语速档——AI配音或外部配音直接照读",
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
+   "id": "FailureLesson:品牌用字拍板",
+   "type": "FailureLesson",
+   "name": "品牌名/用字/logo简报阶段拍板",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "全片用'块芯'，用户最后确认'咱们是玦芯'，批量替换142处(F-18)",
+    "根因": "品牌用字是用户拍板项，未在简报阶段问，沿用历史(同类坑二次踩)",
+    "规则": "品牌名/用字/logo简报阶段问用户拍板，未定只用官方已有素材，不自行沿用",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md)"
    },
    "sources": [
     "knowledge/FAILURE-LIBRARY.md"
@@ -57762,6 +57847,41 @@
    ]
   },
   {
+   "id": "FailureLesson:批量改文案全局扫描",
+   "type": "FailureLesson",
+   "name": "批量改文案用全局脚本扫描替换",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "改品牌词'块→玦'最初只改部分文件，残留扫描才发现多文件还有(F-19)",
+    "根因": "改一处未做全项目关键词全局扫描(同类坑二次踩)",
+    "规则": "批量改文案(品牌词/术语)用全局脚本扫描替换，改一处必全局同步",
+    "evidence_placeholder": "check_residual.py类工具",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
+   "id": "FailureLesson:数据卡大字号锁值",
+   "type": "FailureLesson",
+   "name": "数据卡/曲线默认大字号+数据用字卡图锁值",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "数据卡/曲线字太小(用户两次纠正)；数据卡由AI生成还是后期反复纠结(F-15)",
+    "根因": "未预置数据卡默认大字号+数据用字卡图参考锁值的默认规则",
+    "规则": "①图表层/数据卡默认大字号(主值≥8-10%画面高)+等宽字体；②数据/数值一律用'数据卡字卡图参考锁值'，不让AI生成数字(飘/错字)——铁则",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
    "id": "FailureLesson:数据口径分层",
    "type": "FailureLesson",
    "name": "数据口径分层",
@@ -57773,6 +57893,23 @@
     "根因": "来源/口径/量纲未分层",
     "规则": "不同口径数据不同屏不并列、禁线性换算; 数据来源三层=本机实测/官方手册/教科书, 上屏只认前两层",
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
+   "id": "FailureLesson:每镜参考图挂载清单",
+   "type": "FailureLesson",
+   "name": "每镜prompt自带参考图挂载清单",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "产品/结构镜头多次漏挂参考图，用户数问'参考图是/不带参考图/没显示参考图'(F-12)",
+    "根因": "每镜prompt的参考图挂载清单(文件+取哪部分+放哪)未当作必要部分写全",
+    "规则": "每镜prompt交付自带'参考图挂载清单'(参考图文件+取哪部分→放哪)；不写清单=不合格",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md)"
    },
    "sources": [
     "knowledge/FAILURE-LIBRARY.md"
@@ -57824,6 +57961,23 @@
     "根因": "团队默认做'广告创意'式文案层",
     "规则": "CTA/slogan/文案层=用户拍板项(默认不做); 字幕=口播逐句; 文案白名单无一字自创",
     "证据": "F:/AI/DS harness/runs/20260830-pho-sc4/ (red-team-M4关闭确认.md / decision-log-m3.md / deliverables/00-素材包说明.md)"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
+   "id": "FailureLesson:风格基线提前拍板",
+   "type": "FailureLesson",
+   "name": "风格基线全局视觉决策提前拍板",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "现象": "强调色/主色调/画风等全局视觉决策一路由团队专业判断定，直到M3拍板用户才纠正方向，导致分镜/prompt/九宫格全员重改色(F-11)",
+    "根因": "把风格基线全局视觉决策当团队判断，未提前与用户拍板",
+    "规则": "强调色/主色调/画风等风格基线全局视觉决策，提前到简报/定档阶段作为拍板项问用户，不当团队专业判断M3才落",
+    "证据": "F:/AI/kesheng/runs/20260902-pho-sc-lcls/ (项目复盘总结.md / m4-gate-red.md)"
    },
    "sources": [
     "knowledge/FAILURE-LIBRARY.md"
@@ -58860,6 +59014,38 @@
    ]
   },
   {
+   "id": "Rule:产品结构必读真图",
+   "type": "Rule",
+   "name": "写产品/结构镜头前必看参考图+依真实结构",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "写产品/结构镜头前必 read_image 看参考图 + 依真实产品结构(两件套/内部腔体/部件)，不凭印象堆它没有的细节。来源 失败F-13。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-21"
+   ]
+  },
+  {
+   "id": "Rule:信息点去重",
+   "type": "Rule",
+   "name": "分镜前信息点去重",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "同一数据点(10000h/±0.2%/衰减<10%)只讲一次，重复即删。来源 失败F-17。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-22"
+   ]
+  },
+  {
    "id": "Rule:读法批注",
    "type": "Rule",
    "name": "口播读法批注",
@@ -58924,6 +59110,22 @@
    ]
   },
   {
+   "id": "Rule:数据卡锁值大字号",
+   "type": "Rule",
+   "name": "数据卡/曲线默认大字号+锁值，不让AI生成数字",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "图表层/数据卡默认大字号(主值≥8-10%画面高)+等宽；数据一律用数据卡字卡图参考锁值，不让AI生成数字。来源 失败F-15。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-22"
+   ]
+  },
+  {
    "id": "Rule:数据目检确认",
    "type": "Rule",
    "name": "数据目检确认",
@@ -58953,6 +59155,54 @@
    "sources": [
     "https://www.freemcplab.com/i18n/zh-CN/play/creative-director-skill/",
     "https://github.com/timkoda/koda-stack"
+   ]
+  },
+  {
+   "id": "Rule:参考图挂载清单必写",
+   "type": "Rule",
+   "name": "每镜 prompt 必带参考图挂载清单",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "每镜 prompt 交付自带『参考图挂载清单』(文件+取哪部分→放哪)，不带=不合格。来源 失败F-12。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-21"
+   ]
+  },
+  {
+   "id": "Rule:用户定方向拍板",
+   "type": "Rule",
+   "name": "用户定方向(风格全局视觉/品牌/受众=拍板项)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "强调色/主色/画风/品牌名/用字/logo/受众模式(EXP直白) 是用户拍板项，必须在简报/定档就问，勿当团队判断 M3 才落；EXP=直白规格/术语不解释/字幕注承担，PUB=才科普。来源 失败F-11/F-18/F-14。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-20"
+   ]
+  },
+  {
+   "id": "Rule:AI反模式负面词前置",
+   "type": "Rule",
+   "name": "科学/品牌红线 AI 反模式负面词前置写全",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "大光球/激光束/彩虹/改造设备/镀铬反光/合成一台 等 AI 反模式负面词前置写全作每镜强制反面，不翻车再补。来源 失败F-16。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-22"
    ]
   },
   {
@@ -119786,6 +120036,54 @@
    ]
   },
   {
+   "source": "Rule:用户定方向拍板",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "Rule:参考图挂载清单必写",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "Rule:产品结构必读真图",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "Rule:数据卡锁值大字号",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "Rule:信息点去重",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "Rule:AI反模式负面词前置",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
    "source": "EvalRule:评分标定",
    "target": "Rule:概念先行",
    "type": "eval-for",
@@ -120234,6 +120532,14 @@
    ]
   },
   {
+   "source": "FailureLesson:批量改文案全局扫描",
+   "target": "Rule:五层检查体系",
+   "type": "lesson-enables-check",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
    "source": "FailureLesson:数据口径分层",
    "target": "KspStep:KSP-04创意概念",
    "type": "lesson-feeds",
@@ -120300,6 +120606,70 @@
   {
    "source": "FailureLesson:素材红线前置",
    "target": "KspStep:KSP-04创意概念",
+   "type": "lesson-feeds",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FailureLesson:风格基线提前拍板",
+   "target": "KspStep:KSP-01立项定档",
+   "type": "lesson-feeds",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FailureLesson:每镜参考图挂载清单",
+   "target": "KspStep:KSP-05分镜执行",
+   "type": "lesson-feeds",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FailureLesson:产品结构先读图",
+   "target": "KspStep:KSP-05分镜执行",
+   "type": "lesson-feeds",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FailureLesson:口播锚受众模式",
+   "target": "KspStep:KSP-02需求简报",
+   "type": "lesson-feeds",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FailureLesson:数据卡大字号锁值",
+   "target": "KspStep:KSP-06制作交付",
+   "type": "lesson-feeds",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FailureLesson:AI反模式负面词前置",
+   "target": "KspStep:KSP-05分镜执行",
+   "type": "lesson-feeds",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FailureLesson:信息点去重",
+   "target": "KspStep:KSP-05分镜执行",
+   "type": "lesson-feeds",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FailureLesson:品牌用字拍板",
+   "target": "KspStep:KSP-02需求简报",
    "type": "lesson-feeds",
    "domains": [
     "工艺"

@@ -244,6 +244,102 @@
    "domains": [
     "工艺"
    ]
+  },
+  {
+   "id": "Rule:用户定方向拍板",
+   "type": "Rule",
+   "name": "用户定方向(风格全局视觉/品牌/受众=拍板项)",
+   "props": {
+    "说明": "强调色/主色/画风/品牌名/用字/logo/受众模式(EXP直白) 是用户拍板项，必须在简报/定档就问，勿当团队判断 M3 才落；EXP=直白规格/术语不解释/字幕注承担，PUB=才科普。来源 失败F-11/F-18/F-14。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-20"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "Rule:参考图挂载清单必写",
+   "type": "Rule",
+   "name": "每镜 prompt 必带参考图挂载清单",
+   "props": {
+    "说明": "每镜 prompt 交付自带『参考图挂载清单』(文件+取哪部分→放哪)，不带=不合格。来源 失败F-12。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-21"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "Rule:产品结构必读真图",
+   "type": "Rule",
+   "name": "写产品/结构镜头前必看参考图+依真实结构",
+   "props": {
+    "说明": "写产品/结构镜头前必 read_image 看参考图 + 依真实产品结构(两件套/内部腔体/部件)，不凭印象堆它没有的细节。来源 失败F-13。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-21"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "Rule:数据卡锁值大字号",
+   "type": "Rule",
+   "name": "数据卡/曲线默认大字号+锁值，不让AI生成数字",
+   "props": {
+    "说明": "图表层/数据卡默认大字号(主值≥8-10%画面高)+等宽；数据一律用数据卡字卡图参考锁值，不让AI生成数字。来源 失败F-15。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-22"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "Rule:信息点去重",
+   "type": "Rule",
+   "name": "分镜前信息点去重",
+   "props": {
+    "说明": "同一数据点(10000h/±0.2%/衰减<10%)只讲一次，重复即删。来源 失败F-17。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-22"
+   ],
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "id": "Rule:AI反模式负面词前置",
+   "type": "Rule",
+   "name": "科学/品牌红线 AI 反模式负面词前置写全",
+   "props": {
+    "说明": "大光球/激光束/彩虹/改造设备/镀铬反光/合成一台 等 AI 反模式负面词前置写全作每镜强制反面，不翻车再补。来源 失败F-16。",
+    "出处": "runs/_lessons/FAILURE-LIBRARY.md(泛化) / 项目复盘总结.md"
+   },
+   "sources": [
+    "knowledge/FAILURE-LIBRARY.md",
+    "orchestration/ORCHESTRATION.md §5-22"
+   ],
+   "domains": [
+    "工艺"
+   ]
   }
  ],
  "relations": [
@@ -388,6 +484,42 @@
   {
    "source": "ProcessRule:启动读全核心流程",
    "target": "ProcessRule:runs只放项目",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:用户定方向拍板",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:参考图挂载清单必写",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:产品结构必读真图",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:数据卡锁值大字号",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:信息点去重",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:AI反模式负面词前置",
+   "target": "Rule:五层检查体系",
    "type": "concept-related-to",
    "props": {}
   }

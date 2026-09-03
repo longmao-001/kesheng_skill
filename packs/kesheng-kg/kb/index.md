@@ -3188,15 +3188,24 @@
 | 风格token块锚定 | ArtStyleRule | 全片写死一句风格描述（如'冷蓝生物荧光科学可视化风格，体积光，浅景深，8K超精细'），逐字粘贴进每镜prompt。；风格 | F:/AI/kesheng/playbooks/consistency.md / F:/AI/kesheng/knowledge/seedance-template-library.md |
 | 结构方法代替自由联想 | CreativeRule | 创意生成必须用结构化方法论(SIT/SCAMPER/TRIZ/双关联…20法), 禁止'灵光一现'式自由联想 | libs/creative-director-skill/creative-director/references/methods-catalog.md |
 | 创意评分标定(戛纳校准) | EvalRule | 原创性0.25/策略契合0.20/情绪反应0.20/可行性0.15/延展性0.10/简洁0.10 | libs/creative-director-skill/creative-director/SKILL.md / libs/creative-director-skill/creative-director/references/scoring-calibration.md |
+| AI反模式负面词前置写全 | FailureLesson | 等离子体画成大光球、光谱带变彩虹、产品被改造，靠负面词+@参考补救(F-16) | knowledge/FAILURE-LIBRARY.md |
 | 全局残留一致性 | FailureLesson | 主文本改完, 自评/待确认/下游建议/制作清单仍留旧表述(S1-S4)——M5按旧指令=问题回归 | knowledge/FAILURE-LIBRARY.md |
+| 写产品/结构镜头前必read_image看参考图 | FailureLesson | 把'内部腔体'镜误当挂'外壳参考'；对'产品是两件套、内部腔体无实拍靠CG'不敏感，凭印象堆'外壳/鳍片/螺纹'等没有的 | knowledge/FAILURE-LIBRARY.md |
+| 分镜/口播前信息点去重 | FailureLesson | 某镜'长周期衰减≤0.1%/day+10000h<10%'与前面寿命/衰减/稳定性镜头数据点重复，被指出后删镜(F-17 | knowledge/FAILURE-LIBRARY.md |
 | 原始文档目检确认 | FailureLesson | 0.01nm课本精度当本机实测(F-02); 关键数值靠'大概率' | knowledge/FAILURE-LIBRARY.md |
+| 口播档位必锚受众模式 | FailureLesson | 口播写了'所以呢/术语解释/比喻'等科普句，被用户纠正'口播琐碎用户不需要科普'(EXP专家客户)(F-14) | knowledge/FAILURE-LIBRARY.md |
 | 口播读法批注 | FailureLesson | 口播稿缺读法, 配音/字幕各读各的(数字/单位/型号读法不一) | knowledge/FAILURE-LIBRARY.md |
+| 品牌名/用字/logo简报阶段拍板 | FailureLesson | 全片用'块芯'，用户最后确认'咱们是玦芯'，批量替换142处(F-18) | knowledge/FAILURE-LIBRARY.md |
 | 品牌资产官方源 | FailureLesson | 落版电光青自造色(C1); 青绿logo实为'玦芯生物'(C2) | knowledge/FAILURE-LIBRARY.md |
 | 型号-参数数字规避 | FailureLesson | PHO-SC-4 的'4'与输出功率8W/4W字面易误读 | knowledge/FAILURE-LIBRARY.md |
+| 批量改文案用全局脚本扫描替换 | FailureLesson | 改品牌词'块→玦'最初只改部分文件，残留扫描才发现多文件还有(F-19) | knowledge/FAILURE-LIBRARY.md |
+| 数据卡/曲线默认大字号+数据用字卡图锁值 | FailureLesson | 数据卡/曲线字太小(用户两次纠正)；数据卡由AI生成还是后期反复纠结(F-15) | knowledge/FAILURE-LIBRARY.md |
 | 数据口径分层 | FailureLesson | s27_18长周期漂移图与手册10000h衰减混用并线性换算(F-01) | knowledge/FAILURE-LIBRARY.md |
+| 每镜prompt自带参考图挂载清单 | FailureLesson | 产品/结构镜头多次漏挂参考图，用户数问'参考图是/不带参考图/没显示参考图'(F-12) | knowledge/FAILURE-LIBRARY.md |
 | 禁用素材清单前置 | FailureLesson | 竞品曲线/水印素材进提案后被红队拦截 | knowledge/FAILURE-LIBRARY.md |
 | 配音零找人 | FailureLesson | 素材包'待你提供=外部配音'——唯一遗留动作 | knowledge/FAILURE-LIBRARY.md |
 | 零自创文案 | FailureLesson | 用户删CTA/slogan/痛点段, 口播=定位语原文直读, 字幕=口播逐句 | knowledge/FAILURE-LIBRARY.md |
+| 风格基线全局视觉决策提前拍板 | FailureLesson | 强调色/主色调/画风等全局视觉决策一路由团队专业判断定，直到M3拍板用户才纠正方向，导致分镜/prompt/九宫格全员重 | knowledge/FAILURE-LIBRARY.md |
 | KSP-01 立项定档 | KspStep | 三问理解需求→定档拍板卡(S/M/L) | docs/USER_SOP.md / templates/user-gate.md |
 | KSP-02 需求简报+预注册 | KspStep | brief.md调研→4约束清单→预注册标准3-5条→组合拍板卡(受众/平台/时长/风格/画风/素材) | docs/USER_SOP.md / templates/brief.md |
 | KSP-03 科学理解 | KspStep | 7步理解法≥L2+受众/导演并行+事实处置→调研报告全文交用户阅读讨论(先读后谈)→讨论记录m2-纪要→两点讲明 | docs/USER_SOP.md / agents/scientist.md |
@@ -3253,12 +3262,18 @@
 | AI原生交付原则 | Rule | 只冲着AI视频生成来; 主玩法=自己在多个平台(画布/节点: LibTV/即梦/可灵/Seedance)操作生成, 默认 | docs/USER_SOP.md / playbooks/production-workflow.md / agents/editor.md |
 | Prompt严格统一格式 | Rule | 交付给用户的所有prompt文件, 模板=templates/prompt-sheet.md | templates/prompt-sheet.md / scripts/check_prompt_sheet.py |
 | 五层检查体系(co-scientist风格) | Rule | 素材完整性 check_asset_pack.py(@引用全登记/无待补提示) | docs/USER_SOP.md / orchestration/ORCHESTRATION.md |
+| 写产品/结构镜头前必看参考图+依真实结构 | Rule | 写产品/结构镜头前必 read_image 看参考图 + 依真实产品结构(两件套/内部腔体/部件)，不凭印象堆它没有的细 | knowledge/FAILURE-LIBRARY.md / orchestration/ORCHESTRATION.md §5-21 |
+| 分镜前信息点去重 | Rule | 同一数据点(10000h/±0.2%/衰减<10%)只讲一次，重复即删。来源 失败F-17。 | knowledge/FAILURE-LIBRARY.md / orchestration/ORCHESTRATION.md §5-22 |
 | 口播读法批注 | Rule | 口播稿必带: 数字读法(±0.2%→误差不超过百分之零点二)/单位不念/型号逐字母(PHO-SC-4)/停连重音/语速档 | knowledge/FAILURE-LIBRARY.md / knowledge/FAILURE-LIBRARY.md |
 | 品牌资产官方源 | Rule | 品牌色/logo/字体一律官方源(官网矢量/VI/手册), 禁止自造色值; 品牌用字属用户拍板项#10 | knowledge/FAILURE-LIBRARY.md / knowledge/FAILURE-LIBRARY.md |
 | 图文对位(重点检查项) | Rule | 每镜: 口播内容 ↔ 画面描述 ↔ 参考图/首帧 三者必须对位——口播讲的对象/动作/状态必须在参考图中体现或可靠衍生 | templates/storyboard.md / agents/inspector.md |
 | 图文顺序对位 | Rule | 口播首句必须在首镜(镜1)出现; 口播节拍顺序与分镜顺序一一对应, 不得第1句跑到第8镜 | knowledge/FAILURE-LIBRARY.md |
+| 数据卡/曲线默认大字号+锁值，不让AI生成数字 | Rule | 图表层/数据卡默认大字号(主值≥8-10%画面高)+等宽；数据一律用数据卡字卡图参考锁值，不让AI生成数字。来源 失败F | knowledge/FAILURE-LIBRARY.md / orchestration/ORCHESTRATION.md §5-22 |
 | 数据目检确认 | Rule | 关键数据必须原始文档目检(截图入库); '大概率/待确认'=L3检察官FAIL项; 教科书参数不上屏不绑机 | knowledge/FAILURE-LIBRARY.md / knowledge/FAILURE-LIBRARY.md |
 | 概念先行(agency流程) | Rule | Insight(洞察,=重点协议)→Ideation(概念生成: SIT/SCAMPER/TRIZ/Bisociatio | https://www.freemcplab.com/i18n/zh-CN/play/creative-director-skill/ / https://github.com/timkoda/koda-stack |
+| 每镜 prompt 必带参考图挂载清单 | Rule | 每镜 prompt 交付自带『参考图挂载清单』(文件+取哪部分→放哪)，不带=不合格。来源 失败F-12。 | knowledge/FAILURE-LIBRARY.md / orchestration/ORCHESTRATION.md §5-21 |
+| 用户定方向(风格全局视觉/品牌/受众=拍板项) | Rule | 强调色/主色/画风/品牌名/用字/logo/受众模式(EXP直白) 是用户拍板项，必须在简报/定档就问，勿当团队判断 M | knowledge/FAILURE-LIBRARY.md / orchestration/ORCHESTRATION.md §5-20 |
+| 科学/品牌红线 AI 反模式负面词前置写全 | Rule | 大光球/激光束/彩虹/改造设备/镀铬反光/合成一台 等 AI 反模式负面词前置写全作每镜强制反面，不翻车再补。来源 失败 | knowledge/FAILURE-LIBRARY.md / orchestration/ORCHESTRATION.md §5-22 |
 | 调研图料三件套 | Rule | ①科学道理(原理/公式/示意→理解报告+图谱) ②网图(公开示意图/结构/场景→入库refs/标来源版权, 无授权仅参考 | docs/USER_SOP.md / playbooks/production-workflow.md |
 | 零意外素材自包含 | Rule | 交付件自包含: 所有画面素材要么①已下载入包(含来源/授权) ②附文生图/图生视频生成prompt ③取自已收集客户素材 | docs/USER_SOP.md / orchestration/ORCHESTRATION.md |
 | 零门槛措辞 | Rule | 交付文档/对话禁用专业术语吓用户: '人工层/图表层/首帧/后期/LUT/压字' 一律替换为零门槛表述('模板/样张直接 | knowledge/FAILURE-LIBRARY.md |
