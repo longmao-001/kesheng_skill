@@ -79,7 +79,7 @@ M5 制作与交付 → 陪用户出片（playbooks/production-workflow.md），�
 > 启动必读（上面 5 份核心流程）已读全后，本节资源**到对应里程碑再按需读/查**；**大知识库（`kb/`、`knowledge/`、`packs/`）一律用 `kg_query`/按需查，不自作主张一次全读**（避免上下文爆炸、也避免漏流程）。
 
 - **会议与质量**：`protocols/meeting.md`、`protocols/quality-gate.md`
-- **制作实操**：`playbooks/production-workflow.md`（端到端流程）、`playbooks/platform-prompts.md`（各平台 prompt 公式+范例+运镜词表，含 Seedance 2.0/2.5 官方核实版专章）、`playbooks/storyboard-grid.md`（宫格分镜图技法：Image2 生图、九宫格模板、两条成片路径）、`playbooks/consistency.md`（跨镜一致性工具箱）、`playbooks/science-report-flow.md`（**M2→M3 交接：科学理解 → 报告+docx/PPT 交付 → 报告审阅闸「继续」 → 主题共识 → 概念先行**）
+- **制作实操**：`playbooks/production-workflow.md`（端到端流程）、`playbooks/asset-library-flow.md`（**自建素材库→参考图使用**：分析/拆解/重命名/保存建库/选片），`playbooks/platform-prompts.md`（各平台 prompt 公式+范例+运镜词表，含 Seedance 2.0/2.5 官方核实版专章）、`playbooks/storyboard-grid.md`（宫格分镜图技法：Image2 生图、九宫格模板、两条成片路径）、`playbooks/consistency.md`（跨镜一致性工具箱）、`playbooks/science-report-flow.md`（**M2→M3 交接：科学理解 → 报告+docx/PPT 交付 → 报告审阅闸「继续」 → 主题共识 → 概念先行**）
 - **科学知识图谱**：`kb/`（Obsidian 式知识库，用 Obsidian 打开 `kb/` 文件夹即可见图谱；入口 `kb/index.md`，按领域分文件夹：生物学/医学/化学/物理学/光学…；M2 先查库，项目收尾按 `kb/隐私红线.md` 萃取入库——**项目专有信息绝不入库**）
 - **工艺知识库**：`knowledge/`（Obsidian 兼容创作工艺图谱，入口 `knowledge/index.md`：痛点链/文案层/动感三来源/首帧锚定/全能参考三用法/素材分级/图表层等概念卡 + hooks 钩子库 + ad-copy 广告文案法则 + 脚本模板 + VI 规范）
 - **统一知识图谱（知识唯一入口）**：`packs/kesheng-kg/`——并集大图谱（全体知识 + 13 个 domain 分区：科学/叙事/导演/分镜/美术/影像/声音/prompt/工艺/受众/红队/剪辑/产业），查询 `python F:/AI/kesheng/packs/kg_query.py --domain <域> <关键词>`；重建 `scripts/build_union_kg.py`；**知识沉淀只进图谱**（追加域片段→重建），不新建概念卡；`kb/`（科学）与 `knowledge/`（工艺）仅为历史权威正文来源
