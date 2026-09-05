@@ -46371,6 +46371,25 @@
    ]
   },
   {
+   "id": "Concept:产品卷入度",
+   "type": "Concept",
+   "name": "产品卷入度",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "消费者对产品的卷入/涉入水平,高涉入走理性中心路径,低涉入走情感边缘路径",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-003",
+    "Paper:OA-文案-004",
+    "Paper:OA-文案-010",
+    "Paper:OA-文案-017"
+   ]
+  },
+  {
    "id": "Concept:人物关系网",
    "type": "Concept",
    "name": "人物关系网",
@@ -46435,6 +46454,25 @@
    ]
   },
   {
+   "id": "Concept:加工路径(中心/边缘)",
+   "type": "Concept",
+   "name": "加工路径(中心/边缘)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "说服传播中存在中心(论据驱动)与边缘(线索驱动)两条信息加工路径",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-001",
+    "Paper:OA-文案-010",
+    "Paper:OA-文案-016",
+    "Paper:OA-文案-017"
+   ]
+  },
+  {
    "id": "Concept:卷入度",
    "type": "Concept",
    "name": "卷入度",
@@ -46449,6 +46487,100 @@
     "10.1086/208954",
     "10.1080/00913367.1943.10673459",
     "10.1086/208994"
+   ]
+  },
+  {
+   "id": "Concept:双语广告(情绪强度)",
+   "type": "Concept",
+   "name": "双语广告(情绪强度)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "广告语言使用母语或外语影响口号的情绪强度与情感反应",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-014",
+    "Paper:OA-文案-029"
+   ]
+  },
+  {
+   "id": "Concept:口号修辞格",
+   "type": "Concept",
+   "name": "口号修辞格",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "比喻/双关/头韵/押韵等修辞格在口号中提升注意与说服",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-012",
+    "Paper:OA-文案-013",
+    "Paper:OA-文案-018",
+    "Paper:OA-文案-028",
+    "Paper:OA-文案-036"
+   ]
+  },
+  {
+   "id": "Concept:口号简洁性",
+   "type": "Concept",
+   "name": "口号简洁性",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "口号的简短/精炼程度,过繁降低加工与记忆",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-026",
+    "Paper:OA-文案-027",
+    "Paper:OA-文案-030"
+   ]
+  },
+  {
+   "id": "Concept:口号记忆/识别",
+   "type": "Concept",
+   "name": "口号记忆/识别",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "口号的可记忆性与识别度,由简短、品类关联等驱动",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-026",
+    "Paper:OA-文案-027",
+    "Paper:OA-文案-030",
+    "Paper:OA-文案-034"
+   ]
+  },
+  {
+   "id": "Concept:品牌-口号链接",
+   "type": "Concept",
+   "name": "品牌-口号链接",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "口号激活品牌/品类联想并影响品牌延伸评价与品牌资产",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-018",
+    "Paper:OA-文案-022",
+    "Paper:OA-文案-024",
+    "Paper:OA-文案-032",
+    "Paper:OA-文案-033"
    ]
   },
   {
@@ -46518,6 +46650,43 @@
    ]
   },
   {
+   "id": "Concept:广告元话语",
+   "type": "Concept",
+   "name": "广告元话语",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "广告语言中的元话语与人称(we/you)作为交互标记调节劝服力",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-001",
+    "Paper:OA-文案-023"
+   ]
+  },
+  {
+   "id": "Concept:广告态度/品牌态度",
+   "type": "Concept",
+   "name": "广告态度/品牌态度",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "消费者对广告及品牌的整体评价,情感诉求常通过态度中介购买",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-009",
+    "Paper:OA-文案-016",
+    "Paper:OA-文案-020",
+    "Paper:OA-文案-021",
+    "Paper:OA-文案-035"
+   ]
+  },
+  {
    "id": "Concept:广告效果层级",
    "type": "Concept",
    "name": "广告效果层级",
@@ -46548,6 +46717,28 @@
    "sources": [
     "10.1080/15252019.2017.1366885",
     "10.1016/j.jretai.2014.09.005"
+   ]
+  },
+  {
+   "id": "Concept:广告诉求(理性/情感)",
+   "type": "Concept",
+   "name": "广告诉求(理性/情感)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "广告文案以理性信息(规格/功能/数据)或情感信息(感官/情绪/体验)为核心的说服逻辑",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-001",
+    "Paper:OA-文案-002",
+    "Paper:OA-文案-003",
+    "Paper:OA-文案-004",
+    "Paper:OA-文案-005",
+    "Paper:OA-文案-006",
+    "Paper:OA-文案-008"
    ]
   },
   {
@@ -46720,6 +46911,45 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:视频广告劝服线索",
+   "type": "Concept",
+   "name": "视频广告劝服线索",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "视频广告中的社会/幽默/叙事等劝服线索如何驱动观看与传播",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-007",
+    "Paper:OA-文案-011",
+    "Paper:OA-文案-019",
+    "Paper:OA-文案-021"
+   ]
+  },
+  {
+   "id": "Concept:诉求-品类匹配",
+   "type": "Concept",
+   "name": "诉求-品类匹配",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "广告诉求与产品品类/卷入度匹配时说服更强,品类是诉求选择的调节变量",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-004",
+    "Paper:OA-文案-007",
+    "Paper:OA-文案-008",
+    "Paper:OA-文案-011",
+    "Paper:OA-文案-017"
    ]
   },
   {
@@ -47000,6 +47230,22 @@
    ]
   },
   {
+   "id": "Finding:元话语-劝服效应",
+   "type": "Finding",
+   "name": "元话语-劝服效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "广告语言元话语/人称(we/you) → 劝服↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-001",
+    "Paper:OA-文案-023"
+   ]
+  },
+  {
    "id": "Finding:冲突双线强化高潮张力",
    "type": "Finding",
    "name": "冲突双线强化高潮张力",
@@ -47013,6 +47259,92 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:双语口号-情绪强度效应",
+   "type": "Finding",
+   "name": "双语口号-情绪强度效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "母语口号 → 情绪强度/情感反应↑ (外语口号理解成本高)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-014",
+    "Paper:OA-文案-029"
+   ]
+  },
+  {
+   "id": "Finding:口号修辞-说服效应",
+   "type": "Finding",
+   "name": "口号修辞-说服效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "口号用修辞(比喻/双关/头韵) → 说服/记忆↑ (适用: 概念型口号)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-012",
+    "Paper:OA-文案-013",
+    "Paper:OA-文案-018",
+    "Paper:OA-文案-028"
+   ]
+  },
+  {
+   "id": "Finding:口号句法复杂度-记忆效应",
+   "type": "Finding",
+   "name": "口号句法复杂度-记忆效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "适度句法复杂度(非过度简单/复杂) → 记忆/理解↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-026",
+    "Paper:OA-文案-027",
+    "Paper:OA-文案-030"
+   ]
+  },
+  {
+   "id": "Finding:口号多义-加工效应",
+   "type": "Finding",
+   "name": "口号多义-加工效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "适度双关/多义口号 → 加工深度/品牌兴趣↑ (过度多义反损清晰)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-013",
+    "Paper:OA-文案-018",
+    "Paper:OA-文案-036"
+   ]
+  },
+  {
+   "id": "Finding:口号简洁-品名记忆效应",
+   "type": "Finding",
+   "name": "口号简洁-品名记忆效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "口号简短·含明确产品名 → 记忆/识别↑ (适用: 品牌记忆型口号)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-026",
+    "Paper:OA-文案-027",
+    "Paper:OA-文案-030",
+    "Paper:OA-文案-034"
    ]
   },
   {
@@ -47082,6 +47414,40 @@
    ]
   },
   {
+   "id": "Finding:情感诉求-普通品效应",
+   "type": "Finding",
+   "name": "情感诉求-普通品效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "情感诉求×普通低涉入品 → 品牌情感/参与↑ (适用: 大众消费广告词)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-009",
+    "Paper:OA-文案-011",
+    "Paper:OA-文案-020",
+    "Paper:OA-文案-021"
+   ]
+  },
+  {
+   "id": "Finding:情感诉求-食品效应",
+   "type": "Finding",
+   "name": "情感诉求-食品效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "情感/感官诉求×食品 → 食欲/购买冲动↑ (适用: 食品广告词)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-007",
+    "Paper:OA-文案-019"
+   ]
+  },
+  {
    "id": "Finding:情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
    "type": "Finding",
    "name": "情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著",
@@ -47113,6 +47479,21 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:文化-诉求匹配效应",
+   "type": "Finding",
+   "name": "文化-诉求匹配效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "个人主义文化×理性诉求 / 集体主义文化×情感诉求 → 说服↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-015"
    ]
   },
   {
@@ -47196,6 +47577,24 @@
    ]
   },
   {
+   "id": "Finding:理性诉求-高涉入科技品效应",
+   "type": "Finding",
+   "name": "理性诉求-高涉入科技品效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "理性/规格诉求×科技/高涉入产品 → 可信度/专业感↑ (适用: 直白规格型; 高涉入走中心路径)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-002",
+    "Paper:OA-文案-004",
+    "Paper:OA-文案-008",
+    "Paper:OA-文案-017"
+   ]
+  },
+  {
    "id": "Finding:社交媒体广告的参与/社交特征提升用户参与与购买意向",
    "type": "Finding",
    "name": "社交媒体广告的参与/社交特征提升用户参与与购买意向",
@@ -47244,6 +47643,42 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:视频劝服线索-传播效应",
+   "type": "Finding",
+   "name": "视频劝服线索-传播效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "视频广告劝服线索(社会/幽默/叙事) → 病毒传播/观看↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-011",
+    "Paper:OA-文案-019",
+    "Paper:OA-文案-021",
+    "Paper:OA-文案-017"
+   ]
+  },
+  {
+   "id": "Finding:诉求-品类匹配效应",
+   "type": "Finding",
+   "name": "诉求-品类匹配效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "诉求与产品卷入度/品类类型匹配 → 广告态度↑ (匹配是关键调节变量)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-文案-004",
+    "Paper:OA-文案-008",
+    "Paper:OA-文案-011",
+    "Paper:OA-文案-017"
    ]
   },
   {
@@ -47683,6 +48118,23 @@
    ]
   },
   {
+   "id": "Method:元分析(广告效果)",
+   "type": "Method",
+   "name": "元分析(广告效果)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "合并多项广告效果研究的效应量,检验诉求与调节变量的一致性结论",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-017",
+    "Paper:OA-文案-020"
+   ]
+  },
+  {
    "id": "Method:元分析与综述",
    "type": "Method",
    "name": "元分析与综述",
@@ -47745,6 +48197,24 @@
    ]
   },
   {
+   "id": "Method:内容分析法(广告语言)",
+   "type": "Method",
+   "name": "内容分析法(广告语言)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "对广告文案/口号做系统编码与频次统计,归纳诉求与语言特征",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-002",
+    "Paper:OA-文案-007",
+    "Paper:OA-文案-019"
+   ]
+  },
+  {
    "id": "Method:创意实践研究",
    "type": "Method",
    "name": "创意实践研究",
@@ -47776,6 +48246,25 @@
     "10.1080/02650487.2019.1634898",
     "10.1080/00913367.1990.10673175",
     "10.1080/00913367.2000.10673616"
+   ]
+  },
+  {
+   "id": "Method:受众实验(诉求操纵)",
+   "type": "Method",
+   "name": "受众实验(诉求操纵)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "操纵理性/情感诉求并测量态度/购买意向,检验诉求主效应与调节",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-009",
+    "Paper:OA-文案-011",
+    "Paper:OA-文案-016",
+    "Paper:OA-文案-004"
    ]
   },
   {
@@ -47872,6 +48361,43 @@
    "sources": [
     "10.1080/14790726.2015.1134579",
     "10.1080/14790726.2015.1120314"
+   ]
+  },
+  {
+   "id": "Method:计算机辅助文本分析",
+   "type": "Method",
+   "name": "计算机辅助文本分析",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "用程序对大批口号做词汇/句式自动分析,识别语言共性",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-023",
+    "Paper:OA-文案-027"
+   ]
+  },
+  {
+   "id": "Method:语言风格分析(口号修辞)",
+   "type": "Method",
+   "name": "语言风格分析(口号修辞)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "从文体学角度分析口号的修辞手法、句法与语言风格",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-012",
+    "Paper:OA-文案-013",
+    "Paper:OA-文案-018",
+    "Paper:OA-文案-028",
+    "Paper:OA-文案-029"
    ]
   },
   {
@@ -49137,6 +49663,46 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-025",
+   "type": "Paper",
+   "name": "A comparison of parents' and children's knowledge of brands and advertising slogans in the United States: implications for consumer socialization",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2000",
+    "被引": "80",
+    "DOI": "10.1080/135272600750036346",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "家长/儿童的品牌与口号知识比较"
+   },
+   "sources": [
+    "https://doi.org/10.1080/135272600750036346"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-035",
+   "type": "Paper",
+   "name": "A study of the antecedents of slogan liking",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2014",
+    "被引": "51",
+    "DOI": "10.1016/j.jbusres.2014.05.004",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "口号喜爱前因研究"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2014.05.004"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-012",
    "type": "Paper",
    "name": "Adaptation studies through screenwriting studies: Transitionality and the adapted screenplay",
@@ -49191,6 +49757,26 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-017",
+   "type": "Paper",
+   "name": "Advertising Appeals, Moderators, And Impact on Persuasion",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2017",
+    "被引": "68",
+    "DOI": "10.2501/jar-2017-017",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告诉求的调节变量与说服影响"
+   },
+   "sources": [
+    "https://doi.org/10.2501/jar-2017-017"
    ]
   },
   {
@@ -49331,6 +49917,26 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-016",
+   "type": "Paper",
+   "name": "Affect Intensity and the Consumer's Attitude toward High Impact Emotional Advertising Appeals",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1996",
+    "被引": "166",
+    "DOI": "10.1080/00913367.1996.10673498",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "影响强度与高冲击情感诉求的态度响应"
+   },
+   "sources": [
+    "https://doi.org/10.1080/00913367.1996.10673498"
    ]
   },
   {
@@ -49586,6 +50192,46 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-018",
+   "type": "Paper",
+   "name": "An analysis of rhetorical figures and other linguistic devices in corporation brand slogans",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2014",
+    "被引": "46",
+    "DOI": "10.1080/13527266.2014.917331",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "企业品牌口号的修辞格与语言手段"
+   },
+   "sources": [
+    "https://doi.org/10.1080/13527266.2014.917331"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-008",
+   "type": "Paper",
+   "name": "An international analysis of emotional and rational appeals in services vs goods advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1999",
+    "被引": "277",
+    "DOI": "10.1108/07363769910250769",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "服务vs商品广告的情感/理性诉求国别比较"
+   },
+   "sources": [
+    "https://doi.org/10.1108/07363769910250769"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-005",
    "type": "Paper",
    "name": "An overview of the linguistics of screenwriting and its interdisciplinary connections, with special focus on dialogue in episodic television",
@@ -49603,6 +50249,26 @@
    "sources": [
     "10.1386/josc.6.2.221_1",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-038",
+   "type": "Paper",
+   "name": "Analysing tourism slogans in top tourism destinations",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2016",
+    "被引": "53",
+    "DOI": "10.1016/j.jdmm.2016.04.004",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "顶级旅游目的地口号分析"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jdmm.2016.04.004"
    ]
   },
   {
@@ -49781,6 +50447,46 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-004",
+   "type": "Paper",
+   "name": "Be rational or be emotional: advertising appeals, service types and consumer responses",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2014",
+    "被引": "248",
+    "DOI": "10.1108/ejm-10-2012-0613",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "诉求×服务类型与消费响应"
+   },
+   "sources": [
+    "https://doi.org/10.1108/ejm-10-2012-0613"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-014",
+   "type": "Paper",
+   "name": "Bilingualism and the Emotional Intensity of Advertising Language",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2008",
+    "被引": "251",
+    "DOI": "10.1086/595022",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告语言双语与情绪强度"
+   },
+   "sources": [
+    "https://doi.org/10.1086/595022"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-002",
    "type": "Paper",
    "name": "Birds of a Feather: Informal Recruitment Practices and Gendered Outcomes for Screenwriting Work in the UK Film Industry",
@@ -49833,6 +50539,26 @@
    },
    "sources": [
     "10.1177/002224299906300106"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-032",
+   "type": "Paper",
+   "name": "Brands affect slogans affect brands? Competitive interference, brand equity and the brand-slogan link",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2005",
+    "被引": "83",
+    "DOI": "10.1057/palgrave.bm.2540212",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "品牌与口号双向作用与品牌资产链接"
+   },
+   "sources": [
+    "https://doi.org/10.1057/palgrave.bm.2540212"
    ]
   },
   {
@@ -49961,6 +50687,26 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-027",
+   "type": "Paper",
+   "name": "Computer-aided content analysis: What do 240 advertising slogans have in common?",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1996",
+    "被引": "53",
+    "DOI": "10.1007/bf00557312",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "240条口号计算机辅助内容分析(共性)"
+   },
+   "sources": [
+    "https://doi.org/10.1007/bf00557312"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-18",
    "type": "Paper",
    "name": "Consumer Attitudes Toward Mobile Advertising: An Empirical Study",
@@ -50031,6 +50777,26 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-036",
+   "type": "Paper",
+   "name": "Consumer Response to Polysemous Brand Slogans",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2007",
+    "被引": "54",
+    "DOI": "10.1086/510225",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "多义品牌口号与消费响应"
+   },
+   "sources": [
+    "https://doi.org/10.1086/510225"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-021",
    "type": "Paper",
    "name": "Cultural influences in screenwriting: Australia vs. Hollywood",
@@ -50068,6 +50834,26 @@
    "sources": [
     "10.2307/1225733",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-039",
+   "type": "Paper",
+   "name": "Destination brand positioning slogans – towards the development of a set of accountability criteria",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2004",
+    "被引": "69",
+    "DOI": "",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "目的地品牌定位口号的问责标准"
+   },
+   "sources": [
+    "Destination brand positioning slogans – towards the development of a set of accountability criteria (2004)"
    ]
   },
   {
@@ -50138,6 +50924,126 @@
    },
    "sources": [
     "10.1080/15252019.2017.1366885"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-003",
+   "type": "Paper",
+   "name": "Discovering the Role of Emotional and Rational Appeals and Hidden Heterogeneity of Consumers in Advertising Copies for Sustainable Marketing",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2020",
+    "被引": "62",
+    "DOI": "10.3390/su12125189",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告文案情感/理性诉求与消费者隐异质性"
+   },
+   "sources": [
+    "https://doi.org/10.3390/su12125189"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-009",
+   "type": "Paper",
+   "name": "Does Emotional Appeal Work in Advertising? The Rationality Behind Using Emotional Appeal to Create Favorable Brand Attitude",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2013",
+    "被引": "54",
+    "DOI": "",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "情感诉求与有利品牌态度形成"
+   },
+   "sources": [
+    "Does Emotional Appeal Work in Advertising? The Rationality Behind Using Emotional Appeal to Create Favorable Brand Attitude (2013)"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-019",
+   "type": "Paper",
+   "name": "Dual-Modality Disclaimers, Emotional Appeals, and Production Techniques in Food Advertising Airing During Programs Rated for Children",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2009",
+    "被引": "71",
+    "DOI": "10.2753/joa0091-3367380407",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "食品广告免责声明/情感诉求与制作技术"
+   },
+   "sources": [
+    "https://doi.org/10.2753/joa0091-3367380407"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-007",
+   "type": "Paper",
+   "name": "Emotional and rational product appeals in televised food advertisements for children: analysis of commercials shown on US broadcast networks",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2007",
+    "被引": "67",
+    "DOI": "10.1177/1367493507082758",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "儿童电视食品广告的情感/理性产品诉求"
+   },
+   "sources": [
+    "https://doi.org/10.1177/1367493507082758"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-005",
+   "type": "Paper",
+   "name": "Emotional or Rational? The Determination of the Influence of Advertising Appeal on Advertising Effectiveness",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2016",
+    "被引": "79",
+    "DOI": "10.1515/saeb-2016-0130",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告诉求对广告效果的影响判定"
+   },
+   "sources": [
+    "https://doi.org/10.1515/saeb-2016-0130"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-029",
+   "type": "Paper",
+   "name": "English or a Local Language in Advertising?: The Appreciation of Easy and Difficult English Slogans in the Netherlands",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2010",
+    "被引": "97",
+    "DOI": "10.1177/0021943610364524",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "口号语言(母语/英语)难易接受度"
+   },
+   "sources": [
+    "https://doi.org/10.1177/0021943610364524"
    ]
   },
   {
@@ -50213,6 +51119,46 @@
    "sources": [
     "10.1386/josc.1.1.27/1",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-011",
+   "type": "Paper",
+   "name": "Exploring the Relative Effectiveness of Emotional, Rational, and Combination Advertising Appeals on Sport Consumer Behavior",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2018",
+    "被引": "31",
+    "DOI": "10.32731/smq.272.062018.02",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "运动消费中理性/情感/组合诉求的相对效果"
+   },
+   "sources": [
+    "https://doi.org/10.32731/smq.272.062018.02"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-013",
+   "type": "Paper",
+   "name": "Figures of Rhetoric in Advertising Language",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1996",
+    "被引": "699",
+    "DOI": "10.1086/209459",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告语言中的修辞格"
+   },
+   "sources": [
+    "https://doi.org/10.1086/209459"
    ]
   },
   {
@@ -50306,6 +51252,26 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-030",
+   "type": "Paper",
+   "name": "Got slogan? Guidelines for creating effective slogans",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2007",
+    "被引": "149",
+    "DOI": "10.1016/j.bushor.2007.05.002",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "有效口号的创作指南"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.bushor.2007.05.002"
    ]
   },
   {
@@ -50411,6 +51377,46 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-022",
+   "type": "Paper",
+   "name": "How advertising slogans can prime evaluations of brand extensions",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1993",
+    "被引": "115",
+    "DOI": "10.1002/mar.4220100106",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告口号对品牌延伸评价的启动"
+   },
+   "sources": [
+    "https://doi.org/10.1002/mar.4220100106"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-024",
+   "type": "Paper",
+   "name": "How advertising slogans can prime evaluations of brand extensions: further empirical results",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1998",
+    "被引": "84",
+    "DOI": "10.1108/10610429810244666",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "口号启动品牌延伸(进一步实证)"
+   },
+   "sources": [
+    "https://doi.org/10.1108/10610429810244666"
    ]
   },
   {
@@ -50571,6 +51577,26 @@
    },
    "sources": [
     "10.1016/j.ijinfomgt.2018.06.001"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-023",
+   "type": "Paper",
+   "name": "Linguistic Characteristics of Commercial and Social Advertising Slogans",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2015",
+    "被引": "65",
+    "DOI": "10.3846/cpe.2015.275",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "商业与社会广告口号的语言特征"
+   },
+   "sources": [
+    "https://doi.org/10.3846/cpe.2015.275"
    ]
   },
   {
@@ -50742,6 +51768,46 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-015",
+   "type": "Paper",
+   "name": "Persuasion and Culture: Advertising Appeals in Individualistic and Collectivistic Societies",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1994",
+    "被引": "734",
+    "DOI": "10.1006/jesp.1994.1016",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "个人主义/集体主义文化下的广告诉求选择"
+   },
+   "sources": [
+    "https://doi.org/10.1006/jesp.1994.1016"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-001",
+   "type": "Paper",
+   "name": "Persuasion and advertising English: Metadiscourse in slogans and headlines",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2001",
+    "被引": "316",
+    "DOI": "10.1016/s0378-2166(01)80026-6",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告英语口号与标题的元话语研究"
+   },
+   "sources": [
+    "https://doi.org/10.1016/s0378-2166(01)80026-6"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-027",
    "type": "Paper",
    "name": "Poststructural Writerly Representation: Screenplay as Creative Analytic Practice",
@@ -50867,6 +51933,26 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-002",
+   "type": "Paper",
+   "name": "Rational Versus Emotional Appeals in Newspaper Advertising: Copy, Art, and Layout Differences",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2009",
+    "被引": "74",
+    "DOI": "10.1080/10496490903281353",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "报纸广告理性vs情感诉求与文案/版式差异"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10496490903281353"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-004",
    "type": "Paper",
    "name": "Re-conceptualising screenwriting for the academy: the social, cultural and creative practice of developing a screenplay",
@@ -50884,6 +51970,26 @@
    "sources": [
     "10.1080/14790726.2015.1134580",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-010",
+   "type": "Paper",
+   "name": "Redefining Rational and Emotional Advertising Appeals as Available Processing Resources: Toward an Information Processing Perspective",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2019",
+    "被引": "41",
+    "DOI": "10.1080/10496491.2019.1699631",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "从信息加工视角重述理性/情感诉求"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10496491.2019.1699631"
    ]
   },
   {
@@ -51216,6 +52322,26 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-026",
+   "type": "Paper",
+   "name": "Surface‐structure transformations and advertising slogans: The case for moderate syntactic complexity",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2002",
+    "被引": "60",
+    "DOI": "10.1002/mar.10027",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "口号表层结构变换与适度句法复杂度"
+   },
+   "sources": [
+    "https://doi.org/10.1002/mar.10027"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-016",
    "type": "Paper",
    "name": "Teaching screenwriting in a time of storytelling blindness: the meeting of the auteur and the screenwriting tradition in Danish film-making",
@@ -51253,6 +52379,66 @@
    "sources": [
     "10.62959/wip-02-2016-09",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-028",
+   "type": "Paper",
+   "name": "The Analysis of some Stylistic Features of English Advertising Slogans",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2014",
+    "被引": "33",
+    "DOI": "10.15823/zz.2014.013",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "英语广告口号文体特征分析"
+   },
+   "sources": [
+    "https://doi.org/10.15823/zz.2014.013"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-033",
+   "type": "Paper",
+   "name": "The Curious Case of Behavioral Backlash: Why Brands Produce Priming Effects and Slogans Produce Reverse Priming Effects",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2010",
+    "被引": "146",
+    "DOI": "10.1086/656577",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "品牌启动与口号反向启动的差异"
+   },
+   "sources": [
+    "https://doi.org/10.1086/656577"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-037",
+   "type": "Paper",
+   "name": "The Effects of Associative Slogans on Tourists' Attitudes and Travel Intention",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2016",
+    "被引": "67",
+    "DOI": "10.1177/0047287515627029",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "联想口号对游客态度与出行意向的影响"
+   },
+   "sources": [
+    "https://doi.org/10.1177/0047287515627029"
    ]
   },
   {
@@ -51469,6 +52655,46 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-021",
+   "type": "Paper",
+   "name": "The Power of Emotional Advertising Appeals: Examining Their Influence on Consumer Purchasing Behavior and Brand–Customer Relationship",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2023",
+    "被引": "75",
+    "DOI": "10.3390/su151813337",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "情感诉求对购买行为与品牌关系的影响"
+   },
+   "sources": [
+    "https://doi.org/10.3390/su151813337"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-020",
+   "type": "Paper",
+   "name": "The Power of Emotional Appeals in Advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2010",
+    "被引": "82",
+    "DOI": "10.2501/s0021849910091336",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告情感诉求的力量"
+   },
+   "sources": [
+    "https://doi.org/10.2501/s0021849910091336"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-21",
    "type": "Paper",
    "name": "The Power of Feelings in Understanding Advertising Effects",
@@ -51651,6 +52877,26 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-006",
+   "type": "Paper",
+   "name": "The prevalence of emotional and rational tone in social advertising appeals",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2021",
+    "被引": "60",
+    "DOI": "10.1108/rausp-08-2020-0187",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "社会(公益)广告情感/理性诉求的普遍性"
+   },
+   "sources": [
+    "https://doi.org/10.1108/rausp-08-2020-0187"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-042",
    "type": "Paper",
    "name": "The pricing of soft and hard information: economic lessons from screenplay sales",
@@ -51668,6 +52914,26 @@
    "sources": [
     "10.1007/s10824-012-9183-5",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-012",
+   "type": "Paper",
+   "name": "The rhetorical functions of slogans: Classifications and characteristics",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1980",
+    "被引": "91",
+    "DOI": "10.1080/01463378009369362",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "口号修辞功能之分类与特征"
+   },
+   "sources": [
+    "https://doi.org/10.1080/01463378009369362"
    ]
   },
   {
@@ -51839,6 +53105,26 @@
    ]
   },
   {
+   "id": "Paper:OA-文案-034",
+   "type": "Paper",
+   "name": "What Makes a Slogan Memorable and Who Remembers It",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "1994",
+    "被引": "67",
+    "DOI": "10.1080/10641734.1994.10505018",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "口号可记忆性及记忆人群"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10641734.1994.10505018"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-020",
    "type": "Paper",
    "name": "What is Interactivity and is it Always Such a Good Thing? Implications of Defini",
@@ -51891,6 +53177,26 @@
    "sources": [
     "10.1111/j.1540-6245.2011.01484.x",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-文案-031",
+   "type": "Paper",
+   "name": "Why place branding is not about logos and slogans",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "广告文案",
+    "年份": "2013",
+    "被引": "128",
+    "DOI": "10.1057/pb.2013.11",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "地方品牌化不只是标识口号(批判)"
+   },
+   "sources": [
+    "https://doi.org/10.1057/pb.2013.11"
    ]
   },
   {
@@ -52453,6 +53759,25 @@
    ]
   },
   {
+   "id": "Theory:修辞学/语言风格理论",
+   "type": "Theory",
+   "name": "修辞学/语言风格理论",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "口号修辞格与语言风格通过对形式的注意与共鸣影响说服与记忆",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-012",
+    "Paper:OA-文案-013",
+    "Paper:OA-文案-018",
+    "Paper:OA-文案-028"
+   ]
+  },
+  {
    "id": "Theory:创意劳动理论",
    "type": "Theory",
    "name": "创意劳动理论",
@@ -52493,11 +53818,37 @@
    ],
    "props": {
     "定义": "受众被故事卷入并潜移默化地改变态度/信念",
-    "置信度": "LLM_INFERRED"
+    "置信度": "LLM_INFERRED",
+    "要点": "视频广告中的叙事/故事引起沉浸传输,弱化抗辩并提升态度与传播",
+    "专业": "广告文案"
    },
    "sources": [
     "Paper:OA-编剧-001",
-    "Paper:OA-编剧-048"
+    "Paper:OA-编剧-048",
+    "Paper:OA-文案-008",
+    "Paper:OA-文案-011",
+    "Paper:OA-文案-017",
+    "Paper:OA-文案-020",
+    "Paper:OA-文案-021"
+   ]
+  },
+  {
+   "id": "Theory:启动理论(口号品牌延伸)",
+   "type": "Theory",
+   "name": "启动理论(口号品牌延伸)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "口号作为启动刺激激活品牌/品类联想,进而影响品牌延伸与品牌资产评价",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-022",
+    "Paper:OA-文案-024",
+    "Paper:OA-文案-032",
+    "Paper:OA-文案-033"
    ]
   },
   {
@@ -52574,11 +53925,18 @@
    ],
    "props": {
     "说明": "说服双路径：高卷入走中心路径(论据)，低卷入走边缘路径(线索)",
-    "置信度": "LLM_INFERRED"
+    "置信度": "LLM_INFERRED",
+    "要点": "说服存在中心与边缘两条加工路径;高涉入走中心(论据),低涉入走边缘(情感/线索)",
+    "专业": "广告文案"
    },
    "sources": [
     "10.1086/208954",
-    "10.1080/02650487.2019.1634898"
+    "10.1080/02650487.2019.1634898",
+    "Paper:OA-文案-001",
+    "Paper:OA-文案-004",
+    "Paper:OA-文案-010",
+    "Paper:OA-文案-016",
+    "Paper:OA-文案-017"
    ]
   },
   {
@@ -52595,6 +53953,22 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-048"
+   ]
+  },
+  {
+   "id": "Theory:说服-文化价值理论",
+   "type": "Theory",
+   "name": "说服-文化价值理论",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "文化价值(个人主义/集体主义)决定何种诉求更有效,诉求需与文化契合",
+    "置信度": "LLM_INFERRED",
+    "专业": "广告文案"
+   },
+   "sources": [
+    "Paper:OA-文案-015"
    ]
   },
   {
@@ -109485,6 +110859,102 @@
    ]
   },
   {
+   "source": "Concept:广告诉求(理性/情感)",
+   "target": "Concept:加工路径(中心/边缘)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:广告诉求(理性/情感)",
+   "target": "Concept:诉求-品类匹配",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:诉求-品类匹配",
+   "target": "Concept:产品卷入度",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:口号修辞格",
+   "target": "Concept:口号记忆/识别",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:口号修辞格",
+   "target": "Concept:品牌-口号链接",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:口号简洁性",
+   "target": "Concept:口号记忆/识别",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:双语广告(情绪强度)",
+   "target": "Concept:口号修辞格",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:广告元话语",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:广告态度/品牌态度",
+   "target": "Concept:加工路径(中心/边缘)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:视频广告劝服线索",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:口号记忆/识别",
+   "target": "Concept:广告元话语",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:产品卷入度",
+   "target": "Concept:加工路径(中心/边缘)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
    "source": "NarrationExample:PHO-SC-4直白规格",
    "target": "NarrationRule:参数价值翻译律",
    "type": "example-contrasts",
@@ -110015,6 +111485,198 @@
   {
    "source": "Finding:消费者广告怀疑主义(广告警觉)提升时，广告说服效果下降",
    "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:理性诉求-高涉入科技品效应",
+   "target": "NarrationType:直白规格型",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:理性诉求-高涉入科技品效应",
+   "target": "AudienceMode:EXP",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:情感诉求-食品效应",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:情感诉求-食品效应",
+   "target": "AudienceMode:PUB",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:情感诉求-普通品效应",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:情感诉求-普通品效应",
+   "target": "AudienceMode:PUB",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:诉求-品类匹配效应",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:诉求-品类匹配效应",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:口号简洁-品名记忆效应",
+   "target": "FailureLesson:文案白名单",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:口号简洁-品名记忆效应",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:口号修辞-说服效应",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:口号修辞-说服效应",
+   "target": "FailureLesson:文案白名单",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:元话语-劝服效应",
+   "target": "FailureLesson:文案白名单",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:元话语-劝服效应",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:视频劝服线索-传播效应",
+   "target": "NarrationType:科普短视频",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:视频劝服线索-传播效应",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:口号句法复杂度-记忆效应",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:口号句法复杂度-记忆效应",
+   "target": "NarrationRule:语速档位",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:双语口号-情绪强度效应",
+   "target": "AudienceMode:PUB",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:双语口号-情绪强度效应",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:文化-诉求匹配效应",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:文化-诉求匹配效应",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:口号多义-加工效应",
+   "target": "FailureLesson:文案白名单",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:口号多义-加工效应",
+   "target": "Rule:概念先行",
    "type": "finding-evidence-for-rule",
    "domains": [
     "叙事"
@@ -110823,6 +112485,94 @@
   {
    "source": "Method:内容分析法",
    "target": "Rule:数据目检确认",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:内容分析法(广告语言)",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:内容分析法(广告语言)",
+   "target": "FailureLesson:文案白名单",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:内容分析法(广告语言)",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:受众实验(诉求操纵)",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:受众实验(诉求操纵)",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:元分析(广告效果)",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:计算机辅助文本分析",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:计算机辅助文本分析",
+   "target": "FailureLesson:文案白名单",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:计算机辅助文本分析",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:语言风格分析(口号修辞)",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:语言风格分析(口号修辞)",
+   "target": "FailureLesson:文案白名单",
    "type": "method-supports-rule",
    "domains": [
     "叙事"
@@ -111885,6 +113635,614 @@
    ]
   },
   {
+   "source": "Paper:OA-文案-001",
+   "target": "Concept:广告元话语",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-001",
+   "target": "Concept:加工路径(中心/边缘)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-002",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-002",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-003",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-003",
+   "target": "Concept:产品卷入度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-004",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-004",
+   "target": "Concept:诉求-品类匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-004",
+   "target": "Concept:产品卷入度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-005",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-006",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-007",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-007",
+   "target": "Concept:诉求-品类匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-007",
+   "target": "Concept:视频广告劝服线索",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-008",
+   "target": "Concept:诉求-品类匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-008",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-009",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-009",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-010",
+   "target": "Concept:加工路径(中心/边缘)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-010",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-011",
+   "target": "Concept:诉求-品类匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-011",
+   "target": "Concept:视频广告劝服线索",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-012",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-012",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-013",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-014",
+   "target": "Concept:双语广告(情绪强度)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-014",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-015",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-015",
+   "target": "Concept:诉求-品类匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-016",
+   "target": "Concept:加工路径(中心/边缘)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-016",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-017",
+   "target": "Concept:诉求-品类匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-017",
+   "target": "Concept:产品卷入度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-018",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-018",
+   "target": "Concept:品牌-口号链接",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-019",
+   "target": "Concept:视频广告劝服线索",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-019",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-019",
+   "target": "Concept:诉求-品类匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-020",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-020",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-021",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-021",
+   "target": "Concept:广告诉求(理性/情感)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-022",
+   "target": "Concept:品牌-口号链接",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-022",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-023",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-023",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-024",
+   "target": "Concept:品牌-口号链接",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-025",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-026",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-026",
+   "target": "Concept:口号简洁性",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-027",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-027",
+   "target": "Concept:口号简洁性",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-027",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-028",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-029",
+   "target": "Concept:双语广告(情绪强度)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-029",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-030",
+   "target": "Concept:口号简洁性",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-030",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-031",
+   "target": "Concept:品牌-口号链接",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-031",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-032",
+   "target": "Concept:品牌-口号链接",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-032",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-033",
+   "target": "Concept:品牌-口号链接",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-033",
+   "target": "Concept:加工路径(中心/边缘)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-034",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-034",
+   "target": "Concept:口号简洁性",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-035",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-035",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-036",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-036",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-037",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-037",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-038",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-038",
+   "target": "Concept:口号修辞格",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-039",
+   "target": "Concept:广告态度/品牌态度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-039",
+   "target": "Concept:口号记忆/识别",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
    "source": "Paper:OA-编剧-001",
    "target": "Finding:三幕结构清晰提升信息记忆",
    "type": "paper-finds",
@@ -112223,6 +114581,302 @@
   {
    "source": "Paper:OA-广告-47",
    "target": "Finding:互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-002",
+   "target": "Finding:理性诉求-高涉入科技品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-004",
+   "target": "Finding:理性诉求-高涉入科技品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-008",
+   "target": "Finding:理性诉求-高涉入科技品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-017",
+   "target": "Finding:理性诉求-高涉入科技品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-007",
+   "target": "Finding:情感诉求-食品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-019",
+   "target": "Finding:情感诉求-食品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-009",
+   "target": "Finding:情感诉求-普通品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-011",
+   "target": "Finding:情感诉求-普通品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-020",
+   "target": "Finding:情感诉求-普通品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-021",
+   "target": "Finding:情感诉求-普通品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-004",
+   "target": "Finding:诉求-品类匹配效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-008",
+   "target": "Finding:诉求-品类匹配效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-011",
+   "target": "Finding:诉求-品类匹配效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-017",
+   "target": "Finding:诉求-品类匹配效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-026",
+   "target": "Finding:口号简洁-品名记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-027",
+   "target": "Finding:口号简洁-品名记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-030",
+   "target": "Finding:口号简洁-品名记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-034",
+   "target": "Finding:口号简洁-品名记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-012",
+   "target": "Finding:口号修辞-说服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-013",
+   "target": "Finding:口号修辞-说服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-018",
+   "target": "Finding:口号修辞-说服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-028",
+   "target": "Finding:口号修辞-说服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-001",
+   "target": "Finding:元话语-劝服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-023",
+   "target": "Finding:元话语-劝服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-011",
+   "target": "Finding:视频劝服线索-传播效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-019",
+   "target": "Finding:视频劝服线索-传播效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-021",
+   "target": "Finding:视频劝服线索-传播效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-017",
+   "target": "Finding:视频劝服线索-传播效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-026",
+   "target": "Finding:口号句法复杂度-记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-027",
+   "target": "Finding:口号句法复杂度-记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-030",
+   "target": "Finding:口号句法复杂度-记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-014",
+   "target": "Finding:双语口号-情绪强度效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-029",
+   "target": "Finding:双语口号-情绪强度效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-015",
+   "target": "Finding:文化-诉求匹配效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-013",
+   "target": "Finding:口号多义-加工效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-018",
+   "target": "Finding:口号多义-加工效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-036",
+   "target": "Finding:口号多义-加工效应",
    "type": "paper-finds",
    "domains": [
     "叙事"
@@ -113637,6 +116291,134 @@
    ]
   },
   {
+   "source": "Paper:OA-文案-002",
+   "target": "Method:内容分析法(广告语言)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-007",
+   "target": "Method:内容分析法(广告语言)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-019",
+   "target": "Method:内容分析法(广告语言)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-004",
+   "target": "Method:受众实验(诉求操纵)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-009",
+   "target": "Method:受众实验(诉求操纵)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-011",
+   "target": "Method:受众实验(诉求操纵)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-016",
+   "target": "Method:受众实验(诉求操纵)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-017",
+   "target": "Method:元分析(广告效果)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-020",
+   "target": "Method:元分析(广告效果)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-023",
+   "target": "Method:计算机辅助文本分析",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-027",
+   "target": "Method:计算机辅助文本分析",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-012",
+   "target": "Method:语言风格分析(口号修辞)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-013",
+   "target": "Method:语言风格分析(口号修辞)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-018",
+   "target": "Method:语言风格分析(口号修辞)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-028",
+   "target": "Method:语言风格分析(口号修辞)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-029",
+   "target": "Method:语言风格分析(口号修辞)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
    "source": "Paper:OA-编剧-001",
    "target": "Theory:三幕结构理论",
    "type": "paper-uses",
@@ -114079,6 +116861,158 @@
   {
    "source": "Paper:OA-广告-46",
    "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-001",
+   "target": "Theory:精细加工可能性模型(ELM)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-004",
+   "target": "Theory:精细加工可能性模型(ELM)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-010",
+   "target": "Theory:精细加工可能性模型(ELM)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-016",
+   "target": "Theory:精细加工可能性模型(ELM)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-017",
+   "target": "Theory:精细加工可能性模型(ELM)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-015",
+   "target": "Theory:说服-文化价值理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-008",
+   "target": "Theory:叙事传输理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-011",
+   "target": "Theory:叙事传输理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-017",
+   "target": "Theory:叙事传输理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-020",
+   "target": "Theory:叙事传输理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-021",
+   "target": "Theory:叙事传输理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-012",
+   "target": "Theory:修辞学/语言风格理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-013",
+   "target": "Theory:修辞学/语言风格理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-018",
+   "target": "Theory:修辞学/语言风格理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-028",
+   "target": "Theory:修辞学/语言风格理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-022",
+   "target": "Theory:启动理论(口号品牌延伸)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-024",
+   "target": "Theory:启动理论(口号品牌延伸)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-032",
+   "target": "Theory:启动理论(口号品牌延伸)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-文案-033",
+   "target": "Theory:启动理论(口号品牌延伸)",
    "type": "paper-uses",
    "domains": [
     "叙事"
