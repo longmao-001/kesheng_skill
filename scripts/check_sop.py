@@ -54,6 +54,31 @@ def main():
     req("L3复核", any_of(["scientist-科学复核.md", "scientist-硬约束清单.md"]), "科学复核(L3事实检察官)", "scientist-科学复核.md")
     req("红队闸", any_of(["m4-gate-red.md", "m5-gate-red.md"]), "红队闸(前置/出口)", "m4-gate-red.md")
 
+    # 每镜 prompt 完整性（prompt SOP 十步考勤）：每镜必含 参考(挂载清单)/风格/时间轴/口播/声音/负面/参数
+    import re
+    PF = ["参考", "风格", "时间轴", "口播", "声音", "负面", "参数"]
+    md = os.path.join(run, "m4-prompts")
+    if os.path.isdir(md):
+        import glob as _glob
+        for pf in sorted(_glob.glob(os.path.join(md, "prompts-*.md"))):
+            shot = None; fields = set()
+            for line in io.open(pf, encoding="utf-8-sig"):
+                s = line.strip()
+                if s.startswith("### 镜头"):
+                    if shot is not None:
+                        missing = [f for f in PF if f not in fields]
+                        if missing: issues.append((f"prompt[{os.path.basename(pf)}] 镜{shot[:18]}", "每镜 prompt 字段不全(缺)", "/".join(missing)))
+                    shot = s; fields = set()
+                elif s.startswith("**") and "**：" in s:
+                    name = s[2:].split("**：", 1)[0].strip()
+                    fields.add(name)
+                elif s.startswith("**") and s.endswith("**"):
+                    nm = s[2:-2].strip()
+                    if nm in PF: fields.add(nm)
+            if shot is not None:
+                missing = [f for f in PF if f not in fields]
+                if missing: issues.append((f"prompt[{os.path.basename(pf)}] 镜{shot[:18]}", "每镜 prompt 字段不全(缺)", "/".join(missing)))
+
     if issues:
         print(f"== check_sop FAIL: 检出跳 SOP / 缺产物 {len(issues)} 步 ==")
         for step, desc, needed in issues:
