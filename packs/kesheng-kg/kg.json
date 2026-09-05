@@ -46322,6 +46322,27 @@
    ]
   },
   {
+   "id": "Concept:B2B工业品诉求(性能/可靠/一致)",
+   "type": "Concept",
+   "name": "B2B工业品诉求(性能/可靠/一致)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "面向专业采购者/工程师的工业品广告，强调性能/可靠性/一致性等理性买点",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-001",
+    "Paper:OA-科技广告词-002",
+    "Paper:OA-科技广告词-004",
+    "Paper:OA-科技广告词-006",
+    "Paper:OA-科技广告词-011",
+    "Paper:OA-科技广告词-017"
+   ]
+  },
+  {
    "id": "Concept:三幕结构",
    "type": "Concept",
    "name": "三幕结构",
@@ -46335,6 +46356,24 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:专家信任(科研数据语言)",
+   "type": "Concept",
+   "name": "专家信任(科研数据语言)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "用科研制图/数据语言/专业表达与专家对话群体沟通，获得专家信任",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-018",
+    "Paper:OA-科技广告词-025",
+    "Paper:OA-科技广告词-036"
    ]
   },
   {
@@ -46742,6 +46781,25 @@
    ]
   },
   {
+   "id": "Concept:应用证据(实测/案例)",
+   "type": "Concept",
+   "name": "应用证据(实测/案例)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "以使用场景/应用实测/客户案例作为说服证据，降低抽象技术的不确定感",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-010",
+    "Paper:OA-科技广告词-022",
+    "Paper:OA-科技广告词-023",
+    "Paper:OA-科技广告词-037"
+   ]
+  },
+  {
    "id": "Concept:态度向广告",
    "type": "Concept",
    "name": "态度向广告",
@@ -46805,6 +46863,45 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Concept:技术信息可核实性",
+   "type": "Concept",
+   "name": "技术信息可核实性",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "技术陈述能被权威/实测验真核实的程度，是科技品广告信任的前提",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-030",
+    "Paper:OA-科技广告词-031",
+    "Paper:OA-科技广告词-032",
+    "Paper:OA-科技广告词-035"
+   ]
+  },
+  {
+   "id": "Concept:权威/实测来源可信度",
+   "type": "Concept",
+   "name": "权威/实测来源可信度",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "权威机构/实测数据/专家背书带来的来源可信度，是驱动说服与态度的关键变量",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-014",
+    "Paper:OA-科技广告词-033",
+    "Paper:OA-科技广告词-034",
+    "Paper:OA-科技广告词-035",
+    "Paper:OA-科技广告词-036"
    ]
   },
   {
@@ -46898,6 +46995,101 @@
    ]
   },
   {
+   "id": "Concept:科技品卷入度与诉求匹配",
+   "type": "Concept",
+   "name": "科技品卷入度与诉求匹配",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "科技品卷入/涉入程度决定诉求路径：高卷入走理性中心、低卷入走情感/象征，需匹配",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-024",
+    "Paper:OA-科技广告词-025",
+    "Paper:OA-科技广告词-026",
+    "Paper:OA-科技广告词-029"
+   ]
+  },
+  {
+   "id": "Concept:科技品广告合规(绝对化禁忌)",
+   "type": "Concept",
+   "name": "科技品广告合规(绝对化禁忌)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "科技/科研广告禁用绝对化/疗效类表述，用可核实规格+数据替代，规避合规风险",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-030",
+    "Paper:OA-科技广告词-031",
+    "Paper:OA-科技广告词-032"
+   ]
+  },
+  {
+   "id": "Concept:科技品牌沟通(新技术采用)",
+   "type": "Concept",
+   "name": "科技品牌沟通(新技术采用)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "面向新技术采用/创新扩散的品牌沟通，降低采用焦虑并建立技术信任",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-011",
+    "Paper:OA-科技广告词-022",
+    "Paper:OA-科技广告词-023",
+    "Paper:OA-科技广告词-037"
+   ]
+  },
+  {
+   "id": "Concept:科技品理性诉求(规格/数据)",
+   "type": "Concept",
+   "name": "科技品理性诉求(规格/数据)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "以产品规格/技术参数/性能数据为核心的说服逻辑，适用于科技/科研/工业品，走理性中心路径",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-018",
+    "Paper:OA-科技广告词-021",
+    "Paper:OA-科技广告词-024",
+    "Paper:OA-科技广告词-025",
+    "Paper:OA-科技广告词-027",
+    "Paper:OA-科技广告词-028"
+   ]
+  },
+  {
+   "id": "Concept:科技品视觉隐喻/符号",
+   "type": "Concept",
+   "name": "科技品视觉隐喻/符号",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "用视觉隐喻与符号转译抽象技术，提升理解、记忆与区分度",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-017",
+    "Paper:OA-科技广告词-019",
+    "Paper:OA-科技广告词-020"
+   ]
+  },
+  {
    "id": "Concept:节拍",
    "type": "Concept",
    "name": "节拍",
@@ -46930,6 +47122,24 @@
     "Paper:OA-文案-011",
     "Paper:OA-文案-019",
     "Paper:OA-文案-021"
+   ]
+  },
+  {
+   "id": "Concept:认知负荷(技术堆砌)",
+   "type": "Concept",
+   "name": "认知负荷(技术堆砌)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "定义": "过多技术术语/参数/复杂陈述造成的认知负荷，降低加工深度与信任，需克制",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-006",
+    "Paper:OA-科技广告词-012",
+    "Paper:OA-科技广告词-018"
    ]
   },
   {
@@ -47128,6 +47338,25 @@
     "templates/narration-formula.md",
     "http://www.tianzhuniu.com/172.html",
     "https://m.instrument.com.cn/zhuti/44755/news.html"
+   ]
+  },
+  {
+   "id": "Finding:B2B工业品性能可靠-采购信任效应",
+   "type": "Finding",
+   "name": "B2B工业品性能可靠-采购信任效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "B2B/工业品强调性能/可靠性/一致性 → 专业采购者信任↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-002",
+    "Paper:OA-科技广告词-004",
+    "Paper:OA-科技广告词-006",
+    "Paper:OA-科技广告词-011",
+    "Paper:OA-科技广告词-017"
    ]
   },
   {
@@ -47364,6 +47593,24 @@
    ]
   },
   {
+   "id": "Finding:应用证据-科技品采用效应",
+   "type": "Finding",
+   "name": "应用证据-科技品采用效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "使用场景/应用证据(实测/案例) → 科技品采用意愿↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-010",
+    "Paper:OA-科技广告词-022",
+    "Paper:OA-科技广告词-023",
+    "Paper:OA-科技广告词-037"
+   ]
+  },
+  {
    "id": "Finding:开场钩子增强持续观看",
    "type": "Finding",
    "name": "开场钩子增强持续观看",
@@ -47466,6 +47713,24 @@
    ]
   },
   {
+   "id": "Finding:技术数据可核实-信任效应",
+   "type": "Finding",
+   "name": "技术数据可核实-信任效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "技术细节/数据可核实 → 信任↑; 过度技术堆砌 → 认知负荷↓(克制)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-030",
+    "Paper:OA-科技广告词-031",
+    "Paper:OA-科技广告词-032",
+    "Paper:OA-科技广告词-035"
+   ]
+  },
+  {
    "id": "Finding:改写迭代提升剧本完成度",
    "type": "Finding",
    "name": "改写迭代提升剧本完成度",
@@ -47510,6 +47775,24 @@
    },
    "sources": [
     "10.1080/15252019.2017.1366885"
+   ]
+  },
+  {
+   "id": "Finding:权威/实测来源可信-说服效应",
+   "type": "Finding",
+   "name": "权威/实测来源可信-说服效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "来源可信度(权威/实测/专家) → 广告说服与品牌态度↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-014",
+    "Paper:OA-科技广告词-033",
+    "Paper:OA-科技广告词-034",
+    "Paper:OA-科技广告词-036"
    ]
   },
   {
@@ -47614,6 +47897,92 @@
    ]
   },
   {
+   "id": "Finding:科技品广告创造-记忆区分效应",
+   "type": "Finding",
+   "name": "科技品广告创造-记忆区分效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "适度创意/鲜明主张 → 科技品广告记忆与区分度↑(不因堆砌牺牲可信)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-009",
+    "Paper:OA-科技广告词-010",
+    "Paper:OA-科技广告词-015"
+   ]
+  },
+  {
+   "id": "Finding:科技品新媒体低注意-简洁效应",
+   "type": "Finding",
+   "name": "科技品新媒体低注意-简洁效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "低注意/信息流环境 → 文案简洁+单点信息更有效",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-005",
+    "Paper:OA-科技广告词-006",
+    "Paper:OA-科技广告词-012"
+   ]
+  },
+  {
+   "id": "Finding:科技品理性规格诉求-专业可信效应",
+   "type": "Finding",
+   "name": "科技品理性规格诉求-专业可信效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "理性/规格诉求×科技/高涉入品 → 可信度/专业感↑ (适用: 直白规格型; 高涉入走中心路径)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-018",
+    "Paper:OA-科技广告词-024",
+    "Paper:OA-科技广告词-025",
+    "Paper:OA-科技广告词-027"
+   ]
+  },
+  {
+   "id": "Finding:科技品视觉隐喻-理解记忆效应",
+   "type": "Finding",
+   "name": "科技品视觉隐喻-理解记忆效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "视觉隐喻/符号转译抽象技术 → 科技品理解与记忆↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-017",
+    "Paper:OA-科技广告词-019",
+    "Paper:OA-科技广告词-020"
+   ]
+  },
+  {
+   "id": "Finding:科研数据语言-专家信任效应",
+   "type": "Finding",
+   "name": "科研数据语言-专家信任效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "科研设备用科研制图/数据/专业语言 → 专家(EXP)信任↑",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-018",
+    "Paper:OA-科技广告词-025",
+    "Paper:OA-科技广告词-036"
+   ]
+  },
+  {
    "id": "Finding:空间化书写适配新媒介",
    "type": "Finding",
    "name": "空间化书写适配新媒介",
@@ -47627,6 +47996,23 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-007"
+   ]
+  },
+  {
+   "id": "Finding:绝对化禁忌-合规信任效应",
+   "type": "Finding",
+   "name": "绝对化禁忌-合规信任效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "科技/科研广告避免绝对化(最/第一/根治) → 合规+信任↑ (接 ad_forbidden_words)",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-030",
+    "Paper:OA-科技广告词-031",
+    "Paper:OA-科技广告词-032"
    ]
   },
   {
@@ -47695,6 +48081,24 @@
    },
    "sources": [
     "10.1086/208954"
+   ]
+  },
+  {
+   "id": "Finding:高卷入理性优于情感-科技品效应",
+   "type": "Finding",
+   "name": "高卷入理性优于情感-科技品效应",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "结论": "产品卷入度高 → 理性诉求优于情感; 低卷入 → 情感/象征诉求更有效",
+    "置信度": "LLM_INFERRED"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-024",
+    "Paper:OA-科技广告词-026",
+    "Paper:OA-科技广告词-027",
+    "Paper:OA-科技广告词-029"
    ]
   },
   {
@@ -48215,6 +48619,25 @@
    ]
   },
   {
+   "id": "Method:内容分析法(科技/工业广告)",
+   "type": "Method",
+   "name": "内容分析法(科技/工业广告)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "对科技/工业广告文案、诉求、符号做系统编码与频次统计，归纳诉求与语言特征",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-001",
+    "Paper:OA-科技广告词-002",
+    "Paper:OA-科技广告词-018",
+    "Paper:OA-科技广告词-020"
+   ]
+  },
+  {
    "id": "Method:创意实践研究",
    "type": "Method",
    "name": "创意实践研究",
@@ -48268,6 +48691,25 @@
    ]
   },
   {
+   "id": "Method:受众实验(诉求操纵·科技品)",
+   "type": "Method",
+   "name": "受众实验(诉求操纵·科技品)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "操纵理性/情感诉求并测量信任/态度/购买意向，检验诉求主效应与卷入度调节",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-024",
+    "Paper:OA-科技广告词-025",
+    "Paper:OA-科技广告词-027",
+    "Paper:OA-科技广告词-028"
+   ]
+  },
+  {
    "id": "Method:定量实证",
    "type": "Method",
    "name": "定量实证",
@@ -48297,6 +48739,41 @@
    "sources": [
     "10.1080/14790726.2015.1134579",
     "10.1080/14790726.2015.1120314"
+   ]
+  },
+  {
+   "id": "Method:文献综述/议程(科技广告研究)",
+   "type": "Method",
+   "name": "文献综述/议程(科技广告研究)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "系统综诉B2B/科技广告研究并设定未来议程，提炼理论缺口",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-008",
+    "Paper:OA-科技广告词-009"
+   ]
+  },
+  {
+   "id": "Method:来源可信度实验(权威/实测)",
+   "type": "Method",
+   "name": "来源可信度实验(权威/实测)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "操纵权威/实测/专家等来源并测量说服与态度，识别可信度中介与调节",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-033",
+    "Paper:OA-科技广告词-034",
+    "Paper:OA-科技广告词-035"
    ]
   },
   {
@@ -48401,6 +48878,23 @@
    ]
   },
   {
+   "id": "Method:跨文化内容比较(B2B诉求)",
+   "type": "Method",
+   "name": "跨文化内容比较(B2B诉求)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "跨国家/跨语言比较B2B与高科技广告的诉求/符号，识别文化差异",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-001",
+    "Paper:OA-科技广告词-020"
+   ]
+  },
+  {
    "id": "Method:量表开发与验证",
    "type": "Method",
    "name": "量表开发与验证",
@@ -48415,6 +48909,24 @@
     "10.1080/00913367.1943.10673459",
     "10.1207/s15327663jcp0702_03",
     "10.1177/002224298905300204"
+   ]
+  },
+  {
+   "id": "Method:问卷/实证调查(工业品采购)",
+   "type": "Method",
+   "name": "问卷/实证调查(工业品采购)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "面向专业采购者/工程师做问卷与版面测试，评估广告文案长度/版式/关键买点",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-004",
+    "Paper:OA-科技广告词-006",
+    "Paper:OA-科技广告词-012"
    ]
   },
   {
@@ -49628,6 +50140,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-002",
+   "type": "Paper",
+   "name": "A Comparison of Advertising Content: Business to Business versus Consumer Services",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1997",
+    "被引": "140",
+    "DOI": "10.1080/00913367.1997.10673534",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B与消费者服务广告内容对比"
+   },
+   "sources": [
+    "https://doi.org/10.1080/00913367.1997.10673534"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-12",
    "type": "Paper",
    "name": "A Model for Predictive Measurements of Advertising Effectiveness",
@@ -49780,6 +50312,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-030",
+   "type": "Paper",
+   "name": "Advertising Claim Objectivity: Antecedents and Effects",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1993",
+    "被引": "199",
+    "DOI": "10.1177/002224299305700408",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "广告主张客观性的前因与效应"
+   },
+   "sources": [
+    "https://doi.org/10.1177/002224299305700408"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-041",
    "type": "Paper",
    "name": "Advertising Content and Consumer Engagement on Social Media: Evidence from Faceb",
@@ -49812,6 +50364,26 @@
    },
    "sources": [
     "10.1287/mnsc.2017.2902"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-022",
+   "type": "Paper",
+   "name": "Advertising Effectiveness of Different Media in Promoting Technology-Oriented Ideas among Young",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2016",
+    "被引": "3",
+    "DOI": "10.1080/10599231.2016.1235956",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "面向青年的技术导向理念广告媒介效果"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10599231.2016.1235956"
    ]
   },
   {
@@ -49882,6 +50454,26 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-018",
+   "type": "Paper",
+   "name": "Advertising for high-technology products in the product launch phase – a content-analysis",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2010",
+    "被引": "2",
+    "DOI": "10.1504/ijeme.2010.038645",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "高科技品上市期广告内容分析"
+   },
+   "sources": [
+    "https://doi.org/10.1504/ijeme.2010.038645"
    ]
   },
   {
@@ -50119,6 +50711,26 @@
    },
    "sources": [
     "10.2307/1251413"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-028",
+   "type": "Paper",
+   "name": "An Experimental Investigation of Comparative Advertising: Impact of Message Appeal, Information Level",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1980",
+    "被引": "134",
+    "DOI": "10.1177/002224378001700203",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "比较广告的信息诉求与信息量实验"
+   },
+   "sources": [
+    "https://doi.org/10.1177/002224378001700203"
    ]
   },
   {
@@ -50377,6 +50989,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-037",
+   "type": "Paper",
+   "name": "Assessing the impact of the Huawei Brand on the Information Communication Technology Infrastructure",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2020",
+    "被引": "3",
+    "DOI": "10.1007/978-3-030-47579-6_8",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "华为ICT基础设施品牌影响评估"
+   },
+   "sources": [
+    "https://doi.org/10.1007/978-3-030-47579-6_8"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-028",
    "type": "Paper",
    "name": "Attention Capture and Transfer in Advertising: Brand, Pictorial, and Text-Size E",
@@ -50444,6 +51076,26 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-016",
+   "type": "Paper",
+   "name": "B2B Advertising in an Emerging Economy: Rational vs. Emotional Appeals, and Gender Stereotypes",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2012",
+    "被引": "2",
+    "DOI": "",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "新兴市场B2B理性vs情感诉求与性别刻板"
+   },
+   "sources": [
+    "B2B Advertising in an Emerging Economy: Rational vs. Emotional Appeals, and Gender Stereotypes (2012)"
    ]
   },
   {
@@ -50559,6 +51211,66 @@
    },
    "sources": [
     "https://doi.org/10.1057/palgrave.bm.2540212"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-001",
+   "type": "Paper",
+   "name": "Business Advertising Appeals as a Mirror of Cultural Dimensions: A Study of Eleven Countries",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1996",
+    "被引": "354",
+    "DOI": "10.1080/00913367.1996.10673512",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B广告诉求镜像11国文化维度"
+   },
+   "sources": [
+    "https://doi.org/10.1080/00913367.1996.10673512"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-005",
+   "type": "Paper",
+   "name": "Business-to-Business Advertising: Which Layout Style Works Best?",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1992",
+    "被引": "33",
+    "DOI": "10.1080/00218499.1992.12466860",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B广告版式风格效果比较"
+   },
+   "sources": [
+    "https://doi.org/10.1080/00218499.1992.12466860"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-004",
+   "type": "Paper",
+   "name": "Business-to-business advertising: What are the dimensions of an effective print ad?",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1995",
+    "被引": "22",
+    "DOI": "10.1016/0019-8501(95)00028-9",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B有效平面广告的维度"
+   },
+   "sources": [
+    "https://doi.org/10.1016/0019-8501(95)00028-9"
    ]
   },
   {
@@ -50687,6 +51399,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-034",
+   "type": "Paper",
+   "name": "Comparative Advertising Effectiveness: The Role of Involvement and Source Credibility",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1991",
+    "被引": "269",
+    "DOI": "10.1080/00913367.1991.10673205",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "比较广告中卷入与来源可信度"
+   },
+   "sources": [
+    "https://doi.org/10.1080/00913367.1991.10673205"
+   ]
+  },
+  {
    "id": "Paper:OA-文案-027",
    "type": "Paper",
    "name": "Computer-aided content analysis: What do 240 advertising slogans have in common?",
@@ -50704,6 +51436,26 @@
    },
    "sources": [
     "https://doi.org/10.1007/bf00557312"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-019",
+   "type": "Paper",
+   "name": "Conceptualizing visual metaphors in high tech products advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2024",
+    "被引": "0",
+    "DOI": "10.33919/dasc.24.7.3",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "高科技品广告的视觉隐喻概念化"
+   },
+   "sources": [
+    "https://doi.org/10.33919/dasc.24.7.3"
    ]
   },
   {
@@ -50794,6 +51546,46 @@
    },
    "sources": [
     "https://doi.org/10.1086/510225"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-026",
+   "type": "Paper",
+   "name": "Consumer response to different advertising appeals for new products",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2010",
+    "被引": "122",
+    "DOI": "10.1057/bm.2010.22",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "新品不同广告诉求与消费响应"
+   },
+   "sources": [
+    "https://doi.org/10.1057/bm.2010.22"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-006",
+   "type": "Paper",
+   "name": "Copy length and industrial advertising readership",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1986",
+    "被引": "28",
+    "DOI": "10.1016/0019-8501(86)90034-9",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "工业广告文案长度与阅读率"
+   },
+   "sources": [
+    "https://doi.org/10.1016/0019-8501(86)90034-9"
    ]
   },
   {
@@ -50889,6 +51681,26 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-024",
+   "type": "Paper",
+   "name": "Different Impacts of Advertising Appeals on Advertising Attitude for High and Low Involvement Products",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2015",
+    "被引": "105",
+    "DOI": "10.1177/0972150915569936",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "高低卷入品诉求对广告态度的影响"
+   },
+   "sources": [
+    "https://doi.org/10.1177/0972150915569936"
    ]
   },
   {
@@ -51024,6 +51836,26 @@
    },
    "sources": [
     "https://doi.org/10.1515/saeb-2016-0130"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-014",
+   "type": "Paper",
+   "name": "Endorser gender and age effects in B2B advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2022",
+    "被引": "11",
+    "DOI": "10.1016/j.jbusres.2022.04.050",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B广告代言人性别年龄效应"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2022.04.050"
    ]
   },
   {
@@ -51179,6 +52011,26 @@
    "sources": [
     "10.2190/dm5y-fhem-cxqt-uexw",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-023",
+   "type": "Paper",
+   "name": "Forecasting of advertising effectiveness for renewable energy technologies",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2019",
+    "被引": "58",
+    "DOI": "10.1016/j.techfore.2019.04.009",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "可再生能源技术广告效果预测"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.techfore.2019.04.009"
    ]
   },
   {
@@ -51380,6 +52232,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-031",
+   "type": "Paper",
+   "name": "How Claim Specificity Can Improve Claim Credibility in Green Advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2018",
+    "被引": "59",
+    "DOI": "10.2501/jar-2018-001",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "主张具体性提升主张可信度"
+   },
+   "sources": [
+    "https://doi.org/10.2501/jar-2018-001"
+   ]
+  },
+  {
    "id": "Paper:OA-文案-022",
    "type": "Paper",
    "name": "How advertising slogans can prime evaluations of brand extensions",
@@ -51420,6 +52292,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-035",
+   "type": "Paper",
+   "name": "How the credibility of places affects the processing of advertising claims",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2023",
+    "被引": "7",
+    "DOI": "10.1016/j.jbusres.2023.114238",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "地方/来源可信度对广告主张加工"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.jbusres.2023.114238"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-036",
    "type": "Paper",
    "name": "INTERNET USES AND GRATIFICATIONS: A Structural Equation Model of Interactive Adv",
@@ -51452,6 +52344,26 @@
    },
    "sources": [
     "10.1080/00913367.2005.10639191"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-007",
+   "type": "Paper",
+   "name": "Improving industrial advertising copy",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1986",
+    "被引": "13",
+    "DOI": "10.1016/0019-8501(86)90052-0",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "工业广告文案的改进方法"
+   },
+   "sources": [
+    "https://doi.org/10.1016/0019-8501(86)90052-0"
    ]
   },
   {
@@ -51580,6 +52492,46 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-011",
+   "type": "Paper",
+   "name": "Is advertising an underappreciated driver of sales growth in B2B markets? Theoretical perspectives",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2020",
+    "被引": "24",
+    "DOI": "10.1016/j.indmarman.2020.02.019",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B市场广告对销售增长的驱动"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.indmarman.2020.02.019"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-017",
+   "type": "Paper",
+   "name": "Just Give Me the Facts: Literalism vs. Symbolism in B2B Advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2011",
+    "被引": "0",
+    "DOI": "",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B广告字面vs象征诉求"
+   },
+   "sources": [
+    "Just Give Me the Facts: Literalism vs. Symbolism in B2B Advertising (2011)"
+   ]
+  },
+  {
    "id": "Paper:OA-文案-023",
    "type": "Paper",
    "name": "Linguistic Characteristics of Commercial and Social Advertising Slogans",
@@ -51617,6 +52569,26 @@
    "sources": [
     "10.2307/40148705",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-012",
+   "type": "Paper",
+   "name": "Low attention advertising processing in B2B markets",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2007",
+    "被引": "37",
+    "DOI": "10.1108/08858620710773477",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B市场低注意广告加工"
+   },
+   "sources": [
+    "https://doi.org/10.1108/08858620710773477"
    ]
   },
   {
@@ -51693,6 +52665,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-032",
+   "type": "Paper",
+   "name": "Misinformation effects and rational advertising: consumer responses to advertising claims verifiability",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2024",
+    "被引": "0",
+    "DOI": "10.1504/ijima.2024.10062545",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "主张可核实性与理性广告/虚假信息"
+   },
+   "sources": [
+    "https://doi.org/10.1504/ijima.2024.10062545"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-017",
    "type": "Paper",
    "name": "Netflix speaks Arabic, Arabs speak Netflix: How SVOD is transforming Arabic series screenwriting",
@@ -51733,6 +52725,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-015",
+   "type": "Paper",
+   "name": "Operationalizing ad creativity and its effects in B2B advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2025",
+    "被引": "2",
+    "DOI": "10.1016/j.indmarman.2025.02.011",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B广告创造性的操作化与效应"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.indmarman.2025.02.011"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-25",
    "type": "Paper",
    "name": "Optimal Advertising Policy under Dynamic Conditions",
@@ -51765,6 +52777,26 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-033",
+   "type": "Paper",
+   "name": "Perceived Source Credibility and Advertising Persuasiveness: An Investigation of Moderators and Mediators",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2013",
+    "被引": "35",
+    "DOI": "10.1080/10641734.2013.787579",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "来源可信度与广告说服力(调节/中介)"
+   },
+   "sources": [
+    "https://doi.org/10.1080/10641734.2013.787579"
    ]
   },
   {
@@ -51860,6 +52892,26 @@
    },
    "sources": [
     "https://arxiv.org/abs/2012.11851"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-027",
+   "type": "Paper",
+   "name": "Predispositions and the comparative effectiveness of rational, emotional and discrepant appeals",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1987",
+    "被引": "99",
+    "DOI": "10.1007/bf02721951",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "理性/情感/不一致诉求的相对效果"
+   },
+   "sources": [
+    "https://doi.org/10.1007/bf02721951"
    ]
   },
   {
@@ -51990,6 +53042,26 @@
    },
    "sources": [
     "https://doi.org/10.1080/10496491.2019.1699631"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-009",
+   "type": "Paper",
+   "name": "Revisiting the theory of business-to-business advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2019",
+    "被引": "56",
+    "DOI": "10.1016/j.indmarman.2019.03.012",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "再审视B2B广告理论"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.indmarman.2019.03.012"
    ]
   },
   {
@@ -52247,6 +53319,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-020",
+   "type": "Paper",
+   "name": "Semiotic Tools in Technology for Promoting Hi-Tech Products in Chinese and Russian Advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2020",
+    "被引": "3",
+    "DOI": "10.1109/comsds49898.2020.9101316",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "中俄高科技品广告的符号工具"
+   },
+   "sources": [
+    "https://doi.org/10.1109/comsds49898.2020.9101316"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-34",
    "type": "Paper",
    "name": "Social Comparison and the Idealized Images of Advertising",
@@ -52359,6 +53451,26 @@
    "sources": [
     "10.1386/josc.1.1.59/1",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-010",
+   "type": "Paper",
+   "name": "Tell me a story: The role of narrative transportation and the C-suite in B2B advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2019",
+    "被引": "73",
+    "DOI": "10.1016/j.indmarman.2019.02.002",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B广告中叙事传输与高管叙事"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.indmarman.2019.02.002"
    ]
   },
   {
@@ -52512,6 +53624,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-021",
+   "type": "Paper",
+   "name": "The Impact of Advertising Appeals on Consumers' Perception of an Advertisement for a Technical Product",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2020",
+    "被引": "3",
+    "DOI": "10.1007/978-3-030-39165-2_85",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "技术品广告诉求对感知的影响"
+   },
+   "sources": [
+    "https://doi.org/10.1007/978-3-030-39165-2_85"
+   ]
+  },
+  {
    "id": "Paper:OA-广告-043",
    "type": "Paper",
    "name": "The Impact of Corporate Credibility and Celebrity Credibility on Consumer Reacti",
@@ -52579,6 +53711,26 @@
    },
    "sources": [
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-025",
+   "type": "Paper",
+   "name": "The Influence of Involvement on Information Processing of Rational Advertising Appeals",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2009",
+    "被引": "4",
+    "DOI": "10.3724/sp.j.1041.2009.00357",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "卷入对理性诉求信息加工的影响"
+   },
+   "sources": [
+    "https://doi.org/10.3724/sp.j.1041.2009.00357"
    ]
   },
   {
@@ -52817,6 +53969,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-029",
+   "type": "Paper",
+   "name": "The Role of User Involvement, User Involvement Types, Product Category Involvement and Advertising",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2019",
+    "被引": "6",
+    "DOI": "10.1177/0973258619851987",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "用户/品类卷入与广告效果"
+   },
+   "sources": [
+    "https://doi.org/10.1177/0973258619851987"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-041",
    "type": "Paper",
    "name": "The Screenplay as Postmodern Literary Exemplar: Authorial Distraction, Disappearance, Dissolution",
@@ -52937,6 +54109,26 @@
    ]
   },
   {
+   "id": "Paper:OA-科技广告词-013",
+   "type": "Paper",
+   "name": "The role of emotions in B2B product advertising on social media: a family business case study",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2022",
+    "被引": "13",
+    "DOI": "10.1108/jfbm-12-2021-0157",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B社媒产品广告中情绪作用(家族企业)"
+   },
+   "sources": [
+    "https://doi.org/10.1108/jfbm-12-2021-0157"
+   ]
+  },
+  {
    "id": "Paper:OA-编剧-036",
    "type": "Paper",
    "name": "The screenplay as text: academic scriptwriting as creative research",
@@ -52954,6 +54146,26 @@
    "sources": [
     "10.1080/14790726.2015.1133654",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-008",
+   "type": "Paper",
+   "name": "The untapped potential of B2B advertising: A literature review and future agenda",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2019",
+    "被引": "64",
+    "DOI": "10.1016/j.indmarman.2019.05.010",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B广告潜能的文献综述与议程"
+   },
+   "sources": [
+    "https://doi.org/10.1016/j.indmarman.2019.05.010"
    ]
   },
   {
@@ -52994,6 +54206,26 @@
    "sources": [
     "10.1386/josc.8.2.177_1",
     "https://api.openalex.org/works"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-036",
+   "type": "Paper",
+   "name": "Trust, advertising and science communication",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "2016",
+    "被引": "2",
+    "DOI": "10.22323/2.15050501",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "信任、广告与科学传播"
+   },
+   "sources": [
+    "https://doi.org/10.22323/2.15050501"
    ]
   },
   {
@@ -53157,6 +54389,26 @@
    },
    "sources": [
     "10.1080/00913367.2002.10673685"
+   ]
+  },
+  {
+   "id": "Paper:OA-科技广告词-003",
+   "type": "Paper",
+   "name": "What's Different about Business-to-Business Advertising?",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "专业": "科技广告词",
+    "年份": "1986",
+    "被引": "1",
+    "DOI": "10.1080/02650487.1986.11106965",
+    "域": "叙事",
+    "置信度": "DB_REFERENCE",
+    "说明": "B2B广告与消费广告的差异"
+   },
+   "sources": [
+    "https://doi.org/10.1080/02650487.1986.11106965"
    ]
   },
   {
@@ -53706,6 +54958,26 @@
    ]
   },
   {
+   "id": "Theory:B2B工业品购买决策理论",
+   "type": "Theory",
+   "name": "B2B工业品购买决策理论",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "工业品依赖专业/理性采购决策，广告以性能/可靠/一致等买点支持集体采购评估",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-004",
+    "Paper:OA-科技广告词-006",
+    "Paper:OA-科技广告词-009",
+    "Paper:OA-科技广告词-011",
+    "Paper:OA-科技广告词-017"
+   ]
+  },
+  {
    "id": "Theory:三幕结构理论",
    "type": "Theory",
    "name": "三幕结构理论",
@@ -53791,6 +55063,25 @@
    "sources": [
     "Paper:OA-编剧-001",
     "Paper:OA-编剧-048"
+   ]
+  },
+  {
+   "id": "Theory:创新扩散采用理论(科技品)",
+   "type": "Theory",
+   "name": "创新扩散采用理论(科技品)",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "科技品采用受创新属性/不确定性影响，广告提供信息与可核实证据以降低采用焦虑",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-011",
+    "Paper:OA-科技广告词-022",
+    "Paper:OA-科技广告词-023",
+    "Paper:OA-科技广告词-037"
    ]
   },
   {
@@ -53914,6 +55205,43 @@
    },
    "sources": [
     "10.1086/209242"
+   ]
+  },
+  {
+   "id": "Theory:科技品中心-边缘路径说服",
+   "type": "Theory",
+   "name": "科技品中心-边缘路径说服",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "科技品说服沿中心(论据/规格)与边缘(情感/象征)两条路径；高涉入走中心、低涉入走边缘",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-024",
+    "Paper:OA-科技广告词-025",
+    "Paper:OA-科技广告词-027"
+   ]
+  },
+  {
+   "id": "Theory:科技品来源可信度理论",
+   "type": "Theory",
+   "name": "科技品来源可信度理论",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "要点": "权威/专家/实测来源的可信度经由信赖中介提升广告说服力与信任",
+    "置信度": "LLM_INFERRED",
+    "专业": "科技广告词"
+   },
+   "sources": [
+    "Paper:OA-科技广告词-014",
+    "Paper:OA-科技广告词-033",
+    "Paper:OA-科技广告词-034",
+    "Paper:OA-科技广告词-036"
    ]
   },
   {
@@ -110898,6 +112226,86 @@
    ]
   },
   {
+   "source": "Concept:科技品理性诉求(规格/数据)",
+   "target": "Concept:技术信息可核实性",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:科技品理性诉求(规格/数据)",
+   "target": "Concept:科技品卷入度与诉求匹配",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:科技品卷入度与诉求匹配",
+   "target": "Concept:认知负荷(技术堆砌)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:技术信息可核实性",
+   "target": "Concept:科技品广告合规(绝对化禁忌)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:权威/实测来源可信度",
+   "target": "Concept:专家信任(科研数据语言)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:科技品视觉隐喻/符号",
+   "target": "Concept:科技品理性诉求(规格/数据)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:应用证据(实测/案例)",
+   "target": "Concept:科技品牌沟通(新技术采用)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:B2B工业品诉求(性能/可靠/一致)",
+   "target": "Concept:应用证据(实测/案例)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:专家信任(科研数据语言)",
+   "target": "Concept:科技品视觉隐喻/符号",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Concept:科技品广告合规(绝对化禁忌)",
+   "target": "Concept:认知负荷(技术堆砌)",
+   "type": "concept-related-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
    "source": "Concept:来源可信度",
    "target": "Concept:电子口碑eWOM",
    "type": "concept-related-to",
@@ -111532,6 +112940,190 @@
   {
    "source": "Finding:消费者广告怀疑主义(广告警觉)提升时，广告说服效果下降",
    "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品理性规格诉求-专业可信效应",
+   "target": "NarrationType:直白规格型",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品理性规格诉求-专业可信效应",
+   "target": "AudienceMode:EXP",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品理性规格诉求-专业可信效应",
+   "target": "AudienceMode:IND",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:技术数据可核实-信任效应",
+   "target": "NegativeRule:广告禁用词",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:技术数据可核实-信任效应",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:权威/实测来源可信-说服效应",
+   "target": "AudienceMode:EXP",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:权威/实测来源可信-说服效应",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:B2B工业品性能可靠-采购信任效应",
+   "target": "AudienceMode:IND",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:B2B工业品性能可靠-采购信任效应",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:高卷入理性优于情感-科技品效应",
+   "target": "NarrationType:直白规格型",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:高卷入理性优于情感-科技品效应",
+   "target": "AudienceMode:IND",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:绝对化禁忌-合规信任效应",
+   "target": "NegativeRule:广告禁用词",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:绝对化禁忌-合规信任效应",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科研数据语言-专家信任效应",
+   "target": "AudienceMode:EXP",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科研数据语言-专家信任效应",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:应用证据-科技品采用效应",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:应用证据-科技品采用效应",
+   "target": "AudienceMode:IND",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品视觉隐喻-理解记忆效应",
+   "target": "Rule:图文对位",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品视觉隐喻-理解记忆效应",
+   "target": "Rule:概念先行",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品新媒体低注意-简洁效应",
+   "target": "NarrationRule:语速档位",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品新媒体低注意-简洁效应",
+   "target": "Rule:五层检查体系",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品广告创造-记忆区分效应",
+   "target": "FailureLesson:文案白名单",
+   "type": "finding-evidence-for-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Finding:科技品广告创造-记忆区分效应",
+   "target": "Rule:概念先行",
    "type": "finding-evidence-for-rule",
    "domains": [
     "叙事"
@@ -112524,6 +114116,94 @@
   {
    "source": "Method:结构方程建模",
    "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:内容分析法(科技/工业广告)",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:内容分析法(科技/工业广告)",
+   "target": "FailureLesson:文案白名单",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:内容分析法(科技/工业广告)",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:受众实验(诉求操纵·科技品)",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:受众实验(诉求操纵·科技品)",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:来源可信度实验(权威/实测)",
+   "target": "Rule:概念先行",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:来源可信度实验(权威/实测)",
+   "target": "AudienceMode:EXP",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:跨文化内容比较(B2B诉求)",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:文献综述/议程(科技广告研究)",
+   "target": "Rule:五层检查体系",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:问卷/实证调查(工业品采购)",
+   "target": "Rule:图文对位",
+   "type": "method-supports-rule",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Method:问卷/实证调查(工业品采购)",
+   "target": "FailureLesson:文案白名单",
    "type": "method-supports-rule",
    "domains": [
     "叙事"
@@ -113682,6 +115362,366 @@
    ]
   },
   {
+   "source": "Paper:OA-科技广告词-018",
+   "target": "Concept:科技品理性诉求(规格/数据)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-021",
+   "target": "Concept:科技品理性诉求(规格/数据)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-024",
+   "target": "Concept:科技品理性诉求(规格/数据)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-025",
+   "target": "Concept:科技品理性诉求(规格/数据)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-027",
+   "target": "Concept:科技品理性诉求(规格/数据)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-028",
+   "target": "Concept:科技品理性诉求(规格/数据)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-030",
+   "target": "Concept:技术信息可核实性",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-031",
+   "target": "Concept:技术信息可核实性",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-032",
+   "target": "Concept:技术信息可核实性",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-035",
+   "target": "Concept:技术信息可核实性",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-014",
+   "target": "Concept:权威/实测来源可信度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-033",
+   "target": "Concept:权威/实测来源可信度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-034",
+   "target": "Concept:权威/实测来源可信度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-035",
+   "target": "Concept:权威/实测来源可信度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-036",
+   "target": "Concept:权威/实测来源可信度",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-001",
+   "target": "Concept:B2B工业品诉求(性能/可靠/一致)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-002",
+   "target": "Concept:B2B工业品诉求(性能/可靠/一致)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-004",
+   "target": "Concept:B2B工业品诉求(性能/可靠/一致)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-006",
+   "target": "Concept:B2B工业品诉求(性能/可靠/一致)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-011",
+   "target": "Concept:B2B工业品诉求(性能/可靠/一致)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-017",
+   "target": "Concept:B2B工业品诉求(性能/可靠/一致)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-024",
+   "target": "Concept:科技品卷入度与诉求匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-025",
+   "target": "Concept:科技品卷入度与诉求匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-026",
+   "target": "Concept:科技品卷入度与诉求匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-029",
+   "target": "Concept:科技品卷入度与诉求匹配",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-006",
+   "target": "Concept:认知负荷(技术堆砌)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-012",
+   "target": "Concept:认知负荷(技术堆砌)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-018",
+   "target": "Concept:认知负荷(技术堆砌)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-017",
+   "target": "Concept:科技品视觉隐喻/符号",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-019",
+   "target": "Concept:科技品视觉隐喻/符号",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-020",
+   "target": "Concept:科技品视觉隐喻/符号",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-030",
+   "target": "Concept:科技品广告合规(绝对化禁忌)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-031",
+   "target": "Concept:科技品广告合规(绝对化禁忌)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-032",
+   "target": "Concept:科技品广告合规(绝对化禁忌)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-010",
+   "target": "Concept:应用证据(实测/案例)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-022",
+   "target": "Concept:应用证据(实测/案例)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-023",
+   "target": "Concept:应用证据(实测/案例)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-037",
+   "target": "Concept:应用证据(实测/案例)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-018",
+   "target": "Concept:专家信任(科研数据语言)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-025",
+   "target": "Concept:专家信任(科研数据语言)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-036",
+   "target": "Concept:专家信任(科研数据语言)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-011",
+   "target": "Concept:科技品牌沟通(新技术采用)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-022",
+   "target": "Concept:科技品牌沟通(新技术采用)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-023",
+   "target": "Concept:科技品牌沟通(新技术采用)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-037",
+   "target": "Concept:科技品牌沟通(新技术采用)",
+   "type": "paper-about",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
    "source": "Paper:OA-文案-001",
    "target": "Concept:广告元话语",
    "type": "paper-about",
@@ -114628,6 +116668,326 @@
   {
    "source": "Paper:OA-广告-47",
    "target": "Finding:互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-018",
+   "target": "Finding:科技品理性规格诉求-专业可信效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-024",
+   "target": "Finding:科技品理性规格诉求-专业可信效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-025",
+   "target": "Finding:科技品理性规格诉求-专业可信效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-027",
+   "target": "Finding:科技品理性规格诉求-专业可信效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-030",
+   "target": "Finding:技术数据可核实-信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-031",
+   "target": "Finding:技术数据可核实-信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-032",
+   "target": "Finding:技术数据可核实-信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-035",
+   "target": "Finding:技术数据可核实-信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-014",
+   "target": "Finding:权威/实测来源可信-说服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-033",
+   "target": "Finding:权威/实测来源可信-说服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-034",
+   "target": "Finding:权威/实测来源可信-说服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-036",
+   "target": "Finding:权威/实测来源可信-说服效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-002",
+   "target": "Finding:B2B工业品性能可靠-采购信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-004",
+   "target": "Finding:B2B工业品性能可靠-采购信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-006",
+   "target": "Finding:B2B工业品性能可靠-采购信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-011",
+   "target": "Finding:B2B工业品性能可靠-采购信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-017",
+   "target": "Finding:B2B工业品性能可靠-采购信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-024",
+   "target": "Finding:高卷入理性优于情感-科技品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-026",
+   "target": "Finding:高卷入理性优于情感-科技品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-027",
+   "target": "Finding:高卷入理性优于情感-科技品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-029",
+   "target": "Finding:高卷入理性优于情感-科技品效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-030",
+   "target": "Finding:绝对化禁忌-合规信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-031",
+   "target": "Finding:绝对化禁忌-合规信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-032",
+   "target": "Finding:绝对化禁忌-合规信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-018",
+   "target": "Finding:科研数据语言-专家信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-025",
+   "target": "Finding:科研数据语言-专家信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-036",
+   "target": "Finding:科研数据语言-专家信任效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-010",
+   "target": "Finding:应用证据-科技品采用效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-022",
+   "target": "Finding:应用证据-科技品采用效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-023",
+   "target": "Finding:应用证据-科技品采用效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-037",
+   "target": "Finding:应用证据-科技品采用效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-017",
+   "target": "Finding:科技品视觉隐喻-理解记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-019",
+   "target": "Finding:科技品视觉隐喻-理解记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-020",
+   "target": "Finding:科技品视觉隐喻-理解记忆效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-005",
+   "target": "Finding:科技品新媒体低注意-简洁效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-006",
+   "target": "Finding:科技品新媒体低注意-简洁效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-012",
+   "target": "Finding:科技品新媒体低注意-简洁效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-009",
+   "target": "Finding:科技品广告创造-记忆区分效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-010",
+   "target": "Finding:科技品广告创造-记忆区分效应",
+   "type": "paper-finds",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-015",
+   "target": "Finding:科技品广告创造-记忆区分效应",
    "type": "paper-finds",
    "domains": [
     "叙事"
@@ -116338,6 +118698,150 @@
    ]
   },
   {
+   "source": "Paper:OA-科技广告词-001",
+   "target": "Method:内容分析法(科技/工业广告)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-002",
+   "target": "Method:内容分析法(科技/工业广告)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-018",
+   "target": "Method:内容分析法(科技/工业广告)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-020",
+   "target": "Method:内容分析法(科技/工业广告)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-024",
+   "target": "Method:受众实验(诉求操纵·科技品)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-025",
+   "target": "Method:受众实验(诉求操纵·科技品)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-027",
+   "target": "Method:受众实验(诉求操纵·科技品)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-028",
+   "target": "Method:受众实验(诉求操纵·科技品)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-033",
+   "target": "Method:来源可信度实验(权威/实测)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-034",
+   "target": "Method:来源可信度实验(权威/实测)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-035",
+   "target": "Method:来源可信度实验(权威/实测)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-001",
+   "target": "Method:跨文化内容比较(B2B诉求)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-020",
+   "target": "Method:跨文化内容比较(B2B诉求)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-008",
+   "target": "Method:文献综述/议程(科技广告研究)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-009",
+   "target": "Method:文献综述/议程(科技广告研究)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-004",
+   "target": "Method:问卷/实证调查(工业品采购)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-006",
+   "target": "Method:问卷/实证调查(工业品采购)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-012",
+   "target": "Method:问卷/实证调查(工业品采购)",
+   "type": "paper-proposes",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
    "source": "Paper:OA-文案-002",
    "target": "Method:内容分析法(广告语言)",
    "type": "paper-proposes",
@@ -116908,6 +119412,134 @@
   {
    "source": "Paper:OA-广告-46",
    "target": "Theory:使用与满足理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-024",
+   "target": "Theory:科技品中心-边缘路径说服",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-025",
+   "target": "Theory:科技品中心-边缘路径说服",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-027",
+   "target": "Theory:科技品中心-边缘路径说服",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-014",
+   "target": "Theory:科技品来源可信度理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-033",
+   "target": "Theory:科技品来源可信度理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-034",
+   "target": "Theory:科技品来源可信度理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-036",
+   "target": "Theory:科技品来源可信度理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-011",
+   "target": "Theory:创新扩散采用理论(科技品)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-022",
+   "target": "Theory:创新扩散采用理论(科技品)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-023",
+   "target": "Theory:创新扩散采用理论(科技品)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-037",
+   "target": "Theory:创新扩散采用理论(科技品)",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-004",
+   "target": "Theory:B2B工业品购买决策理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-006",
+   "target": "Theory:B2B工业品购买决策理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-009",
+   "target": "Theory:B2B工业品购买决策理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-011",
+   "target": "Theory:B2B工业品购买决策理论",
+   "type": "paper-uses",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "Paper:OA-科技广告词-017",
+   "target": "Theory:B2B工业品购买决策理论",
    "type": "paper-uses",
    "domains": [
     "叙事"

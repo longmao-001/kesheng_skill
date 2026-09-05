@@ -47,6 +47,7 @@ DOMAIN_MAP = {
     "papers-bianju-kg": "叙事", "papers-daoyan-kg": "导演", "papers-sheying-kg": "影像",
     "papers-dengguang-kg": "美术", "papers-diaodu-kg": "导演",
     "papers-wenan-kg": "叙事",
+    "papers-kj-wenan-kg": "叙事",
     "rednote-industry-kg": None,  # 特殊: 按实体类型分流(产业/叙事), 见 INDUSTRY_TYPE_DOMAIN
 }
 

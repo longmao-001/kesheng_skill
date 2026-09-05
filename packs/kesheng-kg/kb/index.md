@@ -143,7 +143,9 @@
 | IND | AudienceMode | 应用导向强调商业价值ROI | knowledge/templates/C-multi-audience-guide.md |
 | PUB | AudienceMode | 故事化叙事类比驱动 | knowledge/templates/C-multi-audience-guide.md |
 | STD | AudienceMode | 启发式展示前沿可能性 | knowledge/templates/C-multi-audience-guide.md |
+| B2B工业品诉求(性能/可靠/一致) | Concept | 面向专业采购者/工程师的工业品广告，强调性能/可靠性/一致性等理性买点 | Paper:OA-科技广告词-001 / Paper:OA-科技广告词-002 / Paper:OA-科技广告词-004 / Paper:OA-科技广告词-006 / Paper:OA-科技广告词-011 / Paper:OA-科技广告词-017 |
 | 三幕结构 | Concept | 三幕结构：建置/对抗/结局，叙事主线三段式骨架 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
+| 专家信任(科研数据语言) | Concept | 用科研制图/数据语言/专业表达与专家对话群体沟通，获得专家信任 | Paper:OA-科技广告词-018 / Paper:OA-科技广告词-025 / Paper:OA-科技广告词-036 |
 | 主题 | Concept | 主题：故事要表达的核心理念/意图 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 互动性 | Concept | 广告可被用户介入/回应的互动性程度 | 10.1080/00218499.1996.12466626 / 10.1080/10864415.2004.11044301 / 10.1080/00913367.2002.10673685 |
 | 产品卷入度 | Concept | 消费者对产品的卷入/涉入水平,高涉入走理性中心路径,低涉入走情感边缘路径 | Paper:OA-文案-003 / Paper:OA-文案-004 / Paper:OA-文案-010 / Paper:OA-文案-017 |
@@ -167,17 +169,26 @@
 | 广告效果层级 | Concept | 广告效果层级：注意→认知→态度→行为(AIDA式) | 10.1086/208954 / 10.1177/002224296102500611 / 10.1086/208994 |
 | 广告识别 | Concept | 受众对"这是广告"的识别、广告披露与广告警觉 | 10.1080/15252019.2017.1366885 / 10.1016/j.jretai.2014.09.005 |
 | 广告诉求(理性/情感) | Concept | 广告文案以理性信息(规格/功能/数据)或情感信息(感官/情绪/体验)为核心的说服逻辑 | Paper:OA-文案-001 / Paper:OA-文案-002 / Paper:OA-文案-003 / Paper:OA-文案-004 / Paper:OA-文案-005 / Paper:OA-文案-006 / Paper:OA-文案-008 |
+| 应用证据(实测/案例) | Concept | 以使用场景/应用实测/客户案例作为说服证据，降低抽象技术的不确定感 | Paper:OA-科技广告词-010 / Paper:OA-科技广告词-022 / Paper:OA-科技广告词-023 / Paper:OA-科技广告词-037 |
 | 态度向广告 | Concept | 消费者对"这条广告"本身的态度(Aad)；是连接广告刺激与品牌态度的关键中介 | 10.1177/002224298905300204 / 10.2307/3151660 / 10.1177/002224378602300205 |
 | 悬念 | Concept | 悬念：延迟信息释放制造的好奇与张力 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 情绪诉求 | Concept | 以情感/情绪为诉求的广告内容与情绪转移路径 | 10.1086/209123 / 10.1086/209124 / 10.1086/209063 |
 | 情节点 | Concept | 情节点：推动剧情节节推进、改变方向的关键转折事件 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
+| 技术信息可核实性 | Concept | 技术陈述能被权威/实测验真核实的程度，是科技品广告信任的前提 | Paper:OA-科技广告词-030 / Paper:OA-科技广告词-031 / Paper:OA-科技广告词-032 / Paper:OA-科技广告词-035 |
+| 权威/实测来源可信度 | Concept | 权威机构/实测数据/专家背书带来的来源可信度，是驱动说服与态度的关键变量 | Paper:OA-科技广告词-014 / Paper:OA-科技广告词-033 / Paper:OA-科技广告词-034 / Paper:OA-科技广告词-035 / Paper:OA-科技广告词-036 |
 | 来源可信度 | Concept | 内容信息源(品牌/网红/媒体)被感知的专业性与可信程度, 决定说服效果 | 10.1080/02650487.2019.1634898 / 10.1207/s15327663jcp0702_03 / 10.1080/00913367.2000.10673616 / https://doi.org/10.1080/15252019.2018.1533501 / https://doi.org/10.1016/j.intmar.2018.09.001 / https://doi.org/10.1086/296485 / https://doi.org/10.1016/j.smr.2014.05.001 |
 | 注意捕获 | Concept | 广告刺激(品牌/图画/文字)对注意的捕获与转移 | 10.1509/jmkg.68.2.36.27794 / 10.2307/1251376 |
 | 潜台词 | Concept | 潜台词：话外之意，说A蕴B | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 理性诉求 | Concept | 以功能/信息/价格对比为主要诉求的广告内容 | 10.1086/260231 / 10.1086/261408 / 10.1177/002224299806200204 |
 | 用户参与与电子口碑 | Concept | 用户对广告/品牌的参与、转发、口碑与互动(eWOM) | 10.1016/j.intmar.2009.07.002 / 10.1017/s0021849904040371 / 10.1287/mnsc.2017.2902 |
+| 科技品卷入度与诉求匹配 | Concept | 科技品卷入/涉入程度决定诉求路径：高卷入走理性中心、低卷入走情感/象征，需匹配 | Paper:OA-科技广告词-024 / Paper:OA-科技广告词-025 / Paper:OA-科技广告词-026 / Paper:OA-科技广告词-029 |
+| 科技品广告合规(绝对化禁忌) | Concept | 科技/科研广告禁用绝对化/疗效类表述，用可核实规格+数据替代，规避合规风险 | Paper:OA-科技广告词-030 / Paper:OA-科技广告词-031 / Paper:OA-科技广告词-032 |
+| 科技品牌沟通(新技术采用) | Concept | 面向新技术采用/创新扩散的品牌沟通，降低采用焦虑并建立技术信任 | Paper:OA-科技广告词-011 / Paper:OA-科技广告词-022 / Paper:OA-科技广告词-023 / Paper:OA-科技广告词-037 |
+| 科技品理性诉求(规格/数据) | Concept | 以产品规格/技术参数/性能数据为核心的说服逻辑，适用于科技/科研/工业品，走理性中心路径 | Paper:OA-科技广告词-018 / Paper:OA-科技广告词-021 / Paper:OA-科技广告词-024 / Paper:OA-科技广告词-025 / Paper:OA-科技广告词-027 / Paper:OA-科技广告词-028 |
+| 科技品视觉隐喻/符号 | Concept | 用视觉隐喻与符号转译抽象技术，提升理解、记忆与区分度 | Paper:OA-科技广告词-017 / Paper:OA-科技广告词-019 / Paper:OA-科技广告词-020 |
 | 节拍 | Concept | 节拍：剧本最小节奏单元，逐拍推进情感 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 视频广告劝服线索 | Concept | 视频广告中的社会/幽默/叙事等劝服线索如何驱动观看与传播 | Paper:OA-文案-007 / Paper:OA-文案-011 / Paper:OA-文案-019 / Paper:OA-文案-021 |
+| 认知负荷(技术堆砌) | Concept | 过多技术术语/参数/复杂陈述造成的认知负荷，降低加工深度与信任，需克制 | Paper:OA-科技广告词-006 / Paper:OA-科技广告词-012 / Paper:OA-科技广告词-018 |
 | 诉求-品类匹配 | Concept | 广告诉求与产品品类/卷入度匹配时说服更强,品类是诉求选择的调节变量 | Paper:OA-文案-004 / Paper:OA-文案-007 / Paper:OA-文案-008 / Paper:OA-文案-011 / Paper:OA-文案-017 |
 | 钩子 | Concept | 钩子：开场或段落间抓住注意的悬念/反差/问题 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 简洁即暴力 | CreativeRule | 最好的创意一句话能讲清(Simplicity as Violence) | libs/creative-director-skill/creative-director/SKILL.md / libs/creative-director-skill/creative-director/references/scoring-calibration.md |
@@ -190,6 +201,7 @@
 | 收口纪律 | DirectRule | 结尾必须有一句'归属句': 面向…/应用于…/自主知识产权/国产替代——三选一或组合, 不给纯参数无归属 | templates/narration-formula.md / http://www.tianzhuniu.com/172.html / https://m.instrument.com.cn/zhuti/44755/news.html |
 | 混合极规则 | DirectRule | 双受众时: 先直白宣读规格(给工程师) → 再一句价值翻译(给决策者) → 收口归属句; 拒绝长比喻与情绪堆叠 | templates/narration-formula.md / http://www.tianzhuniu.com/172.html / https://m.instrument.com.cn/zhuti/44755/news.html |
 | 禁修辞 | DirectRule | 直白型禁: 比喻/排比反问/感叹号/感性形容词(极致/完美/颠覆); 数字中性陈述(用'达/超/优于'而非'高达/仅'的 | templates/narration-formula.md / http://www.tianzhuniu.com/172.html / https://m.instrument.com.cn/zhuti/44755/news.html |
+| B2B工业品性能可靠-采购信任效应 | Finding | B2B/工业品强调性能/可靠性/一致性 → 专业采购者信任↑ | Paper:OA-科技广告词-002 / Paper:OA-科技广告词-004 / Paper:OA-科技广告词-006 / Paper:OA-科技广告词-011 / Paper:OA-科技广告词-017 |
 | 三幕结构清晰提升信息记忆 | Finding | 按清晰叙事结构(如三幕/序列)组织信息时，观众对关键信息/概念的记忆与理解显著提升。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 互动性的广告效果受个体特征与情境调节，并非总有利，可能适得其反 | Finding | —— | 10.1080/00913367.2002.10673685 / 10.1080/00913367.2002.10673665 |
 | 人物弧对齐强化主题传达 | Finding | 角色弧与发展与主题对齐时，叙事主题传达更清晰、更有力。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
@@ -204,26 +216,36 @@
 | 口号多义-加工效应 | Finding | 适度双关/多义口号 → 加工深度/品牌兴趣↑ (过度多义反损清晰) | Paper:OA-文案-013 / Paper:OA-文案-018 / Paper:OA-文案-036 |
 | 口号简洁-品名记忆效应 | Finding | 口号简短·含明确产品名 → 记忆/识别↑ (适用: 品牌记忆型口号) | Paper:OA-文案-026 / Paper:OA-文案-027 / Paper:OA-文案-030 / Paper:OA-文案-034 |
 | 品牌、图画、文字尺寸更大更醒目时，注意捕获与记忆更强 | Finding | —— | 10.1509/jmkg.68.2.36.27794 |
+| 应用证据-科技品采用效应 | Finding | 使用场景/应用证据(实测/案例) → 科技品采用意愿↑ | Paper:OA-科技广告词-010 / Paper:OA-科技广告词-022 / Paper:OA-科技广告词-023 / Paper:OA-科技广告词-037 |
 | 开场钩子增强持续观看 | Finding | 开场若干拍内设置钩子(悬念/反差/问题)显著提升观众继续观看的意愿。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 态度向广告(Aad)中介广告效果——广告好感提升会连带提升品牌态度与购买意向 | Finding | —— | 10.2307/3151660 / 10.2307/3150973 / 10.1177/002224378101800306 |
 | 悬念信息控制维持注意 | Finding | 延迟关键信息释放(信息控制)能在整体时长内维持观众注意力。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 情感诉求-普通品效应 | Finding | 情感诉求×普通低涉入品 → 品牌情感/参与↑ (适用: 大众消费广告词) | Paper:OA-文案-009 / Paper:OA-文案-011 / Paper:OA-文案-020 / Paper:OA-文案-021 |
 | 情感诉求-食品效应 | Finding | 情感/感官诉求×食品 → 食欲/购买冲动↑ (适用: 食品广告词) | Paper:OA-文案-007 / Paper:OA-文案-019 |
 | 情绪型广告通过情绪中介路径提升品牌态度，情绪中介效应显著 | Finding | —— | 10.1086/209123 / 10.1086/209124 / 10.1086/209063 |
+| 技术数据可核实-信任效应 | Finding | 技术细节/数据可核实 → 信任↑; 过度技术堆砌 → 认知负荷↓(克制) | Paper:OA-科技广告词-030 / Paper:OA-科技广告词-031 / Paper:OA-科技广告词-032 / Paper:OA-科技广告词-035 |
 | 改写迭代提升剧本完成度 | Finding | 结构化反馈驱动的开发/改写迭代显著提升剧本完成度与创意质量。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 文化-诉求匹配效应 | Finding | 个人主义文化×理性诉求 / 集体主义文化×情感诉求 → 说服↑ | Paper:OA-文案-015 |
 | 明确披露广告身份能提升广告识别，但可能降低广告态度(披露悖论) | Finding | —— | 10.1080/15252019.2017.1366885 |
+| 权威/实测来源可信-说服效应 | Finding | 来源可信度(权威/实测/专家) → 广告说服与品牌态度↑ | Paper:OA-科技广告词-014 / Paper:OA-科技广告词-033 / Paper:OA-科技广告词-034 / Paper:OA-科技广告词-036 |
 | 来源可信度(企业/名人可信度)提升时受众对广告与品牌的评价更正面 | Finding | —— | 10.1080/00913367.2000.10673616 |
 | 概念前置优于结论前置 | Finding | 先给出概念与定义、再展开论证，比先抛结论更贴合观众认知，信息留存更高。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 消费者广告怀疑主义(广告警觉)提升时，广告说服效果下降 | Finding | —— | 10.1207/s15327663jcp0702_03 |
 | 潜台词克制表达提升可信度 | Finding | 用潜台词与克制表达传递信息，比直白灌输更能降低观众抵触、提升信任。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 理性诉求-高涉入科技品效应 | Finding | 理性/规格诉求×科技/高涉入产品 → 可信度/专业感↑ (适用: 直白规格型; 高涉入走中心路径) | Paper:OA-文案-002 / Paper:OA-文案-004 / Paper:OA-文案-008 / Paper:OA-文案-017 |
 | 社交媒体广告的参与/社交特征提升用户参与与购买意向 | Finding | —— | 10.1016/j.intmar.2009.07.002 / 10.1080/00913367.2005.10639191 / 10.1016/j.ijinfomgt.2018.06.001 / 10.1287/mnsc.2017.2902 |
+| 科技品广告创造-记忆区分效应 | Finding | 适度创意/鲜明主张 → 科技品广告记忆与区分度↑(不因堆砌牺牲可信) | Paper:OA-科技广告词-009 / Paper:OA-科技广告词-010 / Paper:OA-科技广告词-015 |
+| 科技品新媒体低注意-简洁效应 | Finding | 低注意/信息流环境 → 文案简洁+单点信息更有效 | Paper:OA-科技广告词-005 / Paper:OA-科技广告词-006 / Paper:OA-科技广告词-012 |
+| 科技品理性规格诉求-专业可信效应 | Finding | 理性/规格诉求×科技/高涉入品 → 可信度/专业感↑ (适用: 直白规格型; 高涉入走中心路径) | Paper:OA-科技广告词-018 / Paper:OA-科技广告词-024 / Paper:OA-科技广告词-025 / Paper:OA-科技广告词-027 |
+| 科技品视觉隐喻-理解记忆效应 | Finding | 视觉隐喻/符号转译抽象技术 → 科技品理解与记忆↑ | Paper:OA-科技广告词-017 / Paper:OA-科技广告词-019 / Paper:OA-科技广告词-020 |
+| 科研数据语言-专家信任效应 | Finding | 科研设备用科研制图/数据/专业语言 → 专家(EXP)信任↑ | Paper:OA-科技广告词-018 / Paper:OA-科技广告词-025 / Paper:OA-科技广告词-036 |
 | 空间化书写适配新媒介 | Finding | 为VR/交互等新媒介采用空间化/可视化剧本格式，能显著增强叙事沉浸感。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
+| 绝对化禁忌-合规信任效应 | Finding | 科技/科研广告避免绝对化(最/第一/根治) → 合规+信任↑ (接 ad_forbidden_words) | Paper:OA-科技广告词-030 / Paper:OA-科技广告词-031 / Paper:OA-科技广告词-032 |
 | 节拍节奏驱动情感起伏 | Finding | 逐场景/逐节拍的节奏安排(节拍器)提升叙事的情感起伏与感染力。 | Paper:OA-编剧-001 / Paper:OA-编剧-007 |
 | 视频劝服线索-传播效应 | Finding | 视频广告劝服线索(社会/幽默/叙事) → 病毒传播/观看↑ | Paper:OA-文案-011 / Paper:OA-文案-019 / Paper:OA-文案-021 / Paper:OA-文案-017 |
 | 诉求-品类匹配效应 | Finding | 诉求与产品卷入度/品类类型匹配 → 广告态度↑ (匹配是关键调节变量) | Paper:OA-文案-004 / Paper:OA-文案-008 / Paper:OA-文案-011 / Paper:OA-文案-017 |
 | 高卷入情境下中心路径论证比边缘线索更有效，低卷入情境下边缘线索更有效 | Finding | —— | 10.1086/208954 |
+| 高卷入理性优于情感-科技品效应 | Finding | 产品卷入度高 → 理性诉求优于情感; 低卷入 → 情感/象征诉求更有效 | Paper:OA-科技广告词-024 / Paper:OA-科技广告词-026 / Paper:OA-科技广告词-027 / Paper:OA-科技广告词-029 |
 | 反常识型 | HookType | 挑战既有认知制造冲突 | knowledge/hooks/opening-hooks.md |
 | 悬念提问型 | HookType | 激发好奇心求知欲 | knowledge/hooks/opening-hooks.md |
 | 故事切入型 | HookType | 具体画面感开场再引科学 | knowledge/hooks/opening-hooks.md |
@@ -255,18 +277,24 @@
 | 元分析与综述 | Method | 对大量广告实证研究做系统综述与效应量汇总 | 10.2307/1251999 / 10.1287/mnsc.2017.2902 |
 | 内容分析法 | Method | 对广告文本/画面/内容特征进行系统编码的定性-定量方法 | 10.1016/0148-2963(95)00150-6 / 10.1080/00913367.2002.10673685 / 10.1287/mnsc.2017.2902 / https://doi.org/10.1002/mar.20761 / https://doi.org/10.1016/j.intmar.2012.01.002 / https://doi.org/10.1016/j.emj.2014.05.001 / https://doi.org/10.1080/00913367.2017.1297273 / https://doi.org/10.1108/17506181111156989 / https://doi.org/10.1080/10496491.2013.829160 / https://doi.org/10.1108/10610421311298687 / https://doi.org/10.1108/mip-07-2014-0135 / https://doi.org/10.1177/0163443717736118 / https://doi.org/10.1080/08838151.2011.570824 / https://doi.org/10.1108/jrim-05-2014-0023 / https://doi.org/10.1016/j.jada.2006.06.014 / https://doi.org/10.1080/10495142.2011.594779 / https://doi.org/10.1016/j.jbusres.2018.11.055 / https://doi.org/10.1016/j.pubrev.2018.04.010 / https://doi.org/10.1016/j.jbusres.2017.06.003 / https://doi.org/10.1016/j.jbusres.2018.10.030 / https://doi.org/10.1016/j.pubrev.2004.04.003 / https://doi.org/10.1016/j.smr.2014.05.001 / 10.1080/1369118x.2019.1585469 / 10.1177/2056305118790761 / 10.1353/cj.2020.0019 / 10.1080/01972243.2011.607025 / 10.14742/ajet.458 |
 | 内容分析法(广告语言) | Method | 对广告文案/口号做系统编码与频次统计,归纳诉求与语言特征 | Paper:OA-文案-002 / Paper:OA-文案-007 / Paper:OA-文案-019 |
+| 内容分析法(科技/工业广告) | Method | 对科技/工业广告文案、诉求、符号做系统编码与频次统计，归纳诉求与语言特征 | Paper:OA-科技广告词-001 / Paper:OA-科技广告词-002 / Paper:OA-科技广告词-018 / Paper:OA-科技广告词-020 |
 | 创意实践研究 | Method | 以创作实践本身作为研究对象的研究范式 | 10.1080/14790726.2015.1134579 / 10.1080/14790726.2015.1120314 |
 | 受众实验 | Method | 随机/受控实验(被试)检验广告刺激对态度与行为的因果效应 | 10.1086/208954 / 10.1080/02650487.2019.1634898 / 10.1080/00913367.1990.10673175 / 10.1080/00913367.2000.10673616 |
 | 受众实验(诉求操纵) | Method | 操纵理性/情感诉求并测量态度/购买意向,检验诉求主效应与调节 | Paper:OA-文案-009 / Paper:OA-文案-011 / Paper:OA-文案-016 / Paper:OA-文案-004 |
+| 受众实验(诉求操纵·科技品) | Method | 操纵理性/情感诉求并测量信任/态度/购买意向，检验诉求主效应与卷入度调节 | Paper:OA-科技广告词-024 / Paper:OA-科技广告词-025 / Paper:OA-科技广告词-027 / Paper:OA-科技广告词-028 |
 | 定量实证 | Method | 对剧本特征与结果做统计/相关性测量 | 10.1080/14790726.2015.1134579 / 10.1080/14790726.2015.1120314 |
 | 文本话语分析 | Method | 从语言学/话语视角分析剧本对话与语言 | 10.1080/14790726.2015.1134579 / 10.1080/14790726.2015.1120314 |
+| 文献综述/议程(科技广告研究) | Method | 系统综诉B2B/科技广告研究并设定未来议程，提炼理论缺口 | Paper:OA-科技广告词-008 / Paper:OA-科技广告词-009 |
+| 来源可信度实验(权威/实测) | Method | 操纵权威/实测/专家等来源并测量说服与态度，识别可信度中介与调节 | Paper:OA-科技广告词-033 / Paper:OA-科技广告词-034 / Paper:OA-科技广告词-035 |
 | 案例分析法 | Method | 对剧本文本进行细读/个案分析，提取结构与技法 | 10.1080/14790726.2015.1134579 / 10.1080/14790726.2015.1120314 |
 | 眼动追踪 | Method | 用眼动记录注意方向与驻留，刻画广告注意捕获 | 10.1509/jmkg.68.2.36.27794 |
 | 结构方程建模 | Method | 用结构方程模型检验广告变量间的中介/路径关系 | 10.1080/10864415.2004.11044301 / 10.1080/00913367.2005.10639191 / 10.1016/j.ijinfomgt.2018.06.001 |
 | 行业访谈民族志 | Method | 对编剧从业者的访谈与田野观察，揭示行业实践 | 10.1080/14790726.2015.1134579 / 10.1080/14790726.2015.1120314 |
 | 计算机辅助文本分析 | Method | 用程序对大批口号做词汇/句式自动分析,识别语言共性 | Paper:OA-文案-023 / Paper:OA-文案-027 |
 | 语言风格分析(口号修辞) | Method | 从文体学角度分析口号的修辞手法、句法与语言风格 | Paper:OA-文案-012 / Paper:OA-文案-013 / Paper:OA-文案-018 / Paper:OA-文案-028 / Paper:OA-文案-029 |
+| 跨文化内容比较(B2B诉求) | Method | 跨国家/跨语言比较B2B与高科技广告的诉求/符号，识别文化差异 | Paper:OA-科技广告词-001 / Paper:OA-科技广告词-020 |
 | 量表开发与验证 | Method | 开发并验证测量广告心理构念(卷入/怀疑/侵扰)的量表 | 10.1080/00913367.1943.10673459 / 10.1207/s15327663jcp0702_03 / 10.1177/002224298905300204 |
+| 问卷/实证调查(工业品采购) | Method | 面向专业采购者/工程师做问卷与版面测试，评估广告文案长度/版式/关键买点 | Paper:OA-科技广告词-004 / Paper:OA-科技广告词-006 / Paper:OA-科技广告词-012 |
 | 分组宣读(归类式) | NarrationDirectPattern | 按维度分组: 光谱性能→输出亮度→稳定性→寿命→产权→应用, 每维度1-2句 | templates/narration-formula.md / http://www.tianzhuniu.com/172.html / https://m.instrument.com.cn/zhuti/44755/news.html |
 | 参数+对比基准 | NarrationDirectPattern | 每个指标给参照系(同类水平/上一代/行业标准) | templates/narration-formula.md / http://www.tianzhuniu.com/172.html / https://m.instrument.com.cn/zhuti/44755/news.html |
 | 参数+应用一句 | NarrationDirectPattern | 规格连发后补一句'用来做什么' | templates/narration-formula.md / http://www.tianzhuniu.com/172.html / https://m.instrument.com.cn/zhuti/44755/news.html |
@@ -336,6 +364,7 @@
 | 标准叙事结构 | NarrativeStructure | 开头钩子→意义建立→核心内容→情感收尾→CTA | agents/screenwriter.md |
 | 申报片六镜头结构 | NarrativeStructure | 战略切入→痛点使命→核心架构→优势对比→愿景→CTA | knowledge/templates/A01-total-intro.md |
 | 痛点链结构 | NarrativeStructure | 任务/痛点→需求→亮点(数字)→证据 | knowledge/痛点链.md / knowledge/ad-copy.md |
+| A Comparison of Advertising Content: Business to Business versus Consumer Services | Paper | 科技广告词 | https://doi.org/10.1080/00913367.1997.10673534 |
 | A Model for Predictive Measurements of Advertising Effectiveness | Paper | 广告 | 10.1177/002224296102500611 |
 | A Model for Predictive Measurements of Advertising Effectiveness | Paper | 广告 | https://api.openalex.org/works |
 | A comparison of parents' and children's knowledge of brands and advertising slogans in the United States: implications for consumer socialization | Paper | 广告文案 | https://doi.org/10.1080/135272600750036346 |
@@ -344,12 +373,15 @@
 | Adapting Lesbians: Maria Maggenti and the Practice of Lesbian Screenwriting | Paper | 编剧 | 10.1093/adaptation/app004 / https://api.openalex.org/works |
 | Advertisement for a Semantics for Psychology | Paper | 广告 | https://api.openalex.org/works |
 | Advertising Appeals, Moderators, And Impact on Persuasion | Paper | 广告文案 | https://doi.org/10.2501/jar-2017-017 |
+| Advertising Claim Objectivity: Antecedents and Effects | Paper | 科技广告词 | https://doi.org/10.1177/002224299305700408 |
 | Advertising Content and Consumer Engagement on Social Media: Evidence from Faceb | Paper | 广告 | https://api.openalex.org/works |
 | Advertising Content and Consumer Engagement on Social Media: Evidence from Facebook | Paper | 广告 | 10.1287/mnsc.2017.2902 |
+| Advertising Effectiveness of Different Media in Promoting Technology-Oriented Ideas among Young | Paper | 科技广告词 | https://doi.org/10.1080/10599231.2016.1235956 |
 | Advertising Value and Advertising on the Web | Paper | 广告 | 10.1080/00218499.1996.12466626 |
 | Advertising Value and Advertising on the Web | Paper | 广告 | https://api.openalex.org/works |
 | Advertising as Information | Paper | 广告 | 10.1086/260231 |
 | Advertising as Information | Paper | 广告 | https://api.openalex.org/works |
+| Advertising for high-technology products in the product launch phase – a content-analysis | Paper | 科技广告词 | https://doi.org/10.1504/ijeme.2010.038645 |
 | Advertising, Breadth of Ownership, and Liquidity | Paper | 广告 | 10.1093/rfs/hhg039 |
 | Advertising, Breadth of Ownership, and Liquidity | Paper | 广告 | https://api.openalex.org/works |
 | Affect Intensity and the Consumer's Attitude toward High Impact Emotional Advertising Appeals | Paper | 广告文案 | https://doi.org/10.1080/00913367.1996.10673498 |
@@ -363,6 +395,7 @@
 | An Empirical Examination of the Structural Antecedents of Attitude toward the Ad | Paper | 广告 | https://api.openalex.org/works |
 | An Empirical Examination of the Structural Antecedents of Attitude toward the Ad in an Advertising Pretesting Context | Paper | 广告 | 10.1177/002224298905300204 |
 | An Empirical Examination of the Structural Antecedents of Attitude toward the Ad in an Advertising Pretesting Context | Paper | 广告 | 10.2307/1251413 |
+| An Experimental Investigation of Comparative Advertising: Impact of Message Appeal, Information Level | Paper | 科技广告词 | https://doi.org/10.1177/002224378001700203 |
 | An Experimental Study of the Relationship between Online Engagement and Advertis | Paper | 广告 | https://api.openalex.org/works |
 | An Experimental Study of the Relationship between Online Engagement and Advertising Effectiveness | Paper | 广告 | 10.1016/j.intmar.2009.07.002 |
 | An Investigation into the “Match-up” Hypothesis in Celebrity Advertising: When B | Paper | 广告 | https://api.openalex.org/works |
@@ -377,16 +410,21 @@
 | Are Product Attribute Beliefs the Only Mediator of Advertising Effects on Brand Attitude? | Paper | 广告 | 10.1177/002224378101800306 |
 | Assessing the Role of Emotions as Mediators of Consumer Responses to Advertising | Paper | 广告 | 10.1086/209123 |
 | Assessing the Role of Emotions as Mediators of Consumer Responses to Advertising | Paper | 广告 | https://api.openalex.org/works |
+| Assessing the impact of the Huawei Brand on the Information Communication Technology Infrastructure | Paper | 科技广告词 | https://doi.org/10.1007/978-3-030-47579-6_8 |
 | Attention Capture and Transfer in Advertising: Brand, Pictorial, and Text-Size E | Paper | 广告 | https://api.openalex.org/works |
 | Attention Capture and Transfer in Advertising: Brand, Pictorial, and Text-Size Effects | Paper | 广告 | 10.1509/jmkg.68.2.36.27794 |
 | Audience Involvement in Advertising: Four Levels | Paper | 广告 | 10.1086/208994 |
 | Audience Involvement in Advertising: Four Levels | Paper | 广告 | https://api.openalex.org/works |
+| B2B Advertising in an Emerging Economy: Rational vs. Emotional Appeals, and Gender Stereotypes | Paper | 科技广告词 | B2B Advertising in an Emerging Economy: Rational vs. Emotional Appeals, and Gender Stereotypes (2012) |
 | Be rational or be emotional: advertising appeals, service types and consumer responses | Paper | 广告文案 | https://doi.org/10.1108/ejm-10-2012-0613 |
 | Bilingualism and the Emotional Intensity of Advertising Language | Paper | 广告文案 | https://doi.org/10.1086/595022 |
 | Birds of a Feather: Informal Recruitment Practices and Gendered Outcomes for Screenwriting Work in the UK Film Industry | Paper | 编剧 | 10.1111/1467-954x.12242 / https://api.openalex.org/works |
 | Brand Positioning through Advertising in Asia, North America, and Europe: The Ro | Paper | 广告 | https://api.openalex.org/works |
 | Brand Positioning through Advertising in Asia, North America, and Europe: The Role of Global Consumer Culture | Paper | 广告 | 10.1177/002224299906300106 |
 | Brands affect slogans affect brands? Competitive interference, brand equity and the brand-slogan link | Paper | 广告文案 | https://doi.org/10.1057/palgrave.bm.2540212 |
+| Business Advertising Appeals as a Mirror of Cultural Dimensions: A Study of Eleven Countries | Paper | 科技广告词 | https://doi.org/10.1080/00913367.1996.10673512 |
+| Business-to-Business Advertising: Which Layout Style Works Best? | Paper | 科技广告词 | https://doi.org/10.1080/00218499.1992.12466860 |
+| Business-to-business advertising: What are the dimensions of an effective print ad? | Paper | 科技广告词 | https://doi.org/10.1016/0019-8501(95)00028-9 |
 | Captains of Consciousness: Advertising and the Social Roots of the Consumer Cult | Paper | 广告 | https://api.openalex.org/works |
 | Captains of Consciousness: Advertising and the Social Roots of the Consumer Culture | Paper | 广告 | 10.2307/1865368 |
 | Celebrity vs. Influencer endorsements in advertising: the role of identification | Paper | 广告 | https://api.openalex.org/works |
@@ -394,17 +432,22 @@
 | Central and Peripheral Routes to Advertising Effectiveness: The Moderating Role  | Paper | 广告 | https://api.openalex.org/works |
 | Central and Peripheral Routes to Advertising Effectiveness: The Moderating Role of Involvement | Paper | 广告 | 10.1086/208954 |
 | Cinematic virtual reality: Towards the spatialized screenplay | Paper | 编剧 | 10.1386/josc.9.2.191_1 / https://api.openalex.org/works |
+| Comparative Advertising Effectiveness: The Role of Involvement and Source Credibility | Paper | 科技广告词 | https://doi.org/10.1080/00913367.1991.10673205 |
 | Computer-aided content analysis: What do 240 advertising slogans have in common? | Paper | 广告文案 | https://doi.org/10.1007/bf00557312 |
+| Conceptualizing visual metaphors in high tech products advertising | Paper | 科技广告词 | https://doi.org/10.33919/dasc.24.7.3 |
 | Consumer Attitudes Toward Mobile Advertising: An Empirical Study | Paper | 广告 | 10.1080/10864415.2004.11044301 |
 | Consumer Attitudes Toward Mobile Advertising: An Empirical Study | Paper | 广告 | https://api.openalex.org/works |
 | Consumer Learning: Advertising and the Ambiguity of Product Experience | Paper | 广告 | 10.1086/209062 |
 | Consumer Learning: Advertising and the Ambiguity of Product Experience | Paper | 广告 | https://api.openalex.org/works |
 | Consumer Response to Polysemous Brand Slogans | Paper | 广告文案 | https://doi.org/10.1086/510225 |
+| Consumer response to different advertising appeals for new products | Paper | 科技广告词 | https://doi.org/10.1057/bm.2010.22 |
+| Copy length and industrial advertising readership | Paper | 科技广告词 | https://doi.org/10.1016/0019-8501(86)90034-9 |
 | Cultural influences in screenwriting: Australia vs. Hollywood | Paper | 编剧 | 10.1386/josc_00012_1 / https://api.openalex.org/works |
 | Darkening Ethan: John Ford's "The Searchers" (1956) from Novel to Screenplay to Screen | Paper | 编剧 | 10.2307/1225733 / https://api.openalex.org/works |
 | Destination brand positioning slogans – towards the development of a set of accountability criteria | Paper | 广告文案 | Destination brand positioning slogans – towards the development of a set of accountability criteria (2004) |
 | Development of a Scale to Measure Consumer Skepticism Toward Advertising | Paper | 广告 | 10.1207/s15327663jcp0702_03 |
 | Development of a Scale to Measure Consumer Skepticism Toward Advertising | Paper | 广告 | https://api.openalex.org/works |
+| Different Impacts of Advertising Appeals on Advertising Attitude for High and Low Involvement Products | Paper | 科技广告词 | https://doi.org/10.1177/0972150915569936 |
 | Disclosing Instagram Influencer Advertising: The Effects of Disclosure Language  | Paper | 广告 | https://api.openalex.org/works |
 | Disclosing Instagram Influencer Advertising: The Effects of Disclosure Language on Advertising Recognition, Attitudes, and Behavioral Intent | Paper | 广告 | 10.1080/15252019.2017.1366885 |
 | Discovering the Role of Emotional and Rational Appeals and Hidden Heterogeneity of Consumers in Advertising Copies for Sustainable Marketing | Paper | 广告文案 | https://doi.org/10.3390/su12125189 |
@@ -412,6 +455,7 @@
 | Dual-Modality Disclaimers, Emotional Appeals, and Production Techniques in Food Advertising Airing During Programs Rated for Children | Paper | 广告文案 | https://doi.org/10.2753/joa0091-3367380407 |
 | Emotional and rational product appeals in televised food advertisements for children: analysis of commercials shown on US broadcast networks | Paper | 广告文案 | https://doi.org/10.1177/1367493507082758 |
 | Emotional or Rational? The Determination of the Influence of Advertising Appeal on Advertising Effectiveness | Paper | 广告文案 | https://doi.org/10.1515/saeb-2016-0130 |
+| Endorser gender and age effects in B2B advertising | Paper | 科技广告词 | https://doi.org/10.1016/j.jbusres.2022.04.050 |
 | English or a Local Language in Advertising?: The Appreciation of Easy and Difficult English Slogans in the Netherlands | Paper | 广告文案 | https://doi.org/10.1177/0021943610364524 |
 | Equilibrium Distributions of Sales and Advertising Prices | Paper | 广告 | 10.2307/2296902 |
 | Equilibrium Distributions of Sales and Advertising Prices | Paper | 广告 | https://api.openalex.org/works |
@@ -420,6 +464,7 @@
 | Exploring the Relative Effectiveness of Emotional, Rational, and Combination Advertising Appeals on Sport Consumer Behavior | Paper | 广告文案 | https://doi.org/10.32731/smq.272.062018.02 |
 | Figures of Rhetoric in Advertising Language | Paper | 广告文案 | https://doi.org/10.1086/209459 |
 | Film as Art versus Film as Business: Differential Correlates of Screenplay Characteristics | Paper | 编剧 | 10.2190/dm5y-fhem-cxqt-uexw / https://api.openalex.org/works |
+| Forecasting of advertising effectiveness for renewable energy technologies | Paper | 科技广告词 | https://doi.org/10.1016/j.techfore.2019.04.009 |
 | Formatting the imagination: A reflection on screenwriting as a creative practice | Paper | 编剧 | 10.1386/josc.8.3.267_1 / https://api.openalex.org/works |
 | Four Screenplays of Ingmar Bergman | Paper | 编剧 | Paper:OA-编剧-037 / https://api.openalex.org/works |
 | Going negative : how political advertisements shrink and polarize the electorate | Paper | 广告 | — |
@@ -431,10 +476,13 @@
 | Homophily and Differential Returns: Sex Differences in Network Structure and Access in an Advertising Firm | Paper | 广告 | 10.2307/2393451 |
 | How Advertising Works: What Do We Really Know? | Paper | 广告 | 10.2307/1251999 |
 | How Advertising Works: What Do We Really Know? | Paper | 广告 | https://api.openalex.org/works |
+| How Claim Specificity Can Improve Claim Credibility in Green Advertising | Paper | 科技广告词 | https://doi.org/10.2501/jar-2018-001 |
 | How advertising slogans can prime evaluations of brand extensions | Paper | 广告文案 | https://doi.org/10.1002/mar.4220100106 |
 | How advertising slogans can prime evaluations of brand extensions: further empirical results | Paper | 广告文案 | https://doi.org/10.1108/10610429810244666 |
+| How the credibility of places affects the processing of advertising claims | Paper | 科技广告词 | https://doi.org/10.1016/j.jbusres.2023.114238 |
 | INTERNET USES AND GRATIFICATIONS: A Structural Equation Model of Interactive Adv | Paper | 广告 | https://api.openalex.org/works |
 | INTERNET USES AND GRATIFICATIONS: A Structural Equation Model of Interactive Advertising | Paper | 广告 | 10.1080/00913367.2005.10639191 |
+| Improving industrial advertising copy | Paper | 科技广告词 | https://doi.org/10.1016/0019-8501(86)90052-0 |
 | Information Processing from Advertisements: Toward an Integrative Framework | Paper | 广告 | 10.2307/1251376 |
 | Information Processing from Advertisements: Toward an Integrative Framework | Paper | 广告 | https://api.openalex.org/works |
 | Instructions and Artworks: Musical Scores, Theatrical Scripts, Architectural Plans, and Screenplays | Paper | 编剧 | 10.1093/aesthj/ayr029 / https://api.openalex.org/works |
@@ -442,21 +490,28 @@
 | Internet Advertising and the Generalized Second-Price Auction: Selling Billions of Dollars Worth of Keywords | Paper | 广告 | 10.1257/aer.97.1.242 |
 | Investigating the impact of social media advertising features on customer purcha | Paper | 广告 | https://api.openalex.org/works |
 | Investigating the impact of social media advertising features on customer purchase intention | Paper | 广告 | 10.1016/j.ijinfomgt.2018.06.001 |
+| Is advertising an underappreciated driver of sales growth in B2B markets? Theoretical perspectives | Paper | 科技广告词 | https://doi.org/10.1016/j.indmarman.2020.02.019 |
+| Just Give Me the Facts: Literalism vs. Symbolism in B2B Advertising | Paper | 科技广告词 | Just Give Me the Facts: Literalism vs. Symbolism in B2B Advertising (2011) |
 | Linguistic Characteristics of Commercial and Social Advertising Slogans | Paper | 广告文案 | https://doi.org/10.3846/cpe.2015.275 |
 | London Kills Me: Three Screenplays and Four Essays | Paper | 编剧 | 10.2307/40148705 / https://api.openalex.org/works |
+| Low attention advertising processing in B2B markets | Paper | 科技广告词 | https://doi.org/10.1108/08858620710773477 |
 | Me and You and Memento and Fargo: How Independent Screenplays Work | Paper | 编剧 | Paper:OA-编剧-045 / https://api.openalex.org/works |
 | Measuring Effectiveness of Video Advertisements | Paper | 1901.07366 | https://arxiv.org/abs/1901.07366 |
 | Measuring the Intrusiveness of Advertisements: Scale Development and Validation | Paper | 广告 | 10.1080/00913367.2002.10673665 |
 | Measuring the Intrusiveness of Advertisements: Scale Development and Validation | Paper | 广告 | https://api.openalex.org/works |
+| Misinformation effects and rational advertising: consumer responses to advertising claims verifiability | Paper | 科技广告词 | https://doi.org/10.1504/ijima.2024.10062545 |
 | Netflix speaks Arabic, Arabs speak Netflix: How SVOD is transforming Arabic series screenwriting | Paper | 编剧 | 10.1386/jammr_00034_1 / https://api.openalex.org/works |
 | No room for the fun stuff: the question of the screenplay in American indie cinema | Paper | 编剧 | 10.1386/josc.1.1.175/1 / https://api.openalex.org/works |
+| Operationalizing ad creativity and its effects in B2B advertising | Paper | 科技广告词 | https://doi.org/10.1016/j.indmarman.2025.02.011 |
 | Optimal Advertising Policy under Dynamic Conditions | Paper | 广告 | 10.2307/2551549 |
 | Optimal Advertising Policy under Dynamic Conditions | Paper | 广告 | https://api.openalex.org/works |
+| Perceived Source Credibility and Advertising Persuasiveness: An Investigation of Moderators and Mediators | Paper | 科技广告词 | https://doi.org/10.1080/10641734.2013.787579 |
 | Persuasion and Culture: Advertising Appeals in Individualistic and Collectivistic Societies | Paper | 广告文案 | https://doi.org/10.1006/jesp.1994.1016 |
 | Persuasion and advertising English: Metadiscourse in slogans and headlines | Paper | 广告文案 | https://doi.org/10.1016/s0378-2166(01)80026-6 |
 | Poststructural Writerly Representation: Screenplay as Creative Analytic Practice | Paper | 编剧 | 10.1177/1077800410393887 / https://api.openalex.org/works |
 | Poststructural Writerly Representation: Screenplay as Creative Analytic Practice | Paper | 编剧 | https://api.openalex.org/works |
 | Predicting Online Video Advertising Effects with Multimodal  | Paper | 2012.11851 | https://arxiv.org/abs/2012.11851 |
+| Predispositions and the comparative effectiveness of rational, emotional and discrepant appeals | Paper | 科技广告词 | https://doi.org/10.1007/bf02721951 |
 | Price and Advertising Signals of Product Quality | Paper | 广告 | 10.1086/261408 |
 | Price and Advertising Signals of Product Quality | Paper | 广告 | https://api.openalex.org/works |
 | Priming effects of television food advertising on eating behavior. | Paper | 广告 | 10.1037/a0014399 |
@@ -464,6 +519,7 @@
 | Rational Versus Emotional Appeals in Newspaper Advertising: Copy, Art, and Layout Differences | Paper | 广告文案 | https://doi.org/10.1080/10496490903281353 |
 | Re-conceptualising screenwriting for the academy: the social, cultural and creative practice of developing a screenplay | Paper | 编剧 | 10.1080/14790726.2015.1134580 / https://api.openalex.org/works |
 | Redefining Rational and Emotional Advertising Appeals as Available Processing Resources: Toward an Information Processing Perspective | Paper | 广告文案 | https://doi.org/10.1080/10496491.2019.1699631 |
+| Revisiting the theory of business-to-business advertising | Paper | 科技广告词 | https://doi.org/10.1016/j.indmarman.2019.03.012 |
 | SciCom Wiki: A Digital Library to Support the Science Commun | Paper | 2511.09248 | https://arxiv.org/abs/2511.09248 |
 | Screenplay: Cinema/videogames/interfaces | Paper | 编剧 | Paper:OA-编剧-038 / https://api.openalex.org/works |
 | Screenplay: The Foundations of Screenwriting | Paper | 编剧 | Paper:OA-编剧-001 / https://api.openalex.org/works |
@@ -477,12 +533,14 @@
 | Script development and the hidden practices of screenwriting: perspectives from industry professionals | Paper | 编剧 | 10.1080/14790726.2015.1120314 / https://api.openalex.org/works |
 | Scriptwriting as a creative, collaborative learning process of problem finding and problem solving | Paper | 编剧 | 10.7146/mediekultur.v25i46.1342 / https://api.openalex.org/works |
 | Scriptwriting in the Age of AI: Revolutionizing Storytelling with Artificial Intelligence | Paper | 编剧 | 10.46745/ilma.jmc.2023.04.01.02 |
+| Semiotic Tools in Technology for Promoting Hi-Tech Products in Chinese and Russian Advertising | Paper | 科技广告词 | https://doi.org/10.1109/comsds49898.2020.9101316 |
 | Social Comparison and the Idealized Images of Advertising | Paper | 广告 | 10.1086/209242 |
 | Social Comparison and the Idealized Images of Advertising | Paper | 广告 | https://api.openalex.org/works |
 | Some attitudes and trajectories in screenwriting research | Paper | 编剧 | 10.1386/josc.2.2.275_7 / https://api.openalex.org/works |
 | Some thoughts on analysing the screenplay, the process of screenplay writing and the balance between craft and creativity | Paper | 编剧 | 10.1386/jmpr.8.2.107_1 / https://api.openalex.org/works |
 | Surface‐structure transformations and advertising slogans: The case for moderate syntactic complexity | Paper | 广告文案 | https://doi.org/10.1002/mar.10027 |
 | Teaching screenwriting in a time of storytelling blindness: the meeting of the auteur and the screenwriting tradition in Danish film-making | Paper | 编剧 | 10.1386/josc.1.1.59/1 / https://api.openalex.org/works |
+| Tell me a story: The role of narrative transportation and the C-suite in B2B advertising | Paper | 科技广告词 | https://doi.org/10.1016/j.indmarman.2019.02.002 |
 | The Academic Screenplay: Approaching Screenwriting as a Research Practice | Paper | 编剧 | 10.62959/wip-02-2016-09 / https://api.openalex.org/works |
 | The Analysis of some Stylistic Features of English Advertising Slogans | Paper | 广告文案 | https://doi.org/10.15823/zz.2014.013 |
 | The Curious Case of Behavioral Backlash: Why Brands Produce Priming Effects and Slogans Produce Reverse Priming Effects | Paper | 广告文案 | https://doi.org/10.1086/656577 |
@@ -491,10 +549,12 @@
 | The Effects of Price-Comparison Advertising on Buyers' Perceptions of Acquisition Value, Transaction Value, and Behavioral Intentions | Paper | 广告 | 10.2307/1252160 |
 | The Effects of Price-Comparison Advertising on Buyers’ Perceptions of Acquisitio | Paper | 广告 | https://api.openalex.org/works |
 | The Effects of Price-Comparison Advertising on Buyers’ Perceptions of Acquisition Value, Transaction Value, and Behavioral Intentions | Paper | 广告 | 10.1177/002224299806200204 |
+| The Impact of Advertising Appeals on Consumers' Perception of an Advertisement for a Technical Product | Paper | 科技广告词 | https://doi.org/10.1007/978-3-030-39165-2_85 |
 | The Impact of Corporate Credibility and Celebrity Credibility on Consumer Reacti | Paper | 广告 | https://api.openalex.org/works |
 | The Impact of Corporate Credibility and Celebrity Credibility on Consumer Reaction to Advertisements and Brands | Paper | 广告 | 10.1080/00913367.2000.10673616 |
 | The Impact of Television Advertising: Learning Without Involvement | Paper | 广告 | 10.1086/267335 |
 | The Impact of Television Advertising: Learning Without Involvement | Paper | 广告 | https://api.openalex.org/works |
+| The Influence of Involvement on Information Processing of Rational Advertising Appeals | Paper | 科技广告词 | https://doi.org/10.3724/sp.j.1041.2009.00357 |
 | The Left Side of Paradise: The Screenwriting of John Howard Lawson | Paper | 编剧 | Paper:OA-编剧-024 / https://api.openalex.org/works |
 | The Lost Melody: Empirical Observations on Text-to-Video Gen | Paper | 2405.08720 | https://arxiv.org/abs/2405.08720 |
 | The Personal Involvement Inventory: Reduction, Revision, and Application to Adve | Paper | 广告 | https://api.openalex.org/works |
@@ -508,15 +568,19 @@
 | The Role of Attitude toward the Ad as a Mediator of Advertising Effectiveness: A | Paper | 广告 | https://api.openalex.org/works |
 | The Role of Attitude toward the Ad as a Mediator of Advertising Effectiveness: A Test of Competing Explanations | Paper | 广告 | 10.2307/3151660 |
 | The Role of Attitude toward the Ad as a Mediator of Advertising Effectiveness: A Test of Competing Explanations | Paper | 广告 | 10.1177/002224378602300205 |
+| The Role of User Involvement, User Involvement Types, Product Category Involvement and Advertising | Paper | 科技广告词 | https://doi.org/10.1177/0973258619851987 |
 | The Screenplay as Postmodern Literary Exemplar: Authorial Distraction, Disappearance, Dissolution | Paper | 编剧 | 10.1177/107780040000600405 / https://api.openalex.org/works |
 | The Total Filmmaker: thinking of screenwriting, directing and editing as one role | Paper | 编剧 | 10.1080/14790726.2016.1142571 / https://api.openalex.org/works |
 | The creativity maze: Exploring creativity in screenplay writing | Paper | 编剧 | 10.1037/a0037839 / https://api.openalex.org/works |
 | The prevalence of emotional and rational tone in social advertising appeals | Paper | 广告文案 | https://doi.org/10.1108/rausp-08-2020-0187 |
 | The pricing of soft and hard information: economic lessons from screenplay sales | Paper | 编剧 | 10.1007/s10824-012-9183-5 / https://api.openalex.org/works |
 | The rhetorical functions of slogans: Classifications and characteristics | Paper | 广告文案 | https://doi.org/10.1080/01463378009369362 |
+| The role of emotions in B2B product advertising on social media: a family business case study | Paper | 科技广告词 | https://doi.org/10.1108/jfbm-12-2021-0157 |
 | The screenplay as text: academic scriptwriting as creative research | Paper | 编剧 | 10.1080/14790726.2015.1133654 / https://api.openalex.org/works |
+| The untapped potential of B2B advertising: A literature review and future agenda | Paper | 科技广告词 | https://doi.org/10.1016/j.indmarman.2019.05.010 |
 | Thinking through the screenplay: The academy as a site for research-based script development | Paper | 编剧 | 10.1386/jwcp.9.1-2.149_1 / https://api.openalex.org/works |
 | Towards a critique of universalism in screenwriting criticism | Paper | 编剧 | 10.1386/josc.8.2.177_1 / https://api.openalex.org/works |
+| Trust, advertising and science communication | Paper | 科技广告词 | https://doi.org/10.22323/2.15050501 |
 | Typologies of the Popular Science Web Video | Paper | 1506.06149 | https://arxiv.org/abs/1506.06149 |
 | Unraveling the Personalization Paradox: The Effect of Information Collection and | Paper | 广告 | https://api.openalex.org/works |
 | Unraveling the Personalization Paradox: The Effect of Information Collection and Trust-Building Strategies on Online Advertisement Effectiveness | Paper | 广告 | 10.1016/j.jretai.2014.09.005 |
@@ -526,6 +590,7 @@
 | What Makes a Slogan Memorable and Who Remembers It | Paper | 广告文案 | https://doi.org/10.1080/10641734.1994.10505018 |
 | What is Interactivity and is it Always Such a Good Thing? Implications of Defini | Paper | 广告 | https://api.openalex.org/works |
 | What is Interactivity and is it Always Such a Good Thing? Implications of Definition, Person, and Situation for the Influence of Interactivity on Advertising Effectiveness | Paper | 广告 | 10.1080/00913367.2002.10673685 |
+| What's Different about Business-to-Business Advertising? | Paper | 科技广告词 | https://doi.org/10.1080/02650487.1986.11106965 |
 | Why Can't Screenplays Be Artworks? | Paper | 编剧 | 10.1111/j.1540-6245.2011.01484.x / https://api.openalex.org/works |
 | Why place branding is not about logos and slogans | Paper | 广告文案 | https://doi.org/10.1057/pb.2013.11 |
 | William Faulkner in Hollywood: Screenwriting for the Studios | Paper | 编剧 | Paper:OA-编剧-018 / https://api.openalex.org/works |
@@ -559,10 +624,12 @@
 | 品牌TVC五镜骨架 | ScriptTemplate | 5镜×3秒 | knowledge/tvc-ad-templates.md |
 | 带货11玩法速查 | ScriptTemplate | 先诊断痛点→再选玩法→再写prompt | knowledge/tvc-ad-templates.md |
 | 电商带货黄金3秒4镜 | ScriptTemplate | 15秒竖屏 | knowledge/tvc-ad-templates.md |
+| B2B工业品购买决策理论 | Theory | 工业品依赖专业/理性采购决策，广告以性能/可靠/一致等买点支持集体采购评估 | Paper:OA-科技广告词-004 / Paper:OA-科技广告词-006 / Paper:OA-科技广告词-009 / Paper:OA-科技广告词-011 / Paper:OA-科技广告词-017 |
 | 三幕结构理论 | Theory | 经典三幕(建置/对抗/结局)叙事结构框架 | Paper:OA-编剧-001 / Paper:OA-编剧-048 |
 | 使用与满足理论 | Theory | 受众主动使用媒介/广告以满足特定需求并形成态度 | 10.1080/10864415.2004.11044301 / 10.1080/00913367.2005.10639191 / 10.1017/s0021849904040371 / https://doi.org/10.1002/mar.20761 / https://doi.org/10.1016/j.emj.2014.05.001 / https://doi.org/10.1177/0022242919841034 / https://doi.org/10.1016/j.jbusres.2015.01.011 / https://doi.org/10.1080/02650487.2020.1788311 / https://doi.org/10.1016/j.chb.2016.06.022 / https://doi.org/10.1002/dir.10064 / https://doi.org/10.1108/mip-07-2014-0135 / https://doi.org/10.31580/jpvai.v2i2.896 / https://doi.org/10.2501/jar-2015-009 / https://doi.org/10.1108/mip-04-2018-0130 / 10.1080/13683500.2020.1810212 / 10.1080/1369118x.2019.1585469 / 10.1080/01972243.2011.607025 / 10.1177/2056305118790761 |
 | 修辞学/语言风格理论 | Theory | 口号修辞格与语言风格通过对形式的注意与共鸣影响说服与记忆 | Paper:OA-文案-012 / Paper:OA-文案-013 / Paper:OA-文案-018 / Paper:OA-文案-028 |
 | 创意劳动理论 | Theory | 把编剧视为一种受行业与社会结构约束的创造性劳动 | Paper:OA-编剧-001 / Paper:OA-编剧-048 |
+| 创新扩散采用理论(科技品) | Theory | 科技品采用受创新属性/不确定性影响，广告提供信息与可核实证据以降低采用焦虑 | Paper:OA-科技广告词-011 / Paper:OA-科技广告词-022 / Paper:OA-科技广告词-023 / Paper:OA-科技广告词-037 |
 | 剧本作为指令理论 | Theory | 剧本是给制作/表演的指令-蓝图，兼具艺术与功能属性 | Paper:OA-编剧-001 / Paper:OA-编剧-048 |
 | 叙事传输理论 | Theory | 受众被故事卷入并潜移默化地改变态度/信念 | Paper:OA-编剧-001 / Paper:OA-编剧-048 / Paper:OA-文案-008 / Paper:OA-文案-011 / Paper:OA-文案-017 / Paper:OA-文案-020 / Paper:OA-文案-021 |
 | 启动理论(口号品牌延伸) | Theory | 口号作为启动刺激激活品牌/品类联想,进而影响品牌延伸与品牌资产评价 | Paper:OA-文案-022 / Paper:OA-文案-024 / Paper:OA-文案-032 / Paper:OA-文案-033 |
@@ -570,6 +637,8 @@
 | 序列法 | Theory | 以8个序列为单位组织剧本的结构方法 | Paper:OA-编剧-001 / Paper:OA-编剧-048 |
 | 情感迁移与中介理论 | Theory | 广告唤起的情绪经由情感迁移/情绪中介影响品牌态度 | 10.1086/209123 / 10.1086/209124 / 10.1086/209063 |
 | 社会比较理论 | Theory | 消费者将广告理想化形象与自身比较，影响自我评价 | 10.1086/209242 |
+| 科技品中心-边缘路径说服 | Theory | 科技品说服沿中心(论据/规格)与边缘(情感/象征)两条路径；高涉入走中心、低涉入走边缘 | Paper:OA-科技广告词-024 / Paper:OA-科技广告词-025 / Paper:OA-科技广告词-027 |
+| 科技品来源可信度理论 | Theory | 权威/专家/实测来源的可信度经由信赖中介提升广告说服力与信任 | Paper:OA-科技广告词-014 / Paper:OA-科技广告词-033 / Paper:OA-科技广告词-034 / Paper:OA-科技广告词-036 |
 | 精细加工可能性模型(ELM) | Theory | 说服双路径：高卷入走中心路径(论据)，低卷入走边缘路径(线索) | 10.1086/208954 / 10.1080/02650487.2019.1634898 / Paper:OA-文案-001 / Paper:OA-文案-004 / Paper:OA-文案-010 / Paper:OA-文案-016 / Paper:OA-文案-017 |
 | 英雄之旅 | Theory | 坎贝尔式英雄旅程的单主体历险结构 | Paper:OA-编剧-001 / Paper:OA-编剧-048 |
 | 说服-文化价值理论 | Theory | 文化价值(个人主义/集体主义)决定何种诉求更有效,诉求需与文化契合 | Paper:OA-文案-015 |
