@@ -3379,6 +3379,7 @@
 | 宫格previz（整图成片与切片首帧） | ProcessRule | 一次生成九宫格分镜图定全片构图，再走整图一次成片或切片逐格当首帧两条路径。 | playbooks/storyboard-grid.md / playbooks/production-workflow.md / playbooks/platform-prompts.md |
 | 术语发音检查 | ProcessRule | 检查口播稿/字幕里的术语发音与多音字，术语错字是科研片重灾区，别指望 TTS 猜对。 | playbooks/production-workflow.md / agents/editor.md / playbooks/platform-prompts.md |
 | 科学报告进对话+docx/PPT | ProcessRule | 科学调查官 M2 完成后：完整报告写进对话(不压3行总结) + 产出 docx+PPT(可上图)；讲透 重点/时间/产品 | orchestration/ORCHESTRATION.md / templates/science-report.md / templates/science-ppt.md / agents/scientist.md |
+| 科学检察官(L3)报告规范 | ProcessRule | L3 事实检察官按 templates/l3-fact-inspector-report.md 报告：断言→证据(原文/ | templates/l3-fact-inspector-report.md / agents/inspector.md / agents/scientist.md |
 | 素材库命名规范 | ProcessRule | 源素材 `<用途>_<类型>_<主体>_<视角或部位>_<版本>`；生成资产 `项目_镜号_内容_版本`。名字要能回答  | templates/assets-inventory.md / playbooks/production-workflow.md |
 | 素材库建库（PDF-PPT抠图） | ProcessRule | 开工前把客户 PDF/PPT 全量抠图，按用途分级（可直接入镜/参考图/内容参考）建参考图库，素材是第一资产。 | playbooks/production-workflow.md / knowledge/图表层.md |
 | 素材智能入库(拆解+反推prompt+打分) | ProcessRule | 每张素材入库做三件套：①多模态拆解标签(物品/任务/场景/结构/质感/数据/品牌/实拍) ②AI合成反推prompt ③ | templates/assets-inventory.md / scripts/annotate_assets.py |
