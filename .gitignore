@@ -1,5 +1,10 @@
 # 运行时/媒体（不提交）
 runs/*
+_quarantine_tmp/
+
+# 项目运行时脚手架/临时（不提交）
+scripts/k7_append_*.py
+scripts/k7_*.py
 
 # Python
 __pycache__/
