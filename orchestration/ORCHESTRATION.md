@@ -119,7 +119,7 @@
    - 分镜师 → 分镜表 → `storyboard-分镜表.md`（附：需要首帧图的结构清单、三视图需求）
    - 声音设计师 → 声音方案 → `sound-声音方案.md`（BGM 情绪曲线/音效清单/配音建议）
 3. 摄影指导（等分镜表）→ 摄影方案 → `dop-摄影方案.md`（运镜/光影/拍法路线/参考资产需求，分镜表摄影扩展列）。
-4. **prompt 工程（并行 fan-out）**：按口播/镜头自然分段（每段 5-8 镜），每段派生 1 个 prompt 工程师 → `prompt-<section>.md`；**交付文件必须严格统一**：每平台一个 `prompts-<平台>.md`（字段名/顺序/文件名/风格token 全按 `templates/prompt-sheet.md` 强制规范），**必须通过校验脚本 `scripts/check_prompt_sheet.py <runs/<slug>>` 才能交付**。
+4. **prompt 工程（并行 fan-out）**：按口播/镜头自然分段（每段 5-8 镜），每段派生 1 个 prompt 工程师 → `prompt-<section>.md`；**逐镜写 prompt 按 `templates/prompt-sop.md` 十步**（取输入→定路线→选参考图[挂载清单→角色+部位+位置]→定主体→风格→时间轴→口播独立→负面[含广告禁用词]→参数→自检交付）；**交付文件必须严格统一**：每平台一个 `prompts-<平台>.md`（字段名/顺序/文件名/风格token 全按 `templates/prompt-sheet.md` 强制规范），**必须通过校验脚本 `scripts/check_prompt_sheet.py <runs/<slug>>` 才能交付**。
 5. **剪辑预计划（可与 prompt 并行）**：剪辑师 → `editor-剪辑预计划.md`（节奏/转场/字幕与图表层工作量）。
 6. 美术指导复核 VI 合规（色板/字体/图表层规范）；分镜师+摄影指导合议运镜列定稿。
 7. **科学顾问复核**（`subagent_fork` 或普通 subagent，只读 prompt 表+分镜+理解报告）：任何"待确认"表述进入 prompt 的，打回。
