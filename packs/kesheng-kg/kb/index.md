@@ -3455,6 +3455,7 @@
 | 需求错位 | FailureMode | 用户真正要的和正在做的不是同一件事 | agents/red-team.md / agents/audience-advocate.md / protocols/quality-gate.md |
 | M4前置拦截闸 | GateCheckpoint | M4 prompt定稿后、交付用户前 | protocols/quality-gate.md / agents/red-team.md |
 | M5出口评审闸 | GateCheckpoint | M5交付前 | protocols/quality-gate.md |
+| 广告禁用词(极限词+疗效+平台禁语) | NegativeRule | 广告词/文案/口播 交付前必扫禁用词(绝对化/疗效承诺/平台禁语)，`python scripts/ad_forbidd | scripts/ad_forbidden_words.py / knowledge/FAILURE-LIBRARY.md |
 | 事实性争议不折中 | RebuttalRule | 事实性争议不折中，查证或升级 | protocols/quality-gate.md |
 | 只评制品不评人 | RebuttalRule | 攻击方案不攻击角色；只谈制品不谈动机；只评制品不评人 | agents/red-team.md / protocols/quality-gate.md |
 | 少数派报告必须留档 | RebuttalRule | 即使被裁决否决，反对意见也必须原样记录在案，不许被和稀泥抹掉 | agents/red-team.md / protocols/quality-gate.md |
@@ -3466,6 +3467,8 @@
 | 品牌禁区 | Taboo | 不符合选定VI规范=硬性违规 | protocols/quality-gate.md |
 | 夸大疗效 | Taboo | 夸大疗效、夸大能力、误导公众的表述 | agents/red-team.md / protocols/quality-gate.md |
 | 平台审核红线 | Taboo | 真人脸参考图会被审核直接拦截 | playbooks/platform-prompts.md / protocols/quality-gate.md |
+| 广告疗效/功效承诺禁用 | Taboo | 医疗/保健/食品类禁疗效承诺：治愈/根治/疗效/有效率/抗癌/降三高/生发/壮阳/排毒/消炎 等夸大功能。检查器 ad_ | scripts/ad_forbidden_words.py |
+| 广告绝对化用语(极限词) | Taboo | 《广告法》绝对化/极限词禁用：最/最佳/第一/唯一/绝对/100%/顶级/国家级/世界级/全网最低/史无前例 等。检查器 | scripts/ad_forbidden_words.py / knowledge/ad-copy.md |
 | 数据与文字水印交给AI生成 | Taboo | 参数/曲线/表格/logo/字幕绝不交给AI生成 | agents/prompt-engineer.md / agents/director.md / protocols/quality-gate.md |
 | 误导性类比 | Taboo | 类比有误导性；翻译牺牲准确性 | agents/scientist.md / protocols/quality-gate.md |
 

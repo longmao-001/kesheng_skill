@@ -87,7 +87,7 @@
 | NarrationRule | 叙事 | 见片段 schema.yaml |
 | NarrationType | 叙事 | 见片段 schema.yaml |
 | NarrativeStructure | 叙事 | 见片段 schema.yaml |
-| NegativeRule | prompt | 见片段 schema.yaml |
+| NegativeRule | prompt/红队 | 见片段 schema.yaml |
 | Paper | prompt/产业/剪辑/受众/叙事/商业媒体/导演/工艺/影像/美术 | 见片段 schema.yaml |
 | PaperTopic | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | PatternNarration | 叙事 | 见片段 schema.yaml |
@@ -154,7 +154,7 @@
 | company-in-segment | 产业 | 见片段 schema.yaml |
 | company-in-trend | 产业 | 见片段 schema.yaml |
 | concept-in-domain | 产业/科学 | 见片段 schema.yaml |
-| concept-related-to | 产业/叙事/导演/工艺/影像/科学/美术 | 见片段 schema.yaml |
+| concept-related-to | 产业/叙事/导演/工艺/影像/科学/红队/美术 | 见片段 schema.yaml |
 | concept-uses-analogy | 科学 | 见片段 schema.yaml |
 | data-for-company | 科学 | 见片段 schema.yaml |
 | data-for-concept | 科学 | 见片段 schema.yaml |

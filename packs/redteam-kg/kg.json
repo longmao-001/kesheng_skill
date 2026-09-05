@@ -1,603 +1,1157 @@
 {
-  "schema_version": "1.0",
-  "pack": "redteam-kg",
-  "role": "红队",
-  "entities": [
-    {
-      "id": "FailureMode:科学错误",
-      "type": "FailureMode",
-      "name": "科学错误",
-      "props": {
-        "判定": "定量/因果表述错误、结论超出原论文主张",
-        "术语翻译": "翻译不得牺牲准确性"
-      },
-      "sources": ["agents/scientist.md"]
-    },
-    {
-      "id": "FailureMode:数据无出处",
-      "type": "FailureMode",
-      "name": "数据无出处",
-      "props": {
-        "判定": "定量数据须有出处，并带对比基准/样本量/显著性",
-        "铁律": "数据有出处；不确定标待确认"
-      },
-      "sources": ["agents/scientist.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:编造伪造数据",
-      "type": "FailureMode",
-      "name": "编造伪造数据",
-      "props": {
-        "判定": "绝不留编造；不确定标待确认",
-        "硬性违规": "M4前置拦截闸列为硬性违规项"
-      },
-      "sources": ["agents/scientist.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:PPT式视频",
-      "type": "FailureMode",
-      "name": "PPT式视频",
-      "props": {
-        "判定": "只写『缓慢推近』的匀速单运镜=不合格",
-        "要求": "每镜有变速/复合运镜，或画面内部运动"
-      },
-      "sources": ["knowledge/动感三来源.md", "playbooks/platform-prompts.md", "agents/director.md"]
-    },
-    {
-      "id": "FailureMode:超载prompt",
-      "type": "FailureMode",
-      "name": "超载prompt",
-      "props": {
-        "判定": "一个prompt里多主体/多动作/三个以上运镜",
-        "修正": "砍到1主体+1动作+≤2运镜"
-      },
-      "sources": ["agents/prompt-engineer.md", "playbooks/platform-prompts.md"]
-    },
-    {
-      "id": "FailureMode:标题党",
-      "type": "FailureMode",
-      "name": "标题党",
-      "props": {
-        "判定": "钩子和正文脱节=欺骗红线",
-        "要求": "钩子必须与正文紧密衔接"
-      },
-      "sources": ["agents/screenwriter.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:图文脱节",
-      "type": "FailureMode",
-      "name": "图文脱节",
-      "props": {
-        "判定": "旁白讲A画面演B；视觉噱头冲掉科学信息"
-      },
-      "sources": ["agents/director.md"]
-    },
-    {
-      "id": "FailureMode:术语塌方",
-      "type": "FailureMode",
-      "name": "术语塌方",
-      "props": {
-        "判定": "公众版连续两个未解释的术语；领导版讲机制细节",
-        "要求": "每个术语首次出现必须有解释（专家版除外）"
-      },
-      "sources": ["agents/audience-advocate.md", "agents/screenwriter.md"]
-    },
-    {
-      "id": "FailureMode:自嗨",
-      "type": "FailureMode",
-      "name": "自嗨",
-      "props": {
-        "判定": "团队在欣赏自己的聪明，观众却在第10秒划走"
-      },
-      "sources": ["agents/audience-advocate.md"]
-    },
-    {
-      "id": "FailureMode:密度失衡",
-      "type": "FailureMode",
-      "name": "密度失衡",
-      "props": {
-        "判定": "前30秒塞完全部干货，后2分钟注水",
-        "标准": "信息密度≥3个信息点/分钟"
-      },
-      "sources": ["agents/audience-advocate.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:节奏事故",
-      "type": "FailureMode",
-      "name": "节奏事故",
-      "props": {
-        "判定": "单镜头>10秒；连续3个同景别；没有远景锚定就切特写"
-      },
-      "sources": ["agents/director.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:抽象词",
-      "type": "FailureMode",
-      "name": "抽象词",
-      "props": {
-        "判定": "『电影感』『高级感』『震撼』等抽象词",
-        "修正": "全部替换成具体视觉事实"
-      },
-      "sources": ["agents/prompt-engineer.md", "playbooks/platform-prompts.md"]
-    },
-    {
-      "id": "FailureMode:平台错配",
-      "type": "FailureMode",
-      "name": "平台错配",
-      "props": {
-        "判定": "把Runway英文句式丢进即梦；运镜指令没放开头",
-        "其他": "忽略平台参考图/首尾帧特性"
-      },
-      "sources": ["agents/prompt-engineer.md", "playbooks/platform-prompts.md"]
-    },
-    {
-      "id": "FailureMode:图生视频复述画面",
-      "type": "FailureMode",
-      "name": "图生视频复述画面",
-      "props": {
-        "判定": "I2V的prompt复述画面内容",
-        "要求": "只写运动；画面内容由首帧图负责"
-      },
-      "sources": ["agents/prompt-engineer.md", "playbooks/platform-prompts.md"]
-    },
-    {
-      "id": "FailureMode:不可制作",
-      "type": "FailureMode",
-      "name": "不可制作",
-      "props": {
-        "判定": "精确结构走纯文生视频路线；单镜塞3个动作",
-        "其他": "需要角色表演但没有参考图方案"
-      },
-      "sources": ["agents/director.md"]
-    },
-    {
-      "id": "FailureMode:陈词滥调",
-      "type": "FailureMode",
-      "name": "陈词滥调",
-      "props": {
-        "判定": "『蓝色粒子汇聚成DNA』『科学家低头看显微镜』假笑"
-      },
-      "sources": ["agents/director.md"]
-    },
-    {
-      "id": "FailureMode:无聊",
-      "type": "FailureMode",
-      "name": "无聊",
-      "props": {
-        "判定": "开头平淡、段落没有推进感、结尾没有记忆点"
-      },
-      "sources": ["agents/screenwriter.md"]
-    },
-    {
-      "id": "FailureMode:混乱",
-      "type": "FailureMode",
-      "name": "混乱",
-      "props": {
-        "判定": "主线不清、信息堆砌、类比之间打架"
-      },
-      "sources": ["agents/screenwriter.md"]
-    },
-    {
-      "id": "FailureMode:错位",
-      "type": "FailureMode",
-      "name": "错位",
-      "props": {
-        "判定": "给学生版用申报腔；给专家版用网络梗",
-        "其他": "讲法未按锁定受众模式调整"
-      },
-      "sources": ["agents/audience-advocate.md"]
-    },
-    {
-      "id": "FailureMode:需求错位",
-      "type": "FailureMode",
-      "name": "需求错位",
-      "props": {
-        "判定": "用户真正要的和正在做的不是同一件事",
-        "痛点链": "亮点答不上『受众的什么任务需要它』即删"
-      },
-      "sources": ["agents/red-team.md", "agents/audience-advocate.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:开头无钩子",
-      "type": "FailureMode",
-      "name": "开头无钩子",
-      "props": {
-        "判定": "前5秒无钩子",
-        "处置": "重写开头"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:配音歧义读音",
-      "type": "FailureMode",
-      "name": "配音歧义读音",
-      "props": {
-        "判定": "术语发音错误、无歧义读音",
-        "处置": "改写文稿（同义词替换掉易错词）"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:品牌不一致",
-      "type": "FailureMode",
-      "name": "品牌不一致",
-      "props": {
-        "判定": "不符合选定VI规范",
-        "处置": "调整色彩/字体/转场"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:总时长超限",
-      "type": "FailureMode",
-      "name": "总时长超限",
-      "props": {
-        "判定": "不符合模板/简报要求",
-        "处置": "调整文稿长度"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "FailureMode:错误因果",
-      "type": "FailureMode",
-      "name": "错误因果",
-      "props": {
-        "判定": "因果链不成立；类比暗示了错误的因果",
-        "要求": "结论不超出原论文主张"
-      },
-      "sources": ["agents/scientist.md", "agents/red-team.md"]
-    },
-    {
-      "id": "Taboo:品牌禁区",
-      "type": "Taboo",
-      "name": "品牌禁区",
-      "props": {
-        "判定": "不符合选定VI规范=硬性违规",
-        "关联": "品牌一致性是检查维度；禁区为不可触碰的硬性红线"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "Taboo:平台审核红线",
-      "type": "Taboo",
-      "name": "平台审核红线",
-      "props": {
-        "判定": "真人脸参考图会被审核直接拦截",
-        "规避": "用授权素材/虚拟人像/线稿分镜规避",
-        "硬性违规": "M4前置拦截闸列为检查项"
-      },
-      "sources": ["playbooks/platform-prompts.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "Taboo:数据与文字水印交给AI生成",
-      "type": "Taboo",
-      "name": "数据与文字水印交给AI生成",
-      "props": {
-        "判定": "参数/曲线/表格/logo/字幕绝不交给AI生成",
-        "要求": "全部后期制作；prompt与负面词不出现文字水印",
-        "硬性违规": "M4前置拦截闸列为检查项"
-      },
-      "sources": ["agents/prompt-engineer.md", "agents/director.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "Taboo:夸大疗效",
-      "type": "Taboo",
-      "name": "夸大疗效",
-      "props": {
-        "判定": "夸大疗效、夸大能力、误导公众的表述",
-        "处置": "科学顾问终审全片：无编造/无夸大/无误导性类比"
-      },
-      "sources": ["agents/red-team.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "Taboo:误导性类比",
-      "type": "Taboo",
-      "name": "误导性类比",
-      "props": {
-        "判定": "类比有误导性；翻译牺牲准确性",
-        "处置": "类比有误导性时指出；终审无误导性类比"
-      },
-      "sources": ["agents/scientist.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "CheckDimension:画面相关性",
-      "type": "CheckDimension",
-      "name": "画面相关性",
-      "props": {
-        "标准": "分镜画面与文稿≥80%匹配",
-        "不通过处置": "加【画面建议】标注，重生成该镜"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "CheckDimension:配音准确度",
-      "type": "CheckDimension",
-      "name": "配音准确度",
-      "props": {
-        "标准": "术语发音正确、无歧义读音",
-        "不通过处置": "改写文稿（同义词替换掉易错词）"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "CheckDimension:节奏感",
-      "type": "CheckDimension",
-      "name": "节奏感",
-      "props": {
-        "标准": "单镜头≤10秒",
-        "不通过处置": "拆分或合并文稿段落"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "CheckDimension:镜头动感",
-      "type": "CheckDimension",
-      "name": "镜头动感",
-      "props": {
-        "标准": "无PPT式视频：每镜有变速/复合运镜或画面内部运动",
-        "不通过处置": "退回分镜重排运镜；成片不足时剪辑侧速度斜坡+音效补救"
-      },
-      "sources": ["protocols/quality-gate.md", "agents/director.md"]
-    },
-    {
-      "id": "CheckDimension:信息密度",
-      "type": "CheckDimension",
-      "name": "信息密度",
-      "props": {
-        "标准": "≥3个信息点/分钟",
-        "不通过处置": "删冗余、补干货"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "CheckDimension:开头吸引力",
-      "type": "CheckDimension",
-      "name": "开头吸引力",
-      "props": {
-        "标准": "前5秒有钩子",
-        "不通过处置": "重写开头"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "CheckDimension:品牌一致性",
-      "type": "CheckDimension",
-      "name": "品牌一致性",
-      "props": {
-        "标准": "符合选定VI规范",
-        "不通过处置": "调整色彩/字体/转场"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "CheckDimension:总时长",
-      "type": "CheckDimension",
-      "name": "总时长",
-      "props": {
-        "标准": "符合模板/简报要求",
-        "不通过处置": "调整文稿长度"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "AttackAngle:科学风险",
-      "type": "AttackAngle",
-      "name": "科学风险",
-      "props": {
-        "问什么": "如果审稿专家看到这条视频，哪个表述会被挂？"
-      },
-      "sources": ["agents/red-team.md"]
-    },
-    {
-      "id": "AttackAngle:传播风险",
-      "type": "AttackAngle",
-      "name": "传播风险",
-      "props": {
-        "问什么": "如果这条视频没火，最可能死在哪一秒？"
-      },
-      "sources": ["agents/red-team.md"]
-    },
-    {
-      "id": "AttackAngle:制作风险",
-      "type": "AttackAngle",
-      "name": "制作风险",
-      "props": {
-        "问什么": "哪个镜头最可能生成翻车？翻车了整个方案受多大影响？"
-      },
-      "sources": ["agents/red-team.md"]
-    },
-    {
-      "id": "AttackAngle:甲方风险",
-      "type": "AttackAngle",
-      "name": "甲方风险",
-      "props": {
-        "问什么": "用户真正要的和我们正在做的，是不是同一件事？"
-      },
-      "sources": ["agents/red-team.md"]
-    },
-    {
-      "id": "AttackAngle:伦理合规",
-      "type": "AttackAngle",
-      "name": "伦理合规",
-      "props": {
-        "问什么": "有没有夸大疗效、夸大能力、误导公众的表述？"
-      },
-      "sources": ["agents/red-team.md"]
-    },
-    {
-      "id": "GateCheckpoint:M4前置拦截闸",
-      "type": "GateCheckpoint",
-      "name": "M4前置拦截闸",
-      "props": {
-        "时机": "M4 prompt定稿后、交付用户前",
-        "执行者": "红队subagent（独立上下文）",
-        "检查依据": "硬性违规：科学错误/伪造数据/无出处/品牌禁区/平台审核红线/数据画面交给AI生成",
-        "产出": "runs/<项目>/m4-gate-red.md：pass/fail+逐条违规",
-        "裁决": "违规则打回对应段（≤2循环）"
-      },
-      "sources": ["protocols/quality-gate.md", "agents/red-team.md"]
-    },
-    {
-      "id": "GateCheckpoint:M5出口评审闸",
-      "type": "GateCheckpoint",
-      "name": "M5出口评审闸",
-      "props": {
-        "时机": "M5交付前",
-        "执行者": "Reviewer subagent（未参与创作的独立上下文）",
-        "检查依据": "七维检查表+里程碑验收清单+预注册标准",
-        "产出": "runs/<项目>/m5-gate-red.md：评分单+三态裁决+打回意见",
-        "裁决": "PASS≥0.85 / CONDITIONAL 0.70-0.84 / BLOCK<0.70或硬性违规，≤2循环"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "RebuttalRule:引用预注册标准",
-      "type": "RebuttalRule",
-      "name": "引用预注册标准",
-      "props": {
-        "要求": "每个反对引用Phase 0预注册的评审标准（『按钩子强度标准，这个方案……』）"
-      },
-      "sources": ["agents/red-team.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "RebuttalRule:禁止每点必杠",
-      "type": "RebuttalRule",
-      "name": "禁止每点必杠",
-      "props": {
-        "要求": "只打要害，一场会议提出1-3个最致命的反对"
-      },
-      "sources": ["agents/red-team.md"]
-    },
-    {
-      "id": "RebuttalRule:给出推翻条件",
-      "type": "RebuttalRule",
-      "name": "给出推翻条件",
-      "props": {
-        "要求": "每条反对必须给出推翻条件（『如果……我就撤回这条反对』）"
-      },
-      "sources": ["agents/red-team.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "RebuttalRule:只评制品不评人",
-      "type": "RebuttalRule",
-      "name": "只评制品不评人",
-      "props": {
-        "要求": "攻击方案不攻击角色；只谈制品不谈动机；只评制品不评人"
-      },
-      "sources": ["agents/red-team.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "RebuttalRule:少数派报告必须留档",
-      "type": "RebuttalRule",
-      "name": "少数派报告必须留档",
-      "props": {
-        "要求": "即使被裁决否决，反对意见也必须原样记录在案，不许被和稀泥抹掉"
-      },
-      "sources": ["agents/red-team.md", "protocols/quality-gate.md"]
-    },
-    {
-      "id": "RebuttalRule:事实性争议不折中",
-      "type": "RebuttalRule",
-      "name": "事实性争议不折中",
-      "props": {
-        "要求": "事实性争议不折中，查证或升级"
-      },
-      "sources": ["protocols/quality-gate.md"]
-    },
-    {
-      "id": "RebuttalRule:辩论最后发言",
-      "type": "RebuttalRule",
-      "name": "辩论最后发言",
-      "props": {
-        "要求": "辩论中永远最后发言，听完所有人再开火"
-      },
-      "sources": ["agents/red-team.md"]
-    },
-    {
-      "id": "RebuttalRule:逐场轮换视角",
-      "type": "RebuttalRule",
-      "name": "逐场轮换视角",
-      "props": {
-        "要求": "逐场轮换：科学风险/传播风险/制作风险/甲方风险/伦理合规"
-      },
-      "sources": ["agents/red-team.md"]
-    }
-  ],
-  "relations": [
-    { "source": "AttackAngle:科学风险", "target": "FailureMode:科学错误", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:科学风险", "target": "FailureMode:数据无出处", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:科学风险", "target": "FailureMode:编造伪造数据", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:科学风险", "target": "FailureMode:错误因果", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:传播风险", "target": "FailureMode:标题党", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:传播风险", "target": "FailureMode:术语塌方", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:传播风险", "target": "FailureMode:自嗨", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:传播风险", "target": "FailureMode:密度失衡", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:传播风险", "target": "FailureMode:无聊", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:传播风险", "target": "FailureMode:混乱", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:传播风险", "target": "FailureMode:错位", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:传播风险", "target": "FailureMode:开头无钩子", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:PPT式视频", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:超载prompt", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:图文脱节", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:节奏事故", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:抽象词", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:平台错配", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:图生视频复述画面", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:不可制作", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:陈词滥调", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:配音歧义读音", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:品牌不一致", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:制作风险", "target": "FailureMode:总时长超限", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:甲方风险", "target": "FailureMode:自嗨", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:甲方风险", "target": "FailureMode:错位", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:甲方风险", "target": "FailureMode:需求错位", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:甲方风险", "target": "FailureMode:品牌不一致", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:伦理合规", "target": "FailureMode:科学错误", "type": "angle-covers", "props": {} },
-    { "source": "AttackAngle:伦理合规", "target": "FailureMode:错误因果", "type": "angle-covers", "props": {} },
-
-    { "source": "FailureMode:PPT式视频", "target": "CheckDimension:镜头动感", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:标题党", "target": "CheckDimension:开头吸引力", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:图文脱节", "target": "CheckDimension:画面相关性", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:密度失衡", "target": "CheckDimension:信息密度", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:节奏事故", "target": "CheckDimension:节奏感", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:无聊", "target": "CheckDimension:开头吸引力", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:开头无钩子", "target": "CheckDimension:开头吸引力", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:配音歧义读音", "target": "CheckDimension:配音准确度", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:品牌不一致", "target": "CheckDimension:品牌一致性", "type": "failure-detected-by", "props": {} },
-    { "source": "FailureMode:总时长超限", "target": "CheckDimension:总时长", "type": "failure-detected-by", "props": {} },
-
-    { "source": "Taboo:品牌禁区", "target": "AttackAngle:甲方风险", "type": "taboo-flagged-by", "props": {} },
-    { "source": "Taboo:平台审核红线", "target": "AttackAngle:伦理合规", "type": "taboo-flagged-by", "props": {} },
-    { "source": "Taboo:数据与文字水印交给AI生成", "target": "AttackAngle:伦理合规", "type": "taboo-flagged-by", "props": {} },
-    { "source": "Taboo:夸大疗效", "target": "AttackAngle:伦理合规", "type": "taboo-flagged-by", "props": {} },
-    { "source": "Taboo:误导性类比", "target": "AttackAngle:科学风险", "type": "taboo-flagged-by", "props": {} },
-    { "source": "Taboo:误导性类比", "target": "AttackAngle:伦理合规", "type": "taboo-flagged-by", "props": {} },
-
-    { "source": "CheckDimension:画面相关性", "target": "GateCheckpoint:M5出口评审闸", "type": "dimension-in-gate", "props": {} },
-    { "source": "CheckDimension:配音准确度", "target": "GateCheckpoint:M5出口评审闸", "type": "dimension-in-gate", "props": {} },
-    { "source": "CheckDimension:节奏感", "target": "GateCheckpoint:M5出口评审闸", "type": "dimension-in-gate", "props": {} },
-    { "source": "CheckDimension:镜头动感", "target": "GateCheckpoint:M5出口评审闸", "type": "dimension-in-gate", "props": {} },
-    { "source": "CheckDimension:信息密度", "target": "GateCheckpoint:M5出口评审闸", "type": "dimension-in-gate", "props": {} },
-    { "source": "CheckDimension:开头吸引力", "target": "GateCheckpoint:M5出口评审闸", "type": "dimension-in-gate", "props": {} },
-    { "source": "CheckDimension:品牌一致性", "target": "GateCheckpoint:M5出口评审闸", "type": "dimension-in-gate", "props": {} },
-    { "source": "CheckDimension:总时长", "target": "GateCheckpoint:M5出口评审闸", "type": "dimension-in-gate", "props": {} },
-
-    { "source": "GateCheckpoint:M4前置拦截闸", "target": "Taboo:品牌禁区", "type": "gate-checks", "props": {} },
-    { "source": "GateCheckpoint:M4前置拦截闸", "target": "Taboo:平台审核红线", "type": "gate-checks", "props": {} },
-    { "source": "GateCheckpoint:M4前置拦截闸", "target": "Taboo:数据与文字水印交给AI生成", "type": "gate-checks", "props": {} },
-    { "source": "GateCheckpoint:M5出口评审闸", "target": "Taboo:夸大疗效", "type": "gate-checks", "props": {} },
-    { "source": "GateCheckpoint:M5出口评审闸", "target": "Taboo:误导性类比", "type": "gate-checks", "props": {} },
-
-    { "source": "RebuttalRule:引用预注册标准", "target": "GateCheckpoint:M4前置拦截闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:引用预注册标准", "target": "GateCheckpoint:M5出口评审闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:禁止每点必杠", "target": "GateCheckpoint:M4前置拦截闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:给出推翻条件", "target": "GateCheckpoint:M4前置拦截闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:给出推翻条件", "target": "GateCheckpoint:M5出口评审闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:只评制品不评人", "target": "GateCheckpoint:M4前置拦截闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:只评制品不评人", "target": "GateCheckpoint:M5出口评审闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:少数派报告必须留档", "target": "GateCheckpoint:M4前置拦截闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:事实性争议不折中", "target": "GateCheckpoint:M5出口评审闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:辩论最后发言", "target": "GateCheckpoint:M4前置拦截闸", "type": "rule-applies", "props": {} },
-    { "source": "RebuttalRule:逐场轮换视角", "target": "GateCheckpoint:M4前置拦截闸", "type": "rule-applies", "props": {} }
-  ]
+ "schema_version": "1.0",
+ "pack": "redteam-kg",
+ "role": "红队",
+ "entities": [
+  {
+   "id": "FailureMode:科学错误",
+   "type": "FailureMode",
+   "name": "科学错误",
+   "props": {
+    "判定": "定量/因果表述错误、结论超出原论文主张",
+    "术语翻译": "翻译不得牺牲准确性"
+   },
+   "sources": [
+    "agents/scientist.md"
+   ]
+  },
+  {
+   "id": "FailureMode:数据无出处",
+   "type": "FailureMode",
+   "name": "数据无出处",
+   "props": {
+    "判定": "定量数据须有出处，并带对比基准/样本量/显著性",
+    "铁律": "数据有出处；不确定标待确认"
+   },
+   "sources": [
+    "agents/scientist.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:编造伪造数据",
+   "type": "FailureMode",
+   "name": "编造伪造数据",
+   "props": {
+    "判定": "绝不留编造；不确定标待确认",
+    "硬性违规": "M4前置拦截闸列为硬性违规项"
+   },
+   "sources": [
+    "agents/scientist.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:PPT式视频",
+   "type": "FailureMode",
+   "name": "PPT式视频",
+   "props": {
+    "判定": "只写『缓慢推近』的匀速单运镜=不合格",
+    "要求": "每镜有变速/复合运镜，或画面内部运动"
+   },
+   "sources": [
+    "knowledge/动感三来源.md",
+    "playbooks/platform-prompts.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "FailureMode:超载prompt",
+   "type": "FailureMode",
+   "name": "超载prompt",
+   "props": {
+    "判定": "一个prompt里多主体/多动作/三个以上运镜",
+    "修正": "砍到1主体+1动作+≤2运镜"
+   },
+   "sources": [
+    "agents/prompt-engineer.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "id": "FailureMode:标题党",
+   "type": "FailureMode",
+   "name": "标题党",
+   "props": {
+    "判定": "钩子和正文脱节=欺骗红线",
+    "要求": "钩子必须与正文紧密衔接"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:图文脱节",
+   "type": "FailureMode",
+   "name": "图文脱节",
+   "props": {
+    "判定": "旁白讲A画面演B；视觉噱头冲掉科学信息"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "FailureMode:术语塌方",
+   "type": "FailureMode",
+   "name": "术语塌方",
+   "props": {
+    "判定": "公众版连续两个未解释的术语；领导版讲机制细节",
+    "要求": "每个术语首次出现必须有解释（专家版除外）"
+   },
+   "sources": [
+    "agents/audience-advocate.md",
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "FailureMode:自嗨",
+   "type": "FailureMode",
+   "name": "自嗨",
+   "props": {
+    "判定": "团队在欣赏自己的聪明，观众却在第10秒划走"
+   },
+   "sources": [
+    "agents/audience-advocate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:密度失衡",
+   "type": "FailureMode",
+   "name": "密度失衡",
+   "props": {
+    "判定": "前30秒塞完全部干货，后2分钟注水",
+    "标准": "信息密度≥3个信息点/分钟"
+   },
+   "sources": [
+    "agents/audience-advocate.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:节奏事故",
+   "type": "FailureMode",
+   "name": "节奏事故",
+   "props": {
+    "判定": "单镜头>10秒；连续3个同景别；没有远景锚定就切特写"
+   },
+   "sources": [
+    "agents/director.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:抽象词",
+   "type": "FailureMode",
+   "name": "抽象词",
+   "props": {
+    "判定": "『电影感』『高级感』『震撼』等抽象词",
+    "修正": "全部替换成具体视觉事实"
+   },
+   "sources": [
+    "agents/prompt-engineer.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "id": "FailureMode:平台错配",
+   "type": "FailureMode",
+   "name": "平台错配",
+   "props": {
+    "判定": "把Runway英文句式丢进即梦；运镜指令没放开头",
+    "其他": "忽略平台参考图/首尾帧特性"
+   },
+   "sources": [
+    "agents/prompt-engineer.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "id": "FailureMode:图生视频复述画面",
+   "type": "FailureMode",
+   "name": "图生视频复述画面",
+   "props": {
+    "判定": "I2V的prompt复述画面内容",
+    "要求": "只写运动；画面内容由首帧图负责"
+   },
+   "sources": [
+    "agents/prompt-engineer.md",
+    "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "id": "FailureMode:不可制作",
+   "type": "FailureMode",
+   "name": "不可制作",
+   "props": {
+    "判定": "精确结构走纯文生视频路线；单镜塞3个动作",
+    "其他": "需要角色表演但没有参考图方案"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "FailureMode:陈词滥调",
+   "type": "FailureMode",
+   "name": "陈词滥调",
+   "props": {
+    "判定": "『蓝色粒子汇聚成DNA』『科学家低头看显微镜』假笑"
+   },
+   "sources": [
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "FailureMode:无聊",
+   "type": "FailureMode",
+   "name": "无聊",
+   "props": {
+    "判定": "开头平淡、段落没有推进感、结尾没有记忆点"
+   },
+   "sources": [
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "FailureMode:混乱",
+   "type": "FailureMode",
+   "name": "混乱",
+   "props": {
+    "判定": "主线不清、信息堆砌、类比之间打架"
+   },
+   "sources": [
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "FailureMode:错位",
+   "type": "FailureMode",
+   "name": "错位",
+   "props": {
+    "判定": "给学生版用申报腔；给专家版用网络梗",
+    "其他": "讲法未按锁定受众模式调整"
+   },
+   "sources": [
+    "agents/audience-advocate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:需求错位",
+   "type": "FailureMode",
+   "name": "需求错位",
+   "props": {
+    "判定": "用户真正要的和正在做的不是同一件事",
+    "痛点链": "亮点答不上『受众的什么任务需要它』即删"
+   },
+   "sources": [
+    "agents/red-team.md",
+    "agents/audience-advocate.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:开头无钩子",
+   "type": "FailureMode",
+   "name": "开头无钩子",
+   "props": {
+    "判定": "前5秒无钩子",
+    "处置": "重写开头"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:配音歧义读音",
+   "type": "FailureMode",
+   "name": "配音歧义读音",
+   "props": {
+    "判定": "术语发音错误、无歧义读音",
+    "处置": "改写文稿（同义词替换掉易错词）"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:品牌不一致",
+   "type": "FailureMode",
+   "name": "品牌不一致",
+   "props": {
+    "判定": "不符合选定VI规范",
+    "处置": "调整色彩/字体/转场"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:总时长超限",
+   "type": "FailureMode",
+   "name": "总时长超限",
+   "props": {
+    "判定": "不符合模板/简报要求",
+    "处置": "调整文稿长度"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "FailureMode:错误因果",
+   "type": "FailureMode",
+   "name": "错误因果",
+   "props": {
+    "判定": "因果链不成立；类比暗示了错误的因果",
+    "要求": "结论不超出原论文主张"
+   },
+   "sources": [
+    "agents/scientist.md",
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "Taboo:品牌禁区",
+   "type": "Taboo",
+   "name": "品牌禁区",
+   "props": {
+    "判定": "不符合选定VI规范=硬性违规",
+    "关联": "品牌一致性是检查维度；禁区为不可触碰的硬性红线"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "Taboo:平台审核红线",
+   "type": "Taboo",
+   "name": "平台审核红线",
+   "props": {
+    "判定": "真人脸参考图会被审核直接拦截",
+    "规避": "用授权素材/虚拟人像/线稿分镜规避",
+    "硬性违规": "M4前置拦截闸列为检查项"
+   },
+   "sources": [
+    "playbooks/platform-prompts.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "Taboo:数据与文字水印交给AI生成",
+   "type": "Taboo",
+   "name": "数据与文字水印交给AI生成",
+   "props": {
+    "判定": "参数/曲线/表格/logo/字幕绝不交给AI生成",
+    "要求": "全部后期制作；prompt与负面词不出现文字水印",
+    "硬性违规": "M4前置拦截闸列为检查项"
+   },
+   "sources": [
+    "agents/prompt-engineer.md",
+    "agents/director.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "Taboo:夸大疗效",
+   "type": "Taboo",
+   "name": "夸大疗效",
+   "props": {
+    "判定": "夸大疗效、夸大能力、误导公众的表述",
+    "处置": "科学顾问终审全片：无编造/无夸大/无误导性类比"
+   },
+   "sources": [
+    "agents/red-team.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "Taboo:误导性类比",
+   "type": "Taboo",
+   "name": "误导性类比",
+   "props": {
+    "判定": "类比有误导性；翻译牺牲准确性",
+    "处置": "类比有误导性时指出；终审无误导性类比"
+   },
+   "sources": [
+    "agents/scientist.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "CheckDimension:画面相关性",
+   "type": "CheckDimension",
+   "name": "画面相关性",
+   "props": {
+    "标准": "分镜画面与文稿≥80%匹配",
+    "不通过处置": "加【画面建议】标注，重生成该镜"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "CheckDimension:配音准确度",
+   "type": "CheckDimension",
+   "name": "配音准确度",
+   "props": {
+    "标准": "术语发音正确、无歧义读音",
+    "不通过处置": "改写文稿（同义词替换掉易错词）"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "CheckDimension:节奏感",
+   "type": "CheckDimension",
+   "name": "节奏感",
+   "props": {
+    "标准": "单镜头≤10秒",
+    "不通过处置": "拆分或合并文稿段落"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "CheckDimension:镜头动感",
+   "type": "CheckDimension",
+   "name": "镜头动感",
+   "props": {
+    "标准": "无PPT式视频：每镜有变速/复合运镜或画面内部运动",
+    "不通过处置": "退回分镜重排运镜；成片不足时剪辑侧速度斜坡+音效补救"
+   },
+   "sources": [
+    "protocols/quality-gate.md",
+    "agents/director.md"
+   ]
+  },
+  {
+   "id": "CheckDimension:信息密度",
+   "type": "CheckDimension",
+   "name": "信息密度",
+   "props": {
+    "标准": "≥3个信息点/分钟",
+    "不通过处置": "删冗余、补干货"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "CheckDimension:开头吸引力",
+   "type": "CheckDimension",
+   "name": "开头吸引力",
+   "props": {
+    "标准": "前5秒有钩子",
+    "不通过处置": "重写开头"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "CheckDimension:品牌一致性",
+   "type": "CheckDimension",
+   "name": "品牌一致性",
+   "props": {
+    "标准": "符合选定VI规范",
+    "不通过处置": "调整色彩/字体/转场"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "CheckDimension:总时长",
+   "type": "CheckDimension",
+   "name": "总时长",
+   "props": {
+    "标准": "符合模板/简报要求",
+    "不通过处置": "调整文稿长度"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "AttackAngle:科学风险",
+   "type": "AttackAngle",
+   "name": "科学风险",
+   "props": {
+    "问什么": "如果审稿专家看到这条视频，哪个表述会被挂？"
+   },
+   "sources": [
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "AttackAngle:传播风险",
+   "type": "AttackAngle",
+   "name": "传播风险",
+   "props": {
+    "问什么": "如果这条视频没火，最可能死在哪一秒？"
+   },
+   "sources": [
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "AttackAngle:制作风险",
+   "type": "AttackAngle",
+   "name": "制作风险",
+   "props": {
+    "问什么": "哪个镜头最可能生成翻车？翻车了整个方案受多大影响？"
+   },
+   "sources": [
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "AttackAngle:甲方风险",
+   "type": "AttackAngle",
+   "name": "甲方风险",
+   "props": {
+    "问什么": "用户真正要的和我们正在做的，是不是同一件事？"
+   },
+   "sources": [
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "AttackAngle:伦理合规",
+   "type": "AttackAngle",
+   "name": "伦理合规",
+   "props": {
+    "问什么": "有没有夸大疗效、夸大能力、误导公众的表述？"
+   },
+   "sources": [
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "GateCheckpoint:M4前置拦截闸",
+   "type": "GateCheckpoint",
+   "name": "M4前置拦截闸",
+   "props": {
+    "时机": "M4 prompt定稿后、交付用户前",
+    "执行者": "红队subagent（独立上下文）",
+    "检查依据": "硬性违规：科学错误/伪造数据/无出处/品牌禁区/平台审核红线/数据画面交给AI生成",
+    "产出": "runs/<项目>/m4-gate-red.md：pass/fail+逐条违规",
+    "裁决": "违规则打回对应段（≤2循环）"
+   },
+   "sources": [
+    "protocols/quality-gate.md",
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "GateCheckpoint:M5出口评审闸",
+   "type": "GateCheckpoint",
+   "name": "M5出口评审闸",
+   "props": {
+    "时机": "M5交付前",
+    "执行者": "Reviewer subagent（未参与创作的独立上下文）",
+    "检查依据": "七维检查表+里程碑验收清单+预注册标准",
+    "产出": "runs/<项目>/m5-gate-red.md：评分单+三态裁决+打回意见",
+    "裁决": "PASS≥0.85 / CONDITIONAL 0.70-0.84 / BLOCK<0.70或硬性违规，≤2循环"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "RebuttalRule:引用预注册标准",
+   "type": "RebuttalRule",
+   "name": "引用预注册标准",
+   "props": {
+    "要求": "每个反对引用Phase 0预注册的评审标准（『按钩子强度标准，这个方案……』）"
+   },
+   "sources": [
+    "agents/red-team.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "RebuttalRule:禁止每点必杠",
+   "type": "RebuttalRule",
+   "name": "禁止每点必杠",
+   "props": {
+    "要求": "只打要害，一场会议提出1-3个最致命的反对"
+   },
+   "sources": [
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "RebuttalRule:给出推翻条件",
+   "type": "RebuttalRule",
+   "name": "给出推翻条件",
+   "props": {
+    "要求": "每条反对必须给出推翻条件（『如果……我就撤回这条反对』）"
+   },
+   "sources": [
+    "agents/red-team.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "RebuttalRule:只评制品不评人",
+   "type": "RebuttalRule",
+   "name": "只评制品不评人",
+   "props": {
+    "要求": "攻击方案不攻击角色；只谈制品不谈动机；只评制品不评人"
+   },
+   "sources": [
+    "agents/red-team.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "RebuttalRule:少数派报告必须留档",
+   "type": "RebuttalRule",
+   "name": "少数派报告必须留档",
+   "props": {
+    "要求": "即使被裁决否决，反对意见也必须原样记录在案，不许被和稀泥抹掉"
+   },
+   "sources": [
+    "agents/red-team.md",
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "RebuttalRule:事实性争议不折中",
+   "type": "RebuttalRule",
+   "name": "事实性争议不折中",
+   "props": {
+    "要求": "事实性争议不折中，查证或升级"
+   },
+   "sources": [
+    "protocols/quality-gate.md"
+   ]
+  },
+  {
+   "id": "RebuttalRule:辩论最后发言",
+   "type": "RebuttalRule",
+   "name": "辩论最后发言",
+   "props": {
+    "要求": "辩论中永远最后发言，听完所有人再开火"
+   },
+   "sources": [
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "RebuttalRule:逐场轮换视角",
+   "type": "RebuttalRule",
+   "name": "逐场轮换视角",
+   "props": {
+    "要求": "逐场轮换：科学风险/传播风险/制作风险/甲方风险/伦理合规"
+   },
+   "sources": [
+    "agents/red-team.md"
+   ]
+  },
+  {
+   "id": "Taboo:广告绝对化用语",
+   "type": "Taboo",
+   "name": "广告绝对化用语(极限词)",
+   "props": {
+    "说明": "《广告法》绝对化/极限词禁用：最/最佳/第一/唯一/绝对/100%/顶级/国家级/世界级/全网最低/史无前例 等。检查器 `scripts/ad_forbidden_words.py`。",
+    "出处": "广告法+平台禁语"
+   },
+   "sources": [
+    "scripts/ad_forbidden_words.py",
+    "knowledge/ad-copy.md"
+   ],
+   "domains": [
+    "红队"
+   ]
+  },
+  {
+   "id": "Taboo:广告疗效功效承诺",
+   "type": "Taboo",
+   "name": "广告疗效/功效承诺禁用",
+   "props": {
+    "说明": "医疗/保健/食品类禁疗效承诺：治愈/根治/疗效/有效率/抗癌/降三高/生发/壮阳/排毒/消炎 等夸大功能。检查器 ad_forbidden_words.py。",
+    "出处": "广告法+食药监"
+   },
+   "sources": [
+    "scripts/ad_forbidden_words.py"
+   ],
+   "domains": [
+    "红队"
+   ]
+  },
+  {
+   "id": "NegativeRule:广告禁用词",
+   "type": "NegativeRule",
+   "name": "广告禁用词(极限词+疗效+平台禁语)",
+   "props": {
+    "说明": "广告词/文案/口播 交付前必扫禁用词(绝对化/疗效承诺/平台禁语)，`python scripts/ad_forbidden_words.py <文件>`；科技/科研产品用**可核实规格+数据(手册原文)**，不用 最/第一/绝对/100%/根治 等；有证据才说'领先/第一'(销量/数据)。",
+    "出处": "广告法+平台红线"
+   },
+   "sources": [
+    "scripts/ad_forbidden_words.py",
+    "knowledge/FAILURE-LIBRARY.md"
+   ],
+   "domains": [
+    "红队"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "AttackAngle:科学风险",
+   "target": "FailureMode:科学错误",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:科学风险",
+   "target": "FailureMode:数据无出处",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:科学风险",
+   "target": "FailureMode:编造伪造数据",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:科学风险",
+   "target": "FailureMode:错误因果",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:传播风险",
+   "target": "FailureMode:标题党",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:传播风险",
+   "target": "FailureMode:术语塌方",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:传播风险",
+   "target": "FailureMode:自嗨",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:传播风险",
+   "target": "FailureMode:密度失衡",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:传播风险",
+   "target": "FailureMode:无聊",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:传播风险",
+   "target": "FailureMode:混乱",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:传播风险",
+   "target": "FailureMode:错位",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:传播风险",
+   "target": "FailureMode:开头无钩子",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:PPT式视频",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:超载prompt",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:图文脱节",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:节奏事故",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:抽象词",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:平台错配",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:图生视频复述画面",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:不可制作",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:陈词滥调",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:配音歧义读音",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:品牌不一致",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:制作风险",
+   "target": "FailureMode:总时长超限",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:甲方风险",
+   "target": "FailureMode:自嗨",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:甲方风险",
+   "target": "FailureMode:错位",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:甲方风险",
+   "target": "FailureMode:需求错位",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:甲方风险",
+   "target": "FailureMode:品牌不一致",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:伦理合规",
+   "target": "FailureMode:科学错误",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "AttackAngle:伦理合规",
+   "target": "FailureMode:错误因果",
+   "type": "angle-covers",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:PPT式视频",
+   "target": "CheckDimension:镜头动感",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:标题党",
+   "target": "CheckDimension:开头吸引力",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:图文脱节",
+   "target": "CheckDimension:画面相关性",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:密度失衡",
+   "target": "CheckDimension:信息密度",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:节奏事故",
+   "target": "CheckDimension:节奏感",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:无聊",
+   "target": "CheckDimension:开头吸引力",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:开头无钩子",
+   "target": "CheckDimension:开头吸引力",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:配音歧义读音",
+   "target": "CheckDimension:配音准确度",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:品牌不一致",
+   "target": "CheckDimension:品牌一致性",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "FailureMode:总时长超限",
+   "target": "CheckDimension:总时长",
+   "type": "failure-detected-by",
+   "props": {}
+  },
+  {
+   "source": "Taboo:品牌禁区",
+   "target": "AttackAngle:甲方风险",
+   "type": "taboo-flagged-by",
+   "props": {}
+  },
+  {
+   "source": "Taboo:平台审核红线",
+   "target": "AttackAngle:伦理合规",
+   "type": "taboo-flagged-by",
+   "props": {}
+  },
+  {
+   "source": "Taboo:数据与文字水印交给AI生成",
+   "target": "AttackAngle:伦理合规",
+   "type": "taboo-flagged-by",
+   "props": {}
+  },
+  {
+   "source": "Taboo:夸大疗效",
+   "target": "AttackAngle:伦理合规",
+   "type": "taboo-flagged-by",
+   "props": {}
+  },
+  {
+   "source": "Taboo:误导性类比",
+   "target": "AttackAngle:科学风险",
+   "type": "taboo-flagged-by",
+   "props": {}
+  },
+  {
+   "source": "Taboo:误导性类比",
+   "target": "AttackAngle:伦理合规",
+   "type": "taboo-flagged-by",
+   "props": {}
+  },
+  {
+   "source": "CheckDimension:画面相关性",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "dimension-in-gate",
+   "props": {}
+  },
+  {
+   "source": "CheckDimension:配音准确度",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "dimension-in-gate",
+   "props": {}
+  },
+  {
+   "source": "CheckDimension:节奏感",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "dimension-in-gate",
+   "props": {}
+  },
+  {
+   "source": "CheckDimension:镜头动感",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "dimension-in-gate",
+   "props": {}
+  },
+  {
+   "source": "CheckDimension:信息密度",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "dimension-in-gate",
+   "props": {}
+  },
+  {
+   "source": "CheckDimension:开头吸引力",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "dimension-in-gate",
+   "props": {}
+  },
+  {
+   "source": "CheckDimension:品牌一致性",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "dimension-in-gate",
+   "props": {}
+  },
+  {
+   "source": "CheckDimension:总时长",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "dimension-in-gate",
+   "props": {}
+  },
+  {
+   "source": "GateCheckpoint:M4前置拦截闸",
+   "target": "Taboo:品牌禁区",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "GateCheckpoint:M4前置拦截闸",
+   "target": "Taboo:平台审核红线",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "GateCheckpoint:M4前置拦截闸",
+   "target": "Taboo:数据与文字水印交给AI生成",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "GateCheckpoint:M5出口评审闸",
+   "target": "Taboo:夸大疗效",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "GateCheckpoint:M5出口评审闸",
+   "target": "Taboo:误导性类比",
+   "type": "gate-checks",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:引用预注册标准",
+   "target": "GateCheckpoint:M4前置拦截闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:引用预注册标准",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:禁止每点必杠",
+   "target": "GateCheckpoint:M4前置拦截闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:给出推翻条件",
+   "target": "GateCheckpoint:M4前置拦截闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:给出推翻条件",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:只评制品不评人",
+   "target": "GateCheckpoint:M4前置拦截闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:只评制品不评人",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:少数派报告必须留档",
+   "target": "GateCheckpoint:M4前置拦截闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:事实性争议不折中",
+   "target": "GateCheckpoint:M5出口评审闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:辩论最后发言",
+   "target": "GateCheckpoint:M4前置拦截闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "RebuttalRule:逐场轮换视角",
+   "target": "GateCheckpoint:M4前置拦截闸",
+   "type": "rule-applies",
+   "props": {}
+  },
+  {
+   "source": "Taboo:广告绝对化用语",
+   "target": "Taboo:平台审核红线",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Taboo:广告疗效功效承诺",
+   "target": "Taboo:平台审核红线",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "NegativeRule:广告禁用词",
+   "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "NegativeRule:广告禁用词",
+   "target": "FailureLesson:文案白名单",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "NegativeRule:广告禁用词",
+   "target": "Taboo:平台审核红线",
+   "type": "concept-related-to",
+   "props": {}
+  }
+ ]
 }
