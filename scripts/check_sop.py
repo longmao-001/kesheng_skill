@@ -55,8 +55,10 @@ def main():
     req("红队闸", any_of(["m4-gate-red.md", "m5-gate-red.md"]), "红队闸(前置/出口)", "m4-gate-red.md")
 
     # 每镜 prompt 完整性（prompt SOP 十步考勤）：每镜必含 参考(挂载清单)/风格/时间轴/口播/声音/负面/参数
+    # 兼容两种字段标记：`**字段**：`（prompt-sheet.md 模板）与 `【字段】`（实务常用）。缺少任一核心字段=FAIL。
     import re
     PF = ["参考", "风格", "时间轴", "口播", "声音", "负面", "参数"]
+    FIELD_RE = re.compile(r"^(?:【([^】]+)】|(?:[*-]\s*)?\*\*([^*]+)\*\*[:：]?)")
     md = os.path.join(run, "m4-prompts")
     if os.path.isdir(md):
         import glob as _glob
@@ -69,12 +71,12 @@ def main():
                         missing = [f for f in PF if f not in fields]
                         if missing: issues.append((f"prompt[{os.path.basename(pf)}] 镜{shot[:18]}", "每镜 prompt 字段不全(缺)", "/".join(missing)))
                     shot = s; fields = set()
-                elif s.startswith("**") and "**：" in s:
-                    name = s[2:].split("**：", 1)[0].strip()
-                    fields.add(name)
-                elif s.startswith("**") and s.endswith("**"):
-                    nm = s[2:-2].strip()
-                    if nm in PF: fields.add(nm)
+                    continue
+                m = FIELD_RE.match(s)
+                if m:
+                    name = (m.group(1) or m.group(2) or "").strip()
+                    if name:
+                        fields.add(name)
             if shot is not None:
                 missing = [f for f in PF if f not in fields]
                 if missing: issues.append((f"prompt[{os.path.basename(pf)}] 镜{shot[:18]}", "每镜 prompt 字段不全(缺)", "/".join(missing)))

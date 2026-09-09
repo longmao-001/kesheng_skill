@@ -14,6 +14,8 @@
 | 乐高积木 | Analogy | 萜类化合物 | kb/生物学/植物代谢.md |
 | 光子就是工人 | Analogy | 半导体量测光源需求链 | kb/光学/半导体量测的光源需求.md |
 | 单字修改 | Analogy | 碱基编辑 | kb/生物学/基因编辑.md |
+| 后训练-补课特训 | Analogy | 后训练=用真实数据给模型'补课特训'，从'什么都会一点'变成'这个专业特别会干' | https://arxiv.org/abs/2406.09246 / https://hub.baai.ac.cn/view/54674 |
+| 大脑-小脑分工 | Analogy | 上层大模型管'想和定'（理解/规划/决策），下层高频控制管'稳和准'（实时运控） | https://arxiv.org/abs/2410.24164 / https://arxiv.org/abs/2503.14734 |
 | 尺子刻度天天变 | Analogy | 半导体量测光源需求链 | kb/光学/半导体量测的光源需求.md |
 | 工厂改造 | Analogy | 代谢通路重构 | kb/生物学/合成生物学.md |
 | 工厂流水线 | Analogy | 代谢通路 | kb/生物学/植物代谢.md |
@@ -21,6 +23,8 @@
 | 指尖上的微型恒星 | Analogy | 激光驱动等离子体宽谱光源 | kb/光学/激光驱动等离子体宽谱光源.md |
 | 换零件 | Analogy | 基因敲除与敲入 | kb/生物学/基因编辑.md |
 | 搭积木 | Analogy | DNA组装 | kb/生物学/合成生物学.md |
+| 数字孪生-真实产线镜像 | Analogy | 数字孪生=在电脑里建一个跟真实产线一模一样的镜像，让AI先在里面练 | https://doi.org/10.1007/s10845-023-02172-7 / https://www.mdpi.com/2076-3417/12/13/6512 |
+| 数据命门-教科书插图与真师傅 | Analogy | 仿真像'教科书插图'，真实数据像'跟真师傅在真车间干活'——插图教不会应对真实公差/来料偏差 | https://arxiv.org/abs/2510.20808 / https://arxiv.org/abs/1703.06907 |
 | 植物的防晒霜+防弹衣 | Analogy | 黄酮类化合物 | kb/生物学/植物代谢.md |
 | 点火器 vs 燃料 | Analogy | 光放电等离子体 | kb/光学/激光驱动等离子体宽谱光源.md |
 | 瑞士军刀 | Analogy | 引物编辑 | kb/生物学/基因编辑.md |
@@ -40,6 +44,7 @@
 | LDLS发光点尺寸 | DataPoint | 发光点约0.1mm量级（FWHM约100µm） | kb/光学/激光驱动等离子体宽谱光源.md |
 | LDLS寿命 | DataPoint | 寿命约10000小时（500nm处输出降50%计），输出衰减约1-2%/1000h | kb/光学/激光驱动等离子体宽谱光源.md |
 | LDLS等离子体温度 | DataPoint | 等离子体温度约10000-20000K | kb/光学/激光驱动等离子体宽谱光源.md |
+| 具身智能数据投入有效占比低 | DataPoint | 行业声音称当前具身智能约90%的数据投入无效 | https://www.shenlanxueyuan.com/news/detail/32 / https://www.jiemian.com/article/15047131.html |
 | 基因敲除/敲入效率 | DataPoint | KO效率通常30-80%；KI效率通常1-20% | kb/生物学/基因编辑.md |
 | 微流控高通量通量 | DataPoint | 微流控技术每秒测试>10000个变体；DNA合成+AI设计可缩搜索空间1000倍 | kb/生物学/合成生物学.md |
 | 深紫外大气吸收与氮气吹扫 | DataPoint | 大气中氧气/水汽强吸收 <200nm 深紫外；氧气还会生成臭氧，臭氧强吸收 220-280nm；故 <200nm 深紫外 | kb/光学/激光驱动等离子体宽谱光源.md |
@@ -53,6 +58,7 @@
 | 黄金大米二号提升 | DataPoint | 黄金大米2号β-胡萝卜素含量较初代提升20倍以上 | kb/生物学/植物代谢.md |
 | 产业 | Domain | 宽谱光源厂/量测整机厂/国产替代 | kb/产业/宽谱光源与半导体量测产业图谱.md |
 | 光学 | Domain | LDLS宽谱光源/半导体量测光源需求 | kb/光学/激光驱动等离子体宽谱光源.md / kb/光学/半导体量测的光源需求.md |
+| 具身智能 | Domain | 具身智能 / Embodied AI 学科与工业域 | arXiv:2407.06886 / arXiv:2405.15775 |
 | 化学 | Domain | 化合物化学/光谱分析下游 | kb/生物学/植物代谢.md / kb/光学/激光驱动等离子体宽谱光源.md |
 | 医学 | Domain | 基因编辑临床/青蒿素/紫杉醇 | kb/生物学/基因编辑.md / kb/生物学/植物代谢.md |
 | 物理学 | Domain | 等离子体物理/光学原理 | kb/光学/激光驱动等离子体宽谱光源.md / kb/光学/半导体量测的光源需求.md |
@@ -77,6 +83,7 @@
 | 国产厂商客户与供货 | KnowledgeGap | 国产厂商客户关系/供货状态多为未公开信息 | kb/产业/宽谱光源与半导体量测产业图谱.md |
 | 基因编辑监管政策 | KnowledgeGap | 中/美/欧对基因编辑作物法规不同且在更新 | kb/生物学/基因编辑.md |
 | 复合/轫致辐射主导比例 | KnowledgeGap | 复合辐射vs轫致辐射的主导比例拆分未找到可引用公开来源 | kb/光学/激光驱动等离子体宽谱光源.md |
+| 数据命门缺乏权威量化 | KnowledgeGap | '数据是具身智能核心瓶颈'在行业是一致判断，但缺权威机构统一量化口径；'约90%数据投入无效'为媒体口径，待确认 | https://lw.news.cn/20251118/2cdc40bcf38941989be2f37a8fce8b32/c.html / https://www.cena.com.cn/smartt/20260403/128569.html / https://www.shenlanxueyuan.com/news/detail/32 |
 | 物种最优递送方式 | KnowledgeGap | 各物种最优递送（农杆菌/基因枪/病毒载体/纳米颗粒）差异极大 | kb/生物学/基因编辑.md |
 | 酶动力学参数 | KnowledgeGap | 酶动力学参数(Km/Vmax)对实际产量影响的定量预测 | kb/生物学/植物代谢.md |
 | 7步深度理解法 | Method | 定位→意义链→核心原理→关键数据→翻译准备→知识缺口→费曼自检 | agents/scientist.md |
@@ -91,24 +98,35 @@
 | DNA组装 | ScientificConcept | 多个DNA片段按预定顺序连接成更大DNA分子 | kb/生物学/合成生物学.md |
 | OCD关键尺寸 | ScientificConcept | 实测光谱与模型库匹配反演形貌 | kb/光学/半导体量测的光源需求.md |
 | étendue(光扩展) | ScientificConcept | 光扩展/光展角：小发光点更容易耦合进小孔径光学系统 | kb/光学/激光驱动等离子体宽谱光源.md / kb/光学/半导体量测的光源需求.md |
+| 三维视觉感知与位姿估计 | ScientificConcept | 对三维场景/物体做理解、分割、6D位姿估计与跟踪，支撑手眼协同 | https://arxiv.org/abs/2312.08344 / https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html / https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_..._CVPR_2020_paper.html |
+| 世界模型(World Model/WAM) | ScientificConcept | 在现实之上再训一个能'预测/推演现实'的模型，让机器人在脑内想象中预演动作 | https://arxiv.org/abs/2402.15391 / https://arxiv.org/abs/2310.06114 / https://developer.nvidia.cn/blog/beyond-vlas-how-world-action-models-reshape-robot-manipulation/ / https://pattern.swarma.org/wechat_article/5863 |
+| 人机协作安全(HRC Safety) | ScientificConcept | 机器人与人/设备在同一产线安全共处的标准与传感系统 | https://www.sick.com/hk/zf/more-safety-for-humans-and-machines/w/blog-robotic-norm-iso10218 / https://doi.org/10.1109/JSEN.2024.3496905 / https://www.mdpi.com/1424-8220/23/12/5663 |
 | 代谢通路 | ScientificConcept | 一系列连续酶促反应将起始底物转化为终产物 | kb/生物学/植物代谢.md |
 | 代谢通路重构 | ScientificConcept | 改造胞内酶表达与调控，重设计代谢物合成路线 | kb/生物学/合成生物学.md |
+| 仿真到现实迁移(Sim-to-Real) | ScientificConcept | 在仿真/数字孪生里大量试错，再把策略迁移到真机 | https://arxiv.org/abs/1703.06907 / https://www.science.org/doi/10.1126/scirobotics.aau5872 / https://arxiv.org/abs/2510.20808 |
 | 光放电等离子体 | ScientificConcept | 等离子体与电极分离，完全靠吸收激光能量维持 | kb/光学/激光驱动等离子体宽谱光源.md |
 | 光谱椭偏 | ScientificConcept | 靠多波长数据反演膜厚与光学常数 | kb/光学/半导体量测的光源需求.md |
+| 具身智能 | ScientificConcept | 有'身体'的智能机器人，能像人一样感知并动手改变世界，不只是会聊天的AI | https://arxiv.org/abs/2407.06886 / https://arxiv.org/abs/2405.15775 |
+| 具身智能进工业七大技术群 | ScientificConcept | 具身智能进入工业场景必须突破的7类关键技术群（数据/感知/操作与泛化/学习范式/数字孪生/安全可靠/落地基础设施） | https://lw.news.cn/20251118/2cdc40bcf38941989be2f37a8fce8b32/c.html / https://www.cena.com.cn/smartt/20260403/128569.html / https://www.shenlanxueyuan.com/news/detail/32 / https://www.thepaper.cn/newsDetail_forward_29953659 |
 | 初生次生代谢 | ScientificConcept | 初生=维持生命基本活动；次生=适应环境/防御/交流 | kb/生物学/植物代谢.md |
 | 半导体量测光源需求链 | ScientificConcept | 检测任务→物理约束→对光源的要求 | kb/光学/半导体量测的光源需求.md |
 | 合成生物学 | ScientificConcept | 用工程学方法设计建造新的生物系统 | kb/生物学/合成生物学.md |
 | 基因敲除与敲入 | ScientificConcept | KO破坏/移除基因功能；KI在特定位点插入新基因 | kb/生物学/基因编辑.md |
 | 基因组重编码 | ScientificConcept | 系统性密码子替换或基因序列重设计 | kb/生物学/合成生物学.md |
 | 基因编辑 | ScientificConcept | 用分子剪刀对DNA进行精准剪切、修改或替换 | kb/生物学/基因编辑.md |
+| 基座模型后训练(Post-training) | ScientificConcept | 先用海量通用数据训一个'通才'基座，再用某场景真实数据做'专项补习'，实现通用→专用 | https://arxiv.org/abs/2406.09246 / https://hub.baai.ac.cn/view/54674 |
 | 套刻误差测量 | ScientificConcept | IBO/DBO | kb/光学/半导体量测的光源需求.md |
 | 引物编辑 | ScientificConcept | 逆转录酶+pegRNA的搜索-替换式基因编辑 | kb/生物学/基因编辑.md |
+| 数字孪生(Digital Twin) | ScientificConcept | 真实世界在数字世界的可交互镜像 | https://doi.org/10.1007/s10845-023-02172-7 / https://www.mdpi.com/2076-3417/12/13/6512 / https://saemobilus.sae.org/papers/design-a-digital-twin-robot-assembled-workpiece-transfer-station-virtual-commissioning-2026-99-0347 |
 | 植物代谢 | ScientificConcept | 植物体内的化学反应网络/化工厂 | kb/生物学/植物代谢.md |
 | 激光驱动等离子体宽谱光源 | ScientificConcept | LDLS/激光维持等离子体光源 | kb/光学/激光驱动等离子体宽谱光源.md |
+| 灵巧操作(Dexterous Manipulation) | ScientificConcept | 用灵巧手/柔性抓取完成精密对位、容错微调、跨物体泛化的操作 | https://arxiv.org/abs/2303.04137 / https://arxiv.org/abs/2212.08333 / https://arxiv.org/pdf/2509.19892 / https://arxiv.org/abs/2304.13705 |
+| 真实世界机器人数据集 | ScientificConcept | 真实世界采集的跨本体机器人操作数据集，供策略训练与后训练 | https://arxiv.org/abs/2310.08864 / https://arxiv.org/abs/2403.12945 / https://arxiv.org/abs/2308.12952 |
 | 碱基编辑 | ScientificConcept | 单碱基直接转换(C→T/A→G)不产生DSB | kb/生物学/基因编辑.md |
 | 细胞工厂 | ScientificConcept | 工程化改造的微生物细胞高效生产目标化合物 | kb/生物学/合成生物学.md |
 | 脱靶效应 | ScientificConcept | 在非目标位置产生意外的DNA修饰 | kb/生物学/基因编辑.md |
 | 萜类化合物 | ScientificConcept | 由异戊二烯(C5)单元聚合而成，最大类天然有机化合物 | kb/生物学/植物代谢.md |
+| 视觉-语言-动作模型(VLA) | ScientificConcept | 把'看+听懂语言指令+输出动作'打通在同一个大模型里（Vision-Language-Action Model） | https://arxiv.org/abs/2307.15818 / https://arxiv.org/abs/2406.09246 / https://arxiv.org/abs/2410.24164 / https://arxiv.org/abs/2503.14734 |
 | 转录因子 | ScientificConcept | 结合DNA特定序列以调控基因表达的蛋白质 | kb/生物学/植物代谢.md |
 | 连续谱辐射 | ScientificConcept | 以类黑体连续辐射为主的宽谱输出 | kb/光学/激光驱动等离子体宽谱光源.md |
 | 酶 | ScientificConcept | 催化生化反应的蛋白质，降低反应活化能 | kb/生物学/植物代谢.md |
@@ -359,9 +377,11 @@
 | 科研机构/团队介绍 | NarrationType | 合作方/客户/招聘 | templates/narration-formula.md / http://hi-banma.com/1263.html / https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408 |
 | 融资路演(BP视频) | NarrationType | 投资人 | templates/narration-formula.md / http://hi-banma.com/1263.html / https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408 |
 | 项目申报/成果展示 | NarrationType | 评审专家/主管部门 | templates/narration-formula.md / http://hi-banma.com/1263.html / https://cloud.kepuchina.cn/h5/detail?id=7386091920020881408 |
+| GOV成果汇报叙事 | NarrativeStructure | 国家战略高度切入+行业痛点(钩子) → 痛点·为什么现在需要 → 要突破哪些技术 → 已有基础/成果 → 未来可实现 → | knowledge/templates/C-multi-audience-guide.md / knowledge/ad-copy.md |
 | 品牌TVC叙事结构 | NarrativeStructure | SC1状态引入→SC2核心交互→SC3视觉奇观→SC4情绪释放→SC5品牌落版 | knowledge/tvc-ad-templates.md |
 | 工业广告标准叙事型 | NarrativeStructure | 针对需求→实现指标→实测/认证证据 | knowledge/ad-copy.md |
 | 标准叙事结构 | NarrativeStructure | 开头钩子→意义建立→核心内容→情感收尾→CTA | agents/screenwriter.md |
+| 概念融合骨架 | NarrativeStructure | 先出多个概念方向，按四维(预注册/传播力/科学准确/可执行)评分，再把最强方向的'方法主线×人文落点×钩子'并入一个融合 | knowledge/templates/A01-total-intro.md / knowledge/tvc-ad-templates.md |
 | 申报片六镜头结构 | NarrativeStructure | 战略切入→痛点使命→核心架构→优势对比→愿景→CTA | knowledge/templates/A01-total-intro.md |
 | 痛点链结构 | NarrativeStructure | 任务/痛点→需求→亮点(数字)→证据 | knowledge/痛点链.md / knowledge/ad-copy.md |
 | A Comparison of Advertising Content: Business to Business versus Consumer Services | Paper | 科技广告词 | https://doi.org/10.1080/00913367.1997.10673534 |
@@ -647,6 +667,8 @@
 | 圆形放大镜画中画 | VideoPattern | 圆形镜头放大关键局部(膜孔/结构/接缝), 与全景同框, 细节不靠嘴说 | https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9 |
 | 层级字幕标注 | VideoPattern | 第N重过滤/第N级/第N步句式的屏幕字幕, 一镜一个层级, 观众秒懂结构顺序 | https://www.xiaohongshu.com/discovery/item/6a0efb520000000007021ae9 |
 | 40字5秒镜头对齐纪律 | WritingRule | 单段口播对应镜头时长≤10秒 | agents/screenwriter.md |
+| GOV数据克制 | WritingRule | 领导版只保留最震撼3-5个指标，其余下沉数据卡/字幕；禁参数堆砌；市场/行业数据作定性；未验证/未第三方认证的指标标'方 | knowledge/templates/C-multi-audience-guide.md / knowledge/痛点链.md / knowledge/ad-copy.md |
+| 克制表述纪律 | WritingRule | 把'行业共性难题'与'本方已有基础'分开讲，不把行业共性难题讲成独家突破；不把'布局/期许/方案口径'讲成'已量产/已验 | knowledge/ad-copy.md / knowledge/templates/C-multi-audience-guide.md |
 | 单主钩子纪律 | WritingRule | 一条视频只用1个主钩子 | agents/screenwriter.md / knowledge/hooks/opening-hooks.md |
 | 数据带出处纪律 | WritingRule | 留下的数据必须带科学顾问认可的出处 | agents/screenwriter.md / knowledge/ad-copy.md |
 | 术语首次解释纪律 | WritingRule | 每个术语首次出现必须有解释 | agents/screenwriter.md / knowledge/templates/C-multi-audience-guide.md |
@@ -3350,6 +3372,9 @@
 | 配音零找人 | FailureLesson | 素材包'待你提供=外部配音'——唯一遗留动作 | knowledge/FAILURE-LIBRARY.md |
 | 零自创文案 | FailureLesson | 用户删CTA/slogan/痛点段, 口播=定位语原文直读, 字幕=口播逐句 | knowledge/FAILURE-LIBRARY.md |
 | 风格基线全局视觉决策提前拍板 | FailureLesson | 强调色/主色调/画风等全局视觉决策一路由团队专业判断定，直到M3拍板用户才纠正方向，导致分镜/prompt/九宫格全员重 | knowledge/FAILURE-LIBRARY.md |
+| 角色(character) | FilmCharacter | 戏中的人/形象（机器人/女生/工人）——有戏份、会动作、穿道具/在场景中。 | agents/storyboard-artist.md / knowledge/camera-language.md / knowledge/痛点链.md / templates/product-prompt-formula.md / https://zh.wikipedia.org/wiki/场面调度 / runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md |
+| 道具(prop) | FilmProp | 戏中使用的物体（苹果/刀/电池/设备）——可移动、被角色使用；非人、非环境。 | agents/storyboard-artist.md / playbooks/storyboard-grid.md / templates/product-prompt-formula.md / https://zh.wikipedia.org/wiki/场面调度 / runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md |
+| 场景(scene/设定) | FilmScene | 故事发生的地点/环境（工厂/道场/实验室/闹市）——背景环境，不随角色移动。 | agents/storyboard-artist.md / knowledge/camera-language.md / templates/storyboard.md / https://zh.wikipedia.org/wiki/场面调度 / runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md |
 | KSP-01 立项定档 | KspStep | 三问理解需求→定档拍板卡(S/M/L) | docs/USER_SOP.md / templates/user-gate.md |
 | KSP-02 需求简报+预注册 | KspStep | brief.md调研→4约束清单→预注册标准3-5条→组合拍板卡(受众/平台/时长/风格/画风/素材) | docs/USER_SOP.md / templates/brief.md |
 | KSP-03 科学理解 | KspStep | 7步理解法≥L2+受众/导演并行+事实处置→调研报告全文交用户阅读讨论(先读后谈)→讨论记录m2-纪要→两点讲明 | docs/USER_SOP.md / agents/scientist.md |
@@ -3370,14 +3395,18 @@
 | Koda十步管线映射科生 | PipelineMapping | brief=KSP-02简报(制片人)→concept=KSP-04概念(导演)→script=口播稿(编剧)→stor | libs/koda-stack/README.md |
 | runs只放项目 | ProcessRule | runs/ 只允许项目 run（每项目一个 runs/<项目slug>/）；非项目散落/临时（_tmp-*/_lesso | orchestration/ORCHESTRATION.md / scripts/check_runs_clean.py |
 | 三视图锚定 | ProcessRule | 为 recurring 角色/主持人/吉祥物及产品道具生成三视图（正/侧/背）作全片基准资产，杜绝跨镜变脸。 | playbooks/consistency.md / playbooks/production-workflow.md |
+| 交付件单一执行源 + 版本收敛(出口前) | ProcessRule | 最终交付件必须是单一自洽版本组合(口播定稿×分镜×执行prompt×风格基线)，同一制品只留一个定稿，版本漂移(多v并存 | runs/20260905-embodied-industrial/m5-出口-评审单.md / runs/20260905-embodied-industrial/delivery/README.md / scripts/check_delivery.py |
 | 剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾） | ProcessRule | 成片最后道工序：按分镜表组接，配音逐句对齐、图层/文案层执行、字幕校对、统一调色、片头片尾 VI。 | playbooks/production-workflow.md / agents/editor.md / knowledge/图表层.md |
 | 单镜抽卡 | ProcessRule | 逐镜生成：选模式、粘 prompt、按时长档抽 3-6 个变体，选中最优并固定。 | playbooks/production-workflow.md / playbooks/platform-prompts.md / playbooks/consistency.md |
 | 参考包组装 | ProcessRule | 全能参考类模型吃参考包而非单张首帧：按这镜需要的资产从素材库/参考图库组多图，prompt 写清每张取什么。 | playbooks/production-workflow.md / playbooks/consistency.md / knowledge/seedance-template-library.md |
 | 启动读全核心流程 | ProcessRule | 每次接手任务，制片人先读全核心流程全集（USER_SOP/ORCHESTRATION/quality-gate/prod | SKILL.md / orchestration/ORCHESTRATION.md / docs/USER_SOP.md |
+| 多agent辩论门控(子代理优先+红队三态) | ProcessRule | 同一镜头/内容的创意分歧: 各角色(导演/分镜师+摄影指导/编剧等)以独立上下文并行给方案, 红队(未参与创作)三态裁决 | runs/20260905-embodied-industrial/m4-prompts/prompts-cgprism.md / runs/20260905-embodied-industrial/m4-gate-red-recheck.md / runs/20260905-embodied-industrial/m2/editor-剪辑预计划.md / orchestration/ORCHESTRATION.md / knowledge/FAILURE-LIBRARY.md |
 | 多镜原生 | ProcessRule | 用支持多镜原生的模型一次生成内含多个镜头，主体/场景/氛围天然一致，风格 token 仍写进 prompt。 | playbooks/production-workflow.md / playbooks/consistency.md / playbooks/platform-prompts.md |
 | 失败→修复循环 | ProcessRule | 按平台手册『常见失败→修复表』逐症状改 prompt 再来，抽卡 6 次仍翻车则改路线，而非死磕。 | playbooks/platform-prompts.md / playbooks/production-workflow.md / playbooks/consistency.md |
 | 宫格previz（整图成片与切片首帧） | ProcessRule | 一次生成九宫格分镜图定全片构图，再走整图一次成片或切片逐格当首帧两条路径。 | playbooks/storyboard-grid.md / playbooks/production-workflow.md / playbooks/platform-prompts.md |
+| 成片文件组织规范(delivery/视频 按镜号命名) | ProcessRule | 成片归档到 delivery/视频/ 并按镜号命名; 一镜多版本=同镜号同名后缀(版本/长版); 无镜号特殊件按『主题- | runs/20260905-embodied-industrial/delivery/README.md / runs/20260905-embodied-industrial/delivery/assets-inventory.md / playbooks/production-workflow.md |
 | 术语发音检查 | ProcessRule | 检查口播稿/字幕里的术语发音与多音字，术语错字是科研片重灾区，别指望 TTS 猜对。 | playbooks/production-workflow.md / agents/editor.md / playbooks/platform-prompts.md |
+| 机器门控须与实际生产格式对齐(避免假阴性) | ProcessRule | 门控脚本是『考勤式门控』的底座，但它假设的格式如果已不是团队现在实际用的格式，就会对一份完成度高的制品整片误报(假阴性) | scripts/check_sop.py / scripts/check_prompt_sheet.py / scripts/check_asset_pack.py / templates/prompt-sheet.md |
 | 科学报告进对话+docx/PPT | ProcessRule | 科学调查官 M2 完成后：完整报告写进对话(不压3行总结) + 产出 docx+PPT(可上图)；讲透 重点/时间/产品 | orchestration/ORCHESTRATION.md / templates/science-report.md / templates/science-ppt.md / agents/scientist.md |
 | 科学检察官(L3)报告规范 | ProcessRule | L3 事实检察官按 templates/l3-fact-inspector-report.md 报告：断言→证据(原文/ | templates/l3-fact-inspector-report.md / agents/inspector.md / agents/scientist.md |
 | 素材库命名规范 | ProcessRule | 源素材 `<用途>_<类型>_<主体>_<视角或部位>_<版本>`；生成资产 `项目_镜号_内容_版本`。名字要能回答  | templates/assets-inventory.md / playbooks/production-workflow.md |
@@ -3410,6 +3439,7 @@
 | 五层检查体系(co-scientist风格) | Rule | 素材完整性 check_asset_pack.py(@引用全登记/无待补提示) | docs/USER_SOP.md / orchestration/ORCHESTRATION.md |
 | 写产品/结构镜头前必看参考图+依真实结构 | Rule | 写产品/结构镜头前必 read_image 看参考图 + 依真实产品结构(两件套/内部腔体/部件)，不凭印象堆它没有的细 | knowledge/FAILURE-LIBRARY.md / orchestration/ORCHESTRATION.md §5-21 |
 | 分镜前信息点去重 | Rule | 同一数据点(10000h/±0.2%/衰减<10%)只讲一次，重复即删。来源 失败F-17。 | knowledge/FAILURE-LIBRARY.md / orchestration/ORCHESTRATION.md §5-22 |
+| 参考图分类规范(项目验证码) | Rule | 参考图按 用途前缀+类型码 分类(文件名=条目ID): 三视图锚=RF_MAIN_*_三视图(主体/道具/角色锚); 场 | runs/20260905-embodied-industrial/assets-inventory.md / runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md / templates/assets-inventory.md / playbooks/production-workflow.md |
 | 口播读法批注 | Rule | 口播稿必带: 数字读法(±0.2%→误差不超过百分之零点二)/单位不念/型号逐字母(PHO-SC-4)/停连重音/语速档 | knowledge/FAILURE-LIBRARY.md / knowledge/FAILURE-LIBRARY.md |
 | 品牌资产官方源 | Rule | 品牌色/logo/字体一律官方源(官网矢量/VI/手册), 禁止自造色值; 品牌用字属用户拍板项#10 | knowledge/FAILURE-LIBRARY.md / knowledge/FAILURE-LIBRARY.md |
 | 图文对位(重点检查项) | Rule | 每镜: 口播内容 ↔ 画面描述 ↔ 参考图/首帧 三者必须对位——口播讲的对象/动作/状态必须在参考图中体现或可靠衍生 | templates/storyboard.md / agents/inspector.md |
@@ -3423,6 +3453,9 @@
 | 调研图料三件套 | Rule | ①科学道理(原理/公式/示意→理解报告+图谱) ②网图(公开示意图/结构/场景→入库refs/标来源版权, 无授权仅参考 | docs/USER_SOP.md / playbooks/production-workflow.md |
 | 零意外素材自包含 | Rule | 交付件自包含: 所有画面素材要么①已下载入包(含来源/授权) ②附文生图/图生视频生成prompt ③取自已收集客户素材 | docs/USER_SOP.md / orchestration/ORCHESTRATION.md |
 | 零门槛措辞 | Rule | 交付文档/对话禁用专业术语吓用户: '人工层/图表层/首帧/后期/LUT/压字' 一律替换为零门槛表述('模板/样张直接 | knowledge/FAILURE-LIBRARY.md |
+| 4D高斯光场重建(4DGS/4D Gaussian Splatting) | ScientificConcept | 多视点相机阵列360°同步采集→以三维高斯椭球表达场景(3D空间+时间=4D)→高精度重建动态人体/动作, 可任意视点回 | https://ymate3d.com/product/202401051327290075.html / https://www.lusterinc.com/solution/lu-stage-s4d/ / runs/20260905-embodied-industrial/m2/scientist-补充调研-具身智能进工业.md / runs/20260905-embodied-industrial/storyboard-分镜表.md / https://arxiv.org/abs/2405.03417 |
+| 锂电产线高危工序(调研背景) | ScientificConcept | 锂电电芯产线典型『高危+重体力+高节拍』工序, 是具身智能『替人』(用工缺口×高危岗位)的典型场景与调研背景; 仅作背景 | runs/20260905-embodied-industrial/m2/scientist-补充调研-具身智能进工业.md / runs/20260905-embodied-industrial/brief.md / runs/20260905-embodied-industrial/refs/核心技术方案与旁白_抽取稿.md |
+| 分镜(storyboard shot) | StoryboardShot | 把一场戏拆成的镜头构图——景别/机位/焦段/运镜；分镜=相机视角的记录单位。 | agents/storyboard-artist.md / knowledge/camera-language.md / playbooks/storyboard-grid.md / templates/storyboard.md / https://zh.wikipedia.org/wiki/场面调度 / runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md / templates/video-prompt-formula.md |
 | 九宫格风格预览拍板 | UserGate | KSP-04.5 | templates/user-gate.md / playbooks/storyboard-grid.md |
 | 事实争议拍板 | UserGate | M2-M4 | templates/user-gate.md / agents/scientist.md |
 | 内容重点圈选(多选) | UserGate | KSP-03.5 | templates/user-gate.md / templates/brief.md |

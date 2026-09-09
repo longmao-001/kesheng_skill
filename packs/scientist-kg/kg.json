@@ -1618,6 +1618,278 @@
    "sources": [
     "https://www.hamamatsu.com.cn/cn/zh-cn/product/light-and-radiation-sources/Laser-Driven-Light-Source-LDLS/EQ-77-QZ-S.html"
    ]
+  },
+  {
+   "id": "Domain:具身智能",
+   "type": "Domain",
+   "name": "具身智能",
+   "props": {
+    "定位": "具身智能 / Embodied AI 学科与工业域"
+   },
+   "sources": [
+    "arXiv:2407.06886",
+    "arXiv:2405.15775"
+   ]
+  },
+  {
+   "id": "ScientificConcept:具身智能",
+   "type": "ScientificConcept",
+   "name": "具身智能",
+   "props": {
+    "定位": "有'身体'的智能机器人，能像人一样感知并动手改变世界，不只是会聊天的AI",
+    "类比": "会聊天的AI像'只读的百科全书'，具身智能是'能上手干活的学徒'",
+    "边界": "本体+数据+模型+场景的系统工程，不是单一模型",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2407.06886",
+    "https://arxiv.org/abs/2405.15775"
+   ]
+  },
+  {
+   "id": "ScientificConcept:视觉-语言-动作模型",
+   "type": "ScientificConcept",
+   "name": "视觉-语言-动作模型(VLA)",
+   "props": {
+    "定义": "把'看+听懂语言指令+输出动作'打通在同一个大模型里（Vision-Language-Action Model）",
+    "演化": "从云端大模型走向可端侧部署、可微调（OpenVLA/π0/GR00T N1）",
+    "泛化": "跨任务/跨本体泛化依赖大规模跨本体数据集",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2307.15818",
+    "https://arxiv.org/abs/2406.09246",
+    "https://arxiv.org/abs/2410.24164",
+    "https://arxiv.org/abs/2503.14734"
+   ]
+  },
+  {
+   "id": "ScientificConcept:世界模型",
+   "type": "ScientificConcept",
+   "name": "世界模型(World Model/WAM)",
+   "props": {
+    "定义": "在现实之上再训一个能'预测/推演现实'的模型，让机器人在脑内想象中预演动作",
+    "别名": "World Model / World-Action Model (WAM)",
+    "趋势": "从'生成视频'走向'可交互、可被策略使用'",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2402.15391",
+    "https://arxiv.org/abs/2310.06114",
+    "https://developer.nvidia.cn/blog/beyond-vlas-how-world-action-models-reshape-robot-manipulation/",
+    "https://pattern.swarma.org/wechat_article/5863"
+   ]
+  },
+  {
+   "id": "ScientificConcept:基座模型后训练",
+   "type": "ScientificConcept",
+   "name": "基座模型后训练(Post-training)",
+   "props": {
+    "定义": "先用海量通用数据训一个'通才'基座，再用某场景真实数据做'专项补习'，实现通用→专用",
+    "大白话": "先读很多书的通才，再用这一行的真教材'补课特训'，变成这一行特别会干",
+    "趋势": "从'全量微调'走向'少量示教即可适配新本体/新场景'",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2406.09246",
+    "https://hub.baai.ac.cn/view/54674"
+   ]
+  },
+  {
+   "id": "ScientificConcept:仿真到现实迁移",
+   "type": "ScientificConcept",
+   "name": "仿真到现实迁移(Sim-to-Real)",
+   "props": {
+    "定义": "在仿真/数字孪生里大量试错，再把策略迁移到真机",
+    "前提": "仿真要有足够真实性，否则'仿真好用、生产失效'",
+    "方法": "域随机化；现实差距(Reality Gap)需显式应对",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/1703.06907",
+    "https://www.science.org/doi/10.1126/scirobotics.aau5872",
+    "https://arxiv.org/abs/2510.20808"
+   ]
+  },
+  {
+   "id": "ScientificConcept:数字孪生",
+   "type": "ScientificConcept",
+   "name": "数字孪生(Digital Twin)",
+   "props": {
+    "定义": "真实世界在数字世界的可交互镜像",
+    "用途": "让模型/系统在数字镜像里反复试错，不占真实节拍、不产生真实报废",
+    "前提": "价值完全取决于真实性——必须由真实数据驱动",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://doi.org/10.1007/s10845-023-02172-7",
+    "https://www.mdpi.com/2076-3417/12/13/6512",
+    "https://saemobilus.sae.org/papers/design-a-digital-twin-robot-assembled-workpiece-transfer-station-virtual-commissioning-2026-99-0347"
+   ]
+  },
+  {
+   "id": "ScientificConcept:灵巧操作",
+   "type": "ScientificConcept",
+   "name": "灵巧操作(Dexterous Manipulation)",
+   "props": {
+    "定义": "用灵巧手/柔性抓取完成精密对位、容错微调、跨物体泛化的操作",
+    "难点": "物料形变/来料偏差/治具磨损/工位扰动下的泛化与容错",
+    "技术": "Diffusion Policy(动作扩散)/AnyGrasp(密集抓取)/D3Grasp(可变形抓取)",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2303.04137",
+    "https://arxiv.org/abs/2212.08333",
+    "https://arxiv.org/pdf/2509.19892",
+    "https://arxiv.org/abs/2304.13705"
+   ]
+  },
+  {
+   "id": "ScientificConcept:真实世界机器人数据集",
+   "type": "ScientificConcept",
+   "name": "真实世界机器人数据集",
+   "props": {
+    "定义": "真实世界采集的跨本体机器人操作数据集，供策略训练与后训练",
+    "关键": "数据规模与多样性→跨任务/跨本体泛化；数据多样性(而非单纯数量)更重要",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2310.08864",
+    "https://arxiv.org/abs/2403.12945",
+    "https://arxiv.org/abs/2308.12952"
+   ]
+  },
+  {
+   "id": "ScientificConcept:三维视觉感知与位姿估计",
+   "type": "ScientificConcept",
+   "name": "三维视觉感知与位姿估计",
+   "props": {
+    "定义": "对三维场景/物体做理解、分割、6D位姿估计与跟踪，支撑手眼协同",
+    "基础模型": "SAM通用分割/FoundationPose统一6D位姿/大规模抓取基准",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2312.08344",
+    "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+    "https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_..._CVPR_2020_paper.html"
+   ]
+  },
+  {
+   "id": "ScientificConcept:人机协作安全",
+   "type": "ScientificConcept",
+   "name": "人机协作安全(HRC Safety)",
+   "props": {
+    "定义": "机器人与人/设备在同一产线安全共处的标准与传感系统",
+    "底线": "ISO 10218(机器人)与 ISO/TS 15066(人机协作)",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://www.sick.com/hk/zf/more-safety-for-humans-and-machines/w/blog-robotic-norm-iso10218",
+    "https://doi.org/10.1109/JSEN.2024.3496905",
+    "https://www.mdpi.com/1424-8220/23/12/5663"
+   ]
+  },
+  {
+   "id": "ScientificConcept:具身智能进工业七大技术群",
+   "type": "ScientificConcept",
+   "name": "具身智能进工业七大技术群",
+   "props": {
+    "定义": "具身智能进入工业场景必须突破的7类关键技术群（数据/感知/操作与泛化/学习范式/数字孪生/安全可靠/落地基础设施）",
+    "命门": "数据是总命门——高质量真实交互数据(HOI/HRC)极度缺失，制约泛化与Sim2Real",
+    "用法": "作'具身智能进工业'的技术分析框架；每群再细化'突破点/门槛/现状/来源'",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://lw.news.cn/20251118/2cdc40bcf38941989be2f37a8fce8b32/c.html",
+    "https://www.cena.com.cn/smartt/20260403/128569.html",
+    "https://www.shenlanxueyuan.com/news/detail/32",
+    "https://www.thepaper.cn/newsDetail_forward_29953659"
+   ]
+  },
+  {
+   "id": "Analogy:后训练-补课特训",
+   "type": "Analogy",
+   "name": "后训练-补课特训",
+   "props": {
+    "定位": "后训练=用真实数据给模型'补课特训'，从'什么都会一点'变成'这个专业特别会干'",
+    "适用受众": "领导/大众",
+    "有误导风险": "需说明基座模型已是通才，不是从零开始教"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2406.09246",
+    "https://hub.baai.ac.cn/view/54674"
+   ]
+  },
+  {
+   "id": "Analogy:数字孪生-真实产线镜像",
+   "type": "Analogy",
+   "name": "数字孪生-真实产线镜像",
+   "props": {
+    "定位": "数字孪生=在电脑里建一个跟真实产线一模一样的镜像，让AI先在里面练",
+    "适用受众": "领导/大众",
+    "有误导风险": "镜像若不反映真实公差/扰动则训练无效，必须由真实数据驱动"
+   },
+   "sources": [
+    "https://doi.org/10.1007/s10845-023-02172-7",
+    "https://www.mdpi.com/2076-3417/12/13/6512"
+   ]
+  },
+  {
+   "id": "Analogy:数据命门-教科书插图与真师傅",
+   "type": "Analogy",
+   "name": "数据命门-教科书插图与真师傅",
+   "props": {
+    "定位": "仿真像'教科书插图'，真实数据像'跟真师傅在真车间干活'——插图教不会应对真实公差/来料偏差",
+    "适用受众": "领导/大众",
+    "有误导风险": "非贬低仿真，仿真在迁移/试错环节仍有价值"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2510.20808",
+    "https://arxiv.org/abs/1703.06907"
+   ]
+  },
+  {
+   "id": "Analogy:大脑-小脑分工",
+   "type": "Analogy",
+   "name": "大脑-小脑分工",
+   "props": {
+    "定位": "上层大模型管'想和定'（理解/规划/决策），下层高频控制管'稳和准'（实时运控）",
+    "适用受众": "领导/大众",
+    "有误导风险": "简化，实际是机器人控制架构的分层"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2410.24164",
+    "https://arxiv.org/abs/2503.14734"
+   ]
+  },
+  {
+   "id": "DataPoint:具身智能数据投入有效占比低",
+   "type": "DataPoint",
+   "name": "具身智能数据投入有效占比低",
+   "props": {
+    "值": "行业声音称当前具身智能约90%的数据投入无效",
+    "口径": "行业/媒体口径，非权威机构统计",
+    "含义": "数据产出≠数据可用，核心矛盾在数据质量与可用性",
+    "待确认": true
+   },
+   "sources": [
+    "https://www.shenlanxueyuan.com/news/detail/32",
+    "https://www.jiemian.com/article/15047131.html"
+   ]
+  },
+  {
+   "id": "KnowledgeGap:数据命门缺乏权威量化",
+   "type": "KnowledgeGap",
+   "name": "数据命门缺乏权威量化",
+   "props": {
+    "内容": "'数据是具身智能核心瓶颈'在行业是一致判断，但缺权威机构统一量化口径；'约90%数据投入无效'为媒体口径，待确认",
+    "待确认": true
+   },
+   "sources": [
+    "https://lw.news.cn/20251118/2cdc40bcf38941989be2f37a8fce8b32/c.html",
+    "https://www.cena.com.cn/smartt/20260403/128569.html",
+    "https://www.shenlanxueyuan.com/news/detail/32"
+   ]
   }
  ],
  "relations": [
@@ -2633,6 +2905,186 @@
    "source": "DataPoint:EQ-77-QZ-S辐射亮度约为标准EQ-99X三倍",
    "target": "Company:滨松Hamamatsu",
    "type": "data-for-company",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:视觉-语言-动作模型",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:世界模型",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基座模型后训练",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:仿真到现实迁移",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:数字孪生",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:灵巧操作",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:真实世界机器人数据集",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:三维视觉感知与位姿估计",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:人机协作安全",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:视觉-语言-动作模型",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:世界模型",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:基座模型后训练",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:仿真到现实迁移",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:数字孪生",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:灵巧操作",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:真实世界机器人数据集",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:三维视觉感知与位姿估计",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:人机协作安全",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:视觉-语言-动作模型",
+   "target": "ScientificConcept:世界模型",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:世界模型",
+   "target": "ScientificConcept:基座模型后训练",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基座模型后训练",
+   "target": "ScientificConcept:仿真到现实迁移",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:灵巧操作",
+   "target": "ScientificConcept:三维视觉感知与位姿估计",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:基座模型后训练",
+   "target": "Analogy:后训练-补课特训",
+   "type": "uses-analogy",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:数字孪生",
+   "target": "Analogy:数字孪生-真实产线镜像",
+   "type": "uses-analogy",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:仿真到现实迁移",
+   "target": "Analogy:数据命门-教科书插图与真师傅",
+   "type": "uses-analogy",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:具身智能",
+   "target": "Analogy:大脑-小脑分工",
+   "type": "uses-analogy",
+   "props": {}
+  },
+  {
+   "source": "DataPoint:具身智能数据投入有效占比低",
+   "target": "ScientificConcept:具身智能进工业七大技术群",
+   "type": "data-for-concept",
+   "props": {}
+  },
+  {
+   "source": "KnowledgeGap:数据命门缺乏权威量化",
+   "target": "ScientificConcept:具身智能进工业七大技术群",
+   "type": "gap-in-concept",
    "props": {}
   }
  ]

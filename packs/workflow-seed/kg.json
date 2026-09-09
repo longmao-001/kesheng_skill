@@ -357,6 +357,218 @@
    "domains": [
     "工艺"
    ]
+  },
+  {
+   "id": "FilmProp:道具",
+   "type": "FilmProp",
+   "name": "道具(prop)",
+   "props": {
+    "定义": "戏中使用的物体（苹果/刀/电池/设备）——可移动、被角色使用；非人、非环境。",
+    "属性": "可替代 / 可移动 / 随场景",
+    "本质": "物体；是角色与场景交互的中介物——被角色拿取/移动/操作、被摆放在场景中",
+    "判定": "非人(角色)；非环境(场景)；凡可被角色拿取/移动/操作→道具",
+    "教材依据": "动画设计 103 特色课程自编教材：场景/角色/道具三要素（待确认书目）",
+    "三视图锚定": "道具/产品镜头需生成三视图/多角度示意图作主体锚——见 product-prompt-formula §〇.5",
+    "素材路线": "道具=物体: 全用真素材/官方图作锚(实拍/官方产品图), 不AI再造; 先生成三视图锚——product-prompt-formula §〇.5; 参考图分类=RF_MAIN_*_三视图"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "playbooks/storyboard-grid.md",
+    "templates/product-prompt-formula.md",
+    "https://zh.wikipedia.org/wiki/场面调度",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md"
+   ]
+  },
+  {
+   "id": "FilmCharacter:角色",
+   "type": "FilmCharacter",
+   "name": "角色(character)",
+   "props": {
+    "定义": "戏中的人/形象（机器人/女生/工人）——有戏份、会动作、穿道具/在场景中。",
+    "属性": "人设 / 动作 / 服装",
+    "作用": "承担叙事动作；穿行于场景、使用道具；跨镜一致性靠角色三视图/角色锚定",
+    "判定": "是人/拟人形象(非物体)；会动作、有戏份；区别于可移动道具与背景场景",
+    "教材依据": "动画设计 103 特色课程自编教材（待确认书目）",
+    "跨镜一致性": "有角色镜头以角色三视图为参考生成该镜首帧再图生视频",
+    "素材路线": "角色=人·形象(AI三视图): 概念角色用文生图生成三视图作全片角色锚(以实物/官方图为参考), 有实拍可用真素材; 参考图分类=RF_MAIN_*_三视图"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "knowledge/camera-language.md",
+    "knowledge/痛点链.md",
+    "templates/product-prompt-formula.md",
+    "https://zh.wikipedia.org/wiki/场面调度",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md"
+   ]
+  },
+  {
+   "id": "FilmScene:场景",
+   "type": "FilmScene",
+   "name": "场景(scene/设定)",
+   "props": {
+    "定义": "故事发生的地点/环境（工厂/道场/实验室/闹市）——背景环境，不随角色移动。",
+    "属性": "地点 / 氛围 / 可搭景 / 可实拍",
+    "作用": "作为宿主容纳道具、承载角色；场镜(establishing scene)建立空间关系",
+    "判定": "是背景环境(非物体/非人)；不随角色移动；可为实拍场地或搭景",
+    "教材依据": "动画设计 103 特色课程自编教材（待确认书目）",
+    "与分镜": "同一场景内按时间/机位切分为多个分镜；场景=分镜构成的公共空间前提",
+    "背景素材路线": "场景=环境背景: 有真素材(实拍/官方图)剪入/作背景, 无真素材才AI生成场景背景; 角色分层放入场景; 场景≠道具≠角色"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "knowledge/camera-language.md",
+    "templates/storyboard.md",
+    "https://zh.wikipedia.org/wiki/场面调度",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md"
+   ]
+  },
+  {
+   "id": "StoryboardShot:分镜",
+   "type": "StoryboardShot",
+   "name": "分镜(storyboard shot)",
+   "props": {
+    "定义": "把一场戏拆成的镜头构图——景别/机位/焦段/运镜；分镜=相机视角的记录单位。",
+    "属性": "景别 / 机位 / 运镜 / 时长 / 画面内容 / 口播",
+    "单镜约束": "单镜 3-10s(≤10s)；单镜≤2 种运镜；景别叙事动线 远→全→中→近→特",
+    "构成": "分镜=同一场景内按时间/机位切分的镜头；由「场景+道具+角色+机位」构成",
+    "分镜表": "分镜表=镜头序列(storyboard)，每行六要素：景别/运镜/时长/画面/文稿/生成路线",
+    "教材依据": "动画设计 103 特色课程自编教材 / 导演与镜头书（待确认书目）",
+    "视频prompt公式": "分镜视频prompt=video-prompt-formula 九段(参数/参考/风格/镜头/时间轴/主体/声音/口播/负面+强制约束); 道具/角色/场景锚图prompt=product-prompt-formula 八段(三视图=§〇.5)"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "knowledge/camera-language.md",
+    "playbooks/storyboard-grid.md",
+    "templates/storyboard.md",
+    "https://zh.wikipedia.org/wiki/场面调度",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md",
+    "templates/video-prompt-formula.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:4D高斯光场重建",
+   "type": "ScientificConcept",
+   "name": "4D高斯光场重建(4DGS/4D Gaussian Splatting)",
+   "props": {
+    "定义": "多视点相机阵列360°同步采集→以三维高斯椭球表达场景(3D空间+时间=4D)→高精度重建动态人体/动作, 可任意视点回放",
+    "原理": "高斯泼溅(Gaussian Splatting)向时间维度扩展: 用一组高斯椭球(位置/旋转/尺度/不透明度/球谐)逐帧或时序表达场景→新视角实时合成; 演进链 NeRF→3DGS(实时高质量)→4DGS(动态), 见 Gaussian Splatting 综述",
+    "输出": "体积视频/动态三维重建: 360°实时光场采集; 支撑新视角合成、数字人/数字孪生复现",
+    "应用": "光场重建系统(商用例: 元客视界 LuStage S4D, 官方公开页); 已入成片口播『LuStage 多视点4D高斯光场重建』——用途=动作/人体采集与数字孪生建模",
+    "口径注意": "『光场重建』≠普通多相机视频: 是三维高斯椭球(3D+时间)表达; 术语错误=把光场重建当『3D扫描/普通拍摄』",
+    "待确认": "4DGS 具体时序建模方式(逐帧建模 vs 时序插值)取决于产品实现, 未见官方技术白皮书——待确认"
+   },
+   "sources": [
+    "https://ymate3d.com/product/202401051327290075.html",
+    "https://www.lusterinc.com/solution/lu-stage-s4d/",
+    "runs/20260905-embodied-industrial/m2/scientist-补充调研-具身智能进工业.md",
+    "runs/20260905-embodied-industrial/storyboard-分镜表.md",
+    "https://arxiv.org/abs/2405.03417"
+   ]
+  },
+  {
+   "id": "ScientificConcept:锂电工序高危点",
+   "type": "ScientificConcept",
+   "name": "锂电产线高危工序(调研背景)",
+   "props": {
+    "说明": "锂电电芯产线典型『高危+重体力+高节拍』工序, 是具身智能『替人』(用工缺口×高危岗位)的典型场景与调研背景; 仅作背景认知, 不作『已实现』声明",
+    "注液": "液态电解液(碳酸酯类有机溶剂+锂盐)有毒、易燃→注液工位需防毒防爆",
+    "焊接化成": "焊接/化成工段高温(化成过充产热)→高温+火源与化学品风险",
+    "涂布辊压分切": "涂布高温溶剂(烘干+溶剂挥发)→易燃/有毒蒸汽; 辊压分切高精度机械",
+    "搬运": "电芯/模组搬运=重体力高负荷",
+    "模组装配": "多部件装配, 重体力+精密对位",
+    "口径注意": "行业共性问题(高危×用工缺口)用定性表述, 不报市场具体数字; 与『数据是总命门』并列作行业背景",
+    "待确认": "各工序危害细节为行业通识+项目调研背景, 未逐条附一手文献——待确认"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/m2/scientist-补充调研-具身智能进工业.md",
+    "runs/20260905-embodied-industrial/brief.md",
+    "runs/20260905-embodied-industrial/refs/核心技术方案与旁白_抽取稿.md"
+   ]
+  },
+  {
+   "id": "ProcessRule:多agent辩论门控",
+   "type": "ProcessRule",
+   "name": "多agent辩论门控(子代理优先+红队三态)",
+   "props": {
+    "说明": "同一镜头/内容的创意分歧: 各角色(导演/分镜师+摄影指导/编剧等)以独立上下文并行给方案, 红队(未参与创作)三态裁决(PASS/CONDITIONAL/BLOCK), 制片人整合『后改法』再落地; 子代理优先=制片人不包办",
+    "成功案例": "20260905-embodied-industrial 开场镜头(镜00, 数据灯海→巨机挺立): 导演=灯海→巨机挺立『数据成骨 具身成峰』; 分镜/摄影=45°俯冲急停; 红队=CONDITIONAL后改法: ①f6961d真素材打底(不纯AI硬造) ②线框≤30% ③新口播句入文案白名单 ④镜06压至8s——机制=独立争议→三态裁决→整合改法→白名单收口",
+    "案例来源": "m4-prompts/prompts-cgprism.md 镜头00/镜头06(8s); m4-gate-red-recheck.md(红队CONDITIONAL); m2/editor-剪辑预计划.md(文案白名单)",
+    "待确认": "『数据成骨 具身成峰』方案语未在项目文件中命中, 为项目纪要/讨论口径——待确认"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/m4-prompts/prompts-cgprism.md",
+    "runs/20260905-embodied-industrial/m4-gate-red-recheck.md",
+    "runs/20260905-embodied-industrial/m2/editor-剪辑预计划.md",
+    "orchestration/ORCHESTRATION.md",
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
+   "id": "ProcessRule:成片文件组织规范",
+   "type": "ProcessRule",
+   "name": "成片文件组织规范(delivery/视频 按镜号命名)",
+   "props": {
+    "说明": "成片归档到 delivery/视频/ 并按镜号命名; 一镜多版本=同镜号同名后缀(版本/长版); 无镜号特殊件按『主题-描述』命名",
+    "命名格式": "镜NN-主体-描述.mp4 (例: 镜00-开场-数据灯海.mp4 / 镜05c-第一人称检查电芯-手部骨架.mp4)",
+    "特殊件": "无镜号: 主题-描述.mp4 (例: 注液工位-工人高危-电解液.mp4 / 全身遥操作-人形机器人-动捕.mp4)",
+    "项目实例": "本项目 delivery/视频/ 共15条成片(镜00/02/03/05b/05c×2/06/07×3/10×2 + 注液工位高危 + 全身遥操作 + 续写片段重拍)"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/delivery/README.md",
+    "runs/20260905-embodied-industrial/delivery/assets-inventory.md",
+    "playbooks/production-workflow.md"
+   ]
+  },
+  {
+   "id": "Rule:参考图分类规范",
+   "type": "Rule",
+   "name": "参考图分类规范(项目验证码)",
+   "props": {
+    "说明": "参考图按 用途前缀+类型码 分类(文件名=条目ID): 三视图锚=RF_MAIN_*_三视图(主体/道具/角色锚); 场景=RF_SCENE_*; 数据卡=RF_CARD_*_数据卡(人工锁值); 第一人称=RF_POV_*; 部件=RF_PART_*; 结构=RF_STR_*; 品牌=*_BRAND_*; 实拍=IN_RAW_*",
+    "派生": "自 素材库分类两轴(IN/RF×MAIN/PART/SCENE/STR/TEXT/DATA/BRAND/RAW); 本项目扩展 RF_CARD(数据卡)/RF_POV(第一人称)",
+    "挂载": "每镜 prompt 参考图挂载清单=文件+取哪部分→放哪; 主体一致性优先复用三视图锚图(跨镜)"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/assets-inventory.md",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md",
+    "templates/assets-inventory.md",
+    "playbooks/production-workflow.md"
+   ]
+  },
+  {
+   "id": "ProcessRule:交付件单一执行源版本收敛",
+   "type": "ProcessRule",
+   "name": "交付件单一执行源 + 版本收敛(出口前)",
+   "props": {
+    "说明": "最终交付件必须是单一自洽版本组合(口播定稿×分镜×执行prompt×风格基线)，同一制品只留一个定稿，版本漂移(多v并存/75s与90s同存/分镜标题版本与正文矛盾)即出口前打回——版本漂移是能拿到 PASS 的成品被降级为 CONDITIONAL 的最常见非内容原因",
+    "规则": "①口播稿只保留一个『定稿』版本(vN)，其余版务归档/删除，禁止 v9 与 v10 并存；②执行prompt以 m4-prompts/prompts-*.md 为单一源，run 根/delivery 不放旁路同题文件；③delivery/README 索引自包含，引用的文件必须在 delivery/ 内(或标明外部资源)，引用 m2/ 等 run 根件=死链；④分镜表/口播/prompt 三者的时长与分段(0-15/15-55/...)必须一致",
+    "检查": "出口前跑 scripts/check_delivery.py <runs/<项目>>：(A)多源并存 (B)delivery/README自包含死链 (C)口播稿多版本/分镜标题与正文版本矛盾——任一 FAIL 打回收敛后再交",
+    "反模式": "『先记旧版再补新版』『同题文件复制到多个目录』『README 引用未打进包的文件』『标题写90s正文写75s』",
+    "来源": "runs/20260905-embodied-industrial/m5-出口-评审单.md(§〇 交付件多版本分裂)"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/m5-出口-评审单.md",
+    "runs/20260905-embodied-industrial/delivery/README.md",
+    "scripts/check_delivery.py"
+   ]
+  },
+  {
+   "id": "ProcessRule:门控与真实格式对齐",
+   "type": "ProcessRule",
+   "name": "机器门控须与实际生产格式对齐(避免假阴性)",
+   "props": {
+    "说明": "门控脚本是『考勤式门控』的底座，但它假设的格式如果已不是团队现在实际用的格式，就会对一份完成度高的制品整片误报(假阴性)，导致(a)制片人要么被迫绕开门控(b)要么门控失掉可信度。本片三条门控(check_sop/check_prompt_sheet/check_asset_pack)都因『只认**字段**：/只认@图片N/只认某列』而对一份基本合规的交付件满屏 FAIL",
+    "规则": "①字段标记兼容两代(**字段**：与【字段】，核心字段同名)；②参考图语法兼容新旧(@图片N 与 @图NN=<文件名>/@图NN 空格文件名)，按 prompt 头『参考资产』映射解析；③路线白名单允许括注(参考生视频(产品·九段) → 主名=参考生视频)；④只要核心字段(参考/风格/时间轴/口播/声音/负面/参数)齐且非空即过，不因新增镜头/主体/强制约束等合法字段而报『字段顺序错』；⑤交付维度由 check_delivery.py 单独承担",
+    "校验": "跑 check_sop / check_prompt_sheet / check_asset_pack 时，先看是否只报『格式别名』而非『真缺』；把误报理解为脚本过时而不是制品不过关；修复脚本(兼容)而非改动制品迎合脚本",
+    "正例": "本片 check_sop/check_asset_pack 兼容后 PASS，只余镜00 真实缺陷(v9口播/风格token缺『真实产线为底』)被正确捕获",
+    "来源": "scripts/check_sop.py / check_prompt_sheet.py / check_asset_pack.py"
+   },
+   "sources": [
+    "scripts/check_sop.py",
+    "scripts/check_prompt_sheet.py",
+    "scripts/check_asset_pack.py",
+    "templates/prompt-sheet.md"
+   ]
   }
  ],
  "relations": [
@@ -543,6 +755,186 @@
   {
    "source": "ProcessRule:科学检察官报告规范",
    "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "FilmScene:场景",
+   "target": "FilmProp:道具",
+   "type": "hosts",
+   "props": {}
+  },
+  {
+   "source": "FilmCharacter:角色",
+   "target": "FilmScene:场景",
+   "type": "in-scene",
+   "props": {}
+  },
+  {
+   "source": "FilmCharacter:角色",
+   "target": "FilmProp:道具",
+   "type": "uses",
+   "props": {}
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "FilmScene:场景",
+   "type": "within-scene",
+   "props": {}
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "FilmCharacter:角色",
+   "type": "composed-of",
+   "props": {}
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "FilmProp:道具",
+   "type": "composed-of",
+   "props": {}
+  },
+  {
+   "source": "FilmProp:道具",
+   "target": "ProcessRule:三视图锚定",
+   "type": "anchored-by",
+   "props": {}
+  },
+  {
+   "source": "FilmCharacter:角色",
+   "target": "ProcessRule:三视图锚定",
+   "type": "anchored-by",
+   "props": {}
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "FeasibilityRule:单镜不超两种运镜",
+   "type": "governed-by",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:多agent辩论门控",
+   "target": "RoleWorkflow:红队",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:多agent辩论门控",
+   "target": "RoleWorkflow:制片人",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:参考图分类规范",
+   "target": "Rule:参考图挂载清单必写",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "FilmProp:道具",
+   "target": "Rule:参考图分类规范",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "FilmCharacter:角色",
+   "target": "Rule:参考图分类规范",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "FilmScene:场景",
+   "target": "Rule:参考图分类规范",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "Rule:参考图分类规范",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:4D高斯光场重建",
+   "target": "ScientificConcept:数字孪生",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:4D高斯光场重建",
+   "target": "ScientificConcept:三维视觉感知与位姿估计",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:锂电工序高危点",
+   "target": "ScientificConcept:具身智能进工业七大技术群",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ScientificConcept:锂电工序高危点",
+   "target": "ScientificConcept:人机协作安全",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:多agent辩论门控",
+   "target": "ProcessRule:质量门控",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:成片文件组织规范",
+   "target": "ProcessRule:素材库命名规范",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:参考图分类规范",
+   "target": "Concept:素材库分类两轴",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "Rule:参考图分类规范",
+   "target": "ProcessRule:三视图锚定",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:交付件单一执行源版本收敛",
+   "target": "ProcessRule:成片文件组织规范",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:门控与真实格式对齐",
+   "target": "ProcessRule:成片文件组织规范",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:交付件单一执行源版本收敛",
+   "target": "ProcessRule:质量门控",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:交付件单一执行源版本收敛",
+   "target": "Gate:M4出口门控",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:门控与真实格式对齐",
+   "target": "ProcessRule:质量门控",
+   "type": "concept-related-to",
+   "props": {}
+  },
+  {
+   "source": "ProcessRule:门控与真实格式对齐",
+   "target": "ProcessRule:多agent辩论门控",
    "type": "concept-related-to",
    "props": {}
   }

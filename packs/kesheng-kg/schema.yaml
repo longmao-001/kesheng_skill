@@ -56,6 +56,9 @@
 | FailureLesson | 工艺 | 见片段 schema.yaml |
 | FailureMode | 红队 | 见片段 schema.yaml |
 | FeasibilityRule | 影像 | 见片段 schema.yaml |
+| FilmCharacter | 工艺 | 见片段 schema.yaml |
+| FilmProp | 工艺 | 见片段 schema.yaml |
+| FilmScene | 工艺 | 见片段 schema.yaml |
 | FinalCut | 导演 | 见片段 schema.yaml |
 | Finding | 产业/叙事/导演/影像/美术 | 见片段 schema.yaml |
 | FontFamily | 美术 | 见片段 schema.yaml |
@@ -106,11 +109,12 @@
 | RouteRule | 工艺 | 见片段 schema.yaml |
 | Rule | 叙事/工艺/影像/美术 | 见片段 schema.yaml |
 | Scenario | 美术 | 见片段 schema.yaml |
-| ScientificConcept | 科学 | 见片段 schema.yaml |
+| ScientificConcept | 工艺/科学 | 见片段 schema.yaml |
 | ScriptTemplate | 叙事 | 见片段 schema.yaml |
 | ShotType | prompt/分镜 | 见片段 schema.yaml |
 | SoundFx | 声音 | 见片段 schema.yaml |
 | SoundRule | 声音 | 见片段 schema.yaml |
+| StoryboardShot | 工艺 | 见片段 schema.yaml |
 | StyleDirection | prompt/美术 | 见片段 schema.yaml |
 | StyleTokenRule | prompt | 见片段 schema.yaml |
 | SupplierInfo | 产业 | 见片段 schema.yaml |
@@ -136,6 +140,7 @@
 
 | 关系类型 | 归属 domain | 说明 |
 | analogy-for-concept | 科学 | 见片段 schema.yaml |
+| anchored-by | 工艺 | 见片段 schema.yaml |
 | angle-covers | 红队 | 见片段 schema.yaml |
 | applies-to | 声音 | 见片段 schema.yaml |
 | artstyle-formula-for-platform | prompt | 见片段 schema.yaml |
@@ -153,6 +158,7 @@
 | company-in-market | 产业 | 见片段 schema.yaml |
 | company-in-segment | 产业 | 见片段 schema.yaml |
 | company-in-trend | 产业 | 见片段 schema.yaml |
+| composed-of | 工艺 | 见片段 schema.yaml |
 | concept-in-domain | 产业/科学 | 见片段 schema.yaml |
 | concept-related-to | 产业/叙事/导演/工艺/影像/科学/红队/美术 | 见片段 schema.yaml |
 | concept-uses-analogy | 科学 | 见片段 schema.yaml |
@@ -181,7 +187,7 @@
 | gap-in-concept | 科学 | 见片段 schema.yaml |
 | gate-checks | 工艺/红队 | 见片段 schema.yaml |
 | gate-in | 工艺 | 见片段 schema.yaml |
-| governed-by | 声音/美术 | 见片段 schema.yaml |
+| governed-by | 声音/工艺/美术 | 见片段 schema.yaml |
 | governs | 导演 | 见片段 schema.yaml |
 | grid-for-previz | 分镜 | 见片段 schema.yaml |
 | guides | 导演 | 见片段 schema.yaml |
@@ -189,6 +195,8 @@
 | hook-for-audience | 叙事 | 见片段 schema.yaml |
 | hook-leads-to-structure | 叙事 | 见片段 schema.yaml |
 | hook-uses | 叙事 | 见片段 schema.yaml |
+| hosts | 工艺 | 见片段 schema.yaml |
+| in-scene | 工艺 | 见片段 schema.yaml |
 | input-to | 声音 | 见片段 schema.yaml |
 | insight-feeds | 叙事 | 见片段 schema.yaml |
 | ksp-after-gate | 工艺 | 见片段 schema.yaml |
@@ -282,9 +290,11 @@
 | type-twin | 叙事 | 见片段 schema.yaml |
 | type-uses-pattern | 叙事 | 见片段 schema.yaml |
 | type-uses-sample | 叙事 | 见片段 schema.yaml |
-| uses | 导演 | 见片段 schema.yaml |
+| uses | 导演/工艺 | 见片段 schema.yaml |
+| uses-analogy | 科学 | 见片段 schema.yaml |
 | verifies | 声音 | 见片段 schema.yaml |
 | violates | 导演 | 见片段 schema.yaml |
 | viz-for-concept | 科学 | 见片段 schema.yaml |
+| within-scene | 工艺 | 见片段 schema.yaml |
 | workflow-gates | 工艺 | 见片段 schema.yaml |
 | workflow-uses | 工艺 | 见片段 schema.yaml |

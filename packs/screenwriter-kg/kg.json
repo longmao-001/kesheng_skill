@@ -1,111 +1,957 @@
 {
-  "schema_version": "1.0",
-  "pack": "screenwriter-kg",
-  "role": "编剧",
-  "entities": [
-    {"id": "HookType:数据冲击型", "type": "HookType", "name": "数据冲击型", "props": {"原理": "反直觉数字瞬间抓注意力", "适用": "申报立项/成果展示/科普短频", "示例": "效率提升300%已是事实", "首选受众": "专家"}, "sources": ["knowledge/hooks/opening-hooks.md"]},
-    {"id": "HookType:悬念提问型", "type": "HookType", "name": "悬念提问型", "props": {"原理": "激发好奇心求知欲", "适用": "健康食品/新材料/农业基因编辑/学术争议", "示例": "同一实验两组人结论相反", "首选受众": "专家/学生"}, "sources": ["knowledge/hooks/opening-hooks.md"]},
-    {"id": "HookType:反常识型", "type": "HookType", "name": "反常识型", "props": {"原理": "挑战既有认知制造冲突", "适用": "药用植物/食品科学/基因研究反转/大设施", "示例": "越毒的植物可能越能救你的命", "首选受众": "公众"}, "sources": ["knowledge/hooks/opening-hooks.md"]},
-    {"id": "HookType:身份代入型", "type": "HookType", "name": "身份代入型", "props": {"原理": "让观众觉得跟我有关", "适用": "生活化科研/政府项目大设施/免疫代谢", "示例": "作为纳税人有权知道14.98亿花在哪", "首选受众": "领导"}, "sources": ["knowledge/hooks/opening-hooks.md"]},
-    {"id": "HookType:故事切入型", "type": "HookType", "name": "故事切入型", "props": {"原理": "具体画面感开场再引科学", "适用": "发现故事/合成生物学/进化起源", "示例": "深夜实验室仪器显示意外读数", "首选受众": "公众/学生"}, "sources": ["knowledge/hooks/opening-hooks.md"]},
-    {"id": "HookType:申报专用型", "type": "HookType", "name": "申报专用型", "props": {"原理": "大气格局快速建立权威感", "适用": "国家战略开局/战略意义/系统性项目/代际对比", "示例": "评判科技硬实力看原始创新能力", "首选受众": "领导/评审"}, "sources": ["knowledge/hooks/opening-hooks.md"]},
-
-    {"id": "NarrativeStructure:标准叙事结构", "type": "NarrativeStructure", "name": "标准叙事结构", "props": {"顺序": "开头钩子→意义建立→核心内容→情感收尾→CTA", "用途": "科研视频通用结构", "节奏": "前5秒必有钩子,信息点≥3/分钟", "负责人": "编剧"}, "sources": ["agents/screenwriter.md"]},
-    {"id": "NarrativeStructure:申报片六镜头结构", "type": "NarrativeStructure", "name": "申报片六镜头结构", "props": {"顺序": "战略切入→痛点使命→核心架构→优势对比→愿景→CTA", "时长": "3-5分钟", "目标": "5分钟讲清是什么/为何重要/凭什么你们做", "出处模板": "A01"}, "sources": ["knowledge/templates/A01-total-intro.md"]},
-    {"id": "NarrativeStructure:痛点链结构", "type": "NarrativeStructure", "name": "痛点链结构", "props": {"链条": "任务/痛点→需求→亮点(数字)→证据", "用途": "产品/广告叙事脊柱", "铁律": "串不上就删", "同构": "带货玩法也是先痛点再选型"}, "sources": ["knowledge/痛点链.md", "knowledge/ad-copy.md"]},
-    {"id": "NarrativeStructure:工业广告标准叙事型", "type": "NarrativeStructure", "name": "工业广告标准叙事型", "props": {"段式": "针对需求→实现指标→实测/认证证据", "结构": "3-5段排开,一需求一段", "原则": "需求来自真实工况不许自造", "收口": "落在产品价值主张"}, "sources": ["knowledge/ad-copy.md"]},
-    {"id": "NarrativeStructure:品牌TVC叙事结构", "type": "NarrativeStructure", "name": "品牌TVC叙事结构", "props": {"镜序": "SC1状态引入→SC2核心交互→SC3视觉奇观→SC4情绪释放→SC5品牌落版", "基调": "低密度单线叙事", "节奏": "每镜只发生一个核心动作", "落版": "Slogan来自用户输入不可捏造"}, "sources": ["knowledge/tvc-ad-templates.md"]},
-
-    {"id": "CtaFormula:CTA黄金公式", "type": "CtaFormula", "name": "CTA黄金公式", "props": {"公式": "情感收尾句+具体行动指令+利益承诺", "好例": "科学更疯狂/关注每天一个发现/世界简单可懂", "差例": "好了视频到这里大家再见", "关键": "无情感无记忆点无行动=差"}, "sources": ["knowledge/hooks/cta-examples.md"]},
-    {"id": "CtaFormula:金句收尾库", "type": "CtaFormula", "name": "金句收尾库", "props": {"性质": "值得被引用/截图/记住", "示例": "科学不改变世界,是理解科学的人改变了世界", "场景": "申报/科普/学术收尾", "作用": "升华主题留记忆点"}, "sources": ["knowledge/hooks/cta-examples.md"]},
-
-    {"id": "ScriptTemplate:A01申报片模板", "type": "ScriptTemplate", "name": "A01申报片模板", "props": {"类型": "总体介绍片", "场景": "预研/立项答辩/首次对外介绍", "时长": "3-5分钟", "结构": "6镜头", "自检": "填空检查清单"}, "sources": ["knowledge/templates/A01-total-intro.md"]},
-    {"id": "ScriptTemplate:C类分受众适配指南", "type": "ScriptTemplate", "name": "C类分受众适配指南", "props": {"核心": "同一内容5种完全不同讲法", "模式": "EXP/GOV/PUB/STD/IND", "改动": "开头/术语/数据/类比/结尾/VI", "案例": "CRISPR高GABA番茄"}, "sources": ["knowledge/templates/C-multi-audience-guide.md"]},
-    {"id": "ScriptTemplate:品牌TVC五镜骨架", "type": "ScriptTemplate", "name": "品牌TVC五镜骨架", "props": {"镜数": "5镜×3秒", "时间轴": "起承转合", "落版纪律": "Slogan必须来自用户输入", "调性速配": "奢华/科技/青春/自然"}, "sources": ["knowledge/tvc-ad-templates.md"]},
-    {"id": "ScriptTemplate:电商带货黄金3秒4镜", "type": "ScriptTemplate", "name": "电商带货黄金3秒4镜", "props": {"时长": "15秒竖屏", "黄金": "0-3秒极致特写钩子", "后段": "3-8演示/8-12场景/12-15促单", "拼装": "五模块拼装法"}, "sources": ["knowledge/tvc-ad-templates.md"]},
-    {"id": "ScriptTemplate:带货11玩法速查", "type": "ScriptTemplate", "name": "带货11玩法速查", "props": {"逻辑": "先诊断痛点→再选玩法→再写prompt", "手法": "商超/宫格分镜/质检发货/微观视角/FPV等", "品类": "家居3C美妆个护食品服饰保健品", "张力": "官方限≤15格,样本用25格需对齐"}, "sources": ["knowledge/tvc-ad-templates.md"]},
-
-    {"id": "AudienceMode:EXP", "type": "AudienceMode", "name": "EXP", "props": {"叙事": "技术驱动数据说话", "术语": "保留全称不加解释", "数据": "高密度≥2点/30秒", "时长": "8-10分钟", "结尾": "指向后续研究方向"}, "sources": ["knowledge/templates/C-multi-audience-guide.md"]},
-    {"id": "AudienceMode:GOV", "type": "AudienceMode", "name": "GOV", "props": {"叙事": "成果导向突出战略意义", "术语": "首次出现加3-6字通俗注解", "数据": "中选最震撼3-5个", "时长": "3-5分钟", "结尾": "强调社会/经济效益带动就业"}, "sources": ["knowledge/templates/C-multi-audience-guide.md"]},
-    {"id": "AudienceMode:PUB", "type": "AudienceMode", "name": "PUB", "props": {"叙事": "故事化叙事类比驱动", "术语": "全部翻译成口语+类比", "数据": "低只留最震撼1-2个", "时长": "1-3分钟", "结尾": "情感升华+关注引导"}, "sources": ["knowledge/templates/C-multi-audience-guide.md"]},
-    {"id": "AudienceMode:STD", "type": "AudienceMode", "name": "STD", "props": {"叙事": "启发式展示前沿可能性", "术语": "出现时简短解释", "数据": "中偏低选有意义数据", "时长": "3-5分钟", "结尾": "招生态+展望感"}, "sources": ["knowledge/templates/C-multi-audience-guide.md"]},
-    {"id": "AudienceMode:IND", "type": "AudienceMode", "name": "IND", "props": {"叙事": "应用导向强调商业价值ROI", "术语": "商业化表达替代学术术语", "数据": "聚焦成本/产量/周期/规模", "时长": "2-4分钟", "结尾": "明确合作邀请+下一步"}, "sources": ["knowledge/templates/C-multi-audience-guide.md"]},
-
-    {"id": "WritingRule:单主钩子纪律", "type": "WritingRule", "name": "单主钩子纪律", "props": {"内容": "一条视频只用1个主钩子", "原因": "多了反而混乱", "关联": "钩子须与正文衔接防标题党"}, "sources": ["agents/screenwriter.md", "knowledge/hooks/opening-hooks.md"]},
-    {"id": "WritingRule:钩子5秒内抛出纪律", "type": "WritingRule", "name": "钩子5秒内抛出纪律", "props": {"内容": "钩子必须在前5秒内抛出", "依据": "视频黄金法则"}, "sources": ["knowledge/hooks/opening-hooks.md"]},
-    {"id": "WritingRule:钩子正文衔接纪律", "type": "WritingRule", "name": "钩子正文衔接纪律", "props": {"内容": "钩子必须与正文紧密衔接", "红线": "不能标题党式欺骗", "攻击点": "标题党=欺骗红线"}, "sources": ["knowledge/hooks/opening-hooks.md", "agents/screenwriter.md"]},
-    {"id": "WritingRule:钩子效果记录纪律", "type": "WritingRule", "name": "钩子效果记录纪律", "props": {"内容": "每次使用钩子后记录效果", "目的": "持续优化钩子库"}, "sources": ["knowledge/hooks/opening-hooks.md"]},
-    {"id": "WritingRule:术语首次解释纪律", "type": "WritingRule", "name": "术语首次解释纪律", "props": {"内容": "每个术语首次出现必须有解释", "例外": "专家版保留全称不加解释", "方式": "解释深度按受众模式定"}, "sources": ["agents/screenwriter.md", "knowledge/templates/C-multi-audience-guide.md"]},
-    {"id": "WritingRule:数据带出处纪律", "type": "WritingRule", "name": "数据带出处纪律", "props": {"内容": "留下的数据必须带科学顾问认可的出处", "原则": "没有出处的数字宁可不写", "取舍": "数据只留受众关心的"}, "sources": ["agents/screenwriter.md", "knowledge/ad-copy.md"]},
-    {"id": "WritingRule:节奏密度纪律", "type": "WritingRule", "name": "节奏密度纪律", "props": {"内容": "信息点≥3个/分钟,前5秒必有钩子", "用途": "避免无聊保持推进感", "反例": "开头平淡/段落无推进=无聊"}, "sources": ["agents/screenwriter.md"]},
-    {"id": "WritingRule:40字5秒镜头对齐纪律", "type": "WritingRule", "name": "40字5秒镜头对齐纪律", "props": {"内容": "单段口播对应镜头时长≤10秒", "字限": "约40字以内/5秒", "格式": "文稿按镜头号-文稿对齐分镜"}, "sources": ["agents/screenwriter.md"]},
-
-    {"id": "AdCopyLaw:痛点链公式", "type": "AdCopyLaw", "name": "痛点链公式", "props": {"公式": "任务/痛点→需求→亮点(数字)→证据", "铁律": "串不上就删", "反例": "亮度>75所以呢", "正例": "套刻误差小对光苛刻所以光源宽稳"}, "sources": ["knowledge/ad-copy.md", "knowledge/痛点链.md"]},
-    {"id": "AdCopyLaw:大字文案层规范", "type": "AdCopyLaw", "name": "大字文案层规范", "props": {"部位": "主slogan/分段大字/数据字卡/落版", "主slogan": "1句10字左右能独立成立", "数据字卡": "数值+单位+条件+出处角标", "字体": "无衬线亮底深字暗底白字微发光"}, "sources": ["knowledge/ad-copy.md", "knowledge/文案层.md"]},
-    {"id": "AdCopyLaw:广告语气红线", "type": "AdCopyLaw", "name": "广告语气红线", "props": {"受众": "B2B工程师冷静具体可验证", "禁止": "宏大空洞/对比性宣传/绝对化表述", "口播": "口播稿是听的,定稿前朗读测试", "务实": "零修辞防广告词警觉"}, "sources": ["knowledge/ad-copy.md"]},
-    {"id": "AdCopyLaw:收尾CTA公式", "type": "AdCopyLaw", "name": "收尾CTA公式", "props": {"公式": "情感收口句+具体动作+利益承诺", "示例": "光的表现用数据说话——索取规格书,预约样机", "部位": "落在落版/收尾"}, "sources": ["knowledge/ad-copy.md"]},
-    {"id": "AdCopyLaw:痛点先行律", "type": "AdCopyLaw", "name": "痛点先行律", "props": {"内容": "最强B2B视频以尖锐问题开场", "铁律": "one message/one audience/one CTA", "反例": "不以产品功能开场"}, "sources": ["knowledge/B2B广告手法.md"]},
-    {"id": "AdCopyLaw:证据上屏律", "type": "AdCopyLaw", "name": "证据上屏律", "props": {"内容": "实测曲线/对比图/专利号当内容", "参考": "Hamamatsu/Energetiq产品页手法", "机理": "'在工作中'比形容词有说服力"}, "sources": ["knowledge/B2B广告手法.md"]},
-    {"id": "AdCopyLaw:指标翻译律", "type": "AdCopyLaw", "name": "指标翻译律", "props": {"内容": "用客户语言(wph/uptime/CoO)说话", "方式": "按应用垂直分页/分段", "反例": "不用自家参数生硬宣传"}, "sources": ["knowledge/B2B广告手法.md"]},
-    {"id": "AdCopyLaw:需求实测对照律", "type": "AdCopyLaw", "name": "需求实测对照律", "props": {"内容": "左列检测需要什么,右列我们实测多少", "格式": "配对高亮", "受众": "规格书受众最优格式"}, "sources": ["knowledge/B2B广告手法.md"]},
-    {"id": "AdCopyLaw:漏斗配形式律", "type": "AdCopyLaw", "name": "漏斗配形式律", "props": {"内容": "认知期<60s explainer/考虑期2-4min demo/评估期webinar案例", "用途": "匹配购买阶段"}, "sources": ["knowledge/B2B广告手法.md"]}
-  ],
-  "relations": [
-    {"source": "HookType:数据冲击型", "target": "AudienceMode:EXP", "type": "hook-for-audience", "props": {}},
-    {"source": "HookType:悬念提问型", "target": "AudienceMode:EXP", "type": "hook-for-audience", "props": {}},
-    {"source": "HookType:悬念提问型", "target": "AudienceMode:STD", "type": "hook-for-audience", "props": {}},
-    {"source": "HookType:身份代入型", "target": "AudienceMode:GOV", "type": "hook-for-audience", "props": {}},
-    {"source": "HookType:申报专用型", "target": "AudienceMode:GOV", "type": "hook-for-audience", "props": {}},
-    {"source": "HookType:反常识型", "target": "AudienceMode:PUB", "type": "hook-for-audience", "props": {}},
-    {"source": "HookType:故事切入型", "target": "AudienceMode:PUB", "type": "hook-for-audience", "props": {}},
-    {"source": "HookType:故事切入型", "target": "AudienceMode:STD", "type": "hook-for-audience", "props": {}},
-    {"source": "HookType:数据冲击型", "target": "AudienceMode:GOV", "type": "hook-for-audience", "props": {}},
-
-    {"source": "HookType:数据冲击型", "target": "NarrativeStructure:标准叙事结构", "type": "hook-leads-to-structure", "props": {}},
-    {"source": "HookType:悬念提问型", "target": "NarrativeStructure:标准叙事结构", "type": "hook-leads-to-structure", "props": {}},
-    {"source": "HookType:反常识型", "target": "NarrativeStructure:标准叙事结构", "type": "hook-leads-to-structure", "props": {}},
-    {"source": "HookType:身份代入型", "target": "NarrativeStructure:标准叙事结构", "type": "hook-leads-to-structure", "props": {}},
-    {"source": "HookType:故事切入型", "target": "NarrativeStructure:标准叙事结构", "type": "hook-leads-to-structure", "props": {}},
-    {"source": "HookType:申报专用型", "target": "NarrativeStructure:申报片六镜头结构", "type": "hook-leads-to-structure", "props": {}},
-
-    {"source": "NarrativeStructure:申报片六镜头结构", "target": "ScriptTemplate:A01申报片模板", "type": "structure-in-template", "props": {}},
-    {"source": "NarrativeStructure:标准叙事结构", "target": "ScriptTemplate:C类分受众适配指南", "type": "structure-in-template", "props": {}},
-    {"source": "NarrativeStructure:痛点链结构", "target": "ScriptTemplate:带货11玩法速查", "type": "structure-in-template", "props": {}},
-    {"source": "NarrativeStructure:痛点链结构", "target": "ScriptTemplate:电商带货黄金3秒4镜", "type": "structure-in-template", "props": {}},
-    {"source": "NarrativeStructure:品牌TVC叙事结构", "target": "ScriptTemplate:品牌TVC五镜骨架", "type": "structure-in-template", "props": {}},
-
-    {"source": "ScriptTemplate:A01申报片模板", "target": "AudienceMode:GOV", "type": "template-for-audience", "props": {}},
-    {"source": "ScriptTemplate:C类分受众适配指南", "target": "AudienceMode:EXP", "type": "template-for-audience", "props": {}},
-    {"source": "ScriptTemplate:C类分受众适配指南", "target": "AudienceMode:GOV", "type": "template-for-audience", "props": {}},
-    {"source": "ScriptTemplate:C类分受众适配指南", "target": "AudienceMode:PUB", "type": "template-for-audience", "props": {}},
-    {"source": "ScriptTemplate:C类分受众适配指南", "target": "AudienceMode:STD", "type": "template-for-audience", "props": {}},
-    {"source": "ScriptTemplate:C类分受众适配指南", "target": "AudienceMode:IND", "type": "template-for-audience", "props": {}},
-
-    {"source": "AdCopyLaw:痛点链公式", "target": "NarrativeStructure:痛点链结构", "type": "law-drives-structure", "props": {}},
-    {"source": "AdCopyLaw:大字文案层规范", "target": "NarrativeStructure:工业广告标准叙事型", "type": "law-drives-structure", "props": {}},
-    {"source": "AdCopyLaw:广告语气红线", "target": "NarrativeStructure:工业广告标准叙事型", "type": "law-drives-structure", "props": {}},
-    {"source": "AdCopyLaw:收尾CTA公式", "target": "NarrativeStructure:标准叙事结构", "type": "law-drives-structure", "props": {}},
-    {"source": "AdCopyLaw:痛点先行律", "target": "NarrativeStructure:工业广告标准叙事型", "type": "law-drives-structure", "props": {}},
-    {"source": "AdCopyLaw:证据上屏律", "target": "NarrativeStructure:工业广告标准叙事型", "type": "law-drives-structure", "props": {}},
-    {"source": "AdCopyLaw:指标翻译律", "target": "NarrativeStructure:工业广告标准叙事型", "type": "law-drives-structure", "props": {}},
-    {"source": "AdCopyLaw:需求实测对照律", "target": "NarrativeStructure:工业广告标准叙事型", "type": "law-drives-structure", "props": {}},
-    {"source": "AdCopyLaw:漏斗配形式律", "target": "NarrativeStructure:工业广告标准叙事型", "type": "law-drives-structure", "props": {}},
-
-    {"source": "NarrativeStructure:标准叙事结构", "target": "CtaFormula:CTA黄金公式", "type": "structure-contains-part", "props": {}},
-    {"source": "NarrativeStructure:申报片六镜头结构", "target": "CtaFormula:CTA黄金公式", "type": "structure-contains-part", "props": {}},
-    {"source": "NarrativeStructure:申报片六镜头结构", "target": "CtaFormula:金句收尾库", "type": "structure-contains-part", "props": {}},
-    {"source": "NarrativeStructure:标准叙事结构", "target": "CtaFormula:金句收尾库", "type": "structure-contains-part", "props": {}},
-
-    {"source": "WritingRule:单主钩子纪律", "target": "NarrativeStructure:标准叙事结构", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:钩子5秒内抛出纪律", "target": "NarrativeStructure:标准叙事结构", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:钩子正文衔接纪律", "target": "NarrativeStructure:标准叙事结构", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:钩子效果记录纪律", "target": "ScriptTemplate:A01申报片模板", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:术语首次解释纪律", "target": "AudienceMode:GOV", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:术语首次解释纪律", "target": "AudienceMode:PUB", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:术语首次解释纪律", "target": "AudienceMode:STD", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:术语首次解释纪律", "target": "AudienceMode:EXP", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:数据带出处纪律", "target": "NarrativeStructure:标准叙事结构", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:节奏密度纪律", "target": "NarrativeStructure:标准叙事结构", "type": "rule-applies-to", "props": {}},
-    {"source": "WritingRule:40字5秒镜头对齐纪律", "target": "ScriptTemplate:A01申报片模板", "type": "rule-applies-to", "props": {}}
-  ]
+ "schema_version": "1.0",
+ "pack": "screenwriter-kg",
+ "role": "编剧",
+ "entities": [
+  {
+   "id": "HookType:数据冲击型",
+   "type": "HookType",
+   "name": "数据冲击型",
+   "props": {
+    "原理": "反直觉数字瞬间抓注意力",
+    "适用": "申报立项/成果展示/科普短频",
+    "示例": "效率提升300%已是事实",
+    "首选受众": "专家"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "HookType:悬念提问型",
+   "type": "HookType",
+   "name": "悬念提问型",
+   "props": {
+    "原理": "激发好奇心求知欲",
+    "适用": "健康食品/新材料/农业基因编辑/学术争议",
+    "示例": "同一实验两组人结论相反",
+    "首选受众": "专家/学生"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "HookType:反常识型",
+   "type": "HookType",
+   "name": "反常识型",
+   "props": {
+    "原理": "挑战既有认知制造冲突",
+    "适用": "药用植物/食品科学/基因研究反转/大设施",
+    "示例": "越毒的植物可能越能救你的命",
+    "首选受众": "公众"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "HookType:身份代入型",
+   "type": "HookType",
+   "name": "身份代入型",
+   "props": {
+    "原理": "让观众觉得跟我有关",
+    "适用": "生活化科研/政府项目大设施/免疫代谢",
+    "示例": "作为纳税人有权知道14.98亿花在哪",
+    "首选受众": "领导"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "HookType:故事切入型",
+   "type": "HookType",
+   "name": "故事切入型",
+   "props": {
+    "原理": "具体画面感开场再引科学",
+    "适用": "发现故事/合成生物学/进化起源",
+    "示例": "深夜实验室仪器显示意外读数",
+    "首选受众": "公众/学生"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "HookType:申报专用型",
+   "type": "HookType",
+   "name": "申报专用型",
+   "props": {
+    "原理": "大气格局快速建立权威感",
+    "适用": "国家战略开局/战略意义/系统性项目/代际对比",
+    "示例": "评判科技硬实力看原始创新能力",
+    "首选受众": "领导/评审"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "NarrativeStructure:标准叙事结构",
+   "type": "NarrativeStructure",
+   "name": "标准叙事结构",
+   "props": {
+    "顺序": "开头钩子→意义建立→核心内容→情感收尾→CTA",
+    "用途": "科研视频通用结构",
+    "节奏": "前5秒必有钩子,信息点≥3/分钟",
+    "负责人": "编剧"
+   },
+   "sources": [
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "NarrativeStructure:申报片六镜头结构",
+   "type": "NarrativeStructure",
+   "name": "申报片六镜头结构",
+   "props": {
+    "顺序": "战略切入→痛点使命→核心架构→优势对比→愿景→CTA",
+    "时长": "3-5分钟",
+    "目标": "5分钟讲清是什么/为何重要/凭什么你们做",
+    "出处模板": "A01"
+   },
+   "sources": [
+    "knowledge/templates/A01-total-intro.md"
+   ]
+  },
+  {
+   "id": "NarrativeStructure:痛点链结构",
+   "type": "NarrativeStructure",
+   "name": "痛点链结构",
+   "props": {
+    "链条": "任务/痛点→需求→亮点(数字)→证据",
+    "用途": "产品/广告叙事脊柱",
+    "铁律": "串不上就删",
+    "同构": "带货玩法也是先痛点再选型"
+   },
+   "sources": [
+    "knowledge/痛点链.md",
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
+   "id": "NarrativeStructure:工业广告标准叙事型",
+   "type": "NarrativeStructure",
+   "name": "工业广告标准叙事型",
+   "props": {
+    "段式": "针对需求→实现指标→实测/认证证据",
+    "结构": "3-5段排开,一需求一段",
+    "原则": "需求来自真实工况不许自造",
+    "收口": "落在产品价值主张"
+   },
+   "sources": [
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
+   "id": "NarrativeStructure:品牌TVC叙事结构",
+   "type": "NarrativeStructure",
+   "name": "品牌TVC叙事结构",
+   "props": {
+    "镜序": "SC1状态引入→SC2核心交互→SC3视觉奇观→SC4情绪释放→SC5品牌落版",
+    "基调": "低密度单线叙事",
+    "节奏": "每镜只发生一个核心动作",
+    "落版": "Slogan来自用户输入不可捏造"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "CtaFormula:CTA黄金公式",
+   "type": "CtaFormula",
+   "name": "CTA黄金公式",
+   "props": {
+    "公式": "情感收尾句+具体行动指令+利益承诺",
+    "好例": "科学更疯狂/关注每天一个发现/世界简单可懂",
+    "差例": "好了视频到这里大家再见",
+    "关键": "无情感无记忆点无行动=差"
+   },
+   "sources": [
+    "knowledge/hooks/cta-examples.md"
+   ]
+  },
+  {
+   "id": "CtaFormula:金句收尾库",
+   "type": "CtaFormula",
+   "name": "金句收尾库",
+   "props": {
+    "性质": "值得被引用/截图/记住",
+    "示例": "科学不改变世界,是理解科学的人改变了世界",
+    "场景": "申报/科普/学术收尾",
+    "作用": "升华主题留记忆点"
+   },
+   "sources": [
+    "knowledge/hooks/cta-examples.md"
+   ]
+  },
+  {
+   "id": "ScriptTemplate:A01申报片模板",
+   "type": "ScriptTemplate",
+   "name": "A01申报片模板",
+   "props": {
+    "类型": "总体介绍片",
+    "场景": "预研/立项答辩/首次对外介绍",
+    "时长": "3-5分钟",
+    "结构": "6镜头",
+    "自检": "填空检查清单"
+   },
+   "sources": [
+    "knowledge/templates/A01-total-intro.md"
+   ]
+  },
+  {
+   "id": "ScriptTemplate:C类分受众适配指南",
+   "type": "ScriptTemplate",
+   "name": "C类分受众适配指南",
+   "props": {
+    "核心": "同一内容5种完全不同讲法",
+    "模式": "EXP/GOV/PUB/STD/IND",
+    "改动": "开头/术语/数据/类比/结尾/VI",
+    "案例": "CRISPR高GABA番茄"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "ScriptTemplate:品牌TVC五镜骨架",
+   "type": "ScriptTemplate",
+   "name": "品牌TVC五镜骨架",
+   "props": {
+    "镜数": "5镜×3秒",
+    "时间轴": "起承转合",
+    "落版纪律": "Slogan必须来自用户输入",
+    "调性速配": "奢华/科技/青春/自然"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "ScriptTemplate:电商带货黄金3秒4镜",
+   "type": "ScriptTemplate",
+   "name": "电商带货黄金3秒4镜",
+   "props": {
+    "时长": "15秒竖屏",
+    "黄金": "0-3秒极致特写钩子",
+    "后段": "3-8演示/8-12场景/12-15促单",
+    "拼装": "五模块拼装法"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "ScriptTemplate:带货11玩法速查",
+   "type": "ScriptTemplate",
+   "name": "带货11玩法速查",
+   "props": {
+    "逻辑": "先诊断痛点→再选玩法→再写prompt",
+    "手法": "商超/宫格分镜/质检发货/微观视角/FPV等",
+    "品类": "家居3C美妆个护食品服饰保健品",
+    "张力": "官方限≤15格,样本用25格需对齐"
+   },
+   "sources": [
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "AudienceMode:EXP",
+   "type": "AudienceMode",
+   "name": "EXP",
+   "props": {
+    "叙事": "技术驱动数据说话",
+    "术语": "保留全称不加解释",
+    "数据": "高密度≥2点/30秒",
+    "时长": "8-10分钟",
+    "结尾": "指向后续研究方向"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "AudienceMode:GOV",
+   "type": "AudienceMode",
+   "name": "GOV",
+   "props": {
+    "叙事": "成果导向突出战略意义",
+    "术语": "首次出现加3-6字通俗注解",
+    "数据": "中选最震撼3-5个",
+    "时长": "3-5分钟",
+    "结尾": "强调社会/经济效益带动就业"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "AudienceMode:PUB",
+   "type": "AudienceMode",
+   "name": "PUB",
+   "props": {
+    "叙事": "故事化叙事类比驱动",
+    "术语": "全部翻译成口语+类比",
+    "数据": "低只留最震撼1-2个",
+    "时长": "1-3分钟",
+    "结尾": "情感升华+关注引导"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "AudienceMode:STD",
+   "type": "AudienceMode",
+   "name": "STD",
+   "props": {
+    "叙事": "启发式展示前沿可能性",
+    "术语": "出现时简短解释",
+    "数据": "中偏低选有意义数据",
+    "时长": "3-5分钟",
+    "结尾": "招生态+展望感"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "AudienceMode:IND",
+   "type": "AudienceMode",
+   "name": "IND",
+   "props": {
+    "叙事": "应用导向强调商业价值ROI",
+    "术语": "商业化表达替代学术术语",
+    "数据": "聚焦成本/产量/周期/规模",
+    "时长": "2-4分钟",
+    "结尾": "明确合作邀请+下一步"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "WritingRule:单主钩子纪律",
+   "type": "WritingRule",
+   "name": "单主钩子纪律",
+   "props": {
+    "内容": "一条视频只用1个主钩子",
+    "原因": "多了反而混乱",
+    "关联": "钩子须与正文衔接防标题党"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "WritingRule:钩子5秒内抛出纪律",
+   "type": "WritingRule",
+   "name": "钩子5秒内抛出纪律",
+   "props": {
+    "内容": "钩子必须在前5秒内抛出",
+    "依据": "视频黄金法则"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "WritingRule:钩子正文衔接纪律",
+   "type": "WritingRule",
+   "name": "钩子正文衔接纪律",
+   "props": {
+    "内容": "钩子必须与正文紧密衔接",
+    "红线": "不能标题党式欺骗",
+    "攻击点": "标题党=欺骗红线"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md",
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "WritingRule:钩子效果记录纪律",
+   "type": "WritingRule",
+   "name": "钩子效果记录纪律",
+   "props": {
+    "内容": "每次使用钩子后记录效果",
+    "目的": "持续优化钩子库"
+   },
+   "sources": [
+    "knowledge/hooks/opening-hooks.md"
+   ]
+  },
+  {
+   "id": "WritingRule:术语首次解释纪律",
+   "type": "WritingRule",
+   "name": "术语首次解释纪律",
+   "props": {
+    "内容": "每个术语首次出现必须有解释",
+    "例外": "专家版保留全称不加解释",
+    "方式": "解释深度按受众模式定"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "WritingRule:数据带出处纪律",
+   "type": "WritingRule",
+   "name": "数据带出处纪律",
+   "props": {
+    "内容": "留下的数据必须带科学顾问认可的出处",
+    "原则": "没有出处的数字宁可不写",
+    "取舍": "数据只留受众关心的"
+   },
+   "sources": [
+    "agents/screenwriter.md",
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
+   "id": "WritingRule:节奏密度纪律",
+   "type": "WritingRule",
+   "name": "节奏密度纪律",
+   "props": {
+    "内容": "信息点≥3个/分钟,前5秒必有钩子",
+    "用途": "避免无聊保持推进感",
+    "反例": "开头平淡/段落无推进=无聊"
+   },
+   "sources": [
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "WritingRule:40字5秒镜头对齐纪律",
+   "type": "WritingRule",
+   "name": "40字5秒镜头对齐纪律",
+   "props": {
+    "内容": "单段口播对应镜头时长≤10秒",
+    "字限": "约40字以内/5秒",
+    "格式": "文稿按镜头号-文稿对齐分镜"
+   },
+   "sources": [
+    "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:痛点链公式",
+   "type": "AdCopyLaw",
+   "name": "痛点链公式",
+   "props": {
+    "公式": "任务/痛点→需求→亮点(数字)→证据",
+    "铁律": "串不上就删",
+    "反例": "亮度>75所以呢",
+    "正例": "套刻误差小对光苛刻所以光源宽稳"
+   },
+   "sources": [
+    "knowledge/ad-copy.md",
+    "knowledge/痛点链.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:大字文案层规范",
+   "type": "AdCopyLaw",
+   "name": "大字文案层规范",
+   "props": {
+    "部位": "主slogan/分段大字/数据字卡/落版",
+    "主slogan": "1句10字左右能独立成立",
+    "数据字卡": "数值+单位+条件+出处角标",
+    "字体": "无衬线亮底深字暗底白字微发光"
+   },
+   "sources": [
+    "knowledge/ad-copy.md",
+    "knowledge/文案层.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:广告语气红线",
+   "type": "AdCopyLaw",
+   "name": "广告语气红线",
+   "props": {
+    "受众": "B2B工程师冷静具体可验证",
+    "禁止": "宏大空洞/对比性宣传/绝对化表述",
+    "口播": "口播稿是听的,定稿前朗读测试",
+    "务实": "零修辞防广告词警觉"
+   },
+   "sources": [
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:收尾CTA公式",
+   "type": "AdCopyLaw",
+   "name": "收尾CTA公式",
+   "props": {
+    "公式": "情感收口句+具体动作+利益承诺",
+    "示例": "光的表现用数据说话——索取规格书,预约样机",
+    "部位": "落在落版/收尾"
+   },
+   "sources": [
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:痛点先行律",
+   "type": "AdCopyLaw",
+   "name": "痛点先行律",
+   "props": {
+    "内容": "最强B2B视频以尖锐问题开场",
+    "铁律": "one message/one audience/one CTA",
+    "反例": "不以产品功能开场"
+   },
+   "sources": [
+    "knowledge/B2B广告手法.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:证据上屏律",
+   "type": "AdCopyLaw",
+   "name": "证据上屏律",
+   "props": {
+    "内容": "实测曲线/对比图/专利号当内容",
+    "参考": "Hamamatsu/Energetiq产品页手法",
+    "机理": "'在工作中'比形容词有说服力"
+   },
+   "sources": [
+    "knowledge/B2B广告手法.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:指标翻译律",
+   "type": "AdCopyLaw",
+   "name": "指标翻译律",
+   "props": {
+    "内容": "用客户语言(wph/uptime/CoO)说话",
+    "方式": "按应用垂直分页/分段",
+    "反例": "不用自家参数生硬宣传"
+   },
+   "sources": [
+    "knowledge/B2B广告手法.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:需求实测对照律",
+   "type": "AdCopyLaw",
+   "name": "需求实测对照律",
+   "props": {
+    "内容": "左列检测需要什么,右列我们实测多少",
+    "格式": "配对高亮",
+    "受众": "规格书受众最优格式"
+   },
+   "sources": [
+    "knowledge/B2B广告手法.md"
+   ]
+  },
+  {
+   "id": "AdCopyLaw:漏斗配形式律",
+   "type": "AdCopyLaw",
+   "name": "漏斗配形式律",
+   "props": {
+    "内容": "认知期<60s explainer/考虑期2-4min demo/评估期webinar案例",
+    "用途": "匹配购买阶段"
+   },
+   "sources": [
+    "knowledge/B2B广告手法.md"
+   ]
+  },
+  {
+   "id": "NarrativeStructure:GOV成果汇报叙事",
+   "type": "NarrativeStructure",
+   "name": "GOV成果汇报叙事",
+   "props": {
+    "顺序": "国家战略高度切入+行业痛点(钩子) → 痛点·为什么现在需要 → 要突破哪些技术 → 已有基础/成果 → 未来可实现 → 畅想升华+落版",
+    "模式": "GOV_汇报（成果展示非科普）",
+    "受众": "政府领导（产业规划/科技/工业信息），汇报大屏前一次看懂",
+    "铁律": "术语首次即译；数据只留最震撼3-5个，其余沉数据卡；不标题党；市场/行业数据改定性",
+    "时长": "90s~2min 精华主片"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md",
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
+   "id": "WritingRule:克制表述纪律",
+   "type": "WritingRule",
+   "name": "克制表述纪律",
+   "props": {
+    "规则": "把'行业共性难题'与'本方已有基础'分开讲，不把行业共性难题讲成独家突破；不把'布局/期许/方案口径'讲成'已量产/已验证'；概念渲染/机体未落地必须标注；绝对化表述(零/100%)改程度性表述",
+    "依据": "未经第三方验证/认证的表述一旦被当真，即构成夸大或造假；领导版尤其怕'过度承诺'被追问",
+    "场景": "GOV成果汇报/申报/品牌宣传片",
+    "来源": "项目验证"
+   },
+   "sources": [
+    "knowledge/ad-copy.md",
+    "knowledge/templates/C-multi-audience-guide.md"
+   ]
+  },
+  {
+   "id": "NarrativeStructure:概念融合骨架",
+   "type": "NarrativeStructure",
+   "name": "概念融合骨架",
+   "props": {
+    "做法": "先出多个概念方向，按四维(预注册/传播力/科学准确/可执行)评分，再把最强方向的'方法主线×人文落点×钩子'并入一个融合骨架；概念只决定信息架构/视觉主线，不推翻已锁定口播",
+    "要点": "融合骨架=方法主线+钩子+人文落点；辅线留数据卡/字幕；风格占比控制防同质化",
+    "适用": "科研/成果/申报宣传片多方向拍板",
+    "来源": "项目验证"
+   },
+   "sources": [
+    "knowledge/templates/A01-total-intro.md",
+    "knowledge/tvc-ad-templates.md"
+   ]
+  },
+  {
+   "id": "WritingRule:GOV数据克制",
+   "type": "WritingRule",
+   "name": "GOV数据克制",
+   "props": {
+    "规则": "领导版只保留最震撼3-5个指标，其余下沉数据卡/字幕；禁参数堆砌；市场/行业数据作定性；未验证/未第三方认证的指标标'方案口径'或不用",
+    "依据": "领导记'能写进汇报的5个词'而非15个数字；参数堆砌=认知负荷超载(信息密度≤3点/分钟)",
+    "场景": "GOV汇报版口播",
+    "来源": "项目验证"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md",
+    "knowledge/痛点链.md",
+    "knowledge/ad-copy.md"
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "source": "HookType:数据冲击型",
+   "target": "AudienceMode:EXP",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:悬念提问型",
+   "target": "AudienceMode:EXP",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:悬念提问型",
+   "target": "AudienceMode:STD",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:身份代入型",
+   "target": "AudienceMode:GOV",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:申报专用型",
+   "target": "AudienceMode:GOV",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:反常识型",
+   "target": "AudienceMode:PUB",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:故事切入型",
+   "target": "AudienceMode:PUB",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:故事切入型",
+   "target": "AudienceMode:STD",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:数据冲击型",
+   "target": "AudienceMode:GOV",
+   "type": "hook-for-audience",
+   "props": {}
+  },
+  {
+   "source": "HookType:数据冲击型",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "hook-leads-to-structure",
+   "props": {}
+  },
+  {
+   "source": "HookType:悬念提问型",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "hook-leads-to-structure",
+   "props": {}
+  },
+  {
+   "source": "HookType:反常识型",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "hook-leads-to-structure",
+   "props": {}
+  },
+  {
+   "source": "HookType:身份代入型",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "hook-leads-to-structure",
+   "props": {}
+  },
+  {
+   "source": "HookType:故事切入型",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "hook-leads-to-structure",
+   "props": {}
+  },
+  {
+   "source": "HookType:申报专用型",
+   "target": "NarrativeStructure:申报片六镜头结构",
+   "type": "hook-leads-to-structure",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:申报片六镜头结构",
+   "target": "ScriptTemplate:A01申报片模板",
+   "type": "structure-in-template",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:标准叙事结构",
+   "target": "ScriptTemplate:C类分受众适配指南",
+   "type": "structure-in-template",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:痛点链结构",
+   "target": "ScriptTemplate:带货11玩法速查",
+   "type": "structure-in-template",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:痛点链结构",
+   "target": "ScriptTemplate:电商带货黄金3秒4镜",
+   "type": "structure-in-template",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:品牌TVC叙事结构",
+   "target": "ScriptTemplate:品牌TVC五镜骨架",
+   "type": "structure-in-template",
+   "props": {}
+  },
+  {
+   "source": "ScriptTemplate:A01申报片模板",
+   "target": "AudienceMode:GOV",
+   "type": "template-for-audience",
+   "props": {}
+  },
+  {
+   "source": "ScriptTemplate:C类分受众适配指南",
+   "target": "AudienceMode:EXP",
+   "type": "template-for-audience",
+   "props": {}
+  },
+  {
+   "source": "ScriptTemplate:C类分受众适配指南",
+   "target": "AudienceMode:GOV",
+   "type": "template-for-audience",
+   "props": {}
+  },
+  {
+   "source": "ScriptTemplate:C类分受众适配指南",
+   "target": "AudienceMode:PUB",
+   "type": "template-for-audience",
+   "props": {}
+  },
+  {
+   "source": "ScriptTemplate:C类分受众适配指南",
+   "target": "AudienceMode:STD",
+   "type": "template-for-audience",
+   "props": {}
+  },
+  {
+   "source": "ScriptTemplate:C类分受众适配指南",
+   "target": "AudienceMode:IND",
+   "type": "template-for-audience",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:痛点链公式",
+   "target": "NarrativeStructure:痛点链结构",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:大字文案层规范",
+   "target": "NarrativeStructure:工业广告标准叙事型",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:广告语气红线",
+   "target": "NarrativeStructure:工业广告标准叙事型",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:收尾CTA公式",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:痛点先行律",
+   "target": "NarrativeStructure:工业广告标准叙事型",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:证据上屏律",
+   "target": "NarrativeStructure:工业广告标准叙事型",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:指标翻译律",
+   "target": "NarrativeStructure:工业广告标准叙事型",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:需求实测对照律",
+   "target": "NarrativeStructure:工业广告标准叙事型",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "AdCopyLaw:漏斗配形式律",
+   "target": "NarrativeStructure:工业广告标准叙事型",
+   "type": "law-drives-structure",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:标准叙事结构",
+   "target": "CtaFormula:CTA黄金公式",
+   "type": "structure-contains-part",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:申报片六镜头结构",
+   "target": "CtaFormula:CTA黄金公式",
+   "type": "structure-contains-part",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:申报片六镜头结构",
+   "target": "CtaFormula:金句收尾库",
+   "type": "structure-contains-part",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:标准叙事结构",
+   "target": "CtaFormula:金句收尾库",
+   "type": "structure-contains-part",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:单主钩子纪律",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:钩子5秒内抛出纪律",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:钩子正文衔接纪律",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:钩子效果记录纪律",
+   "target": "ScriptTemplate:A01申报片模板",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:术语首次解释纪律",
+   "target": "AudienceMode:GOV",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:术语首次解释纪律",
+   "target": "AudienceMode:PUB",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:术语首次解释纪律",
+   "target": "AudienceMode:STD",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:术语首次解释纪律",
+   "target": "AudienceMode:EXP",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:数据带出处纪律",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:节奏密度纪律",
+   "target": "NarrativeStructure:标准叙事结构",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:40字5秒镜头对齐纪律",
+   "target": "ScriptTemplate:A01申报片模板",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:GOV成果汇报叙事",
+   "target": "AudienceMode:GOV",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:克制表述纪律",
+   "target": "NarrativeStructure:GOV成果汇报叙事",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:GOV数据克制",
+   "target": "AudienceMode:GOV",
+   "type": "rule-applies-to",
+   "props": {}
+  },
+  {
+   "source": "NarrativeStructure:概念融合骨架",
+   "target": "NarrativeStructure:GOV成果汇报叙事",
+   "type": "structure-contains-part",
+   "props": {}
+  },
+  {
+   "source": "WritingRule:克制表述纪律",
+   "target": "NarrativeStructure:概念融合骨架",
+   "type": "rule-applies-to",
+   "props": {}
+  }
+ ]
 }

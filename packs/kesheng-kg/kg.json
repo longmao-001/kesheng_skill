@@ -50054,6 +50054,25 @@
    ]
   },
   {
+   "id": "NarrativeStructure:GOV成果汇报叙事",
+   "type": "NarrativeStructure",
+   "name": "GOV成果汇报叙事",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "顺序": "国家战略高度切入+行业痛点(钩子) → 痛点·为什么现在需要 → 要突破哪些技术 → 已有基础/成果 → 未来可实现 → 畅想升华+落版",
+    "模式": "GOV_汇报（成果展示非科普）",
+    "受众": "政府领导（产业规划/科技/工业信息），汇报大屏前一次看懂",
+    "铁律": "术语首次即译；数据只留最震撼3-5个，其余沉数据卡；不标题党；市场/行业数据改定性",
+    "时长": "90s~2min 精华主片"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md",
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
    "id": "NarrativeStructure:品牌TVC叙事结构",
    "type": "NarrativeStructure",
    "name": "品牌TVC叙事结构",
@@ -50102,6 +50121,24 @@
    },
    "sources": [
     "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "NarrativeStructure:概念融合骨架",
+   "type": "NarrativeStructure",
+   "name": "概念融合骨架",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "做法": "先出多个概念方向，按四维(预注册/传播力/科学准确/可执行)评分，再把最强方向的'方法主线×人文落点×钩子'并入一个融合骨架；概念只决定信息架构/视觉主线，不推翻已锁定口播",
+    "要点": "融合骨架=方法主线+钩子+人文落点；辅线留数据卡/字幕；风格占比控制防同质化",
+    "适用": "科研/成果/申报宣传片多方向拍板",
+    "来源": "项目验证"
+   },
+   "sources": [
+    "knowledge/templates/A01-total-intro.md",
+    "knowledge/tvc-ad-templates.md"
    ]
   },
   {
@@ -55379,6 +55416,43 @@
    },
    "sources": [
     "agents/screenwriter.md"
+   ]
+  },
+  {
+   "id": "WritingRule:GOV数据克制",
+   "type": "WritingRule",
+   "name": "GOV数据克制",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "规则": "领导版只保留最震撼3-5个指标，其余下沉数据卡/字幕；禁参数堆砌；市场/行业数据作定性；未验证/未第三方认证的指标标'方案口径'或不用",
+    "依据": "领导记'能写进汇报的5个词'而非15个数字；参数堆砌=认知负荷超载(信息密度≤3点/分钟)",
+    "场景": "GOV汇报版口播",
+    "来源": "项目验证"
+   },
+   "sources": [
+    "knowledge/templates/C-multi-audience-guide.md",
+    "knowledge/痛点链.md",
+    "knowledge/ad-copy.md"
+   ]
+  },
+  {
+   "id": "WritingRule:克制表述纪律",
+   "type": "WritingRule",
+   "name": "克制表述纪律",
+   "domains": [
+    "叙事"
+   ],
+   "props": {
+    "规则": "把'行业共性难题'与'本方已有基础'分开讲，不把行业共性难题讲成独家突破；不把'布局/期许/方案口径'讲成'已量产/已验证'；概念渲染/机体未落地必须标注；绝对化表述(零/100%)改程度性表述",
+    "依据": "未经第三方验证/认证的表述一旦被当真，即构成夸大或造假；领导版尤其怕'过度承诺'被追问",
+    "场景": "GOV成果汇报/申报/品牌宣传片",
+    "来源": "项目验证"
+   },
+   "sources": [
+    "knowledge/ad-copy.md",
+    "knowledge/templates/C-multi-audience-guide.md"
    ]
   },
   {
@@ -60686,6 +60760,79 @@
    ]
   },
   {
+   "id": "FilmCharacter:角色",
+   "type": "FilmCharacter",
+   "name": "角色(character)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "定义": "戏中的人/形象（机器人/女生/工人）——有戏份、会动作、穿道具/在场景中。",
+    "属性": "人设 / 动作 / 服装",
+    "作用": "承担叙事动作；穿行于场景、使用道具；跨镜一致性靠角色三视图/角色锚定",
+    "判定": "是人/拟人形象(非物体)；会动作、有戏份；区别于可移动道具与背景场景",
+    "教材依据": "动画设计 103 特色课程自编教材（待确认书目）",
+    "跨镜一致性": "有角色镜头以角色三视图为参考生成该镜首帧再图生视频",
+    "素材路线": "角色=人·形象(AI三视图): 概念角色用文生图生成三视图作全片角色锚(以实物/官方图为参考), 有实拍可用真素材; 参考图分类=RF_MAIN_*_三视图"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "knowledge/camera-language.md",
+    "knowledge/痛点链.md",
+    "templates/product-prompt-formula.md",
+    "https://zh.wikipedia.org/wiki/场面调度",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md"
+   ]
+  },
+  {
+   "id": "FilmProp:道具",
+   "type": "FilmProp",
+   "name": "道具(prop)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "定义": "戏中使用的物体（苹果/刀/电池/设备）——可移动、被角色使用；非人、非环境。",
+    "属性": "可替代 / 可移动 / 随场景",
+    "本质": "物体；是角色与场景交互的中介物——被角色拿取/移动/操作、被摆放在场景中",
+    "判定": "非人(角色)；非环境(场景)；凡可被角色拿取/移动/操作→道具",
+    "教材依据": "动画设计 103 特色课程自编教材：场景/角色/道具三要素（待确认书目）",
+    "三视图锚定": "道具/产品镜头需生成三视图/多角度示意图作主体锚——见 product-prompt-formula §〇.5",
+    "素材路线": "道具=物体: 全用真素材/官方图作锚(实拍/官方产品图), 不AI再造; 先生成三视图锚——product-prompt-formula §〇.5; 参考图分类=RF_MAIN_*_三视图"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "playbooks/storyboard-grid.md",
+    "templates/product-prompt-formula.md",
+    "https://zh.wikipedia.org/wiki/场面调度",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md"
+   ]
+  },
+  {
+   "id": "FilmScene:场景",
+   "type": "FilmScene",
+   "name": "场景(scene/设定)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "定义": "故事发生的地点/环境（工厂/道场/实验室/闹市）——背景环境，不随角色移动。",
+    "属性": "地点 / 氛围 / 可搭景 / 可实拍",
+    "作用": "作为宿主容纳道具、承载角色；场镜(establishing scene)建立空间关系",
+    "判定": "是背景环境(非物体/非人)；不随角色移动；可为实拍场地或搭景",
+    "教材依据": "动画设计 103 特色课程自编教材（待确认书目）",
+    "与分镜": "同一场景内按时间/机位切分为多个分镜；场景=分镜构成的公共空间前提",
+    "背景素材路线": "场景=环境背景: 有真素材(实拍/官方图)剪入/作背景, 无真素材才AI生成场景背景; 角色分层放入场景; 场景≠道具≠角色"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "knowledge/camera-language.md",
+    "templates/storyboard.md",
+    "https://zh.wikipedia.org/wiki/场面调度",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md"
+   ]
+  },
+  {
    "id": "KspStep:KSP-01立项定档",
    "type": "KspStep",
    "name": "KSP-01 立项定档",
@@ -61048,6 +61195,26 @@
    ]
   },
   {
+   "id": "ProcessRule:交付件单一执行源版本收敛",
+   "type": "ProcessRule",
+   "name": "交付件单一执行源 + 版本收敛(出口前)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "最终交付件必须是单一自洽版本组合(口播定稿×分镜×执行prompt×风格基线)，同一制品只留一个定稿，版本漂移(多v并存/75s与90s同存/分镜标题版本与正文矛盾)即出口前打回——版本漂移是能拿到 PASS 的成品被降级为 CONDITIONAL 的最常见非内容原因",
+    "规则": "①口播稿只保留一个『定稿』版本(vN)，其余版务归档/删除，禁止 v9 与 v10 并存；②执行prompt以 m4-prompts/prompts-*.md 为单一源，run 根/delivery 不放旁路同题文件；③delivery/README 索引自包含，引用的文件必须在 delivery/ 内(或标明外部资源)，引用 m2/ 等 run 根件=死链；④分镜表/口播/prompt 三者的时长与分段(0-15/15-55/...)必须一致",
+    "检查": "出口前跑 scripts/check_delivery.py <runs/<项目>>：(A)多源并存 (B)delivery/README自包含死链 (C)口播稿多版本/分镜标题与正文版本矛盾——任一 FAIL 打回收敛后再交",
+    "反模式": "『先记旧版再补新版』『同题文件复制到多个目录』『README 引用未打进包的文件』『标题写90s正文写75s』",
+    "来源": "runs/20260905-embodied-industrial/m5-出口-评审单.md(§〇 交付件多版本分裂)"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/m5-出口-评审单.md",
+    "runs/20260905-embodied-industrial/delivery/README.md",
+    "scripts/check_delivery.py"
+   ]
+  },
+  {
    "id": "ProcessRule:剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
    "type": "ProcessRule",
    "name": "剪辑合成（配音对齐·图表层·文案层·字幕·调色·片头片尾）",
@@ -61122,6 +61289,27 @@
    ]
   },
   {
+   "id": "ProcessRule:多agent辩论门控",
+   "type": "ProcessRule",
+   "name": "多agent辩论门控(子代理优先+红队三态)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "同一镜头/内容的创意分歧: 各角色(导演/分镜师+摄影指导/编剧等)以独立上下文并行给方案, 红队(未参与创作)三态裁决(PASS/CONDITIONAL/BLOCK), 制片人整合『后改法』再落地; 子代理优先=制片人不包办",
+    "成功案例": "20260905-embodied-industrial 开场镜头(镜00, 数据灯海→巨机挺立): 导演=灯海→巨机挺立『数据成骨 具身成峰』; 分镜/摄影=45°俯冲急停; 红队=CONDITIONAL后改法: ①f6961d真素材打底(不纯AI硬造) ②线框≤30% ③新口播句入文案白名单 ④镜06压至8s——机制=独立争议→三态裁决→整合改法→白名单收口",
+    "案例来源": "m4-prompts/prompts-cgprism.md 镜头00/镜头06(8s); m4-gate-red-recheck.md(红队CONDITIONAL); m2/editor-剪辑预计划.md(文案白名单)",
+    "待确认": "『数据成骨 具身成峰』方案语未在项目文件中命中, 为项目纪要/讨论口径——待确认"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/m4-prompts/prompts-cgprism.md",
+    "runs/20260905-embodied-industrial/m4-gate-red-recheck.md",
+    "runs/20260905-embodied-industrial/m2/editor-剪辑预计划.md",
+    "orchestration/ORCHESTRATION.md",
+    "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
    "id": "ProcessRule:多镜原生",
    "type": "ProcessRule",
    "name": "多镜原生",
@@ -61179,6 +61367,25 @@
    ]
   },
   {
+   "id": "ProcessRule:成片文件组织规范",
+   "type": "ProcessRule",
+   "name": "成片文件组织规范(delivery/视频 按镜号命名)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "成片归档到 delivery/视频/ 并按镜号命名; 一镜多版本=同镜号同名后缀(版本/长版); 无镜号特殊件按『主题-描述』命名",
+    "命名格式": "镜NN-主体-描述.mp4 (例: 镜00-开场-数据灯海.mp4 / 镜05c-第一人称检查电芯-手部骨架.mp4)",
+    "特殊件": "无镜号: 主题-描述.mp4 (例: 注液工位-工人高危-电解液.mp4 / 全身遥操作-人形机器人-动捕.mp4)",
+    "项目实例": "本项目 delivery/视频/ 共15条成片(镜00/02/03/05b/05c×2/06/07×3/10×2 + 注液工位高危 + 全身遥操作 + 续写片段重拍)"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/delivery/README.md",
+    "runs/20260905-embodied-industrial/delivery/assets-inventory.md",
+    "playbooks/production-workflow.md"
+   ]
+  },
+  {
    "id": "ProcessRule:术语发音检查",
    "type": "ProcessRule",
    "name": "术语发音检查",
@@ -61195,6 +61402,27 @@
     "playbooks/production-workflow.md",
     "agents/editor.md",
     "playbooks/platform-prompts.md"
+   ]
+  },
+  {
+   "id": "ProcessRule:门控与真实格式对齐",
+   "type": "ProcessRule",
+   "name": "机器门控须与实际生产格式对齐(避免假阴性)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "门控脚本是『考勤式门控』的底座，但它假设的格式如果已不是团队现在实际用的格式，就会对一份完成度高的制品整片误报(假阴性)，导致(a)制片人要么被迫绕开门控(b)要么门控失掉可信度。本片三条门控(check_sop/check_prompt_sheet/check_asset_pack)都因『只认**字段**：/只认@图片N/只认某列』而对一份基本合规的交付件满屏 FAIL",
+    "规则": "①字段标记兼容两代(**字段**：与【字段】，核心字段同名)；②参考图语法兼容新旧(@图片N 与 @图NN=<文件名>/@图NN 空格文件名)，按 prompt 头『参考资产』映射解析；③路线白名单允许括注(参考生视频(产品·九段) → 主名=参考生视频)；④只要核心字段(参考/风格/时间轴/口播/声音/负面/参数)齐且非空即过，不因新增镜头/主体/强制约束等合法字段而报『字段顺序错』；⑤交付维度由 check_delivery.py 单独承担",
+    "校验": "跑 check_sop / check_prompt_sheet / check_asset_pack 时，先看是否只报『格式别名』而非『真缺』；把误报理解为脚本过时而不是制品不过关；修复脚本(兼容)而非改动制品迎合脚本",
+    "正例": "本片 check_sop/check_asset_pack 兼容后 PASS，只余镜00 真实缺陷(v9口播/风格token缺『真实产线为底』)被正确捕获",
+    "来源": "scripts/check_sop.py / check_prompt_sheet.py / check_asset_pack.py"
+   },
+   "sources": [
+    "scripts/check_sop.py",
+    "scripts/check_prompt_sheet.py",
+    "scripts/check_asset_pack.py",
+    "templates/prompt-sheet.md"
    ]
   },
   {
@@ -61781,6 +62009,25 @@
    ]
   },
   {
+   "id": "Rule:参考图分类规范",
+   "type": "Rule",
+   "name": "参考图分类规范(项目验证码)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "参考图按 用途前缀+类型码 分类(文件名=条目ID): 三视图锚=RF_MAIN_*_三视图(主体/道具/角色锚); 场景=RF_SCENE_*; 数据卡=RF_CARD_*_数据卡(人工锁值); 第一人称=RF_POV_*; 部件=RF_PART_*; 结构=RF_STR_*; 品牌=*_BRAND_*; 实拍=IN_RAW_*",
+    "派生": "自 素材库分类两轴(IN/RF×MAIN/PART/SCENE/STR/TEXT/DATA/BRAND/RAW); 本项目扩展 RF_CARD(数据卡)/RF_POV(第一人称)",
+    "挂载": "每镜 prompt 参考图挂载清单=文件+取哪部分→放哪; 主体一致性优先复用三视图锚图(跨镜)"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/assets-inventory.md",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md",
+    "templates/assets-inventory.md",
+    "playbooks/production-workflow.md"
+   ]
+  },
+  {
    "id": "Rule:读法批注",
    "type": "Rule",
    "name": "口播读法批注",
@@ -61988,6 +62235,78 @@
    },
    "sources": [
     "knowledge/FAILURE-LIBRARY.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:4D高斯光场重建",
+   "type": "ScientificConcept",
+   "name": "4D高斯光场重建(4DGS/4D Gaussian Splatting)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "定义": "多视点相机阵列360°同步采集→以三维高斯椭球表达场景(3D空间+时间=4D)→高精度重建动态人体/动作, 可任意视点回放",
+    "原理": "高斯泼溅(Gaussian Splatting)向时间维度扩展: 用一组高斯椭球(位置/旋转/尺度/不透明度/球谐)逐帧或时序表达场景→新视角实时合成; 演进链 NeRF→3DGS(实时高质量)→4DGS(动态), 见 Gaussian Splatting 综述",
+    "输出": "体积视频/动态三维重建: 360°实时光场采集; 支撑新视角合成、数字人/数字孪生复现",
+    "应用": "光场重建系统(商用例: 元客视界 LuStage S4D, 官方公开页); 已入成片口播『LuStage 多视点4D高斯光场重建』——用途=动作/人体采集与数字孪生建模",
+    "口径注意": "『光场重建』≠普通多相机视频: 是三维高斯椭球(3D+时间)表达; 术语错误=把光场重建当『3D扫描/普通拍摄』",
+    "待确认": "4DGS 具体时序建模方式(逐帧建模 vs 时序插值)取决于产品实现, 未见官方技术白皮书——待确认"
+   },
+   "sources": [
+    "https://ymate3d.com/product/202401051327290075.html",
+    "https://www.lusterinc.com/solution/lu-stage-s4d/",
+    "runs/20260905-embodied-industrial/m2/scientist-补充调研-具身智能进工业.md",
+    "runs/20260905-embodied-industrial/storyboard-分镜表.md",
+    "https://arxiv.org/abs/2405.03417"
+   ]
+  },
+  {
+   "id": "ScientificConcept:锂电工序高危点",
+   "type": "ScientificConcept",
+   "name": "锂电产线高危工序(调研背景)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "说明": "锂电电芯产线典型『高危+重体力+高节拍』工序, 是具身智能『替人』(用工缺口×高危岗位)的典型场景与调研背景; 仅作背景认知, 不作『已实现』声明",
+    "注液": "液态电解液(碳酸酯类有机溶剂+锂盐)有毒、易燃→注液工位需防毒防爆",
+    "焊接化成": "焊接/化成工段高温(化成过充产热)→高温+火源与化学品风险",
+    "涂布辊压分切": "涂布高温溶剂(烘干+溶剂挥发)→易燃/有毒蒸汽; 辊压分切高精度机械",
+    "搬运": "电芯/模组搬运=重体力高负荷",
+    "模组装配": "多部件装配, 重体力+精密对位",
+    "口径注意": "行业共性问题(高危×用工缺口)用定性表述, 不报市场具体数字; 与『数据是总命门』并列作行业背景",
+    "待确认": "各工序危害细节为行业通识+项目调研背景, 未逐条附一手文献——待确认"
+   },
+   "sources": [
+    "runs/20260905-embodied-industrial/m2/scientist-补充调研-具身智能进工业.md",
+    "runs/20260905-embodied-industrial/brief.md",
+    "runs/20260905-embodied-industrial/refs/核心技术方案与旁白_抽取稿.md"
+   ]
+  },
+  {
+   "id": "StoryboardShot:分镜",
+   "type": "StoryboardShot",
+   "name": "分镜(storyboard shot)",
+   "domains": [
+    "工艺"
+   ],
+   "props": {
+    "定义": "把一场戏拆成的镜头构图——景别/机位/焦段/运镜；分镜=相机视角的记录单位。",
+    "属性": "景别 / 机位 / 运镜 / 时长 / 画面内容 / 口播",
+    "单镜约束": "单镜 3-10s(≤10s)；单镜≤2 种运镜；景别叙事动线 远→全→中→近→特",
+    "构成": "分镜=同一场景内按时间/机位切分的镜头；由「场景+道具+角色+机位」构成",
+    "分镜表": "分镜表=镜头序列(storyboard)，每行六要素：景别/运镜/时长/画面/文稿/生成路线",
+    "教材依据": "动画设计 103 特色课程自编教材 / 导演与镜头书（待确认书目）",
+    "视频prompt公式": "分镜视频prompt=video-prompt-formula 九段(参数/参考/风格/镜头/时间轴/主体/声音/口播/负面+强制约束); 道具/角色/场景锚图prompt=product-prompt-formula 八段(三视图=§〇.5)"
+   },
+   "sources": [
+    "agents/storyboard-artist.md",
+    "knowledge/camera-language.md",
+    "playbooks/storyboard-grid.md",
+    "templates/storyboard.md",
+    "https://zh.wikipedia.org/wiki/场面调度",
+    "runs/20260905-embodied-industrial/delivery/场景道具-先生成清单.md",
+    "templates/video-prompt-formula.md"
    ]
   },
   {
@@ -67881,6 +68200,40 @@
    ]
   },
   {
+   "id": "Analogy:后训练-补课特训",
+   "type": "Analogy",
+   "name": "后训练-补课特训",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定位": "后训练=用真实数据给模型'补课特训'，从'什么都会一点'变成'这个专业特别会干'",
+    "适用受众": "领导/大众",
+    "有误导风险": "需说明基座模型已是通才，不是从零开始教"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2406.09246",
+    "https://hub.baai.ac.cn/view/54674"
+   ]
+  },
+  {
+   "id": "Analogy:大脑-小脑分工",
+   "type": "Analogy",
+   "name": "大脑-小脑分工",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定位": "上层大模型管'想和定'（理解/规划/决策），下层高频控制管'稳和准'（实时运控）",
+    "适用受众": "领导/大众",
+    "有误导风险": "简化，实际是机器人控制架构的分层"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2410.24164",
+    "https://arxiv.org/abs/2503.14734"
+   ]
+  },
+  {
    "id": "Analogy:谱形漂移-尺子刻度变",
    "type": "Analogy",
    "name": "尺子刻度天天变",
@@ -67997,6 +68350,40 @@
    },
    "sources": [
     "kb/生物学/合成生物学.md"
+   ]
+  },
+  {
+   "id": "Analogy:数字孪生-真实产线镜像",
+   "type": "Analogy",
+   "name": "数字孪生-真实产线镜像",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定位": "数字孪生=在电脑里建一个跟真实产线一模一样的镜像，让AI先在里面练",
+    "适用受众": "领导/大众",
+    "有误导风险": "镜像若不反映真实公差/扰动则训练无效，必须由真实数据驱动"
+   },
+   "sources": [
+    "https://doi.org/10.1007/s10845-023-02172-7",
+    "https://www.mdpi.com/2076-3417/12/13/6512"
+   ]
+  },
+  {
+   "id": "Analogy:数据命门-教科书插图与真师傅",
+   "type": "Analogy",
+   "name": "数据命门-教科书插图与真师傅",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定位": "仿真像'教科书插图'，真实数据像'跟真师傅在真车间干活'——插图教不会应对真实公差/来料偏差",
+    "适用受众": "领导/大众",
+    "有误导风险": "非贬低仿真，仿真在迁移/试错环节仍有价值"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2510.20808",
+    "https://arxiv.org/abs/1703.06907"
    ]
   },
   {
@@ -68325,6 +68712,24 @@
    ]
   },
   {
+   "id": "DataPoint:具身智能数据投入有效占比低",
+   "type": "DataPoint",
+   "name": "具身智能数据投入有效占比低",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "值": "行业声音称当前具身智能约90%的数据投入无效",
+    "口径": "行业/媒体口径，非权威机构统计",
+    "含义": "数据产出≠数据可用，核心矛盾在数据质量与可用性",
+    "待确认": true
+   },
+   "sources": [
+    "https://www.shenlanxueyuan.com/news/detail/32",
+    "https://www.jiemian.com/article/15047131.html"
+   ]
+  },
+  {
    "id": "DataPoint:敲入效率-1到20%",
    "type": "DataPoint",
    "name": "基因敲除/敲入效率",
@@ -68541,6 +68946,21 @@
    "sources": [
     "kb/光学/激光驱动等离子体宽谱光源.md",
     "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "Domain:具身智能",
+   "type": "Domain",
+   "name": "具身智能",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定位": "具身智能 / Embodied AI 学科与工业域"
+   },
+   "sources": [
+    "arXiv:2407.06886",
+    "arXiv:2405.15775"
    ]
   },
   {
@@ -68930,6 +69350,23 @@
    ]
   },
   {
+   "id": "KnowledgeGap:数据命门缺乏权威量化",
+   "type": "KnowledgeGap",
+   "name": "数据命门缺乏权威量化",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "内容": "'数据是具身智能核心瓶颈'在行业是一致判断，但缺权威机构统一量化口径；'约90%数据投入无效'为媒体口径，待确认",
+    "待确认": true
+   },
+   "sources": [
+    "https://lw.news.cn/20251118/2cdc40bcf38941989be2f37a8fce8b32/c.html",
+    "https://www.cena.com.cn/smartt/20260403/128569.html",
+    "https://www.shenlanxueyuan.com/news/detail/32"
+   ]
+  },
+  {
    "id": "KnowledgeGap:物种最优递送",
    "type": "KnowledgeGap",
    "name": "物种最优递送方式",
@@ -69157,6 +69594,62 @@
    ]
   },
   {
+   "id": "ScientificConcept:三维视觉感知与位姿估计",
+   "type": "ScientificConcept",
+   "name": "三维视觉感知与位姿估计",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "对三维场景/物体做理解、分割、6D位姿估计与跟踪，支撑手眼协同",
+    "基础模型": "SAM通用分割/FoundationPose统一6D位姿/大规模抓取基准",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2312.08344",
+    "https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov_Segment_Anything_ICCV_2023_paper.html",
+    "https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_..._CVPR_2020_paper.html"
+   ]
+  },
+  {
+   "id": "ScientificConcept:世界模型",
+   "type": "ScientificConcept",
+   "name": "世界模型(World Model/WAM)",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "在现实之上再训一个能'预测/推演现实'的模型，让机器人在脑内想象中预演动作",
+    "别名": "World Model / World-Action Model (WAM)",
+    "趋势": "从'生成视频'走向'可交互、可被策略使用'",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2402.15391",
+    "https://arxiv.org/abs/2310.06114",
+    "https://developer.nvidia.cn/blog/beyond-vlas-how-world-action-models-reshape-robot-manipulation/",
+    "https://pattern.swarma.org/wechat_article/5863"
+   ]
+  },
+  {
+   "id": "ScientificConcept:人机协作安全",
+   "type": "ScientificConcept",
+   "name": "人机协作安全(HRC Safety)",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "机器人与人/设备在同一产线安全共处的标准与传感系统",
+    "底线": "ISO 10218(机器人)与 ISO/TS 15066(人机协作)",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://www.sick.com/hk/zf/more-safety-for-humans-and-machines/w/blog-robotic-norm-iso10218",
+    "https://doi.org/10.1109/JSEN.2024.3496905",
+    "https://www.mdpi.com/1424-8220/23/12/5663"
+   ]
+  },
+  {
    "id": "ScientificConcept:代谢通路",
    "type": "ScientificConcept",
    "name": "代谢通路",
@@ -69191,6 +69684,25 @@
    ]
   },
   {
+   "id": "ScientificConcept:仿真到现实迁移",
+   "type": "ScientificConcept",
+   "name": "仿真到现实迁移(Sim-to-Real)",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "在仿真/数字孪生里大量试错，再把策略迁移到真机",
+    "前提": "仿真要有足够真实性，否则'仿真好用、生产失效'",
+    "方法": "域随机化；现实差距(Reality Gap)需显式应对",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/1703.06907",
+    "https://www.science.org/doi/10.1126/scirobotics.aau5872",
+    "https://arxiv.org/abs/2510.20808"
+   ]
+  },
+  {
    "id": "ScientificConcept:光放电等离子体",
    "type": "ScientificConcept",
    "name": "光放电等离子体",
@@ -69222,6 +69734,44 @@
    },
    "sources": [
     "kb/光学/半导体量测的光源需求.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:具身智能",
+   "type": "ScientificConcept",
+   "name": "具身智能",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定位": "有'身体'的智能机器人，能像人一样感知并动手改变世界，不只是会聊天的AI",
+    "类比": "会聊天的AI像'只读的百科全书'，具身智能是'能上手干活的学徒'",
+    "边界": "本体+数据+模型+场景的系统工程，不是单一模型",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2407.06886",
+    "https://arxiv.org/abs/2405.15775"
+   ]
+  },
+  {
+   "id": "ScientificConcept:具身智能进工业七大技术群",
+   "type": "ScientificConcept",
+   "name": "具身智能进工业七大技术群",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "具身智能进入工业场景必须突破的7类关键技术群（数据/感知/操作与泛化/学习范式/数字孪生/安全可靠/落地基础设施）",
+    "命门": "数据是总命门——高质量真实交互数据(HOI/HRC)极度缺失，制约泛化与Sim2Real",
+    "用法": "作'具身智能进工业'的技术分析框架；每群再细化'突破点/门槛/现状/来源'",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://lw.news.cn/20251118/2cdc40bcf38941989be2f37a8fce8b32/c.html",
+    "https://www.cena.com.cn/smartt/20260403/128569.html",
+    "https://www.shenlanxueyuan.com/news/detail/32",
+    "https://www.thepaper.cn/newsDetail_forward_29953659"
    ]
   },
   {
@@ -69327,6 +69877,24 @@
    ]
   },
   {
+   "id": "ScientificConcept:基座模型后训练",
+   "type": "ScientificConcept",
+   "name": "基座模型后训练(Post-training)",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "先用海量通用数据训一个'通才'基座，再用某场景真实数据做'专项补习'，实现通用→专用",
+    "大白话": "先读很多书的通才，再用这一行的真教材'补课特训'，变成这一行特别会干",
+    "趋势": "从'全量微调'走向'少量示教即可适配新本体/新场景'",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2406.09246",
+    "https://hub.baai.ac.cn/view/54674"
+   ]
+  },
+  {
    "id": "ScientificConcept:套刻误差测量",
    "type": "ScientificConcept",
    "name": "套刻误差测量",
@@ -69361,6 +69929,25 @@
    ]
   },
   {
+   "id": "ScientificConcept:数字孪生",
+   "type": "ScientificConcept",
+   "name": "数字孪生(Digital Twin)",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "真实世界在数字世界的可交互镜像",
+    "用途": "让模型/系统在数字镜像里反复试错，不占真实节拍、不产生真实报废",
+    "前提": "价值完全取决于真实性——必须由真实数据驱动",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://doi.org/10.1007/s10845-023-02172-7",
+    "https://www.mdpi.com/2076-3417/12/13/6512",
+    "https://saemobilus.sae.org/papers/design-a-digital-twin-robot-assembled-workpiece-transfer-station-virtual-commissioning-2026-99-0347"
+   ]
+  },
+  {
    "id": "ScientificConcept:植物代谢",
    "type": "ScientificConcept",
    "name": "植物代谢",
@@ -69392,6 +69979,44 @@
    },
    "sources": [
     "kb/光学/激光驱动等离子体宽谱光源.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:灵巧操作",
+   "type": "ScientificConcept",
+   "name": "灵巧操作(Dexterous Manipulation)",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "用灵巧手/柔性抓取完成精密对位、容错微调、跨物体泛化的操作",
+    "难点": "物料形变/来料偏差/治具磨损/工位扰动下的泛化与容错",
+    "技术": "Diffusion Policy(动作扩散)/AnyGrasp(密集抓取)/D3Grasp(可变形抓取)",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2303.04137",
+    "https://arxiv.org/abs/2212.08333",
+    "https://arxiv.org/pdf/2509.19892",
+    "https://arxiv.org/abs/2304.13705"
+   ]
+  },
+  {
+   "id": "ScientificConcept:真实世界机器人数据集",
+   "type": "ScientificConcept",
+   "name": "真实世界机器人数据集",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "真实世界采集的跨本体机器人操作数据集，供策略训练与后训练",
+    "关键": "数据规模与多样性→跨任务/跨本体泛化；数据多样性(而非单纯数量)更重要",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2310.08864",
+    "https://arxiv.org/abs/2403.12945",
+    "https://arxiv.org/abs/2308.12952"
    ]
   },
   {
@@ -69460,6 +70085,26 @@
    },
    "sources": [
     "kb/生物学/植物代谢.md"
+   ]
+  },
+  {
+   "id": "ScientificConcept:视觉-语言-动作模型",
+   "type": "ScientificConcept",
+   "name": "视觉-语言-动作模型(VLA)",
+   "domains": [
+    "科学"
+   ],
+   "props": {
+    "定义": "把'看+听懂语言指令+输出动作'打通在同一个大模型里（Vision-Language-Action Model）",
+    "演化": "从云端大模型走向可端侧部署、可微调（OpenVLA/π0/GR00T N1）",
+    "泛化": "跨任务/跨本体泛化依赖大规模跨本体数据集",
+    "领域": "具身智能"
+   },
+   "sources": [
+    "https://arxiv.org/abs/2307.15818",
+    "https://arxiv.org/abs/2406.09246",
+    "https://arxiv.org/abs/2410.24164",
+    "https://arxiv.org/abs/2503.14734"
    ]
   },
   {
@@ -119979,6 +120624,38 @@
    ]
   },
   {
+   "source": "NarrativeStructure:GOV成果汇报叙事",
+   "target": "AudienceMode:GOV",
+   "type": "rule-applies-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "WritingRule:克制表述纪律",
+   "target": "NarrativeStructure:GOV成果汇报叙事",
+   "type": "rule-applies-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "WritingRule:GOV数据克制",
+   "target": "AudienceMode:GOV",
+   "type": "rule-applies-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "WritingRule:克制表述纪律",
+   "target": "NarrativeStructure:概念融合骨架",
+   "type": "rule-applies-to",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
    "source": "NarrationRule:旁白与基调一致性",
    "target": "StyleDirection:冷蓝生物荧光科学可视化风",
    "type": "rule-consistent-with",
@@ -120165,6 +120842,14 @@
   {
    "source": "NarrativeStructure:标准叙事结构",
    "target": "CtaFormula:金句收尾库",
+   "type": "structure-contains-part",
+   "domains": [
+    "叙事"
+   ]
+  },
+  {
+   "source": "NarrativeStructure:概念融合骨架",
+   "target": "NarrativeStructure:GOV成果汇报叙事",
    "type": "structure-contains-part",
    "domains": [
     "叙事"
@@ -125619,6 +126304,22 @@
    ]
   },
   {
+   "source": "FilmProp:道具",
+   "target": "ProcessRule:三视图锚定",
+   "type": "anchored-by",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FilmCharacter:角色",
+   "target": "ProcessRule:三视图锚定",
+   "type": "anchored-by",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
    "source": "ArtStyleRule:三视图画风锚定",
    "target": "Platform:Vidu",
    "type": "artstyle-rule-uses",
@@ -125694,6 +126395,22 @@
    "source": "Rule:图文对位",
    "target": "Rule:五层检查体系",
    "type": "check-in-L2",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "FilmCharacter:角色",
+   "type": "composed-of",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "FilmProp:道具",
+   "type": "composed-of",
    "domains": [
     "工艺"
    ]
@@ -125781,6 +126498,174 @@
   {
    "source": "ProcessRule:科学检察官报告规范",
    "target": "Rule:五层检查体系",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:多agent辩论门控",
+   "target": "RoleWorkflow:红队",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:多agent辩论门控",
+   "target": "RoleWorkflow:制片人",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "Rule:参考图分类规范",
+   "target": "Rule:参考图挂载清单必写",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FilmProp:道具",
+   "target": "Rule:参考图分类规范",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FilmCharacter:角色",
+   "target": "Rule:参考图分类规范",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FilmScene:场景",
+   "target": "Rule:参考图分类规范",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "Rule:参考图分类规范",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ScientificConcept:4D高斯光场重建",
+   "target": "ScientificConcept:数字孪生",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ScientificConcept:4D高斯光场重建",
+   "target": "ScientificConcept:三维视觉感知与位姿估计",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ScientificConcept:锂电工序高危点",
+   "target": "ScientificConcept:具身智能进工业七大技术群",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ScientificConcept:锂电工序高危点",
+   "target": "ScientificConcept:人机协作安全",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:多agent辩论门控",
+   "target": "ProcessRule:质量门控",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:成片文件组织规范",
+   "target": "ProcessRule:素材库命名规范",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "Rule:参考图分类规范",
+   "target": "Concept:素材库分类两轴",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "Rule:参考图分类规范",
+   "target": "ProcessRule:三视图锚定",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:交付件单一执行源版本收敛",
+   "target": "ProcessRule:成片文件组织规范",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:门控与真实格式对齐",
+   "target": "ProcessRule:成片文件组织规范",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:交付件单一执行源版本收敛",
+   "target": "ProcessRule:质量门控",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:交付件单一执行源版本收敛",
+   "target": "Gate:M4出口门控",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:门控与真实格式对齐",
+   "target": "ProcessRule:质量门控",
+   "type": "concept-related-to",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "ProcessRule:门控与真实格式对齐",
+   "target": "ProcessRule:多agent辩论门控",
    "type": "concept-related-to",
    "domains": [
     "工艺"
@@ -125990,6 +126875,30 @@
    "source": "UserGate:内容重点对齐",
    "target": "RoleWorkflow:导演",
    "type": "gate-in",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "FeasibilityRule:单镜不超两种运镜",
+   "type": "governed-by",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FilmScene:场景",
+   "target": "FilmProp:道具",
+   "type": "hosts",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FilmCharacter:角色",
+   "target": "FilmScene:场景",
+   "type": "in-scene",
    "domains": [
     "工艺"
    ]
@@ -126630,6 +127539,22 @@
    "source": "Rule:零门槛措辞",
    "target": "Rule:AI原生交付原则",
    "type": "rule-serves",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "FilmCharacter:角色",
+   "target": "FilmProp:道具",
+   "type": "uses",
+   "domains": [
+    "工艺"
+   ]
+  },
+  {
+   "source": "StoryboardShot:分镜",
+   "target": "FilmScene:场景",
+   "type": "within-scene",
    "domains": [
     "工艺"
    ]
@@ -132947,6 +133872,94 @@
    ]
   },
   {
+   "source": "ScientificConcept:具身智能",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:视觉-语言-动作模型",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:世界模型",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:基座模型后训练",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:仿真到现实迁移",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:数字孪生",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:灵巧操作",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:真实世界机器人数据集",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:三维视觉感知与位姿估计",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:人机协作安全",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "Domain:具身智能",
+   "type": "concept-in-domain",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
    "source": "ScientificConcept:合成生物学",
    "target": "ScientificConcept:基因编辑",
    "type": "concept-related-to",
@@ -133371,6 +134384,110 @@
    ]
   },
   {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:视觉-语言-动作模型",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:世界模型",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:基座模型后训练",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:仿真到现实迁移",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:数字孪生",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:灵巧操作",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:真实世界机器人数据集",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:三维视觉感知与位姿估计",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能进工业七大技术群",
+   "target": "ScientificConcept:人机协作安全",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:视觉-语言-动作模型",
+   "target": "ScientificConcept:世界模型",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:世界模型",
+   "target": "ScientificConcept:基座模型后训练",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:基座模型后训练",
+   "target": "ScientificConcept:仿真到现实迁移",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:灵巧操作",
+   "target": "ScientificConcept:三维视觉感知与位姿估计",
+   "type": "concept-related-to",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
    "source": "ScientificConcept:DNA组装",
    "target": "Analogy:DNA组装-搭积木",
    "type": "concept-uses-analogy",
@@ -133555,6 +134672,14 @@
    ]
   },
   {
+   "source": "DataPoint:具身智能数据投入有效占比低",
+   "target": "ScientificConcept:具身智能进工业七大技术群",
+   "type": "data-for-concept",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
    "source": "KnowledgeGap:启动子宿主表达量",
    "target": "ScientificConcept:代谢通路重构",
    "type": "gap-in-concept",
@@ -133637,6 +134762,14 @@
   {
    "source": "KnowledgeGap:国产厂商客户关系",
    "target": "ScientificConcept:半导体量测光源需求链",
+   "type": "gap-in-concept",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "KnowledgeGap:数据命门缺乏权威量化",
+   "target": "ScientificConcept:具身智能进工业七大技术群",
    "type": "gap-in-concept",
    "domains": [
     "科学"
@@ -133806,6 +134939,38 @@
    "source": "FactRule:归一化光谱不证明绝对强度",
    "target": "ScientificConcept:激光驱动等离子体宽谱光源",
    "type": "rule-applies",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:基座模型后训练",
+   "target": "Analogy:后训练-补课特训",
+   "type": "uses-analogy",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:数字孪生",
+   "target": "Analogy:数字孪生-真实产线镜像",
+   "type": "uses-analogy",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:仿真到现实迁移",
+   "target": "Analogy:数据命门-教科书插图与真师傅",
+   "type": "uses-analogy",
+   "domains": [
+    "科学"
+   ]
+  },
+  {
+   "source": "ScientificConcept:具身智能",
+   "target": "Analogy:大脑-小脑分工",
+   "type": "uses-analogy",
    "domains": [
     "科学"
    ]
