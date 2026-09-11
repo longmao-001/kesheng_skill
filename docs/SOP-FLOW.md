@@ -243,17 +243,19 @@ flowchart TD
 
 | 环节 | 脚本 | 拦什么 |
 |---|---|---|
-| **一键总检** | `check_all.py` | 下面 6 项一次跑完 |
+| **一键总检** | `check_all.py` | 下面 7 项一次跑完 |
 | 产物存在性 | `check_sop.py` | 跳 SOP / 缺产物 + 每镜 prompt 字段不全 |
 | prompt 规范 | `check_prompt_sheet.py` | 核心字段缺 / 口播并入画面 / 口播≠口播稿 / 风格不一致 / 参考漏挂 / 负面空 |
 | 素材自包含 | `check_asset_pack.py` | @引用未登记 / "待补充·拍照"后补提示词 |
 | **交付件收敛** | `check_delivery.py` | 多源并存 / 交付包死链 / 口播稿多版本漂移 |
 | 广告合规 | `ad_forbidden_words.py` | 绝对化·极限词 / 疗效承诺 / 平台禁语 |
 | runs 纯净 | `check_runs_clean.py` | runs/ 混入非项目散落物 |
+| **文档完整性** | `check_docs_integrity.py` | **技能级**：SOP 断链 / 孤岛（写了没人读）/ 启动必读与门控脚本不一致 |
 | 选片校验 | `check_reference_selection.py` | 选片要素不完整（角色/部位/位置） |
 | 残留扫描 | `check_residual.py` | 旧表述/禁词残留全文回归 |
 | 素材提取 | `extract_docs.py` | （工具）PDF/PPTX/DOCX → 抠图+抽文+台账骨架 |
 | 素材分类/入库 | `classify_assets.py` / `annotate_assets.py` | （工具）分类命名 / 三件套脚手架 |
+| 报告转档 | `md_to_docx.py` / `build_science_report.py` | （工具）Markdown → **适配 Word** 的 docx（封面/目录/页眉页脚/中文字体/真表格）；报告→md+docx+PPT大纲 |
 
 ---
 
@@ -262,7 +264,7 @@ flowchart TD
 | 里程碑 | 主要角色（并行） | 关键产物 |
 |---|---|---|
 | M1 简报 | 制片人 + 观众代言人 + 科学/导演/摄影约束 | `brief.md`（含预注册标准+定档+素材状态） |
-| M2 科学理解 | 科学顾问 + 观众代言人 + 导演 | `scientist-理解报告.md` + `scientist-报告.docx` + `scientist-讲解.pptx` + `assets-inventory.md` + `m2-纪要.md` |
+| M2 科学理解 | 科学顾问 + 观众代言人 + 导演 | `scientist-理解报告.md`（**Word适配**）`scientist-报告.docx` + `scientist-讲解-大纲.md` + `scientist-讲解.pptx`/deck + `assets-inventory.md` + `m2-纪要.md` |
 | M3 方案 | 导演 + 编剧 + 摄影 + 分镜师（+红队） | `concepts/` + `m3-scoring.md` + `m3-proposal.md`（含口播稿定稿） + `m4.5-风格基线-九宫格spec.md` + `style-baseline-固化.md` |
 | M4 执行 | 编剧 + 分镜师 + 声音 + 摄影 + prompt×N + 剪辑 | `screenwriter-口播稿-定稿vN.md` + `storyboard-分镜表.md` + `sound-声音方案.md` + `dop-摄影方案.md` + `m4-prompts/prompts-*.md` + `editor-剪辑预计划.md` |
 | M5 交付 | 红队 + 检察官五层 + 用户 | `m4-gate-red.md` + `m5-出口-评审单.md` + `delivery/`（视频/分镜/prompts/README/授权） |
@@ -275,6 +277,7 @@ flowchart TD
 - 流程权威：`docs/USER_SOP.md`（KSP-01~07 + KSP-C）
 - 素材类型：`docs/ASSET-TYPES.md`（13 类文件固定处理方案）
 - 素材流程：`playbooks/asset-library-flow.md` · `playbooks/production-workflow.md`
+- **PPT/Deck 流程**：`playbooks/ppt-deck-flow.md`（配合 `ppt-master` / `huashu-design`）
 - 质量门控：`protocols/quality-gate.md`（七维+禁区+检察官五层）
 - 拍板速查：`templates/user-gate.md`
 - 编排手册：`orchestration/ORCHESTRATION.md`
