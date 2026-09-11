@@ -26,6 +26,8 @@
 
 **只有"提取"这一步因类型而异；分类、命名、入库、选片全类型统一。**
 
+> ⚙ **自动化**：PDF/PPTX/DOCX 的抠图+抽文可交给 `scripts/extract_docs.py`（见 §四），一次跑出图 + 抽取稿 + 台账骨架；CAD/3D 无解析库，须客户导出或外部渲染。
+
 ---
 
 ## 一、决策树：这个文件拿来干什么？（提取前必答）
@@ -202,6 +204,13 @@
 | DXF/DWG 解析 | ❌ `ezdxf` 未装 | **须客户/转换器导出 PDF/SVG** |
 | 3D 网格解析 | ❌ `trimesh` 未装 | **须 Blender/KeyShot 等外部渲染** |
 
+> **自动化脚本**：`scripts/extract_docs.py` —— 把 **PDF/PPTX/DOCX** 一次性抠图 + 抽文 + 出「台账骨架」，内置**内容哈希去重**与**最小边长过滤**（去图标/装饰线）：
+> ```bash
+> python -X utf8 scripts/extract_docs.py <输入文件或目录> --out runs/<项目slug>/ --subject <主体> [--min-size 120] [--no-text]
+> ```
+> 产物：`extracted-images/<源文件_格式>/`（抠出的图，文件名带内容哈希）· `doc-extracts/<源文件_格式>.md`（抽文，PDF 标页码 / PPT 标 slide / Word 标表格）· `assets-inventory-抽图候选.md`（台账骨架）· `extract-report.md`。
+> ⚠️ **脚本只负责"弄出来"**：抠出的图**必须逐张 `read_image` 看真图**填三件套，合规核查后才入正式 `assets-inventory.md`（不凭文件名/页码判断）。
+>
 > 缺库**不要硬造**：CAD/3D 一律走"**向客户要导出件**（三视图/渲染图/PDF）"或外部工具，作为**素材缺口**走拍板（`templates/user-gate.md #7`）。
 
 ---

@@ -1,14 +1,16 @@
 # 自建素材库 → 参考图使用（Asset Library Flow）
 
 > **功能**：把客户/网上的素材，**分析 → 拆解 → 重命名 → 保存建库 → 参考图使用**，一步到位。产物 = `assets-inventory.md`（你自建的素材库），选片直接用。
-> **工具**：`scripts/classify_assets.py`（分类+命名）· `scripts/annotate_assets.py`（智能入库脚手架）· `templates/assets-inventory.md`（库）· `templates/reference-selection.md`（选片）。
+> **工具**：`scripts/extract_docs.py`（**PDF/PPTX/DOCX 批量抠图+抽文+台账骨架**）· `scripts/classify_assets.py`（分类+命名）· `scripts/annotate_assets.py`（智能入库脚手架）· `templates/assets-inventory.md`（库）· `templates/reference-selection.md`（选片）。
 > **按文件类型的固定处理动作（视频/图片/矢量/PPT/PDF/Word/CAD/SolidWorks/SU/3D/字体/表格/音频）见 `docs/ASSET-TYPES.md`**——提取方式因类型而异，提取完统一汇入本流程后端。
+> **流程图**：`docs/SOP-FLOW.md` 图二（素材处理流程）。
 
 ## 一步流程（五步闭环）
 
 ```
 ① 收集      素材目录（官方渲染/实拍/结构图/PDF-PPT抠图/网图/CAD-3D导出件/矢量）
       │        ★ 按类型处理：见 docs/ASSET-TYPES.md（各类型提取动作+红线不同）
+      │        ⚙ PDF/PPTX/DOCX 一键抠图+抽文：python scripts/extract_docs.py <输入> --out runs/<slug>/ --subject <主体>
       │
 ② 分类+重命名  python scripts/classify_assets.py <目录> --subject <主体> [--apply]
      （按 用途分级×内容类型 命名：<用途>_<类型>_<主体>_<视角>_<序号>，文件名=条目ID）
