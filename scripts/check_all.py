@@ -44,6 +44,7 @@ def main():
     checks = [
         ("check_sop", [py, "-X", "utf8", os.path.join(HERE, "check_sop.py"), run_dir]),
         ("check_prompt_sheet", [py, "-X", "utf8", os.path.join(HERE, "check_prompt_sheet.py"), run_dir]),
+        ("check_prompt_sop", [py, "-X", "utf8", os.path.join(HERE, "check_prompt_sop.py"), run_dir]),
         ("check_asset_pack", [py, "-X", "utf8", os.path.join(HERE, "check_asset_pack.py"), run_dir]),
         ("check_delivery", [py, "-X", "utf8", os.path.join(HERE, "check_delivery.py"), run_dir]),
         ("ad_forbidden_words", [py, "-X", "utf8", os.path.join(HERE, "ad_forbidden_words.py"), run_dir]),
@@ -69,6 +70,8 @@ def main():
                 print("  - check_sop: 缺产物(SOP被跳过)-> 按 ORCHESTRATION §5 补齐/回退；每镜 prompt 字段缺 -> 补参考/风格/时间轴/口播/声音/负面/参数")
             elif name == "check_prompt_sheet":
                 print("  - check_prompt_sheet: 缺核心字段/口播并入画面/口播与口播稿不一致/风格块不一致/参考漏@/负面空; 或格式别名误报(F-30)-> 修脚本兼容而非迁就")
+            elif name == "check_prompt_sop":
+                print("  - check_prompt_sop: 十步 SOP 有步骤没走/走错(如参考图裸引用、风格/口播不同源) -> 按 templates/prompt-sop.md 回对应步补齐")
             elif name == "check_asset_pack":
                 print("  - check_asset_pack: 引用未在 inventory 登记/后补提示词(待补充等) -> 素材自包含, 参考图归库")
             elif name == "check_delivery":

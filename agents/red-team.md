@@ -32,7 +32,8 @@
 | 甲方风险 | 用户真正要的和我们正在做的，是不是同一件事？ |
 | 伦理/合规 | 有没有夸大疗效、夸大能力、误导公众的表述？ |
 | 广告合规禁用词 | 文案/口播/落版有无《广告法》禁区词（最/第一/绝对/100%/顶级/根治/降三高/抗癌/生发…）？跑 `python scripts/ad_forbidden_words.py <文件>` 扫一遍；科技/科研产品用**可核实规格+数据（手册原文）**，无证据不得说"领先/第一/最强" |
-| Prompt 公式合规（产品/设备类） | 逐镜 prompt 是否套 `templates/product-prompt-formula.md` 八段？产品=干净/功能=复杂？保真实造型（@参考图不变、禁改形）？参考图"取哪部分→放哪位置"显式？AI 直出文字写死+精确数据核对=手册原文？无抽象词、单镜≤2 运镜+变速？（依据 ORCHESTRATION §5 硬规则 16） |
+| Prompt 公式合规（产品/设备类） | 逐镜 prompt 是否套 `templates/product-prompt-formula.md` 八段 / `templates/video-prompt-formula.md` 九段？产品=干净/功能=复杂？保真实造型（@参考图不变、禁改形）？参考图"取哪部分→放哪位置"显式？AI 直出文字写死+精确数据核对=手册原文？无抽象词、单镜≤2 运镜+变速？（依据 ORCHESTRATION §5 硬规则 16） |
+| **Prompt 十步 SOP 是否真走** | 跑 `python scripts/check_prompt_sop.py <runs/<项目>>`：**参考图裸引用（只写 @图N 无角色/取哪→放哪）／风格token不同源／口播≠口播稿／时间轴无按秒分段／缺 README = FAIL**；缺"部位对应·放哪位置"／产品镜缺"保持真实造型"／参数缺项 = WARN 需人工核。**"十步不可跳"是硬规则，不是建议**（`templates/prompt-sop.md` + ORCHESTRATION §5-23） |
 | 视觉反 AI 感 | 全片风格**根植于内容**还是随大流"高级感"？有无白底紫渐变/海军蓝+金/系统≥3色/卡片圆角投影堆砌/emoji 当图标/默认蓝强调？（出口闸按 quality-gate「视觉克制/反AI感」维度打回，依据 `templates/visual-baseline.md`） |
 | 交付件版本漂移/自包含 | 出口前**必跑** `python scripts/check_delivery.py <runs/<项目>>`：A) 执行 prompt 是否单一源（m4-prompts）而非 run 根/delivery 多份并存？B) delivery/README 引用是否都在包内（无 `m2/` 等死链、自包含）？C) 口播稿是否只留一个「定稿」（无 v9/v10 并存）、分镜表标题版本与正文时长/口播版本是否一致？（F-29：版本漂移是能拿 PASS 的成品被降级 CONDITIONAL 的最常见非内容原因） |
 

@@ -1,7 +1,13 @@
 # 写 Prompt 固定 SOP（Prompt Writing SOP）
 
 > **用途**：把「**怎么一步步写出一个合格 prompt**」锁死成固定步骤（`agents/prompt-engineer.md` 的十步 + 本详表）。**格式**在 `templates/prompt-sheet.md`（R1-R12）；**类型公式**在 product/video-prompt-formula；**合规/科学/参考图**在本 SOP。
-> **铁则**：十步不可跳；每镜 prompt 必须**带参考图挂载清单**、**口播独立字段**、**无禁用词/文字不AI生成**；交付前过 `check_prompt_sheet.py`。
+> **铁则**：十步不可跳；每镜 prompt 必须**带参考图挂载清单**、**口播独立字段**、**无禁用词/文字不AI生成**；交付前过 `check_prompt_sheet.py`（格式与一致性）**＋ `check_prompt_sop.py`（十步执行证据）**。
+> **机器门控（写 prompt 必须过）**：
+> - `python -X utf8 scripts/check_prompt_sheet.py <runs/<项目>>` —— 格式与一致性（核心字段完整/口播单独且与口播稿一致/风格token一致/参考@/负面非空）
+> - `python -X utf8 scripts/check_prompt_sop.py <runs/<项目>>` —— **十步执行证据**（逐镜核对十步各自留下的产物证据；缺证据=该步没走）：
+>   步2 路线∈词表 / 步3 参考非裸引用（须带角色或"取哪→放哪"）/ 步5 风格逐字一致 / 步6 时间轴按秒分段 / 步7 口播与口播稿同源 / 步8 负面非空 / 步10 有 README —— 这些是 **FAIL**；
+>   挂载缺"部位对应/位置"、产品镜缺"保真实造型"、参数缺项（真镜头/人工免抽卡与失败改法）为 **WARN**（交红队/检察官人工核）
+> 两项都在 `scripts/check_all.py` 里，出口前必跑。
 
 ## 十步（每镜必走）
 
@@ -16,7 +22,7 @@
 | 7 写口播 | =口播稿逐句（独立字段，不给画面模型） | 【口播】 | R11 |
 | 8 写负面 | 具体排除项+科学/品牌红线+广告禁用词 | 【负面】 | ad_forbidden_words |
 | 9 写参数 | 时长档+抽卡建议+失败改法 | 【参数】 | R5 |
-| 10 自检交付 | `check_prompt_sheet.py`（核心字段/口播单独且与口播稿一致/风格token一致/参考@/负面非空；兼容两代字段格式）＋挂载清单＋禁用词＋图文对位 → 落盘 | `prompts-<平台>.md`+README | 全过才交付 |
+| 10 自检交付 | **`check_prompt_sheet.py`（格式/一致性）＋ `check_prompt_sop.py`（十步证据）** ＋挂载清单＋禁用词＋图文对位 → 落盘 | `prompts-<平台>.md`+README | **两项全过才交付** |
 
 ## 每镜填写的字段顺序（prompt-sheet.md 固定）
 
