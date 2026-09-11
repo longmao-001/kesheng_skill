@@ -1,7 +1,7 @@
 # 科学讲解 PPT（可上图）
 
 > **用途**：把 `science-report.md` 正文转成一份**能直接讲/给用户看**的 PPT。每页 `标题 + ≤3 条要点 + 配图（可选）+ 出处`。配图优先来自**素材库**（`assets-inventory.md` 条目），没有就用**文生图 prompt**（套 `image-gen-formulas.md`），禁用水印/竞品/未授权图。
-> 产出：`runs/<slug>/scientist-讲解.pptx`（用 `scripts/build_science_report.py` 生成，或按此结构手工做）。
+> 产出：`runs/<slug>/scientist-讲解-大纲.md`（页序大纲）+ 最终 deck（`scientist-讲解.pptx` 或 HTML deck）——**用 `ppt-master` / `huashu-design` 生成**（见 §生成方式 + `playbooks/ppt-deck-flow.md`）；`scripts/build_science_report.py` 直出的 pptx 仅兜底。
 
 ## 页序（建议 10-13 页）
 
