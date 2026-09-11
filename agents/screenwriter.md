@@ -30,6 +30,7 @@
 - `knowledge/tvc-ad-templates.md` — TVC/带货广告的分镜叙事骨架（与导演共用；黄金 3 秒/五模块拼装/痛点打法速查）
 - `knowledge/templates/C-multi-audience-guide.md` — EXP/GOV/PUB/STD/IND 五种受众模式的术语处理、数据密度、类比用量、语气、时长、结尾策略
 - `knowledge/templates/A01-total-intro.md` — 申报/立项片 6 镜头脚本模板（战略切入→痛点使命→核心架构→优势对比→愿景→CTA）
+- **`templates/narration-formula.md` — 口播句公式速查（14 个句子公式 F01-F14：钩子/痛点/定义/层级/属性/价值/对比/参数/证据/因果/安全/…）**：写口播稿时**逐句对号**——每句先想"这是哪种公式句"再套模板，写完按自检清单过（`kg_query.py --domain 叙事 公式` 可查全部公式实体）
 
 ## 写作纪律
 

@@ -27,7 +27,7 @@
 
 - `playbooks/platform-prompts.md` — 各平台 prompt 公式、填好的科研主题范例、中英运镜词表、负面 prompt 清单、常见失败→修复表；Seedance 2.0/2.5 有官方核实版专章
 - `knowledge/seedance-template-library.md` — Seedance 分镜模板库：时间轴公式、产品展示/动效/延长/编辑模板、@引用语法、氛围关键词库、案例模式精选
-- **`templates/product-prompt-formula.md`（图片八段）＋ `templates/video-prompt-formula.md`（视频九段）＋ `knowledge/image-gen-formulas.md`（产品/设备镜头必用，硬规则）** — 图片镜头套八段（参数/镜头/灯光/主体/场景构图/动效/文字/强制约束）；视频镜头套九段（参数/参考/风格/镜头/时间轴/主体/声音/口播/负面/强制约束，含按秒时间轴断句/口播独立字段/声音）；**产品=干净/功能=复杂**；**绝不改造设备真实造型**（"保持真实造型=@参考图不变"写进主体+约束）；**参考图"取哪部分→放哪位置"写显式**；AI 直出文字写死+位置，精确数据 `⚠️核对=手册原文`；无抽象词、单镜≤2 运镜+变速（见 `orchestration/ORCHESTRATION.md` §5 硬规则 16）
+- **`templates/prompt-formulas.md`（可复制公式库：产品八段 + 各平台公式，写 prompt 直接复制套用）** ＋ `templates/product-prompt-formula.md`（图片八段）＋ `templates/video-prompt-formula.md`（视频九段）＋ `knowledge/image-gen-formulas.md`（产品/设备镜头必用，硬规则）** — 图片镜头套八段（参数/镜头/灯光/主体/场景构图/动效/文字/强制约束）；视频镜头套九段（参数/参考/风格/镜头/时间轴/主体/声音/口播/负面/强制约束，含按秒时间轴断句/口播独立字段/声音）；**产品=干净/功能=复杂**；**绝不改造设备真实造型**（"保持真实造型=@参考图不变"写进主体+约束）；**参考图"取哪部分→放哪位置"写显式**；AI 直出文字写死+位置，精确数据 `⚠️核对=手册原文`；无抽象词、单镜≤2 运镜+变速（见 `orchestration/ORCHESTRATION.md` §5 硬规则 16）
 - `knowledge/camera-language.md` — 镜头语言百科：17 种运镜的情绪效果与选型（和导演共用）
 - `knowledge/prompt-reverse.md` — 看到好视频要抄时：反推成 prompt 的 6 步工作流+各平台语法差异表
 - `playbooks/storyboard-grid.md` — 宫格分镜图技法（Image2 首选生图、九宫格模板、整图成片/切片首帧两条路径）

@@ -48,6 +48,8 @@ def main():
         ("check_delivery", [py, "-X", "utf8", os.path.join(HERE, "check_delivery.py"), run_dir]),
         ("ad_forbidden_words", [py, "-X", "utf8", os.path.join(HERE, "ad_forbidden_words.py"), run_dir]),
         ("check_runs_clean", [py, "-X", "utf8", os.path.join(HERE, "check_runs_clean.py")]),
+        # 技能级（与项目无关）：SOP 文档是否真正嵌入技能（无断链/孤岛）
+        ("check_docs_integrity", [py, "-X", "utf8", os.path.join(HERE, "check_docs_integrity.py")]),
     ]
 
     results = [run(name, cmd) for name, cmd in checks]
@@ -73,6 +75,8 @@ def main():
                 print("  - check_delivery: 多源并存/交付包死链/口播稿多版本 -> 收敛为单一「定稿」(F-29)")
             elif name == "ad_forbidden_words":
                 print("  - ad_forbidden_words: 命中广告禁用词(绝对化/极限/疗效/平台禁语) -> 改程度性/去禁词")
+            elif name == "check_docs_integrity":
+                print("  - check_docs_integrity: SOP 文档有断链/孤岛(写了没人读) -> 补引用或合并，确保 SOP 真正嵌入技能")
             else:
                 print(f"  - {name}: 见首行")
         sys.exit(1)
