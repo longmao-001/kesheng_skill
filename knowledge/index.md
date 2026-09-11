@@ -39,8 +39,27 @@
 | [[素材分级]] | 可直接入镜/参考图/内容参考；真实素材优先，缺了上网找 | `playbooks/production-workflow.md` 第1步 |
 | [[图表层]] | 参数表卡/曲线动画/覆盖图/结构图解，全部后期做，AI 不生成数据 | `agents/storyboard-artist.md`（设计）、`agents/editor.md`（执行）、`protocols/quality-gate.md` |
 
+### 受众与剧本模板
+| 概念卡 | 一句话 | 权威出处 |
+|---|---|---|
+| 多受众模式指南 | EXP/GOV/PUB/STD/IND 五种受众的术语处理、数据密度、类比用量、语气、时长、结尾策略 | `knowledge/templates/C-multi-audience-guide.md` |
+| 申报/立项片脚本模板 | 6 镜头骨架：战略切入→痛点使命→核心架构→优势对比→愿景→CTA | `knowledge/templates/A01-total-intro.md` |
+| 口播句公式速查 | 14 个句子公式 F01-F14（钩子/痛点/定义/层级/属性/价值/对比/参数/证据/因果/安全…），写口播逐句对号 | `templates/narration-formula.md` |
+| 时间轴 prompt 范例 | 按秒断句的时间轴写法范例（长镜头/多动作分段） | `knowledge/prompt-example-time-axis.md` |
+
+### 视觉规范（VI）
+| 概念卡 | 一句话 | 权威出处 |
+|---|---|---|
+| VI 风格模板库 | 视觉识别风格模板（色板/字体/构图倾向），落版与全片风格基线参考 | `knowledge/vi_styles/vi-style-templates.md` |
+
+### 失败教训（开工先读）
+| 概念卡 | 一句话 | 权威出处 |
+|---|---|---|
+| **失败图书馆 FAILURE-LIBRARY** | 跨项目踩坑记录（现象/根因/已固化到哪/证据）；**KSP-01 开工先读**、KSP-07 收尾追加；失败教训入库即固化进 skill（规则/检查器/图谱），不得只记不修 | `knowledge/FAILURE-LIBRARY.md` |
+
 ## 使用方式
 
 - M3/M4 会议前：相关角色先过对应概念卡
+- **KSP-01 开工先读 `FAILURE-LIBRARY.md`**（同类问题直接规避，防重复踩坑）
 - 项目收尾萃取时：科学知识入 `kb/`，**工艺心得入本图谱**（新建概念卡或更新卡片的"项目验证"行）
 - 卡片质量标准同一句话：一句话说清 + 指向权威出处 + 经过项目验证
