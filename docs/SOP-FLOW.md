@@ -5,6 +5,9 @@
 >
 > **四条铁则（贯穿全图）**：① **用户是甲方**——每关拍板才推进 ② **拍板必用选项卡**（`ask_user_question`，≥2 选项、推荐置顶、留"自定义"兜底）
 > ③ **证据先行**——基于文件拍板必须先展示依据（全文/要点/路径+描述/来源）再给选项，禁盲选 ④ **知识只进图谱**——调研知识→域片段→重建图谱，不新建概念卡。
+>
+> **出图**：`python -X utf8 scripts/render_sop_flow.py`（matplotlib，无需 graphviz/mermaid）→ 本目录下 3 张 PNG（位图）+ PDF（矢量）：
+> `SOP-FLOW-KSP主流程` · `SOP-FLOW-素材处理` · `SOP-FLOW-PPT流程`。
 
 ---
 
@@ -23,6 +26,10 @@
 ---
 
 ## 图一 · KSP 主流程（KSP-01 ~ KSP-07 + KSP-C）
+
+![科生 SOP 流程图（一）· KSP 主流程](SOP-FLOW-KSP主流程.png)
+
+> 矢量版：`SOP-FLOW-KSP主流程.pdf`（可放大不失真）
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -197,6 +204,10 @@ flowchart TD
 
 ## 图二 · 素材处理流程（文件到手 → 参考图进 prompt）
 
+![科生 SOP 流程图（二）· 素材处理流程](SOP-FLOW-素材处理.png)
+
+> 矢量版：`SOP-FLOW-素材处理.pdf`
+
 > 依据：`docs/ASSET-TYPES.md`（13 类文件固定处理方案）+ `playbooks/asset-library-flow.md`（五步闭环）+ `templates/assets-inventory.md`（台账）+ `templates/reference-selection.md`（选片）。
 > **核心：类型差异只在"提取"这一步；分类/命名/入库/选片全类型统一。**
 
@@ -286,6 +297,10 @@ flowchart TD
 ---
 
 ## 图三 · PPT / Deck 流程（配合外部技能）
+
+![科生 SOP 流程图（三）· PPT / Deck 制作流程](SOP-FLOW-PPT流程.png)
+
+> 矢量版：`SOP-FLOW-PPT流程.pdf`
 
 > 依据：`playbooks/ppt-deck-flow.md`。**科生不自己拼 PPT**——出"大纲+资产"，交成熟技能出视觉，再按质量门验收。
 

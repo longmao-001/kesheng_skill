@@ -32,7 +32,7 @@
 
 | 文件 | 内容 |
 |---|---|
-| **`docs/SOP-FLOW.md`** | **完整 SOP 流程图**：图一 KSP 主流程 + 图二 素材处理 + 图三 PPT/Deck；含**全部 19 拍板点**、**8 项门控对照**、**检察官五层**、**硬规则 15 条** |
+| **`docs/SOP-FLOW.md`** | **完整 SOP 流程图**：图一 KSP 主流程 + 图二 素材处理 + 图三 PPT/Deck；含**全部 19 拍板点**、**8 项门控对照**、**检察官五层**、**硬规则 15 条**。**同名 PNG/PDF 为图示成品**（`SOP-FLOW-KSP主流程` · `SOP-FLOW-素材处理` · `SOP-FLOW-PPT流程`），用 `python -X utf8 scripts/render_sop_flow.py` 重新出图 |
 | **`docs/USER_SOP.md`** | KSP-01~07 + KSP-C 逐关规范（**流程权威**） |
 | **`docs/ASSET-TYPES.md`** | **按文件类型的固定处理方案**（视频/图片/矢量/PPT/PDF/Word/CAD/SolidWorks/SketchUp/3D/字体/表格/音频：提取动作+归类+红线） |
 | **`SKILL.md`** | 入口：人设、铁律、里程碑工作流、团队编制、执行模式、启动必读清单 |
