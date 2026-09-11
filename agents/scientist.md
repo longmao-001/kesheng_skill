@@ -44,13 +44,17 @@
 调查完成后，你必须**把完整报告讲清楚、写进对话**（不是只写文件 + 3 行总结），并产出 **docx 报告 + PPT**：
 
 1. **报告写进对话**：最终返回消息 = **完整调查报告正文**（按 `templates/science-report.md` 九段：一句话定位/重点/时间线/产品原理/产品卖点/科学原理/关键数据/待确认/深度自评），**不用压缩成 3 行总结**——供制片人、用户直接先读后谈（配合 KSP-02 先读后谈）。
-2. **两份产物**：`scientist-报告.docx`（正文同构）+ `scientist-讲解.pptx`（见 `templates/science-ppt.md`，**可上图**：产品图/结构图/原理示意/数据曲线，来自素材库条目或文生图 prompt）。
+2. **三份产物**：
+   - `scientist-理解报告.md`（结构化 markdown，**唯一事实源**）
+   - **`scientist-报告.docx`（必须真正适配 Word，不是"md 直转"）**：封面 / 自动目录（TOC 域）/ 页眉页脚+页码 / 中文字体成套（标题微软雅黑·正文宋体）/ 正文首行缩进 2 字符 / 行距 1.5 / **真 Word 表格**（不是 `| a | b |` 文本）/ 加粗斜体代码 / 图片嵌入。
+   - `scientist-讲解.pptx`（见 `templates/science-ppt.md`，**可上图**：产品图/结构图/原理示意/数据曲线，来自素材库条目或文生图 prompt）。
 3. **讲透五要素**：`重点`（核心看点）/**`时间`**（发展时间线·关键节点）/**`产品原理`**（怎么工作·构成·输入输出）/**`产品卖点`**（用户得到的好处：任务→需求→卖点→证据）/**`科学原理`**（背后机理·因果链）——**把主体上上下下讲明白**，无术语门槛（按受众语言）。
-4. 生成方式：`python scripts/build_science_report.py --json <science-data.json>`（自动出 docx+pptx；缺库装 `pip install python-docx python-pptx`，或把结构化数据交给 report-writer/ppt-master 技能）。
-5. **用现成 skill 赋能，别从零造**：
-   - **报告正文/DOCX**：先把内容写成 `templates/science-report.md` 结构 markdown → 用 `report-writer`（`md_to_docx.py`）或 `markdown-exporter`（MD→DOCX）转档；quality 走 report-writer 的「brief→草稿→质检≥90%→修订」。
-   - **PPT**：`ppt-master`（generate-pptx / image-to-pptx 路由，含**搜图优先·可上图**）或 `markdown-exporter`（MD→PPTX）/ `pipitmk`（Deck DSL→可编辑 PPTX）。
-6. 存档：`runs/<slug>/scientist-理解报告.md` + `.docx` + `.pptx`（runs 只放项目）。
+4. 生成方式：`python -X utf8 scripts/build_science_report.py --json <science-data.json> --out runs/<slug>/`（自动出 结构化md + **Word适配docx** + PPT大纲 + pptx兜底）。
+5. **用现成 skill 赋能，别从零造，也别交付粗糙转档件**：
+   - **报告 DOCX**：`scripts/md_to_docx.py`（**已内置 Word 适配**：封面/目录/页眉页脚页码/中文字体/首行缩进/真表格）或 `report-writer` 技能（含「brief→草稿→质检≥90%→修订」）。**禁止把 markdown 原文当纯文本段落塞进 Word**。
+   - **PPT**：见 **`playbooks/ppt-deck-flow.md`**——出 `scientist-讲解-大纲.md` 后交 **`ppt-master`**（原生可编辑 PPTX；走 routing 选一条路由；⛔BLOCKING 门必须停等用户；Image-first 必须先搜真实图）或 **`huashu-design`**（高保真 HTML deck；🔴三方向硬门：先出 3 个差异化方向真实初稿让用户选，指定风格也不豁免；`brand-spec.md`/`direction-approved.md` 落档）。轻量备选 `markdown-exporter`/`pipitmk`。**`build_science_report.py` 的 pptx 只是兜底，不作为交付标准。**
+   - **拍板衔接**：外部技能的门 = 科生拍板点，一律用 `ask_user_question` 选项卡执行；品牌资产（logo/VI/用字）取自 KSP-02 拍板 #18/#19（官方源，禁自造色）。
+6. 存档：`runs/<slug>/scientist-理解报告.md` + `.docx` + `scientist-讲解.pptx`/deck 成品（runs 只放项目）。
 
 > **与普通 worker 的区别**：普通角色返回 3 行总结；**你返回全量报告正文（进对话）**，这是对「先读后谈」的硬性支撑。
 

@@ -37,4 +37,6 @@
 
 ---
 > 交付：本正文 → ① 原样写入对话 ② 存 `runs/<slug>/scientist-理解报告.md` ③ 生成 `scientist-报告.docx` ④ 生成 `scientist-讲解.pptx`。
-> **转档赋能（别从零写）**：docx 用 `report-writer`（`md_to_docx.py`）或 `markdown-exporter`（MD→DOCX）；PPT 见 `templates/science-ppt.md`（用 `ppt-master` 或 `markdown-exporter`/`pipitmk` 转可编辑 PPTX）。
+> **转档赋能（别从零写，也别用"md 直转"的粗糙件）**：
+> - **docx**：`python -X utf8 scripts/md_to_docx.py <报告.md> <out.docx>` —— **真正适配 Word**：封面 / 自动目录（TOC 域）/ 页眉页脚+页码 / 中文字体成套（标题微软雅黑·正文宋体）/ 正文首行缩进 2 字符 / 行距 1.5 / **真 Word 表格**（非"| a | b |"文本）/ 加粗斜体代码 / 图片嵌入。或走 `report-writer` 技能（含质检）。
+> - **PPT**：见 `templates/science-ppt.md` + **`playbooks/ppt-deck-flow.md`**——大纲交 **`ppt-master`**（原生可编辑 PPTX）或 **`huashu-design`**（高保真 HTML deck）；**不要**交付 `build_science_report.py` 的兜底 pptx。

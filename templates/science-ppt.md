@@ -32,6 +32,13 @@
 ```
 
 ## 生成方式
-- 用 `python scripts/build_science_report.py --json <science-data.json>`（python-docx + python-pptx 可用时自动生成 docx + pptx；缺库装 `pip install python-docx python-pptx`）。
-- **技能赋能（优先，别从零拼）**：`ppt-master`（generate-pptx / image-to-pptx 路由，含搜图上图）· `markdown-exporter`（MD→PPTX，把上面的 markdown 直接转）· `pipitmk`（Deck DSL→可编辑 PPTX）；配合 `report-writer`（docx + 质检）。
+
+> **完整流程见 `playbooks/ppt-deck-flow.md`**（含技能选型 / 输入契约 / 外部技能门控 / 与科生拍板机制的衔接 / 自检）。
+
+- **产出大纲**：`python -X utf8 scripts/build_science_report.py --json <science-data.json> --out runs/<slug>/` → 自动生成 `scientist-讲解-大纲.md`（本模板页序）+ `scientist-报告.docx`（Word 适配）+ `.pptx` 兜底。
+- **技能赋能（优先，别从零拼）**：
+  - **`ppt-master`** —— **原生可编辑 PPTX**；按它的 `workflows/routing.md` 选**恰好一条**路由（generate-pptx / Quick / image-to-pptx / beautify / create-template / fill-native / enhance）；**⛔BLOCKING 门必须停下等用户**；**Image-first：新任务必须先搜真实图，禁"无图也行"**。→ 要"能改稿/交客户"选它。
+  - **`huashu-design`** —— **高保真 HTML deck**（可导 PDF / 可编辑 PPTX）；🔴 **三方向硬门**：任何新视觉设计必须先出 **3 个差异化方向真实初稿**（多页 deck = 每方向 2 页代表页）让用户选，**指定风格也不豁免**；Gate 文件 `brand-spec.md` + `direction-approved.md` 必须落档；反 AI slop 禁区（紫渐变/emoji 图标/圆角卡片+左 border/SVG 画人脸）。→ 要"好看/路演级"选它。
+  - `markdown-exporter`（MD→PPTX）· `pipitmk`（Deck DSL→可编辑 PPTX）· `report-writer`（docx + 质检）—— 轻量转档备选。
+- **两条铁律**：① 外部技能的门 = 科生拍板点，**用 `ask_user_question` 选项卡执行**（huashu 三方向的选择原话记进 `direction-approved.md`）② 科生**先出大纲+资产**（内容正确）→ 技能出视觉 → 科生按 `quality-gate.md` 验收（科学准确/禁区/图文对位/数据人工锁值）。
 - `science-data.json` 结构：`{title, oneLiner, keyPoints[], timeline[], productPrinciple, sellingPoints[], science, data[{value,baseline,plain,cite}], pending[], depth}`。

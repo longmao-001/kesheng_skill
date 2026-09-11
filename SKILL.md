@@ -80,14 +80,17 @@ M5 制作与交付 → 陪用户出片（playbooks/production-workflow.md），�
 
 - **会议与质量**：`protocols/meeting.md`、`protocols/quality-gate.md`
 - **流程图（可视化配套）**：`docs/SOP-FLOW.md`（**科生 SOP 流程图**：图一 KSP 主流程 + 图二 素材处理流程，含拍板点/门控脚本/里程碑×角色×产物对照表）
-- **制作实操**：`playbooks/production-workflow.md`（端到端流程）、`playbooks/asset-library-flow.md`（**自建素材库→参考图使用**：分析/拆解/重命名/保存建库/选片）、`docs/ASSET-TYPES.md`（**按文件类型的固定处理方案**：视频/图片/矢量/PPT/PDF/Word/CAD/SolidWorks/SU/3D/字体/表格/音频——各类型提取动作+归类+红线+决策树）、`playbooks/platform-prompts.md`（各平台 prompt 公式+范例+运镜词表，含 Seedance 2.0/2.5 官方核实版专章）、`playbooks/storyboard-grid.md`（宫格分镜图技法：Image2 生图、九宫格模板、两条成片路径）、`playbooks/consistency.md`（跨镜一致性工具箱）、`playbooks/science-report-flow.md`（**M2→M3 交接：科学理解 → 报告+docx/PPT 交付 → 报告审阅闸「继续」 → 主题共识 → 概念先行**）
+- **制作实操**：`playbooks/production-workflow.md`（端到端流程）、`playbooks/asset-library-flow.md`（**自建素材库→参考图使用**：分析/拆解/重命名/保存建库/选片）、`docs/ASSET-TYPES.md`（**按文件类型的固定处理方案**：视频/图片/矢量/PPT/PDF/Word/CAD/SolidWorks/SU/3D/字体/表格/音频——各类型提取动作+归类+红线+决策树）、**`playbooks/ppt-deck-flow.md`（PPT/Deck 制作：配合 `ppt-master`/`huashu-design` 的输入契约+门控+拍板衔接+验收）**、`playbooks/platform-prompts.md`（各平台 prompt 公式+范例+运镜词表，含 Seedance 2.0/2.5 官方核实版专章）、`playbooks/storyboard-grid.md`（宫格分镜图技法：Image2 生图、九宫格模板、两条成片路径）、`playbooks/consistency.md`（跨镜一致性工具箱）、`playbooks/science-report-flow.md`（**M2→M3 交接：科学理解 → 报告+docx/PPT 交付 → 报告审阅闸「继续」 → 主题共识 → 概念先行**）
 - **科学知识图谱**：`kb/`（Obsidian 式知识库，用 Obsidian 打开 `kb/` 文件夹即可见图谱；入口 `kb/index.md`，按领域分文件夹：生物学/医学/化学/物理学/光学…；M2 先查库，项目收尾按 `kb/隐私红线.md` 萃取入库——**项目专有信息绝不入库**）
 - **工艺知识库**：`knowledge/`（Obsidian 兼容创作工艺图谱，入口 `knowledge/index.md`：痛点链/文案层/动感三来源/首帧锚定/全能参考三用法/素材分级/图表层等概念卡 + hooks 钩子库 + ad-copy 广告文案法则 + 脚本模板 + VI 规范）
 - **统一知识图谱（知识唯一入口）**：`packs/kesheng-kg/`——并集大图谱（全体知识 + 13 个 domain 分区：科学/叙事/导演/分镜/美术/影像/声音/prompt/工艺/受众/红队/剪辑/产业），查询 `python F:/AI/kesheng/packs/kg_query.py --domain <域> <关键词>`；重建 `scripts/build_union_kg.py`；**知识沉淀只进图谱**（追加域片段→重建），不新建概念卡；`kb/`（科学）与 `knowledge/`（工艺）仅为历史权威正文来源
 - **输出模板**：`templates/`（brief / proposal / storyboard / decision-log / breakdown / handoff / prompt-sheet / **prompt-sop** / product-prompt-formula / video-prompt-formula / science-report / science-ppt / visual-baseline / reference-selection / assets-inventory / l3-fact-inspector-report）——报告/PPT 可上图，用现成技能生成（report-writer/markdown-exporter 出 docx，ppt-master/markdown-exporter/pipitmk 出 PPT）
 - **校验/一键工具**：`packs/kg_query.py`（图谱查询）、`scripts/build_union_kg.py`（并集重建）、`scripts/check_all.py`（**一键跑全部 6 门控**）、`scripts/check_sop.py`（**SOP 完整性门控**：缺产物=跳SOP→回退）、`scripts/check_prompt_sheet.py`（prompt 规范：核心字段/口播单独&与口播稿一致/风格一致/参考@/负面）、`scripts/check_delivery.py`（**交付件版本收敛**：单一执行源/交付包自包含/口播稿单一「定稿」）、`scripts/check_residual.py`（禁词残留扫描）、`scripts/check_reference_selection.py`（选片校验）、`scripts/check_asset_pack.py`（零意外·素材自包含）、**`scripts/extract_docs.py`（素材提取工具：PDF/PPTX/DOCX 批量抠图+抽文+台账骨架，去重+尺寸过滤）**、`scripts/classify_assets.py`（素材分类命名）、`scripts/annotate_assets.py`（素材智能入库：多模态拆解+反推AI提示词+质量分脚手架）、`scripts/ad_forbidden_words.py`（广告禁用词）、`scripts/check_runs_clean.py`（runs 只放项目守护）、`scripts/build_science_report.py`（报告→docx+pptx）
 - **失败图书馆**：`knowledge/FAILURE-LIBRARY.md`（跨项目踩坑记录，KSP-01 开工先读，KSP-07 收尾追加）
-- **技能赋能**：报告/PPT/设计用现成技能（`report-writer`/`ppt-master`/`markdown-exporter`/`pipitmk`），别从零造
+- **技能赋能（别从零造）**：
+  - **报告 DOCX**：`scripts/md_to_docx.py`（**Word 适配**：封面/目录/页眉页脚页码/中文字体成套/首行缩进/行距/真表格）或 `report-writer`（含质检）；**禁止把 markdown 原文当纯文本塞进 Word**
+  - **PPT/Deck**：见 `playbooks/ppt-deck-flow.md` —— **`ppt-master`**（原生可编辑 PPTX；按 routing 选一条路由；⛔BLOCKING 停等用户；Image-first 必搜真图）／**`huashu-design`**（高保真 HTML deck，可导 PDF/可编辑 PPTX；🔴**三方向硬门**：先出 3 个差异化方向真实初稿让用户选，指定风格也不豁免；`brand-spec.md`/`direction-approved.md` 落档）；轻量备选 `markdown-exporter`/`pipitmk`
+  - **衔接铁则**：外部技能的门 = 科生拍板点，一律用 `ask_user_question` 选项卡执行；品牌资产取自拍板 #18/#19（官方源取色，禁自造）
 
 ## 使用规范（用户视角 · 硬流程）
 

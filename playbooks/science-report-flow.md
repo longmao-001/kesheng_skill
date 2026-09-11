@@ -27,7 +27,7 @@
 |---|---|---|---|
 | 1 | 科学顾问 | 7 步深度理解法（≥L2≤），先查图谱/文献/素材 | 报告骨架（`science-data.json`） |
 | 2 | 科学顾问 | 按 `templates/science-report.md` 九段组织（含**五要素**） | `scientist-理解报告.md` |
-| 3 | 科学顾问 | 生成 **docx + pptx**：`report-writer`/`markdown-exporter`（docx）＋ `ppt-master`/`markdown-exporter`/`pipitmk`（ppt，**可上图**）；或 `python scripts/build_science_report.py --json <data.json>` | **`scientist-报告.docx`** ＋ **`scientist-讲解.pptx`** |
+| 3 | 科学顾问 | 生成 **docx（Word 适配）+ PPT**：`python -X utf8 scripts/build_science_report.py --json <data.json> --out runs/<slug>/` → 出 结构化md + **Word适配docx** + PPT大纲；docx 亦可用 `scripts/md_to_docx.py`（封面/目录/页眉页脚页码/中文字体/真表格）或 `report-writer`（含质检）；**PPT 交 `ppt-master`（原生可编辑 PPTX）或 `huashu-design`（高保真 HTML deck）**，流程见 `playbooks/ppt-deck-flow.md` | **`scientist-报告.docx`** ＋ **`scientist-讲解.pptx`/deck**（＋`scientist-讲解-大纲.md`） |
 | 4 | 科学顾问 | **把完整报告写进对话**（不压缩成 3 行总结；正文=docx/PPT 的内容源） | 对话内全文 |
 | 5 | 制片人 | **交付 `scientist-报告.docx` + `scientist-讲解.pptx` 给用户**（这是中间交付件，用户拿到的文件）→ **硬性停顿**，等用户读完 | **docx + pptx（交付物）** |
 | 6 | 用户 | 读完 → **回复「继续」**（或 需修改/补充材料） | 用户答复 |
@@ -50,7 +50,9 @@
 1. **交付物=文件本体**：中间交付件是 **`scientist-报告.docx` ＋ `scientist-讲解.pptx`**（用户拿到、可打开、可上图、可直接用），**不是一段对话文字**；对话内全文是内容呈现。文件落 `runs/<slug>/`，用户随时可打开复核。
 2. 未收到用户「继续」→ 制片人/任何角色**禁止推进**任何后续环节/选项/拍板卡（方案/风格/九宫格/口播稿一律后置）。
 3. 产出一律落 `runs/<slug>/`（runs 只放项目，交付前 `check_runs_clean.py`）。
-4. 生成用现成技能（report-writer / ppt-master / markdown-exporter / pipitmk），别从零拼。
+4. 生成用现成技能（`scripts/md_to_docx.py` / `report-writer` / **`ppt-master`** / **`huashu-design`** / `markdown-exporter` / `pipitmk`），别从零拼。
+5. **docx 必须"适配 Word"**：封面 / 自动目录（TOC 域）/ 页眉页脚+页码 / 中文字体成套（标题微软雅黑·正文宋体）/ 正文首行缩进 2 字符 / 行距 1.5 / **真 Word 表格**。**禁止把 markdown 原文（`## 标题`、`- 项`、`**加粗**`）当纯文本段落塞进 Word**（= 不合格）。
+6. **PPT 交付标准**：用 `ppt-master` 或 `huashu-design` 生成；`build_science_report.py` 直出的 pptx **只是兜底，不作为交付标准**。调用外部技能 = 接受其门控（ppt-master 的 ⛔BLOCKING 停等；huashu-design 的 🔴三方向硬门 + `direction-approved.md` 落档），且**用科生拍板选项卡执行**（见 `playbooks/ppt-deck-flow.md`）。
 
 ## 存档
 
