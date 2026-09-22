@@ -8,6 +8,8 @@
 >
 > **出图**：`python -X utf8 scripts/render_sop_flow.py`（matplotlib，无需 graphviz/mermaid）→ 本目录下 3 张 PNG（位图）+ PDF（矢量）：
 > `SOP-FLOW-KSP主流程` · `SOP-FLOW-素材处理` · `SOP-FLOW-PPT流程`。
+>
+> **本次重画（20260921 · 能力结构裁定）**：图一已反映 **两通道（A/B）＋ 一横向能力（C）** 与硬规则 **#42/#43/#44**——图内新增两处：①**KSP-01 同卡判型框**（纵向 A/B ＋ 横向是否 C；C∩A／C∩B／纯 C／无 C 段；`brief.md` 写死）②**「横切 两通道 ＋ 一横向能力」框**（C 不新增关卡、挂靠点、C 规则不外溢、判型两遍、引入 C 段走 KSP-C）。产出文件：
 
 ---
 
@@ -16,16 +18,26 @@
 ```
 启动(读全核心流程5份+失败图书馆)
    → KSP-01 立项定档 → KSP-02 简报+预注册
+   ★ KSP-01 同卡判型（两遍·硬规则 #42/#43/#44）：纵向 A 文案驱动／B 戏剧驱动 ＋ 横向 是否音乐驱动＝是否 C
+     （C∩A 广告侧 ／ C∩B 剧集侧 ／ 纯 C ／ 无 C 段默认）→ 写进 brief.md（通道 ＋ 音乐驱动段 ＋ C 段时间码范围）
    → KSP-03 科学理解 ⛔硬性停顿(等「继续」) → KSP-03.5 主题共识+重点
    → KSP-04 概念先行 → KSP-05 口播稿 → KSP-04.5 九宫格风格
-   → KSP-06 执行(分镜/声音/prompt/剪辑) →[门控+红队双闸+检察官五层]→ 交付签收
+   → KSP-06 制作交付+出口闸(关内含执行：分镜/声音/prompt/剪辑) →[门控+红队双闸+检察官五层]→ 交付签收
    → KSP-07 知识萃取归档 → 闭环
-   横切：KSP-C 变更控制     降级：S 档单干 / subagent 失败重派
+   ★ 剧集项目另走「剧集通道 KSP-E1~E5」（在全季层各加一道闸，见下图与 §2.5）：
+     E1 全季分集大纲(拍板) → E2 风格圣经(拍板) → E3 逐集循环(KSP-02~07×每集)
+     → E4 跨集一致性闸(独立上下文 + scripts/check_series_consistency.py)
+     → E5 发布节奏与追更；判型 E0 在 KSP-01 卡上完成
+   ★ 音乐驱动段另走「通道 C 音乐驱动（横向能力·硬规则 #44）」——不新增关卡：
+     C∩A（品牌/产品音乐片、主题曲 MV、活动 MV、音乐营销片）挂 A 的 KSP-01~07（＋广告法合规／品牌 VI）
+     C∩B（OP/ED、插入歌、角色曲 PV、预告 MV）挂 KSP-E2 圣经 ＋ KSP-E1 时长预算之下（OP/ED＝固定资产）
+     流程：歌先行 → 卡点表 → 镜头表 → 素材复用（正片/品牌资产优先）→ prompt → 装配验收
+   横切：两通道＋一横向能力（#42/#43/#44）· KSP-C 变更控制     降级：S 档单干 / subagent 失败重派
 ```
 
 ---
 
-## 图一 · KSP 主流程（KSP-01 ~ KSP-07 + KSP-C）
+## 图一 · KSP 主流程（两通道 A/B ＋ 一横向能力 C · KSP-01 ~ KSP-07 + KSP-E + KSP-C）
 
 ![科生 SOP 流程图（一）· KSP 主流程](SOP-FLOW-KSP主流程.png)
 
@@ -47,6 +59,14 @@
 │  定档：S 单干 / M 并行+双闸(默认) / L 全会+全自动           │
 └──────────────┬──────────────────────────────────────────┘
                │ ▲ 拍板 #1 定档   #18 品牌名·用字·logo
+               ▼
+┌─ ★ KSP-01 同卡判型：两通道(A/B) + 一横向能力(C) ── 硬规则 #42/#43/#44 ─┐
+│  纵向：A 文案驱动(广告/科普/科研) ／ B 戏剧驱动(剧集)                    │
+│  横向(第二遍)：本片/本段是否音乐驱动 = 是否 C                          │
+│    C∩A 广告侧 ／ C∩B 剧集侧 ／ 纯 C ／ 无 C 段(默认)                   │
+│  写进 brief.md：通道(A/B/A+B) + 音乐驱动段(无/C∩A/C∩B + C段时间码范围)  │
+│  判型两遍不可省 —— 硬规则 #42④ / #43① / #44②                          │
+└──────────────┬───────────────────────────────────────────────────────┘
                ▼
 ┌─ KSP-02 需求简报 + 预注册 ──── 制片人 + 并行4约束(科学/导演/摄影/受众) ─┐
 │  brief.md = 简报 + 预注册标准 3-5 条 + 素材清单/缺口                   │
@@ -104,7 +124,7 @@
                │
                ★ 顺序铁则：口播稿 → 九宫格出图 → 才做分镜
                ▼
-┌─ KSP-06 执行关（并行 → 串行交接）───────────────────────────────────┐
+┌─ KSP-06 制作交付+出口闸（关内执行：并行 → 串行交接）─────────────────┐
 │  分镜表(分镜师) ‖ 声音方案(声音设计师)                              │
 │      ↓                                                             │
 │  摄影方案(摄影指导：每镜运镜≤2+变速/光影/拍法路线/参考资产)          │
@@ -117,14 +137,17 @@
 └──────────────┬─────────────────────────────────────────────────────┘
                ▼
 ┌─────────────── 门控层（机器 + 人工双轨）───────────────────────────┐
-│  机器门控：python -X utf8 scripts/check_all.py runs/<slug>  （7 项）│
+│  机器门控：python -X utf8 scripts/check_all.py runs/<slug>  （单集 9 项）│
 │   ① check_sop           产物齐 + 每镜 prompt 字段完整（缺=跳SOP→回退）│
 │   ② check_prompt_sheet  核心字段/口播单独且与口播稿一致/风格token一致/参考@/负面非空│
-│   ③ check_asset_pack     素材自包含（引用可解析、无"待补充/拍照"）    │
-│   ④ check_delivery       交付件版本收敛（单一执行源/包自包含/无漂移）  │
-│   ⑤ ad_forbidden_words   广告禁用词（绝对化/极限/疗效/平台禁语）      │
-│   ⑥ check_runs_clean     runs/ 只放项目                             │
-│   ⑦ check_docs_integrity 技能级：SOP 无断链/无孤岛                   │
+│   ③ check_prompt_sop     十步 SOP 执行证据（裸引用/不同源/无分段/缺README）│
+│   ④ check_prompt_delivery D1–D13（SOP字段/@贯穿/无后期/字卡口径/动画性…）│
+│   ⑤ check_asset_pack     素材自包含（引用可解析、无"待补充/拍照"）    │
+│   ⑥ check_delivery       交付件版本收敛（单一执行源/包自包含/无漂移）  │
+│   ⑦ ad_forbidden_words   广告禁用词（绝对化/极限/疗效/平台禁语）      │
+│   ⑧ check_runs_clean     runs/ 只放项目                             │
+│   ⑨ check_docs_integrity 技能级：SOP 无断链/无孤岛                   │
+│  ★ 剧集项目另加：check_series_consistency（KSP-E4·D-S1–D-S8；非剧集自动跳过）│
 │  其他：check_reference_selection(选片) / check_residual(残留回归)    │
 └──────────────┬─────────────────────────────────────────────────────┘
                ▼
@@ -164,7 +187,31 @@
                ▼
         [交付闭环] ──► 下次开工前先读 FAILURE-LIBRARY（防重复踩坑）
 
+  ★ 剧集通道 KSP-E（剧集项目必走·`docs/USER_SOP.md` §2.5；判型 E0 在 KSP-01 卡上完成）
+    E1 全季分集大纲 →[全季规划闸·拍板]→ E2 风格圣经 →[圣经闸·拍板]→ E3 逐集循环
+    E3 逐集循环 = 每一集走一遍 KSP-02~07（brief 补遗 → 概念/口播/九宫格 → 分镜/prompt → 出口闸 → 萃取）
+      → E4 跨集一致性闸（独立上下文 · 六维：人物/色板/字形/母题/音效/时长结构）
+         机器层 = python -X utf8 scripts/check_series_consistency.py runs/<季slug> --season  （D-S1–D-S8）
+         记录 = runs/<slug>/EPnn/ep-consistency-check.md ；季末《全季一致性裁决书》
+      → E5 发布节奏与追更（时长结构固定 · 集尾钩↔下集开场接续表 · 三层命名各归其位）
+    ★ 未出大纲/圣经不得进单集（硬规则 #35/#36）；E4 未过不得交付（硬规则 #38）
+
+  ★ 音乐驱动段（通道 C 音乐驱动 · 横向能力 · 硬规则 #44）：不新增关卡，按交集挂靠
+    C∩A（广告侧：品牌/产品音乐片·主题曲MV·活动MV·音乐营销片）
+        挂 A 的 KSP-01~07：歌定稿 → 卡点表 → 镜头表 → 素材复用(品牌资产优先) → prompt → 装配验收
+        （＋广告法合规 scripts/ad_forbidden_words.py ／ 品牌 VI ／ 精确数据逐字＝手册原文 ／ 字帖锁字形）
+    C∩B（剧集侧：OP/ED·插入歌·角色曲PV·预告MV）
+        挂 KSP-E2 风格圣经 ＋ KSP-E1 时长预算 之下：**OP/ED＝固定资产**
+        流程链：歌先行 → 卡点表 → 镜头表 → 素材复用(正片素材优先) → 固定资产冻结
+        门控：D-S1 时长契约(逐集逐秒相等·浮动0) ＋ D12 文字白名单(OP) ＋ KSP-E4 跨集一致性
+        每集只允许「集别定制位」可变（集号/回目小字/定制镜）；一次生产·全季复用
+    ★ 主产物＝卡点表（templates/mv-beat-sheet.md·唯一模板）；手册 playbooks/mv-production.md（通用）
+      ＋ playbooks/op-ed-mv.md（C∩B 实例）；**不得为 OP/ED 编"四场脊椎/剧透结构"**（硬规则 #43③）
+    ★ C 规则（卡点/文字白名单/无对白）只对 C 段生效，不得外溢到 A 口播片与 B 正片（硬规则 #44③）
+
+ 横切 两通道 ＋ 一横向能力（硬规则 #42/#43/#44）：A 走 KSP-01~07 ／ B 走 KSP-E1~E5 前置
  横切 KSP-C 变更控制（随时）：变更记录 → 影响评估(影响哪些 KSP) → 用户拍板 → 回退最早受影响关卡
+    · 引入 C 段 / 切通道(A↔B) / 混用 / 改歌或卡点表或时长契约 → 一律走 KSP-C 并留痕
  降级：S 档单干(明示"降级模式") ／ subagent 失败 → 同任务重派 1 次 → 仍失败制片人接手(注明降级)
 ```
 
@@ -183,10 +230,10 @@ flowchart TD
     K04 --> G9{{"拍板 #9 概念 选一/融合/自定义"}}
     G9 --> K05["KSP-05 口播稿(先定内容)<br/>2-3方案竞稿 + 读法批注"]
     K05 --> G16{{"拍板 #16 口播方案 选一/混搭<br/>#13 术语发音疑难"}}
-    G16 --> K045["KSP-04.5 九宫格风格预览(口播后)<br/>→ 风格基线固化"]
-    K045 --> G15{{"拍板 #15 风格预览"}}
-    G15 --> K06["KSP-06 执行关<br/>分镜‖声音 → 摄影 → prompt分段‖剪辑<br/>→ 美术VI复核 → 科学复核"]
-    K06 --> MACH["机器门控 check_all.py（7项）<br/>sop/prompt_sheet/asset_pack/delivery<br/>/ads/runs/docs_integrity"]
+    G16 --> K055["KSP-04.5 九宫格风格预览(口播后)<br/>→ 风格基线固化"]
+    K055 --> G15{{"拍板 #15 风格预览"}}
+    G15 --> K06["KSP-06 制作交付+出口闸<br/>关内执行：分镜‖声音 → 摄影 → prompt分段‖剪辑<br/>→ 美术VI复核 → 科学复核 → 陪跑出片"]
+    K06 --> MACH["机器门控 check_all.py（单集 9 项）<br/>sop/prompt_sheet/prompt_sop/prompt_delivery/asset_pack<br/>/delivery/ads/runs/docs_integrity（+剧集另加 series_consistency）"]
     MACH --> PRE{"红队前置闸 m4-gate-red"}
     PRE -->|BLOCK| FIX[打回对应环节 ≤2]
     FIX --> PRE
@@ -198,7 +245,25 @@ flowchart TD
     SIGN --> K07["KSP-07 知识萃取归档<br/>域片段→重建图谱 + FAILURE-LIBRARY + delivery 归档"]
     K07 --> DONE([交付闭环])
     KC["KSP-C 变更控制(横切)<br/>变更记录→影响评估→回退最早受影响关卡"] -.-> K01
+    PANX["★ KSP-01 同卡判型：两通道(A/B)+一横向能力(C)<br/>硬规则 #42/#43/#44<br/>纵向 A 文案驱动/B 戏剧驱动<br/>横向 是否音乐驱动=是否 C<br/>C∩A / C∩B / 纯C / 无C段(默认)<br/>写进 brief.md（通道 + 音乐驱动段 + C段时间码范围）"]
+    K01 --> PANX
+    CH["通道 C 音乐驱动·横向（硬规则 #44）<br/>不新增关卡：C∩A 挂 A 的 KSP-01~07（+广告法/品牌VI）<br/>C∩B 挂 KSP-E2 圣经 + KSP-E1 时长预算 之下<br/>流程：歌先行→卡点表→镜头表→素材复用→prompt→装配验收<br/>主产物=卡点表(templates/mv-beat-sheet.md)"]
+    PANX -.->|"是 C"| CH
+    CH -.->|"C∩B：OP/ED 固定资产"| E2CH["KSP-E2 风格圣经 §⑧<br/>OP/ED 规格登记"]
+    CH -.->|"C∩A"| K02
 ```
+
+### 图一·补 · 通道 C（音乐驱动·横向）的交集流程
+
+> **通道 C 不与 A／B 并列成第三条纵向链路**——它是**横向能力带**，**按交集挂接**（硬规则 #44①）。**不新增关卡**。
+
+| 交集 | 挂接位置 | 流程链（不可跳步） | 关键门控 |
+|---|---|---|---|
+| **C ∩ A** | **通道 A · KSP-01~07 内部** | 歌定稿 → 卡点表 → 镜头表 → 素材复用（品牌资产／正片素材优先）→ prompt → 装配验收 | 广告法合规 `scripts/ad_forbidden_words.py`／品牌 VI／**精确数据逐字＝手册原文**／**字帖锁字形** |
+| **C ∩ B** | **通道 B · KSP-E2（风格圣经）＋ KSP-E1（时长预算）之下** | **歌先行 → 卡点表 → 镜头表 → 素材复用（正片素材优先）→ 固定资产冻结** | **D-S1 时长契约**（逐集逐秒相等·浮动 0）＋**D12 文字白名单**＋**KSP-E4 跨集一致性** |
+
+**OP/ED（C∩B）三条纪律**：①**固定资产·一次生产全季复用**（每集只换"集别定制位"：集号／回目小字／定制镜）②**逐集逐秒相等**（浮动＝0，`series-config.json` 的 `op_seconds`／`ed_seconds`，**D-S1**）③**不得编"四场脊椎／剧透结构"**（硬规则 #43③）；**C 规则只对 C 段生效、不外溢**（硬规则 #44③）。
+**主产物＝卡点表**（`templates/mv-beat-sheet.md`·唯一模板）；**手册**＝`playbooks/mv-production.md`（通用）＋`playbooks/op-ed-mv.md`（C∩B 实例）＋`templates/op-ed-mv-sheet.md`（OP/ED 填法）。
 
 ---
 
@@ -422,7 +487,11 @@ flowchart TD
 | **M3 方案** | 导演 + 编剧 + 摄影 + 分镜师 + 观众代言人（+红队） | `concepts/` + `m3-scoring.md` + `m3-proposal.md`（含口播稿定稿）+ 九宫格 spec + `style-baseline-固化.md` + `m2-纪要.md`/`decision-log.md` |
 | **M4 执行** | 编剧 + 分镜师 + 声音 + 摄影 + prompt×N + 剪辑 | `screenwriter-口播稿-定稿vN.md` + `storyboard-分镜表.md` + `sound-声音方案.md` + `dop-摄影方案.md` + `m4-prompts/prompts-<平台>.md` + `editor-剪辑预计划.md` |
 | **M5 交付** | 红队 + 检察官五层 + 用户 | `m4-gate-red.md` + `m5-出口-评审单.md` + `检查裁决书.md` + `delivery/`（视频/分镜/prompts/README/授权） |
+| **KSP-06** | 分镜师+摄影+声音+prompt+剪辑 → 红队+检察官五层+用户（执行步＋验收） | 分镜/prompt 表 + `m4-gate-red.md` + `m5-出口-评审单.md` + `检查裁决书.md` + `delivery/`（视频/分镜/prompts/README/授权） |
 | **KSP-07** | 科学顾问 + 制片人 | 图谱域片段（`packs/*-kg/kg.json` → 重建）+ `FAILURE-LIBRARY.md` 追加 + delivery 归档 |
+| **KSP-E（剧集）** | 制片人编排 · 全角色 · E4 由独立上下文检察官执行 | `season-outline.md` + `show-bible.md` + `series-asset-index.md` + `series-config.json` + 逐集 `EPnn/`（含 `ep-consistency-check.md`）+ 季末《全季一致性裁决书》 |
+
+> **剧集通道机器门控**：`python -X utf8 scripts/check_series_consistency.py runs/<季slug> --season`（KSP-E4 · D-S1–D-S8；说明书 `scripts/README-check_series_consistency.md`；模板 `templates/series-config.json`）；已接入 `scripts/check_all.py`（非剧集项目自动跳过）。
 
 ---
 
@@ -450,7 +519,9 @@ flowchart TD
 
 ## 关联文件
 
-- **流程权威**：`docs/USER_SOP.md`（KSP-01~07 + KSP-C）
+- **流程权威**：`docs/USER_SOP.md`（KSP-01~07 + KSP-C + **§2.5 剧集通道 KSP-E1~E5** + **§2.6 横向判定卡与通道 C 交集流程**）
+- **通道 C（音乐驱动·横向）**：`playbooks/mv-production.md`（通用手册）＋`playbooks/op-ed-mv.md`（C∩B 应用实例）＋`templates/mv-beat-sheet.md`（**唯一**卡点表模板）＋`templates/op-ed-mv-sheet.md`（OP/ED 填法说明）；**硬规则 #43/#44**；**机器层** `scripts/check_rule_channels.py`（新增规则缺适用通道标注＝FAIL）；**踩坑** `knowledge/FAILURE-LIBRARY.md` **F-61**
+- **剧集制作**：`playbooks/series-production.md`（剧集必读）+ `templates/season-outline.md` / `templates/show-bible.md` / `templates/episode-brief.md` / `templates/series-config.json` + `scripts/check_series_consistency.py`（KSP-E4 机器门控，说明 `scripts/README-check_series_consistency.md`）
 - **素材类型**：`docs/ASSET-TYPES.md`（13 类文件固定处理方案）
 - **素材流程**：`playbooks/asset-library-flow.md` · `playbooks/production-workflow.md`
 - **PPT/Deck**：`playbooks/ppt-deck-flow.md`（配合 `ppt-master` / `huashu-design`）

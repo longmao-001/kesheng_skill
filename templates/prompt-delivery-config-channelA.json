@@ -1,0 +1,44 @@
+{
+  "_comment": "科生 · 通道A（广告/科普/科研视频）默认档 prompt 交付配置 —— 依据用户裁定 20260921（双通道并存；后升级含通道 C）与 docs/DUAL-CHANNEL-AUDIT.md（#24–#41 逐条限定语）。用法：复制到 runs/<项目slug>/prompt-delivery-config.json（或 check_prompt_delivery.py --config 指定）。判 B（剧集）请改用 templates/prompt-delivery-config-channelB.json。",
+  "_channel_note": "**通道口径 ＝ A ／ B ／ C ／ A+B ／ A+C ／ A+B+C（含混用）**；脚本按『**严格优先**』处理：**留空/未声明 ＝ 全套严格**（防『没写 channel 就整体关闸』），**只有显式声明才缩小范围**。本例 `channel=A` ⇒ 跳过剧集专属 **D10**（动画性·#28 仅 AI 原生动画路径）＋ **D12**（OP 段禁浮空字卡·#33 仅剧集 OP/ED）。**C 档（音乐驱动 MV）只跳 D12、D10 保留**（MV 也可能是动画路径）；**A+C 同 A**；**B ／ A+B 全套严格**。",
+  "_d13_note": "**D13 禁亮词（#34）不由通道名决定，只由本文件 `light_terms` 是否为空决定**：通道 A 默认档**置空 ⇒ 不评估**（#34 仅 AI 原生『无光源』风格；产品摄影/真人实拍的『高光/反光/发光』是正常语汇）。⚠️ 空词表＝『该规则不适用』，不是『通道 A 可以放松』——其余通用项一律照跑。项目若确为水墨/无光源风格，请显式填回词表（此时即便通道名写 A 也照跑）。",
+  "_scope_note": "通道 A／C 全通道适用的门控**不因此档放松**：D1 SOP 字段 / D2 @标记贯穿 / D3 负面同块 / D4 后期禁词 / D5 故事板 / D6 字卡口径 / D7 校勘红线 / D8 后期表述归一 / D9 字卡镜负面分档 / D11（可选）/ 广告法合规（scripts/ad_forbidden_words.py）照旧；通道 A 有专业后期时另按 #26 限定语放行「后期/剪辑」表述。",
+
+  "channel": "A",
+
+  "file_globs": ["prompts-*.md", "segments-*.md", "m5-*.md", "shotlist-*.md",
+                 "storyboard-*.md", "*prompt*.md"],
+  "exclude_dirs": ["_旧版归档", "旧版", "archive", "归档", "node_modules", ".git"],
+
+  "shot_heading_pattern": "镜头|\\bShot\\b|\\bshot\\s*\\d",
+  "shot_id_pattern": "([0-9A-Za-z]+[-–][0-9A-Za-z]+|T\\d+[A-Za-z]?|S\\d+[A-Za-z]?|G\\d+[A-Za-z]?)",
+
+  "required_video_fields": ["参考", "风格", "时间轴", "口播", "声音", "负面", "参数"],
+
+  "image_ref_pattern": "图片\\s*\\d",
+  "image_at_pattern": "@图片\\s*\\d",
+
+  "forbidden_terms": [],
+  "exclusive_space_terms": [],
+
+  "correction_red_terms": [],
+  "correction_red_file": "m5-校勘红线.txt",
+
+  "normalize_terms": [],
+
+  "text_card_shots": [],
+  "text_card_shots_pattern": "",
+  "text_card_auto_note": true,
+
+  "light_terms": [],
+  "light_warn_terms": [],
+  "light_negative_block_pattern":
+    "(?:\\*\\*)?(?:负面词?|负面\\s*prompt|负面（内嵌同块）|统一负面整串|负面块|负面串|禁项)",
+
+  "op_shot_ids": [],
+  "op_scope_pattern": "",
+  "op_text_card_terms": [],
+
+  "check_second_prompt": false,
+  "_check_second_prompt_note": "通道 A 若另附「专业交接单」（剪辑时间线/调色参照/音频分轨表），按硬规则 #24 限定语**不算第二版本 prompt** ⇒ 保持 false；不要为放行交接单把此开关打开后的行为当成默认。"
+}

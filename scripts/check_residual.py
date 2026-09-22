@@ -3,13 +3,19 @@
 """
 红线/禁词残留扫描 v2 (check_residual.py) —— 防"旧表述回归"(F-05 教训)
 
-用法: python -X utf8 scripts/check_residual.py <runs/<项目>> [额外关键词...]
+用法: python -X utf8 scripts/check_residual.py <runs/<项目>> [--no-builtin] [额外关键词...]
 规则:
  R-A: 只扫"执行文件"(会被拿去出片的): storyboard-*/dop-摄影方案*/m4-prompts*/screenwriter-口播稿*/
       editor-剪辑预计划*/sound-声音方案*/deliverables/03-prompt表*/deliverables/00-素材包说明
       评审/复核/裁决类文件(red-team*/art-美术复核*/m3-*等)不扫——它们讨论禁词是合法的
  R-B: 关键词=内置已知残词+brief红线清单+命令行附加; 行内含"禁用/弃用/不提/禁止/不上屏/不出现/标注"
       的行视为规则声明行, 跳过
+ R-C(20260915 新增): `--no-builtin` 跳过内置跨项目残词清单, 只用命令行关键词——
+      供与内置清单无交集的项目做"本项目专属词"精确扫描。
+      变更来源: 红楼梦动漫EP01（runs/20260915-红楼梦动漫EP01, 20260915 字系分体例批次）。
+      成因: 内置清单系他项目遗留（s27_18/玦芯生物/极紫外/**禁运**…），在红楼梦项目里
+      「禁运」会被「固定镜头（**禁运镜**）」逐字误命中（21/21 全属子串误报），
+      致该项目的真实残留结论被噪声淹没。默认行为不变（不加该参数＝照旧用内置清单）。
 输出: 命中清单(文件:行:关键词), 任一执行文件残留=FAIL
 """
 import io
@@ -32,11 +38,14 @@ SKIP_PREFIX = ("#", ">", "- [ ]", "|")
 
 
 def main():
-    base = sys.argv[1] if len(sys.argv) > 1 else None
+    argv = list(sys.argv[1:])
+    no_builtin = "--no-builtin" in argv
+    argv = [a for a in argv if a != "--no-builtin"]
+    base = argv[0] if argv else None
     if not base or not os.path.isdir(base):
-        print("用法: check_residual.py <runs/<项目>> [额外关键词...]")
+        print("用法: check_residual.py <runs/<项目>> [--no-builtin] [额外关键词...]")
         sys.exit(2)
-    kws = set(BUILTIN) | set(sys.argv[2:])
+    kws = (set() if no_builtin else set(BUILTIN)) | set(argv[1:])
     # 精确残词策略: 只用"已知问题资产名/型号/断言"清单(来自失败图书馆F-01~F-10),
     # 外加命令行传入; 不做文本自动提取(误报爆炸教训 v1)
 

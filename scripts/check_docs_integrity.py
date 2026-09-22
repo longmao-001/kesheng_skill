@@ -148,8 +148,17 @@ def main():
             seg = txt[m.end():m.end() + 2000]
             seg = seg.split("\n## ")[0]
             for mm in re.finditer(r"`([^`]+\.md)`", seg):
-                if not os.path.exists(os.path.join(root, mm.group(1))):
-                    fails.append(f"C 启动必读: 列出的 `{mm.group(1)}` 不存在")
+                ref = mm.group(1)
+                if os.path.exists(os.path.join(root, ref)):
+                    continue
+                # 兼容：清单里写 basename（如 `brief.md`）而技能内确有同名模板/知识件
+                # —— 这类是"run 产物名/模板名"的简写，不是断链
+                # （F-30 同一原则：误报＝脚本过时，修脚本，不迁就脚本改文档）
+                cands = [r for r in by_base.get(os.path.basename(ref), [])
+                         if r.startswith(("templates/", "knowledge/", "kb/", "playbooks/", "docs/"))]
+                if cands:
+                    continue
+                fails.append(f"C 启动必读: 列出的 `{ref}` 不存在")
         for mm in re.finditer(r"scripts/([a-z_]+\.py)", txt):
             if not os.path.exists(os.path.join(root, "scripts", mm.group(1))):
                 fails.append(f"D 门控脚本: SKILL.md 提到 scripts/{mm.group(1)} 不存在")

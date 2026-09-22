@@ -41,7 +41,8 @@ ROLE_WORD = re.compile(r"主体|部件|场景|质感|参考|锚|POV|道具|角�
 TAKE_PUT = re.compile(r"取[^。；\n]{0,40}?(?:→|->|放|作|充当|用于)|取哪|放哪|用于背景|作背景|作主体")
 PAIR = re.compile(r"[＝=＝]|部位|图中|位置")
 # 产品/设备类关键词（决定是否要求"保真实造型"）
-PRODUCT = re.compile(r"产品|设备|仪器|机台|机型|机器人|电芯|器件|装置|相机|镜头|头戴|阵列")
+# 20260915修订：剔除「镜头/阵列」——影视分镜用语与石阵/灯阵构图会大面积误命中（L2检察官逐条证实全为误报）
+PRODUCT = re.compile(r"产品|设备|仪器|机台|机型|机器人|电芯|器件|装置|相机|头戴")
 KEEP_SHAPE = re.compile(r"保持真实造型|真实造型|参考图不变|@参考图不变|禁改形|不改形|禁新增部件|禁增删部件|保持外形")
 NEG_RED = re.compile(r"霓虹|渐变|镀铬|大光球|激光束|彩虹|水印|logo|文字")
 NONALNUM = re.compile(r"[，。；、：\s·《》「」“”（）()\[\]【】_\-:/|]")
@@ -100,12 +101,56 @@ def main():
     if not shots:
         print("FAIL: m4-prompts/ 下未找到 prompts-*.md 或其中无 '### 镜头' 块"); sys.exit(1)
 
-    # 口播稿（用于第7步核对）
+    # 口播基准源（用于第7步核对）
+    # 20260915修订：无 screenwriter-口播稿 时不再空转放行（空转=门控漏洞），
+    # 逐级回退：m4-剧本-EP01.md（定稿）→ m4-剧本-EP01-v*.md（最高版）→ 全部缺失 = FAIL
     scripts = [g for g in os.listdir(run) if g.startswith("screenwriter-口播稿") and g.endswith(".md")]
-    script_txt = ""
-    for g in scripts:
-        script_txt += io.open(os.path.join(run, g), encoding="utf-8-sig", errors="ignore").read()
+    script_src = "screenwriter-口播稿"
+    if not scripts:
+        if os.path.exists(os.path.join(run, "m4-剧本-EP01.md")):
+            scripts = ["m4-剧本-EP01.md"]
+            script_src = "m4-剧本-EP01.md"
+        else:
+            vs = sorted(g for g in os.listdir(run)
+                        if re.match(r"m4-剧本-EP01-v\d+.*\.md$", g))
+            if vs:
+                scripts = [vs[-1]]
+                script_src = vs[-1]
+    if not scripts:
+        fails.append("S0: run目录既无 screenwriter-口播稿 也无 m4-剧本-EP01.md——第7步无口播基准源，门控不可空转")
+        script_txt = ""
+    else:
+        script_txt = ""
+        for g in scripts:
+            script_txt += io.open(os.path.join(run, g), encoding="utf-8-sig", errors="ignore").read()
     script_norm = norm(script_txt)
+
+    VOICE_PREFIX = re.compile(r"^[^：:]{0,16}(?:旁白|V\.O\.|VO|独白|画外|念|唱|叠诵|说书)[^：:]*[：:]")
+    PAREN = re.compile(r"[（(][^）)]*[)）]")
+
+    def voice_core(vb):
+        """从口播字段提取可核对的白话正文（去角色/读法括注、去反引号、拆分镜内多段）。"""
+        s = vb.replace("`", "").strip()
+        s = PAREN.sub("", s)                      # 先去括注（含时间码/读法）
+        s = VOICE_PREFIX.sub("", s)               # 再去段首角色/旁白前缀
+        segs = []
+        for seg in re.split(r"[／/|｜│。！？!?\n：:；;．，,　]+", s):
+            seg = re.sub(r"^\s*[0-9:：\-–—.\s]+", "", seg).strip()   # 去时间码
+            seg = re.sub(r"^(?:旁白|V\.O\.|VO|独白|画外|念回目|念|唱|叠诵)", "", seg).strip()
+            seg = norm(seg)
+            if seg:
+                segs.append(seg)
+        return segs
+
+    def in_script(sent):
+        """句同源判定：全句或去1–3字角色前缀（僧/道人/士隐等说话人标记）后命中基准源。"""
+        if sent in script_norm:
+            return True
+        for k in (1, 2, 3):
+            tail = sent[k:]
+            if len(tail) >= 4 and tail in script_norm:
+                return True
+        return False
 
     # 全片风格 token 基准
     style_vals = [f.get("风格", "").strip() for _f, _i, _r, f in shots if f.get("风格", "").strip()]
@@ -179,10 +224,18 @@ def main():
             fails.append(f"S7 {tag}: 口播字段为空——第7步未走")
         elif norm(vb) == "无":
             step_ok[7] += 1
-        elif script_norm and norm(vb) not in script_norm:
-            fails.append(f"S7 {tag}: 口播与口播稿不一致（须逐句同源）——第7步违规")
+        elif not script_norm:
+            fails.append(f"S7 {tag}: 无口播基准源可核对——第7步门控不可空转")
         else:
-            step_ok[7] += 1
+            segs = voice_core(vb)
+            if not segs:
+                step_ok[7] += 1          # 去括注后无可核正文（如纯字卡镜），视为已决策
+            else:
+                miss = [x for x in segs if len(x) >= 4 and not in_script(x)]
+                if not miss:
+                    step_ok[7] += 1
+                else:
+                    fails.append(f"S7 {tag}: 口播与口播基准源({script_src})不一致（须逐句同源）——第7步违规 -> {' / '.join(miss[:2])}")
         # 8 写负面
         neg = (fl.get("负面") or "").strip()
         if not neg:

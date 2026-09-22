@@ -1,0 +1,125 @@
+{
+  "_comment": "科生 · 剧集一致性配置模板（KSP-E4 机器门控词表）。用法：复制到 runs/<季slug>/series-config.json 后按本项目改写；项目专属词（专名/锚ID/帖号/母题ID/红线）只进本文件，不写进脚本。门控：python -X utf8 scripts/check_series_consistency.py runs/<季slug> --season",
+  "_source": "判据＝playbooks/series-production.md §6.1 跨集校验清单 + §6.2「剧集层判据 D-S1–D-S8」；字段口径＝§3.1 时长固定资产 / §5.2 跨集资产索引表字段 / §8.1 钩子类型与兑现责任 / §9.2 目录与命名规范",
+  "_usage_notes": [
+    "① 本文件是**契约**：门控读它判「集与集是不是同一部片子」；改了契约＝改全季口径，须走 KSP-C 并在圣经 §⑪ 留痕",
+    "② 字段缺省≠放行：缺 anchor_registry / text_card_threads / motif_registry / naming_terms / red_lines 时，门控对该项出 NOTE（无基准可判），**不静默通过**",
+    "③ 大小写/繁简：锚 ID 写 ASCII（C1a/S2/Y3），字帖写 `#22`，母题写 `M-转场01`；文本逐字照录原文（同文本同帖靠它比对）",
+    "④ 集目录形态二选一（手册 §9.1）：A `runs/<季slug>/EP01/`（推荐）；B `runs/<季slug>-EP01/`（一集一 run，须额外维护 _shared）",
+    "⑤ 门控只读 run 内真实文件；0 集 / 0 prompt 文件 / 缺本文件 → exit 2（空跑不算通过）"
+  ],
+
+  "series_slug": "YYYYMMDD-<主题>S0N",
+  "episodes": [
+    {"id": "EP01", "dir": "EP01", "status": "已出厂"},
+    {"id": "EP02", "dir": "EP02", "status": "未开"}
+  ],
+  "season_episode_count": 12,
+  "episode_dir_pattern": "EP<两位数>（或 <季slug>-EP<两位数>，全季择一不改）",
+
+  "_duration_contract": "时长结构契约（§3.1／§6.2-D-S1）：OP/ED 是固定资产——时长为先、内容为后；逐集逐秒相等，浮动＝0；正片允许 ±feature_tolerance",
+  "op_seconds": 90,
+  "ed_seconds": 90,
+  "feature_min_seconds": 1020,
+  "feature_seconds": 1020,
+  "feature_tolerance": 0.1,
+  "_duration_tolerance_note": "feature_tolerance=0.1 即正片 ±10%；超限走拍板卡 #14。OP/ED 无容差字段——浮动＝0 写死。",
+  "duration_evidence_hint": "集内制品（EPnn-brief / EPnn-出口闸 / prompt 头）写 `**时长结构**：OP 90s / 正片 17分 / ED 90s` → 门控优先用实测值判定，未写明则回退本契约基准并出 WARN",
+
+  "_shared_assets": "跨集共享资产目录（§5／§9.2）——真实文件唯一存放处；集目录内禁复制副本",
+  "shared_assets_dir": "_shared/",
+  "shared_asset_subdirs": ["锚图/角色", "锚图/场景", "锚图/道具", "锚图/字帖", "母题素材", "OP-ED"],
+  "asset_index_file": "series-asset-index.md",
+  "show_bible_file": "show-bible.md",
+  "season_outline_file": "season-outline.md",
+  "consistency_record_file": "EPnn/ep-consistency-check.md",
+  "_consistency_record_note": "每集交付前由**独立上下文**（未参与该集创作者）出闸记录：判据｜实际｜比对基准（圣经版本/锚图文件）｜结论；季末另出《全季一致性裁决书》",
+
+  "_anchor_registry": "锚登记表（§5.2 字段 + D-S2/D-S7）：角色 C*／场景 S*／道具 Y*；first_episode 必填（形态锚/派生变体写 `首用集`）",
+  "anchor_registry": {
+    "C1a": {
+      "id": "C1a",
+      "name": "士隐·主锚",
+      "type": "角色锚",
+      "file": "_shared/锚图/角色/C1a-士隐-主锚-v1.jpeg",
+      "version": "v1",
+      "first_episode": "EP01",
+      "allowed_episodes": "全季",
+      "immutable": ["脸形", "身形比例", "发式"],
+      "prompt_source": "show-bible.md §③ + EP01/m5-素材prompt溯源台账.md（禁写「对话里」——F-42）",
+      "state": "✅在库可用"
+    },
+    "C1d": {
+      "id": "C1d",
+      "name": "士隐·谷底态（派生变体）",
+      "type": "角色锚",
+      "file": "_shared/锚图/角色/C1d-士隐-谷底态-v1.jpeg",
+      "version": "v1",
+      "first_episode": "EP07",
+      "allowed_episodes": ["EP07", "EP08", "EP09"],
+      "immutable": ["脸形（与 C1a 同源派生）"],
+      "state": "⏳待产"
+    },
+    "S2": {
+      "id": "S2",
+      "name": "姑苏街市",
+      "type": "场景锚",
+      "file": "_shared/锚图/场景/S2-姑苏街市-v1.jpeg",
+      "version": "v1",
+      "first_episode": "EP01",
+      "allowed_episodes": "全季",
+      "state": "✅在库可用"
+    }
+  },
+  "_anchor_note": "同 ID 跨集必须同版本（版本漂移＝FAIL）；换版**新增文件不覆盖**（旧版进 _旧版归档/）；allowed_episodes 可写 `全季` 或集号数组",
+
+  "_text_card_threads": "字帖线（D-S3 同文本同帖）：thread＝帖号 `#NN`，text＝逐字照录原文，script＝字系分档（古典体例繁体／现代功能提示简体）",
+  "text_card_threads": [
+    {"thread": "#22", "text": "新任太爷", "allowed_episodes": "全季", "script": "古典体例·繁体·碑刻楷", "usage": "黑底字卡（悬念钩）"},
+    {"thread": "#23", "text": "前情提要", "allowed_episodes": "全季", "script": "现代功能提示·简体", "usage": "字卡接（回顾）"}
+  ],
+  "_text_card_note": "同一文本跨集只出一帖（去重合并，多集挂同一文件）；同文本两帖号／同帖号两文本＝口径事故（FAIL）。字帖铁律 #32：无帖不得开抽。",
+
+  "_motif_registry": "母题登记表（D-S4 母题唯一）：ID 全局唯一；首用集必填；跨集复现须声明（`【复现·回环】`＋依据＋限次）",
+  "motif_registry": [
+    {"id": "M-转场01", "name": "枯笔扫", "type": "转场母题", "first_episode": "EP01",
+     "allowed_episodes": "全季", "max_recurrence": null, "recurrence": "全季唯一转场语法，不逐集声明"},
+    {"id": "M-音效01", "name": "十记落", "type": "音效母题", "first_episode": "EP01",
+     "allowed_episodes": "全季", "max_recurrence": 3, "recurrence": "EP05/EP09 复现·回环（预言↔应验），须在 prompt 标 `【复现·回环】`"}
+  ],
+  "_motif_note": "复现未声明即 FAIL；集尾不静默断（§6.1-7：声音脊线母题从圣经取）。",
+
+  "_naming_terms": "专名/称谓白名单（D-S6 同词两写＝FAIL；配 F-47 三禁令：禁叠字归并、替换式长串优先＋词边界、改后逐点 diff）",
+  "naming_terms": [
+    {"term": "甄士隐", "red_line": true},
+    {"term": "葫蘆廟", "red_line": true, "forbid_variants": ["蘆廟", "葫蘆庙"]},
+    {"term": "茫茫大士", "red_line": true, "forbid_variants": ["茫大士"]},
+    {"term": "好了歌", "red_line": false}
+  ],
+  "_naming_note": "red_line=true 的词＝跨集红线专名，任一集缺失即 FAIL；forbid_variants 只作人工核对清单（门控对近似误写出 WARN，不做自动替换——F-47：无备份不得动）",
+
+  "_hook_ledger": "钩子账本（D-S5）——每集集尾钩 ↔ 兑现责任人（哪一集哪一拍）；空项＝0（季末总检查）",
+  "hook_ledger": [
+    {"ep": "EP01", "type": "悬念钩", "hook": "黑底字卡「新任太爷…」", "owner": "EP02 开场 3 分钟内（新太爷到任镜）",
+     "continuity": "字卡接＋硬接", "next_open": "EP02 首 15 秒内接住"},
+    {"ep": "EP02", "type": "伏笔回收钩", "hook": "回收 EP01 甄家火场伏笔；埋下「玉在匣中」新伏笔", "owner": "EP04 第 2 段（玉在匣中启封镜）",
+     "continuity": "母题接（M-转场01）", "next_open": "EP03 首 15 秒内点明匣子去向"}
+  ],
+  "_hook_note": "一集一主钩；钩子不许靠删结尾制造；钩子不得消费下一集关键揭晓（钩子给问题不给答案）。兑现集超出 season_episode_count＝断钩（FAIL）。",
+
+  "_red_lines": "全季红线（D-S8 红线继承）——跨集继承，不得单集开口；必须出现在该集 prompt 的【负面】里",
+  "red_lines": [
+    {"term": "简体字", "scope": "字卡镜", "why": "字系分体例：古典体例一律繁体"},
+    {"term": "霓虹光晕", "scope": "全片", "why": "禁亮词/无光之戏（硬规则 #34）"},
+    {"term": "浮空字卡", "scope": "OP 段", "why": "OP 文字白名单（硬规则 #33）"},
+    {"term": "镀铬反光", "scope": "全片", "why": "AI 反模式；保真实造型"},
+    {"term": "文字水印", "scope": "全片", "why": "交付红线"}
+  ],
+  "_red_line_note": "红线在负面**在位**即可（门控只在【负面】字段里找）；写在正文不算在位——正文出现＝口径混用。",
+
+  "exclude_dirs": ["_shared", "_旧版归档", "旧版", "archive", "归档", "tools", "node_modules", ".git", "__pycache__"],
+  "_exclude_dirs_note": "门控扫描集目录时跳过的子目录：_shared 为共享资产（非集交付件）、tools 内含回滚基线副本（若不排除会导致计数虚高，见 prompt-delivery-config 同类教训）",
+
+  "prompt_file_globs": ["EP<nn>-prompts-*.md", "prompts-*.md", "segments-*.md"],
+  "_prompt_file_note": "一平台一文件（手册 §9.2）；门控只在**集目录**及其 m4-prompts/ 内找，避免把 _shared 与邻集制品算进本集"
+}
