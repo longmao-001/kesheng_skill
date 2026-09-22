@@ -311,15 +311,18 @@ def build_ksp(f, ax, fig, measure, PTS):
           "产物：storyboard-分镜表.md ／ m4-prompts/prompts-<平台>.md ／ sound ／ dop ／ editor",
           "exec", 8.7, tag="KSP-06")
 
-    f.box("机器门控：python -X utf8 scripts/check_all.py runs/<slug>　（8 项）\n"
-          "① check_sop　　　　　 产物齐 ＋ 每镜 prompt 字段完整（缺 ＝ 跳 SOP → 回退）\n"
-          "② check_prompt_sheet　 格式与一致性（核心字段 / 口播≠口播稿 / 风格 / 参考 / 负面）\n"
-          "③ check_prompt_sop　　 写 prompt 十步 SOP 执行证据（参考图裸引用 / 风格不同源）\n"
-          "④ check_asset_pack　　 素材自包含（引用可解析、无「待补充 / 拍照」）\n"
-          "⑤ check_delivery　　　 交付件版本收敛（单一源 / 包自包含 / 无漂移）\n"
-          "⑥ ad_forbidden_words　 广告禁用词（绝对化 / 极限 / 疗效 / 平台禁语）\n"
-          "⑦ check_runs_clean　　 runs/ 只放项目\n"
-          "⑧ check_docs_integrity 技能级：SOP 无断链 / 无孤岛", "gate", 8.5, tag="门控")
+    f.box("机器门控：python -X utf8 scripts/check_all.py runs/<slug>　（满配 16 项 · 单集 14 项 · 通用 13 项）\n"
+          "① check_channel_conformance　判型×磁盘形态（判 B 缺 series-config.json/EPnn ＝ FAIL）\n"
+          "② check_sop 产物齐＋每镜字段完整　　③ check_prompt_sheet 格式与一致性\n"
+          "④ check_prompt_sop 十步 SOP 证据　⑤ check_prompt_delivery 交付门控 D1–D10（channel=A 跳过剧集专属）\n"
+          "⑥ check_asset_pack 素材自包含　　　⑦ check_delivery 交付件版本收敛\n"
+          "⑧ ad_forbidden_words 广告禁语　　　⑨ check_runs_clean runs/ 只放项目\n"
+          "⑩ check_docs_integrity 技能级：SOP 无断链 / 无孤岛\n"
+          "(11) check_rule_channels 规则通道标注（#42①）　(12) check_channel_assets 通道 A 资产（#42③）\n"
+          "★ 素材类项目 +1：check_asset_labels（#41 盘上 vs 索引 双向核对；非素材类自动跳过）\n"
+          "★ 剧集项目 +2：check_series_consistency（KSP-E4 D-S1–D-S8）／check_bible_pin（#36③）\n"
+          "其他：check_readme_counts 文档计数不漂移 / check_reference_selection 选片 / check_residual 残留回归",
+          "gate", 8.5, tag="门控")
 
     _cy, _h, gw = f.gate("红队前置闸 m4-gate-red　（独立上下文 · 未参与创作）")
     i1 = len(f.nodes) - 1

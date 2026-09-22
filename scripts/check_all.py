@@ -27,6 +27,9 @@
   ads              广告禁用词(绝对化/极限词/疗效承诺/平台禁语)
   check_runs_clean  runs/ 只放项目
   check_docs_integrity SOP 文档无断链/孤岛(写了就被读到)
+  check_readme_counts 文档计数不漂移(**技能级**)：总览类文档(README/`knowledge/index.md`/`docs/SOP-FLOW.md`)
+                     声明的件数/条数/项数 ↔ 磁盘与代码**实测**逐项比对；漂移 = FAIL("写 X / 实际 Y")，
+                     文件缺失或声明缺失 = exit 2(**空跑/缺声明不算通过**)
   check_rule_channels 规则通道标注门控(硬规则 #42①)：扫 ORCHESTRATION §5 硬规则区的每条 #NN
                      是否带适用通道标注；**新增规则(#≥43)缺标注 = FAIL**，历史 #1–#42 仅 WARN
   check_channel_assets 通道A 保留资产守护(硬规则 #42③)：11 件保留资产逐件断言存在 + .py
@@ -112,6 +115,8 @@ def main():
         ("check_runs_clean", [py, "-X", "utf8", os.path.join(HERE, "check_runs_clean.py")]),
         # 技能级（与项目无关）：SOP 文档是否真正嵌入技能（无断链/孤岛）
         ("check_docs_integrity", [py, "-X", "utf8", os.path.join(HERE, "check_docs_integrity.py")]),
+        # 技能级（与项目无关）：总览类文档声明的计数 ↔ 磁盘/代码实测（防「README 写 8 项、实际 16 项」）
+        ("check_readme_counts", [py, "-X", "utf8", os.path.join(HERE, "check_readme_counts.py")]),
         # 技能级 · 双通道守护（硬规则 #42）：规则须标适用通道 ＋ 通道 A 保留资产不得被剧集化削弱
         ("check_rule_channels", [py, "-X", "utf8", os.path.join(HERE, "check_rule_channels.py")]),
         ("check_channel_assets", [py, "-X", "utf8", os.path.join(HERE, "check_channel_assets.py")]),
@@ -203,6 +208,11 @@ def main():
                 print("  - ad_forbidden_words: 命中广告禁用词(绝对化/极限/疗效/平台禁语) -> 改程度性/去禁词")
             elif name == "check_docs_integrity":
                 print("  - check_docs_integrity: SOP 文档有断链/孤岛(写了没人读) -> 补引用或合并，确保 SOP 真正嵌入技能")
+            elif name == "check_readme_counts":
+                print("  - check_readme_counts: 总览类文档声明的计数与实测不符(计数漂移) -> 改**文档里的声明数字**对齐实测"
+                      "（README：目录结构 `dir/ (N)` / `硬规则 1-NN` / `一键 N 项` / `N 个拍板点`；"
+                      "`knowledge/index.md`：`F-01…F-NN`；`docs/SOP-FLOW.md`：`满配/单集/通用 N 项`）；"
+                      "exit 2 = 文件缺失或声明缺失（补上再跑，缺声明不算通过）")
             elif name == "check_series_consistency":
                 print("  - check_series_consistency: 跨集一致性(D-S1–D-S8)未过 -> 按 scripts/README-check_series_consistency.md "
                       "修；项目词表写进 runs/<季slug>/series-config.json（模板 templates/series-config.json）；"

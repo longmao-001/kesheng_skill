@@ -137,18 +137,23 @@
 └──────────────┬─────────────────────────────────────────────────────┘
                ▼
 ┌─────────────── 门控层（机器 + 人工双轨）───────────────────────────┐
-│  机器门控：python -X utf8 scripts/check_all.py runs/<slug>  （单集 9 项）│
-│   ① check_sop           产物齐 + 每镜 prompt 字段完整（缺=跳SOP→回退）│
-│   ② check_prompt_sheet  核心字段/口播单独且与口播稿一致/风格token一致/参考@/负面非空│
-│   ③ check_prompt_sop     十步 SOP 执行证据（裸引用/不同源/无分段/缺README）│
-│   ④ check_prompt_delivery D1–D13（SOP字段/@贯穿/无后期/字卡口径/动画性…）│
-│   ⑤ check_asset_pack     素材自包含（引用可解析、无"待补充/拍照"）    │
-│   ⑥ check_delivery       交付件版本收敛（单一执行源/包自包含/无漂移）  │
-│   ⑦ ad_forbidden_words   广告禁用词（绝对化/极限/疗效/平台禁语）      │
-│   ⑧ check_runs_clean     runs/ 只放项目                             │
-│   ⑨ check_docs_integrity 技能级：SOP 无断链/无孤岛                   │
-│  ★ 剧集项目另加：check_series_consistency（KSP-E4·D-S1–D-S8；非剧集自动跳过）│
-│  其他：check_reference_selection(选片) / check_residual(残留回归)    │
+│  机器门控：python -X utf8 scripts/check_all.py runs/<slug>          │
+│  满配 16 项 ／ 单集 14 项（通用 13 项 ＋ 素材类 1 项 ＋ 剧集 2 项·不合条件打印[跳过]）│
+│   ① check_channel_conformance 判型×磁盘形态（判B 却缺 series-config.json/EPnn = FAIL）│
+│   ② check_sop           产物齐 + 每镜 prompt 字段完整（缺=跳SOP→回退）│
+│   ③ check_prompt_sheet  核心字段/口播单独且与口播稿一致/风格token一致/参考@/负面非空│
+│   ④ check_prompt_sop     十步 SOP 执行证据（裸引用/不同源/无分段/缺README）│
+│   ⑤ check_prompt_delivery D1–D10（SOP字段/@贯穿/无后期/字卡口径/动画性…；channel=A 跳过剧集专属 D12/D13/D10）│
+│   ⑥ check_asset_pack     素材自包含（引用可解析、无"待补充/拍照"）    │
+│   ⑦ check_delivery       交付件版本收敛（单一执行源/包自包含/无漂移）  │
+│   ⑧ ad_forbidden_words   广告禁用词（绝对化/极限/疗效/平台禁语）      │
+│   ⑨ check_runs_clean     runs/ 只放项目                             │
+│   ⑩ check_docs_integrity 技能级：SOP 无断链/无孤岛                   │
+│   ⑪ check_rule_channels  技能级：新增硬规则须标适用通道(#42①)          │
+│   ⑫ check_channel_assets 技能级：通道A 保留资产守护(#42③)             │
+│  ★ 素材类项目 +1：check_asset_labels（#41 盘上↔索引双向核对；非素材类自动跳过）│
+│  ★ 剧集项目 +2：check_series_consistency(KSP-E4·D-S1–D-S8) / check_bible_pin(#36③)│
+│  其他：check_readme_counts(文档计数不漂移) / check_reference_selection(选片) / check_residual(残留回归)│
 └──────────────┬─────────────────────────────────────────────────────┘
                ▼
       ┌───────────────────────────────┐
@@ -233,7 +238,7 @@ flowchart TD
     G16 --> K055["KSP-04.5 九宫格风格预览(口播后)<br/>→ 风格基线固化"]
     K055 --> G15{{"拍板 #15 风格预览"}}
     G15 --> K06["KSP-06 制作交付+出口闸<br/>关内执行：分镜‖声音 → 摄影 → prompt分段‖剪辑<br/>→ 美术VI复核 → 科学复核 → 陪跑出片"]
-    K06 --> MACH["机器门控 check_all.py（单集 9 项）<br/>sop/prompt_sheet/prompt_sop/prompt_delivery/asset_pack<br/>/delivery/ads/runs/docs_integrity（+剧集另加 series_consistency）"]
+    K06 --> MACH["机器门控 check_all.py（满配 16 项·单集 14 项·通用 13 项）<br/>channel_conformance/sop/prompt_sheet/prompt_sop/prompt_delivery/asset_pack<br/>/delivery/ads/runs/docs_integrity/rule_channels/channel_assets<br/>（+素材类 asset_labels·+剧集 series_consistency/bible_pin）"]
     MACH --> PRE{"红队前置闸 m4-gate-red"}
     PRE -->|BLOCK| FIX[打回对应环节 ≤2]
     FIX --> PRE
@@ -446,17 +451,26 @@ flowchart TD
 
 | 环节 | 脚本 | 拦什么 |
 |---|---|---|
-| **一键总检** | `check_all.py` | 下面 8 项一次跑完 |
+| **一键总检** | `check_all.py` | 下面 16 项一次跑完（**满配 16 ＝ 通用 13 ＋ 素材类 1 ＋ 剧集类 2**；不满足判定条件的项打印 `[跳过]`，**跳过 ≠ 通过**） |
+| **判型×形态** | `check_channel_conformance.py` | **硬规则 #42④**：判 B／A+B 却缺 `series-config.json` 或 `EPnn/` 集结构 = **FAIL**（跨集闸会被静默跳过）；判 A 却有剧集形态 = WARN；无 `brief.md`/缺通道字段 = exit 2（`[跳过]`，不臆断判型） |
 | 产物存在性 | `check_sop.py` | 跳 SOP / 缺产物 + 每镜 prompt 字段不全 |
 | prompt 格式 | `check_prompt_sheet.py` | 核心字段缺 / 口播并入画面 / 口播≠口播稿 / 风格不一致 / 参考漏挂 / 负面空（**兼容 `**字段**：` 与 `【字段】` 两代格式**） |
 | **prompt 十步 SOP** | `check_prompt_sop.py` | **十步执行证据**：参考图裸引用（只写 @图N 无角色/取哪→放哪）/ 风格token不同源 / 口播≠口播稿 / 时间轴无按秒分段 / 缺 README = **FAIL**；缺"部位对应·放哪位置"/产品镜缺"保真实造型"/参数缺项 = WARN |
+| **prompt 交付门控** | `check_prompt_delivery.py` | **D1–D10**：SOP字段/@标记贯穿/负面同块/禁后期表述/故事板纪律/字卡口径/校勘红线/字卡镜负面分档/**D10 动画性**；`channel=A` 自动跳过剧集专属 D12/D13/D10（词表 `templates/prompt-delivery-config-channelA.json`／`channelB.json`） |
 | 素材自包含 | `check_asset_pack.py` | @引用未登记 / "待补充·拍照"后补提示词（兼容新旧引用语法） |
 | **交付件收敛** | `check_delivery.py` | 多源并存 / 交付包死链 / 口播稿多版本漂移 |
 | 广告合规 | `ad_forbidden_words.py` | 绝对化·极限词 / 疗效承诺 / 平台禁语 |
 | runs 纯净 | `check_runs_clean.py` | runs/ 混入非项目散落物 |
 | **文档完整性** | `check_docs_integrity.py` | **技能级**：SOP 断链 / 孤岛（写了没人读）/ 启动必读与门控脚本不一致 |
+| **规则通道标注** | `check_rule_channels.py` | **技能级·硬规则 #42①**：新增规则（#≥43）缺适用通道标注 = FAIL；历史条目按审计表覆盖/默认通用仅 WARN |
+| **通道A 资产守护** | `check_channel_assets.py` | **技能级·硬规则 #42③**：保留资产逐件在位 + `.py` `py_compile`；缺件/空件/编译不过 = FAIL |
+| **素材标签（+1）** | `check_asset_labels.py` | **仅素材类项目·硬规则 #41**：盘上↔索引双向核对（orphan/ghost/label_gap 任一 = FAIL，`trace_status: missing` 计入 FAIL）；非素材类自动跳过 |
+| **跨集一致性（+2）** | `check_series_consistency.py` | **仅剧集项目·KSP-E4 D-S1–D-S8**：OP/ED 时长固定资产逐集相等 / 锚复用版本 / 母题唯一 / 钩子账本 / 专名逐字 / 全季红线继承；0 集/0 prompt/缺配置 = exit 2 |
+| **圣经版本 pin（+3）** | `check_bible_pin.py` | **仅剧集项目·硬规则 #36③**：圣经 §⓪ 版本行非空 + 各集 `EPnn-brief.md`「引用圣经版本」= 圣经当前版本；缺/空/过期 = FAIL |
+| **计数不漂移** | `check_readme_counts.py` | **技能级**：总览文档声明的件数/条数/项数 ↔ 磁盘与代码实测比对，漂移 = FAIL（"写 X / 实际 Y"）；文件或声明缺失 = exit 2 |
 | 选片校验 | `check_reference_selection.py` | 选片要素不完整（角色/部位/位置） |
 | 残留扫描 | `check_residual.py` | 旧表述/禁词残留全文回归 |
+| 素材索引 | `asset_index.py` / `ingest_asset.py` | （工具）**唯一索引读写** / **入库即标签执行器**（命名校验→sidecar→索引一条）；字段字典 `scripts/asset_schema.md` |
 | 素材提取 | `extract_docs.py` | （工具）PDF/PPTX/DOCX → 抠图+抽文+台账骨架 |
 | 素材分类/入库 | `classify_assets.py` / `annotate_assets.py` | （工具）分类命名 / 三件套脚手架 |
 | 报告转档 | `md_to_docx.py` / `build_science_report.py` | （工具）Markdown → **适配 Word** 的 docx；报告→md+docx+PPT大纲 |
@@ -491,7 +505,7 @@ flowchart TD
 | **KSP-07** | 科学顾问 + 制片人 | 图谱域片段（`packs/*-kg/kg.json` → 重建）+ `FAILURE-LIBRARY.md` 追加 + delivery 归档 |
 | **KSP-E（剧集）** | 制片人编排 · 全角色 · E4 由独立上下文检察官执行 | `season-outline.md` + `show-bible.md` + `series-asset-index.md` + `series-config.json` + 逐集 `EPnn/`（含 `ep-consistency-check.md`）+ 季末《全季一致性裁决书》 |
 
-> **剧集通道机器门控**：`python -X utf8 scripts/check_series_consistency.py runs/<季slug> --season`（KSP-E4 · D-S1–D-S8；说明书 `scripts/README-check_series_consistency.md`；模板 `templates/series-config.json`）；已接入 `scripts/check_all.py`（非剧集项目自动跳过）。
+> **剧集通道机器门控**：`python -X utf8 scripts/check_series_consistency.py runs/<季slug> --season`（KSP-E4 · D-S1–D-S8；说明书 `scripts/README-check_series_consistency.md`；模板 `templates/series-config.json`）＋ `scripts/check_bible_pin.py`（圣经引用版本 pin · 硬规则 #36③）；均已接入 `scripts/check_all.py`（非剧集项目自动跳过）。
 
 ---
 
@@ -514,6 +528,7 @@ flowchart TD
 | 13 | **runs/ 只放项目**（临时目录交付前删） | 目录污染 |
 | 14 | **每关拍板用选项卡 + 证据先行** | 盲选 / 违规 |
 | 15 | **机器门控报错先分"真缺"还是"格式别名误报"**（F-30：误报=修脚本不迁就） | 改制品迎合脚本 / 绕开门控 |
+| 16 | **文档里的计数（件数/条数/项数）必须等于实测**（`check_readme_counts.py` 守护） | 计数漂移 → 门控数与实际不符 |
 
 ---
 
@@ -521,7 +536,9 @@ flowchart TD
 
 - **流程权威**：`docs/USER_SOP.md`（KSP-01~07 + KSP-C + **§2.5 剧集通道 KSP-E1~E5** + **§2.6 横向判定卡与通道 C 交集流程**）
 - **通道 C（音乐驱动·横向）**：`playbooks/mv-production.md`（通用手册）＋`playbooks/op-ed-mv.md`（C∩B 应用实例）＋`templates/mv-beat-sheet.md`（**唯一**卡点表模板）＋`templates/op-ed-mv-sheet.md`（OP/ED 填法说明）；**硬规则 #43/#44**；**机器层** `scripts/check_rule_channels.py`（新增规则缺适用通道标注＝FAIL）；**踩坑** `knowledge/FAILURE-LIBRARY.md` **F-61**
-- **剧集制作**：`playbooks/series-production.md`（剧集必读）+ `templates/season-outline.md` / `templates/show-bible.md` / `templates/episode-brief.md` / `templates/series-config.json` + `scripts/check_series_consistency.py`（KSP-E4 机器门控，说明 `scripts/README-check_series_consistency.md`）
+- **剧集制作**：`playbooks/series-production.md`（剧集必读）+ `templates/season-outline.md` / `templates/show-bible.md` / `templates/episode-brief.md` / `templates/series-config.json` + `scripts/check_series_consistency.py`（KSP-E4 机器门控，说明 `scripts/README-check_series_consistency.md`）+ `scripts/check_bible_pin.py`（#36③）
+- **判型与通道纪律（技能级门控）**：`scripts/check_channel_conformance.py`（判型×磁盘形态·#42④）· `scripts/check_rule_channels.py`（新增规则须标适用通道·#42①）· `scripts/check_channel_assets.py`（通道 A 保留资产·#42③）· `scripts/check_readme_counts.py`（**文档计数不漂移**）；规则审计表 `docs/DUAL-CHANNEL-AUDIT.md`
+- **素材入库即标签（#41）**：`scripts/ingest_asset.py`（执行器）/ `scripts/asset_index.py`（唯一索引）/ `scripts/check_asset_labels.py`（双向核对门控）+ 字段字典 `scripts/asset_schema.md`
 - **素材类型**：`docs/ASSET-TYPES.md`（13 类文件固定处理方案）
 - **素材流程**：`playbooks/asset-library-flow.md` · `playbooks/production-workflow.md`
 - **PPT/Deck**：`playbooks/ppt-deck-flow.md`（配合 `ppt-master` / `huashu-design`）
